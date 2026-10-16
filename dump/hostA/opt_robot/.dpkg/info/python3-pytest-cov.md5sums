@@ -1,0 +1,15 @@
+06c2860e7980f3d37609f70666aaf93e  usr/lib/python3/dist-packages/pytest-cov.pth
+c93a8d6abb3022cef6a643740abd2eec  usr/lib/python3/dist-packages/pytest_cov-2.8.1.egg-info/PKG-INFO
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/pytest_cov-2.8.1.egg-info/dependency_links.txt
+ab9f8ae1a791842699d5aa174bef5d29  usr/lib/python3/dist-packages/pytest_cov-2.8.1.egg-info/entry_points.txt
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/pytest_cov-2.8.1.egg-info/not-zip-safe
+b5feac472ce49bbd63050181bc7e9abe  usr/lib/python3/dist-packages/pytest_cov-2.8.1.egg-info/requires.txt
+1bc130a25b1bd0c5fba4ccb3c4e09e41  usr/lib/python3/dist-packages/pytest_cov-2.8.1.egg-info/top_level.txt
+d518d47d20e83211c6ac08b85066899f  usr/lib/python3/dist-packages/pytest_cov/__init__.py
+92bd462732ba91d2927a81e2cf0e8906  usr/lib/python3/dist-packages/pytest_cov/compat.py
+64619e55a30e016ea34cd6bd75fbf52d  usr/lib/python3/dist-packages/pytest_cov/embed.py
+b40dbed7f6e601b6cbca4f416da96eb3  usr/lib/python3/dist-packages/pytest_cov/engine.py
+b5a3e9333d8f7fba3be5a71573eab28d  usr/lib/python3/dist-packages/pytest_cov/plugin.py
+431d2d3fa7ed53f79e8d8bb21cc10fda  usr/share/doc/python3-pytest-cov/README.rst.gz
+5048822dad8e1605ff07eca80e1951a1  usr/share/doc/python3-pytest-cov/changelog.Debian.gz
+f59925e8b18a71683b8b0a402c8cf848  usr/share/doc/python3-pytest-cov/copyright

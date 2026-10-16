@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/bin
+/usr/bin/vtkParseJava-7.1
+/usr/bin/vtkWrapJava-7.1
+/usr/share
+/usr/share/doc
+/usr/share/doc/libvtk7-java
+/usr/share/doc/libvtk7-java/copyright
+/usr/share/java
+/usr/share/java/vtk7.jar
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libvtk7-java
+/usr/share/doc/libvtk7-java/changelog.Debian.gz

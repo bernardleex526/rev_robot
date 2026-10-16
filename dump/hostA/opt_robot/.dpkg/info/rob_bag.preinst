@@ -1,0 +1,34 @@
+#!/bin/bash
+set -e
+
+echo "rob_bag: preinst called with: $1"
+
+case "$1" in
+    install)
+        # 全新安装
+        echo "rob_bag: Preparing for new installation..."
+        ;;
+        
+    upgrade)
+        # 升级安装
+        echo "rob_bag: Preparing for upgrade..."
+        ;;
+        
+    abort-upgrade)
+        # 升级被中止
+        echo "rob_bag: Upgrade aborted..."
+        ;;
+        
+    *)
+        echo "rob_bag: preinst called with unknown argument: $1" >&2
+        exit 1
+        ;;
+esac
+
+# 创建目录(无论安装还是升级都需要)
+mkdir -p /var/opt/robot/data/rob_bag
+mkdir -p /var/opt/robot/log
+mkdir -p /opt/robot/etc
+mkdir -p /dev/shm/ffmpeg_temp
+
+exit 0

@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/lib
+/usr/lib/debug
+/usr/lib/debug/.build-id
+/usr/lib/debug/.build-id/a9
+/usr/lib/debug/.build-id/a9/1d36a69cda8d281b779b2d80d3666766939cf3.debug
+/usr/lib/debug/.build-id/ae
+/usr/lib/debug/.build-id/ae/45a766f181d879909cf0283decf69d1808c4c8.debug
+/usr/lib/debug/.dwz
+/usr/lib/debug/.dwz/aarch64-linux-gnu
+/usr/lib/debug/.dwz/aarch64-linux-gnu/libkms1.debug
+/usr/share
+/usr/share/doc
+/usr/share/doc/libkms1-dbgsym

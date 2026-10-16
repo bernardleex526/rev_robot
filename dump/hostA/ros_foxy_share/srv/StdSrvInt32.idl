@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from drdds/srv/StdSrvInt32.srv
+// generated code does not contain a copyright notice
+
+
+module drdds {
+  module srv {
+    struct StdSrvInt32_Request {
+      int32 command;
+    };
+    struct StdSrvInt32_Response {
+      int32 result;
+    };
+  };
+};

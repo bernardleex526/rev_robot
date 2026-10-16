@@ -1,0 +1,6 @@
+57713ce03bb3bdad8dc24990957fe7b6  usr/lib/libgdal.so.26.0.4
+30fbedf16bbcf1f63bd94bdf66801707  usr/share/doc/libgdal26/NOTICE
+4c176503990f3b85c800b3c27db168f1  usr/share/doc/libgdal26/TODO.Debian
+a950a19f5d46bdec668ee692756cf55c  usr/share/doc/libgdal26/changelog.Debian.gz
+f3c88642a4b79827192def97f17146f9  usr/share/doc/libgdal26/copyright
+c913f8fc68f5072db03b919eedbf8346  usr/share/lintian/overrides/libgdal26

@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/bin
+/usr/bin/pyflakes
+/usr/share
+/usr/share/doc
+/usr/share/doc/pyflakes
+/usr/share/doc/pyflakes/copyright
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/pyflakes.1.gz
+/usr/share/doc/pyflakes/changelog.Debian.gz

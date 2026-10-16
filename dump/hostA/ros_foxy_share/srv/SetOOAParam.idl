@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from drdds/srv/SetOOAParam.srv
+// generated code does not contain a copyright notice
+
+
+module drdds {
+  module srv {
+    struct SetOOAParam_Request {
+      double max_speed_x;
+
+      double max_speed_y;
+
+      double max_theta;
+
+      boolean stairoa;
+    };
+    struct SetOOAParam_Response {
+      boolean is_success;
+    };
+  };
+};

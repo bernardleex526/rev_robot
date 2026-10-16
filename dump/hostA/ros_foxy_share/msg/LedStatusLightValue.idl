@@ -1,0 +1,32 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from drdds/msg/LedStatusLightValue.msg
+// generated code does not contain a copyright notice
+
+
+module drdds {
+  module msg {
+    struct LedStatusLightValue {
+      @verbatim (language="comment", text=
+        " 样式")
+      uint8 type;
+
+      @verbatim (language="comment", text=
+        " [color] 颜色" "\n"
+        " 渐变流水灯样式时: 数组[0] 是起点颜色，数组[1] 是终点颜色" "\n"
+        " 双色交替闪烁样式时: 数组[0] 是颜色1，数组[1] 是颜色2")
+      sequence<uint8> color;
+
+      @verbatim (language="comment", text=
+        " 灯珠数量")
+      uint8 num;
+
+      @verbatim (language="comment", text=
+        " 方向: false=正向, true=反向")
+      boolean dir;
+
+      @verbatim (language="comment", text=
+        " 周期")
+      uint8 cycle;
+    };
+  };
+};

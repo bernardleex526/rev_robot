@@ -1,0 +1,8 @@
+1a8903f5b7bf308feadbaf9d6d74bdfd  usr/include/opencv4/opencv2/videoio.hpp
+56ac41952c01cd5d63a07d6f3bfb7d1a  usr/include/opencv4/opencv2/videoio/cap_ios.h
+321186db9e4ce144dfe8777e71549c0f  usr/include/opencv4/opencv2/videoio/legacy/constants_c.h
+afa84660c8acb88332721b72f213b59b  usr/include/opencv4/opencv2/videoio/registry.hpp
+6fff63504307781fb86a69ceb1983da7  usr/include/opencv4/opencv2/videoio/videoio.hpp
+5b438579dc88ccbed81c72b2af2eefad  usr/include/opencv4/opencv2/videoio/videoio_c.h
+538027416e24ac2748a0effad346014f  usr/lib/aarch64-linux-gnu/libopencv_videoio.a
+145c4b15d9cf5c5ca48742cc9a3e22f0  usr/share/doc/libopencv-videoio-dev/copyright

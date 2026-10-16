@@ -1,0 +1,14 @@
+#!/bin/bash
+set -e
+
+sudo chmod +x /opt/robot/bin/proc_checker
+
+sudo chmod +x /opt/robot/share/rte_checker/scripts/*
+sudo cp /opt/robot/share/rte_checker/scripts/rte_checker.service /lib/systemd/system/
+systemctl daemon-reload
+
+systemctl enable rte_checker.service
+systemctl start rte_checker.service
+sync
+exit 0
+

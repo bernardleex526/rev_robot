@@ -1,0 +1,5 @@
+07869cac02027bbd97cd43e7997e0fc6  usr/bin/sqldiff
+1a6c2dead1784d52fbf6d0943a71aacd  usr/bin/sqlite3
+be64db3e095486e5e105652c51199358  usr/share/doc/sqlite3/copyright
+056568f7b0ddcf6164877a938dbaf164  usr/share/man/man1/sqldiff.1.gz
+daf97bc563ee9bb3a573b5e80378b2fa  usr/share/man/man1/sqlite3.1.gz

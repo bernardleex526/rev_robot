@@ -1,0 +1,37 @@
+#!/bin/bash
+
+
+# 设置目录路径
+logdir="/var/opt/robot/log"
+confdir="/opt/robot/share/system/conf"
+datadir="/opt/robot/share/system/data"
+datarecorddir="/var/opt/robot/log/system"
+
+mkdir -p /opt/robot/share/rte_checker/bin
+mkdir -p /opt/robot/share/rte_checker/scripts
+
+if [ ! -d "$logdir" ]; then
+    mkdir -p $logdir
+    echo "Created $logdir"
+fi
+
+# 创建或替换 ras_lib 目录
+if [ ! -d "$confdir" ]; then
+    mkdir -p $confdir
+    echo "Created $confdir"
+    cd $confdir
+    ln -sf /usr/local/share/log4cplus/log.properties log.properties
+fi
+
+
+if [ ! -d "$datadir" ]; then
+    mkdir -p $datadir
+    echo "Created $datadir"
+fi
+
+if [ ! -d "$datarecorddir" ]; then
+    mkdir -p $datarecorddir
+    echo "Created $datarecorddir"
+fi
+
+exit 0 

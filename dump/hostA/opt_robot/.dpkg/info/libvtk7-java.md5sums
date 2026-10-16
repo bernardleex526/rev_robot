@@ -1,0 +1,5 @@
+6ca9fba8c4317dac1d94204b559063ed  usr/bin/vtkParseJava-7.1
+a06941e75ed33669fd7f145ab16f1eb9  usr/bin/vtkWrapJava-7.1
+960f669fc66e0fad1df3962c91fedef7  usr/share/doc/libvtk7-java/copyright
+68f080e6ab094927898bb355388b6622  usr/share/java/vtk7.jar
+e32cf713dca997c20e64b0c21934fc5b  usr/share/lintian/overrides/libvtk7-java

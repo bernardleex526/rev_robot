@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from drdds/srv/LoadMap.srv
+// generated code does not contain a copyright notice
+
+
+module drdds {
+  module srv {
+    struct LoadMap_Request {
+      string map_url;
+    };
+    struct LoadMap_Response {
+      uint8 result;
+    };
+  };
+};

@@ -1,0 +1,48 @@
+=== ROS/DDS processes ===
+root        2867  0.0  0.0   6924  1772 ?        Ss   07:23   0:00 /bin/bash /opt/robot/share/node_driver/scripts/ctrlmcu_run.sh
+root        2869  0.7  0.6 2619596 110284 ?      Sl   07:23   1:19 ./ctrlmcu_node
+root        2871  0.0  0.0   6924  1884 ?        Ss   07:23   0:00 /bin/bash /opt/robot/share/node_driver/scripts/gps_run.sh
+root        2872  0.8  0.5 1924008 91680 ?       Sl   07:23   1:32 ./gps_node
+root        2875  0.0  0.0   6924  1888 ?        Ss   07:23   0:00 /bin/bash /opt/robot/share/node_driver/scripts/cpu_run.sh
+root        2876  0.9  0.5 1324984 88568 ?       Sl   07:23   1:45 ./cpu_node
+root        2879  0.0  0.0   6924  1876 ?        Ss   07:23   0:00 /bin/bash /opt/robot/share/node_driver/scripts/yesense_run.sh
+root        2880 14.8  0.5 2143264 90536 ?       Sl   07:23  27:35 ./yesense_node
+root        2887  0.0  0.0   6924  1792 ?        Ss   07:23   0:00 /bin/bash /opt/robot/share/rl_deploy/scripts/run.sh
+root        2915 18.7  1.4 4616428 235520 ?      Sl   07:23  34:42 ./rl_deploy
+root        2926  0.0  0.0   6924  1804 ?        Ss   07:23   0:00 /bin/bash /opt/robot/share/basic_server/scripts/run.sh
+root        2943  5.6  0.9 5702468 155136 ?      Sl   07:23  10:23 ./basic_server
+root        3039  0.0  0.0   6924  1968 ?        Ss   07:23   0:00 /bin/bash /opt/robot/share/lio-perception/scripts/lio_ddsnode.sh
+root        3356  0.0  0.1  24224 17800 ?        Ss   07:23   0:01 /usr/bin/python3 /opt/ros/foxy/bin/ros2 run rob_bag rob_bag
+root        3412 12.1  9.8 3647436 1587956 ?     Sl   07:23  22:32 /opt/ros/foxy/lib/rob_bag/rob_bag
+root        3501  0.0  0.0  11236  3392 ?        S    07:23   0:00 sudo chrt 35 taskset -c 5,6,7 /opt/robot/share/lio-perception/scripts/../bin/lio_ddsnode
+root        3503 12.0  0.8 2322260 141640 ?      Sl   07:23  22:15 /opt/robot/share/lio-perception/scripts/../bin/lio_ddsnode
+root        3505  0.0  0.0   6924  1876 ?        Ss   07:23   0:00 /bin/bash /opt/robot/share/node_driver/scripts/rsdriver_run.sh
+root        3509  0.0  0.0   6924  1756 ?        Ss   07:23   0:00 /bin/bash /opt/robot/share/node_driver/scripts/hsdriver_run.sh
+=== /dev/shm ===
+fast_datasharing_01.0f.c1.2f.35.0b.fb.0e.01.00.00.00_0.0.10.3
+fast_datasharing_01.0f.c1.2f.35.0b.fb.0e.01.00.00.00_0.0.11.4
+fast_datasharing_01.0f.c1.2f.35.0b.fb.0e.01.00.00.00_0.0.12.3
+fast_datasharing_01.0f.c1.2f.35.0b.fb.0e.01.00.00.00_0.0.13.4
+fast_datasharing_01.0f.c1.2f.35.0b.fb.0e.01.00.00.00_0.0.14.3
+fast_datasharing_01.0f.c1.2f.35.0b.fb.0e.01.00.00.00_0.0.15.4
+fast_datasharing_01.0f.c1.2f.35.0b.fb.0e.01.00.00.00_0.0.16.3
+fast_datasharing_01.0f.c1.2f.35.0b.fb.0e.01.00.00.00_0.0.17.4
+fast_datasharing_01.0f.c1.2f.35.0b.fb.0e.01.00.00.00_0.0.2.3
+fast_datasharing_01.0f.c1.2f.35.0b.fb.0e.01.00.00.00_0.0.3.4
+count: 206
+=== unix sockets ===
+COMMAND     PID USER   FD   TYPE             DEVICE SIZE/OFF    NODE NAME
+systemd   60915 user    1u  unix 0x0000000000000000      0t0 9349316 type=STREAM
+systemd   60915 user    2u  unix 0x0000000000000000      0t0 9349316 type=STREAM
+systemd   60915 user    3u  unix 0x0000000000000000      0t0 9349332 type=DGRAM
+systemd   60915 user   16u  unix 0x0000000000000000      0t0 9349333 /run/user/1003/systemd/notify type=DGRAM
+systemd   60915 user   17u  unix 0x0000000000000000      0t0 9349334 type=DGRAM
+systemd   60915 user   18u  unix 0x0000000000000000      0t0 9349335 type=DGRAM
+systemd   60915 user   19u  unix 0x0000000000000000      0t0 9349336 /run/user/1003/systemd/private type=STREAM
+systemd   60915 user   20u  unix 0x0000000000000000      0t0 9349337 type=STREAM
+systemd   60915 user   26u  unix 0x0000000000000000      0t0 9349341 /run/user/1003/bus type=STREAM
+systemd   60915 user   27u  unix 0x0000000000000000      0t0 9349342 /run/user/1003/gnupg/S.dirmngr type=STREAM
+systemd   60915 user   28u  unix 0x0000000000000000      0t0 9349343 /run/user/1003/gnupg/S.gpg-agent.browser type=STREAM
+systemd   60915 user   29u  unix 0x0000000000000000      0t0 9349344 /run/user/1003/gnupg/S.gpg-agent.extra type=STREAM
+systemd   60915 user   30u  unix 0x0000000000000000      0t0 9349345 /run/user/1003/gnupg/S.gpg-agent.ssh type=STREAM
+systemd   60915 user   31u  unix 0x0000000000000000      0t0 9349346 /run/user/1003/gnupg/S.gpg-agent type=STREAM

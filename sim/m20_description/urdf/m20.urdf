@@ -1,0 +1,219 @@
+<?xml version="1.0"?>
+<robot name="m20">
+  <material name="grey"><color rgba="0.7 0.7 0.7 1"/></material>
+  <link name="base_link">
+    <inertial>
+      <origin xyz="0.00355106 0.00165076 -0.00346462" rpy="0 0 0"/>
+      <mass value="15.882"/>
+      <inertia ixx="0.087919" iyy="0.533522" izz="0.563492" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+  <link name="fl_hipx">
+    <inertial>
+      <origin xyz="-0.0111893 0.00891693 0.000405666" rpy="0 0 0"/>
+      <mass value="0.259964"/>
+      <inertia ixx="0.000374402" iyy="0.000286289" izz="0.000179309" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+  <joint name="fl_hipx_joint" type="revolute">
+    <parent link="base_link"/><child link="fl_hipx"/>
+    <origin xyz="0.3141 0.0685 0" rpy="0 0 0"/>
+    <axis xyz="-1 0 0"/>
+    <limit lower="-0.436" upper="0.611" effort="76.4" velocity="45"/>
+  </joint>
+  <link name="fl_hipy">
+    <inertial>
+      <origin xyz="-0.00199375 0.098439 -0.130664" rpy="0 0 0"/>
+      <mass value="2.618"/>
+      <inertia ixx="0.0410181" iyy="0.0408067" izz="0.00297328" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+  <joint name="fl_hipy_joint" type="revolute">
+    <parent link="fl_hipx"/><child link="fl_hipy"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <axis xyz="0 -1 0"/>
+    <limit lower="-2.286" upper="2.583" effort="76.4" velocity="45"/>
+  </joint>
+  <link name="fl_knee">
+    <inertial>
+      <origin xyz="0.00341917 0.00269124 -0.181265" rpy="0 0 0"/>
+      <mass value="1.145"/>
+      <inertia ixx="0.0121304" iyy="0.0117245" izz="0.000948105" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+  <joint name="fl_knee_joint" type="revolute">
+    <parent link="fl_hipy"/><child link="fl_knee"/>
+    <origin xyz="0 0.0984 -0.25" rpy="0 0 0"/>
+    <axis xyz="0 -1 0"/>
+    <limit lower="-2.809" upper="2.792" effort="76.4" velocity="45"/>
+  </joint>
+  <link name="fl_wheel">
+    <inertial>
+      <origin xyz="-3.11398e-07 0.000279002 5.70329e-07" rpy="0 0 0"/>
+      <mass value="0.638"/>
+      <inertia ixx="0.002853" iyy="0.001535" izz="0.001535" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+  <joint name="fl_wheel_joint" type="revolute">
+    <parent link="fl_knee"/><child link="fl_wheel"/>
+    <origin xyz="0 0.059676 -0.25" rpy="0 0 0"/>
+    <axis xyz="0 -1 0"/>
+    <limit lower="-1e9" upper="1e9" effort="21.6" velocity="100"/>
+  </joint>
+  <link name="fr_hipx">
+    <inertial>
+      <origin xyz="-0.0110901 -0.00875035 0.000521421" rpy="0 0 0"/>
+      <mass value="0.259964"/>
+      <inertia ixx="0.000374402" iyy="0.000286289" izz="0.000179309" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+  <joint name="fr_hipx_joint" type="revolute">
+    <parent link="base_link"/><child link="fr_hipx"/>
+    <origin xyz="0.3141 -0.0685 0" rpy="0 0 0"/>
+    <axis xyz="-1 0 0"/>
+    <limit lower="-0.611" upper="0.436" effort="76.4" velocity="45"/>
+  </joint>
+  <link name="fr_hipy">
+    <inertial>
+      <origin xyz="-0.00229992 -0.0989709 -0.130925" rpy="0 0 0"/>
+      <mass value="2.618"/>
+      <inertia ixx="0.0407542" iyy="0.040538" izz="0.00301281" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+  <joint name="fr_hipy_joint" type="revolute">
+    <parent link="fr_hipx"/><child link="fr_hipy"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <axis xyz="0 -1 0"/>
+    <limit lower="-2.286" upper="2.583" effort="76.4" velocity="45"/>
+  </joint>
+  <link name="fr_knee">
+    <inertial>
+      <origin xyz="0.00354945 -0.00247884 -0.180089" rpy="0 0 0"/>
+      <mass value="1.145"/>
+      <inertia ixx="0.0122564" iyy="0.0118448" izz="0.000951718" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+  <joint name="fr_knee_joint" type="revolute">
+    <parent link="fr_hipy"/><child link="fr_knee"/>
+    <origin xyz="0 -0.0984 -0.25" rpy="0 0 0"/>
+    <axis xyz="0 -1 0"/>
+    <limit lower="-2.809" upper="2.792" effort="76.4" velocity="45"/>
+  </joint>
+  <link name="fr_wheel">
+    <inertial>
+      <origin xyz="-6.47327e-07 -0.000279012 -4.6242e-08" rpy="0 0 0"/>
+      <mass value="0.638"/>
+      <inertia ixx="0.002853" iyy="0.001535" izz="0.001535" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+  <joint name="fr_wheel_joint" type="revolute">
+    <parent link="fr_knee"/><child link="fr_wheel"/>
+    <origin xyz="0 -0.059676 -0.25" rpy="0 0 0"/>
+    <axis xyz="0 -1 0"/>
+    <limit lower="-1e9" upper="1e9" effort="21.6" velocity="100"/>
+  </joint>
+  <link name="hl_hipx">
+    <inertial>
+      <origin xyz="0.0110901 0.00875014 0.000524884" rpy="0 0 0"/>
+      <mass value="0.259964"/>
+      <inertia ixx="0.000374402" iyy="0.000286289" izz="0.000179309" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+  <joint name="hl_hipx_joint" type="revolute">
+    <parent link="base_link"/><child link="hl_hipx"/>
+    <origin xyz="-0.3141 0.0685 0" rpy="0 0 0"/>
+    <axis xyz="-1 0 0"/>
+    <limit lower="-0.436" upper="0.611" effort="76.4" velocity="45"/>
+  </joint>
+  <link name="hl_hipy">
+    <inertial>
+      <origin xyz="0.00204343 0.0990227 -0.130697" rpy="0 0 0"/>
+      <mass value="2.618"/>
+      <inertia ixx="0.0408376" iyy="0.0406211" izz="0.00299727" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+  <joint name="hl_hipy_joint" type="revolute">
+    <parent link="hl_hipx"/><child link="hl_hipy"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <axis xyz="0 -1 0"/>
+    <limit lower="-2.583" upper="2.286" effort="76.4" velocity="45"/>
+  </joint>
+  <link name="hl_knee">
+    <inertial>
+      <origin xyz="-0.00354945 0.00247885 -0.180089" rpy="0 0 0"/>
+      <mass value="1.145"/>
+      <inertia ixx="0.0122564" iyy="0.0118448" izz="0.000951718" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+  <joint name="hl_knee_joint" type="revolute">
+    <parent link="hl_hipy"/><child link="hl_knee"/>
+    <origin xyz="0 0.0984 -0.25" rpy="0 0 0"/>
+    <axis xyz="0 -1 0"/>
+    <limit lower="-2.792" upper="2.809" effort="76.4" velocity="45"/>
+  </joint>
+  <link name="hl_wheel">
+    <inertial>
+      <origin xyz="-6.07889e-07 0.000279009 2.1049e-07" rpy="0 0 0"/>
+      <mass value="0.638"/>
+      <inertia ixx="0.002853" iyy="0.001535" izz="0.001535" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+  <joint name="hl_wheel_joint" type="revolute">
+    <parent link="hl_knee"/><child link="hl_wheel"/>
+    <origin xyz="0 0.059676 -0.25" rpy="0 0 0"/>
+    <axis xyz="0 -1 0"/>
+    <limit lower="-1e9" upper="1e9" effort="21.6" velocity="100"/>
+  </joint>
+  <link name="hr_hipx">
+    <inertial>
+      <origin xyz="0.0110902 -0.00875012 0.000524937" rpy="0 0 0"/>
+      <mass value="0.259964"/>
+      <inertia ixx="0.000374402" iyy="0.000286289" izz="0.000179309" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+  <joint name="hr_hipx_joint" type="revolute">
+    <parent link="base_link"/><child link="hr_hipx"/>
+    <origin xyz="-0.3141 -0.0685 0" rpy="0 0 0"/>
+    <axis xyz="-1 0 0"/>
+    <limit lower="-0.611" upper="0.436" effort="76.4" velocity="45"/>
+  </joint>
+  <link name="hr_hipy">
+    <inertial>
+      <origin xyz="0.001992 -0.0983704 -0.130561" rpy="0 0 0"/>
+      <mass value="2.618"/>
+      <inertia ixx="0.0410109" iyy="0.0408028" izz="0.00297526" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+  <joint name="hr_hipy_joint" type="revolute">
+    <parent link="hr_hipx"/><child link="hr_hipy"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <axis xyz="0 -1 0"/>
+    <limit lower="-2.583" upper="2.286" effort="76.4" velocity="45"/>
+  </joint>
+  <link name="hr_knee">
+    <inertial>
+      <origin xyz="-0.00341053 -0.00270202 -0.181287" rpy="0 0 0"/>
+      <mass value="1.145"/>
+      <inertia ixx="0.0121352" iyy="0.0117289" izz="0.000948904" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+  <joint name="hr_knee_joint" type="revolute">
+    <parent link="hr_hipy"/><child link="hr_knee"/>
+    <origin xyz="0 -0.0984 -0.25" rpy="0 0 0"/>
+    <axis xyz="0 -1 0"/>
+    <limit lower="-2.792" upper="2.809" effort="76.4" velocity="45"/>
+  </joint>
+  <link name="hr_wheel">
+    <inertial>
+      <origin xyz="6.09746e-07 -0.000279009 2.01314e-07" rpy="0 0 0"/>
+      <mass value="0.638"/>
+      <inertia ixx="0.002853" iyy="0.001535" izz="0.001535" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+  <joint name="hr_wheel_joint" type="revolute">
+    <parent link="hr_knee"/><child link="hr_wheel"/>
+    <origin xyz="0 -0.059676 -0.25" rpy="0 0 0"/>
+    <axis xyz="0 -1 0"/>
+    <limit lower="-1e9" upper="1e9" effort="21.6" velocity="100"/>
+  </joint>
+</robot>

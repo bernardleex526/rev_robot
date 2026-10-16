@@ -1,0 +1,17 @@
+1909ef4383d0fd86e4cbdb61d21f63ec  usr/sbin/arp-fingerprint
+b05846fd2e9cb7f58465f65c8d6595d2  usr/sbin/arp-scan
+9bb3e1c210fec98eca535bb4b7f90100  usr/sbin/get-iab
+dcd5f0c608f6d67ef08d4b2bc60570d3  usr/sbin/get-oui
+e087141d0393b11fdbb4103c71423ec8  usr/share/arp-scan/ieee-iab.txt
+76d079c417ea7323648db4a9c16bf33d  usr/share/arp-scan/ieee-oui.txt
+c3ebb3991d3dc33dd688d0879ba3814d  usr/share/arp-scan/mac-vendor.txt
+a4012ad6fb8733a23d85947bc0ca1e1b  usr/share/doc/arp-scan/NEWS.gz
+43f37b2094db95bb8016248a52b3e542  usr/share/doc/arp-scan/README.md
+804d6e798c1ea2ec6bb8976cb8dc75c7  usr/share/doc/arp-scan/TODO
+f11476f4a32f87aebcb5b6c08a9ff8f4  usr/share/doc/arp-scan/changelog.Debian.gz
+40695312ed535676125dcd8bba6674d6  usr/share/doc/arp-scan/copyright
+c744db606e91c30142ed32a434879c46  usr/share/man/man1/arp-fingerprint.1.gz
+c575a69bb31206ed52af781e7eeede13  usr/share/man/man1/arp-scan.1.gz
+a11ffde804a41b6889d8a00bb2b1e18b  usr/share/man/man1/get-iab.1.gz
+1fe722454d9ad4a1592ebf1817af958f  usr/share/man/man1/get-oui.1.gz
+b55a2ea0c85f4abff0c83982d57f3ea2  usr/share/man/man5/mac-vendor.5.gz

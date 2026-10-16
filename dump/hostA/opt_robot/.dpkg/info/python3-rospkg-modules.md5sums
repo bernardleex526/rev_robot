@@ -1,0 +1,15 @@
+568f0a10e54dfbb38fb71193a12864f0  usr/lib/python3/dist-packages/rospkg/__init__.py
+a3b6b750ab2325870c1f4e8b8f477f09  usr/lib/python3/dist-packages/rospkg/common.py
+e8d2323870d23cd6ade66935ea32749c  usr/lib/python3/dist-packages/rospkg/distro.py
+dd43e3e2ab578ff7f0182ec2de470e45  usr/lib/python3/dist-packages/rospkg/environment.py
+d2dbe1cc78afcfeb9a435f87d8a55066  usr/lib/python3/dist-packages/rospkg/manifest.py
+3910363703f787df15dc1ee869c2d8ff  usr/lib/python3/dist-packages/rospkg/os_detect.py
+3d4a7b9bfb246a1ca2921bb5b5a8400f  usr/lib/python3/dist-packages/rospkg/rospack.py
+b5d4cf419414725baa51a35fb60a9cae  usr/lib/python3/dist-packages/rospkg/rosversion.py
+260bc803d3015b12eabce0f39cf88dac  usr/lib/python3/dist-packages/rospkg/stack.py
+3fb7e62cc240430829e012cbbc54114b  usr/lib/python3/dist-packages/rospkg_modules-1.6.0.egg-info/PKG-INFO
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/rospkg_modules-1.6.0.egg-info/dependency_links.txt
+8e2bc2dc9005c2cc190073f0a880121f  usr/lib/python3/dist-packages/rospkg_modules-1.6.0.egg-info/entry_points.txt
+7c1b905900d48a7029537b9d8afa95a0  usr/lib/python3/dist-packages/rospkg_modules-1.6.0.egg-info/requires.txt
+472f578c788a7de5dd23eee242177935  usr/lib/python3/dist-packages/rospkg_modules-1.6.0.egg-info/top_level.txt
+a635a7d3d6a80f9114c8f4d711d041ff  usr/share/doc/python3-rospkg-modules/changelog.Debian.gz

@@ -1,0 +1,7 @@
+521d9465efda1d59a22c665215f0394f  usr/lib/aarch64-linux-gnu/libhdf5_serial.so.103.0.0
+6b6acb384fbc380f5711fd2c476e8a62  usr/lib/aarch64-linux-gnu/libhdf5_serial_fortran.so.100.1.2
+aabe65f2861ad7bcf666764f74b8e24e  usr/lib/aarch64-linux-gnu/libhdf5_serial_hl.so.100.1.1
+eae860c20414bee2e8632cd25797b949  usr/lib/aarch64-linux-gnu/libhdf5_serialhl_fortran.so.100.0.3
+9d4e8ef0e8d8cc1aa16114cae959123d  usr/share/doc/libhdf5-103/README.Debian
+5ef61a20c90939908bffbb6300cce773  usr/share/doc/libhdf5-103/changelog.Debian.gz
+d7ca0ec69ef78f3811c6dc00cb8d5eec  usr/share/doc/libhdf5-103/copyright

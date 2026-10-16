@@ -1,0 +1,13 @@
+/.
+/lib
+/lib/aarch64-linux-gnu
+/lib/aarch64-linux-gnu/security
+/lib/aarch64-linux-gnu/security/pam_pwdfile.so
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libpam-pwdfile
+/usr/share/doc/libpam-pwdfile/NEWS.Debian.gz
+/usr/share/doc/libpam-pwdfile/README
+/usr/share/doc/libpam-pwdfile/changelog.Debian.gz
+/usr/share/doc/libpam-pwdfile/copyright

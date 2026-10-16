@@ -1,0 +1,72 @@
+#!/bin/bash
+set -e
+
+echo "rob_bag: postinst called with: $1"
+
+case "$1" in
+    configure)
+        # 新安装或升级后的配置
+        echo "rob_bag: Configuring package..."
+        
+        if [ -f "/opt/ros/foxy/lib/systemd/system/rob_bag.service" ]; then
+            echo "rob_bag: Setting up systemd service..."
+            
+            # 确保systemd目录存在
+            mkdir -p /etc/systemd/system
+            
+            # 停止旧版本可能运行的服务
+            if systemctl is-active --quiet rob_bag.service; then
+                echo "rob_bag: Stopping old version service..."
+                systemctl stop rob_bag.service
+                echo "rob_bag: Service stopped successfully"
+            fi
+            
+            # 禁用旧版本的自启动状态(在复制文件之前)
+            echo "rob_bag: Disabling autostart from previous version..."
+            systemctl disable rob_bag.service 2>/dev/null || true
+            echo "rob_bag: Autostart disabled"
+            
+            # 复制服务文件到systemd目录(使用cp而非symlink,便于enable/disable管理)
+            echo "rob_bag: Installing service file..."
+            cp /opt/ros/foxy/lib/systemd/system/rob_bag.service /etc/systemd/system/rob_bag.service
+            echo "rob_bag: Service file copied"
+            
+            # 重新加载systemd配置
+            echo "rob_bag: Reloading systemd configuration..."
+            systemctl daemon-reload
+            echo "rob_bag: Systemd configuration reloaded"
+            
+            # 启动服务(安装/升级后自启一次,但不设置开机自启)
+            echo "rob_bag: Starting service..."
+            if systemctl start rob_bag.service 2>/dev/null; then
+                echo "rob_bag: Service started successfully"
+            else
+                echo "警告: Failed to start rob_bag service" >&2
+                echo "rob_bag: 请检查服务配置和依赖"
+            fi
+            
+            echo "rob_bag: Service installation complete (autostart disabled)"
+        else
+            echo "错误: 未找到服务文件 /opt/ros/foxy/lib/systemd/system/rob_bag.service" >&2
+            echo "rob_bag: 请检查包是否完整安装"
+        fi
+        ;;
+        
+    abort-upgrade|abort-remove|abort-deconfigure)
+        # 安装过程被中止，进行清理
+        echo "rob_bag: Installation aborted (phase: $1), cleaning up..."
+        # 移除可能已创建的服务链接
+        if [ -f "/etc/systemd/system/rob_bag.service" ]; then
+            rm -f /etc/systemd/system/rob_bag.service
+            systemctl daemon-reload 2>/dev/null || true
+            echo "rob_bag: Removed service link"
+        fi
+        ;;
+        
+    *)
+        echo "rob_bag: postinst called with unknown argument: $1" >&2
+        exit 1
+        ;;
+esac
+
+exit 0

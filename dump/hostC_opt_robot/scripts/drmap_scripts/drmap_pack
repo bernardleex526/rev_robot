@@ -1,0 +1,142 @@
+#!/bin/bash
+
+SCRIPT_PATH=$(dirname "$(readlink -f "$0")")
+# echo "debug $SCRIPT_PATH"
+source $SCRIPT_PATH/../config.sh
+if [ $PROGRAM_VERSION = "dds" ]; then
+    destination="/home/user/"  # 默认路径
+elif [ "$PROGRAM_VERSION" = "noetic" ]; then
+    destination="/home/ysc/Downloads/"  # 默认路径
+else
+    echo "${RED}[ERROR] 未知的程序版本参数：${PROGRAM_VERSION}${RESET}"
+fi
+
+
+# 定义颜色代码
+RED=$(tput setaf 1)
+GREEN=$(tput setaf 2)
+YELLOW=$(tput setaf 3)
+BLUE=$(tput setaf 4)
+MAGENTA=$(tput setaf 5)
+CYAN=$(tput setaf 6)
+WHITE=$(tput setaf 7)
+RESET=$(tput sgr0)
+
+usage() {
+    echo "用法：" 
+    echo "  drmap pack [-options] [MAP1 MAP2]"
+    echo "  默认用法为压缩map参数列表中的地图并备份到目的文件夹（默认为“/home/user”，可由-d指定）"
+    echo "  -d  DESTINATION    指定地图文件压缩后备份的目标文件夹为DESTINATION"
+    echo "  -h                 显示帮助信息并退出"
+    echo "  -r  REMOTE_DEST    指定压缩并备份后传输到远程地址REMOTE_DEST（默认不传输）"
+}
+
+while getopts :d:hr: opt
+do
+    case "$opt" in
+        d) destination=$OPTARG
+        if [[ $destination =~ ^- ]] || [ ! $destination ]
+        then
+            echo "${RED}[ERROR] -d 选项需指定参数${RESET}" >& 2
+            usage
+            exit 1
+        fi
+        ;;
+        h)
+        usage
+        exit 0
+        ;;
+        r) remote_destination=$OPTARG
+        if [[ $remote_destination =~ ^- ]] || [ ! $remote_destination ]
+        then
+            echo "${RED}[ERROR] -r 选项需指定参数${RESET}" >& 2
+            usage
+            exit 1
+        fi
+        ;;
+        :)
+        echo "${RED}[ERROR] -$OPTARG 选项需指定参数${RESET}" >& 2
+        usage
+        exit 1
+        ;;
+        \?) 
+        echo "${RED}[ERROR] 未知选项 -$OPTARG${RESET}" >& 2
+        usage
+        exit 1
+        ;;
+        # *) echo "Unknown option: -$opt" ;;
+    esac
+done
+
+# 检查destination是否规范
+cur_path=$(pwd)
+cd $destination
+destination=$(pwd)/
+cd $cur_path
+
+if [ ! -d "$destination" ]; then
+    echo "${RED}[ERROR] 压缩地图存放目标路径 $destination 不是有效的文件夹地址，请正确给定${RESET}" >& 2
+    exit 1
+fi
+
+map_list_count=0
+map_list=()
+zip_map_file() {
+    map_path=$1
+    echo "[INFO] 正在压缩地图 $map_path，请耐心等待..."
+    cd $cur_path
+    if [ -e $map_path ]; then
+        #echo "地图路径 $map_path 存在"
+        cd $(dirname $map_path)
+        if [ -L $(basename $map_path) ]; then           # 是软链接
+            #echo $(dirname $map_path)
+            link_path=$(readlink $(basename $map_path))
+            #echo "地图路径是软链接，软链接路径为： $link_path"
+            if [[ ! $link_path =~ ^/ ]]; then
+                link_path=$(pwd)/$link_path
+            fi
+            map_path=$link_path
+            echo "[INFO] 地图路径是软链接，实际路径为： $map_path"
+        else
+            map_path=$(pwd)/$(basename $map_path)
+        fi
+        # 检查地图路径是否是有效文件夹路径
+        if [ ! -d "$map_path" ]; then
+            echo "${RED}[ERROR] 地图路径 $map_path 不是有效的文件夹地址，请正确给定${RESET}" >& 2
+            exit 1
+        fi
+
+        map_name=$(basename "$map_path")
+        mkdir -p $destination
+        # echo "cur_path: $cur_path"
+        cd $map_path/../
+        rm -rf $destination$map_name.zip
+        zip -q -r $destination$map_name.zip $map_name -x $map_name/loc_map/* -x $map_name/jueying.pcd.covar -x $map_name/jueying.pcd.origin
+        map_list[map_list_count]=$destination$map_name.zip
+        map_list_count=$[ $map_list_count + 1 ]
+        echo "[INFO] 已将地图打包为 $map_name.zip，存放于 $destination 目录下"
+        #cd $destination
+        
+    else
+        echo "${RED}[ERROR] 地图路径 $map_path 不存在或已失效.${RESET}" >& 2
+    fi
+}
+
+shift $[ $OPTIND - 1 ]
+
+if [ $# -eq 0 ]     # 未指定地图，压缩默认地图
+then
+    # echo "[ERROR] ${RED}未指定压缩地图文件夹名参数${RESET}"
+    zip_map_file "$MAPS_PATH/active/"
+fi
+
+for map_path in "$@"
+do
+    zip_map_file $map_path
+done
+cd $cur_path
+# 如有远程传输需求，传输到远程
+if [[ -n $remote_destination ]]; then
+    echo "[INFO] 将打包的所有文件：${map_list[*]} 传输到远程：$remote_destination"
+    scp ${map_list[*]} $remote_destination
+fi

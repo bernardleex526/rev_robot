@@ -1,0 +1,11 @@
+libyaml-cpp.so.0.6
+libpthread.so.0
+libpcap.so.0.8
+liblog4cplus.so.2
+libdrdds.so.1
+libfastrtps.so.2.14
+libstdc++.so.6
+libm.so.6
+libgcc_s.so.1
+libc.so.6
+ld-linux-aarch64.so.1

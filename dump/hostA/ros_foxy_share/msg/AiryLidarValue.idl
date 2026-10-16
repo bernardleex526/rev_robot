@@ -1,0 +1,30 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from drdds/msg/AiryLidarValue.msg
+// generated code does not contain a copyright notice
+
+
+module drdds {
+  module msg {
+    struct AiryLidarValue {
+      @verbatim (language="comment", text=
+        " 是否运行")
+      boolean is_runing;
+
+      @verbatim (language="comment", text=
+        " 错误码")
+      int32 error_code;
+
+      @verbatim (language="comment", text=
+        " 点云数量")
+      int32 cld_size;
+
+      @verbatim (language="comment", text=
+        " 温度")
+      float temp;
+
+      @verbatim (language="comment", text=
+        " 电压")
+      float voltage;
+    };
+  };
+};

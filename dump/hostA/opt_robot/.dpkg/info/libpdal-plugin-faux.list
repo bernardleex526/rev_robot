@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/lib
+/usr/lib/libpdal_plugin_kernel_fauxplugin.so.10
+/usr/share
+/usr/share/doc
+/usr/share/doc/libpdal-plugin-faux
+/usr/share/doc/libpdal-plugin-faux/copyright
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libpdal-plugin-faux
+/usr/lib/libpdal_plugin_kernel_fauxplugin.so
+/usr/lib/libpdal_plugin_kernel_fauxplugin.so.9
+/usr/share/doc/libpdal-plugin-faux/changelog.Debian.gz

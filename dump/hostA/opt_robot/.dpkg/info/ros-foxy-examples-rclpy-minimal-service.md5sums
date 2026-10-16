@@ -1,0 +1,17 @@
+5649c6463412fa6eb3627c0affe231de  opt/ros/foxy/lib/examples_rclpy_minimal_service/service
+755d7708012a3b0e4c1ad3f5a398ecbc  opt/ros/foxy/lib/examples_rclpy_minimal_service/service_member_function
+b827f3e9b50901a83ec73f5e901ebdb9  opt/ros/foxy/lib/python3.8/site-packages/examples_rclpy_minimal_service-0.9.4.egg-info/PKG-INFO
+68b329da9893e34099c7d8ad5cb9c940  opt/ros/foxy/lib/python3.8/site-packages/examples_rclpy_minimal_service-0.9.4.egg-info/dependency_links.txt
+69b813e5b84cb1ae280ca98b08ddcf1f  opt/ros/foxy/lib/python3.8/site-packages/examples_rclpy_minimal_service-0.9.4.egg-info/entry_points.txt
+cd12f5daaa1f8d7023f5d75a982d773d  opt/ros/foxy/lib/python3.8/site-packages/examples_rclpy_minimal_service-0.9.4.egg-info/requires.txt
+eec85b4adbbca48c46e568c103f5f9af  opt/ros/foxy/lib/python3.8/site-packages/examples_rclpy_minimal_service-0.9.4.egg-info/top_level.txt
+68b329da9893e34099c7d8ad5cb9c940  opt/ros/foxy/lib/python3.8/site-packages/examples_rclpy_minimal_service-0.9.4.egg-info/zip-safe
+d41d8cd98f00b204e9800998ecf8427e  opt/ros/foxy/lib/python3.8/site-packages/examples_rclpy_minimal_service/__init__.py
+29d496ba88779afc90f378f08df71698  opt/ros/foxy/lib/python3.8/site-packages/examples_rclpy_minimal_service/__pycache__/__init__.cpython-38.pyc
+124ace34fa3be1f3f53545a60bc8e940  opt/ros/foxy/lib/python3.8/site-packages/examples_rclpy_minimal_service/__pycache__/service.cpython-38.pyc
+736c18247f9608bc9221dc13bbd6d106  opt/ros/foxy/lib/python3.8/site-packages/examples_rclpy_minimal_service/__pycache__/service_member_function.cpython-38.pyc
+1e4a649193d4d58e5f94899dd56e035a  opt/ros/foxy/lib/python3.8/site-packages/examples_rclpy_minimal_service/service.py
+e9541407566815d6ccea07ef0f577fcf  opt/ros/foxy/lib/python3.8/site-packages/examples_rclpy_minimal_service/service_member_function.py
+d41d8cd98f00b204e9800998ecf8427e  opt/ros/foxy/share/ament_index/resource_index/packages/examples_rclpy_minimal_service
+74defa4c058835ea616b3e95a9eb921d  opt/ros/foxy/share/examples_rclpy_minimal_service/package.xml
+ebc95cda0655b31841937aeaf48cd89b  usr/share/doc/ros-foxy-examples-rclpy-minimal-service/changelog.Debian.gz

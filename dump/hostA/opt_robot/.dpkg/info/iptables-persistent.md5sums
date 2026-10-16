@@ -1,0 +1,3 @@
+efa38437dfaf00cb7e3dd14dc520ca65  usr/share/doc/iptables-persistent/copyright
+326fe780566180061593c29540fd06f7  usr/share/netfilter-persistent/plugins.d/15-ip4tables
+970920b9cfe9eb19c761e6e2f1996ec2  usr/share/netfilter-persistent/plugins.d/25-ip6tables

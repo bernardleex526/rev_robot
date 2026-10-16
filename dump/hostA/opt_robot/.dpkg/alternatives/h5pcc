@@ -1,0 +1,15 @@
+auto
+/usr/bin/h5pcc
+h5pcc.1.gz
+/usr/share/man/man1/h5pcc.1.gz
+h5pfc
+/usr/bin/h5pfc
+h5pfc.1.gz
+/usr/share/man/man1/h5pfc.1.gz
+
+/usr/bin/h5pcc.openmpi
+50
+/usr/share/man/man1/h5pcc.openmpi.1.gz
+/usr/bin/h5pfc.openmpi
+/usr/share/man/man1/h5pfc.openmpi.1.gz
+

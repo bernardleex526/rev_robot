@@ -1,0 +1,11 @@
+#!/bin/sh
+
+set -e
+
+# Setup alternatives
+update-alternatives --remove-all iptables.service
+
+# Automatically added by dh_installdeb/12.10ubuntu1
+dpkg-maintscript-helper rm_conffile /etc/init.d/iptables-persistent 1\~ -- "$@"
+# End automatically added section
+

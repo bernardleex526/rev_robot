@@ -1,0 +1,15 @@
+bcdc969b9a8df2a2ee77585e60c00452  usr/lib/python3/dist-packages/lz4-3.0.2+dfsg.egg-info/PKG-INFO
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/lz4-3.0.2+dfsg.egg-info/dependency_links.txt
+a5e3bf5daa924ca5738b8d26e827ae69  usr/lib/python3/dist-packages/lz4-3.0.2+dfsg.egg-info/requires.txt
+194b36a8466e4650490040d599b09c0e  usr/lib/python3/dist-packages/lz4-3.0.2+dfsg.egg-info/top_level.txt
+f451087228223947909d5ee7b62cf21e  usr/lib/python3/dist-packages/lz4/__init__.py
+27e92b5e25c10b872517da48a44bddf1  usr/lib/python3/dist-packages/lz4/_version.cpython-38-aarch64-linux-gnu.so
+ba4e036d2ef78444a2942f43557f6cd1  usr/lib/python3/dist-packages/lz4/block/__init__.py
+7c0b8cf5ec3e9ea0eb82e564a89dc87f  usr/lib/python3/dist-packages/lz4/block/_block.cpython-38-aarch64-linux-gnu.so
+cadcad69ce7c8c43cd72ce3d385ee146  usr/lib/python3/dist-packages/lz4/frame/__init__.py
+95258c2bda88e211e48cf387e7481166  usr/lib/python3/dist-packages/lz4/frame/_frame.cpython-38-aarch64-linux-gnu.so
+12674350c01a60a265b0e1386bfc4adb  usr/lib/python3/dist-packages/lz4/stream/__init__.py
+b5d717928deab729b9fd9111bcfd574d  usr/lib/python3/dist-packages/lz4/stream/_stream.cpython-38-aarch64-linux-gnu.so
+03e606702bdad963285cab501ee9f7fc  usr/lib/python3/dist-packages/lz4/version.py
+9b91dcec54821375a11ae7af322a56fa  usr/share/doc/python3-lz4/changelog.Debian.gz
+9d87962eb253679ae195f16d97924633  usr/share/doc/python3-lz4/copyright

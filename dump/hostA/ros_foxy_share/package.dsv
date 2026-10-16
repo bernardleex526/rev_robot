@@ -1,0 +1,4 @@
+source;share/drdds-ros2-msgs/local_setup.bash
+source;share/drdds-ros2-msgs/local_setup.dsv
+source;share/drdds-ros2-msgs/local_setup.sh
+source;share/drdds-ros2-msgs/local_setup.zsh

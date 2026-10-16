@@ -1,0 +1,4 @@
+f453c7da28b2395f7922df797ac5a3bb  usr/include/opencv4/opencv2/superres.hpp
+3ca9a361fa291e137521e76bc5118d1d  usr/include/opencv4/opencv2/superres/optical_flow.hpp
+decc511897872bab53dfb04123f99d47  usr/lib/aarch64-linux-gnu/libopencv_superres.a
+145c4b15d9cf5c5ca48742cc9a3e22f0  usr/share/doc/libopencv-superres-dev/copyright

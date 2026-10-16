@@ -1,0 +1,80 @@
+enum _Ios_Iostate
+    _S_goodbit = 0
+    _S_badbit = 1
+    _S_eofbit = 2
+    _S_failbit = 4
+    _S_ios_iostate_end = 65536
+    _S_ios_iostate_max = 2147483647
+    _S_ios_iostate_min = -2147483648
+enum _StateT
+    _S_state_normal = 0
+    _S_state_in_brace = 1
+    _S_state_in_bracket = 2
+enum RobotName
+    X30 = 0
+    Lite3 = 1
+    P50 = 2
+    K1C = 3
+    K1W = 10
+    M20 = 11
+enum RobotType
+    Quadruped = 0
+    QuadrupedWheel = 1
+    QuadrupedArm = 2
+    Humanoid = 3
+enum RobotMotionState
+    WaitingForStand = 0
+    StandingUp = 1
+    JointDamping = 2
+    StartDamping = 3
+    LieDown = 4
+    SetZero = 5
+    CarMove = 16
+    RLControlMode = 17
+    JointTest = 18
+    SdkControlMode = 100
+    DampingLiedown = 4097
+enum RobotGaitType
+    BasicFlat = 4097
+    BasicPlat = 4098
+    BasicStair = 4099
+    BackKnee = 4100
+    Stand = 4101
+    ExtreForward = 8193
+    ExtreBip = 8194
+    ExtreInvBip = 8195
+    ExtreJump = 8196
+    NaviCharge = 12289
+    NaviFlat = 12290
+    NaviStair = 12291
+    NaviFinetune = 12292
+    NaviOrienteer = 12293
+    HGap = 20481
+    HStair = 20482
+    DGap = 20483
+    SixAxisStand = 61441
+    StepMove = 61442
+    RiseAgain = 61443
+enum StateName
+    kInvalid = -1
+    kIdle = 0
+    kStandUp = 1
+    kJointDamping = 2
+    kStartDamping = 3
+    kLieDown = 4
+    kSetZero = 5
+    kChargeLieDown = 6
+    kCarMove = 16
+    kRLControl = 17
+    kJointTest = 18
+    kSdkControl = 100
+enum InstanceStateKind
+    ALIVE_INSTANCE_STATE = 1
+    NOT_ALIVE_DISPOSED_INSTANCE_STATE = 2
+    NOT_ALIVE_NO_WRITERS_INSTANCE_STATE = 4
+enum SampleStateKind
+    READ_SAMPLE_STATE = 1
+    NOT_READ_SAMPLE_STATE = 2
+enum ViewStateKind
+    NEW_VIEW_STATE = 1
+    NOT_NEW_VIEW_STATE = 2

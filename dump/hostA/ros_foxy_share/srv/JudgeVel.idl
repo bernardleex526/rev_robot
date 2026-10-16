@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from drdds/srv/JudgeVel.srv
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Twist.idl"
+
+module drdds {
+  module srv {
+    struct JudgeVel_Request {
+      geometry_msgs::msg::Twist vel_input;
+
+      double dt_input;
+
+      double length_input;
+
+      double width_input;
+    };
+    struct JudgeVel_Response {
+      boolean result;
+    };
+  };
+};

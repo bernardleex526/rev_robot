@@ -1,0 +1,11 @@
+[Unit]
+Description=Bind eth0 IRQs to RK3588 big cores
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/ca9b-eth0-irq-affinity.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

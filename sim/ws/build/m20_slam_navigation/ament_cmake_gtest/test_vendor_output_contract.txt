@@ -1,0 +1,23 @@
+-- run_test.py: invoking following command in '/home/lee/rea/sim/ws/build/m20_slam_navigation':
+ - /home/lee/rea/sim/ws/build/m20_slam_navigation/test_vendor_output_contract --gtest_output=xml:/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_vendor_output_contract.gtest.xml
+
+Running main() from /opt/ros/humble/src/gtest_vendor/src/gtest_main.cc
+[==========] Running 3 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 3 tests from VendorOutputContract
+[ RUN      ] VendorOutputContract.BodyCloudPreservesRingAndRelativeMilliseconds
+[       OK ] VendorOutputContract.BodyCloudPreservesRingAndRelativeMilliseconds (3 ms)
+[ RUN      ] VendorOutputContract.AlignedCloudCarriesPlaneAndDownsampledRing
+[       OK ] VendorOutputContract.AlignedCloudCarriesPlaneAndDownsampledRing (1 ms)
+[ RUN      ] VendorOutputContract.DisabledAuxiliaryOutputsMatchNativeRuntime
+[       OK ] VendorOutputContract.DisabledAuxiliaryOutputsMatchNativeRuntime (0 ms)
+[----------] 3 tests from VendorOutputContract (4 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test suite ran. (4 ms total)
+[  PASSED  ] 3 tests.
+
+
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_vendor_output_contract.gtest.xml'
+-- run_test.py: verify result file '/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_vendor_output_contract.gtest.xml'

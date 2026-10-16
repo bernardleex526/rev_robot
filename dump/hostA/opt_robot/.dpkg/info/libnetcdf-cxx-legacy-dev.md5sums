@@ -1,0 +1,12 @@
+b8845787f20daf0326a1a87c5c22f558  usr/include/ncvalues.h
+3620599054a175c4510d4ab5e05efb76  usr/include/netcdf.hh
+a6ddc30912c1a8243b85dd834367743d  usr/include/netcdfcpp.h
+e2631f101427886d96496aca788270ac  usr/lib/aarch64-linux-gnu/libnetcdf_c++.a
+feba62663c12a2fb870476a89598b36c  usr/share/doc/libnetcdf-cxx-legacy-dev/copyright
+2036518342eca05ea1804ae2c9915b3f  usr/share/doc/libnetcdf-cxx-legacy-dev/examples/pres_temp_4D_rd.cpp.gz
+2b1ea428769bdcf169018520c3a45310  usr/share/doc/libnetcdf-cxx-legacy-dev/examples/pres_temp_4D_wr.cpp.gz
+8ed34afad2599fa38dc88d845dc081b2  usr/share/doc/libnetcdf-cxx-legacy-dev/examples/sfc_pres_temp_rd.cpp.gz
+382132d4809f44234253d4c2c80ff737  usr/share/doc/libnetcdf-cxx-legacy-dev/examples/sfc_pres_temp_wr.cpp.gz
+bdc4b601ccb47010b5039d4d78e08ee9  usr/share/doc/libnetcdf-cxx-legacy-dev/examples/simple_xy_rd.cpp
+00c7c34624deb320df5e591b4faad723  usr/share/doc/libnetcdf-cxx-legacy-dev/examples/simple_xy_wr.cpp
+233b28bc75f084d6dfd4f376adc65624  usr/share/info/netcdf-cxx.info.gz

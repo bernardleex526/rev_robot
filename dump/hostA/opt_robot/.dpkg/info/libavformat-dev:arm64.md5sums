@@ -1,0 +1,6 @@
+8dc73eec45fd6c9648c80390cc3d68fc  usr/include/aarch64-linux-gnu/libavformat/avformat.h
+2a023deb63131343a844aec2f77c6a59  usr/include/aarch64-linux-gnu/libavformat/avio.h
+8786cbc8a59c98f5563dae4fd83b837e  usr/include/aarch64-linux-gnu/libavformat/version.h
+6c30595891def140c3d60db43d927456  usr/lib/aarch64-linux-gnu/libavformat.a
+a4eba148a6f4f694f4a98b65d2555d45  usr/lib/aarch64-linux-gnu/pkgconfig/libavformat.pc
+001f538bf878ec438a4151e9e98daebd  usr/share/doc/libavformat-dev/copyright

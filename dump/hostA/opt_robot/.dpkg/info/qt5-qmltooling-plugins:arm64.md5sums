@@ -1,0 +1,12 @@
+81a96adc36270395a0699c4c667b200d  usr/lib/aarch64-linux-gnu/qt5/plugins/qmltooling/libqmldbg_debugger.so
+d0550229986c639185df5ac0709a1d49  usr/lib/aarch64-linux-gnu/qt5/plugins/qmltooling/libqmldbg_inspector.so
+43465cf482b5e5958162fe0c9fc884c4  usr/lib/aarch64-linux-gnu/qt5/plugins/qmltooling/libqmldbg_local.so
+f834d3773bc779e0bba18059c2adfff8  usr/lib/aarch64-linux-gnu/qt5/plugins/qmltooling/libqmldbg_messages.so
+81a3333e6b9ba8d5690a779f7dcae973  usr/lib/aarch64-linux-gnu/qt5/plugins/qmltooling/libqmldbg_native.so
+319bc8e18085ad9f8e1c16fb2d1db0e3  usr/lib/aarch64-linux-gnu/qt5/plugins/qmltooling/libqmldbg_nativedebugger.so
+8c9385cc7de5a4e8c53f34309451d42c  usr/lib/aarch64-linux-gnu/qt5/plugins/qmltooling/libqmldbg_preview.so
+ebdf2d5cc722ad871434bac7305935ee  usr/lib/aarch64-linux-gnu/qt5/plugins/qmltooling/libqmldbg_profiler.so
+7b4486ec926a1973151262f8534e6f80  usr/lib/aarch64-linux-gnu/qt5/plugins/qmltooling/libqmldbg_quickprofiler.so
+6483e46b3e8b9bd85572e99959c66c29  usr/lib/aarch64-linux-gnu/qt5/plugins/qmltooling/libqmldbg_server.so
+18e05b16d281c487b5c7ef85f573766b  usr/lib/aarch64-linux-gnu/qt5/plugins/qmltooling/libqmldbg_tcp.so
+9424440b531d2a8aaa986e86ded40b9a  usr/share/doc/qt5-qmltooling-plugins/copyright

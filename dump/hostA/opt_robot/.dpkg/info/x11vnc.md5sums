@@ -1,0 +1,9 @@
+e2087f051d1319f28c81b726e579a6df  usr/bin/Xdummy
+f6ec9fb5e3c178cc9bf4bec7da2b7dbf  usr/bin/x11vnc
+9080d7322963b9e594646a5eb33a9bb0  usr/share/applications/x11vnc.desktop
+cb6d00b7a07fc7f30fdca49ce7a0db06  usr/share/doc/x11vnc/NEWS.gz
+f07cbe33e2fec8d93322851becc723b5  usr/share/doc/x11vnc/README.gz
+ad952256fb406ad9c8e64f4a00df5774  usr/share/doc/x11vnc/changelog.Debian.gz
+4945d4e2653a4c79134166863470a92c  usr/share/doc/x11vnc/copyright
+3dfa8dc2f27d8d2a1c79d8abc8489295  usr/share/man/man1/x11vnc.1.gz
+72c3c71efb962e42fba0175faab80505  usr/share/man/man8/Xdummy.8.gz

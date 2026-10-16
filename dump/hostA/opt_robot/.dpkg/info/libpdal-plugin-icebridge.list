@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/lib
+/usr/lib/libpdal_plugin_reader_icebridge.so.10
+/usr/share
+/usr/share/doc
+/usr/share/doc/libpdal-plugin-icebridge
+/usr/share/doc/libpdal-plugin-icebridge/copyright
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libpdal-plugin-icebridge
+/usr/lib/libpdal_plugin_reader_icebridge.so
+/usr/lib/libpdal_plugin_reader_icebridge.so.9
+/usr/share/doc/libpdal-plugin-icebridge/changelog.Debian.gz

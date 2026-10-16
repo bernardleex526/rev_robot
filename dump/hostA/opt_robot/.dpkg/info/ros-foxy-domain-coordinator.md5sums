@@ -1,0 +1,10 @@
+71d0c5c6b86177336b23b547b2518c9e  opt/ros/foxy/lib/python3.8/site-packages/domain_coordinator-0.9.2.egg-info/PKG-INFO
+68b329da9893e34099c7d8ad5cb9c940  opt/ros/foxy/lib/python3.8/site-packages/domain_coordinator-0.9.2.egg-info/dependency_links.txt
+cd12f5daaa1f8d7023f5d75a982d773d  opt/ros/foxy/lib/python3.8/site-packages/domain_coordinator-0.9.2.egg-info/requires.txt
+f69b8ee701fd7ef82c0c95477dc54cbb  opt/ros/foxy/lib/python3.8/site-packages/domain_coordinator-0.9.2.egg-info/top_level.txt
+68b329da9893e34099c7d8ad5cb9c940  opt/ros/foxy/lib/python3.8/site-packages/domain_coordinator-0.9.2.egg-info/zip-safe
+cf6a1c7d9b6a8dc6d0656cf913d318c7  opt/ros/foxy/lib/python3.8/site-packages/domain_coordinator/__init__.py
+bcb5ed757f17df41dee2770fd02e826d  opt/ros/foxy/lib/python3.8/site-packages/domain_coordinator/__pycache__/__init__.cpython-38.pyc
+d41d8cd98f00b204e9800998ecf8427e  opt/ros/foxy/share/ament_index/resource_index/packages/domain_coordinator
+effaa10233132359b73b6107fb9c66c5  opt/ros/foxy/share/domain_coordinator/package.xml
+5faed470ff98e399fcc5838b1db9ba25  usr/share/doc/ros-foxy-domain-coordinator/changelog.Debian.gz

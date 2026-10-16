@@ -1,0 +1,17 @@
+3ff7c1f295e884af6ea7bc89f93e0c03  usr/bin/nc-config
+6ff8418b1d58541bae52d480ade5d2d0  usr/include/netcdf.h
+3a35394030d828c4e0d11bd5a53328ea  usr/include/netcdf_aux.h
+c6fff6bbce4dba6551a93bf85fb05f33  usr/include/netcdf_dispatch.h
+b247dbe2c98b60583ecb7245052767ad  usr/include/netcdf_filter.h
+7e0a28a24b376cd2df858a3918482d4b  usr/include/netcdf_mem.h
+47934235e29ba83a11c410e65ec32b48  usr/include/netcdf_meta.h
+e37d51356a1246e89b3b4bdc491e613e  usr/lib/aarch64-linux-gnu/cmake/netCDF/netCDFConfig.cmake
+cde847eaf0cc408b39fc9f0da569274e  usr/lib/aarch64-linux-gnu/cmake/netCDF/netCDFConfigVersion.cmake
+61f0f1d90e149933169ee8dc9a67f8b0  usr/lib/aarch64-linux-gnu/cmake/netCDF/netCDFTargets-none.cmake
+10e8fb0f47eb33b507d755ebd05c08be  usr/lib/aarch64-linux-gnu/cmake/netCDF/netCDFTargets.cmake
+c53548658f5fea97b4a9130fbcd98e08  usr/lib/aarch64-linux-gnu/libnetcdf.settings
+298d61d699dabb37f24f064f2312d7f1  usr/lib/aarch64-linux-gnu/pkgconfig/netcdf.pc
+69b08ab7a647a6528e25732bdf77d79b  usr/share/doc/libnetcdf-dev/copyright
+e9a48dfd92ea08b9900137b0e736c995  usr/share/lintian/overrides/libnetcdf-dev
+07f056a33b13ba11ec9da32ae992dfee  usr/share/man/man1/nc-config.1.gz
+2598e41bb1edf4fffcc0d34131db2f82  usr/share/man/man3/netcdf.3.gz

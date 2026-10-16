@@ -1,0 +1,13 @@
+248942f801680fe5b4e1b9ecf6045db9  usr/include/aarch64-linux-gnu/qt5/QtX11Extras/QX11Info
+5efe2f9f134a3cdccf21a03044520c6b  usr/include/aarch64-linux-gnu/qt5/QtX11Extras/QtX11Extras
+791f79698486020f9e916ce207434b02  usr/include/aarch64-linux-gnu/qt5/QtX11Extras/QtX11ExtrasDepends
+3ab45789d2f89f490790bd11092dc8ed  usr/include/aarch64-linux-gnu/qt5/QtX11Extras/QtX11ExtrasVersion
+cee9a4fe4ab9cd33c711908eeaeaee23  usr/include/aarch64-linux-gnu/qt5/QtX11Extras/qtx11extrasglobal.h
+9e998cb4e750f33916a6db5dcd2f0134  usr/include/aarch64-linux-gnu/qt5/QtX11Extras/qtx11extrasversion.h
+bc8f1e289b55a2d8dab51874cd441406  usr/include/aarch64-linux-gnu/qt5/QtX11Extras/qx11info_x11.h
+47a37b07e863b952d336d3320aa01c98  usr/lib/aarch64-linux-gnu/cmake/Qt5X11Extras/Qt5X11ExtrasConfig.cmake
+b540164dd4e31d52b0f1e17d6d0455f2  usr/lib/aarch64-linux-gnu/cmake/Qt5X11Extras/Qt5X11ExtrasConfigVersion.cmake
+121ea16d0187ad173c2d194ea8d398dd  usr/lib/aarch64-linux-gnu/libQt5X11Extras.prl
+74cd90ac79e9d43c5c54c30c2faad5bb  usr/lib/aarch64-linux-gnu/pkgconfig/Qt5X11Extras.pc
+feb0a7eea71a5b1e6723476d3db9fdd3  usr/lib/aarch64-linux-gnu/qt5/mkspecs/modules/qt_lib_x11extras.pri
+68031219f675d9661efdddd66ff8f761  usr/share/doc/libqt5x11extras5-dev/copyright

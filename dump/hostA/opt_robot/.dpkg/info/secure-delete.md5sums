@@ -1,0 +1,15 @@
+2636fbcc923bb00d47ec8e1a24b2e05a  usr/bin/sdmem
+43a2cdbb4c48aa00de8d4b157745d344  usr/bin/sfill
+16752f6e8b311b3e454c0187cfcdfd96  usr/bin/srm
+fc8726425fbc2d2eea4d3762cb366a29  usr/bin/sswap
+e878c4aa1b4a76ba18bf6fef42c71637  usr/share/doc/secure-delete/README.Debian
+72ef5e0c1088b43f02565227bd224f70  usr/share/doc/secure-delete/README.gz
+26e69d1d0ec55cdc699ace2bbb8cf9ac  usr/share/doc/secure-delete/TODO
+1f993fc0112374d41a13fca0a3d6aced  usr/share/doc/secure-delete/changelog.Debian.gz
+b8ecb0ec4cc335cac6247d173c0ced5d  usr/share/doc/secure-delete/copyright
+83efcf7a77f407739c343a2de9c6bf3f  usr/share/doc/secure-delete/secure_delete.doc.gz
+1a82a8fc9f67bceff90d172f4cc5f45d  usr/share/doc/secure-delete/usenix6-gutmann.doc.gz
+6445c804e09b226568a6674c068e4ce7  usr/share/man/man1/sdmem.1.gz
+3fd8a9b9a11eddad5d9afdb911614639  usr/share/man/man1/sfill.1.gz
+6bbe1e7ca07cf669d0f3a48ff4534bdd  usr/share/man/man1/srm.1.gz
+f7e99c4979a7a16aeca94b0684494a9c  usr/share/man/man1/sswap.1.gz

@@ -1,0 +1,8 @@
+c27463cf12373d1dc8ff47bbfbe2a6d4  usr/sbin/in.tftpd
+b7954b490c6cc1228656351d47416153  usr/share/doc/tftpd-hpa/README
+39f7627e33c01c5ec13e34bff42da0c9  usr/share/doc/tftpd-hpa/README.Debian
+b2b011cddc21ba1758a0f0bdb97c75b8  usr/share/doc/tftpd-hpa/README.security
+09bbea56ff52dafa491c0aa23aeb9413  usr/share/doc/tftpd-hpa/changelog.Debian.gz
+80bf5037ef72160786430bdef51d039c  usr/share/doc/tftpd-hpa/copyright
+8b066f2539ff67989f8c06224dea9021  usr/share/doc/tftpd-hpa/examples/sample.rules
+44e048986e043fe47ac2113b80819a37  usr/share/man/man8/in.tftpd.8.gz

@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/lib
+/usr/lib/libpdal_plugin_filter_python.so.10
+/usr/lib/libpdal_plugin_reader_numpy.so.10
+/usr/share
+/usr/share/doc
+/usr/share/doc/libpdal-plugin-python
+/usr/share/doc/libpdal-plugin-python/copyright
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libpdal-plugin-python
+/usr/lib/libpdal_plugin_filter_python.so
+/usr/lib/libpdal_plugin_filter_python.so.9
+/usr/lib/libpdal_plugin_reader_numpy.so
+/usr/lib/libpdal_plugin_reader_numpy.so.9
+/usr/share/doc/libpdal-plugin-python/changelog.Debian.gz

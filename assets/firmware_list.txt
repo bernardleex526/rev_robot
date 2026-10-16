@@ -1,0 +1,14 @@
+dump/hostA/opt_robot/bin/DriverOTA
+dump/hostA/opt_robot/bin/FirmwareAssistant
+dump/hostA/opt_robot/bin/BatteryOTA
+dump/hostA/opt_robot/scripts/firmware_upgrade.sh
+dump/hostA/opt_robot/share/ecan_master/bin/ecan_V2.0.15_9f08d7e5dc341ede.bin
+dump/hostA/opt_robot/share/mcu_update/bin/CA9B_f1_app_v2.1.0.bin
+dump/hostA/etc/cron.daily/logrotate
+dump/hostA/etc/logrotate.conf
+dump/hostA/etc/openmpi/openmpi-totalview.tcl
+dump/hostA/etc/apparmor.d/usr.lib.libreoffice.program.soffice.bin
+dump/hostA/etc/apparmor.d/local/usr.lib.libreoffice.program.soffice.bin
+dump/hostA/etc/pki/fwupd-metadata/GPG-KEY-Linux-Vendor-Firmware-Service
+dump/hostA/etc/pki/fwupd/GPG-KEY-Linux-Foundation-Firmware
+dump/hostA/etc/pki/fwupd/GPG-KEY-Linux-Vendor-Firmware-Service

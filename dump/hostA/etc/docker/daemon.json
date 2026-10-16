@@ -1,0 +1,10 @@
+{ 
+  "registry-mirrors" : 
+    [ 
+      "https://docker.m.daocloud.io",
+      "https://docker.udayun.com", 
+      "https://noohub.ru", 
+      "https://huecker.io",
+      "https://dockerhub.timeweb.cloud" 
+    ] 
+}

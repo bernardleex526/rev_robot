@@ -1,0 +1,2 @@
+/etc/modprobe.d/libopenni-sensor-pointclouds0.conf
+/etc/openni/GlobalDefaults.ini

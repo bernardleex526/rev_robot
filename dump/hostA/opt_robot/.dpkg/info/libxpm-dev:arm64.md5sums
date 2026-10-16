@@ -1,0 +1,6 @@
+6b644fc8c87ef99dfb1b6d37d3bd93d0  usr/include/X11/xpm.h
+482e635b714f1ed4c791e15f803562b5  usr/lib/aarch64-linux-gnu/libXpm.a
+2aaf61dfcd1f9c198a8afa1fa39db6dc  usr/lib/aarch64-linux-gnu/pkgconfig/xpm.pc
+d5be0980429ecb3f7a6e1563a8eac303  usr/share/doc/libxpm-dev/copyright
+6756e444f917b65786f24107ca771d25  usr/share/doc/libxpm-dev/xpm.PS.gz
+996aa90ee93ba9707eab2eb3c101bff5  usr/share/lintian/overrides/libxpm-dev

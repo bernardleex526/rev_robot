@@ -1,0 +1,13 @@
+[Unit]
+Description=ecan_master
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/opt/robot/share/ecan_master/scripts/run.sh
+Restart=on-failure
+RestartPreventExitStatus=SIGTERM
+
+
+[Install]
+WantedBy=network.target

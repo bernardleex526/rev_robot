@@ -1,0 +1,14 @@
+#!/bin/sh
+
+set -e
+
+case "$1" in
+  purge)
+    rm -f /var/lib/ni/modules.xml 2>/dev/null
+    rm -f /var/lib/ni/licenses.xml 2>/dev/null
+    ;;
+esac
+
+
+
+exit 0

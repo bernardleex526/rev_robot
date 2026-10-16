@@ -1,0 +1,16 @@
+1abb0ca003978ac23ffce1258a4c8743  opt/ros/foxy/share/ament_index/resource_index/package_run_dependencies/desktop
+d41d8cd98f00b204e9800998ecf8427e  opt/ros/foxy/share/ament_index/resource_index/packages/desktop
+c5bea21e3b9564d2a435b40f0e03ecf6  opt/ros/foxy/share/ament_index/resource_index/parent_prefix_path/desktop
+f899030b170010653cf781397ff70be7  opt/ros/foxy/share/desktop/cmake/desktopConfig-version.cmake
+56da105e44c2b0ceb647ea7776d7a634  opt/ros/foxy/share/desktop/cmake/desktopConfig.cmake
+8dbf4790a764a69b56a5904c00682df0  opt/ros/foxy/share/desktop/environment/ament_prefix_path.dsv
+fd0b100f5da0d9f2d38645ac45815395  opt/ros/foxy/share/desktop/environment/ament_prefix_path.sh
+11e8ba1deb2827a5e13dd631720bcf6b  opt/ros/foxy/share/desktop/environment/path.dsv
+234e39ac8bc1c1d4f887075bf9492366  opt/ros/foxy/share/desktop/environment/path.sh
+ed9dcb7a76d3763c6cd97ebbd1f4cc7d  opt/ros/foxy/share/desktop/local_setup.bash
+6a4b9ea1e93376e0dec28a2d2b314317  opt/ros/foxy/share/desktop/local_setup.dsv
+26dc12d7cdceb94cfa5a1032669fb93b  opt/ros/foxy/share/desktop/local_setup.sh
+24970cb512d5df3600adc59d7fa85f7b  opt/ros/foxy/share/desktop/local_setup.zsh
+e79ab4408dc6b4d803ee9f6783d98f4e  opt/ros/foxy/share/desktop/package.dsv
+9320c19afacbbccea47c61e82b82645e  opt/ros/foxy/share/desktop/package.xml
+6103a2cc92871fdf31ce48298b1a62ab  usr/share/doc/ros-foxy-desktop/changelog.Debian.gz

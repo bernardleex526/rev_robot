@@ -1,0 +1,15 @@
+/opt
+/opt/robot
+/opt/robot/share
+/opt/robot/share/basic_server
+/opt/robot/share/basic_server/bin
+/opt/robot/share/basic_server/bin/basic_server
+/opt/robot/share/basic_server/change_log.md
+/opt/robot/share/basic_server/conf
+/opt/robot/share/basic_server/conf/basic_server.toml
+/opt/robot/share/basic_server/conf/log
+/opt/robot/share/basic_server/conf/log/log.properties
+/opt/robot/share/basic_server/scripts
+/opt/robot/share/basic_server/scripts/run.sh
+/opt/robot/share/basic_server/scripts/self
+/opt/robot/share/basic_server/scripts/self/postinst

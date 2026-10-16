@@ -1,0 +1,12 @@
+#!/bin/bash
+set -e
+
+
+sudo chmod +x /opt/robot/share/ecan_master/scripts/*
+sudo cp /opt/robot/share/ecan_master/scripts/ecan_master.service /lib/systemd/system/
+# sudo cp /opt/robot/share/ecan_master/serial-logger.service /lib/systemd/system/
+systemctl daemon-reload
+
+# systemctl enable serial-logger
+
+exit 0

@@ -1,0 +1,16 @@
+bool directline_mode
+float64 max_speed_x
+float64 max_speed_y
+float64 max_theta
+float64 barking_deceleration
+float64 xy_tolerance
+float64 yaw_tolerance
+float64 stop_distance
+float64 judge_close
+float64 backward_mode
+float64 dl_min_yaw
+float64 dl_min_x
+float64 dl_min_y
+float64 dl_line_yaw_min
+---
+bool is_success

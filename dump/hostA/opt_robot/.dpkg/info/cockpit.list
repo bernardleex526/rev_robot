@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/cockpit
+/usr/share/doc/cockpit/TODO.Debian
+/usr/share/doc/cockpit/copyright
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/cockpit.1.gz
+/usr/share/metainfo
+/usr/share/metainfo/cockpit.appdata.xml
+/usr/share/pixmaps
+/usr/share/pixmaps/cockpit.png
+/usr/share/doc/cockpit/changelog.Debian.gz

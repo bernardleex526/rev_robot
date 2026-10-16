@@ -1,0 +1,51 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from drdds/msg/CPUStatus.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+
+module drdds {
+  module msg {
+    @verbatim (language="comment", text=
+      " Raw monitoring data for a single CPU/SoC")
+    struct CPUStatus {
+      @verbatim (language="comment", text=
+        " Data acquisition time")
+      builtin_interfaces::msg::Time timestamp;
+
+      @verbatim (language="comment", text=
+        " Resource ID (e.g., \"CPU_103\", \"CPU_104\")")
+      string resource_id;
+
+      @verbatim (language="comment", text=
+        " Package temperature in m°C")
+      int32 package_temp;
+
+      @verbatim (language="comment", text=
+        " Per-zone temperatures in m°C")
+      sequence<int32> temps;
+
+      @verbatim (language="comment", text=
+        " Average utilization across all logical CPUs, 0.01%")
+      @unit (value="0–10000")
+      uint16 avg_util;
+
+      @verbatim (language="comment", text=
+        " Utilization per logical CPU, 0.01%")
+      @unit (value="0–10000")
+      sequence<uint16> util;
+
+      @verbatim (language="comment", text=
+        " Current target frequency (scaling_cur_freq)")
+      sequence<uint32> cur_freq_khz;
+
+      @verbatim (language="comment", text=
+        " Hardware max frequency (cpuinfo_max_freq)")
+      sequence<uint32> hw_max_freq_khz;
+
+      @verbatim (language="comment", text=
+        " Hardware min frequency (cpuinfo_min_freq)")
+      sequence<uint32> hw_min_freq_khz;
+    };
+  };
+};

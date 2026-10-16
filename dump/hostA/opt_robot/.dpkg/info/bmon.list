@@ -1,0 +1,16 @@
+/.
+/etc
+/etc/bmon.conf
+/usr
+/usr/bin
+/usr/bin/bmon
+/usr/share
+/usr/share/doc
+/usr/share/doc/bmon
+/usr/share/doc/bmon/changelog.Debian.gz
+/usr/share/doc/bmon/copyright
+/usr/share/doc/bmon/examples
+/usr/share/doc/bmon/examples/bmon.conf
+/usr/share/man
+/usr/share/man/man8
+/usr/share/man/man8/bmon.8.gz

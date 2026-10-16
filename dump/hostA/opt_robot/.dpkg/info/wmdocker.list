@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/bin
+/usr/bin/wmdocker
+/usr/share
+/usr/share/doc
+/usr/share/doc/wmdocker
+/usr/share/doc/wmdocker/README
+/usr/share/doc/wmdocker/changelog.Debian.gz
+/usr/share/doc/wmdocker/copyright
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/wmdocker.1.gz
+/usr/share/menu
+/usr/share/menu/wmdocker

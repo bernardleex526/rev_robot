@@ -1,0 +1,15 @@
+#!/bin/bash
+
+
+bash /opt/robot/share/slam/scripts/self/register_conf.sh "/opt/robot/share/slam/conf" "/opt/robot/share/slam/conf"
+
+# 软链接方式放置补全函数
+rm -rf /etc/bash_completion.d/drmap_complete
+ln -s /opt/robot/share/slam/scripts/drmap_scripts/drmap_complete /etc/bash_completion.d/drmap_complete
+sudo chmod +x /etc/bash_completion.d/drmap_complete
+
+rm -rf /usr/local/bin/drmap
+ln -s /opt/robot/share/slam/scripts/drmap_scripts/drmap /usr/local/bin/drmap
+sudo chmod +x /usr/local/bin/drmap
+
+sudo chmod -R +x /opt/robot/share/slam/scripts

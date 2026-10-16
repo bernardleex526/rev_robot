@@ -1,0 +1,11 @@
+[Unit]
+Description=FRP Client Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/frpc -c /etc/frp_0.51.3_linux_arm64/frpc.ini
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

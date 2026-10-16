@@ -1,0 +1,1401 @@
+/home/lee/rea/tools/ghidra_lio_extrinsic.py:21: DeprecationWarning: open_program() is deprecated, use open_project() and program_context() or program_loader() instead.
+  with pyghidra.open_program(BIN) as api:
+=== string hits (3) ===
+  extrinsic_B_I        @ 002a3c40
+  extrinsic_B_L        @ 002a3c50
+  extrinsic_est_en     @ 002a3b40
+
+=== cross references ===
+  'extrinsic_B_I' <- 00236ba4 in getParamsFromFile
+  'extrinsic_B_L' <- 00236d24 in getParamsFromFile
+  'extrinsic_est_en' <- 00236470 in getParamsFromFile
+
+=== functions to decompile: 1 ===
+
+===== getParamsFromFile @ 002363e8 =====
+
+/* WARNING: Heritage AFTER dead removal. Example location: x0 : 0x00236498 */
+/* WARNING: Restarted to delay deadcode elimination for space: register */
+/* dr_lio::LidarOdometry::LidarOdometryImpl::getParamsFromFile(std::__cxx11::string) */
+
+undefined8 __thiscall
+dr_lio::LidarOdometry::LidarOdometryImpl::getParamsFromFile(LidarOdometryImpl *this,string *param_2)
+
+{
+  node *pnVar1;
+  undefined *puVar2;
+  undefined *puVar3;
+  LidarOdometryImpl LVar4;
+  char cVar5;
+  int iVar6;
+  node *pnVar7;
+  BadConversion *pBVar8;
+  InvalidNode *pIVar9;
+  char *pcVar10;
+  ulong uVar11;
+  ulong uVar12;
+  node *pnVar13;
+  ulong uVar14;
+  float fVar15;
+  double dVar16;
+  double dVar17;
+  float fVar18;
+  double dVar19;
+  double dVar20;
+  double dVar21;
+  double dVar22;
+  double dVar23;
+  double dVar24;
+  double dVar25;
+  double dVar26;
+  double dVar27;
+  double dVar28;
+  double dVar29;
+  double dVar30;
+  double dVar31;
+  double dVar32;
+  undefined1 auVar33 [12];
+  __shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2> a_Stack_380 [8];
+  _Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *local_378;
+  undefined8 *local_370;
+  long lStack_368;
+  undefined8 local_360;
+  undefined8 *local_350;
+  long lStack_348;
+  undefined8 local_340;
+  __shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2> local_330 [8];
+  _Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *local_328;
+  _Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *p_Stack_320;
+  node *local_318;
+  char acStack_310 [16];
+  _Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *local_300;
+  byte local_2f0;
+  __shared_ptr a_Stack_2e8 [8];
+  _Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *local_2e0;
+  long local_2d8;
+  ulong local_2d0;
+  _Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *p_Stack_2c8;
+  node *local_2c0;
+  node *pnStack_2b8;
+  ulong local_2b0;
+  _Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *p_Stack_2a8;
+  node *local_2a0;
+  node *pnStack_298;
+  __shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2> local_290 [8];
+  _Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *local_288;
+  _Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *p_Stack_280;
+  node *local_278;
+  Node local_270 [8];
+  _Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *local_268;
+  _Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *local_260;
+  node *local_258;
+  undefined8 local_250;
+  _Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *local_248;
+  node *pnStack_240;
+  node *local_238;
+  undefined8 uStack_230;
+  _Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *local_228;
+  undefined8 local_220;
+  _Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *local_218;
+  node *pnStack_210;
+  node *local_208;
+  undefined8 uStack_200;
+  _Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *local_1f8;
+  ulong local_1f0;
+  _Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *local_1e8;
+  node *pnStack_1e0;
+  node *local_1d8;
+  Node local_1d0;
+  undefined8 local_1c8;
+  _Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *p_Stack_1c0;
+  node *local_1b8;
+  __shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2> local_1b0;
+  undefined8 local_1a8;
+  _Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *p_Stack_1a0;
+  node *local_198;
+  undefined8 local_190;
+  undefined8 local_188;
+  undefined8 local_180;
+  undefined8 local_178;
+  undefined8 local_170;
+  undefined8 local_168;
+  undefined8 local_160;
+  undefined8 local_158;
+  undefined8 local_150;
+  undefined8 local_148;
+  undefined8 local_140;
+  undefined8 local_138;
+  undefined8 local_130;
+  undefined8 local_128;
+  undefined8 local_120;
+  undefined8 local_118;
+  double *local_110;
+  double local_108;
+  double local_100;
+  double local_f8;
+  double local_f0;
+  double local_e8;
+  double local_e0;
+  double local_d8;
+  double local_d0;
+  double local_c8;
+  double local_c0;
+  double local_b8;
+  double local_b0;
+  double local_a8;
+  double local_a0;
+  double local_98;
+  double *local_90;
+  double dStack_88;
+  double dStack_80;
+  double dStack_78;
+  double local_70;
+  double dStack_68;
+  double dStack_60;
+  double dStack_58;
+  double local_50;
+  double dStack_48;
+  double dStack_40;
+  double dStack_38;
+  double local_30;
+  double dStack_28;
+  double local_20;
+  double dStack_18;
+  long local_8;
+  
+  local_8 = *(long *)PTR___stack_chk_guard_002fbfa0;
+  YAML::LoadFile(param_2);
+  YAML::Node::operator[]<char[4]>(acStack_310);
+  if (local_220._0_1_ == (Node)0x0) {
+    pIVar9 = (InvalidNode *)__cxa_allocate_exception(0x40);
+    YAML::InvalidNode::InvalidNode(pIVar9);
+                    /* WARNING: Subroutine does not return */
+    __cxa_throw(pIVar9,PTR_typeinfo_002fbba0,PTR__InvalidNode_002fbec0);
+  }
+  YAML::Node::EnsureNodeExists((Node *)&local_220);
+  FUN_00205bc8(&local_90,"extrinsic_est_en");
+  std::__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2>::__shared_ptr
+            ((__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2> *)&local_1f0,
+             (__shared_ptr *)&local_218);
+  pnVar7 = YAML::detail::node::get<std::__cxx11::string>
+                     ((node *)this,&local_90,
+                      (__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2> *)
+                      &local_1f0);
+  if (local_1e8 != (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release(local_1e8);
+  }
+  if (local_90 != &dStack_80) {
+    operator_delete(local_90);
+  }
+  std::__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2>::__shared_ptr
+            ((__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2> *)&local_250,
+             (__shared_ptr *)&local_218);
+  local_1f0 = CONCAT71(local_1f0._1_7_,1);
+  std::__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2>::__shared_ptr
+            ((__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2> *)&local_1e8,
+             (__shared_ptr *)&local_250);
+  local_1d8 = pnVar7;
+  if (local_248 != (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release(local_248);
+  }
+  LVar4 = (LidarOdometryImpl)YAML::Node::as<bool>((Node *)&local_1f0);
+  this[0x20] = LVar4;
+  if (pnStack_1e0 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_1e0);
+  }
+  if (pnStack_210 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_210);
+  }
+  YAML::Node::operator[]<char[4]>(acStack_310);
+  YAML::Node::operator[]<char[14]>((char *)&local_220);
+  iVar6 = YAML::Node::as<int>((Node *)&local_1f0);
+  *(int *)(this + 0x24) = iVar6;
+  if (pnStack_1e0 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_1e0);
+  }
+  if (pnStack_210 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_210);
+  }
+  YAML::Node::operator[]<char[4]>(acStack_310);
+  if (local_220._0_1_ == (Node)0x0) {
+    pIVar9 = (InvalidNode *)__cxa_allocate_exception(0x40);
+    YAML::InvalidNode::InvalidNode(pIVar9);
+                    /* WARNING: Subroutine does not return */
+    __cxa_throw(pIVar9,PTR_typeinfo_002fbba0,PTR__InvalidNode_002fbec0);
+  }
+  YAML::Node::EnsureNodeExists((Node *)&local_220);
+  FUN_00205bc8(&local_90,"esti_plane_threshold");
+  std::__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2>::__shared_ptr
+            ((__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2> *)&local_1f0,
+             (__shared_ptr *)&local_218);
+  pnVar7 = YAML::detail::node::get<std::__cxx11::string>
+                     (pnVar7,&local_90,
+                      (__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2> *)
+                      &local_1f0);
+  if (local_1e8 != (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release(local_1e8);
+  }
+  if (local_90 != &dStack_80) {
+    operator_delete(local_90);
+  }
+  std::__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2>::__shared_ptr
+            ((__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2> *)&local_250,
+             (__shared_ptr *)&local_218);
+  local_1f0 = CONCAT71(local_1f0._1_7_,1);
+  std::__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2>::__shared_ptr
+            ((__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2> *)&local_1e8,
+             (__shared_ptr *)&local_250);
+  local_1d8 = pnVar7;
+  if (local_248 != (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release(local_248);
+  }
+  fVar15 = YAML::Node::as<float>((Node *)&local_1f0);
+  *(float *)(this + 0x28) = fVar15;
+  if (pnStack_1e0 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_1e0);
+  }
+  if (pnStack_210 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_210);
+  }
+  YAML::Node::operator[]<char[4]>(acStack_310);
+  YAML::Node::operator[]<char[10]>((char *)&local_220);
+  fVar15 = YAML::Node::as<float>((Node *)&local_1f0);
+  *(float *)(this + 0x2c) = fVar15;
+  if (pnStack_1e0 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_1e0);
+  }
+  if (pnStack_210 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_210);
+  }
+  YAML::Node::operator[]<char[4]>(acStack_310);
+  YAML::Node::operator[]<char[10]>((char *)&local_220);
+  fVar15 = YAML::Node::as<float>((Node *)&local_1f0);
+  *(float *)(this + 0x30) = fVar15;
+  if (pnStack_1e0 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_1e0);
+  }
+  if (pnStack_210 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_210);
+  }
+  YAML::Node::operator[]<char[4]>(acStack_310);
+  YAML::Node::operator[]<char[8]>((char *)&local_220);
+  fVar15 = YAML::Node::as<float>((Node *)&local_1f0);
+  *(double *)(this + 0x38) = (double)fVar15;
+  if (pnStack_1e0 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_1e0);
+  }
+  if (pnStack_210 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_210);
+  }
+  YAML::Node::operator[]<char[4]>(acStack_310);
+  YAML::Node::operator[]<char[8]>((char *)&local_220);
+  fVar15 = YAML::Node::as<float>((Node *)&local_1f0);
+  *(double *)(this + 0x40) = (double)fVar15;
+  if (pnStack_1e0 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_1e0);
+  }
+  if (pnStack_210 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_210);
+  }
+  YAML::Node::operator[]<char[4]>(acStack_310);
+  YAML::Node::operator[]<char[10]>((char *)&local_220);
+  fVar15 = YAML::Node::as<float>((Node *)&local_1f0);
+  *(double *)(this + 0x48) = (double)fVar15;
+  if (pnStack_1e0 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_1e0);
+  }
+  if (pnStack_210 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_210);
+  }
+  YAML::Node::operator[]<char[4]>(acStack_310);
+  YAML::Node::operator[]<char[10]>((char *)&local_220);
+  fVar15 = YAML::Node::as<float>((Node *)&local_1f0);
+  *(double *)(this + 0x50) = (double)fVar15;
+  if (pnStack_1e0 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_1e0);
+  }
+  if (pnStack_210 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_210);
+  }
+  YAML::Node::operator[]<char[4]>(acStack_310);
+  YAML::Node::operator[]<char[10]>((char *)&local_220);
+  fVar15 = YAML::Node::as<float>((Node *)&local_1f0);
+  *(float *)(this + 0x58) = fVar15;
+  if (pnStack_1e0 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_1e0);
+  }
+  if (pnStack_210 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_210);
+  }
+  YAML::Node::operator[]<char[4]>(acStack_310);
+  if (local_220._0_1_ == (Node)0x0) {
+    pIVar9 = (InvalidNode *)__cxa_allocate_exception(0x40);
+    YAML::InvalidNode::InvalidNode(pIVar9);
+                    /* WARNING: Subroutine does not return */
+    __cxa_throw(pIVar9,PTR_typeinfo_002fbba0,PTR__InvalidNode_002fbec0);
+  }
+  YAML::Node::EnsureNodeExists((Node *)&local_220);
+  FUN_00205bc8(&local_90,"leaf_size_body");
+  std::__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2>::__shared_ptr
+            ((__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2> *)&local_1f0,
+             (__shared_ptr *)&local_218);
+  pnVar7 = YAML::detail::node::get<std::__cxx11::string>
+                     (pnVar7,&local_90,
+                      (__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2> *)
+                      &local_1f0);
+  if (local_1e8 != (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release(local_1e8);
+  }
+  if (local_90 != &dStack_80) {
+    operator_delete(local_90);
+  }
+  std::__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2>::__shared_ptr
+            ((__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2> *)&local_250,
+             (__shared_ptr *)&local_218);
+  local_1f0 = CONCAT71(local_1f0._1_7_,1);
+  std::__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2>::__shared_ptr
+            ((__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2> *)&local_1e8,
+             (__shared_ptr *)&local_250);
+  local_1d8 = pnVar7;
+  if (local_248 != (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release(local_248);
+  }
+  fVar15 = YAML::Node::as<float>((Node *)&local_1f0);
+  *(float *)(this + 0x5c) = fVar15;
+  if (pnStack_1e0 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_1e0);
+  }
+  if (pnStack_210 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_210);
+  }
+  YAML::Node::operator[]<char[4]>(acStack_310);
+  if (local_220._0_1_ == (Node)0x0) {
+    pIVar9 = (InvalidNode *)__cxa_allocate_exception(0x40);
+    YAML::InvalidNode::InvalidNode(pIVar9);
+                    /* WARNING: Subroutine does not return */
+    __cxa_throw(pIVar9,PTR_typeinfo_002fbba0,PTR__InvalidNode_002fbec0);
+  }
+  YAML::Node::EnsureNodeExists((Node *)&local_220);
+  FUN_00205bc8(&local_90,"skip_num");
+  std::__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2>::__shared_ptr
+            ((__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2> *)&local_1f0,
+             (__shared_ptr *)&local_218);
+  pnVar7 = YAML::detail::node::get<std::__cxx11::string>
+                     (pnVar7,&local_90,
+                      (__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2> *)
+                      &local_1f0);
+  if (local_1e8 != (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release(local_1e8);
+  }
+  if (local_90 != &dStack_80) {
+    operator_delete(local_90);
+  }
+  std::__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2>::__shared_ptr
+            ((__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2> *)&local_250,
+             (__shared_ptr *)&local_218);
+  local_1f0 = CONCAT71(local_1f0._1_7_,1);
+  std::__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2>::__shared_ptr
+            ((__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2> *)&local_1e8,
+             (__shared_ptr *)&local_250);
+  local_1d8 = pnVar7;
+  if (local_248 != (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release(local_248);
+  }
+  iVar6 = YAML::Node::as<int>((Node *)&local_1f0);
+  *(int *)(this + 0x60) = iVar6;
+  if (pnStack_1e0 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_1e0);
+  }
+  if (pnStack_210 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_210);
+  }
+  YAML::Node::operator[]<char[4]>(acStack_310);
+  YAML::Node::operator[]<char[18]>((char *)&local_220);
+  LVar4 = (LidarOdometryImpl)YAML::Node::as<bool>((Node *)&local_1f0);
+  this[0x170] = LVar4;
+  if (pnStack_1e0 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_1e0);
+  }
+  if (pnStack_210 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_210);
+  }
+  YAML::Node::operator[]<char[4]>(acStack_310);
+  YAML::Node::operator[]<char[14]>((char *)&local_220);
+  LVar4 = (LidarOdometryImpl)YAML::Node::as<bool>((Node *)&local_1f0);
+  this[0x171] = LVar4;
+  if (pnStack_1e0 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_1e0);
+  }
+  if (pnStack_210 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_210);
+  }
+  YAML::Node::operator[]<char[4]>(acStack_310);
+  if (local_220._0_1_ == (Node)0x0) {
+    pIVar9 = (InvalidNode *)__cxa_allocate_exception(0x40);
+    YAML::InvalidNode::InvalidNode(pIVar9);
+                    /* WARNING: Subroutine does not return */
+    __cxa_throw(pIVar9,PTR_typeinfo_002fbba0,PTR__InvalidNode_002fbec0);
+  }
+  YAML::Node::EnsureNodeExists((Node *)&local_220);
+  FUN_00205bc8(&local_90,"full_map_save_path");
+  std::__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2>::__shared_ptr
+            ((__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2> *)&local_1f0,
+             (__shared_ptr *)&local_218);
+  pnVar7 = YAML::detail::node::get<std::__cxx11::string>
+                     (pnVar7,&local_90,
+                      (__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2> *)
+                      &local_1f0);
+  if (local_1e8 != (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release(local_1e8);
+  }
+  if (local_90 != &dStack_80) {
+    operator_delete(local_90);
+  }
+  std::__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2>::__shared_ptr
+            ((__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2> *)&local_250,
+             (__shared_ptr *)&local_218);
+  local_1f0 = CONCAT71(local_1f0._1_7_,1);
+  std::__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2>::__shared_ptr
+            ((__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2> *)&local_1e8,
+             (__shared_ptr *)&local_250);
+  local_1d8 = pnVar7;
+  if (local_248 != (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release(local_248);
+  }
+  if (local_1f0._0_1_ == (__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2>)0x0)
+  {
+    pIVar9 = (InvalidNode *)__cxa_allocate_exception(0x40);
+    YAML::InvalidNode::InvalidNode(pIVar9);
+                    /* WARNING: Subroutine does not return */
+    __cxa_throw(pIVar9,PTR_typeinfo_002fbba0,PTR__InvalidNode_002fbec0);
+  }
+  if (((local_1d8 == (node *)0x0) ||
+      (pcVar10 = (char *)**(undefined8 **)local_1d8, *pcVar10 == '\0')) ||
+     (*(int *)(pcVar10 + 0x10) != 2)) {
+    pBVar8 = (BadConversion *)__cxa_allocate_exception(0x40);
+    auVar33 = YAML::Node::Mark((Node *)&local_1f0);
+    local_250 = auVar33._0_8_;
+    local_248 = (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)
+                CONCAT44(local_248._4_4_,auVar33._8_4_);
+    YAML::BadConversion::BadConversion(pBVar8,(Mark *)&local_250);
+    puVar3 = PTR_typeinfo_002fb820;
+    puVar2 = PTR__TypedBadConversion_002fb7f0;
+    *(undefined **)pBVar8 = PTR_vtable_002fbb48 + 0x10;
+                    /* WARNING: Subroutine does not return */
+    __cxa_throw(pBVar8,puVar3,puVar2);
+  }
+  local_110 = &local_100;
+  FUN_00205508((string *)&local_110,*(long *)(pcVar10 + 0x40),
+               *(long *)(pcVar10 + 0x40) + *(long *)(pcVar10 + 0x48));
+  std::__cxx11::string::operator=((string *)(this + 0x178),(string *)&local_110);
+  if (local_110 != &local_100) {
+    operator_delete(local_110);
+  }
+  if (pnStack_1e0 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_1e0);
+  }
+  if (pnStack_210 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_210);
+  }
+  YAML::Node::operator[]<char[4]>(acStack_310);
+  YAML::Node::operator[]<char[14]>((char *)&local_220);
+  if (local_1f0._0_1_ == (__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2>)0x0)
+  {
+    pIVar9 = (InvalidNode *)__cxa_allocate_exception(0x40);
+    YAML::InvalidNode::InvalidNode(pIVar9);
+                    /* WARNING: Subroutine does not return */
+    __cxa_throw(pIVar9,PTR_typeinfo_002fbba0,PTR__InvalidNode_002fbec0);
+  }
+  if (local_1d8 == (node *)0x0) {
+    pBVar8 = (BadConversion *)__cxa_allocate_exception(0x40);
+    auVar33 = YAML::Node::Mark((Node *)&local_1f0);
+    local_250 = auVar33._0_8_;
+    local_248 = (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)
+                CONCAT44(local_248._4_4_,auVar33._8_4_);
+    YAML::BadConversion::BadConversion(pBVar8,(Mark *)&local_250);
+    puVar3 = PTR_typeinfo_002fbb70;
+    puVar2 = PTR__TypedBadConversion_002fb718;
+    *(undefined **)pBVar8 = PTR_vtable_002fb748 + 0x10;
+                    /* WARNING: Subroutine does not return */
+    __cxa_throw(pBVar8,puVar3,puVar2);
+  }
+  local_370 = (undefined8 *)0x0;
+  lStack_368 = 0;
+  local_360 = 0;
+  cVar5 = YAML::convert<std::vector<double,std::allocator<double>>>::decode
+                    ((Node *)&local_1f0,(vector *)&local_370);
+  if (cVar5 == '\0') {
+    pBVar8 = (BadConversion *)__cxa_allocate_exception(0x40);
+    auVar33 = YAML::Node::Mark((Node *)&local_1f0);
+    local_250 = auVar33._0_8_;
+    local_248 = (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)
+                CONCAT44(local_248._4_4_,auVar33._8_4_);
+    YAML::BadConversion::BadConversion(pBVar8,(Mark *)&local_250);
+    puVar3 = PTR_typeinfo_002fbb70;
+    puVar2 = PTR__TypedBadConversion_002fb718;
+    *(undefined **)pBVar8 = PTR_vtable_002fb748 + 0x10;
+                    /* WARNING: Subroutine does not return */
+    __cxa_throw(pBVar8,puVar3,puVar2);
+  }
+  if (pnStack_1e0 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_1e0);
+  }
+  if (pnStack_210 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_210);
+  }
+  uVar14 = lStack_368 - (long)local_370 >> 3;
+  if (uVar14 == 0) goto LAB_00237da8;
+  local_190 = *local_370;
+  uVar12 = uVar14;
+  if (uVar14 < 2) {
+    uVar11 = 1;
+    goto LAB_00237d8c;
+  }
+  local_170 = local_370[1];
+  uVar11 = uVar14;
+  if (uVar14 == 2) goto LAB_00237d8c;
+  local_150 = local_370[2];
+  if (uVar14 == 3) goto LAB_00237d8c;
+  local_130 = local_370[3];
+  if (uVar14 == 4) goto LAB_00237d8c;
+  local_188 = local_370[4];
+  if (uVar14 == 5) goto LAB_00237d8c;
+  local_168 = local_370[5];
+  if (uVar14 == 6) goto LAB_00237d8c;
+  local_148 = local_370[6];
+  if (uVar14 == 7) goto LAB_00237d8c;
+  local_128 = local_370[7];
+  if (uVar14 == 8) goto LAB_00237d8c;
+  local_180 = local_370[8];
+  if (uVar14 == 9) {
+    uVar11 = 9;
+    goto LAB_00237d8c;
+  }
+  local_160 = local_370[9];
+  if (uVar14 == 10) goto LAB_00237d8c;
+  local_140 = local_370[10];
+  if (uVar14 == 0xb) goto LAB_00237d8c;
+  local_120 = local_370[0xb];
+  if (uVar14 == 0xc) goto LAB_00237d8c;
+  local_178 = local_370[0xc];
+  if (uVar14 == 0xd) goto LAB_00237d8c;
+  local_158 = local_370[0xd];
+  if (uVar14 == 0xe) goto LAB_00237d8c;
+  local_138 = local_370[0xe];
+  if (uVar14 == 0xf) goto LAB_00237d8c;
+  local_118 = local_370[0xf];
+  Eigen::internal::
+  compute_inverse_size4<4,double,Eigen::Matrix<double,4,4,0,4,4>,Eigen::Matrix<double,4,4,0,4,4>>::
+  run((Matrix *)&local_190,(Matrix *)(this + 0x70));
+  YAML::Node::operator[]<char[4]>(acStack_310);
+  YAML::Node::operator[]<char[14]>((char *)&local_220);
+  if (local_1f0._0_1_ == (__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2>)0x0)
+  {
+    pIVar9 = (InvalidNode *)__cxa_allocate_exception(0x40);
+    YAML::InvalidNode::InvalidNode(pIVar9);
+                    /* WARNING: Subroutine does not return */
+    __cxa_throw(pIVar9,PTR_typeinfo_002fbba0,PTR__InvalidNode_002fbec0);
+  }
+  if (local_1d8 == (node *)0x0) {
+    pBVar8 = (BadConversion *)__cxa_allocate_exception(0x40);
+    auVar33 = YAML::Node::Mark((Node *)&local_1f0);
+    local_250 = auVar33._0_8_;
+    local_248 = (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)
+                CONCAT44(local_248._4_4_,auVar33._8_4_);
+    YAML::BadConversion::BadConversion(pBVar8,(Mark *)&local_250);
+    puVar3 = PTR_typeinfo_002fbb70;
+    puVar2 = PTR__TypedBadConversion_002fb718;
+    *(undefined **)pBVar8 = PTR_vtable_002fb748 + 0x10;
+                    /* WARNING: Subroutine does not return */
+    __cxa_throw(pBVar8,puVar3,puVar2);
+  }
+  local_350 = (undefined8 *)0x0;
+  lStack_348 = 0;
+  local_340 = 0;
+  cVar5 = YAML::convert<std::vector<double,std::allocator<double>>>::decode
+                    ((Node *)&local_1f0,(vector *)&local_350);
+  if (cVar5 == '\0') {
+    pBVar8 = (BadConversion *)__cxa_allocate_exception(0x40);
+    auVar33 = YAML::Node::Mark((Node *)&local_1f0);
+    local_250 = auVar33._0_8_;
+    local_248 = (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)
+                CONCAT44(local_248._4_4_,auVar33._8_4_);
+    YAML::BadConversion::BadConversion(pBVar8,(Mark *)&local_250);
+    puVar3 = PTR_typeinfo_002fbb70;
+    puVar2 = PTR__TypedBadConversion_002fb718;
+    *(undefined **)pBVar8 = PTR_vtable_002fb748 + 0x10;
+                    /* WARNING: Subroutine does not return */
+    __cxa_throw(pBVar8,puVar3,puVar2);
+  }
+  if (pnStack_1e0 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_1e0);
+  }
+  if (pnStack_210 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_210);
+  }
+  uVar14 = lStack_348 - (long)local_350 >> 3;
+  if (uVar14 == 0) {
+    uVar12 = 0;
+LAB_00237d9c:
+    do {
+      std::__throw_out_of_range_fmt
+                ("vector::_M_range_check: __n (which is %zu) >= this->size() (which is %zu)",uVar12)
+      ;
+LAB_00237da8:
+      uVar11 = 0;
+      uVar12 = uVar14;
+LAB_00237d8c:
+      std::__throw_out_of_range_fmt
+                ("vector::_M_range_check: __n (which is %zu) >= this->size() (which is %zu)",uVar11)
+      ;
+      uVar14 = uVar12;
+    } while( true );
+  }
+  local_110 = (double *)*local_350;
+  if (uVar14 < 2) {
+    uVar12 = 1;
+    goto LAB_00237d9c;
+  }
+  local_f0 = (double)local_350[1];
+  uVar12 = uVar14;
+  if ((((uVar14 == 2) || (local_d0 = (double)local_350[2], uVar14 == 3)) ||
+      ((local_b0 = (double)local_350[3], uVar14 == 4 ||
+       ((local_108 = (double)local_350[4], uVar14 == 5 ||
+        (local_e8 = (double)local_350[5], uVar14 == 6)))))) ||
+     ((local_c8 = (double)local_350[6], uVar14 == 7 ||
+      (local_a8 = (double)local_350[7], uVar14 == 8)))) goto LAB_00237d9c;
+  local_100 = (double)local_350[8];
+  if (uVar14 == 9) {
+    uVar12 = 9;
+    goto LAB_00237d9c;
+  }
+  local_e0 = (double)local_350[9];
+  if (((((uVar14 == 10) || (local_c0 = (double)local_350[10], uVar14 == 0xb)) ||
+       (local_a0 = (double)local_350[0xb], uVar14 == 0xc)) ||
+      ((local_f8 = (double)local_350[0xc], uVar14 == 0xd ||
+       (local_d8 = (double)local_350[0xd], uVar14 == 0xe)))) ||
+     (local_b8 = (double)local_350[0xe], uVar14 == 0xf)) goto LAB_00237d9c;
+  local_98 = (double)local_350[0xf];
+  dVar17 = *(double *)(this + 0x78);
+  dVar16 = *(double *)(this + 0x70);
+  dVar29 = *(double *)(this + 0x88);
+  dVar27 = *(double *)(this + 0x80);
+  dVar32 = *(double *)(this + 0x98);
+  dVar31 = *(double *)(this + 0x90);
+  dVar30 = *(double *)(this + 0xa8);
+  dVar28 = *(double *)(this + 0xa0);
+  dVar26 = *(double *)(this + 0xb8);
+  dVar25 = *(double *)(this + 0xb0);
+  dVar21 = *(double *)(this + 200);
+  dVar19 = *(double *)(this + 0xc0);
+  dVar24 = *(double *)(this + 0xd8);
+  dVar23 = *(double *)(this + 0xd0);
+  dVar22 = *(double *)(this + 0xe8);
+  dVar20 = *(double *)(this + 0xe0);
+  local_90 = (double *)
+             ((double)local_110 * dVar16 + dVar31 * local_108 + dVar25 * local_100 +
+             dVar23 * local_f8);
+  dStack_88 = (double)local_110 * dVar17 + dVar32 * local_108 + dVar26 * local_100 +
+              dVar24 * local_f8;
+  local_70 = local_f0 * dVar16 + dVar31 * local_e8 + dVar25 * local_e0 + dVar23 * local_d8;
+  dStack_68 = local_f0 * dVar17 + dVar32 * local_e8 + dVar26 * local_e0 + dVar24 * local_d8;
+  dStack_80 = dVar27 * (double)local_110 + dVar28 * local_108 + dVar19 * local_100 +
+              dVar20 * local_f8;
+  dStack_78 = dVar29 * (double)local_110 + dVar30 * local_108 + dVar21 * local_100 +
+              dVar22 * local_f8;
+  dStack_60 = dVar27 * local_f0 + dVar28 * local_e8 + dVar19 * local_e0 + dVar20 * local_d8;
+  dStack_58 = dVar29 * local_f0 + dVar30 * local_e8 + dVar21 * local_e0 + dVar22 * local_d8;
+  local_50 = local_d0 * dVar16 + dVar31 * local_c8 + dVar25 * local_c0 + dVar23 * local_b8;
+  dStack_48 = local_d0 * dVar17 + dVar32 * local_c8 + dVar26 * local_c0 + dVar24 * local_b8;
+  dStack_40 = dVar27 * local_d0 + dVar28 * local_c8 + dVar19 * local_c0 + dVar20 * local_b8;
+  dStack_38 = dVar29 * local_d0 + dVar30 * local_c8 + dVar21 * local_c0 + dVar22 * local_b8;
+  local_30 = dVar16 * local_b0 + dVar31 * local_a8 + dVar25 * local_a0 + dVar23 * local_98;
+  dStack_28 = dVar17 * local_b0 + dVar32 * local_a8 + dVar26 * local_a0 + dVar24 * local_98;
+  local_20 = local_b0 * dVar27 + dVar28 * local_a8 + dVar19 * local_a0 + dVar20 * local_98;
+  dStack_18 = local_b0 * dVar29 + dVar30 * local_a8 + dVar21 * local_a0 + dVar22 * local_98;
+  *(double *)(this + 0xf8) = dStack_88;
+  *(double **)(this + 0xf0) = local_90;
+  *(double *)(this + 0x108) = dStack_78;
+  *(double *)(this + 0x100) = dStack_80;
+  *(double *)(this + 0x118) = dStack_68;
+  *(double *)(this + 0x110) = local_70;
+  *(double *)(this + 0x128) = dStack_58;
+  *(double *)(this + 0x120) = dStack_60;
+  *(double *)(this + 0x138) = dStack_48;
+  *(double *)(this + 0x130) = local_50;
+  *(double *)(this + 0x148) = dStack_38;
+  *(double *)(this + 0x140) = dStack_40;
+  *(double *)(this + 0x158) = dStack_28;
+  *(double *)(this + 0x150) = local_30;
+  *(double *)(this + 0x168) = dStack_18;
+  *(double *)(this + 0x160) = local_20;
+  YAML::Node::operator[]<char[4]>(acStack_310);
+  YAML::Node::operator[]<char[14]>((char *)&local_220);
+  iVar6 = YAML::Node::as<int>((Node *)&local_1f0);
+  this[0x198] = SUB41(iVar6,0);
+  if (pnStack_1e0 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_1e0);
+  }
+  if (pnStack_210 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_210);
+  }
+  YAML::Node::operator[]<char[4]>(acStack_310);
+  YAML::Node::operator[]<char[12]>((char *)&local_220);
+  iVar6 = YAML::Node::as<int>((Node *)&local_1f0);
+  this[0x199] = SUB41(iVar6,0);
+  if (pnStack_1e0 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_1e0);
+  }
+  if (pnStack_210 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_210);
+  }
+  YAML::Node::operator[]<char[4]>(acStack_310);
+  YAML::Node::operator[]<char[10]>((char *)&local_220);
+  iVar6 = YAML::Node::as<int>((Node *)&local_1f0);
+  this[0x19a] = SUB41(iVar6,0);
+  if (pnStack_1e0 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_1e0);
+  }
+  if (pnStack_210 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_210);
+  }
+  YAML::Node::operator[]<char[10]>(acStack_310);
+  YAML::Node::operator[]<char[18]>((char *)&local_220);
+  iVar6 = YAML::Node::as<int>((Node *)&local_1f0);
+  this[0x1a0] = SUB41(iVar6,0);
+  if (pnStack_1e0 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_1e0);
+  }
+  if (pnStack_210 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_210);
+  }
+  YAML::Node::operator[]<char[10]>(acStack_310);
+  YAML::Node::operator[]<char[12]>((char *)&local_220);
+  LVar4 = (LidarOdometryImpl)YAML::Node::as<bool>((Node *)&local_1f0);
+  this[0x1a8] = LVar4;
+  if (pnStack_1e0 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_1e0);
+  }
+  if (pnStack_210 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_210);
+  }
+  YAML::Node::operator[]<char[10]>(acStack_310);
+  YAML::Node::operator[]<char[18]>((char *)&local_220);
+  fVar15 = YAML::Node::as<float>((Node *)&local_1f0);
+  *(float *)(this + 0x1a4) = fVar15;
+  if (pnStack_1e0 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_1e0);
+  }
+  if (pnStack_210 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_210);
+  }
+  YAML::Node::operator[]<char[10]>(acStack_310);
+  YAML::Node::operator[]<char[11]>((char *)&local_220);
+  fVar15 = YAML::Node::as<float>((Node *)&local_1f0);
+  *(float *)(this + 0x1ac) = fVar15;
+  if (pnStack_1e0 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_1e0);
+  }
+  if (pnStack_210 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_210);
+  }
+  YAML::Node::operator[]<char[11]>(acStack_310);
+  YAML::Node::operator[]<char[7]>((char *)&local_220);
+  LVar4 = (LidarOdometryImpl)YAML::Node::as<bool>((Node *)&local_1f0);
+  this[0x1b0] = LVar4;
+  if (pnStack_1e0 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_1e0);
+  }
+  if (pnStack_210 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_210);
+  }
+  YAML::Node::operator[]<char[11]>(acStack_310);
+  YAML::Node::operator[]<char[6]>((char *)&local_220);
+  iVar6 = YAML::Node::as<int>((Node *)&local_1f0);
+  this[0x1b1] = SUB41(iVar6,0);
+  if (pnStack_1e0 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_1e0);
+  }
+  if (pnStack_210 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_210);
+  }
+  *(undefined8 *)(this + 0x1b4) = DAT_002b65d0;
+  YAML::Node::operator[]<char[11]>(acStack_310);
+  YAML::Node::operator[]<char[7]>((char *)&local_1f0);
+  if (pnStack_1e0 != (node *)0x0) {
+    std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+              ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_1e0);
+  }
+  pnVar7 = (node *)(uint)local_2f0;
+  if (local_2f0 == 0) {
+    local_250 = (ulong)local_250._4_4_ << 0x20;
+    local_228 = (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0;
+    pnStack_240 = (node *)0x0;
+    local_248 = (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0;
+    uStack_230 = 0;
+    local_238 = (node *)0x0;
+LAB_00237240:
+    local_220 = (ulong)local_220._4_4_ << 0x20;
+    local_1f8 = (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0;
+    pnStack_210 = (node *)0x0;
+    local_218 = (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0;
+    uStack_200 = 0;
+    local_208 = (node *)0x0;
+    pnVar13 = (node *)0x0;
+  }
+  else {
+    if (local_2d8 == 0) {
+      local_250 = (ulong)local_250._4_4_ << 0x20;
+      local_228 = (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0;
+      pnStack_240 = (node *)0x0;
+      local_248 = (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0;
+      uStack_230 = 0;
+      local_238 = (node *)0x0;
+    }
+    else {
+      YAML::detail::node_data::begin();
+      std::__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2>::__shared_ptr
+                ((__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2> *)&local_220,
+                 a_Stack_2e8);
+      local_1f0 = local_2d0;
+      local_1e8 = p_Stack_2c8;
+      pnStack_1e0 = local_2c0;
+      local_1d8 = pnStack_2b8;
+      local_250 = local_2d0;
+      local_248 = p_Stack_2c8;
+      pnStack_240 = local_2c0;
+      local_238 = pnStack_2b8;
+      std::__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2>::__shared_ptr
+                ((__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2> *)&uStack_230
+                 ,(__shared_ptr *)&local_220);
+      if (local_218 != (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0) {
+        std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release(local_218);
+      }
+      if (local_2f0 == 0) goto LAB_00237240;
+      if (local_2d8 != 0) {
+        YAML::detail::node_data::end();
+        std::__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2>::__shared_ptr
+                  ((__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2> *)local_270
+                   ,a_Stack_2e8);
+        local_220 = local_2b0;
+        local_218 = p_Stack_2a8;
+        pnStack_210 = local_2a0;
+        local_208 = pnStack_298;
+        local_1f0 = local_2b0;
+        local_1e8 = p_Stack_2a8;
+        pnStack_1e0 = local_2a0;
+        local_1d8 = pnStack_298;
+        std::__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2>::__shared_ptr
+                  ((__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2> *)
+                   &uStack_200,(__shared_ptr *)local_270);
+        if (local_268 != (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0) {
+          std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release(local_268);
+        }
+        pnVar13 = (node *)local_220;
+        goto LAB_0023725c;
+      }
+    }
+    local_220 = (ulong)local_220._4_4_ << 0x20;
+    local_1f8 = (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0;
+    pnVar13 = (node *)0x0;
+    pnStack_210 = (node *)0x0;
+    local_218 = (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0;
+    uStack_200 = 0;
+    local_208 = (node *)0x0;
+  }
+LAB_0023725c:
+LAB_0023726c:
+  do {
+    do {
+      do {
+        if (pnVar7 == pnVar13) {
+          if (pnVar7 == (node *)0x1) {
+            if (local_248 == local_218) goto LAB_0023728c;
+LAB_00237b84:
+            pnVar13 = *(node **)local_248;
+            if (pnVar13 == (node *)0x0) goto LAB_002378d8;
+            std::__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2>::__shared_ptr
+                      (a_Stack_380,(__shared_ptr *)&uStack_230);
+            local_270[0] = (Node)0x1;
+            std::__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2>::__shared_ptr
+                      ((__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2> *)
+                       &local_268,(__shared_ptr *)a_Stack_380);
+            local_1f0 = CONCAT71(local_1f0._1_7_,local_270[0]);
+            local_258 = pnVar13;
+            std::__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2>::__shared_ptr
+                      ((__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2> *)
+                       &local_1e8,(__shared_ptr *)&local_268);
+            local_330[0] = (__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2>)0x0
+            ;
+            local_290[0] = (__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2>)0x0
+            ;
+            p_Stack_320 = (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0;
+            local_328 = (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0;
+            local_318 = (node *)0x0;
+            local_1d8 = local_258;
+            p_Stack_280 = (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0;
+            local_288 = (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0;
+            local_278 = (node *)0x0;
+            local_1d0 = (Node)0x0;
+            std::__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2>::__shared_ptr
+                      ((__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2> *)
+                       &local_1c8,(__shared_ptr *)&local_288);
+            local_1b8 = local_278;
+            local_1b0 = local_330[0];
+            std::__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2>::__shared_ptr
+                      ((__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2> *)
+                       &local_1a8,(__shared_ptr *)&local_328);
+            local_198 = local_318;
+            if (p_Stack_320 != (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0) {
+              std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release(p_Stack_320);
+            }
+            if (p_Stack_280 != (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0) {
+              std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release(p_Stack_280);
+            }
+            if (local_260 != (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0) {
+              std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release(local_260);
+            }
+            if (local_378 != (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0) {
+              std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release(local_378);
+            }
+          }
+          else {
+            if ((pnVar7 != (node *)0x2) || (pnStack_240 == pnStack_210)) {
+LAB_0023728c:
+              if (local_1f8 != (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0) {
+                std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release(local_1f8);
+              }
+              if (local_228 != (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0) {
+                std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release(local_228);
+              }
+              if (local_2e0 != (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0) {
+                std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release(local_2e0);
+              }
+              YAML::Node::operator[]<char[10]>(acStack_310);
+              YAML::Node::operator[]<char[12]>((char *)&local_250);
+              YAML::Node::operator[]<char[7]>((char *)&local_220);
+              LVar4 = (LidarOdometryImpl)YAML::Node::as<bool>((Node *)&local_1f0);
+              this[0x1bc] = LVar4;
+              if (pnStack_1e0 != (node *)0x0) {
+                std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+                          ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_1e0);
+              }
+              if (pnStack_210 != (node *)0x0) {
+                std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+                          ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_210);
+              }
+              if (pnStack_240 != (node *)0x0) {
+                std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+                          ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_240);
+              }
+              YAML::Node::operator[]<char[10]>(acStack_310);
+              YAML::Node::operator[]<char[12]>((char *)&local_250);
+              YAML::Node::operator[]<char[6]>((char *)&local_220);
+              iVar6 = YAML::Node::as<int>((Node *)&local_1f0);
+              this[0x1bd] = SUB41(iVar6,0);
+              if (pnStack_1e0 != (node *)0x0) {
+                std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+                          ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_1e0);
+              }
+              if (pnStack_210 != (node *)0x0) {
+                std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+                          ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_210);
+              }
+              if (pnStack_240 != (node *)0x0) {
+                std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+                          ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_240);
+              }
+              YAML::Node::operator[]<char[10]>(acStack_310);
+              YAML::Node::operator[]<char[12]>((char *)&local_250);
+              YAML::Node::operator[]<char[14]>((char *)&local_220);
+              LVar4 = (LidarOdometryImpl)YAML::Node::as<bool>((Node *)&local_1f0);
+              this[0x1be] = LVar4;
+              if (pnStack_1e0 != (node *)0x0) {
+                std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+                          ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_1e0);
+              }
+              if (pnStack_210 != (node *)0x0) {
+                std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+                          ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_210);
+              }
+              if (pnStack_240 != (node *)0x0) {
+                std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+                          ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_240);
+              }
+              YAML::Node::operator[]<char[10]>(acStack_310);
+              YAML::Node::operator[]<char[12]>((char *)local_270);
+              YAML::Node::operator[]<char[7]>((char *)&local_250);
+              YAML::Node::operator[]<char[10]>((char *)&local_220);
+              fVar15 = YAML::Node::as<float>((Node *)&local_1f0);
+              *(float *)(this + 0x1c0) = fVar15;
+              if (pnStack_1e0 != (node *)0x0) {
+                std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+                          ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_1e0);
+              }
+              if (pnStack_210 != (node *)0x0) {
+                std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+                          ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_210);
+              }
+              if (pnStack_240 != (node *)0x0) {
+                std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+                          ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_240);
+              }
+              if (local_260 != (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0) {
+                std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release(local_260);
+              }
+              YAML::Node::operator[]<char[10]>(acStack_310);
+              YAML::Node::operator[]<char[12]>((char *)local_270);
+              YAML::Node::operator[]<char[7]>((char *)&local_250);
+              YAML::Node::operator[]<char[10]>((char *)&local_220);
+              fVar15 = YAML::Node::as<float>((Node *)&local_1f0);
+              *(float *)(this + 0x1c4) = fVar15;
+              if (pnStack_1e0 != (node *)0x0) {
+                std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+                          ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_1e0);
+              }
+              if (pnStack_210 != (node *)0x0) {
+                std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+                          ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_210);
+              }
+              if (pnStack_240 != (node *)0x0) {
+                std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+                          ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_240);
+              }
+              if (local_260 != (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0) {
+                std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release(local_260);
+              }
+              YAML::Node::operator[]<char[10]>(acStack_310);
+              YAML::Node::operator[]<char[12]>((char *)local_270);
+              YAML::Node::operator[]<char[7]>((char *)&local_250);
+              YAML::Node::operator[]<char[10]>((char *)&local_220);
+              LVar4 = (LidarOdometryImpl)YAML::Node::as<bool>((Node *)&local_1f0);
+              this[0x1c8] = LVar4;
+              if (pnStack_1e0 != (node *)0x0) {
+                std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+                          ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_1e0);
+              }
+              if (pnStack_210 != (node *)0x0) {
+                std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+                          ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_210);
+              }
+              if (pnStack_240 != (node *)0x0) {
+                std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+                          ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_240);
+              }
+              if (local_260 != (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0) {
+                std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release(local_260);
+              }
+              YAML::Node::operator[]<char[10]>(acStack_310);
+              YAML::Node::operator[]<char[12]>((char *)local_270);
+              YAML::Node::operator[]<char[7]>((char *)&local_250);
+              if (local_220._0_1_ == (Node)0x0) {
+                pIVar9 = (InvalidNode *)__cxa_allocate_exception(0x40);
+                YAML::InvalidNode::InvalidNode(pIVar9);
+                    /* WARNING: Subroutine does not return */
+                __cxa_throw(pIVar9,PTR_typeinfo_002fbba0,PTR__InvalidNode_002fbec0);
+              }
+              YAML::Node::EnsureNodeExists((Node *)&local_220);
+              FUN_00205bc8(&local_90,"horizontal_resolution");
+              std::__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2>::
+              __shared_ptr((__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2> *)
+                           &local_1f0,(__shared_ptr *)&local_218);
+              pnVar7 = YAML::detail::node::get<std::__cxx11::string>
+                                 (pnVar7,&local_90,
+                                  (__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2>
+                                   *)&local_1f0);
+              if (local_1e8 != (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0) {
+                std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release(local_1e8);
+              }
+              if (local_90 != &dStack_80) {
+                operator_delete(local_90);
+              }
+              std::__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2>::
+              __shared_ptr(local_290,(__shared_ptr *)&local_218);
+              local_1f0 = CONCAT71(local_1f0._1_7_,1);
+              std::__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2>::
+              __shared_ptr((__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2> *)
+                           &local_1e8,(__shared_ptr *)local_290);
+              local_1d8 = pnVar7;
+              if (local_288 != (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0) {
+                std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release(local_288);
+              }
+              fVar15 = YAML::Node::as<float>((Node *)&local_1f0);
+              *(float *)(this + 0x1cc) = (float)(((double)fVar15 / 180.0) * DAT_002b65d8);
+              if (pnStack_1e0 != (node *)0x0) {
+                std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+                          ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_1e0);
+              }
+              if (pnStack_210 != (node *)0x0) {
+                std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+                          ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_210);
+              }
+              if (pnStack_240 != (node *)0x0) {
+                std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+                          ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_240);
+              }
+              if (local_260 != (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0) {
+                std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release(local_260);
+              }
+              YAML::Node::operator[]<char[10]>(acStack_310);
+              YAML::Node::operator[]<char[12]>((char *)local_270);
+              YAML::Node::operator[]<char[7]>((char *)&local_250);
+              if (local_220._0_1_ == (Node)0x0) {
+                pIVar9 = (InvalidNode *)__cxa_allocate_exception(0x40);
+                YAML::InvalidNode::InvalidNode(pIVar9);
+                    /* WARNING: Subroutine does not return */
+                __cxa_throw(pIVar9,PTR_typeinfo_002fbba0,PTR__InvalidNode_002fbec0);
+              }
+              YAML::Node::EnsureNodeExists((Node *)&local_220);
+              FUN_00205bc8(&local_90,"vertical_resolution");
+              std::__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2>::
+              __shared_ptr((__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2> *)
+                           &local_1f0,(__shared_ptr *)&local_218);
+              pnVar7 = YAML::detail::node::get<std::__cxx11::string>
+                                 (pnVar7,&local_90,
+                                  (__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2>
+                                   *)&local_1f0);
+              if (local_1e8 != (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0) {
+                std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release(local_1e8);
+              }
+              if (local_90 != &dStack_80) {
+                operator_delete(local_90);
+              }
+              std::__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2>::
+              __shared_ptr(local_290,(__shared_ptr *)&local_218);
+              local_1f0 = CONCAT71(local_1f0._1_7_,1);
+              std::__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2>::
+              __shared_ptr((__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2> *)
+                           &local_1e8,(__shared_ptr *)local_290);
+              local_1d8 = pnVar7;
+              if (local_288 != (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0) {
+                std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release(local_288);
+              }
+              fVar15 = YAML::Node::as<float>((Node *)&local_1f0);
+              *(float *)(this + 0x1d0) = (float)(((double)fVar15 / 180.0) * DAT_002b65d8);
+              if (pnStack_1e0 != (node *)0x0) {
+                std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+                          ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_1e0);
+              }
+              if (pnStack_210 != (node *)0x0) {
+                std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+                          ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_210);
+              }
+              if (pnStack_240 != (node *)0x0) {
+                std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+                          ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_240);
+              }
+              if (local_260 != (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0) {
+                std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release(local_260);
+              }
+              YAML::Node::operator[]<char[10]>(acStack_310);
+              YAML::Node::operator[]<char[12]>((char *)local_270);
+              YAML::Node::operator[]<char[7]>((char *)&local_250);
+              YAML::Node::operator[]<char[12]>((char *)&local_220);
+              fVar15 = YAML::Node::as<float>((Node *)&local_1f0);
+              *(float *)(this + 0x1d4) = fVar15;
+              if (pnStack_1e0 != (node *)0x0) {
+                std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+                          ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_1e0);
+              }
+              if (pnStack_210 != (node *)0x0) {
+                std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+                          ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_210);
+              }
+              if (pnStack_240 != (node *)0x0) {
+                std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+                          ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_240);
+              }
+              if (local_260 != (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0) {
+                std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release(local_260);
+              }
+              if (local_350 != (undefined8 *)0x0) {
+                operator_delete(local_350);
+              }
+              if (local_370 != (undefined8 *)0x0) {
+                operator_delete(local_370);
+              }
+              if (local_300 != (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0) {
+                std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release(local_300);
+              }
+              if (local_8 - *(long *)PTR___stack_chk_guard_002fbfa0 == 0) {
+                return 1;
+              }
+                    /* WARNING: Subroutine does not return */
+              __stack_chk_fail(PTR___stack_chk_guard_002fbfa0,
+                               local_8 - *(long *)PTR___stack_chk_guard_002fbfa0,0);
+            }
+LAB_00237a80:
+            pnVar13 = *(node **)pnStack_240;
+            pnVar1 = *(node **)(pnStack_240 + 8);
+            if (pnVar13 == (node *)0x0 || pnVar1 == (node *)0x0) goto LAB_002378d8;
+            std::__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2>::__shared_ptr
+                      (local_330,(__shared_ptr *)&uStack_230);
+            local_270[0] = (Node)0x1;
+            std::__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2>::__shared_ptr
+                      ((__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2> *)
+                       &local_268,(__shared_ptr *)local_330);
+            local_258 = pnVar13;
+            std::__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2>::__shared_ptr
+                      (a_Stack_380,(__shared_ptr *)&uStack_230);
+            local_290[0] = (__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2>)0x1
+            ;
+            std::__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2>::__shared_ptr
+                      ((__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2> *)
+                       &local_288,(__shared_ptr *)a_Stack_380);
+            local_1f0 = local_1f0 & 0xffffffffffffff00;
+            local_1e8 = (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0;
+            pnStack_1e0 = (node *)0x0;
+            local_1d8 = (node *)0x0;
+            local_1d0 = local_270[0];
+            local_278 = pnVar1;
+            std::__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2>::__shared_ptr
+                      ((__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2> *)
+                       &local_1c8,(__shared_ptr *)&local_268);
+            local_1b8 = local_258;
+            local_1b0 = local_290[0];
+            std::__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2>::__shared_ptr
+                      ((__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2> *)
+                       &local_1a8,(__shared_ptr *)&local_288);
+            local_198 = local_278;
+            if (p_Stack_280 != (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0) {
+              std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release(p_Stack_280);
+            }
+            if (local_378 != (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0) {
+              std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release(local_378);
+            }
+            if (local_260 != (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0) {
+              std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release(local_260);
+            }
+            if (local_328 != (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0) {
+              std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release(local_328);
+            }
+          }
+        }
+        else {
+          if (pnVar7 != (node *)0x0) {
+            if (pnVar7 == (node *)0x1) goto LAB_00237b84;
+            if (pnVar7 == (node *)0x2) goto LAB_00237a80;
+          }
+LAB_002378d8:
+          local_1f0 = CONCAT71(local_1f0._1_7_,1);
+          local_1d0 = (Node)0x1;
+          local_1b0 = (__shared_ptr<YAML::detail::memory_holder,(__gnu_cxx::_Lock_policy)2>)0x1;
+          local_1d8 = (node *)0x0;
+          local_1b8 = (node *)0x0;
+          local_198 = (node *)0x0;
+          pnStack_1e0 = (node *)0x0;
+          local_1e8 = (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0;
+          p_Stack_1c0 = (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0;
+          local_1c8 = 0;
+          p_Stack_1a0 = (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0;
+          local_1a8 = 0;
+        }
+        YAML::Node::operator[]<char[6]>((char *)&local_1f0);
+        fVar15 = YAML::Node::as<float>(local_270);
+        fVar18 = *(float *)(this + 0x1b4);
+        if (local_260 != (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0) {
+          std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release(local_260);
+        }
+        if (fVar15 < fVar18) {
+          YAML::Node::operator[]<char[6]>((char *)&local_1f0);
+          fVar15 = YAML::Node::as<float>(local_270);
+          *(float *)(this + 0x1b4) = fVar15;
+          if (local_260 != (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0) {
+            std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release(local_260);
+          }
+        }
+        YAML::Node::operator[]<char[6]>((char *)&local_1f0);
+        fVar15 = YAML::Node::as<float>(local_270);
+        fVar18 = *(float *)(this + 0x1b8);
+        if (local_260 != (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0) {
+          std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release(local_260);
+        }
+        if (fVar18 < fVar15) {
+          YAML::Node::operator[]<char[6]>((char *)&local_1f0);
+          fVar15 = YAML::Node::as<float>(local_270);
+          *(float *)(this + 0x1b8) = fVar15;
+          if (local_260 != (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0) {
+            std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release(local_260);
+          }
+        }
+        if (p_Stack_1a0 != (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0) {
+          std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release(p_Stack_1a0);
+        }
+        if (p_Stack_1c0 != (_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)0x0) {
+          std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release(p_Stack_1c0);
+        }
+        if (pnStack_1e0 != (node *)0x0) {
+          std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release
+                    ((_Sp_counted_base<(__gnu_cxx::_Lock_policy)2> *)pnStack_1e0);
+        }
+        pnVar13 = (node *)local_220;
+        if ((int)local_250 == 1) {
+          local_248 = local_248 + 8;
+          goto LAB_0023726c;
+        }
+      } while ((int)local_250 != 2);
+      pnStack_240 = pnStack_240 + 0x10;
+    } while (pnStack_240 == local_238);
+    do {
+      if ((**(char **)**(undefined8 **)pnStack_240 != '\0') &&
+         (**(char **)**(undefined8 **)(pnStack_240 + 8) != '\0')) goto LAB_0023726c;
+      pnStack_240 = pnStack_240 + 0x10;
+    } while (local_238 != pnStack_240);
+    pnStack_240 = local_238;
+  } while( true );
+}
+
+
+WROTE /home/lee/rea/notes/ghidra_lio_extrinsic.txt

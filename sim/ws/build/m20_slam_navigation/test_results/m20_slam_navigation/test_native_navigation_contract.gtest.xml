@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="7" failures="0" disabled="0" errors="0" time="0.207" timestamp="2026-10-15T09:54:42" name="AllTests">
+  <testsuite name="NativeNavigationContract" tests="6" failures="0" disabled="0" errors="0" time="0.207" timestamp="2026-10-15T09:54:42">
+    <testcase name="TopicsAndDefaultsMatchM20Pro" status="run" result="completed" time="0" timestamp="2026-10-15T09:54:42" classname="m20_slam_navigation.NativeNavigationContract" />
+    <testcase name="NativePrimitiveSetHasEightDirectionsAndThreeSteers" status="run" result="completed" time="0" timestamp="2026-10-15T09:54:42" classname="m20_slam_navigation.NativeNavigationContract" />
+    <testcase name="HybridAstarPlansOnFreeNativeGrid" status="run" result="completed" time="0.001" timestamp="2026-10-15T09:54:42" classname="m20_slam_navigation.NativeNavigationContract" />
+    <testcase name="HybridAstarRejectsLethalGoalFootprint" status="run" result="completed" time="0.201" timestamp="2026-10-15T09:54:42" classname="m20_slam_navigation.NativeNavigationContract" />
+    <testcase name="LocalPlannerUsesLineModeAndNativeLimits" status="run" result="completed" time="0" timestamp="2026-10-15T09:54:43" classname="m20_slam_navigation.NativeNavigationContract" />
+    <testcase name="TerrainFallbackUsesWorldFrameAndDoesNotAccumulateCost" status="run" result="completed" time="0.005" timestamp="2026-10-15T09:54:43" classname="m20_slam_navigation.NativeNavigationContract" />
+  </testsuite>
+  <testsuite name="NativeLocalizationContract" tests="1" failures="0" disabled="0" errors="0" time="0" timestamp="2026-10-15T09:54:43">
+    <testcase name="TopicsFramesAndDefaultsMatchM20Pro" status="run" result="completed" time="0" timestamp="2026-10-15T09:54:43" classname="m20_slam_navigation.NativeLocalizationContract" />
+  </testsuite>
+</testsuites>

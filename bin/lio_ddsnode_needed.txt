@@ -1,0 +1,15 @@
+libdrdds.so.1
+libfastrtps.so.2.14
+libpthread.so.0
+libyaml-cpp.so.0.6
+liblog4cplus.so.2
+libpcl_io.so.1.10
+libpcl_common.so.1.10
+liblz4.so.1
+libopencv_core.so.4.2
+libgomp.so.1
+libstdc++.so.6
+libm.so.6
+libgcc_s.so.1
+libc.so.6
+ld-linux-aarch64.so.1

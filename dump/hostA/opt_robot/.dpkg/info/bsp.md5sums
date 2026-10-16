@@ -1,0 +1,16 @@
+d6e6ae18df9e00598899a90759d9e246  boot/Image-5.10.198
+af811c9c139bba8e7a6e0b2e2399e748  boot/rk3588-ysc-linux-ca9b-control.dtb
+efbc8b09c3ad8d82a05b092511d6c0b2  boot/rk3588-ysc-linux-ca9b-control_old_v2_0.dtb
+2ef6dff71912aa49310167f70db216e1  boot/rk3588-ysc-linux-ca9b-customer.dtb
+c3edfc4936792aecd4c0f685429b5b60  boot/rk3588-ysc-linux-ca9b-customer_old_v2_0.dtb
+639c5279c6778a9b613138eb0cc52d14  boot/rk3588-ysc-linux-ca9b-perception.dtb
+a2f932b852d0ed56cd671032484f0fb8  boot/rk3588-ysc-linux-ca9b-perception_old_v2_0.dtb
+32cf97cb85911ea1c59329234e5992ce  etc/sysctl.d/99-ca9b-gmac-udp.conf
+bbb86d45a6e7e561388362d6834c2f03  etc/systemd/system/ca9b-eth0-irq-affinity.service
+26de1143149cedc4ba25c14f823b965f  etc/update-motd.d/20-ysc-txt
+0f1c81117b26a8fd836726ecd0ddaaa7  opt/robot/os_type
+c0200295fc74f16ef356b20c45272256  opt/robot/scripts/start.sh
+f1dc0e2438e65273d2f9b5013543a0d2  opt/robot/scripts/system/config.yaml
+795d68a48a69a1112820117df9e18a94  usr/local/include/drspg.h
+43c306b97aa8779ecbdd5cf436efc431  usr/local/lib/libdrspg.so
+5eae31eed681cdfa3345ff8f098123ab  usr/local/sbin/ca9b-eth0-irq-affinity.sh

@@ -1,0 +1,1170 @@
+Starting >>> m20_slam_navigation
+--- stderr: m20_slam_navigation
+In file included from /opt/ros/humble/include/gtsam/inference/Symbol.h:22,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:19,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/inference/Key.h: In static member function ‘static bool gtsam::traits<long unsigned int>::Equals(const Key&, const Key&, double)’:
+/opt/ros/humble/include/gtsam/inference/Key.h:121:63: warning: unused parameter ‘tol’ [-Wunused-parameter]
+  121 |   static bool Equals(const Key& val1, const Key& val2, double tol = 1e-8) {
+      |                                                        ~~~~~~~^~~~~~~~~~
+In file included from /opt/ros/humble/include/gtsam/nonlinear/Values.h:571,
+                 from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:24,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/nonlinear/Values-inl.h: In member function ‘gtsam::Values::Filtered<gtsam::Value> gtsam::Values::filter(const std::function<bool(long unsigned int)>&)’:
+/opt/ros/humble/include/gtsam/nonlinear/Values-inl.h:253:25: warning: ‘gtsam::Values::Filtered<ValueType> gtsam::Values::filter(const std::function<bool(long unsigned int)>&) [with ValueType = gtsam::Value]’ is deprecated [-Wdeprecated-declarations]
+  253 |     return filter<Value>(filterFcn);
+      |            ~~~~~~~~~~~~~^~~~~~~~~~~
+In file included from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:24,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/nonlinear/Values.h:421:5: note: declared here
+  421 |     filter(const std::function<bool(Key)>& filterFcn = &_truePredicate<Key>);
+      |     ^~~~~~
+In file included from /opt/ros/humble/include/gtsam/nonlinear/Values.h:571,
+                 from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:24,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/nonlinear/Values-inl.h: In member function ‘gtsam::Values::ConstFiltered<gtsam::Value> gtsam::Values::filter(const std::function<bool(long unsigned int)>&) const’:
+/opt/ros/humble/include/gtsam/nonlinear/Values-inl.h:265:25: warning: ‘gtsam::Values::ConstFiltered<ValueType> gtsam::Values::filter(const std::function<bool(long unsigned int)>&) const [with ValueType = gtsam::Value]’ is deprecated [-Wdeprecated-declarations]
+  265 |     return filter<Value>(filterFcn);
+      |            ~~~~~~~~~~~~~^~~~~~~~~~~
+In file included from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:24,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/nonlinear/Values.h:429:47: note: declared here
+  429 |     ConstFiltered<ValueType> GTSAM_DEPRECATED filter(
+      |                                               ^~~~~~
+In file included from /opt/ros/humble/include/gtsam/linear/NoiseModel.h:24,
+                 from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:25,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/linear/LossFunctions.h: In member function ‘virtual double gtsam::noiseModel::mEstimator::Base::loss(double) const’:
+/opt/ros/humble/include/gtsam/linear/LossFunctions.h:94:30: warning: unused parameter ‘distance’ [-Wunused-parameter]
+   94 |   virtual double loss(double distance) const { return 0; }
+      |                       ~~~~~~~^~~~~~~~
+In file included from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:25,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/linear/NoiseModel.h: In member function ‘virtual double gtsam::noiseModel::Base::weight(const Vector&) const’:
+/opt/ros/humble/include/gtsam/linear/NoiseModel.h:137:43: warning: unused parameter ‘v’ [-Wunused-parameter]
+  137 |       virtual double weight(const Vector& v) const { return 1.0; }
+      |                             ~~~~~~~~~~~~~~^
+In file included from /opt/ros/humble/include/gtsam/linear/GaussianBayesTree.h:23,
+                 from /opt/ros/humble/include/gtsam/nonlinear/ISAM2.h:23,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:21,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/linear/GaussianFactorGraph.h: In static member function ‘static gtsam::Ordering gtsam::EliminationTraits<gtsam::GaussianFactorGraph>::DefaultOrderingFunc(const FactorGraphType&, boost::optional<const gtsam::VariableIndex&>)’:
+/opt/ros/humble/include/gtsam/linear/GaussianFactorGraph.h:59:32: warning: unused parameter ‘graph’ [-Wunused-parameter]
+   59 |         const FactorGraphType& graph,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+In file included from /opt/ros/humble/include/gtsam/inference/Ordering.h:24,
+                 from /opt/ros/humble/include/gtsam/linear/VectorValues.h:21,
+                 from /opt/ros/humble/include/gtsam/linear/GaussianConditional.h:28,
+                 from /opt/ros/humble/include/gtsam/linear/GaussianBayesNet.h:23,
+                 from /opt/ros/humble/include/gtsam/linear/GaussianBayesTree.h:22,
+                 from /opt/ros/humble/include/gtsam/nonlinear/ISAM2.h:23,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:21,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/inference/VariableIndex.h: In member function ‘gtsam::VariableIndex& gtsam::VariableIndex::operator=(const gtsam::VariableIndex&)’:
+/opt/ros/humble/include/gtsam/inference/VariableIndex.h:43:20: warning: implicitly-declared ‘gtsam::FastMap<long unsigned int, std::vector<long unsigned int, tbb::detail::d1::tbb_allocator<long unsigned int> > >& gtsam::FastMap<long unsigned int, std::vector<long unsigned int, tbb::detail::d1::tbb_allocator<long unsigned int> > >::operator=(const gtsam::FastMap<long unsigned int, std::vector<long unsigned int, tbb::detail::d1::tbb_allocator<long unsigned int> > >&)’ is deprecated [-Wdeprecated-copy]
+   43 | class GTSAM_EXPORT VariableIndex {
+      |                    ^~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/gtsam/inference/Key.h:21,
+                 from /opt/ros/humble/include/gtsam/inference/Symbol.h:22,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:19,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/base/FastMap.h:53:3: note: because ‘gtsam::FastMap<long unsigned int, std::vector<long unsigned int, tbb::detail::d1::tbb_allocator<long unsigned int> > >’ has user-provided ‘gtsam::FastMap<KEY, VALUE>::FastMap(const gtsam::FastMap<KEY, VALUE>&) [with KEY = long unsigned int; VALUE = std::vector<long unsigned int, tbb::detail::d1::tbb_allocator<long unsigned int> >]’
+   53 |   FastMap(const FastMap<KEY,VALUE>& x) : Base(x) {}
+      |   ^~~~~~~
+In file included from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:21,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/nonlinear/ISAM2.h: In member function ‘gtsam::ISAM2& gtsam::ISAM2::operator=(const gtsam::ISAM2&)’:
+/opt/ros/humble/include/gtsam/nonlinear/ISAM2.h:45:20: note: synthesized method ‘gtsam::VariableIndex& gtsam::VariableIndex::operator=(const gtsam::VariableIndex&)’ first required here
+   45 | class GTSAM_EXPORT ISAM2 : public BayesTree<ISAM2Clique> {
+      |                    ^~~~~
+/opt/ros/humble/include/gtsam/nonlinear/ISAM2.h:45:20: warning: implicitly-declared ‘gtsam::VectorValues& gtsam::VectorValues::operator=(const gtsam::VectorValues&)’ is deprecated [-Wdeprecated-copy]
+In file included from /opt/ros/humble/include/gtsam/linear/GaussianConditional.h:28,
+                 from /opt/ros/humble/include/gtsam/linear/GaussianBayesNet.h:23,
+                 from /opt/ros/humble/include/gtsam/linear/GaussianBayesTree.h:22,
+                 from /opt/ros/humble/include/gtsam/nonlinear/ISAM2.h:23,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:21,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/linear/VectorValues.h:107:5: note: because ‘gtsam::VectorValues’ has user-provided ‘gtsam::VectorValues::VectorValues(const gtsam::VectorValues&)’
+  107 |     VectorValues(const VectorValues& c) : values_(c.values_) {}
+      |     ^~~~~~~~~~~~
+/opt/ros/humble/include/gtsam/linear/VectorValues.h: In member function ‘gtsam::VectorValues& gtsam::VectorValues::operator=(const gtsam::VectorValues&)’:
+/opt/ros/humble/include/gtsam/linear/VectorValues.h:74:22: warning: implicitly-declared ‘gtsam::ConcurrentMap<long unsigned int, Eigen::Matrix<double, -1, 1> >& gtsam::ConcurrentMap<long unsigned int, Eigen::Matrix<double, -1, 1> >::operator=(const gtsam::ConcurrentMap<long unsigned int, Eigen::Matrix<double, -1, 1> >&)’ is deprecated [-Wdeprecated-copy]
+   74 |   class GTSAM_EXPORT VectorValues {
+      |                      ^~~~~~~~~~~~
+In file included from /opt/ros/humble/include/gtsam/linear/VectorValues.h:23,
+                 from /opt/ros/humble/include/gtsam/linear/GaussianConditional.h:28,
+                 from /opt/ros/humble/include/gtsam/linear/GaussianBayesNet.h:23,
+                 from /opt/ros/humble/include/gtsam/linear/GaussianBayesTree.h:22,
+                 from /opt/ros/humble/include/gtsam/nonlinear/ISAM2.h:23,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:21,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/base/ConcurrentMap.h:82:3: note: because ‘gtsam::ConcurrentMap<long unsigned int, Eigen::Matrix<double, -1, 1> >’ has user-provided ‘gtsam::ConcurrentMap<KEY, VALUE>::ConcurrentMap(const gtsam::ConcurrentMap<KEY, VALUE>&) [with KEY = long unsigned int; VALUE = Eigen::Matrix<double, -1, 1>]’
+   82 |   ConcurrentMap(const ConcurrentMap<KEY,VALUE>& x) : Base(x) {}
+      |   ^~~~~~~~~~~~~
+In file included from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:21,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/nonlinear/ISAM2.h: In member function ‘gtsam::ISAM2& gtsam::ISAM2::operator=(const gtsam::ISAM2&)’:
+/opt/ros/humble/include/gtsam/nonlinear/ISAM2.h:45:20: note: synthesized method ‘gtsam::VectorValues& gtsam::VectorValues::operator=(const gtsam::VectorValues&)’ first required here
+   45 | class GTSAM_EXPORT ISAM2 : public BayesTree<ISAM2Clique> {
+      |                    ^~~~~
+/opt/ros/humble/include/gtsam/nonlinear/ISAM2.h:45:20: warning: implicitly-declared ‘gtsam::VectorValues& gtsam::VectorValues::operator=(const gtsam::VectorValues&)’ is deprecated [-Wdeprecated-copy]
+In file included from /opt/ros/humble/include/gtsam/linear/GaussianConditional.h:28,
+                 from /opt/ros/humble/include/gtsam/linear/GaussianBayesNet.h:23,
+                 from /opt/ros/humble/include/gtsam/linear/GaussianBayesTree.h:22,
+                 from /opt/ros/humble/include/gtsam/nonlinear/ISAM2.h:23,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:21,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/linear/VectorValues.h:107:5: note: because ‘gtsam::VectorValues’ has user-provided ‘gtsam::VectorValues::VectorValues(const gtsam::VectorValues&)’
+  107 |     VectorValues(const VectorValues& c) : values_(c.values_) {}
+      |     ^~~~~~~~~~~~
+In file included from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:21,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/nonlinear/ISAM2.h:45:20: warning: implicitly-declared ‘gtsam::VectorValues& gtsam::VectorValues::operator=(const gtsam::VectorValues&)’ is deprecated [-Wdeprecated-copy]
+   45 | class GTSAM_EXPORT ISAM2 : public BayesTree<ISAM2Clique> {
+      |                    ^~~~~
+In file included from /opt/ros/humble/include/gtsam/linear/GaussianConditional.h:28,
+                 from /opt/ros/humble/include/gtsam/linear/GaussianBayesNet.h:23,
+                 from /opt/ros/humble/include/gtsam/linear/GaussianBayesTree.h:22,
+                 from /opt/ros/humble/include/gtsam/nonlinear/ISAM2.h:23,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:21,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/linear/VectorValues.h:107:5: note: because ‘gtsam::VectorValues’ has user-provided ‘gtsam::VectorValues::VectorValues(const gtsam::VectorValues&)’
+  107 |     VectorValues(const VectorValues& c) : values_(c.values_) {}
+      |     ^~~~~~~~~~~~
+In file included from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:21,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/nonlinear/ISAM2.h:45:20: warning: implicitly-declared ‘gtsam::FastSet<long unsigned int>& gtsam::FastSet<long unsigned int>::operator=(const gtsam::FastSet<long unsigned int>&)’ is deprecated [-Wdeprecated-copy]
+   45 | class GTSAM_EXPORT ISAM2 : public BayesTree<ISAM2Clique> {
+      |                    ^~~~~
+In file included from /opt/ros/humble/include/gtsam/inference/Key.h:22,
+                 from /opt/ros/humble/include/gtsam/inference/Symbol.h:22,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:19,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/base/FastSet.h:70:3: note: because ‘gtsam::FastSet<long unsigned int>’ has user-provided ‘gtsam::FastSet<VALUE>::FastSet(const gtsam::FastSet<VALUE>&) [with VALUE = long unsigned int]’
+   70 |   FastSet(const FastSet<VALUE>& x) :
+      |   ^~~~~~~
+In file included from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:21,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/nonlinear/ISAM2.h:45:20: warning: implicitly-declared ‘gtsam::FastSet<long unsigned int>& gtsam::FastSet<long unsigned int>::operator=(const gtsam::FastSet<long unsigned int>&)’ is deprecated [-Wdeprecated-copy]
+   45 | class GTSAM_EXPORT ISAM2 : public BayesTree<ISAM2Clique> {
+      |                    ^~~~~
+In file included from /opt/ros/humble/include/gtsam/inference/Key.h:22,
+                 from /opt/ros/humble/include/gtsam/inference/Symbol.h:22,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:19,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/base/FastSet.h:70:3: note: because ‘gtsam::FastSet<long unsigned int>’ has user-provided ‘gtsam::FastSet<VALUE>::FastSet(const gtsam::FastSet<VALUE>&) [with VALUE = long unsigned int]’
+   70 |   FastSet(const FastSet<VALUE>& x) :
+      |   ^~~~~~~
+/home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp: In constructor ‘m20::backend::FactorGraph::FactorGraph(const m20::BackendParams&)’:
+/home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:54:37: note: synthesized method ‘gtsam::ISAM2& gtsam::ISAM2::operator=(const gtsam::ISAM2&)’ first required here
+   54 |   isam2_ = gtsam::ISAM2(isam2_params);
+      |                                     ^
+/home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp: In member function ‘void m20::backend::FactorGraph::addOdometryFactor(m20::FrameId, m20::FrameId, const m20::SE3Pose&, const Eigen::Matrix<double, 6, 6>&)’:
+/home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:77:62: warning: implicitly-declared ‘gtsam::Pose3& gtsam::Pose3::operator=(const gtsam::Pose3&)’ is deprecated [-Wdeprecated-copy]
+   77 |       prev_pose = initial_values_.at<gtsam::Pose3>(X(prev_id));
+      |                                                              ^
+In file included from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:18,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/geometry/Pose3.h:58:3: note: because ‘gtsam::Pose3’ has user-provided ‘gtsam::Pose3::Pose3(const gtsam::Pose3&)’
+   58 |   Pose3(const Pose3& pose) :
+      |   ^~~~~
+/home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:82:54: warning: implicitly-declared ‘gtsam::Pose3& gtsam::Pose3::operator=(const gtsam::Pose3&)’ is deprecated [-Wdeprecated-copy]
+   82 |       prev_pose = result_.at<gtsam::Pose3>(X(prev_id));
+      |                                                      ^
+In file included from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:18,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/geometry/Pose3.h:58:3: note: because ‘gtsam::Pose3’ has user-provided ‘gtsam::Pose3::Pose3(const gtsam::Pose3&)’
+   58 |   Pose3(const Pose3& pose) :
+      |   ^~~~~
+/home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:84:42: warning: implicitly-declared ‘gtsam::Pose3& gtsam::Pose3::operator=(const gtsam::Pose3&)’ is deprecated [-Wdeprecated-copy]
+   84 |       prev_pose = gtsam::Pose3::Identity();
+      |                                          ^
+In file included from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:18,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/geometry/Pose3.h:58:3: note: because ‘gtsam::Pose3’ has user-provided ‘gtsam::Pose3::Pose3(const gtsam::Pose3&)’
+   58 |   Pose3(const Pose3& pose) :
+      |   ^~~~~
+In file included from /opt/ros/humble/include/gtsam/base/VectorSpace.h:11,
+                 from /opt/ros/humble/include/gtsam/geometry/Point3.h:25,
+                 from /opt/ros/humble/include/gtsam/geometry/Pose3.h:23,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:18,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/base/Lie.h: In instantiation of ‘gtsam::IsLieGroup<T>::~IsLieGroup() [with T = gtsam::Pose3]’:
+/usr/include/boost/concept/detail/general.hpp:39:47:   required from ‘static void boost::concepts::requirement<boost::concepts::failed************ Model::************>::failed() [with Model = gtsam::IsLieGroup<gtsam::Pose3>]’
+/opt/ros/humble/include/gtsam/slam/BetweenFactor.h:44:5:   required from ‘class gtsam::BetweenFactor<gtsam::Pose3>’
+/home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:71:60:   required from here
+/opt/ros/humble/include/gtsam/base/Lie.h:273:7: warning: implicitly-declared ‘gtsam::Pose3& gtsam::Pose3::operator=(const gtsam::Pose3&)’ is deprecated [-Wdeprecated-copy]
+  273 |     g = traits<T>::Compose(g, h, Hg, Hh);
+      |     ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:18,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/geometry/Pose3.h:58:3: note: because ‘gtsam::Pose3’ has user-provided ‘gtsam::Pose3::Pose3(const gtsam::Pose3&)’
+   58 |   Pose3(const Pose3& pose) :
+      |   ^~~~~
+In file included from /opt/ros/humble/include/gtsam/base/VectorSpace.h:11,
+                 from /opt/ros/humble/include/gtsam/geometry/Point3.h:25,
+                 from /opt/ros/humble/include/gtsam/geometry/Pose3.h:23,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:18,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/base/Lie.h:274:7: warning: implicitly-declared ‘gtsam::Pose3& gtsam::Pose3::operator=(const gtsam::Pose3&)’ is deprecated [-Wdeprecated-copy]
+  274 |     g = traits<T>::Between(g, h, Hg, Hh);
+      |     ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:18,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/geometry/Pose3.h:58:3: note: because ‘gtsam::Pose3’ has user-provided ‘gtsam::Pose3::Pose3(const gtsam::Pose3&)’
+   58 |   Pose3(const Pose3& pose) :
+      |   ^~~~~
+In file included from /opt/ros/humble/include/gtsam/base/VectorSpace.h:11,
+                 from /opt/ros/humble/include/gtsam/geometry/Point3.h:25,
+                 from /opt/ros/humble/include/gtsam/geometry/Pose3.h:23,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:18,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/base/Lie.h:275:7: warning: implicitly-declared ‘gtsam::Pose3& gtsam::Pose3::operator=(const gtsam::Pose3&)’ is deprecated [-Wdeprecated-copy]
+  275 |     g = traits<T>::Inverse(g, Hg);
+      |     ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:18,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/geometry/Pose3.h:58:3: note: because ‘gtsam::Pose3’ has user-provided ‘gtsam::Pose3::Pose3(const gtsam::Pose3&)’
+   58 |   Pose3(const Pose3& pose) :
+      |   ^~~~~
+In file included from /opt/ros/humble/include/gtsam/base/VectorSpace.h:11,
+                 from /opt/ros/humble/include/gtsam/geometry/Point3.h:25,
+                 from /opt/ros/humble/include/gtsam/geometry/Pose3.h:23,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:18,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/base/Lie.h:277:7: warning: implicitly-declared ‘gtsam::Pose3& gtsam::Pose3::operator=(const gtsam::Pose3&)’ is deprecated [-Wdeprecated-copy]
+  277 |     g = traits<T>::Expmap(v);
+      |     ~~^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:18,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/geometry/Pose3.h:58:3: note: because ‘gtsam::Pose3’ has user-provided ‘gtsam::Pose3::Pose3(const gtsam::Pose3&)’
+   58 |   Pose3(const Pose3& pose) :
+      |   ^~~~~
+In file included from /opt/ros/humble/include/gtsam/base/VectorSpace.h:11,
+                 from /opt/ros/humble/include/gtsam/geometry/Point3.h:25,
+                 from /opt/ros/humble/include/gtsam/geometry/Pose3.h:23,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:18,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/base/Lie.h:280:7: warning: implicitly-declared ‘gtsam::Pose3& gtsam::Pose3::operator=(const gtsam::Pose3&)’ is deprecated [-Wdeprecated-copy]
+  280 |     g = traits<T>::Expmap(v, Hg);
+      |     ~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:18,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/geometry/Pose3.h:58:3: note: because ‘gtsam::Pose3’ has user-provided ‘gtsam::Pose3::Pose3(const gtsam::Pose3&)’
+   58 |   Pose3(const Pose3& pose) :
+      |   ^~~~~
+In file included from /opt/ros/humble/include/gtsam/nonlinear/ISAM2.h:26,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:21,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/nonlinear/ISAM2Result.h: In instantiation of ‘void boost::optional_detail::optional_base<T>::assign_value(boost::optional_detail::optional_base<T>::argument_type) [with T = gtsam::ISAM2Result::DetailedResults; boost::optional_detail::optional_base<T>::argument_type = const gtsam::ISAM2Result::DetailedResults&]’:
+/usr/include/boost/optional/optional.hpp:341:24:   required from ‘void boost::optional_detail::optional_base<T>::assign(boost::optional_detail::optional_base<T>::argument_type) [with T = gtsam::ISAM2Result::DetailedResults; boost::optional_detail::optional_base<T>::argument_type = const gtsam::ISAM2Result::DetailedResults&]’
+/usr/include/boost/optional/optional.hpp:388:46:   required from ‘void boost::optional_detail::optional_base<T>::reset(boost::optional_detail::optional_base<T>::argument_type) [with T = gtsam::ISAM2Result::DetailedResults; boost::optional_detail::optional_base<T>::argument_type = const gtsam::ISAM2Result::DetailedResults&]’
+/opt/ros/humble/include/gtsam/nonlinear/ISAM2Result.h:161:44:   required from here
+/opt/ros/humble/include/gtsam/nonlinear/ISAM2Result.h:117:10: warning: implicitly-declared ‘gtsam::FastMap<long unsigned int, gtsam::ISAM2Result::DetailedResults::VariableStatus>& gtsam::FastMap<long unsigned int, gtsam::ISAM2Result::DetailedResults::VariableStatus>::operator=(const gtsam::FastMap<long unsigned int, gtsam::ISAM2Result::DetailedResults::VariableStatus>&)’ is deprecated [-Wdeprecated-copy]
+  117 |   struct DetailedResults {
+      |          ^~~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/gtsam/inference/Key.h:21,
+                 from /opt/ros/humble/include/gtsam/inference/Symbol.h:22,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:19,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/base/FastMap.h:53:3: note: because ‘gtsam::FastMap<long unsigned int, gtsam::ISAM2Result::DetailedResults::VariableStatus>’ has user-provided ‘gtsam::FastMap<KEY, VALUE>::FastMap(const gtsam::FastMap<KEY, VALUE>&) [with KEY = long unsigned int; VALUE = gtsam::ISAM2Result::DetailedResults::VariableStatus]’
+   53 |   FastMap(const FastMap<KEY,VALUE>& x) : Base(x) {}
+      |   ^~~~~~~
+In file included from /usr/include/boost/optional.hpp:15,
+                 from /opt/ros/humble/include/gtsam/base/OptionalJacobian.h:27,
+                 from /opt/ros/humble/include/gtsam/base/Matrix.h:27,
+                 from /opt/ros/humble/include/gtsam/base/Manifold.h:22,
+                 from /opt/ros/humble/include/gtsam/geometry/BearingRange.h:21,
+                 from /opt/ros/humble/include/gtsam/geometry/Pose3.h:22,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:18,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/usr/include/boost/optional/optional.hpp:749:58: note: synthesized method ‘gtsam::ISAM2Result::DetailedResults& gtsam::ISAM2Result::DetailedResults::operator=(const gtsam::ISAM2Result::DetailedResults&)’ first required here
+  749 |     void assign_value ( argument_type val ) { get_impl() = val; }
+      |                                               ~~~~~~~~~~~^~~~~
+In file included from /opt/ros/humble/include/gtsam/base/Lie.h:27,
+                 from /opt/ros/humble/include/gtsam/base/VectorSpace.h:11,
+                 from /opt/ros/humble/include/gtsam/geometry/Point3.h:25,
+                 from /opt/ros/humble/include/gtsam/geometry/Pose3.h:23,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:18,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/base/Group.h: In instantiation of ‘gtsam::IsGroup<G>::~IsGroup() [with G = gtsam::Pose3]’:
+/usr/include/boost/concept/usage.hpp:16:48:   required from ‘boost::concepts::usage_requirements<Model>::~usage_requirements() [with Model = gtsam::IsGroup<gtsam::Pose3>]’
+/usr/include/boost/concept/detail/general.hpp:39:47:   required from ‘static void boost::concepts::requirement<boost::concepts::failed************ Model::************>::failed() [with Model = boost::concepts::usage_requirements<gtsam::IsGroup<gtsam::Pose3> >]’
+/opt/ros/humble/include/gtsam/base/Group.h:52:3:   required from ‘class gtsam::IsGroup<gtsam::Pose3>’
+/opt/ros/humble/include/gtsam/base/Lie.h:260:7:   required from ‘class gtsam::IsLieGroup<gtsam::Pose3>’
+/usr/include/boost/concept/detail/has_constraints.hpp:32:62:   required by substitution of ‘template<class Model> boost::concepts::detail::yes boost::concepts::detail::has_constraints_(Model*, boost::concepts::detail::wrap_constraints<Model, (& Model::constraints)>*) [with Model = gtsam::IsLieGroup<gtsam::Pose3>]’
+/usr/include/boost/concept/detail/has_constraints.hpp:42:5:   required from ‘const bool boost::concepts::not_satisfied<gtsam::IsLieGroup<gtsam::Pose3> >::value’
+/usr/include/boost/concept/detail/has_constraints.hpp:45:51:   required from ‘struct boost::concepts::not_satisfied<gtsam::IsLieGroup<gtsam::Pose3> >’
+/usr/include/boost/concept/detail/general.hpp:51:8:   required from ‘struct boost::concepts::requirement_<void (*)(gtsam::IsLieGroup<gtsam::Pose3>)>’
+/opt/ros/humble/include/gtsam/slam/BetweenFactor.h:44:5:   required from ‘class gtsam::BetweenFactor<gtsam::Pose3>’
+/home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:71:60:   required from here
+/opt/ros/humble/include/gtsam/base/Group.h:56:7: warning: implicitly-declared ‘gtsam::Pose3& gtsam::Pose3::operator=(const gtsam::Pose3&)’ is deprecated [-Wdeprecated-copy]
+   56 |     e = traits<G>::Identity();
+      |     ~~^~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:18,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/geometry/Pose3.h:58:3: note: because ‘gtsam::Pose3’ has user-provided ‘gtsam::Pose3::Pose3(const gtsam::Pose3&)’
+   58 |   Pose3(const Pose3& pose) :
+      |   ^~~~~
+In file included from /opt/ros/humble/include/gtsam/base/Lie.h:27,
+                 from /opt/ros/humble/include/gtsam/base/VectorSpace.h:11,
+                 from /opt/ros/humble/include/gtsam/geometry/Point3.h:25,
+                 from /opt/ros/humble/include/gtsam/geometry/Pose3.h:23,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:18,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/base/Group.h:57:7: warning: implicitly-declared ‘gtsam::Pose3& gtsam::Pose3::operator=(const gtsam::Pose3&)’ is deprecated [-Wdeprecated-copy]
+   57 |     e = traits<G>::Compose(g, h);
+      |     ~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:18,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/geometry/Pose3.h:58:3: note: because ‘gtsam::Pose3’ has user-provided ‘gtsam::Pose3::Pose3(const gtsam::Pose3&)’
+   58 |   Pose3(const Pose3& pose) :
+      |   ^~~~~
+In file included from /opt/ros/humble/include/gtsam/base/Lie.h:27,
+                 from /opt/ros/humble/include/gtsam/base/VectorSpace.h:11,
+                 from /opt/ros/humble/include/gtsam/geometry/Point3.h:25,
+                 from /opt/ros/humble/include/gtsam/geometry/Pose3.h:23,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:18,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/base/Group.h:58:7: warning: implicitly-declared ‘gtsam::Pose3& gtsam::Pose3::operator=(const gtsam::Pose3&)’ is deprecated [-Wdeprecated-copy]
+   58 |     e = traits<G>::Between(g, h);
+      |     ~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:18,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/geometry/Pose3.h:58:3: note: because ‘gtsam::Pose3’ has user-provided ‘gtsam::Pose3::Pose3(const gtsam::Pose3&)’
+   58 |   Pose3(const Pose3& pose) :
+      |   ^~~~~
+In file included from /opt/ros/humble/include/gtsam/base/Lie.h:27,
+                 from /opt/ros/humble/include/gtsam/base/VectorSpace.h:11,
+                 from /opt/ros/humble/include/gtsam/geometry/Point3.h:25,
+                 from /opt/ros/humble/include/gtsam/geometry/Pose3.h:23,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:18,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/base/Group.h:59:7: warning: implicitly-declared ‘gtsam::Pose3& gtsam::Pose3::operator=(const gtsam::Pose3&)’ is deprecated [-Wdeprecated-copy]
+   59 |     e = traits<G>::Inverse(g);
+      |     ~~^~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:18,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/geometry/Pose3.h:58:3: note: because ‘gtsam::Pose3’ has user-provided ‘gtsam::Pose3::Pose3(const gtsam::Pose3&)’
+   58 |   Pose3(const Pose3& pose) :
+      |   ^~~~~
+In file included from /opt/ros/humble/include/gtsam/geometry/BearingRange.h:21,
+                 from /opt/ros/humble/include/gtsam/geometry/Pose3.h:22,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:18,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/base/Manifold.h: In instantiation of ‘gtsam::IsManifold<T>::~IsManifold() [with T = gtsam::Pose3]’:
+/usr/include/boost/concept/usage.hpp:16:48:   required from ‘boost::concepts::usage_requirements<Model>::~usage_requirements() [with Model = gtsam::IsManifold<gtsam::Pose3>]’
+/usr/include/boost/concept/detail/general.hpp:39:47:   required from ‘static void boost::concepts::requirement<boost::concepts::failed************ Model::************>::failed() [with Model = boost::concepts::usage_requirements<gtsam::IsManifold<gtsam::Pose3> >]’
+/opt/ros/humble/include/gtsam/base/Manifold.h:145:3:   required from ‘class gtsam::IsManifold<gtsam::Pose3>’
+/opt/ros/humble/include/gtsam/base/Lie.h:260:7:   required from ‘class gtsam::IsLieGroup<gtsam::Pose3>’
+/usr/include/boost/concept/detail/has_constraints.hpp:32:62:   required by substitution of ‘template<class Model> boost::concepts::detail::yes boost::concepts::detail::has_constraints_(Model*, boost::concepts::detail::wrap_constraints<Model, (& Model::constraints)>*) [with Model = gtsam::IsLieGroup<gtsam::Pose3>]’
+/usr/include/boost/concept/detail/has_constraints.hpp:42:5:   required from ‘const bool boost::concepts::not_satisfied<gtsam::IsLieGroup<gtsam::Pose3> >::value’
+/usr/include/boost/concept/detail/has_constraints.hpp:45:51:   required from ‘struct boost::concepts::not_satisfied<gtsam::IsLieGroup<gtsam::Pose3> >’
+/usr/include/boost/concept/detail/general.hpp:51:8:   required from ‘struct boost::concepts::requirement_<void (*)(gtsam::IsLieGroup<gtsam::Pose3>)>’
+/opt/ros/humble/include/gtsam/slam/BetweenFactor.h:44:5:   required from ‘class gtsam::BetweenFactor<gtsam::Pose3>’
+/home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:71:60:   required from here
+/opt/ros/humble/include/gtsam/base/Manifold.h:153:7: warning: implicitly-declared ‘gtsam::Pose3& gtsam::Pose3::operator=(const gtsam::Pose3&)’ is deprecated [-Wdeprecated-copy]
+  153 |     q = traits<T>::Retract(p, v);
+      |     ~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:18,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/geometry/Pose3.h:58:3: note: because ‘gtsam::Pose3’ has user-provided ‘gtsam::Pose3::Pose3(const gtsam::Pose3&)’
+   58 |   Pose3(const Pose3& pose) :
+      |   ^~~~~
+In file included from /opt/ros/humble/include/gtsam/base/Lie.h:27,
+                 from /opt/ros/humble/include/gtsam/base/VectorSpace.h:11,
+                 from /opt/ros/humble/include/gtsam/geometry/Point3.h:25,
+                 from /opt/ros/humble/include/gtsam/geometry/Pose3.h:23,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:18,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/base/Group.h: In instantiation of ‘void gtsam::IsGroup<G>::operator_usage(gtsam::multiplicative_group_tag) [with G = gtsam::Pose3]’:
+/opt/ros/humble/include/gtsam/base/Group.h:60:19:   required from ‘gtsam::IsGroup<G>::~IsGroup() [with G = gtsam::Pose3]’
+/usr/include/boost/concept/usage.hpp:16:48:   required from ‘boost::concepts::usage_requirements<Model>::~usage_requirements() [with Model = gtsam::IsGroup<gtsam::Pose3>]’
+/usr/include/boost/concept/detail/general.hpp:39:47:   required from ‘static void boost::concepts::requirement<boost::concepts::failed************ Model::************>::failed() [with Model = boost::concepts::usage_requirements<gtsam::IsGroup<gtsam::Pose3> >]’
+/opt/ros/humble/include/gtsam/base/Group.h:52:3:   required from ‘class gtsam::IsGroup<gtsam::Pose3>’
+/opt/ros/humble/include/gtsam/base/Lie.h:260:7:   required from ‘class gtsam::IsLieGroup<gtsam::Pose3>’
+/usr/include/boost/concept/detail/has_constraints.hpp:32:62:   required by substitution of ‘template<class Model> boost::concepts::detail::yes boost::concepts::detail::has_constraints_(Model*, boost::concepts::detail::wrap_constraints<Model, (& Model::constraints)>*) [with Model = gtsam::IsLieGroup<gtsam::Pose3>]’
+/usr/include/boost/concept/detail/has_constraints.hpp:42:5:   required from ‘const bool boost::concepts::not_satisfied<gtsam::IsLieGroup<gtsam::Pose3> >::value’
+/usr/include/boost/concept/detail/has_constraints.hpp:45:51:   required from ‘struct boost::concepts::not_satisfied<gtsam::IsLieGroup<gtsam::Pose3> >’
+/usr/include/boost/concept/detail/general.hpp:51:8:   required from ‘struct boost::concepts::requirement_<void (*)(gtsam::IsLieGroup<gtsam::Pose3>)>’
+/opt/ros/humble/include/gtsam/slam/BetweenFactor.h:44:5:   required from ‘class gtsam::BetweenFactor<gtsam::Pose3>’
+/home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:71:60:   required from here
+/opt/ros/humble/include/gtsam/base/Group.h:66:7: warning: implicitly-declared ‘gtsam::Pose3& gtsam::Pose3::operator=(const gtsam::Pose3&)’ is deprecated [-Wdeprecated-copy]
+   66 |     e = g * h;
+      |     ~~^~~~~~~
+In file included from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:18,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/geometry/Pose3.h:58:3: note: because ‘gtsam::Pose3’ has user-provided ‘gtsam::Pose3::Pose3(const gtsam::Pose3&)’
+   58 |   Pose3(const Pose3& pose) :
+      |   ^~~~~
+In file included from /opt/ros/humble/include/gtsam/inference/Symbol.h:22,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:19,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/pose_graph_optimizer.hpp:16,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/pose_graph_optimizer.cpp:1:
+/opt/ros/humble/include/gtsam/inference/Key.h: In static member function ‘static bool gtsam::traits<long unsigned int>::Equals(const Key&, const Key&, double)’:
+/opt/ros/humble/include/gtsam/inference/Key.h:121:63: warning: unused parameter ‘tol’ [-Wunused-parameter]
+  121 |   static bool Equals(const Key& val1, const Key& val2, double tol = 1e-8) {
+      |                                                        ~~~~~~~^~~~~~~~~~
+In file included from /opt/ros/humble/include/gtsam/nonlinear/Values.h:28,
+                 from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:24,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/base/GenericValue.h: In instantiation of ‘gtsam::Value* gtsam::GenericValue<T>::clone_() const [with T = gtsam::Pose3]’:
+/opt/ros/humble/include/gtsam/base/GenericValue.h:102:12:   required from here
+/opt/ros/humble/include/gtsam/base/GenericValue.h:103:27: warning: implicitly-declared ‘gtsam::GenericValue<gtsam::Pose3>::GenericValue(const gtsam::GenericValue<gtsam::Pose3>&)’ is deprecated [-Wdeprecated-copy]
+  103 |       GenericValue* ptr = new GenericValue(*this); // calls copy constructor to fill in
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/gtsam/base/GenericValue.h:171:22: note: because ‘gtsam::GenericValue<gtsam::Pose3>’ has user-provided ‘gtsam::GenericValue<T>& gtsam::GenericValue<T>::operator=(const gtsam::GenericValue<T>&) [with T = gtsam::Pose3]’
+  171 |     GenericValue<T>& operator=(const GenericValue<T>& rhs) {
+      |                      ^~~~~~~~
+/opt/ros/humble/include/gtsam/base/GenericValue.h:47:7: warning: implicitly-declared ‘constexpr gtsam::Value::Value(const gtsam::Value&)’ is deprecated [-Wdeprecated-copy]
+   47 | class GenericValue: public Value {
+      |       ^~~~~~~~~~~~
+In file included from /opt/ros/humble/include/gtsam/base/GenericValue.h:24,
+                 from /opt/ros/humble/include/gtsam/nonlinear/Values.h:28,
+                 from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:24,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/base/Value.h:79:20: note: because ‘gtsam::Value’ has user-provided ‘virtual gtsam::Value& gtsam::Value::operator=(const gtsam::Value&)’
+   79 |     virtual Value& operator=(const Value& /*rhs*/) {
+      |                    ^~~~~~~~
+In file included from /opt/ros/humble/include/gtsam/nonlinear/Values.h:28,
+                 from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:24,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/base/GenericValue.h:103:27: note: synthesized method ‘gtsam::GenericValue<gtsam::Pose3>::GenericValue(const gtsam::GenericValue<gtsam::Pose3>&)’ first required here
+  103 |       GenericValue* ptr = new GenericValue(*this); // calls copy constructor to fill in
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/gtsam/nonlinear/Values.h:571,
+                 from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:24,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/pose_graph_optimizer.hpp:16,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/pose_graph_optimizer.cpp:1:
+/opt/ros/humble/include/gtsam/nonlinear/Values-inl.h: In member function ‘gtsam::Values::Filtered<gtsam::Value> gtsam::Values::filter(const std::function<bool(long unsigned int)>&)’:
+/opt/ros/humble/include/gtsam/nonlinear/Values-inl.h:253:25: warning: ‘gtsam::Values::Filtered<ValueType> gtsam::Values::filter(const std::function<bool(long unsigned int)>&) [with ValueType = gtsam::Value]’ is deprecated [-Wdeprecated-declarations]
+  253 |     return filter<Value>(filterFcn);
+      |            ~~~~~~~~~~~~~^~~~~~~~~~~
+In file included from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:24,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/pose_graph_optimizer.hpp:16,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/pose_graph_optimizer.cpp:1:
+/opt/ros/humble/include/gtsam/nonlinear/Values.h:421:5: note: declared here
+  421 |     filter(const std::function<bool(Key)>& filterFcn = &_truePredicate<Key>);
+      |     ^~~~~~
+In file included from /opt/ros/humble/include/gtsam/nonlinear/Values.h:571,
+                 from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:24,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/pose_graph_optimizer.hpp:16,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/pose_graph_optimizer.cpp:1:
+/opt/ros/humble/include/gtsam/nonlinear/Values-inl.h: In member function ‘gtsam::Values::ConstFiltered<gtsam::Value> gtsam::Values::filter(const std::function<bool(long unsigned int)>&) const’:
+/opt/ros/humble/include/gtsam/nonlinear/Values-inl.h:265:25: warning: ‘gtsam::Values::ConstFiltered<ValueType> gtsam::Values::filter(const std::function<bool(long unsigned int)>&) const [with ValueType = gtsam::Value]’ is deprecated [-Wdeprecated-declarations]
+  265 |     return filter<Value>(filterFcn);
+      |            ~~~~~~~~~~~~~^~~~~~~~~~~
+In file included from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:24,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/pose_graph_optimizer.hpp:16,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/pose_graph_optimizer.cpp:1:
+/opt/ros/humble/include/gtsam/nonlinear/Values.h:429:47: note: declared here
+  429 |     ConstFiltered<ValueType> GTSAM_DEPRECATED filter(
+      |                                               ^~~~~~
+/opt/ros/humble/include/gtsam/base/GenericValue.h: In instantiation of ‘gtsam::Value& gtsam::GenericValue<T>::operator=(const gtsam::Value&) [with T = gtsam::Pose3]’:
+/opt/ros/humble/include/gtsam/base/GenericValue.h:158:12:   required from here
+/opt/ros/humble/include/gtsam/base/GenericValue.h:163:15: warning: implicitly-declared ‘gtsam::GenericValue<gtsam::Pose3>::GenericValue(const gtsam::GenericValue<gtsam::Pose3>&)’ is deprecated [-Wdeprecated-copy]
+  163 |       *this = GenericValue(derivedRhs); // calls copy constructor
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/gtsam/base/GenericValue.h:171:22: note: because ‘gtsam::GenericValue<gtsam::Pose3>’ has user-provided ‘gtsam::GenericValue<T>& gtsam::GenericValue<T>::operator=(const gtsam::GenericValue<T>&) [with T = gtsam::Pose3]’
+  171 |     GenericValue<T>& operator=(const GenericValue<T>& rhs) {
+      |                      ^~~~~~~~
+/opt/ros/humble/include/gtsam/base/GenericValue.h: In instantiation of ‘gtsam::Value* gtsam::GenericValue<T>::clone_() const [with T = double]’:
+/opt/ros/humble/include/gtsam/base/GenericValue.h:102:12:   required from here
+/opt/ros/humble/include/gtsam/base/GenericValue.h:103:27: warning: implicitly-declared ‘constexpr gtsam::GenericValue<double>::GenericValue(const gtsam::GenericValue<double>&)’ is deprecated [-Wdeprecated-copy]
+  103 |       GenericValue* ptr = new GenericValue(*this); // calls copy constructor to fill in
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/gtsam/base/GenericValue.h:171:22: note: because ‘gtsam::GenericValue<double>’ has user-provided ‘gtsam::GenericValue<T>& gtsam::GenericValue<T>::operator=(const gtsam::GenericValue<T>&) [with T = double]’
+  171 |     GenericValue<T>& operator=(const GenericValue<T>& rhs) {
+      |                      ^~~~~~~~
+/opt/ros/humble/include/gtsam/base/GenericValue.h:47:7: warning: implicitly-declared ‘constexpr gtsam::Value::Value(const gtsam::Value&)’ is deprecated [-Wdeprecated-copy]
+   47 | class GenericValue: public Value {
+      |       ^~~~~~~~~~~~
+In file included from /opt/ros/humble/include/gtsam/base/GenericValue.h:24,
+                 from /opt/ros/humble/include/gtsam/nonlinear/Values.h:28,
+                 from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:24,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/base/Value.h:79:20: note: because ‘gtsam::Value’ has user-provided ‘virtual gtsam::Value& gtsam::Value::operator=(const gtsam::Value&)’
+   79 |     virtual Value& operator=(const Value& /*rhs*/) {
+      |                    ^~~~~~~~
+In file included from /opt/ros/humble/include/gtsam/nonlinear/Values.h:28,
+                 from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:24,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/base/GenericValue.h:103:27: note: synthesized method ‘constexpr gtsam::GenericValue<double>::GenericValue(const gtsam::GenericValue<double>&)’ first required here
+  103 |       GenericValue* ptr = new GenericValue(*this); // calls copy constructor to fill in
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/gtsam/linear/NoiseModel.h:24,
+                 from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:25,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/pose_graph_optimizer.hpp:16,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/pose_graph_optimizer.cpp:1:
+/opt/ros/humble/include/gtsam/linear/LossFunctions.h: In member function ‘virtual double gtsam::noiseModel::mEstimator::Base::loss(double) const’:
+/opt/ros/humble/include/gtsam/linear/LossFunctions.h:94:30: warning: unused parameter ‘distance’ [-Wunused-parameter]
+   94 |   virtual double loss(double distance) const { return 0; }
+      |                       ~~~~~~~^~~~~~~~
+/opt/ros/humble/include/gtsam/base/GenericValue.h: In instantiation of ‘gtsam::Value& gtsam::GenericValue<T>::operator=(const gtsam::Value&) [with T = double]’:
+/opt/ros/humble/include/gtsam/base/GenericValue.h:158:12:   required from here
+/opt/ros/humble/include/gtsam/base/GenericValue.h:163:15: warning: implicitly-declared ‘constexpr gtsam::GenericValue<double>::GenericValue(const gtsam::GenericValue<double>&)’ is deprecated [-Wdeprecated-copy]
+  163 |       *this = GenericValue(derivedRhs); // calls copy constructor
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/gtsam/base/GenericValue.h:171:22: note: because ‘gtsam::GenericValue<double>’ has user-provided ‘gtsam::GenericValue<T>& gtsam::GenericValue<T>::operator=(const gtsam::GenericValue<T>&) [with T = double]’
+  171 |     GenericValue<T>& operator=(const GenericValue<T>& rhs) {
+      |                      ^~~~~~~~
+In file included from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:25,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/pose_graph_optimizer.hpp:16,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/pose_graph_optimizer.cpp:1:
+/opt/ros/humble/include/gtsam/linear/NoiseModel.h: In member function ‘virtual double gtsam::noiseModel::Base::weight(const Vector&) const’:
+/opt/ros/humble/include/gtsam/linear/NoiseModel.h:137:43: warning: unused parameter ‘v’ [-Wunused-parameter]
+  137 |       virtual double weight(const Vector& v) const { return 1.0; }
+      |                             ~~~~~~~~~~~~~~^
+In file included from /opt/ros/humble/include/gtsam/linear/GaussianConditional.h:27,
+                 from /opt/ros/humble/include/gtsam/linear/GaussianBayesNet.h:23,
+                 from /opt/ros/humble/include/gtsam/linear/GaussianBayesTree.h:22,
+                 from /opt/ros/humble/include/gtsam/nonlinear/ISAM2.h:23,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:21,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/inference/Conditional-inst.h: In instantiation of ‘double gtsam::Conditional<FACTOR, DERIVEDCONDITIONAL>::logProbability(const gtsam::HybridValues&) const [with FACTOR = gtsam::JacobianFactor; DERIVEDCONDITIONAL = gtsam::GaussianConditional]’:
+/opt/ros/humble/include/gtsam/inference/Conditional-inst.h:48:8:   required from here
+/opt/ros/humble/include/gtsam/inference/Conditional-inst.h:49:25: warning: unused parameter ‘c’ [-Wunused-parameter]
+   49 |     const HybridValues& c) const {
+      |     ~~~~~~~~~~~~~~~~~~~~^
+/opt/ros/humble/include/gtsam/inference/Conditional-inst.h: In instantiation of ‘double gtsam::Conditional<FACTOR, DERIVEDCONDITIONAL>::evaluate(const gtsam::HybridValues&) const [with FACTOR = gtsam::JacobianFactor; DERIVEDCONDITIONAL = gtsam::GaussianConditional]’:
+/opt/ros/humble/include/gtsam/inference/Conditional-inst.h:55:8:   required from here
+/opt/ros/humble/include/gtsam/inference/Conditional-inst.h:56:25: warning: unused parameter ‘c’ [-Wunused-parameter]
+   56 |     const HybridValues& c) const {
+      |     ~~~~~~~~~~~~~~~~~~~~^
+In file included from /opt/ros/humble/include/gtsam/nonlinear/Values.h:28,
+                 from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:24,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/base/GenericValue.h: In instantiation of ‘gtsam::GenericValue<T>& gtsam::GenericValue<T>::operator=(const gtsam::GenericValue<T>&) [with T = gtsam::Pose3]’:
+/opt/ros/humble/include/gtsam/base/GenericValue.h:163:13:   required from ‘gtsam::Value& gtsam::GenericValue<T>::operator=(const gtsam::Value&) [with T = gtsam::Pose3]’
+/opt/ros/humble/include/gtsam/base/GenericValue.h:158:12:   required from here
+/opt/ros/humble/include/gtsam/base/GenericValue.h:173:14: warning: implicitly-declared ‘gtsam::Pose3& gtsam::Pose3::operator=(const gtsam::Pose3&)’ is deprecated [-Wdeprecated-copy]
+  173 |       value_ = rhs.value_;
+      |       ~~~~~~~^~~~~~~~~~~~
+In file included from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:18,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/factor_graph.cpp:1:
+/opt/ros/humble/include/gtsam/geometry/Pose3.h:58:3: note: because ‘gtsam::Pose3’ has user-provided ‘gtsam::Pose3::Pose3(const gtsam::Pose3&)’
+   58 |   Pose3(const Pose3& pose) :
+      |   ^~~~~
+/home/lee/rea/sim/ws/src/m20_slam_navigation/src/planning/hybrid_astar.cpp: In member function ‘m20::Scalar m20::planning::HybridAStar::nonHoloHeuristic(m20::Scalar, m20::Scalar, m20::Scalar, m20::Scalar, m20::Scalar, m20::Scalar) const’:
+/home/lee/rea/sim/ws/src/m20_slam_navigation/src/planning/hybrid_astar.cpp:285:34: warning: unused parameter ‘gtheta’ [-Wunused-parameter]
+  285 |     Scalar gx, Scalar gy, Scalar gtheta) const {
+      |                           ~~~~~~~^~~~~~
+In file included from /opt/ros/humble/include/gtsam/linear/GaussianBayesTree.h:23,
+                 from /opt/ros/humble/include/gtsam/nonlinear/ISAM2.h:23,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:21,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/pose_graph_optimizer.hpp:16,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/pose_graph_optimizer.cpp:1:
+/opt/ros/humble/include/gtsam/linear/GaussianFactorGraph.h: In static member function ‘static gtsam::Ordering gtsam::EliminationTraits<gtsam::GaussianFactorGraph>::DefaultOrderingFunc(const FactorGraphType&, boost::optional<const gtsam::VariableIndex&>)’:
+/opt/ros/humble/include/gtsam/linear/GaussianFactorGraph.h:59:32: warning: unused parameter ‘graph’ [-Wunused-parameter]
+   59 |         const FactorGraphType& graph,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+In file included from /opt/ros/humble/include/gtsam/nonlinear/ISAM2.h:26,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:21,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/pose_graph_optimizer.hpp:16,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/pose_graph_optimizer.cpp:1:
+/opt/ros/humble/include/gtsam/nonlinear/ISAM2Result.h: In instantiation of ‘void boost::optional_detail::optional_base<T>::assign_value(boost::optional_detail::optional_base<T>::argument_type) [with T = gtsam::ISAM2Result::DetailedResults; boost::optional_detail::optional_base<T>::argument_type = const gtsam::ISAM2Result::DetailedResults&]’:
+/usr/include/boost/optional/optional.hpp:341:24:   required from ‘void boost::optional_detail::optional_base<T>::assign(boost::optional_detail::optional_base<T>::argument_type) [with T = gtsam::ISAM2Result::DetailedResults; boost::optional_detail::optional_base<T>::argument_type = const gtsam::ISAM2Result::DetailedResults&]’
+/usr/include/boost/optional/optional.hpp:388:46:   required from ‘void boost::optional_detail::optional_base<T>::reset(boost::optional_detail::optional_base<T>::argument_type) [with T = gtsam::ISAM2Result::DetailedResults; boost::optional_detail::optional_base<T>::argument_type = const gtsam::ISAM2Result::DetailedResults&]’
+/opt/ros/humble/include/gtsam/nonlinear/ISAM2Result.h:161:44:   required from here
+/opt/ros/humble/include/gtsam/nonlinear/ISAM2Result.h:117:10: warning: implicitly-declared ‘gtsam::FastMap<long unsigned int, gtsam::ISAM2Result::DetailedResults::VariableStatus>& gtsam::FastMap<long unsigned int, gtsam::ISAM2Result::DetailedResults::VariableStatus>::operator=(const gtsam::FastMap<long unsigned int, gtsam::ISAM2Result::DetailedResults::VariableStatus>&)’ is deprecated [-Wdeprecated-copy]
+  117 |   struct DetailedResults {
+      |          ^~~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/gtsam/inference/Key.h:21,
+                 from /opt/ros/humble/include/gtsam/inference/Symbol.h:22,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:19,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/pose_graph_optimizer.hpp:16,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/pose_graph_optimizer.cpp:1:
+/opt/ros/humble/include/gtsam/base/FastMap.h:53:3: note: because ‘gtsam::FastMap<long unsigned int, gtsam::ISAM2Result::DetailedResults::VariableStatus>’ has user-provided ‘gtsam::FastMap<KEY, VALUE>::FastMap(const gtsam::FastMap<KEY, VALUE>&) [with KEY = long unsigned int; VALUE = gtsam::ISAM2Result::DetailedResults::VariableStatus]’
+   53 |   FastMap(const FastMap<KEY,VALUE>& x) : Base(x) {}
+      |   ^~~~~~~
+In file included from /usr/include/boost/optional.hpp:15,
+                 from /opt/ros/humble/include/gtsam/base/OptionalJacobian.h:27,
+                 from /opt/ros/humble/include/gtsam/base/Matrix.h:27,
+                 from /opt/ros/humble/include/gtsam/base/Manifold.h:22,
+                 from /opt/ros/humble/include/gtsam/geometry/BearingRange.h:21,
+                 from /opt/ros/humble/include/gtsam/geometry/Pose3.h:22,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:18,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/pose_graph_optimizer.hpp:16,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/pose_graph_optimizer.cpp:1:
+/usr/include/boost/optional/optional.hpp:749:58: note: synthesized method ‘gtsam::ISAM2Result::DetailedResults& gtsam::ISAM2Result::DetailedResults::operator=(const gtsam::ISAM2Result::DetailedResults&)’ first required here
+  749 |     void assign_value ( argument_type val ) { get_impl() = val; }
+      |                                               ~~~~~~~~~~~^~~~~
+In file included from /opt/ros/humble/include/gtsam/nonlinear/Values.h:28,
+                 from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:24,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/pose_graph_optimizer.hpp:16,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/pose_graph_optimizer.cpp:1:
+/opt/ros/humble/include/gtsam/base/GenericValue.h: In instantiation of ‘gtsam::Value* gtsam::GenericValue<T>::clone_() const [with T = double]’:
+/opt/ros/humble/include/gtsam/base/GenericValue.h:102:12:   required from here
+/opt/ros/humble/include/gtsam/base/GenericValue.h:103:27: warning: implicitly-declared ‘constexpr gtsam::GenericValue<double>::GenericValue(const gtsam::GenericValue<double>&)’ is deprecated [-Wdeprecated-copy]
+  103 |       GenericValue* ptr = new GenericValue(*this); // calls copy constructor to fill in
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/gtsam/base/GenericValue.h:171:22: note: because ‘gtsam::GenericValue<double>’ has user-provided ‘gtsam::GenericValue<T>& gtsam::GenericValue<T>::operator=(const gtsam::GenericValue<T>&) [with T = double]’
+  171 |     GenericValue<T>& operator=(const GenericValue<T>& rhs) {
+      |                      ^~~~~~~~
+/opt/ros/humble/include/gtsam/base/GenericValue.h:47:7: warning: implicitly-declared ‘constexpr gtsam::Value::Value(const gtsam::Value&)’ is deprecated [-Wdeprecated-copy]
+   47 | class GenericValue: public Value {
+      |       ^~~~~~~~~~~~
+In file included from /opt/ros/humble/include/gtsam/base/GenericValue.h:24,
+                 from /opt/ros/humble/include/gtsam/nonlinear/Values.h:28,
+                 from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:24,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/pose_graph_optimizer.hpp:16,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/pose_graph_optimizer.cpp:1:
+/opt/ros/humble/include/gtsam/base/Value.h:79:20: note: because ‘gtsam::Value’ has user-provided ‘virtual gtsam::Value& gtsam::Value::operator=(const gtsam::Value&)’
+   79 |     virtual Value& operator=(const Value& /*rhs*/) {
+      |                    ^~~~~~~~
+In file included from /opt/ros/humble/include/gtsam/nonlinear/Values.h:28,
+                 from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:24,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/pose_graph_optimizer.hpp:16,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/pose_graph_optimizer.cpp:1:
+/opt/ros/humble/include/gtsam/base/GenericValue.h:103:27: note: synthesized method ‘constexpr gtsam::GenericValue<double>::GenericValue(const gtsam::GenericValue<double>&)’ first required here
+  103 |       GenericValue* ptr = new GenericValue(*this); // calls copy constructor to fill in
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/gtsam/base/GenericValue.h: In instantiation of ‘gtsam::Value& gtsam::GenericValue<T>::operator=(const gtsam::Value&) [with T = double]’:
+/opt/ros/humble/include/gtsam/base/GenericValue.h:158:12:   required from here
+/opt/ros/humble/include/gtsam/base/GenericValue.h:163:15: warning: implicitly-declared ‘constexpr gtsam::GenericValue<double>::GenericValue(const gtsam::GenericValue<double>&)’ is deprecated [-Wdeprecated-copy]
+  163 |       *this = GenericValue(derivedRhs); // calls copy constructor
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/gtsam/base/GenericValue.h:171:22: note: because ‘gtsam::GenericValue<double>’ has user-provided ‘gtsam::GenericValue<T>& gtsam::GenericValue<T>::operator=(const gtsam::GenericValue<T>&) [with T = double]’
+  171 |     GenericValue<T>& operator=(const GenericValue<T>& rhs) {
+      |                      ^~~~~~~~
+In file included from /opt/ros/humble/include/gtsam/linear/GaussianConditional.h:27,
+                 from /opt/ros/humble/include/gtsam/linear/GaussianBayesNet.h:23,
+                 from /opt/ros/humble/include/gtsam/linear/GaussianBayesTree.h:22,
+                 from /opt/ros/humble/include/gtsam/nonlinear/ISAM2.h:23,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:21,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/pose_graph_optimizer.hpp:16,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/backend/pose_graph_optimizer.cpp:1:
+/opt/ros/humble/include/gtsam/inference/Conditional-inst.h: In instantiation of ‘double gtsam::Conditional<FACTOR, DERIVEDCONDITIONAL>::logProbability(const gtsam::HybridValues&) const [with FACTOR = gtsam::JacobianFactor; DERIVEDCONDITIONAL = gtsam::GaussianConditional]’:
+/opt/ros/humble/include/gtsam/inference/Conditional-inst.h:48:8:   required from here
+/opt/ros/humble/include/gtsam/inference/Conditional-inst.h:49:25: warning: unused parameter ‘c’ [-Wunused-parameter]
+   49 |     const HybridValues& c) const {
+      |     ~~~~~~~~~~~~~~~~~~~~^
+/opt/ros/humble/include/gtsam/inference/Conditional-inst.h: In instantiation of ‘double gtsam::Conditional<FACTOR, DERIVEDCONDITIONAL>::evaluate(const gtsam::HybridValues&) const [with FACTOR = gtsam::JacobianFactor; DERIVEDCONDITIONAL = gtsam::GaussianConditional]’:
+/opt/ros/humble/include/gtsam/inference/Conditional-inst.h:55:8:   required from here
+/opt/ros/humble/include/gtsam/inference/Conditional-inst.h:56:25: warning: unused parameter ‘c’ [-Wunused-parameter]
+   56 |     const HybridValues& c) const {
+      |     ~~~~~~~~~~~~~~~~~~~~^
+In file included from /opt/ros/humble/include/gtsam/inference/Symbol.h:22,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:19,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/pose_graph_optimizer.hpp:16,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/tools/vendor_map_postprocessor.cpp:1:
+/opt/ros/humble/include/gtsam/inference/Key.h: In static member function ‘static bool gtsam::traits<long unsigned int>::Equals(const Key&, const Key&, double)’:
+/opt/ros/humble/include/gtsam/inference/Key.h:121:63: warning: unused parameter ‘tol’ [-Wunused-parameter]
+  121 |   static bool Equals(const Key& val1, const Key& val2, double tol = 1e-8) {
+      |                                                        ~~~~~~~^~~~~~~~~~
+In file included from /opt/ros/humble/include/gtsam/nonlinear/Values.h:571,
+                 from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:24,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/pose_graph_optimizer.hpp:16,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/tools/vendor_map_postprocessor.cpp:1:
+/opt/ros/humble/include/gtsam/nonlinear/Values-inl.h: In member function ‘gtsam::Values::Filtered<gtsam::Value> gtsam::Values::filter(const std::function<bool(long unsigned int)>&)’:
+/opt/ros/humble/include/gtsam/nonlinear/Values-inl.h:253:25: warning: ‘gtsam::Values::Filtered<ValueType> gtsam::Values::filter(const std::function<bool(long unsigned int)>&) [with ValueType = gtsam::Value]’ is deprecated [-Wdeprecated-declarations]
+  253 |     return filter<Value>(filterFcn);
+      |            ~~~~~~~~~~~~~^~~~~~~~~~~
+In file included from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:24,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/pose_graph_optimizer.hpp:16,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/tools/vendor_map_postprocessor.cpp:1:
+/opt/ros/humble/include/gtsam/nonlinear/Values.h:421:5: note: declared here
+  421 |     filter(const std::function<bool(Key)>& filterFcn = &_truePredicate<Key>);
+      |     ^~~~~~
+In file included from /opt/ros/humble/include/gtsam/nonlinear/Values.h:571,
+                 from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:24,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/pose_graph_optimizer.hpp:16,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/tools/vendor_map_postprocessor.cpp:1:
+/opt/ros/humble/include/gtsam/nonlinear/Values-inl.h: In member function ‘gtsam::Values::ConstFiltered<gtsam::Value> gtsam::Values::filter(const std::function<bool(long unsigned int)>&) const’:
+/opt/ros/humble/include/gtsam/nonlinear/Values-inl.h:265:25: warning: ‘gtsam::Values::ConstFiltered<ValueType> gtsam::Values::filter(const std::function<bool(long unsigned int)>&) const [with ValueType = gtsam::Value]’ is deprecated [-Wdeprecated-declarations]
+  265 |     return filter<Value>(filterFcn);
+      |            ~~~~~~~~~~~~~^~~~~~~~~~~
+In file included from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:24,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/pose_graph_optimizer.hpp:16,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/tools/vendor_map_postprocessor.cpp:1:
+/opt/ros/humble/include/gtsam/nonlinear/Values.h:429:47: note: declared here
+  429 |     ConstFiltered<ValueType> GTSAM_DEPRECATED filter(
+      |                                               ^~~~~~
+In file included from /opt/ros/humble/include/gtsam/linear/NoiseModel.h:24,
+                 from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:25,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/pose_graph_optimizer.hpp:16,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/tools/vendor_map_postprocessor.cpp:1:
+/opt/ros/humble/include/gtsam/linear/LossFunctions.h: In member function ‘virtual double gtsam::noiseModel::mEstimator::Base::loss(double) const’:
+/opt/ros/humble/include/gtsam/linear/LossFunctions.h:94:30: warning: unused parameter ‘distance’ [-Wunused-parameter]
+   94 |   virtual double loss(double distance) const { return 0; }
+      |                       ~~~~~~~^~~~~~~~
+In file included from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:25,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/pose_graph_optimizer.hpp:16,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/tools/vendor_map_postprocessor.cpp:1:
+/opt/ros/humble/include/gtsam/linear/NoiseModel.h: In member function ‘virtual double gtsam::noiseModel::Base::weight(const Vector&) const’:
+/opt/ros/humble/include/gtsam/linear/NoiseModel.h:137:43: warning: unused parameter ‘v’ [-Wunused-parameter]
+  137 |       virtual double weight(const Vector& v) const { return 1.0; }
+      |                             ~~~~~~~~~~~~~~^
+In file included from /opt/ros/humble/include/gtsam/inference/Symbol.h:22,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:19,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/test/test_backend_geometry.cpp:3:
+/opt/ros/humble/include/gtsam/inference/Key.h: In static member function ‘static bool gtsam::traits<long unsigned int>::Equals(const Key&, const Key&, double)’:
+/opt/ros/humble/include/gtsam/inference/Key.h:121:63: warning: unused parameter ‘tol’ [-Wunused-parameter]
+  121 |   static bool Equals(const Key& val1, const Key& val2, double tol = 1e-8) {
+      |                                                        ~~~~~~~^~~~~~~~~~
+In file included from /opt/ros/humble/include/gtsam/nonlinear/Values.h:571,
+                 from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:24,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/test/test_backend_geometry.cpp:3:
+/opt/ros/humble/include/gtsam/nonlinear/Values-inl.h: In member function ‘gtsam::Values::Filtered<gtsam::Value> gtsam::Values::filter(const std::function<bool(long unsigned int)>&)’:
+/opt/ros/humble/include/gtsam/nonlinear/Values-inl.h:253:25: warning: ‘gtsam::Values::Filtered<ValueType> gtsam::Values::filter(const std::function<bool(long unsigned int)>&) [with ValueType = gtsam::Value]’ is deprecated [-Wdeprecated-declarations]
+  253 |     return filter<Value>(filterFcn);
+      |            ~~~~~~~~~~~~~^~~~~~~~~~~
+In file included from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:24,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/test/test_backend_geometry.cpp:3:
+/opt/ros/humble/include/gtsam/nonlinear/Values.h:421:5: note: declared here
+  421 |     filter(const std::function<bool(Key)>& filterFcn = &_truePredicate<Key>);
+      |     ^~~~~~
+In file included from /opt/ros/humble/include/gtsam/nonlinear/Values.h:571,
+                 from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:24,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/test/test_backend_geometry.cpp:3:
+/opt/ros/humble/include/gtsam/nonlinear/Values-inl.h: In member function ‘gtsam::Values::ConstFiltered<gtsam::Value> gtsam::Values::filter(const std::function<bool(long unsigned int)>&) const’:
+/opt/ros/humble/include/gtsam/nonlinear/Values-inl.h:265:25: warning: ‘gtsam::Values::ConstFiltered<ValueType> gtsam::Values::filter(const std::function<bool(long unsigned int)>&) const [with ValueType = gtsam::Value]’ is deprecated [-Wdeprecated-declarations]
+  265 |     return filter<Value>(filterFcn);
+      |            ~~~~~~~~~~~~~^~~~~~~~~~~
+In file included from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:24,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/test/test_backend_geometry.cpp:3:
+/opt/ros/humble/include/gtsam/nonlinear/Values.h:429:47: note: declared here
+  429 |     ConstFiltered<ValueType> GTSAM_DEPRECATED filter(
+      |                                               ^~~~~~
+In file included from /opt/ros/humble/include/gtsam/linear/NoiseModel.h:24,
+                 from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:25,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/test/test_backend_geometry.cpp:3:
+/opt/ros/humble/include/gtsam/linear/LossFunctions.h: In member function ‘virtual double gtsam::noiseModel::mEstimator::Base::loss(double) const’:
+/opt/ros/humble/include/gtsam/linear/LossFunctions.h:94:30: warning: unused parameter ‘distance’ [-Wunused-parameter]
+   94 |   virtual double loss(double distance) const { return 0; }
+      |                       ~~~~~~~^~~~~~~~
+In file included from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:25,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/test/test_backend_geometry.cpp:3:
+/opt/ros/humble/include/gtsam/linear/NoiseModel.h: In member function ‘virtual double gtsam::noiseModel::Base::weight(const Vector&) const’:
+/opt/ros/humble/include/gtsam/linear/NoiseModel.h:137:43: warning: unused parameter ‘v’ [-Wunused-parameter]
+  137 |       virtual double weight(const Vector& v) const { return 1.0; }
+      |                             ~~~~~~~~~~~~~~^
+In file included from /opt/ros/humble/include/gtsam/inference/Symbol.h:22,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:19,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/pose_graph_optimizer.hpp:16,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/nodes/slam_node.cpp:6:
+/opt/ros/humble/include/gtsam/inference/Key.h: In static member function ‘static bool gtsam::traits<long unsigned int>::Equals(const Key&, const Key&, double)’:
+/opt/ros/humble/include/gtsam/inference/Key.h:121:63: warning: unused parameter ‘tol’ [-Wunused-parameter]
+  121 |   static bool Equals(const Key& val1, const Key& val2, double tol = 1e-8) {
+      |                                                        ~~~~~~~^~~~~~~~~~
+In file included from /opt/ros/humble/include/gtsam/nonlinear/Values.h:571,
+                 from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:24,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/pose_graph_optimizer.hpp:16,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/nodes/slam_node.cpp:6:
+/opt/ros/humble/include/gtsam/nonlinear/Values-inl.h: In member function ‘gtsam::Values::Filtered<gtsam::Value> gtsam::Values::filter(const std::function<bool(long unsigned int)>&)’:
+/opt/ros/humble/include/gtsam/nonlinear/Values-inl.h:253:25: warning: ‘gtsam::Values::Filtered<ValueType> gtsam::Values::filter(const std::function<bool(long unsigned int)>&) [with ValueType = gtsam::Value]’ is deprecated [-Wdeprecated-declarations]
+  253 |     return filter<Value>(filterFcn);
+      |            ~~~~~~~~~~~~~^~~~~~~~~~~
+In file included from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:24,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/pose_graph_optimizer.hpp:16,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/nodes/slam_node.cpp:6:
+/opt/ros/humble/include/gtsam/nonlinear/Values.h:421:5: note: declared here
+  421 |     filter(const std::function<bool(Key)>& filterFcn = &_truePredicate<Key>);
+      |     ^~~~~~
+In file included from /opt/ros/humble/include/gtsam/nonlinear/Values.h:571,
+                 from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:24,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/pose_graph_optimizer.hpp:16,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/nodes/slam_node.cpp:6:
+/opt/ros/humble/include/gtsam/nonlinear/Values-inl.h: In member function ‘gtsam::Values::ConstFiltered<gtsam::Value> gtsam::Values::filter(const std::function<bool(long unsigned int)>&) const’:
+/opt/ros/humble/include/gtsam/nonlinear/Values-inl.h:265:25: warning: ‘gtsam::Values::ConstFiltered<ValueType> gtsam::Values::filter(const std::function<bool(long unsigned int)>&) const [with ValueType = gtsam::Value]’ is deprecated [-Wdeprecated-declarations]
+  265 |     return filter<Value>(filterFcn);
+      |            ~~~~~~~~~~~~~^~~~~~~~~~~
+In file included from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:24,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/pose_graph_optimizer.hpp:16,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/nodes/slam_node.cpp:6:
+/opt/ros/humble/include/gtsam/nonlinear/Values.h:429:47: note: declared here
+  429 |     ConstFiltered<ValueType> GTSAM_DEPRECATED filter(
+      |                                               ^~~~~~
+In file included from /opt/ros/humble/include/gtsam/linear/NoiseModel.h:24,
+                 from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:25,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/pose_graph_optimizer.hpp:16,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/nodes/slam_node.cpp:6:
+/opt/ros/humble/include/gtsam/linear/LossFunctions.h: In member function ‘virtual double gtsam::noiseModel::mEstimator::Base::loss(double) const’:
+/opt/ros/humble/include/gtsam/linear/LossFunctions.h:94:30: warning: unused parameter ‘distance’ [-Wunused-parameter]
+   94 |   virtual double loss(double distance) const { return 0; }
+      |                       ~~~~~~~^~~~~~~~
+In file included from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:25,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/pose_graph_optimizer.hpp:16,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/nodes/slam_node.cpp:6:
+/opt/ros/humble/include/gtsam/linear/NoiseModel.h: In member function ‘virtual double gtsam::noiseModel::Base::weight(const Vector&) const’:
+/opt/ros/humble/include/gtsam/linear/NoiseModel.h:137:43: warning: unused parameter ‘v’ [-Wunused-parameter]
+  137 |       virtual double weight(const Vector& v) const { return 1.0; }
+      |                             ~~~~~~~~~~~~~~^
+In file included from /opt/ros/humble/include/gtsam/linear/GaussianBayesTree.h:23,
+                 from /opt/ros/humble/include/gtsam/nonlinear/ISAM2.h:23,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:21,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/pose_graph_optimizer.hpp:16,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/tools/vendor_map_postprocessor.cpp:1:
+/opt/ros/humble/include/gtsam/linear/GaussianFactorGraph.h: In static member function ‘static gtsam::Ordering gtsam::EliminationTraits<gtsam::GaussianFactorGraph>::DefaultOrderingFunc(const FactorGraphType&, boost::optional<const gtsam::VariableIndex&>)’:
+/opt/ros/humble/include/gtsam/linear/GaussianFactorGraph.h:59:32: warning: unused parameter ‘graph’ [-Wunused-parameter]
+   59 |         const FactorGraphType& graph,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+In file included from /opt/ros/humble/include/gtsam/linear/GaussianBayesTree.h:23,
+                 from /opt/ros/humble/include/gtsam/nonlinear/ISAM2.h:23,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:21,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/test/test_backend_geometry.cpp:3:
+/opt/ros/humble/include/gtsam/linear/GaussianFactorGraph.h: In static member function ‘static gtsam::Ordering gtsam::EliminationTraits<gtsam::GaussianFactorGraph>::DefaultOrderingFunc(const FactorGraphType&, boost::optional<const gtsam::VariableIndex&>)’:
+/opt/ros/humble/include/gtsam/linear/GaussianFactorGraph.h:59:32: warning: unused parameter ‘graph’ [-Wunused-parameter]
+   59 |         const FactorGraphType& graph,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+In file included from /opt/ros/humble/include/gtsam/linear/GaussianBayesTree.h:23,
+                 from /opt/ros/humble/include/gtsam/nonlinear/ISAM2.h:23,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:21,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/pose_graph_optimizer.hpp:16,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/nodes/slam_node.cpp:6:
+/opt/ros/humble/include/gtsam/linear/GaussianFactorGraph.h: In static member function ‘static gtsam::Ordering gtsam::EliminationTraits<gtsam::GaussianFactorGraph>::DefaultOrderingFunc(const FactorGraphType&, boost::optional<const gtsam::VariableIndex&>)’:
+/opt/ros/humble/include/gtsam/linear/GaussianFactorGraph.h:59:32: warning: unused parameter ‘graph’ [-Wunused-parameter]
+   59 |         const FactorGraphType& graph,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+In file included from /opt/ros/humble/include/gtsam/nonlinear/ISAM2.h:26,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:21,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/pose_graph_optimizer.hpp:16,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/tools/vendor_map_postprocessor.cpp:1:
+/opt/ros/humble/include/gtsam/nonlinear/ISAM2Result.h: In instantiation of ‘void boost::optional_detail::optional_base<T>::assign_value(boost::optional_detail::optional_base<T>::argument_type) [with T = gtsam::ISAM2Result::DetailedResults; boost::optional_detail::optional_base<T>::argument_type = const gtsam::ISAM2Result::DetailedResults&]’:
+/usr/include/boost/optional/optional.hpp:341:24:   required from ‘void boost::optional_detail::optional_base<T>::assign(boost::optional_detail::optional_base<T>::argument_type) [with T = gtsam::ISAM2Result::DetailedResults; boost::optional_detail::optional_base<T>::argument_type = const gtsam::ISAM2Result::DetailedResults&]’
+/usr/include/boost/optional/optional.hpp:388:46:   required from ‘void boost::optional_detail::optional_base<T>::reset(boost::optional_detail::optional_base<T>::argument_type) [with T = gtsam::ISAM2Result::DetailedResults; boost::optional_detail::optional_base<T>::argument_type = const gtsam::ISAM2Result::DetailedResults&]’
+/opt/ros/humble/include/gtsam/nonlinear/ISAM2Result.h:161:44:   required from here
+/opt/ros/humble/include/gtsam/nonlinear/ISAM2Result.h:117:10: warning: implicitly-declared ‘gtsam::FastMap<long unsigned int, gtsam::ISAM2Result::DetailedResults::VariableStatus>& gtsam::FastMap<long unsigned int, gtsam::ISAM2Result::DetailedResults::VariableStatus>::operator=(const gtsam::FastMap<long unsigned int, gtsam::ISAM2Result::DetailedResults::VariableStatus>&)’ is deprecated [-Wdeprecated-copy]
+  117 |   struct DetailedResults {
+      |          ^~~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/gtsam/inference/Key.h:21,
+                 from /opt/ros/humble/include/gtsam/inference/Symbol.h:22,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:19,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/pose_graph_optimizer.hpp:16,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/tools/vendor_map_postprocessor.cpp:1:
+/opt/ros/humble/include/gtsam/base/FastMap.h:53:3: note: because ‘gtsam::FastMap<long unsigned int, gtsam::ISAM2Result::DetailedResults::VariableStatus>’ has user-provided ‘gtsam::FastMap<KEY, VALUE>::FastMap(const gtsam::FastMap<KEY, VALUE>&) [with KEY = long unsigned int; VALUE = gtsam::ISAM2Result::DetailedResults::VariableStatus]’
+   53 |   FastMap(const FastMap<KEY,VALUE>& x) : Base(x) {}
+      |   ^~~~~~~
+In file included from /usr/include/boost/optional.hpp:15,
+                 from /opt/ros/humble/include/gtsam/base/OptionalJacobian.h:27,
+                 from /opt/ros/humble/include/gtsam/base/Matrix.h:27,
+                 from /opt/ros/humble/include/gtsam/base/Manifold.h:22,
+                 from /opt/ros/humble/include/gtsam/geometry/BearingRange.h:21,
+                 from /opt/ros/humble/include/gtsam/geometry/Pose3.h:22,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:18,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/pose_graph_optimizer.hpp:16,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/tools/vendor_map_postprocessor.cpp:1:
+/usr/include/boost/optional/optional.hpp:749:58: note: synthesized method ‘gtsam::ISAM2Result::DetailedResults& gtsam::ISAM2Result::DetailedResults::operator=(const gtsam::ISAM2Result::DetailedResults&)’ first required here
+  749 |     void assign_value ( argument_type val ) { get_impl() = val; }
+      |                                               ~~~~~~~~~~~^~~~~
+In file included from /opt/ros/humble/include/gtsam/nonlinear/ISAM2.h:26,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:21,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/test/test_backend_geometry.cpp:3:
+/opt/ros/humble/include/gtsam/nonlinear/ISAM2Result.h: In instantiation of ‘void boost::optional_detail::optional_base<T>::assign_value(boost::optional_detail::optional_base<T>::argument_type) [with T = gtsam::ISAM2Result::DetailedResults; boost::optional_detail::optional_base<T>::argument_type = const gtsam::ISAM2Result::DetailedResults&]’:
+/usr/include/boost/optional/optional.hpp:341:24:   required from ‘void boost::optional_detail::optional_base<T>::assign(boost::optional_detail::optional_base<T>::argument_type) [with T = gtsam::ISAM2Result::DetailedResults; boost::optional_detail::optional_base<T>::argument_type = const gtsam::ISAM2Result::DetailedResults&]’
+/usr/include/boost/optional/optional.hpp:388:46:   required from ‘void boost::optional_detail::optional_base<T>::reset(boost::optional_detail::optional_base<T>::argument_type) [with T = gtsam::ISAM2Result::DetailedResults; boost::optional_detail::optional_base<T>::argument_type = const gtsam::ISAM2Result::DetailedResults&]’
+/opt/ros/humble/include/gtsam/nonlinear/ISAM2Result.h:161:44:   required from here
+/opt/ros/humble/include/gtsam/nonlinear/ISAM2Result.h:117:10: warning: implicitly-declared ‘gtsam::FastMap<long unsigned int, gtsam::ISAM2Result::DetailedResults::VariableStatus>& gtsam::FastMap<long unsigned int, gtsam::ISAM2Result::DetailedResults::VariableStatus>::operator=(const gtsam::FastMap<long unsigned int, gtsam::ISAM2Result::DetailedResults::VariableStatus>&)’ is deprecated [-Wdeprecated-copy]
+  117 |   struct DetailedResults {
+      |          ^~~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/gtsam/inference/Key.h:21,
+                 from /opt/ros/humble/include/gtsam/inference/Symbol.h:22,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:19,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/test/test_backend_geometry.cpp:3:
+/opt/ros/humble/include/gtsam/base/FastMap.h:53:3: note: because ‘gtsam::FastMap<long unsigned int, gtsam::ISAM2Result::DetailedResults::VariableStatus>’ has user-provided ‘gtsam::FastMap<KEY, VALUE>::FastMap(const gtsam::FastMap<KEY, VALUE>&) [with KEY = long unsigned int; VALUE = gtsam::ISAM2Result::DetailedResults::VariableStatus]’
+   53 |   FastMap(const FastMap<KEY,VALUE>& x) : Base(x) {}
+      |   ^~~~~~~
+In file included from /usr/include/boost/optional.hpp:15,
+                 from /opt/ros/humble/include/gtsam/base/OptionalJacobian.h:27,
+                 from /opt/ros/humble/include/gtsam/base/Matrix.h:27,
+                 from /opt/ros/humble/include/gtsam/base/Manifold.h:22,
+                 from /opt/ros/humble/include/gtsam/geometry/BearingRange.h:21,
+                 from /opt/ros/humble/include/gtsam/geometry/Pose3.h:22,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:18,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/test/test_backend_geometry.cpp:3:
+/usr/include/boost/optional/optional.hpp:749:58: note: synthesized method ‘gtsam::ISAM2Result::DetailedResults& gtsam::ISAM2Result::DetailedResults::operator=(const gtsam::ISAM2Result::DetailedResults&)’ first required here
+  749 |     void assign_value ( argument_type val ) { get_impl() = val; }
+      |                                               ~~~~~~~~~~~^~~~~
+In file included from /opt/ros/humble/include/gtsam/nonlinear/Values.h:28,
+                 from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:24,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/pose_graph_optimizer.hpp:16,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/tools/vendor_map_postprocessor.cpp:1:
+/opt/ros/humble/include/gtsam/base/GenericValue.h: In instantiation of ‘gtsam::Value* gtsam::GenericValue<T>::clone_() const [with T = double]’:
+/opt/ros/humble/include/gtsam/base/GenericValue.h:102:12:   required from here
+/opt/ros/humble/include/gtsam/base/GenericValue.h:103:27: warning: implicitly-declared ‘constexpr gtsam::GenericValue<double>::GenericValue(const gtsam::GenericValue<double>&)’ is deprecated [-Wdeprecated-copy]
+  103 |       GenericValue* ptr = new GenericValue(*this); // calls copy constructor to fill in
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/gtsam/base/GenericValue.h:171:22: note: because ‘gtsam::GenericValue<double>’ has user-provided ‘gtsam::GenericValue<T>& gtsam::GenericValue<T>::operator=(const gtsam::GenericValue<T>&) [with T = double]’
+  171 |     GenericValue<T>& operator=(const GenericValue<T>& rhs) {
+      |                      ^~~~~~~~
+/opt/ros/humble/include/gtsam/base/GenericValue.h:47:7: warning: implicitly-declared ‘constexpr gtsam::Value::Value(const gtsam::Value&)’ is deprecated [-Wdeprecated-copy]
+   47 | class GenericValue: public Value {
+      |       ^~~~~~~~~~~~
+In file included from /opt/ros/humble/include/gtsam/base/GenericValue.h:24,
+                 from /opt/ros/humble/include/gtsam/nonlinear/Values.h:28,
+                 from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:24,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/pose_graph_optimizer.hpp:16,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/tools/vendor_map_postprocessor.cpp:1:
+/opt/ros/humble/include/gtsam/base/Value.h:79:20: note: because ‘gtsam::Value’ has user-provided ‘virtual gtsam::Value& gtsam::Value::operator=(const gtsam::Value&)’
+   79 |     virtual Value& operator=(const Value& /*rhs*/) {
+      |                    ^~~~~~~~
+In file included from /opt/ros/humble/include/gtsam/nonlinear/Values.h:28,
+                 from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:24,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/pose_graph_optimizer.hpp:16,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/tools/vendor_map_postprocessor.cpp:1:
+/opt/ros/humble/include/gtsam/base/GenericValue.h:103:27: note: synthesized method ‘constexpr gtsam::GenericValue<double>::GenericValue(const gtsam::GenericValue<double>&)’ first required here
+  103 |       GenericValue* ptr = new GenericValue(*this); // calls copy constructor to fill in
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/gtsam/base/GenericValue.h: In instantiation of ‘gtsam::Value& gtsam::GenericValue<T>::operator=(const gtsam::Value&) [with T = double]’:
+/opt/ros/humble/include/gtsam/base/GenericValue.h:158:12:   required from here
+/opt/ros/humble/include/gtsam/base/GenericValue.h:163:15: warning: implicitly-declared ‘constexpr gtsam::GenericValue<double>::GenericValue(const gtsam::GenericValue<double>&)’ is deprecated [-Wdeprecated-copy]
+  163 |       *this = GenericValue(derivedRhs); // calls copy constructor
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/gtsam/base/GenericValue.h:171:22: note: because ‘gtsam::GenericValue<double>’ has user-provided ‘gtsam::GenericValue<T>& gtsam::GenericValue<T>::operator=(const gtsam::GenericValue<T>&) [with T = double]’
+  171 |     GenericValue<T>& operator=(const GenericValue<T>& rhs) {
+      |                      ^~~~~~~~
+In file included from /opt/ros/humble/include/gtsam/linear/GaussianConditional.h:27,
+                 from /opt/ros/humble/include/gtsam/linear/GaussianBayesNet.h:23,
+                 from /opt/ros/humble/include/gtsam/linear/GaussianBayesTree.h:22,
+                 from /opt/ros/humble/include/gtsam/nonlinear/ISAM2.h:23,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:21,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/pose_graph_optimizer.hpp:16,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/tools/vendor_map_postprocessor.cpp:1:
+/opt/ros/humble/include/gtsam/inference/Conditional-inst.h: In instantiation of ‘double gtsam::Conditional<FACTOR, DERIVEDCONDITIONAL>::logProbability(const gtsam::HybridValues&) const [with FACTOR = gtsam::JacobianFactor; DERIVEDCONDITIONAL = gtsam::GaussianConditional]’:
+/opt/ros/humble/include/gtsam/inference/Conditional-inst.h:48:8:   required from here
+/opt/ros/humble/include/gtsam/inference/Conditional-inst.h:49:25: warning: unused parameter ‘c’ [-Wunused-parameter]
+   49 |     const HybridValues& c) const {
+      |     ~~~~~~~~~~~~~~~~~~~~^
+/opt/ros/humble/include/gtsam/inference/Conditional-inst.h: In instantiation of ‘double gtsam::Conditional<FACTOR, DERIVEDCONDITIONAL>::evaluate(const gtsam::HybridValues&) const [with FACTOR = gtsam::JacobianFactor; DERIVEDCONDITIONAL = gtsam::GaussianConditional]’:
+/opt/ros/humble/include/gtsam/inference/Conditional-inst.h:55:8:   required from here
+/opt/ros/humble/include/gtsam/inference/Conditional-inst.h:56:25: warning: unused parameter ‘c’ [-Wunused-parameter]
+   56 |     const HybridValues& c) const {
+      |     ~~~~~~~~~~~~~~~~~~~~^
+In file included from /opt/ros/humble/include/gtsam/nonlinear/Values.h:28,
+                 from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:24,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/test/test_backend_geometry.cpp:3:
+/opt/ros/humble/include/gtsam/base/GenericValue.h: In instantiation of ‘gtsam::Value* gtsam::GenericValue<T>::clone_() const [with T = double]’:
+/opt/ros/humble/include/gtsam/base/GenericValue.h:102:12:   required from here
+/opt/ros/humble/include/gtsam/base/GenericValue.h:103:27: warning: implicitly-declared ‘constexpr gtsam::GenericValue<double>::GenericValue(const gtsam::GenericValue<double>&)’ is deprecated [-Wdeprecated-copy]
+  103 |       GenericValue* ptr = new GenericValue(*this); // calls copy constructor to fill in
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/gtsam/base/GenericValue.h:171:22: note: because ‘gtsam::GenericValue<double>’ has user-provided ‘gtsam::GenericValue<T>& gtsam::GenericValue<T>::operator=(const gtsam::GenericValue<T>&) [with T = double]’
+  171 |     GenericValue<T>& operator=(const GenericValue<T>& rhs) {
+      |                      ^~~~~~~~
+/opt/ros/humble/include/gtsam/base/GenericValue.h:47:7: warning: implicitly-declared ‘constexpr gtsam::Value::Value(const gtsam::Value&)’ is deprecated [-Wdeprecated-copy]
+   47 | class GenericValue: public Value {
+      |       ^~~~~~~~~~~~
+In file included from /opt/ros/humble/include/gtsam/base/GenericValue.h:24,
+                 from /opt/ros/humble/include/gtsam/nonlinear/Values.h:28,
+                 from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:24,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/test/test_backend_geometry.cpp:3:
+/opt/ros/humble/include/gtsam/base/Value.h:79:20: note: because ‘gtsam::Value’ has user-provided ‘virtual gtsam::Value& gtsam::Value::operator=(const gtsam::Value&)’
+   79 |     virtual Value& operator=(const Value& /*rhs*/) {
+      |                    ^~~~~~~~
+In file included from /opt/ros/humble/include/gtsam/nonlinear/Values.h:28,
+                 from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:24,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/test/test_backend_geometry.cpp:3:
+/opt/ros/humble/include/gtsam/base/GenericValue.h:103:27: note: synthesized method ‘constexpr gtsam::GenericValue<double>::GenericValue(const gtsam::GenericValue<double>&)’ first required here
+  103 |       GenericValue* ptr = new GenericValue(*this); // calls copy constructor to fill in
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/gtsam/base/GenericValue.h: In instantiation of ‘gtsam::Value& gtsam::GenericValue<T>::operator=(const gtsam::Value&) [with T = double]’:
+/opt/ros/humble/include/gtsam/base/GenericValue.h:158:12:   required from here
+/opt/ros/humble/include/gtsam/base/GenericValue.h:163:15: warning: implicitly-declared ‘constexpr gtsam::GenericValue<double>::GenericValue(const gtsam::GenericValue<double>&)’ is deprecated [-Wdeprecated-copy]
+  163 |       *this = GenericValue(derivedRhs); // calls copy constructor
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/gtsam/base/GenericValue.h:171:22: note: because ‘gtsam::GenericValue<double>’ has user-provided ‘gtsam::GenericValue<T>& gtsam::GenericValue<T>::operator=(const gtsam::GenericValue<T>&) [with T = double]’
+  171 |     GenericValue<T>& operator=(const GenericValue<T>& rhs) {
+      |                      ^~~~~~~~
+In file included from /opt/ros/humble/include/gtsam/linear/GaussianConditional.h:27,
+                 from /opt/ros/humble/include/gtsam/linear/GaussianBayesNet.h:23,
+                 from /opt/ros/humble/include/gtsam/linear/GaussianBayesTree.h:22,
+                 from /opt/ros/humble/include/gtsam/nonlinear/ISAM2.h:23,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:21,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/test/test_backend_geometry.cpp:3:
+/opt/ros/humble/include/gtsam/inference/Conditional-inst.h: In instantiation of ‘double gtsam::Conditional<FACTOR, DERIVEDCONDITIONAL>::logProbability(const gtsam::HybridValues&) const [with FACTOR = gtsam::JacobianFactor; DERIVEDCONDITIONAL = gtsam::GaussianConditional]’:
+/opt/ros/humble/include/gtsam/inference/Conditional-inst.h:48:8:   required from here
+/opt/ros/humble/include/gtsam/inference/Conditional-inst.h:49:25: warning: unused parameter ‘c’ [-Wunused-parameter]
+   49 |     const HybridValues& c) const {
+      |     ~~~~~~~~~~~~~~~~~~~~^
+/opt/ros/humble/include/gtsam/inference/Conditional-inst.h: In instantiation of ‘double gtsam::Conditional<FACTOR, DERIVEDCONDITIONAL>::evaluate(const gtsam::HybridValues&) const [with FACTOR = gtsam::JacobianFactor; DERIVEDCONDITIONAL = gtsam::GaussianConditional]’:
+/opt/ros/humble/include/gtsam/inference/Conditional-inst.h:55:8:   required from here
+/opt/ros/humble/include/gtsam/inference/Conditional-inst.h:56:25: warning: unused parameter ‘c’ [-Wunused-parameter]
+   56 |     const HybridValues& c) const {
+      |     ~~~~~~~~~~~~~~~~~~~~^
+In file included from /opt/ros/humble/include/gtsam/nonlinear/ISAM2.h:26,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:21,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/pose_graph_optimizer.hpp:16,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/nodes/slam_node.cpp:6:
+/opt/ros/humble/include/gtsam/nonlinear/ISAM2Result.h: In instantiation of ‘void boost::optional_detail::optional_base<T>::assign_value(boost::optional_detail::optional_base<T>::argument_type) [with T = gtsam::ISAM2Result::DetailedResults; boost::optional_detail::optional_base<T>::argument_type = const gtsam::ISAM2Result::DetailedResults&]’:
+/usr/include/boost/optional/optional.hpp:341:24:   required from ‘void boost::optional_detail::optional_base<T>::assign(boost::optional_detail::optional_base<T>::argument_type) [with T = gtsam::ISAM2Result::DetailedResults; boost::optional_detail::optional_base<T>::argument_type = const gtsam::ISAM2Result::DetailedResults&]’
+/usr/include/boost/optional/optional.hpp:388:46:   required from ‘void boost::optional_detail::optional_base<T>::reset(boost::optional_detail::optional_base<T>::argument_type) [with T = gtsam::ISAM2Result::DetailedResults; boost::optional_detail::optional_base<T>::argument_type = const gtsam::ISAM2Result::DetailedResults&]’
+/opt/ros/humble/include/gtsam/nonlinear/ISAM2Result.h:161:44:   required from here
+/opt/ros/humble/include/gtsam/nonlinear/ISAM2Result.h:117:10: warning: implicitly-declared ‘gtsam::FastMap<long unsigned int, gtsam::ISAM2Result::DetailedResults::VariableStatus>& gtsam::FastMap<long unsigned int, gtsam::ISAM2Result::DetailedResults::VariableStatus>::operator=(const gtsam::FastMap<long unsigned int, gtsam::ISAM2Result::DetailedResults::VariableStatus>&)’ is deprecated [-Wdeprecated-copy]
+  117 |   struct DetailedResults {
+      |          ^~~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/gtsam/inference/Key.h:21,
+                 from /opt/ros/humble/include/gtsam/inference/Symbol.h:22,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:19,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/pose_graph_optimizer.hpp:16,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/nodes/slam_node.cpp:6:
+/opt/ros/humble/include/gtsam/base/FastMap.h:53:3: note: because ‘gtsam::FastMap<long unsigned int, gtsam::ISAM2Result::DetailedResults::VariableStatus>’ has user-provided ‘gtsam::FastMap<KEY, VALUE>::FastMap(const gtsam::FastMap<KEY, VALUE>&) [with KEY = long unsigned int; VALUE = gtsam::ISAM2Result::DetailedResults::VariableStatus]’
+   53 |   FastMap(const FastMap<KEY,VALUE>& x) : Base(x) {}
+      |   ^~~~~~~
+In file included from /usr/include/boost/optional.hpp:15,
+                 from /opt/ros/humble/include/gtsam/base/OptionalJacobian.h:27,
+                 from /opt/ros/humble/include/gtsam/base/Matrix.h:27,
+                 from /opt/ros/humble/include/gtsam/base/Manifold.h:22,
+                 from /opt/ros/humble/include/gtsam/geometry/BearingRange.h:21,
+                 from /opt/ros/humble/include/gtsam/geometry/Pose3.h:22,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:18,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/pose_graph_optimizer.hpp:16,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/nodes/slam_node.cpp:6:
+/usr/include/boost/optional/optional.hpp:749:58: note: synthesized method ‘gtsam::ISAM2Result::DetailedResults& gtsam::ISAM2Result::DetailedResults::operator=(const gtsam::ISAM2Result::DetailedResults&)’ first required here
+  749 |     void assign_value ( argument_type val ) { get_impl() = val; }
+      |                                               ~~~~~~~~~~~^~~~~
+In file included from /opt/ros/humble/include/gtsam/nonlinear/Values.h:28,
+                 from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:24,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/pose_graph_optimizer.hpp:16,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/nodes/slam_node.cpp:6:
+/opt/ros/humble/include/gtsam/base/GenericValue.h: In instantiation of ‘gtsam::Value* gtsam::GenericValue<T>::clone_() const [with T = double]’:
+/opt/ros/humble/include/gtsam/base/GenericValue.h:102:12:   required from here
+/opt/ros/humble/include/gtsam/base/GenericValue.h:103:27: warning: implicitly-declared ‘constexpr gtsam::GenericValue<double>::GenericValue(const gtsam::GenericValue<double>&)’ is deprecated [-Wdeprecated-copy]
+  103 |       GenericValue* ptr = new GenericValue(*this); // calls copy constructor to fill in
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/gtsam/base/GenericValue.h:171:22: note: because ‘gtsam::GenericValue<double>’ has user-provided ‘gtsam::GenericValue<T>& gtsam::GenericValue<T>::operator=(const gtsam::GenericValue<T>&) [with T = double]’
+  171 |     GenericValue<T>& operator=(const GenericValue<T>& rhs) {
+      |                      ^~~~~~~~
+/opt/ros/humble/include/gtsam/base/GenericValue.h:47:7: warning: implicitly-declared ‘constexpr gtsam::Value::Value(const gtsam::Value&)’ is deprecated [-Wdeprecated-copy]
+   47 | class GenericValue: public Value {
+      |       ^~~~~~~~~~~~
+In file included from /opt/ros/humble/include/gtsam/base/GenericValue.h:24,
+                 from /opt/ros/humble/include/gtsam/nonlinear/Values.h:28,
+                 from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:24,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/pose_graph_optimizer.hpp:16,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/nodes/slam_node.cpp:6:
+/opt/ros/humble/include/gtsam/base/Value.h:79:20: note: because ‘gtsam::Value’ has user-provided ‘virtual gtsam::Value& gtsam::Value::operator=(const gtsam::Value&)’
+   79 |     virtual Value& operator=(const Value& /*rhs*/) {
+      |                    ^~~~~~~~
+In file included from /opt/ros/humble/include/gtsam/nonlinear/Values.h:28,
+                 from /opt/ros/humble/include/gtsam/nonlinear/NonlinearFactor.h:24,
+                 from /opt/ros/humble/include/gtsam/navigation/ImuFactor.h:25,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:20,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/pose_graph_optimizer.hpp:16,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/nodes/slam_node.cpp:6:
+/opt/ros/humble/include/gtsam/base/GenericValue.h:103:27: note: synthesized method ‘constexpr gtsam::GenericValue<double>::GenericValue(const gtsam::GenericValue<double>&)’ first required here
+  103 |       GenericValue* ptr = new GenericValue(*this); // calls copy constructor to fill in
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/gtsam/base/GenericValue.h: In instantiation of ‘gtsam::Value& gtsam::GenericValue<T>::operator=(const gtsam::Value&) [with T = double]’:
+/opt/ros/humble/include/gtsam/base/GenericValue.h:158:12:   required from here
+/opt/ros/humble/include/gtsam/base/GenericValue.h:163:15: warning: implicitly-declared ‘constexpr gtsam::GenericValue<double>::GenericValue(const gtsam::GenericValue<double>&)’ is deprecated [-Wdeprecated-copy]
+  163 |       *this = GenericValue(derivedRhs); // calls copy constructor
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/gtsam/base/GenericValue.h:171:22: note: because ‘gtsam::GenericValue<double>’ has user-provided ‘gtsam::GenericValue<T>& gtsam::GenericValue<T>::operator=(const gtsam::GenericValue<T>&) [with T = double]’
+  171 |     GenericValue<T>& operator=(const GenericValue<T>& rhs) {
+      |                      ^~~~~~~~
+In file included from /opt/ros/humble/include/gtsam/linear/GaussianConditional.h:27,
+                 from /opt/ros/humble/include/gtsam/linear/GaussianBayesNet.h:23,
+                 from /opt/ros/humble/include/gtsam/linear/GaussianBayesTree.h:22,
+                 from /opt/ros/humble/include/gtsam/nonlinear/ISAM2.h:23,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/factor_graph.hpp:21,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/include/m20_slam_navigation/backend/pose_graph_optimizer.hpp:16,
+                 from /home/lee/rea/sim/ws/src/m20_slam_navigation/src/nodes/slam_node.cpp:6:
+/opt/ros/humble/include/gtsam/inference/Conditional-inst.h: In instantiation of ‘double gtsam::Conditional<FACTOR, DERIVEDCONDITIONAL>::logProbability(const gtsam::HybridValues&) const [with FACTOR = gtsam::JacobianFactor; DERIVEDCONDITIONAL = gtsam::GaussianConditional]’:
+/opt/ros/humble/include/gtsam/inference/Conditional-inst.h:48:8:   required from here
+/opt/ros/humble/include/gtsam/inference/Conditional-inst.h:49:25: warning: unused parameter ‘c’ [-Wunused-parameter]
+   49 |     const HybridValues& c) const {
+      |     ~~~~~~~~~~~~~~~~~~~~^
+/opt/ros/humble/include/gtsam/inference/Conditional-inst.h: In instantiation of ‘double gtsam::Conditional<FACTOR, DERIVEDCONDITIONAL>::evaluate(const gtsam::HybridValues&) const [with FACTOR = gtsam::JacobianFactor; DERIVEDCONDITIONAL = gtsam::GaussianConditional]’:
+/opt/ros/humble/include/gtsam/inference/Conditional-inst.h:55:8:   required from here
+/opt/ros/humble/include/gtsam/inference/Conditional-inst.h:56:25: warning: unused parameter ‘c’ [-Wunused-parameter]
+   56 |     const HybridValues& c) const {
+      |     ~~~~~~~~~~~~~~~~~~~~^
+---
+Finished <<< m20_slam_navigation [1min 23s]
+
+Summary: 1 package finished [1min 24s]
+  1 package had stderr output: m20_slam_navigation

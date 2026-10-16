@@ -1,0 +1,37 @@
+-- run_test.py: invoking following command in '/home/lee/rea/sim/ws/build/m20_slam_navigation':
+ - /home/lee/rea/sim/ws/build/m20_slam_navigation/test_vendor_lio --gtest_output=xml:/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_vendor_lio.gtest.xml
+
+Running main() from /opt/ros/humble/src/gtest_vendor/src/gtest_main.cc
+[==========] Running 7 tests from 3 test suites.
+[----------] Global test environment set-up.
+[----------] 2 tests from VendorVoxelMap
+[ RUN      ] VendorVoxelMap.FindsHierarchicalPlane
+[       OK ] VendorVoxelMap.FindsHierarchicalPlane (2 ms)
+[ RUN      ] VendorVoxelMap.UsesCenterAndSixFaceNeighboursOnly
+[       OK ] VendorVoxelMap.UsesCenterAndSixFaceNeighboursOnly (1 ms)
+[----------] 2 tests from VendorVoxelMap (3 ms total)
+
+[----------] 1 test from VendorExtrinsic
+[ RUN      ] VendorExtrinsic.ComposesInverseBodyImuWithBodyLidar
+[       OK ] VendorExtrinsic.ComposesInverseBodyImuWithBodyLidar (0 ms)
+[----------] 1 test from VendorExtrinsic (0 ms total)
+
+[----------] 4 tests from VendorLioEskf
+[ RUN      ] VendorLioEskf.IteratedPointPlaneCorrectsHeight
+[       OK ] VendorLioEskf.IteratedPointPlaneCorrectsHeight (3 ms)
+[ RUN      ] VendorLioEskf.InitializationCovarianceMatchesVendorBlocks
+[       OK ] VendorLioEskf.InitializationCovarianceMatchesVendorBlocks (0 ms)
+[ RUN      ] VendorLioEskf.UsesS2GravityWithFixedNorm
+[       OK ] VendorLioEskf.UsesS2GravityWithFixedNorm (0 ms)
+[ RUN      ] VendorLioEskf.StationaryCovariancePropagationIsFinite
+[       OK ] VendorLioEskf.StationaryCovariancePropagationIsFinite (0 ms)
+[----------] 4 tests from VendorLioEskf (3 ms total)
+
+[----------] Global test environment tear-down
+[==========] 7 tests from 3 test suites ran. (6 ms total)
+[  PASSED  ] 7 tests.
+
+
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_vendor_lio.gtest.xml'
+-- run_test.py: verify result file '/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_vendor_lio.gtest.xml'

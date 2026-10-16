@@ -1,0 +1,10 @@
+/.
+/usr
+/usr/libexec
+/usr/libexec/docker
+/usr/libexec/docker/cli-plugins
+/usr/libexec/docker/cli-plugins/docker-compose
+/usr/share
+/usr/share/doc
+/usr/share/doc/docker-compose-plugin
+/usr/share/doc/docker-compose-plugin/changelog.Debian.gz

@@ -1,0 +1,16 @@
+f7d3a2afcc1c7e7cfe6e156e05ef9fb4  opt/ros/foxy/bin/ament_uncrustify
+1b8bad1e12bd454472156b5cbd052a0f  opt/ros/foxy/lib/python3.8/site-packages/ament_uncrustify-0.9.8.egg-info/PKG-INFO
+68b329da9893e34099c7d8ad5cb9c940  opt/ros/foxy/lib/python3.8/site-packages/ament_uncrustify-0.9.8.egg-info/dependency_links.txt
+221e648479c29fb3632d39c6bf0712e3  opt/ros/foxy/lib/python3.8/site-packages/ament_uncrustify-0.9.8.egg-info/entry_points.txt
+68b329da9893e34099c7d8ad5cb9c940  opt/ros/foxy/lib/python3.8/site-packages/ament_uncrustify-0.9.8.egg-info/not-zip-safe
+cd12f5daaa1f8d7023f5d75a982d773d  opt/ros/foxy/lib/python3.8/site-packages/ament_uncrustify-0.9.8.egg-info/requires.txt
+28adb999ba2e67a96ddbf3999acb7c73  opt/ros/foxy/lib/python3.8/site-packages/ament_uncrustify-0.9.8.egg-info/top_level.txt
+d41d8cd98f00b204e9800998ecf8427e  opt/ros/foxy/lib/python3.8/site-packages/ament_uncrustify/__init__.py
+4c19ce7f52367c85968c750ffec8bffd  opt/ros/foxy/lib/python3.8/site-packages/ament_uncrustify/__pycache__/__init__.cpython-38.pyc
+eceb48b1374ac6637c6d6ca1d72af823  opt/ros/foxy/lib/python3.8/site-packages/ament_uncrustify/__pycache__/main.cpython-38.pyc
+9f6482e85d285e9ad7d56d893794b8c0  opt/ros/foxy/lib/python3.8/site-packages/ament_uncrustify/configuration/ament_code_style.cfg
+fae61153965691b3ddb2b2c05c4d28f8  opt/ros/foxy/lib/python3.8/site-packages/ament_uncrustify/main.py
+d41d8cd98f00b204e9800998ecf8427e  opt/ros/foxy/share/ament_index/resource_index/packages/ament_uncrustify
+836f97f371f9c63286339fee9ae5becc  opt/ros/foxy/share/ament_uncrustify/package.xml
+bacfa87b9bf06aa0b0c31bd1435047e3  usr/share/doc/ros-foxy-ament-uncrustify/changelog.Debian.gz
+b02a872c0e2eb695cf15d9883b6e074b  usr/share/doc/ros-foxy-ament-uncrustify/copyright

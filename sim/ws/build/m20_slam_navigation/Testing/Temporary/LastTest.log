@@ -1,0 +1,282 @@
+Start testing: Oct 15 09:54 CST
+----------------------------------------------------------
+1/7 Testing: test_m20_cloud_adapter
+1/7 Test: test_m20_cloud_adapter
+Command: "/usr/bin/python3" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_m20_cloud_adapter.gtest.xml" "--package-name" "m20_slam_navigation" "--output-file" "/home/lee/rea/sim/ws/build/m20_slam_navigation/ament_cmake_gtest/test_m20_cloud_adapter.txt" "--command" "/home/lee/rea/sim/ws/build/m20_slam_navigation/test_m20_cloud_adapter" "--gtest_output=xml:/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_m20_cloud_adapter.gtest.xml"
+Directory: /home/lee/rea/sim/ws/build/m20_slam_navigation
+"test_m20_cloud_adapter" start time: Oct 15 09:54 CST
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/home/lee/rea/sim/ws/build/m20_slam_navigation':
+ - /home/lee/rea/sim/ws/build/m20_slam_navigation/test_m20_cloud_adapter --gtest_output=xml:/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_m20_cloud_adapter.gtest.xml
+Running main() from /opt/ros/humble/src/gtest_vendor/src/gtest_main.cc
+[==========] Running 5 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 5 tests from M20CloudAdapter
+[ RUN      ] M20CloudAdapter.ReadsOfficialRoboSenseContract
+[       OK ] M20CloudAdapter.ReadsOfficialRoboSenseContract (0 ms)
+[ RUN      ] M20CloudAdapter.UsesPointClockWhenHeaderIsInconsistent
+[       OK ] M20CloudAdapter.UsesPointClockWhenHeaderIsInconsistent (0 ms)
+[ RUN      ] M20CloudAdapter.RejectsMissingTimestampField
+[       OK ] M20CloudAdapter.RejectsMissingTimestampField (0 ms)
+[ RUN      ] M20CloudAdapter.ClampsOfficialBagStyleRollback
+[       OK ] M20CloudAdapter.ClampsOfficialBagStyleRollback (0 ms)
+[ RUN      ] M20CloudAdapter.DropsLargeClockReset
+[       OK ] M20CloudAdapter.DropsLargeClockReset (0 ms)
+[----------] 5 tests from M20CloudAdapter (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 5 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 5 tests.
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_m20_cloud_adapter.gtest.xml'
+-- run_test.py: verify result file '/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_m20_cloud_adapter.gtest.xml'
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Passed.
+"test_m20_cloud_adapter" end time: Oct 15 09:54 CST
+"test_m20_cloud_adapter" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/7 Testing: test_sensor_wire
+2/7 Test: test_sensor_wire
+Command: "/usr/bin/python3" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_sensor_wire.gtest.xml" "--package-name" "m20_slam_navigation" "--output-file" "/home/lee/rea/sim/ws/build/m20_slam_navigation/ament_cmake_gtest/test_sensor_wire.txt" "--command" "/home/lee/rea/sim/ws/build/m20_slam_navigation/test_sensor_wire" "--gtest_output=xml:/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_sensor_wire.gtest.xml"
+Directory: /home/lee/rea/sim/ws/build/m20_slam_navigation
+"test_sensor_wire" start time: Oct 15 09:54 CST
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/home/lee/rea/sim/ws/build/m20_slam_navigation':
+ - /home/lee/rea/sim/ws/build/m20_slam_navigation/test_sensor_wire --gtest_output=xml:/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_sensor_wire.gtest.xml
+Running main() from /opt/ros/humble/src/gtest_vendor/src/gtest_main.cc
+[==========] Running 2 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 2 tests from SensorWire
+[ RUN      ] SensorWire.RoundTripsVendorImu
+[       OK ] SensorWire.RoundTripsVendorImu (0 ms)
+[ RUN      ] SensorWire.RejectsTruncatedVendorImu
+[       OK ] SensorWire.RejectsTruncatedVendorImu (0 ms)
+[----------] 2 tests from SensorWire (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 2 tests.
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_sensor_wire.gtest.xml'
+-- run_test.py: verify result file '/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_sensor_wire.gtest.xml'
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"test_sensor_wire" end time: Oct 15 09:54 CST
+"test_sensor_wire" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/7 Testing: test_vendor_lio
+3/7 Test: test_vendor_lio
+Command: "/usr/bin/python3" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_vendor_lio.gtest.xml" "--package-name" "m20_slam_navigation" "--output-file" "/home/lee/rea/sim/ws/build/m20_slam_navigation/ament_cmake_gtest/test_vendor_lio.txt" "--command" "/home/lee/rea/sim/ws/build/m20_slam_navigation/test_vendor_lio" "--gtest_output=xml:/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_vendor_lio.gtest.xml"
+Directory: /home/lee/rea/sim/ws/build/m20_slam_navigation
+"test_vendor_lio" start time: Oct 15 09:54 CST
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/home/lee/rea/sim/ws/build/m20_slam_navigation':
+ - /home/lee/rea/sim/ws/build/m20_slam_navigation/test_vendor_lio --gtest_output=xml:/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_vendor_lio.gtest.xml
+Running main() from /opt/ros/humble/src/gtest_vendor/src/gtest_main.cc
+[==========] Running 7 tests from 3 test suites.
+[----------] Global test environment set-up.
+[----------] 2 tests from VendorVoxelMap
+[ RUN      ] VendorVoxelMap.FindsHierarchicalPlane
+[       OK ] VendorVoxelMap.FindsHierarchicalPlane (2 ms)
+[ RUN      ] VendorVoxelMap.UsesCenterAndSixFaceNeighboursOnly
+[       OK ] VendorVoxelMap.UsesCenterAndSixFaceNeighboursOnly (1 ms)
+[----------] 2 tests from VendorVoxelMap (3 ms total)
+
+[----------] 1 test from VendorExtrinsic
+[ RUN      ] VendorExtrinsic.ComposesInverseBodyImuWithBodyLidar
+[       OK ] VendorExtrinsic.ComposesInverseBodyImuWithBodyLidar (0 ms)
+[----------] 1 test from VendorExtrinsic (0 ms total)
+
+[----------] 4 tests from VendorLioEskf
+[ RUN      ] VendorLioEskf.IteratedPointPlaneCorrectsHeight
+[       OK ] VendorLioEskf.IteratedPointPlaneCorrectsHeight (3 ms)
+[ RUN      ] VendorLioEskf.InitializationCovarianceMatchesVendorBlocks
+[       OK ] VendorLioEskf.InitializationCovarianceMatchesVendorBlocks (0 ms)
+[ RUN      ] VendorLioEskf.UsesS2GravityWithFixedNorm
+[       OK ] VendorLioEskf.UsesS2GravityWithFixedNorm (0 ms)
+[ RUN      ] VendorLioEskf.StationaryCovariancePropagationIsFinite
+[       OK ] VendorLioEskf.StationaryCovariancePropagationIsFinite (0 ms)
+[----------] 4 tests from VendorLioEskf (3 ms total)
+
+[----------] Global test environment tear-down
+[==========] 7 tests from 3 test suites ran. (6 ms total)
+[  PASSED  ] 7 tests.
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_vendor_lio.gtest.xml'
+-- run_test.py: verify result file '/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_vendor_lio.gtest.xml'
+<end of output>
+Test time =   0.15 sec
+----------------------------------------------------------
+Test Passed.
+"test_vendor_lio" end time: Oct 15 09:54 CST
+"test_vendor_lio" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/7 Testing: test_vendor_output_contract
+4/7 Test: test_vendor_output_contract
+Command: "/usr/bin/python3" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_vendor_output_contract.gtest.xml" "--package-name" "m20_slam_navigation" "--output-file" "/home/lee/rea/sim/ws/build/m20_slam_navigation/ament_cmake_gtest/test_vendor_output_contract.txt" "--command" "/home/lee/rea/sim/ws/build/m20_slam_navigation/test_vendor_output_contract" "--gtest_output=xml:/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_vendor_output_contract.gtest.xml"
+Directory: /home/lee/rea/sim/ws/build/m20_slam_navigation
+"test_vendor_output_contract" start time: Oct 15 09:54 CST
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/home/lee/rea/sim/ws/build/m20_slam_navigation':
+ - /home/lee/rea/sim/ws/build/m20_slam_navigation/test_vendor_output_contract --gtest_output=xml:/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_vendor_output_contract.gtest.xml
+Running main() from /opt/ros/humble/src/gtest_vendor/src/gtest_main.cc
+[==========] Running 3 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 3 tests from VendorOutputContract
+[ RUN      ] VendorOutputContract.BodyCloudPreservesRingAndRelativeMilliseconds
+[       OK ] VendorOutputContract.BodyCloudPreservesRingAndRelativeMilliseconds (3 ms)
+[ RUN      ] VendorOutputContract.AlignedCloudCarriesPlaneAndDownsampledRing
+[       OK ] VendorOutputContract.AlignedCloudCarriesPlaneAndDownsampledRing (1 ms)
+[ RUN      ] VendorOutputContract.DisabledAuxiliaryOutputsMatchNativeRuntime
+[       OK ] VendorOutputContract.DisabledAuxiliaryOutputsMatchNativeRuntime (0 ms)
+[----------] 3 tests from VendorOutputContract (4 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test suite ran. (4 ms total)
+[  PASSED  ] 3 tests.
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_vendor_output_contract.gtest.xml'
+-- run_test.py: verify result file '/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_vendor_output_contract.gtest.xml'
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"test_vendor_output_contract" end time: Oct 15 09:54 CST
+"test_vendor_output_contract" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/7 Testing: test_backend_geometry
+5/7 Test: test_backend_geometry
+Command: "/usr/bin/python3" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_backend_geometry.gtest.xml" "--package-name" "m20_slam_navigation" "--output-file" "/home/lee/rea/sim/ws/build/m20_slam_navigation/ament_cmake_gtest/test_backend_geometry.txt" "--command" "/home/lee/rea/sim/ws/build/m20_slam_navigation/test_backend_geometry" "--gtest_output=xml:/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_backend_geometry.gtest.xml"
+Directory: /home/lee/rea/sim/ws/build/m20_slam_navigation
+"test_backend_geometry" start time: Oct 15 09:54 CST
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/home/lee/rea/sim/ws/build/m20_slam_navigation':
+ - /home/lee/rea/sim/ws/build/m20_slam_navigation/test_backend_geometry --gtest_output=xml:/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_backend_geometry.gtest.xml
+Running main() from /opt/ros/humble/src/gtest_vendor/src/gtest_main.cc
+[==========] Running 2 tests from 2 test suites.
+[----------] Global test environment set-up.
+[----------] 1 test from BackendGeometry
+[ RUN      ] BackendGeometry.GhtSeedRecoversDriftedPoseForLoopVerification
+[INFO] [1792029282.759735419] [m20_loop]: Loop accept src=3 tgt=1 sc=0.0000 pose_dist=5.000 fitness=0.000000 overlap=1.000
+[       OK ] BackendGeometry.GhtSeedRecoversDriftedPoseForLoopVerification (34 ms)
+[----------] 1 test from BackendGeometry (34 ms total)
+
+[----------] 1 test from FactorGraph
+[ RUN      ] FactorGraph.AcceptsNativeAnisotropicFactorNoise
+[       OK ] FactorGraph.AcceptsNativeAnisotropicFactorNoise (9 ms)
+[----------] 1 test from FactorGraph (9 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 2 test suites ran. (43 ms total)
+[  PASSED  ] 2 tests.
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_backend_geometry.gtest.xml'
+-- run_test.py: verify result file '/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_backend_geometry.gtest.xml'
+<end of output>
+Test time =   0.13 sec
+----------------------------------------------------------
+Test Passed.
+"test_backend_geometry" end time: Oct 15 09:54 CST
+"test_backend_geometry" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/7 Testing: test_localization_eskf
+6/7 Test: test_localization_eskf
+Command: "/usr/bin/python3" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_localization_eskf.gtest.xml" "--package-name" "m20_slam_navigation" "--output-file" "/home/lee/rea/sim/ws/build/m20_slam_navigation/ament_cmake_gtest/test_localization_eskf.txt" "--command" "/home/lee/rea/sim/ws/build/m20_slam_navigation/test_localization_eskf" "--gtest_output=xml:/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_localization_eskf.gtest.xml"
+Directory: /home/lee/rea/sim/ws/build/m20_slam_navigation
+"test_localization_eskf" start time: Oct 15 09:54 CST
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/home/lee/rea/sim/ws/build/m20_slam_navigation':
+ - /home/lee/rea/sim/ws/build/m20_slam_navigation/test_localization_eskf --gtest_output=xml:/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_localization_eskf.gtest.xml
+Running main() from /opt/ros/humble/src/gtest_vendor/src/gtest_main.cc
+[==========] Running 4 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 4 tests from LocalizationEskf
+[ RUN      ] LocalizationEskf.GravityCompensatedStationaryStateDoesNotDrift
+[       OK ] LocalizationEskf.GravityCompensatedStationaryStateDoesNotDrift (1 ms)
+[ RUN      ] LocalizationEskf.ConstantAccelerationUsesBeginningOfIntervalVelocity
+[       OK ] LocalizationEskf.ConstantAccelerationUsesBeginningOfIntervalVelocity (0 ms)
+[ RUN      ] LocalizationEskf.PositionObservationDoesNotBecomeRotationError
+[       OK ] LocalizationEskf.PositionObservationDoesNotBecomeRotationError (0 ms)
+[ RUN      ] LocalizationEskf.YawObservationDoesNotTranslatePosition
+[       OK ] LocalizationEskf.YawObservationDoesNotTranslatePosition (0 ms)
+[----------] 4 tests from LocalizationEskf (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test suite ran. (1 ms total)
+[  PASSED  ] 4 tests.
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_localization_eskf.gtest.xml'
+-- run_test.py: verify result file '/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_localization_eskf.gtest.xml'
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"test_localization_eskf" end time: Oct 15 09:54 CST
+"test_localization_eskf" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/7 Testing: test_native_navigation_contract
+7/7 Test: test_native_navigation_contract
+Command: "/usr/bin/python3" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_native_navigation_contract.gtest.xml" "--package-name" "m20_slam_navigation" "--output-file" "/home/lee/rea/sim/ws/build/m20_slam_navigation/ament_cmake_gtest/test_native_navigation_contract.txt" "--command" "/home/lee/rea/sim/ws/build/m20_slam_navigation/test_native_navigation_contract" "--gtest_output=xml:/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_native_navigation_contract.gtest.xml"
+Directory: /home/lee/rea/sim/ws/build/m20_slam_navigation
+"test_native_navigation_contract" start time: Oct 15 09:54 CST
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/home/lee/rea/sim/ws/build/m20_slam_navigation':
+ - /home/lee/rea/sim/ws/build/m20_slam_navigation/test_native_navigation_contract --gtest_output=xml:/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_native_navigation_contract.gtest.xml
+Running main() from /opt/ros/humble/src/gtest_vendor/src/gtest_main.cc
+[==========] Running 7 tests from 2 test suites.
+[----------] Global test environment set-up.
+[----------] 6 tests from NativeNavigationContract
+[ RUN      ] NativeNavigationContract.TopicsAndDefaultsMatchM20Pro
+[       OK ] NativeNavigationContract.TopicsAndDefaultsMatchM20Pro (0 ms)
+[ RUN      ] NativeNavigationContract.NativePrimitiveSetHasEightDirectionsAndThreeSteers
+[       OK ] NativeNavigationContract.NativePrimitiveSetHasEightDirectionsAndThreeSteers (0 ms)
+[ RUN      ] NativeNavigationContract.HybridAstarPlansOnFreeNativeGrid
+[       OK ] NativeNavigationContract.HybridAstarPlansOnFreeNativeGrid (1 ms)
+[ RUN      ] NativeNavigationContract.HybridAstarRejectsLethalGoalFootprint
+[       OK ] NativeNavigationContract.HybridAstarRejectsLethalGoalFootprint (201 ms)
+[ RUN      ] NativeNavigationContract.LocalPlannerUsesLineModeAndNativeLimits
+[       OK ] NativeNavigationContract.LocalPlannerUsesLineModeAndNativeLimits (0 ms)
+[ RUN      ] NativeNavigationContract.TerrainFallbackUsesWorldFrameAndDoesNotAccumulateCost
+[       OK ] NativeNavigationContract.TerrainFallbackUsesWorldFrameAndDoesNotAccumulateCost (5 ms)
+[----------] 6 tests from NativeNavigationContract (207 ms total)
+
+[----------] 1 test from NativeLocalizationContract
+[ RUN      ] NativeLocalizationContract.TopicsFramesAndDefaultsMatchM20Pro
+[       OK ] NativeLocalizationContract.TopicsFramesAndDefaultsMatchM20Pro (0 ms)
+[----------] 1 test from NativeLocalizationContract (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 7 tests from 2 test suites ran. (207 ms total)
+[  PASSED  ] 7 tests.
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_native_navigation_contract.gtest.xml'
+-- run_test.py: verify result file '/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_native_navigation_contract.gtest.xml'
+<end of output>
+Test time =   0.30 sec
+----------------------------------------------------------
+Test Passed.
+"test_native_navigation_contract" end time: Oct 15 09:54 CST
+"test_native_navigation_contract" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 15 09:54 CST
+
+gtest =   0.90 sec*proc
+

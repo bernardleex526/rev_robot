@@ -1,0 +1,7 @@
+# UNCONFIGURED FSTAB FOR BASE SYSTEM
+/dev/mmcblk0p9  /opt/robot ext4 defaults,noatime 0 2
+/dev/mmcblk0p8  /var/log ext4 defaults,noatime 0 2
+/dev/mmcblk0p7  /var/opt/robot/log ext4 defaults,noatime 0 2
+/dev/mmcblk0p10  /var/opt/robot/record ext4 defaults,noatime 0 2
+/dev/mmcblk0p6  /var/opt/robot/conf ext4 defaults,noatime 0 2
+/dev/mmcblk0p11 /var/opt/robot/data ext4 defaults,noatime 0 2

@@ -1,0 +1,53 @@
+#!/bin/bash
+# HOSTNAME_FILE=/home/ysc/board_resources/wifi/host_name
+# if [ -f "$HOSTNAME_FILE" ]; then
+#     # 如果目标文件存在，则备份原始文件
+#     mv "$HOSTNAME_FILE" "/home/ysc/.host_name.backup"
+# fi
+# PASSWORD_FILE=/home/ysc/board_resources/wifi/password
+# if [ -f "$PASSWORD_FILE" ]; then
+#     # 如果目标文件存在，则备份原始文件
+#     mv "$PASSWORD_FILE" "/home/ysc/.password.backup"
+# fi
+
+
+# sudo dpkg --purge boardresourceswifi
+
+file="/opt/robot/scripts/board_resources/wifi/host_name"
+
+if [ -f /opt/robot/os_type ]; then
+    os_type=$(cat /opt/robot/os_type)
+	
+    if [ "$os_type" = "CA9B_AOS" ]; then
+        sudo systemctl set-default multi-user.target
+	echo "os_type=$os_type"
+    fi
+    if [ "$os_type" = "CA9B_VOS" ]; then
+	sudo systemctl set-default graphical.target
+        echo "os_type=$os_type"
+    fi
+    if [ "$os_type" = "CA9B_GOS" ]; then
+	sudo systemctl set-default graphical.target
+        echo "os_type=$os_type"
+    fi
+    if [ "$os_type" = "CA9B_NOS" ]; then
+        sudo systemctl set-default graphical.target
+        echo "os_type=$os_type"
+    fi
+fi
+
+if [ ! -L "$file" ]; then
+	mv /opt/robot/scripts/board_resources/wifi/host_name /var/opt/robot/conf/host_name
+fi
+
+cd /opt/robot/scripts/board_resources/rtsp_service/
+cp SM_USB_107X_0.json  SM_USB_107X_0.json.bak
+cp SM_USB_107X_1.json  SM_USB_107X_1.json.bak
+cp SM_USB_107X_2.json  SM_USB_107X_2.json.bak
+cp SM_USB_107X_3.json  SM_USB_107X_3.json.bak
+cp mediamtx.yml mediamtx.yml.bak
+#cp push_video.sh push_video.sh.bak
+
+
+
+exit 0

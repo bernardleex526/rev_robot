@@ -1,0 +1,12 @@
+#!/bin/bash
+
+_drmap_unpack_complete()
+{
+    local cur=${COMP_WORDS[COMP_CWORD]};    # 最后一个？
+
+    if [ $cur ] && [[ "$cur" =~ ^- ]]; then
+        COMPREPLY=( $(compgen -W ' -d -h -n ' -- $cur) )
+    fi
+    
+    return 0
+}

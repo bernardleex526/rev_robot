@@ -1,0 +1,15 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installdeb/12.10ubuntu1
+dpkg-maintscript-helper rm_conffile /etc/emacs/site-start.d/50python-docutils.el 0.15.2\+dfsg-3\~ docutils-common -- "$@"
+# End automatically added section
+# Automatically added by dh_installxmlcatalogs/UNDECLARED
+if [ "$1" = "purge" ]; then
+	rm -f /etc/xml/docutils-common.xml /etc/xml/docutils-common.xml.old
+fi
+# End automatically added section
+# Automatically added by dh_installcatalogs/12.10ubuntu1
+if [ "$1" = "purge" ]; then
+	rm -f /etc/sgml/docutils-common.cat.old
+fi
+# End automatically added section

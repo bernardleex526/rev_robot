@@ -1,0 +1,17 @@
+e2dab13890140c5db33c6eac4ff14481  opt/ros/foxy/lib/examples_rclcpp_minimal_client/client_main
+ef43612724b19b420a1dc6e47f56c52b  opt/ros/foxy/share/ament_index/resource_index/package_run_dependencies/examples_rclcpp_minimal_client
+d41d8cd98f00b204e9800998ecf8427e  opt/ros/foxy/share/ament_index/resource_index/packages/examples_rclcpp_minimal_client
+c5bea21e3b9564d2a435b40f0e03ecf6  opt/ros/foxy/share/ament_index/resource_index/parent_prefix_path/examples_rclcpp_minimal_client
+0e87055b08ad384cc4c26ec76ef6bbed  opt/ros/foxy/share/examples_rclcpp_minimal_client/cmake/examples_rclcpp_minimal_clientConfig-version.cmake
+3f26ec6ddf062e83b011bb7b782ada7f  opt/ros/foxy/share/examples_rclcpp_minimal_client/cmake/examples_rclcpp_minimal_clientConfig.cmake
+8dbf4790a764a69b56a5904c00682df0  opt/ros/foxy/share/examples_rclcpp_minimal_client/environment/ament_prefix_path.dsv
+fd0b100f5da0d9f2d38645ac45815395  opt/ros/foxy/share/examples_rclcpp_minimal_client/environment/ament_prefix_path.sh
+11e8ba1deb2827a5e13dd631720bcf6b  opt/ros/foxy/share/examples_rclcpp_minimal_client/environment/path.dsv
+234e39ac8bc1c1d4f887075bf9492366  opt/ros/foxy/share/examples_rclcpp_minimal_client/environment/path.sh
+ed9dcb7a76d3763c6cd97ebbd1f4cc7d  opt/ros/foxy/share/examples_rclcpp_minimal_client/local_setup.bash
+72cc6fa9e1255ffd79f1453d66caeb58  opt/ros/foxy/share/examples_rclcpp_minimal_client/local_setup.dsv
+563a8bf2807174abf9d2c6c8b9ac7c5c  opt/ros/foxy/share/examples_rclcpp_minimal_client/local_setup.sh
+24970cb512d5df3600adc59d7fa85f7b  opt/ros/foxy/share/examples_rclcpp_minimal_client/local_setup.zsh
+e81d1fc5c66a99ff9a9f3fbf9a0265a0  opt/ros/foxy/share/examples_rclcpp_minimal_client/package.dsv
+5498632b86ab4eaea53f01c13349f949  opt/ros/foxy/share/examples_rclcpp_minimal_client/package.xml
+7acb106136dde6691ee4b99e1d6b4b8d  usr/share/doc/ros-foxy-examples-rclcpp-minimal-client/changelog.Debian.gz

@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/lib
+/usr/lib/aarch64-linux-gnu
+/usr/lib/aarch64-linux-gnu/libvtkGUISupportQt-7.1.so.7.1p.1
+/usr/lib/aarch64-linux-gnu/libvtkGUISupportQtSQL-7.1.so.7.1p.1
+/usr/share
+/usr/share/doc
+/usr/share/doc/libvtk7.1p-qt
+/usr/share/doc/libvtk7.1p-qt/copyright
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libvtk7.1p-qt
+/usr/lib/aarch64-linux-gnu/libvtkGUISupportQt-7.1.so.7.1p
+/usr/lib/aarch64-linux-gnu/libvtkGUISupportQtSQL-7.1.so.7.1p
+/usr/share/doc/libvtk7.1p-qt/changelog.Debian.gz

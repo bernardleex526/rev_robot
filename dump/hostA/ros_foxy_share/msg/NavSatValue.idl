@@ -1,0 +1,62 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from drdds/msg/NavSatValue.msg
+// generated code does not contain a copyright notice
+
+
+module drdds {
+  module msg {
+    struct NavSatValue {
+      @verbatim (language="comment", text=
+        " 纬度（度）")
+      double latitude;
+
+      @verbatim (language="comment", text=
+        " 经度（度）")
+      double longitude;
+
+      @verbatim (language="comment", text=
+        " 地面速度（千米/小时）")
+      double speed;
+
+      @verbatim (language="comment", text=
+        " 航向（度）")
+      double course;
+
+      @verbatim (language="comment", text=
+        " 定位质量")
+      int32 fixquality;
+
+      @verbatim (language="comment", text=
+        " 参与定位的卫星数量")
+      int32 numsatellites;
+
+      @verbatim (language="comment", text=
+        " 海拔高度（米）")
+      double altitude;
+
+      @verbatim (language="comment", text=
+        " 位置精度因子")
+      double pdop;
+
+      @verbatim (language="comment", text=
+        " 水平精度因子")
+      double hdop;
+
+      @verbatim (language="comment", text=
+        " 垂直精度因子")
+      double vdop;
+
+      @verbatim (language="comment", text=
+        " 总消息数量")
+      int32 totalmessages;
+
+      @verbatim (language="comment", text=
+        " 当前消息序号")
+      int32 currentmessage;
+
+      @verbatim (language="comment", text=
+        " 可见卫星总数")
+      int32 visiblesatellites;
+    };
+  };
+};

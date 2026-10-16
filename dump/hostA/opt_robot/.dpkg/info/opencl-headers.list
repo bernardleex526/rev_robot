@@ -1,0 +1,10 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/opencl-headers
+/usr/share/doc/opencl-headers/copyright
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/opencl-headers
+/usr/share/doc/opencl-headers/changelog.Debian.gz

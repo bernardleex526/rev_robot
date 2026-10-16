@@ -1,0 +1,4 @@
+liburdfdom_model 1.0 ros-foxy-urdfdom
+liburdfdom_model_state 1.0 ros-foxy-urdfdom
+liburdfdom_sensor 1.0 ros-foxy-urdfdom
+liburdfdom_world 1.0 ros-foxy-urdfdom

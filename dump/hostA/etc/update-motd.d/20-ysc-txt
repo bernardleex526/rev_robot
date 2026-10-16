@@ -1,0 +1,7 @@
+#!/bin/sh
+
+printf "\n"
+printf " * You are now in aos(103)\n"
+printf " * aos(103) gos(104) nos(106)\n"
+printf "\n"
+

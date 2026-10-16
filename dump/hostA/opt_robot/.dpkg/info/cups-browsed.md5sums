@@ -1,0 +1,6 @@
+99308420bd1f5e094aaa8816fbb9564f  lib/systemd/system/cups-browsed.service
+f23c82b15bee142101a7d39f2ce9754d  usr/lib/cups/backend/implicitclass
+7c0ea6a62173d0ff6668d07a2a06d847  usr/sbin/cups-browsed
+fab304e80b638cee49eca845750af073  usr/share/doc/cups-browsed/copyright
+f3378732230d6c073950f559884970c4  usr/share/man/man5/cups-browsed.conf.5.gz
+1b450214176502efdb250b3dde75fd40  usr/share/man/man8/cups-browsed.8.gz

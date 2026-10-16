@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/bin
+/usr/bin/spi-config
+/usr/bin/spi-pipe
+/usr/share
+/usr/share/doc
+/usr/share/doc/spi-tools
+/usr/share/doc/spi-tools/changelog.Debian.gz
+/usr/share/doc/spi-tools/copyright
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/spi-config.1.gz
+/usr/share/man/man1/spi-pipe.1.gz

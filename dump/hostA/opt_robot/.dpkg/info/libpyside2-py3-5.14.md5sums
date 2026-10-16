@@ -1,0 +1,6 @@
+e4eb847c051ddac7308a2fd6b03d2005  usr/lib/aarch64-linux-gnu/libpyside2.cpython-38-aarch64-linux-gnu.so.5.14.0
+be66c363e9c030e212caa0c062d68afa  usr/lib/python3/dist-packages/PySide2/__init__.py
+7b7c01b4a2487c43d10772e0dae5089b  usr/lib/python3/dist-packages/PySide2/_config.py
+4bdf372fc65d5aef47ef39deed19eb1d  usr/lib/python3/dist-packages/PySide2/_git_pyside_version.py
+89d608a27ca17006bf2b5a789da164e8  usr/share/doc/libpyside2-py3-5.14/copyright
+511df0d0ea915715a1f3a73b1684b99e  usr/share/lintian/overrides/libpyside2-py3-5.14

@@ -1,0 +1,71 @@
+node:
+  input_lidar_topic: "/LIDAR/POINTS"                 # [输入] 雷达话题名，ros1（livox）为"/lidar_points"， drdds（速腾）为"/LIDAR/POINTS"
+  input_imu_topic: "/IMU_YESENSE"                    # [输入] imu话题名，ros1为"/imu/data"， drdds（速腾）为"/IMU_DATA"
+  output_odom_topic: "/LIO_ODOM"                     # [输出] 里程计话题名
+  output_odom_topic_high_frequency: "/LIO_ODOM_HIGH_FREQUENCY"  # [输出] imu话题名
+  output_aligned_cloud_topic: "/LIO_ALIGNED_POINTS"  # [输出] 里程计坐标系下的累积点云
+  output_voxel_cloud_topic: "/DEPTH_POINTS"          # [输出] 用于调试的点云输出
+  output_depth_image_topic: "/DEPTH_IMAGE"           # [输出] 深度图话题名
+  output_accumulated_map_cloud_topic: "/ACCUMULATED_POINTS_MAP"
+  lidar_type: 1                                      # 雷达类型，0为livox雷达，1为速腾雷达
+  lidar_use_system_time: false                       # 雷达是否使用接收到时的系统时间作为时间戳
+  imu_use_system_time: false                         # imu是否使用接收到时的系统时间作为时间戳
+lio:
+  acc_cov: 0.8
+  gyr_cov: 0.8
+  b_acc_cov: 0.01
+  b_gyr_cov: 0.01
+  extrinsic_est_en: false      # true: enable the online estimation of IMU-LiDAR extrinsic
+  extrinsic_B_I: [1, 0, 0, 0.0, 0, 1, 0, 0, 0, 0, 1, 0.0, 0, 0, 0, 1]
+  extrinsic_B_L: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]
+  max_iteration: 3
+  enable_downsample: true
+  leaf_size: 0.15    # 降采样分辨率
+  leaf_size_body: 0.05 # 发布给外部的机体坐标系点云降采样分辨率
+  skip_num: 9       # 跳过点数
+  esti_plane_threshold: 0.1        # default=0.1
+  init_time: 0.1
+  lidar_cov: 0.001
+  deepest_level: 2
+  plane_level: 2
+  top_level: 1
+  save_full_pcd: false
+  full_map_save_path: "/var/opt/robot/data/maps/active/full_cloud.pcd"
+accumulated_points:
+  enable: true
+  level: 2   # 0: 0.64, 1: 0.32, 2: 0.16, 3: 0.08, 4: 0.04
+  area_min: [-5.0, -5.0, -1.0]
+  area_max: [5.0, 5.0, 1.0]
+  udp_output:
+    enable: true
+    resolution: 0.2                                   # 点云发布分辨率
+    port: 30100                                      # UDP请求端口号
+voxel_map:
+  ray_casting: true
+  ray_casting_level: 2
+  ray_casting_range: 3.0
+  ray_dis_th: 0.02
+  depth_image:
+    enable: false
+    level: 4
+    interpolation: true
+    output:
+      frequency: 20       # 输出帧率
+      max_depth: 3.0
+      normalize: true
+      horizontal_resolution: 4.0  # 角度
+      vertical_resolution: 4.0    # 角度
+      body_height: 0.4
+height_map:
+  enable: false  # 是否启用高度图
+  level: 4  # 底图分辨率等级
+  output:
+    - image_topic: "/HEIGHT_IMAGE"  # 高度图话题名
+      cloud_topic: "/HEIGHT_POINTS"  # 高度点云话题名
+      frequency: 20                   # 输出帧率
+      resolution: 0.04    # 输出分辨率
+      size_x: 100         # x方向总像素尺寸（机器人前后方向，图像的height）
+      size_y: 100         # y方向总像素尺寸（机器人前后方向，图像的width）
+      min_z: -1.0         # 截取的高度下界（相对于机器人中心）
+      max_z: 1.0          # 截取的高度上界（相对于机器人中心）
+      body_height: 0.4

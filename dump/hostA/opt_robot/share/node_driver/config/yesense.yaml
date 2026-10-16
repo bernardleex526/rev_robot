@@ -1,0 +1,4 @@
+common:
+  path: "/dev/ttyS9"     # 串口设备文件路径
+  baudRate: 115200        # 波特率 
+  frame_id: "basic_id"

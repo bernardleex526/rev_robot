@@ -1,0 +1,4 @@
+float64 max_speed_x
+float64 max_speed_y
+float64 max_theta
+bool stairoa

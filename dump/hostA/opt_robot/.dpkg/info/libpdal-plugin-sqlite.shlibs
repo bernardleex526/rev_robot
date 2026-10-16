@@ -1,0 +1,2 @@
+libpdal_plugin_reader_sqlite 9 libpdal-plugin-sqlite
+libpdal_plugin_writer_sqlite 9 libpdal-plugin-sqlite

@@ -1,0 +1,13 @@
+[Unit]
+Description=rte_checker
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/opt/robot/share/rte_checker/scripts/run.sh
+Restart=on-failure
+RestartPreventExitStatus=SIGTERM
+
+
+[Install]
+WantedBy=network.target

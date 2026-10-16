@@ -1,0 +1,1916 @@
+[hostA_103] starting imaging -> /media/lee/数据/rea_images/hostA_103 (231 chunks of 512MiB)
+[hostA_103] chunk 0/230 ok 101M
+[hostA_103] chunk 1/230 ok 62M
+[hostA_103] chunk 2/230 ok 65M
+[hostA_103] chunk 3/230 ok 83M
+[hostA_103] chunk 4/230 ok 61M
+[hostA_103] chunk 5/230 ok 40M
+[hostA_103] chunk 6/230 ok 50M
+[hostA_103] chunk 7/230 ok 58M
+[hostA_103] chunk 8/230 ok 57M
+[hostA_103] chunk 9/230 ok 16M
+[hostA_103] chunk 10/230 ok 12M
+[hostA_103] chunk 11/230 ok 604K
+[hostA_103] chunk 12/230 ok 644K
+[hostA_103] chunk 13/230 ok 4.0M
+[hostA_103] chunk 14/230 ok 576K
+[hostA_103] chunk 15/230 ok 576K
+[hostA_103] chunk 16/230 ok 5.7M
+[hostA_103] chunk 17/230 ok 41M
+[hostA_103] chunk 18/230 ok 39M
+[hostA_103] chunk 19/230 ok 35M
+[hostA_103] chunk 20/230 ok 38M
+[hostA_103] chunk 21/230 ok 85M
+[hostA_103] chunk 22/230 ok 576K
+[hostA_103] chunk 23/230 ok 576K
+[hostA_103] chunk 24/230 ok 576K
+[hostA_103] chunk 25/230 ok 576K
+[hostA_103] chunk 26/230 ok 576K
+[hostA_103] chunk 27/230 ok 576K
+[hostA_103] chunk 28/230 ok 576K
+[hostA_103] chunk 29/230 ok 576K
+[hostA_103] chunk 30/230 ok 576K
+[hostA_103] chunk 31/230 ok 576K
+[hostA_103] chunk 32/230 ok 576K
+[hostA_103] chunk 33/230 ok 576K
+[hostA_103] chunk 34/230 ok 576K
+[hostA_103] chunk 35/230 ok 576K
+[hostA_103] chunk 36/230 ok 612K
+[hostA_103] chunk 37/230 ok 576K
+[hostA_103] chunk 38/230 ok 576K
+[hostA_103] chunk 39/230 ok 576K
+[hostA_103] chunk 40/230 ok 576K
+[hostA_103] chunk 41/230 ok 576K
+[hostA_103] chunk 42/230 ok 576K
+[hostA_103] chunk 43/230 ok 576K
+[hostA_103] chunk 44/230 ok 576K
+[hostA_103] chunk 45/230 ok 576K
+[hostA_103] chunk 46/230 ok 576K
+[hostA_103] chunk 47/230 ok 576K
+[hostA_103] chunk 48/230 ok 576K
+[hostA_103] chunk 49/230 ok 576K
+[hostA_103] chunk 50/230 ok 576K
+[hostA_103] chunk 51/230 ok 3.7M
+[hostA_103] chunk 52/230 ok 268M
+[hostA_103] chunk 53/230 ok 376M
+[hostA_103] chunk 54/230 ok 504M
+[hostA_103] chunk 55/230 ok 424M
+[hostA_103] chunk 56/230 ok 472M
+[hostA_103] chunk 57/230 ok 499M
+[hostA_103] chunk 58/230 ok 496M
+[hostA_103] chunk 59/230 ok 424M
+[hostA_103] chunk 60/230 ok 472M
+[hostA_103] chunk 61/230 ok 508M
+[hostA_103] chunk 62/230 ok 512M
+[hostA_103] chunk 63/230 ok 424M
+[hostA_103] chunk 64/230 ok 464M
+[hostA_103] chunk 65/230 ok 446M
+[hostA_103] chunk 66/230 ok 481M
+[hostA_103] chunk 67/230 ok 194M
+[hostA_103] chunk 68/230 ok 1.3M
+[hostA_103] chunk 69/230 ok 576K
+[hostA_103] chunk 70/230 ok 576K
+[hostA_103] chunk 71/230 ok 600K
+[hostA_103] chunk 72/230 ok 580K
+[hostA_103] chunk 73/230 ok 81M
+[hostA_103] chunk 74/230 ok 512M
+[hostA_103] chunk 75/230 ok 424M
+[hostA_103] chunk 76/230 ok 472M
+[hostA_103] chunk 77/230 ok 512M
+[hostA_103] chunk 78/230 ok 512M
+[hostA_103] chunk 79/230 ok 424M
+[hostA_103] chunk 80/230 ok 472M
+[hostA_103] chunk 81/230 ok 512M
+[hostA_103] chunk 82/230 ok 84M
+[hostA_103] chunk 83/230 ok 580K
+[hostA_103] chunk 84/230 ok 217M
+[hostA_103] chunk 85/230 ok 354M
+[hostA_103] chunk 86/230 ok 332M
+[hostA_103] chunk 87/230 ok 141M
+[hostA_103] chunk 88/230 ok 286M
+[hostA_103] chunk 89/230 ok 576K
+[hostA_103] chunk 90/230 ok 576K
+[hostA_103] chunk 91/230 ok 576K
+[hostA_103] chunk 92/230 ok 576K
+[hostA_103] chunk 93/230 ok 576K
+[hostA_103] chunk 94/230 ok 576K
+[hostA_103] chunk 95/230 ok 576K
+[hostA_103] chunk 96/230 ok 576K
+[hostA_103] chunk 97/230 ok 576K
+[hostA_103] chunk 98/230 ok 576K
+[hostA_103] chunk 99/230 ok 576K
+[hostA_103] chunk 100/230 ok 576K
+[hostA_103] chunk 101/230 ok 576K
+[hostA_103] chunk 102/230 ok 576K
+[hostA_103] chunk 103/230 ok 576K
+[hostA_103] chunk 104/230 ok 576K
+[hostA_103] chunk 105/230 ok 576K
+[hostA_103] chunk 106/230 ok 576K
+[hostA_103] chunk 107/230 ok 576K
+[hostA_103] chunk 108/230 ok 576K
+[hostA_103] chunk 109/230 ok 576K
+[hostA_103] chunk 110/230 ok 576K
+[hostA_103] chunk 111/230 ok 576K
+[hostA_103] chunk 112/230 ok 580K
+[hostA_103] chunk 113/230 ok 576K
+[hostA_103] chunk 114/230 ok 576K
+[hostA_103] chunk 115/230 ok 576K
+[hostA_103] chunk 116/230 ok 576K
+[hostA_103] chunk 117/230 ok 576K
+[hostA_103] chunk 118/230 ok 576K
+[hostA_103] chunk 119/230 ok 576K
+[hostA_103] chunk 120/230 ok 576K
+[hostA_103] chunk 121/230 ok 576K
+[hostA_103] chunk 122/230 ok 576K
+[hostA_103] chunk 123/230 ok 576K
+[hostA_103] chunk 124/230 ok 576K
+[hostA_103] chunk 125/230 ok 576K
+[hostA_103] chunk 126/230 ok 576K
+[hostA_103] chunk 127/230 ok 576K
+[hostA_103] chunk 128/230 ok 576K
+[hostA_103] chunk 129/230 ok 576K
+[hostA_103] chunk 130/230 ok 576K
+[hostA_103] chunk 131/230 ok 576K
+[hostA_103] chunk 132/230 ok 576K
+[hostA_103] chunk 133/230 ok 576K
+[hostA_103] chunk 134/230 ok 576K
+[hostA_103] chunk 135/230 ok 576K
+[hostA_103] chunk 136/230 ok 576K
+[hostA_103] chunk 137/230 ok 580K
+[hostA_103] chunk 138/230 ok 576K
+[hostA_103] chunk 139/230 ok 576K
+[hostA_103] chunk 140/230 ok 576K
+[hostA_103] chunk 141/230 ok 576K
+[hostA_103] chunk 142/230 ok 576K
+[hostA_103] chunk 143/230 ok 576K
+[hostA_103] chunk 144/230 ok 576K
+[hostA_103] chunk 145/230 ok 576K
+[hostA_103] chunk 146/230 ok 576K
+[hostA_103] chunk 147/230 ok 580K
+[hostA_103] chunk 148/230 ok 2.4M
+[hostA_103] chunk 149/230 ok 576K
+[hostA_103] chunk 150/230 ok 576K
+[hostA_103] chunk 151/230 ok 576K
+[hostA_103] chunk 152/230 ok 576K
+[hostA_103] chunk 153/230 ok 576K
+[hostA_103] chunk 154/230 ok 576K
+[hostA_103] chunk 155/230 ok 576K
+[hostA_103] chunk 156/230 ok 576K
+[hostA_103] chunk 157/230 ok 576K
+[hostA_103] chunk 158/230 ok 576K
+[hostA_103] chunk 159/230 ok 576K
+[hostA_103] chunk 160/230 ok 576K
+[hostA_103] chunk 161/230 ok 576K
+[hostA_103] chunk 162/230 ok 576K
+[hostA_103] chunk 163/230 ok 576K
+[hostA_103] chunk 164/230 ok 576K
+[hostA_103] chunk 165/230 ok 576K
+[hostA_103] chunk 166/230 ok 576K
+[hostA_103] chunk 167/230 ok 576K
+[hostA_103] chunk 168/230 ok 576K
+[hostA_103] chunk 169/230 ok 576K
+[hostA_103] chunk 170/230 ok 576K
+[hostA_103] chunk 171/230 ok 576K
+[hostA_103] chunk 172/230 ok 576K
+[hostA_103] chunk 173/230 ok 576K
+[hostA_103] chunk 174/230 ok 576K
+[hostA_103] chunk 175/230 ok 576K
+[hostA_103] chunk 176/230 ok 592K
+[hostA_103] chunk 177/230 ok 149M
+[hostA_103] chunk 178/230 ok 148M
+[hostA_103] chunk 179/230 ok 177M
+[hostA_103] chunk 180/230 ok 153M
+[hostA_103] chunk 181/230 ok 96M
+[hostA_103] chunk 182/230 ok 92M
+[hostA_103] chunk 183/230 ok 169M
+[hostA_103] chunk 184/230 ok 155M
+[hostA_103] chunk 185/230 ok 121M
+[hostA_103] chunk 186/230 ok 204M
+[hostA_103] chunk 187/230 ok 157M
+[hostA_103] chunk 188/230 ok 153M
+[hostA_103] chunk 189/230 ok 107M
+[hostA_103] chunk 190/230 ok 228M
+[hostA_103] chunk 191/230 ok 150M
+[hostA_103] chunk 192/230 ok 167M
+[hostA_103] chunk 193/230 ok 65M
+[hostA_103] chunk 194/230 ok 337M
+[hostA_103] chunk 195/230 ok 133M
+[hostA_103] chunk 196/230 ok 118M
+[hostA_103] chunk 197/230 ok 1.0M
+[hostA_103] chunk 198/230 ok 64M
+[hostA_103] chunk 199/230 ok 1.6M
+[hostA_103] chunk 200/230 ok 1.1M
+[hostA_103] chunk 201/230 ok 1.4M
+[hostA_103] chunk 202/230 ok 1.2M
+[hostA_103] chunk 203/230 ok 1.5M
+[hostA_103] chunk 204/230 ok 1.8M
+[hostA_103] chunk 205/230 ok 2.3M
+[hostA_103] chunk 206/230 ok 2.8M
+[hostA_103] chunk 207/230 ok 1.8M
+[hostA_103] chunk 208/230 ok 1.1M
+[hostA_103] chunk 209/230 ok 3.4M
+[hostA_103] chunk 210/230 ok 53M
+[hostA_103] chunk 211/230 ok 576K
+[hostA_103] chunk 212/230 ok 576K
+[hostA_103] chunk 213/230 ok 576K
+[hostA_103] chunk 214/230 ok 576K
+[hostA_103] chunk 215/230 ok 576K
+[hostA_103] chunk 216/230 ok 576K
+[hostA_103] chunk 217/230 ok 576K
+[hostA_103] chunk 218/230 ok 576K
+[hostA_103] chunk 219/230 ok 576K
+[hostA_103] chunk 220/230 ok 576K
+[hostA_103] chunk 221/230 ok 576K
+[hostA_103] chunk 222/230 ok 576K
+[hostA_103] chunk 223/230 ok 576K
+[hostA_103] chunk 224/230 ok 576K
+[hostA_103] chunk 225/230 ok 576K
+[hostA_103] chunk 226/230 ok 576K
+[hostA_103] chunk 227/230 ok 576K
+[hostA_103] chunk 228/230 ok 576K
+[hostA_103] chunk 229/230 ok 576K
+[hostA_103] chunk 230/230 ok 288K
+[hostA_103] concatenating chunks
+[hostA_103] CONCAT OK size=17G
+[hostA_103] boot0 ok
+[hostA_103] boot1 ok
+[hostA_103] DONE
+[hostB_104] starting imaging -> /media/lee/数据/rea_images/hostB_104 (231 chunks of 512MiB)
+[hostB_104] chunk 0/230 ok 101M
+[hostB_104] chunk 1/230 ok 30M
+[hostB_104] chunk 2/230 ok 36M
+[hostB_104] chunk 3/230 ok 39M
+[hostB_104] chunk 4/230 ok 596K
+[hostB_104] chunk 5/230 ok 20M
+[hostB_104] chunk 6/230 ok 604K
+[hostB_104] chunk 7/230 ok 580K
+[hostB_104] chunk 8/230 ok 584K
+[hostB_104] chunk 9/230 ok 872K
+[hostB_104] chunk 10/230 ok 576K
+[hostB_104] chunk 11/230 ok 576K
+[hostB_104] chunk 12/230 ok 592K
+[hostB_104] chunk 13/230 ok 576K
+[hostB_104] chunk 14/230 ok 576K
+[hostB_104] chunk 15/230 ok 600K
+[hostB_104] chunk 16/230 ok 5.5M
+[hostB_104] chunk 17/230 ok 45M
+[hostB_104] chunk 18/230 ok 33M
+[hostB_104] chunk 19/230 ok 14M
+[hostB_104] chunk 20/230 ok 23M
+[hostB_104] chunk 21/230 ok 34M
+[hostB_104] chunk 22/230 ok 576K
+[hostB_104] chunk 23/230 ok 576K
+[hostB_104] chunk 24/230 ok 576K
+[hostB_104] chunk 25/230 ok 576K
+[hostB_104] chunk 26/230 ok 576K
+[hostB_104] chunk 27/230 ok 576K
+[hostB_104] chunk 28/230 ok 576K
+[hostB_104] chunk 29/230 ok 576K
+[hostB_104] chunk 30/230 ok 576K
+[hostB_104] chunk 31/230 ok 576K
+[hostB_104] chunk 32/230 ok 576K
+[hostB_104] chunk 33/230 ok 576K
+[hostB_104] chunk 34/230 ok 576K
+[hostB_104] chunk 35/230 ok 576K
+[hostB_104] chunk 36/230 ok 612K
+[hostB_104] chunk 37/230 ok 576K
+[hostB_104] chunk 38/230 ok 576K
+[hostB_104] chunk 39/230 ok 576K
+[hostB_104] chunk 40/230 ok 576K
+[hostB_104] chunk 41/230 ok 576K
+[hostB_104] chunk 42/230 ok 576K
+[hostB_104] chunk 43/230 ok 576K
+[hostB_104] chunk 44/230 ok 576K
+[hostB_104] chunk 45/230 ok 576K
+[hostB_104] chunk 46/230 ok 576K
+[hostB_104] chunk 47/230 ok 576K
+[hostB_104] chunk 48/230 ok 576K
+[hostB_104] chunk 49/230 ok 576K
+[hostB_104] chunk 50/230 ok 576K
+[hostB_104] chunk 51/230 ok 668K
+[hostB_104] chunk 52/230 ok 588K
+[hostB_104] chunk 53/230 ok 588K
+[hostB_104] chunk 54/230 ok 580K
+[hostB_104] chunk 55/230 ok 600K
+[hostB_104] chunk 56/230 ok 576K
+[hostB_104] chunk 57/230 ok 576K
+[hostB_104] chunk 58/230 ok 588K
+[hostB_104] chunk 59/230 ok 600K
+[hostB_104] chunk 60/230 ok 576K
+[hostB_104] chunk 61/230 ok 576K
+[hostB_104] chunk 62/230 ok 576K
+[hostB_104] chunk 63/230 ok 592K
+[hostB_104] chunk 64/230 ok 580K
+[hostB_104] chunk 65/230 ok 576K
+[hostB_104] chunk 66/230 ok 576K
+[hostB_104] chunk 67/230 ok 576K
+[hostB_104] chunk 68/230 ok 576K
+[hostB_104] chunk 69/230 ok 576K
+[hostB_104] chunk 70/230 ok 576K
+[hostB_104] chunk 71/230 ok 620K
+[hostB_104] chunk 72/230 ok 580K
+[hostB_104] chunk 73/230 ok 576K
+[hostB_104] chunk 74/230 ok 576K
+[hostB_104] chunk 75/230 ok 576K
+[hostB_104] chunk 76/230 ok 576K
+[hostB_104] chunk 77/230 ok 576K
+[hostB_104] chunk 78/230 ok 576K
+[hostB_104] chunk 79/230 ok 576K
+[hostB_104] chunk 80/230 ok 576K
+[hostB_104] chunk 81/230 ok 576K
+[hostB_104] chunk 82/230 ok 576K
+[hostB_104] chunk 83/230 ok 580K
+[hostB_104] chunk 84/230 ok 576K
+[hostB_104] chunk 85/230 ok 576K
+[hostB_104] chunk 86/230 ok 576K
+[hostB_104] chunk 87/230 ok 576K
+[hostB_104] chunk 88/230 ok 576K
+[hostB_104] chunk 89/230 ok 576K
+[hostB_104] chunk 90/230 ok 576K
+[hostB_104] chunk 91/230 ok 576K
+[hostB_104] chunk 92/230 ok 576K
+[hostB_104] chunk 93/230 ok 576K
+[hostB_104] chunk 94/230 ok 576K
+[hostB_104] chunk 95/230 ok 576K
+[hostB_104] chunk 96/230 ok 576K
+[hostB_104] chunk 97/230 ok 576K
+[hostB_104] chunk 98/230 ok 576K
+[hostB_104] chunk 99/230 ok 576K
+[hostB_104] chunk 100/230 ok 576K
+[hostB_104] chunk 101/230 ok 576K
+[hostB_104] chunk 102/230 ok 576K
+[hostB_104] chunk 103/230 ok 576K
+[hostB_104] chunk 104/230 ok 576K
+[hostB_104] chunk 105/230 ok 576K
+[hostB_104] chunk 106/230 ok 576K
+[hostB_104] chunk 107/230 ok 576K
+[hostB_104] chunk 108/230 ok 576K
+[hostB_104] chunk 109/230 ok 576K
+[hostB_104] chunk 110/230 ok 576K
+[hostB_104] chunk 111/230 ok 576K
+[hostB_104] chunk 112/230 ok 580K
+[hostB_104] chunk 113/230 ok 576K
+[hostB_104] chunk 114/230 ok 576K
+[hostB_104] chunk 115/230 ok 576K
+[hostB_104] chunk 116/230 ok 576K
+[hostB_104] chunk 117/230 ok 576K
+[hostB_104] chunk 118/230 ok 576K
+[hostB_104] chunk 119/230 ok 576K
+[hostB_104] chunk 120/230 ok 576K
+[hostB_104] chunk 121/230 ok 576K
+[hostB_104] chunk 122/230 ok 576K
+[hostB_104] chunk 123/230 ok 576K
+[hostB_104] chunk 124/230 ok 576K
+[hostB_104] chunk 125/230 ok 576K
+[hostB_104] chunk 126/230 ok 576K
+[hostB_104] chunk 127/230 ok 576K
+[hostB_104] chunk 128/230 ok 576K
+[hostB_104] chunk 129/230 ok 576K
+[hostB_104] chunk 130/230 ok 576K
+[hostB_104] chunk 131/230 ok 576K
+[hostB_104] chunk 132/230 ok 576K
+[hostB_104] chunk 133/230 ok 576K
+[hostB_104] chunk 134/230 ok 576K
+[hostB_104] chunk 135/230 ok 576K
+[hostB_104] chunk 136/230 ok 576K
+[hostB_104] chunk 137/230 ok 580K
+[hostB_104] chunk 138/230 ok 576K
+[hostB_104] chunk 139/230 ok 576K
+[hostB_104] chunk 140/230 ok 576K
+[hostB_104] chunk 141/230 ok 576K
+[hostB_104] chunk 142/230 ok 576K
+[hostB_104] chunk 143/230 ok 576K
+[hostB_104] chunk 144/230 ok 576K
+[hostB_104] chunk 145/230 ok 576K
+[hostB_104] chunk 146/230 ok 576K
+[hostB_104] chunk 147/230 ok 576K
+[hostB_104] chunk 148/230 ok 576K
+[hostB_104] chunk 149/230 ok 576K
+[hostB_104] chunk 150/230 ok 576K
+[hostB_104] chunk 151/230 ok 576K
+[hostB_104] chunk 152/230 ok 576K
+[hostB_104] chunk 153/230 ok 576K
+[hostB_104] chunk 154/230 ok 576K
+[hostB_104] chunk 155/230 ok 576K
+[hostB_104] chunk 156/230 ok 576K
+[hostB_104] chunk 157/230 ok 576K
+[hostB_104] chunk 158/230 ok 576K
+[hostB_104] chunk 159/230 ok 576K
+[hostB_104] chunk 160/230 ok 576K
+[hostB_104] chunk 161/230 ok 576K
+[hostB_104] chunk 162/230 ok 576K
+[hostB_104] chunk 163/230 ok 576K
+[hostB_104] chunk 164/230 ok 576K
+[hostB_104] chunk 165/230 ok 576K
+[hostB_104] chunk 166/230 ok 576K
+[hostB_104] chunk 167/230 ok 576K
+[hostB_104] chunk 168/230 ok 576K
+[hostB_104] chunk 169/230 ok 576K
+[hostB_104] chunk 170/230 ok 576K
+[hostB_104] chunk 171/230 ok 576K
+[hostB_104] chunk 172/230 ok 576K
+[hostB_104] chunk 173/230 ok 576K
+[hostB_104] chunk 174/230 ok 576K
+[hostB_104] chunk 175/230 ok 576K
+[hostB_104] chunk 176/230 ok 592K
+[hostB_104] chunk 177/230 ok 149M
+[hostB_104] chunk 178/230 ok 148M
+[hostB_104] chunk 179/230 ok 177M
+[hostB_104] chunk 180/230 ok 153M
+[hostB_104] chunk 181/230 ok 96M
+[hostB_104] chunk 182/230 ok 92M
+[hostB_104] chunk 183/230 ok 169M
+[hostB_104] chunk 184/230 ok 155M
+[hostB_104] chunk 185/230 ok 121M
+[hostB_104] chunk 186/230 ok 204M
+[hostB_104] chunk 187/230 ok 157M
+[hostB_104] chunk 188/230 ok 153M
+[hostB_104] chunk 189/230 ok 107M
+[hostB_104] chunk 190/230 ok 228M
+[hostB_104] chunk 191/230 ok 150M
+[hostB_104] chunk 192/230 ok 167M
+[hostB_104] chunk 193/230 ok 64M
+[hostB_104] chunk 194/230 ok 25M
+[hostB_104] chunk 195/230 ok 12M
+[hostB_104] chunk 196/230 ok 66M
+[hostB_104] chunk 197/230 ok 1.0M
+[hostB_104] chunk 198/230 ok 1.2M
+[hostB_104] chunk 199/230 ok 1.2M
+[hostB_104] chunk 200/230 ok 1.1M
+[hostB_104] chunk 201/230 ok 6.9M
+[hostB_104] chunk 202/230 ok 111M
+[hostB_104] chunk 203/230 ok 158M
+[hostB_104] chunk 204/230 ok 123M
+[hostB_104] chunk 205/230 ok 104M
+[hostB_104] chunk 206/230 ok 120M
+[hostB_104] chunk 207/230 ok 107M
+[hostB_104] chunk 208/230 ok 277M
+[hostB_104] chunk 209/230 ok 197M
+[hostB_104] chunk 210/230 ok 179M
+[hostB_104] chunk 211/230 ok 277M
+[hostB_104] chunk 212/230 ok 201M
+[hostB_104] chunk 213/230 ok 57M
+[hostB_104] chunk 214/230 ok 79M
+[hostB_104] chunk 215/230 ok 576K
+[hostB_104] chunk 216/230 ok 576K
+[hostB_104] chunk 217/230 ok 576K
+[hostB_104] chunk 218/230 ok 576K
+[hostB_104] chunk 219/230 ok 576K
+[hostB_104] chunk 220/230 ok 576K
+[hostB_104] chunk 221/230 ok 576K
+[hostB_104] chunk 222/230 ok 576K
+[hostB_104] chunk 223/230 ok 576K
+[hostB_104] chunk 224/230 ok 576K
+[hostB_104] chunk 225/230 ok 576K
+[hostB_104] chunk 226/230 ok 576K
+[hostB_104] chunk 227/230 ok 576K
+[hostB_104] chunk 228/230 ok 576K
+[hostB_104] chunk 229/230 ok 576K
+[hostB_104] chunk 230/230 ok 288K
+[hostB_104] concatenating chunks
+[hostB_104] CONCAT OK size=5.0G
+[hostB_104] boot0 ok
+[hostB_104] boot1 ok
+[hostB_104] DONE
+[hostC_106] starting imaging -> /media/lee/数据/rea_images/hostC_106 (231 chunks of 512MiB)
+[hostC_106] chunk 0/230 ok 101M
+[hostC_106] chunk 1/230 ok 23M
+[hostC_106] chunk 2/230 ok 26M
+[hostC_106] chunk 3/230 ok 23M
+[hostC_106] chunk 4/230 ok 19M
+[hostC_106] chunk 5/230 ok 19M
+[hostC_106] chunk 6/230 ok 22M
+[hostC_106] chunk 7/230 ok 23M
+[hostC_106] chunk 8/230 ok 17M
+[hostC_106] chunk 9/230 ok 22M
+[hostC_106] chunk 10/230 ok 25M
+[hostC_106] chunk 11/230 ok 22M
+[hostC_106] chunk 12/230 ok 22M
+[hostC_106] chunk 13/230 ok 20M
+[hostC_106] chunk 14/230 ok 2.2M
+[hostC_106] chunk 15/230 ok 576K
+[hostC_106] chunk 16/230 ok 12M
+[hostC_106] chunk 17/230 ok 37M
+[hostC_106] chunk 18/230 ok 42M
+[hostC_106] chunk 19/230 ok 46M
+[hostC_106] chunk 20/230 ok 39M
+[hostC_106] chunk 21/230 ok 47M
+[hostC_106] chunk 22/230 ok 18M
+[hostC_106] chunk 23/230 ok 576K
+[hostC_106] chunk 24/230 ok 576K
+[hostC_106] chunk 25/230 ok 576K
+[hostC_106] chunk 26/230 ok 576K
+[hostC_106] chunk 27/230 ok 576K
+[hostC_106] chunk 28/230 ok 576K
+[hostC_106] chunk 29/230 ok 576K
+[hostC_106] chunk 30 attempt 1 failed, retry in 5s
+[hostC_106] chunk 30 attempt 2 failed, retry in 5s
+[hostC_106] chunk 30 attempt 3 failed, retry in 5s
+[hostC_106] chunk 30 attempt 4 failed, retry in 5s
+[hostC_106] chunk 30 attempt 5 failed, retry in 5s
+[hostC_106] chunk 30 attempt 6 failed, retry in 5s
+[hostC_106] chunk 30 FAILED permanently
+[hostC_106] chunk 31 attempt 1 failed, retry in 5s
+[hostC_106] chunk 31 attempt 2 failed, retry in 5s
+[hostC_106] chunk 31 attempt 3 failed, retry in 5s
+[hostC_106] chunk 31 attempt 4 failed, retry in 5s
+[hostC_106] chunk 31 attempt 5 failed, retry in 5s
+[hostC_106] chunk 31 attempt 6 failed, retry in 5s
+[hostC_106] chunk 31 FAILED permanently
+[hostC_106] chunk 32 attempt 1 failed, retry in 5s
+[hostC_106] chunk 32 attempt 2 failed, retry in 5s
+[hostC_106] chunk 32 attempt 3 failed, retry in 5s
+[hostC_106] chunk 32 attempt 4 failed, retry in 5s
+[hostC_106] chunk 32 attempt 5 failed, retry in 5s
+[hostC_106] chunk 32 attempt 6 failed, retry in 5s
+[hostC_106] chunk 32 FAILED permanently
+[hostC_106] chunk 33 attempt 1 failed, retry in 5s
+[hostC_106] chunk 33 attempt 2 failed, retry in 5s
+[hostC_106] chunk 33 attempt 3 failed, retry in 5s
+[hostC_106] chunk 33 attempt 4 failed, retry in 5s
+[hostC_106] chunk 33 attempt 5 failed, retry in 5s
+[hostC_106] chunk 33 attempt 6 failed, retry in 5s
+[hostC_106] chunk 33 FAILED permanently
+[hostC_106] chunk 34 attempt 1 failed, retry in 5s
+[hostC_106] chunk 34 attempt 2 failed, retry in 5s
+[hostC_106] chunk 34 attempt 3 failed, retry in 5s
+[hostC_106] chunk 34 attempt 4 failed, retry in 5s
+[hostC_106] chunk 34 attempt 5 failed, retry in 5s
+[hostC_106] chunk 34 attempt 6 failed, retry in 5s
+[hostC_106] chunk 34 FAILED permanently
+[hostC_106] chunk 35 attempt 1 failed, retry in 5s
+[hostC_106] chunk 35 attempt 2 failed, retry in 5s
+[hostC_106] chunk 35 attempt 3 failed, retry in 5s
+[hostC_106] chunk 35 attempt 4 failed, retry in 5s
+[hostC_106] chunk 35 attempt 5 failed, retry in 5s
+[hostC_106] chunk 35 attempt 6 failed, retry in 5s
+[hostC_106] chunk 35 FAILED permanently
+[hostC_106] chunk 36 attempt 1 failed, retry in 5s
+[hostC_106] chunk 36 attempt 2 failed, retry in 5s
+[hostC_106] chunk 36 attempt 3 failed, retry in 5s
+[hostC_106] chunk 36 attempt 4 failed, retry in 5s
+[hostC_106] chunk 36 attempt 5 failed, retry in 5s
+[hostC_106] chunk 36 attempt 6 failed, retry in 5s
+[hostC_106] chunk 36 FAILED permanently
+[hostC_106] chunk 37 attempt 1 failed, retry in 5s
+[hostC_106] chunk 37 attempt 2 failed, retry in 5s
+[hostC_106] chunk 37 attempt 3 failed, retry in 5s
+[hostC_106] chunk 37 attempt 4 failed, retry in 5s
+[hostC_106] chunk 37 attempt 5 failed, retry in 5s
+[hostC_106] chunk 37 attempt 6 failed, retry in 5s
+[hostC_106] chunk 37 FAILED permanently
+[hostC_106] chunk 38 attempt 1 failed, retry in 5s
+[hostC_106] chunk 38 attempt 2 failed, retry in 5s
+[hostC_106] chunk 38 attempt 3 failed, retry in 5s
+[hostC_106] chunk 38 attempt 4 failed, retry in 5s
+[hostC_106] chunk 38 attempt 5 failed, retry in 5s
+[hostC_106] chunk 38 attempt 6 failed, retry in 5s
+[hostC_106] chunk 38 FAILED permanently
+[hostC_106] chunk 39 attempt 1 failed, retry in 5s
+[hostC_106] chunk 39 attempt 2 failed, retry in 5s
+[hostC_106] chunk 39 attempt 3 failed, retry in 5s
+[hostC_106] chunk 39 attempt 4 failed, retry in 5s
+[hostC_106] chunk 39 attempt 5 failed, retry in 5s
+[hostC_106] chunk 39 attempt 6 failed, retry in 5s
+[hostC_106] chunk 39 FAILED permanently
+[hostC_106] chunk 40 attempt 1 failed, retry in 5s
+[hostC_106] chunk 40 attempt 2 failed, retry in 5s
+[hostC_106] chunk 40 attempt 3 failed, retry in 5s
+[hostC_106] chunk 40 attempt 4 failed, retry in 5s
+[hostC_106] chunk 40 attempt 5 failed, retry in 5s
+[hostC_106] chunk 40 attempt 6 failed, retry in 5s
+[hostC_106] chunk 40 FAILED permanently
+[hostC_106] chunk 41 attempt 1 failed, retry in 5s
+[hostC_106] chunk 41 attempt 2 failed, retry in 5s
+[hostC_106] chunk 41 attempt 3 failed, retry in 5s
+[hostC_106] chunk 41 attempt 4 failed, retry in 5s
+[hostC_106] chunk 41 attempt 5 failed, retry in 5s
+[hostC_106] chunk 41 attempt 6 failed, retry in 5s
+[hostC_106] chunk 41 FAILED permanently
+[hostC_106] chunk 42 attempt 1 failed, retry in 5s
+[hostC_106] chunk 42 attempt 2 failed, retry in 5s
+[hostC_106] chunk 42 attempt 3 failed, retry in 5s
+[hostC_106] chunk 42 attempt 4 failed, retry in 5s
+[hostC_106] chunk 42 attempt 5 failed, retry in 5s
+[hostC_106] chunk 42 attempt 6 failed, retry in 5s
+[hostC_106] chunk 42 FAILED permanently
+[hostC_106] chunk 43 attempt 1 failed, retry in 5s
+[hostC_106] chunk 43 attempt 2 failed, retry in 5s
+[hostC_106] chunk 43 attempt 3 failed, retry in 5s
+[hostC_106] chunk 43 attempt 4 failed, retry in 5s
+[hostC_106] chunk 43 attempt 5 failed, retry in 5s
+[hostC_106] chunk 43 attempt 6 failed, retry in 5s
+[hostC_106] chunk 43 FAILED permanently
+[hostC_106] chunk 44 attempt 1 failed, retry in 5s
+[hostC_106] chunk 44 attempt 2 failed, retry in 5s
+[hostC_106] chunk 44 attempt 3 failed, retry in 5s
+[hostC_106] chunk 44 attempt 4 failed, retry in 5s
+[hostC_106] chunk 44 attempt 5 failed, retry in 5s
+[hostC_106] chunk 44 attempt 6 failed, retry in 5s
+[hostC_106] chunk 44 FAILED permanently
+[hostC_106] chunk 45 attempt 1 failed, retry in 5s
+[hostC_106] chunk 45 attempt 2 failed, retry in 5s
+[hostC_106] chunk 45 attempt 3 failed, retry in 5s
+[hostC_106] chunk 45 attempt 4 failed, retry in 5s
+[hostC_106] chunk 45 attempt 5 failed, retry in 5s
+[hostC_106] chunk 45 attempt 6 failed, retry in 5s
+[hostC_106] chunk 45 FAILED permanently
+[hostC_106] chunk 46 attempt 1 failed, retry in 5s
+[hostC_106] chunk 46 attempt 2 failed, retry in 5s
+[hostC_106] chunk 46 attempt 3 failed, retry in 5s
+[hostC_106] chunk 46 attempt 4 failed, retry in 5s
+[hostC_106] chunk 46 attempt 5 failed, retry in 5s
+[hostC_106] chunk 46 attempt 6 failed, retry in 5s
+[hostC_106] chunk 46 FAILED permanently
+[hostC_106] chunk 47 attempt 1 failed, retry in 5s
+[hostC_106] chunk 47 attempt 2 failed, retry in 5s
+[hostC_106] chunk 47 attempt 3 failed, retry in 5s
+[hostC_106] chunk 47 attempt 4 failed, retry in 5s
+[hostC_106] chunk 47 attempt 5 failed, retry in 5s
+[hostC_106] chunk 47 attempt 6 failed, retry in 5s
+[hostC_106] chunk 47 FAILED permanently
+[hostC_106] chunk 48 attempt 1 failed, retry in 5s
+[hostC_106] chunk 48 attempt 2 failed, retry in 5s
+[hostC_106] chunk 48 attempt 3 failed, retry in 5s
+[hostC_106] chunk 48 attempt 4 failed, retry in 5s
+[hostC_106] chunk 48 attempt 5 failed, retry in 5s
+[hostC_106] chunk 48 attempt 6 failed, retry in 5s
+[hostC_106] chunk 48 FAILED permanently
+[hostC_106] chunk 49 attempt 1 failed, retry in 5s
+[hostC_106] chunk 49 attempt 2 failed, retry in 5s
+[hostC_106] chunk 49 attempt 3 failed, retry in 5s
+[hostC_106] chunk 49 attempt 4 failed, retry in 5s
+[hostC_106] chunk 49 attempt 5 failed, retry in 5s
+[hostC_106] chunk 49 attempt 6 failed, retry in 5s
+[hostC_106] chunk 49 FAILED permanently
+[hostC_106] chunk 50 attempt 1 failed, retry in 5s
+[hostC_106] chunk 50 attempt 2 failed, retry in 5s
+[hostC_106] chunk 50 attempt 3 failed, retry in 5s
+[hostC_106] chunk 50 attempt 4 failed, retry in 5s
+[hostC_106] chunk 50 attempt 5 failed, retry in 5s
+[hostC_106] chunk 50 attempt 6 failed, retry in 5s
+[hostC_106] chunk 50 FAILED permanently
+[hostC_106] chunk 51 attempt 1 failed, retry in 5s
+[hostC_106] chunk 51 attempt 2 failed, retry in 5s
+[hostC_106] chunk 51 attempt 3 failed, retry in 5s
+[hostC_106] chunk 51 attempt 4 failed, retry in 5s
+[hostC_106] chunk 51 attempt 5 failed, retry in 5s
+[hostC_106] chunk 51 attempt 6 failed, retry in 5s
+[hostC_106] chunk 51 FAILED permanently
+[hostC_106] chunk 52 attempt 1 failed, retry in 5s
+[hostC_106] chunk 52 attempt 2 failed, retry in 5s
+[hostC_106] chunk 52 attempt 3 failed, retry in 5s
+[hostC_106] chunk 52 attempt 4 failed, retry in 5s
+[hostC_106] chunk 52 attempt 5 failed, retry in 5s
+[hostC_106] chunk 52 attempt 6 failed, retry in 5s
+[hostC_106] chunk 52 FAILED permanently
+[hostC_106] chunk 53 attempt 1 failed, retry in 5s
+[hostC_106] chunk 53 attempt 2 failed, retry in 5s
+[hostC_106] chunk 53 attempt 3 failed, retry in 5s
+[hostC_106] chunk 53 attempt 4 failed, retry in 5s
+[hostC_106] chunk 53 attempt 5 failed, retry in 5s
+[hostC_106] chunk 53 attempt 6 failed, retry in 5s
+[hostC_106] chunk 53 FAILED permanently
+[hostC_106] chunk 54 attempt 1 failed, retry in 5s
+[hostC_106] chunk 54 attempt 2 failed, retry in 5s
+[hostC_106] chunk 54 attempt 3 failed, retry in 5s
+[hostC_106] chunk 54 attempt 4 failed, retry in 5s
+[hostC_106] chunk 54 attempt 5 failed, retry in 5s
+[hostC_106] chunk 54 attempt 6 failed, retry in 5s
+[hostC_106] chunk 54 FAILED permanently
+[hostC_106] chunk 55 attempt 1 failed, retry in 5s
+[hostC_106] chunk 55 attempt 2 failed, retry in 5s
+[hostC_106] chunk 55 attempt 3 failed, retry in 5s
+[hostC_106] chunk 55 attempt 4 failed, retry in 5s
+[hostC_106] chunk 55 attempt 5 failed, retry in 5s
+[hostC_106] chunk 55 attempt 6 failed, retry in 5s
+[hostC_106] chunk 55 FAILED permanently
+[hostC_106] chunk 56 attempt 1 failed, retry in 5s
+[hostC_106] chunk 56 attempt 2 failed, retry in 5s
+[hostC_106] chunk 56 attempt 3 failed, retry in 5s
+[hostC_106] chunk 56 attempt 4 failed, retry in 5s
+[hostC_106] chunk 56 attempt 5 failed, retry in 5s
+[hostC_106] chunk 56 attempt 6 failed, retry in 5s
+[hostC_106] chunk 56 FAILED permanently
+[hostC_106] chunk 57 attempt 1 failed, retry in 5s
+[hostC_106] chunk 57 attempt 2 failed, retry in 5s
+[hostC_106] chunk 57 attempt 3 failed, retry in 5s
+[hostC_106] chunk 57 attempt 4 failed, retry in 5s
+[hostC_106] chunk 57 attempt 5 failed, retry in 5s
+[hostC_106] chunk 57 attempt 6 failed, retry in 5s
+[hostC_106] chunk 57 FAILED permanently
+[hostC_106] chunk 58 attempt 1 failed, retry in 5s
+[hostC_106] chunk 58 attempt 2 failed, retry in 5s
+[hostC_106] chunk 58 attempt 3 failed, retry in 5s
+[hostC_106] chunk 58 attempt 4 failed, retry in 5s
+[hostC_106] chunk 58 attempt 5 failed, retry in 5s
+[hostC_106] chunk 58 attempt 6 failed, retry in 5s
+[hostC_106] chunk 58 FAILED permanently
+[hostC_106] chunk 59 attempt 1 failed, retry in 5s
+[hostC_106] chunk 59 attempt 2 failed, retry in 5s
+[hostC_106] chunk 59 attempt 3 failed, retry in 5s
+[hostC_106] chunk 59 attempt 4 failed, retry in 5s
+[hostC_106] chunk 59 attempt 5 failed, retry in 5s
+[hostC_106] chunk 59 attempt 6 failed, retry in 5s
+[hostC_106] chunk 59 FAILED permanently
+[hostC_106] chunk 60 attempt 1 failed, retry in 5s
+[hostC_106] chunk 60 attempt 2 failed, retry in 5s
+[hostC_106] chunk 60 attempt 3 failed, retry in 5s
+[hostC_106] chunk 60 attempt 4 failed, retry in 5s
+[hostC_106] chunk 60 attempt 5 failed, retry in 5s
+[hostC_106] chunk 60 attempt 6 failed, retry in 5s
+[hostC_106] chunk 60 FAILED permanently
+[hostC_106] chunk 61 attempt 1 failed, retry in 5s
+[hostC_106] chunk 61 attempt 2 failed, retry in 5s
+[hostC_106] chunk 61 attempt 3 failed, retry in 5s
+[hostC_106] chunk 61 attempt 4 failed, retry in 5s
+[hostC_106] chunk 61 attempt 5 failed, retry in 5s
+[hostC_106] chunk 61 attempt 6 failed, retry in 5s
+[hostC_106] chunk 61 FAILED permanently
+[hostC_106] chunk 62 attempt 1 failed, retry in 5s
+[hostC_106] chunk 62 attempt 2 failed, retry in 5s
+[hostC_106] chunk 62 attempt 3 failed, retry in 5s
+[hostC_106] chunk 62 attempt 4 failed, retry in 5s
+[hostC_106] chunk 62 attempt 5 failed, retry in 5s
+[hostC_106] chunk 62 attempt 6 failed, retry in 5s
+[hostC_106] chunk 62 FAILED permanently
+[hostC_106] chunk 63 attempt 1 failed, retry in 5s
+[hostC_106] chunk 63 attempt 2 failed, retry in 5s
+[hostC_106] chunk 63 attempt 3 failed, retry in 5s
+[hostC_106] chunk 63 attempt 4 failed, retry in 5s
+[hostC_106] chunk 63 attempt 5 failed, retry in 5s
+[hostC_106] chunk 63 attempt 6 failed, retry in 5s
+[hostC_106] chunk 63 FAILED permanently
+[hostC_106] chunk 64 attempt 1 failed, retry in 5s
+[hostC_106] chunk 64 attempt 2 failed, retry in 5s
+[hostC_106] chunk 64 attempt 3 failed, retry in 5s
+[hostC_106] chunk 64 attempt 4 failed, retry in 5s
+[hostC_106] chunk 64 attempt 5 failed, retry in 5s
+[hostC_106] chunk 64 attempt 6 failed, retry in 5s
+[hostC_106] chunk 64 FAILED permanently
+[hostC_106] chunk 65 attempt 1 failed, retry in 5s
+[hostC_106] chunk 65 attempt 2 failed, retry in 5s
+[hostC_106] chunk 65 attempt 3 failed, retry in 5s
+[hostC_106] chunk 65 attempt 4 failed, retry in 5s
+[hostC_106] chunk 65 attempt 5 failed, retry in 5s
+[hostC_106] chunk 65 attempt 6 failed, retry in 5s
+[hostC_106] chunk 65 FAILED permanently
+[hostC_106] chunk 66 attempt 1 failed, retry in 5s
+[hostC_106] chunk 66 attempt 2 failed, retry in 5s
+[hostC_106] chunk 66 attempt 3 failed, retry in 5s
+[hostC_106] chunk 66 attempt 4 failed, retry in 5s
+[hostC_106] chunk 66 attempt 5 failed, retry in 5s
+[hostC_106] chunk 66 attempt 6 failed, retry in 5s
+[hostC_106] chunk 66 FAILED permanently
+[hostC_106] chunk 67 attempt 1 failed, retry in 5s
+[hostC_106] chunk 67 attempt 2 failed, retry in 5s
+[hostC_106] chunk 67 attempt 3 failed, retry in 5s
+[hostC_106] chunk 67 attempt 4 failed, retry in 5s
+[hostC_106] chunk 67 attempt 5 failed, retry in 5s
+[hostC_106] chunk 67 attempt 6 failed, retry in 5s
+[hostC_106] chunk 67 FAILED permanently
+[hostC_106] chunk 68 attempt 1 failed, retry in 5s
+[hostC_106] chunk 68 attempt 2 failed, retry in 5s
+[hostC_106] chunk 68 attempt 3 failed, retry in 5s
+[hostC_106] chunk 68 attempt 4 failed, retry in 5s
+[hostC_106] chunk 68 attempt 5 failed, retry in 5s
+[hostC_106] chunk 68 attempt 6 failed, retry in 5s
+[hostC_106] chunk 68 FAILED permanently
+[hostC_106] chunk 69 attempt 1 failed, retry in 5s
+[hostC_106] chunk 69 attempt 2 failed, retry in 5s
+[hostC_106] chunk 69 attempt 3 failed, retry in 5s
+[hostC_106] chunk 69 attempt 4 failed, retry in 5s
+[hostC_106] chunk 69 attempt 5 failed, retry in 5s
+[hostC_106] chunk 69 attempt 6 failed, retry in 5s
+[hostC_106] chunk 69 FAILED permanently
+[hostC_106] chunk 70 attempt 1 failed, retry in 5s
+[hostC_106] chunk 70 attempt 2 failed, retry in 5s
+[hostC_106] chunk 70 attempt 3 failed, retry in 5s
+[hostC_106] chunk 70 attempt 4 failed, retry in 5s
+[hostC_106] chunk 70 attempt 5 failed, retry in 5s
+[hostC_106] chunk 70 attempt 6 failed, retry in 5s
+[hostC_106] chunk 70 FAILED permanently
+[hostC_106] chunk 71 attempt 1 failed, retry in 5s
+[hostC_106] chunk 71 attempt 2 failed, retry in 5s
+[hostC_106] chunk 71 attempt 3 failed, retry in 5s
+[hostC_106] chunk 71 attempt 4 failed, retry in 5s
+[hostC_106] chunk 71 attempt 5 failed, retry in 5s
+[hostC_106] chunk 71 attempt 6 failed, retry in 5s
+[hostC_106] chunk 71 FAILED permanently
+[hostC_106] chunk 72 attempt 1 failed, retry in 5s
+[hostC_106] chunk 72 attempt 2 failed, retry in 5s
+[hostC_106] chunk 72 attempt 3 failed, retry in 5s
+[hostC_106] chunk 72 attempt 4 failed, retry in 5s
+[hostC_106] chunk 72 attempt 5 failed, retry in 5s
+[hostC_106] chunk 72 attempt 6 failed, retry in 5s
+[hostC_106] chunk 72 FAILED permanently
+[hostC_106] chunk 73 attempt 1 failed, retry in 5s
+[hostC_106] chunk 73 attempt 2 failed, retry in 5s
+[hostC_106] chunk 73 attempt 3 failed, retry in 5s
+[hostC_106] chunk 73 attempt 4 failed, retry in 5s
+[hostC_106] chunk 73 attempt 5 failed, retry in 5s
+[hostC_106] chunk 73 attempt 6 failed, retry in 5s
+[hostC_106] chunk 73 FAILED permanently
+[hostC_106] chunk 74 attempt 1 failed, retry in 5s
+[hostC_106] chunk 74 attempt 2 failed, retry in 5s
+[hostC_106] chunk 74 attempt 3 failed, retry in 5s
+[hostC_106] chunk 74 attempt 4 failed, retry in 5s
+[hostC_106] chunk 74 attempt 5 failed, retry in 5s
+[hostC_106] chunk 74 attempt 6 failed, retry in 5s
+[hostC_106] chunk 74 FAILED permanently
+[hostC_106] chunk 75 attempt 1 failed, retry in 5s
+[hostC_106] chunk 75 attempt 2 failed, retry in 5s
+[hostC_106] chunk 75 attempt 3 failed, retry in 5s
+[hostC_106] chunk 75 attempt 4 failed, retry in 5s
+[hostC_106] chunk 75 attempt 5 failed, retry in 5s
+[hostC_106] chunk 75 attempt 6 failed, retry in 5s
+[hostC_106] chunk 75 FAILED permanently
+[hostC_106] chunk 76 attempt 1 failed, retry in 5s
+[hostC_106] chunk 76 attempt 2 failed, retry in 5s
+[hostC_106] chunk 76 attempt 3 failed, retry in 5s
+[hostC_106] chunk 76 attempt 4 failed, retry in 5s
+[hostC_106] chunk 76 attempt 5 failed, retry in 5s
+[hostC_106] chunk 76 attempt 6 failed, retry in 5s
+[hostC_106] chunk 76 FAILED permanently
+[hostC_106] chunk 77 attempt 1 failed, retry in 5s
+[hostC_106] chunk 77 attempt 2 failed, retry in 5s
+[hostC_106] chunk 77 attempt 3 failed, retry in 5s
+[hostC_106] chunk 77 attempt 4 failed, retry in 5s
+[hostC_106] chunk 77 attempt 5 failed, retry in 5s
+[hostC_106] chunk 77 attempt 6 failed, retry in 5s
+[hostC_106] chunk 77 FAILED permanently
+[hostC_106] chunk 78 attempt 1 failed, retry in 5s
+[hostC_106] chunk 78 attempt 2 failed, retry in 5s
+[hostC_106] chunk 78 attempt 3 failed, retry in 5s
+[hostC_106] chunk 78 attempt 4 failed, retry in 5s
+[hostC_106] chunk 78 attempt 5 failed, retry in 5s
+[hostC_106] chunk 78 attempt 6 failed, retry in 5s
+[hostC_106] chunk 78 FAILED permanently
+[hostC_106] chunk 79 attempt 1 failed, retry in 5s
+[hostC_106] chunk 79 attempt 2 failed, retry in 5s
+[hostC_106] chunk 79 attempt 3 failed, retry in 5s
+[hostC_106] chunk 79 attempt 4 failed, retry in 5s
+[hostC_106] chunk 79 attempt 5 failed, retry in 5s
+[hostC_106] chunk 79 attempt 6 failed, retry in 5s
+[hostC_106] chunk 79 FAILED permanently
+[hostC_106] chunk 80 attempt 1 failed, retry in 5s
+[hostC_106] chunk 80 attempt 2 failed, retry in 5s
+[hostC_106] chunk 80 attempt 3 failed, retry in 5s
+[hostC_106] chunk 80 attempt 4 failed, retry in 5s
+[hostC_106] chunk 80 attempt 5 failed, retry in 5s
+[hostC_106] chunk 80 attempt 6 failed, retry in 5s
+[hostC_106] chunk 80 FAILED permanently
+[hostC_106] chunk 81 attempt 1 failed, retry in 5s
+[hostC_106] chunk 81 attempt 2 failed, retry in 5s
+[hostC_106] chunk 81 attempt 3 failed, retry in 5s
+[hostC_106] chunk 81 attempt 4 failed, retry in 5s
+[hostC_106] chunk 81 attempt 5 failed, retry in 5s
+[hostC_106] chunk 81 attempt 6 failed, retry in 5s
+[hostC_106] chunk 81 FAILED permanently
+[hostC_106] chunk 82 attempt 1 failed, retry in 5s
+[hostC_106] chunk 82 attempt 2 failed, retry in 5s
+[hostC_106] chunk 82 attempt 3 failed, retry in 5s
+[hostC_106] chunk 82 attempt 4 failed, retry in 5s
+[hostC_106] chunk 82 attempt 5 failed, retry in 5s
+[hostC_106] chunk 82 attempt 6 failed, retry in 5s
+[hostC_106] chunk 82 FAILED permanently
+[hostC_106] chunk 83 attempt 1 failed, retry in 5s
+[hostC_106] chunk 83 attempt 2 failed, retry in 5s
+[hostC_106] chunk 83 attempt 3 failed, retry in 5s
+[hostC_106] chunk 83 attempt 4 failed, retry in 5s
+[hostC_106] chunk 83 attempt 5 failed, retry in 5s
+[hostC_106] chunk 83 attempt 6 failed, retry in 5s
+[hostC_106] chunk 83 FAILED permanently
+[hostC_106] chunk 84 attempt 1 failed, retry in 5s
+[hostC_106] chunk 84 attempt 2 failed, retry in 5s
+[hostC_106] chunk 84 attempt 3 failed, retry in 5s
+[hostC_106] chunk 84 attempt 4 failed, retry in 5s
+[hostC_106] chunk 84 attempt 5 failed, retry in 5s
+[hostC_106] chunk 84 attempt 6 failed, retry in 5s
+[hostC_106] chunk 84 FAILED permanently
+[hostC_106] chunk 85 attempt 1 failed, retry in 5s
+[hostC_106] chunk 85 attempt 2 failed, retry in 5s
+[hostC_106] chunk 85 attempt 3 failed, retry in 5s
+[hostC_106] chunk 85 attempt 4 failed, retry in 5s
+[hostC_106] chunk 85 attempt 5 failed, retry in 5s
+[hostC_106] chunk 85 attempt 6 failed, retry in 5s
+[hostC_106] chunk 85 FAILED permanently
+[hostC_106] chunk 86 attempt 1 failed, retry in 5s
+[hostC_106] chunk 86 attempt 2 failed, retry in 5s
+[hostC_106] chunk 86 attempt 3 failed, retry in 5s
+[hostC_106] chunk 86 attempt 4 failed, retry in 5s
+[hostC_106] chunk 86 attempt 5 failed, retry in 5s
+[hostC_106] chunk 86 attempt 6 failed, retry in 5s
+[hostC_106] chunk 86 FAILED permanently
+[hostC_106] chunk 87 attempt 1 failed, retry in 5s
+[hostC_106] chunk 87 attempt 2 failed, retry in 5s
+[hostC_106] chunk 87 attempt 3 failed, retry in 5s
+[hostC_106] chunk 87 attempt 4 failed, retry in 5s
+[hostC_106] chunk 87 attempt 5 failed, retry in 5s
+[hostC_106] chunk 87 attempt 6 failed, retry in 5s
+[hostC_106] chunk 87 FAILED permanently
+[hostC_106] chunk 88 attempt 1 failed, retry in 5s
+[hostC_106] chunk 88 attempt 2 failed, retry in 5s
+[hostC_106] chunk 88 attempt 3 failed, retry in 5s
+[hostC_106] chunk 88 attempt 4 failed, retry in 5s
+[hostC_106] chunk 88 attempt 5 failed, retry in 5s
+[hostC_106] chunk 88 attempt 6 failed, retry in 5s
+[hostC_106] chunk 88 FAILED permanently
+[hostC_106] chunk 89 attempt 1 failed, retry in 5s
+[hostC_106] chunk 89 attempt 2 failed, retry in 5s
+[hostC_106] chunk 89 attempt 3 failed, retry in 5s
+[hostC_106] chunk 89 attempt 4 failed, retry in 5s
+[hostC_106] chunk 89 attempt 5 failed, retry in 5s
+[hostC_106] chunk 89 attempt 6 failed, retry in 5s
+[hostC_106] chunk 89 FAILED permanently
+[hostC_106] chunk 90 attempt 1 failed, retry in 5s
+[hostC_106] chunk 90 attempt 2 failed, retry in 5s
+[hostC_106] chunk 90 attempt 3 failed, retry in 5s
+[hostC_106] chunk 90 attempt 4 failed, retry in 5s
+[hostC_106] chunk 90 attempt 5 failed, retry in 5s
+[hostC_106] chunk 90 attempt 6 failed, retry in 5s
+[hostC_106] chunk 90 FAILED permanently
+[hostC_106] chunk 91 attempt 1 failed, retry in 5s
+[hostC_106] chunk 91 attempt 2 failed, retry in 5s
+[hostC_106] chunk 91 attempt 3 failed, retry in 5s
+[hostC_106] chunk 91 attempt 4 failed, retry in 5s
+[hostC_106] chunk 91 attempt 5 failed, retry in 5s
+[hostC_106] chunk 91 attempt 6 failed, retry in 5s
+[hostC_106] chunk 91 FAILED permanently
+[hostC_106] chunk 92 attempt 1 failed, retry in 5s
+[hostC_106] chunk 92 attempt 2 failed, retry in 5s
+[hostC_106] chunk 92 attempt 3 failed, retry in 5s
+[hostC_106] chunk 92 attempt 4 failed, retry in 5s
+[hostC_106] chunk 92 attempt 5 failed, retry in 5s
+[hostC_106] chunk 92 attempt 6 failed, retry in 5s
+[hostC_106] chunk 92 FAILED permanently
+[hostC_106] chunk 93 attempt 1 failed, retry in 5s
+[hostC_106] chunk 93 attempt 2 failed, retry in 5s
+[hostC_106] chunk 93 attempt 3 failed, retry in 5s
+[hostC_106] chunk 93 attempt 4 failed, retry in 5s
+[hostC_106] chunk 93 attempt 5 failed, retry in 5s
+[hostC_106] chunk 93 attempt 6 failed, retry in 5s
+[hostC_106] chunk 93 FAILED permanently
+[hostC_106] chunk 94 attempt 1 failed, retry in 5s
+[hostC_106] chunk 94 attempt 2 failed, retry in 5s
+[hostC_106] chunk 94 attempt 3 failed, retry in 5s
+[hostC_106] chunk 94 attempt 4 failed, retry in 5s
+[hostC_106] chunk 94 attempt 5 failed, retry in 5s
+[hostC_106] chunk 94 attempt 6 failed, retry in 5s
+[hostC_106] chunk 94 FAILED permanently
+[hostC_106] chunk 95 attempt 1 failed, retry in 5s
+[hostC_106] chunk 95 attempt 2 failed, retry in 5s
+[hostC_106] chunk 95 attempt 3 failed, retry in 5s
+[hostC_106] chunk 95 attempt 4 failed, retry in 5s
+[hostC_106] chunk 95 attempt 5 failed, retry in 5s
+[hostC_106] chunk 95 attempt 6 failed, retry in 5s
+[hostC_106] chunk 95 FAILED permanently
+[hostC_106] chunk 96 attempt 1 failed, retry in 5s
+[hostC_106] chunk 96 attempt 2 failed, retry in 5s
+[hostC_106] chunk 96 attempt 3 failed, retry in 5s
+[hostC_106] chunk 96 attempt 4 failed, retry in 5s
+[hostC_106] chunk 96 attempt 5 failed, retry in 5s
+[hostC_106] chunk 96 attempt 6 failed, retry in 5s
+[hostC_106] chunk 96 FAILED permanently
+[hostC_106] chunk 97 attempt 1 failed, retry in 5s
+[hostC_106] chunk 97 attempt 2 failed, retry in 5s
+[hostC_106] chunk 97 attempt 3 failed, retry in 5s
+[hostC_106] chunk 97 attempt 4 failed, retry in 5s
+[hostC_106] chunk 97 attempt 5 failed, retry in 5s
+[hostC_106] chunk 97 attempt 6 failed, retry in 5s
+[hostC_106] chunk 97 FAILED permanently
+[hostC_106] chunk 98 attempt 1 failed, retry in 5s
+[hostC_106] chunk 98 attempt 2 failed, retry in 5s
+[hostC_106] chunk 98 attempt 3 failed, retry in 5s
+[hostC_106] chunk 98 attempt 4 failed, retry in 5s
+[hostC_106] chunk 98 attempt 5 failed, retry in 5s
+[hostC_106] chunk 98 attempt 6 failed, retry in 5s
+[hostC_106] chunk 98 FAILED permanently
+[hostC_106] chunk 99 attempt 1 failed, retry in 5s
+[hostC_106] chunk 99 attempt 2 failed, retry in 5s
+[hostC_106] chunk 99 attempt 3 failed, retry in 5s
+[hostC_106] chunk 99 attempt 4 failed, retry in 5s
+[hostC_106] chunk 99 attempt 5 failed, retry in 5s
+[hostC_106] chunk 99 attempt 6 failed, retry in 5s
+[hostC_106] chunk 99 FAILED permanently
+[hostC_106] chunk 100 attempt 1 failed, retry in 5s
+[hostC_106] chunk 100 attempt 2 failed, retry in 5s
+[hostC_106] chunk 100 attempt 3 failed, retry in 5s
+[hostC_106] chunk 100 attempt 4 failed, retry in 5s
+[hostC_106] chunk 100 attempt 5 failed, retry in 5s
+[hostC_106] chunk 100 attempt 6 failed, retry in 5s
+[hostC_106] chunk 100 FAILED permanently
+[hostC_106] chunk 101 attempt 1 failed, retry in 5s
+[hostC_106] chunk 101 attempt 2 failed, retry in 5s
+[hostC_106] chunk 101 attempt 3 failed, retry in 5s
+[hostC_106] chunk 101 attempt 4 failed, retry in 5s
+[hostC_106] chunk 101 attempt 5 failed, retry in 5s
+[hostC_106] chunk 101 attempt 6 failed, retry in 5s
+[hostC_106] chunk 101 FAILED permanently
+[hostC_106] chunk 102 attempt 1 failed, retry in 5s
+[hostC_106] chunk 102 attempt 2 failed, retry in 5s
+[hostC_106] chunk 102 attempt 3 failed, retry in 5s
+[hostC_106] chunk 102 attempt 4 failed, retry in 5s
+[hostC_106] chunk 102 attempt 5 failed, retry in 5s
+[hostC_106] chunk 102 attempt 6 failed, retry in 5s
+[hostC_106] chunk 102 FAILED permanently
+[hostC_106] chunk 103 attempt 1 failed, retry in 5s
+[hostC_106] chunk 103 attempt 2 failed, retry in 5s
+[hostC_106] chunk 103 attempt 3 failed, retry in 5s
+[hostC_106] chunk 103 attempt 4 failed, retry in 5s
+[hostC_106] chunk 103 attempt 5 failed, retry in 5s
+[hostC_106] chunk 103 attempt 6 failed, retry in 5s
+[hostC_106] chunk 103 FAILED permanently
+[hostC_106] chunk 104 attempt 1 failed, retry in 5s
+[hostC_106] chunk 104 attempt 2 failed, retry in 5s
+[hostC_106] chunk 104 attempt 3 failed, retry in 5s
+[hostC_106] chunk 104 attempt 4 failed, retry in 5s
+[hostC_106] chunk 104 attempt 5 failed, retry in 5s
+[hostC_106] chunk 104 attempt 6 failed, retry in 5s
+[hostC_106] chunk 104 FAILED permanently
+[hostC_106] chunk 105 attempt 1 failed, retry in 5s
+[hostC_106] chunk 105 attempt 2 failed, retry in 5s
+[hostC_106] chunk 105 attempt 3 failed, retry in 5s
+[hostC_106] chunk 105 attempt 4 failed, retry in 5s
+[hostC_106] chunk 105 attempt 5 failed, retry in 5s
+[hostC_106] chunk 105 attempt 6 failed, retry in 5s
+[hostC_106] chunk 105 FAILED permanently
+[hostC_106] chunk 106 attempt 1 failed, retry in 5s
+[hostC_106] chunk 106 attempt 2 failed, retry in 5s
+[hostC_106] chunk 106 attempt 3 failed, retry in 5s
+[hostC_106] chunk 106 attempt 4 failed, retry in 5s
+[hostC_106] chunk 106 attempt 5 failed, retry in 5s
+[hostC_106] chunk 106 attempt 6 failed, retry in 5s
+[hostC_106] chunk 106 FAILED permanently
+[hostC_106] chunk 107 attempt 1 failed, retry in 5s
+[hostC_106] chunk 107 attempt 2 failed, retry in 5s
+[hostC_106] chunk 107 attempt 3 failed, retry in 5s
+[hostC_106] chunk 107 attempt 4 failed, retry in 5s
+[hostC_106] chunk 107 attempt 5 failed, retry in 5s
+[hostC_106] chunk 107 attempt 6 failed, retry in 5s
+[hostC_106] chunk 107 FAILED permanently
+[hostC_106] chunk 108 attempt 1 failed, retry in 5s
+[hostC_106] chunk 108 attempt 2 failed, retry in 5s
+[hostC_106] chunk 108 attempt 3 failed, retry in 5s
+[hostC_106] chunk 108 attempt 4 failed, retry in 5s
+[hostC_106] chunk 108 attempt 5 failed, retry in 5s
+[hostC_106] chunk 108 attempt 6 failed, retry in 5s
+[hostC_106] chunk 108 FAILED permanently
+[hostC_106] chunk 109 attempt 1 failed, retry in 5s
+[hostC_106] chunk 109 attempt 2 failed, retry in 5s
+[hostC_106] chunk 109 attempt 3 failed, retry in 5s
+[hostC_106] chunk 109 attempt 4 failed, retry in 5s
+[hostC_106] chunk 109 attempt 5 failed, retry in 5s
+[hostC_106] chunk 109 attempt 6 failed, retry in 5s
+[hostC_106] chunk 109 FAILED permanently
+[hostC_106] chunk 110 attempt 1 failed, retry in 5s
+[hostC_106] chunk 110 attempt 2 failed, retry in 5s
+[hostC_106] chunk 110 attempt 3 failed, retry in 5s
+[hostC_106] chunk 110 attempt 4 failed, retry in 5s
+[hostC_106] chunk 110 attempt 5 failed, retry in 5s
+[hostC_106] chunk 110 attempt 6 failed, retry in 5s
+[hostC_106] chunk 110 FAILED permanently
+[hostC_106] chunk 111 attempt 1 failed, retry in 5s
+[hostC_106] chunk 111 attempt 2 failed, retry in 5s
+[hostC_106] chunk 111 attempt 3 failed, retry in 5s
+[hostC_106] chunk 111 attempt 4 failed, retry in 5s
+[hostC_106] chunk 111 attempt 5 failed, retry in 5s
+[hostC_106] chunk 111 attempt 6 failed, retry in 5s
+[hostC_106] chunk 111 FAILED permanently
+[hostC_106] chunk 112 attempt 1 failed, retry in 5s
+[hostC_106] chunk 112 attempt 2 failed, retry in 5s
+[hostC_106] chunk 112 attempt 3 failed, retry in 5s
+[hostC_106] chunk 112 attempt 4 failed, retry in 5s
+[hostC_106] chunk 112 attempt 5 failed, retry in 5s
+[hostC_106] chunk 112 attempt 6 failed, retry in 5s
+[hostC_106] chunk 112 FAILED permanently
+[hostC_106] chunk 113 attempt 1 failed, retry in 5s
+[hostC_106] chunk 113 attempt 2 failed, retry in 5s
+[hostC_106] chunk 113 attempt 3 failed, retry in 5s
+[hostC_106] chunk 113 attempt 4 failed, retry in 5s
+[hostC_106] chunk 113 attempt 5 failed, retry in 5s
+[hostC_106] chunk 113 attempt 6 failed, retry in 5s
+[hostC_106] chunk 113 FAILED permanently
+[hostC_106] chunk 114 attempt 1 failed, retry in 5s
+[hostC_106] chunk 114 attempt 2 failed, retry in 5s
+[hostC_106] chunk 114 attempt 3 failed, retry in 5s
+[hostC_106] chunk 114 attempt 4 failed, retry in 5s
+[hostC_106] chunk 114 attempt 5 failed, retry in 5s
+[hostC_106] chunk 114 attempt 6 failed, retry in 5s
+[hostC_106] chunk 114 FAILED permanently
+[hostC_106] chunk 115 attempt 1 failed, retry in 5s
+[hostC_106] chunk 115 attempt 2 failed, retry in 5s
+[hostC_106] chunk 115 attempt 3 failed, retry in 5s
+[hostC_106] chunk 115 attempt 4 failed, retry in 5s
+[hostC_106] chunk 115 attempt 5 failed, retry in 5s
+[hostC_106] chunk 115 attempt 6 failed, retry in 5s
+[hostC_106] chunk 115 FAILED permanently
+[hostC_106] chunk 116 attempt 1 failed, retry in 5s
+[hostC_106] chunk 116 attempt 2 failed, retry in 5s
+[hostC_106] chunk 116 attempt 3 failed, retry in 5s
+[hostC_106] chunk 116 attempt 4 failed, retry in 5s
+[hostC_106] chunk 116 attempt 5 failed, retry in 5s
+[hostC_106] chunk 116 attempt 6 failed, retry in 5s
+[hostC_106] chunk 116 FAILED permanently
+[hostC_106] chunk 117 attempt 1 failed, retry in 5s
+[hostC_106] chunk 117 attempt 2 failed, retry in 5s
+[hostC_106] chunk 117 attempt 3 failed, retry in 5s
+[hostC_106] chunk 117 attempt 4 failed, retry in 5s
+[hostC_106] chunk 117 attempt 5 failed, retry in 5s
+[hostC_106] chunk 117 attempt 6 failed, retry in 5s
+[hostC_106] chunk 117 FAILED permanently
+[hostC_106] chunk 118 attempt 1 failed, retry in 5s
+[hostC_106] chunk 118 attempt 2 failed, retry in 5s
+[hostC_106] chunk 118 attempt 3 failed, retry in 5s
+[hostC_106] chunk 118 attempt 4 failed, retry in 5s
+[hostC_106] chunk 118 attempt 5 failed, retry in 5s
+[hostC_106] chunk 118 attempt 6 failed, retry in 5s
+[hostC_106] chunk 118 FAILED permanently
+[hostC_106] chunk 119 attempt 1 failed, retry in 5s
+[hostC_106] chunk 119 attempt 2 failed, retry in 5s
+[hostC_106] chunk 119 attempt 3 failed, retry in 5s
+[hostC_106] chunk 119 attempt 4 failed, retry in 5s
+[hostC_106] chunk 119 attempt 5 failed, retry in 5s
+[hostC_106] chunk 119 attempt 6 failed, retry in 5s
+[hostC_106] chunk 119 FAILED permanently
+[hostC_106] chunk 120 attempt 1 failed, retry in 5s
+[hostC_106] chunk 120 attempt 2 failed, retry in 5s
+[hostC_106] chunk 120 attempt 3 failed, retry in 5s
+[hostC_106] chunk 120 attempt 4 failed, retry in 5s
+[hostC_106] chunk 120 attempt 5 failed, retry in 5s
+[hostC_106] chunk 120 attempt 6 failed, retry in 5s
+[hostC_106] chunk 120 FAILED permanently
+[hostC_106] chunk 121 attempt 1 failed, retry in 5s
+[hostC_106] chunk 121 attempt 2 failed, retry in 5s
+[hostC_106] chunk 121 attempt 3 failed, retry in 5s
+[hostC_106] chunk 121 attempt 4 failed, retry in 5s
+[hostC_106] chunk 121 attempt 5 failed, retry in 5s
+[hostC_106] chunk 121 attempt 6 failed, retry in 5s
+[hostC_106] chunk 121 FAILED permanently
+[hostC_106] chunk 122 attempt 1 failed, retry in 5s
+[hostC_106] chunk 122 attempt 2 failed, retry in 5s
+[hostC_106] chunk 122 attempt 3 failed, retry in 5s
+[hostC_106] chunk 122 attempt 4 failed, retry in 5s
+[hostC_106] chunk 122 attempt 5 failed, retry in 5s
+[hostC_106] chunk 122 attempt 6 failed, retry in 5s
+[hostC_106] chunk 122 FAILED permanently
+[hostC_106] chunk 123 attempt 1 failed, retry in 5s
+[hostC_106] chunk 123 attempt 2 failed, retry in 5s
+[hostC_106] chunk 123 attempt 3 failed, retry in 5s
+[hostC_106] chunk 123 attempt 4 failed, retry in 5s
+[hostC_106] chunk 123 attempt 5 failed, retry in 5s
+[hostC_106] chunk 123 attempt 6 failed, retry in 5s
+[hostC_106] chunk 123 FAILED permanently
+[hostC_106] chunk 124 attempt 1 failed, retry in 5s
+[hostC_106] chunk 124 attempt 2 failed, retry in 5s
+[hostC_106] chunk 124 attempt 3 failed, retry in 5s
+[hostC_106] chunk 124 attempt 4 failed, retry in 5s
+[hostC_106] chunk 124 attempt 5 failed, retry in 5s
+[hostC_106] chunk 124 attempt 6 failed, retry in 5s
+[hostC_106] chunk 124 FAILED permanently
+[hostC_106] chunk 125 attempt 1 failed, retry in 5s
+[hostC_106] chunk 125 attempt 2 failed, retry in 5s
+[hostC_106] chunk 125 attempt 3 failed, retry in 5s
+[hostC_106] chunk 125 attempt 4 failed, retry in 5s
+[hostC_106] chunk 125 attempt 5 failed, retry in 5s
+[hostC_106] chunk 125 attempt 6 failed, retry in 5s
+[hostC_106] chunk 125 FAILED permanently
+[hostC_106] chunk 126 attempt 1 failed, retry in 5s
+[hostC_106] chunk 126 attempt 2 failed, retry in 5s
+[hostC_106] chunk 126 attempt 3 failed, retry in 5s
+[hostC_106] chunk 126 attempt 4 failed, retry in 5s
+[hostC_106] chunk 126 attempt 5 failed, retry in 5s
+[hostC_106] chunk 126 attempt 6 failed, retry in 5s
+[hostC_106] chunk 126 FAILED permanently
+[hostC_106] chunk 127 attempt 1 failed, retry in 5s
+[hostC_106] chunk 127 attempt 2 failed, retry in 5s
+[hostC_106] chunk 127 attempt 3 failed, retry in 5s
+[hostC_106] chunk 127 attempt 4 failed, retry in 5s
+[hostC_106] chunk 127 attempt 5 failed, retry in 5s
+[hostC_106] chunk 127 attempt 6 failed, retry in 5s
+[hostC_106] chunk 127 FAILED permanently
+[hostC_106] chunk 128 attempt 1 failed, retry in 5s
+[hostC_106] chunk 128 attempt 2 failed, retry in 5s
+[hostC_106] chunk 128 attempt 3 failed, retry in 5s
+[hostC_106] chunk 128 attempt 4 failed, retry in 5s
+[hostC_106] chunk 128 attempt 5 failed, retry in 5s
+[hostC_106] chunk 128 attempt 6 failed, retry in 5s
+[hostC_106] chunk 128 FAILED permanently
+[hostC_106] chunk 129 attempt 1 failed, retry in 5s
+[hostC_106] chunk 129 attempt 2 failed, retry in 5s
+[hostC_106] chunk 129 attempt 3 failed, retry in 5s
+[hostC_106] chunk 129 attempt 4 failed, retry in 5s
+[hostC_106] chunk 129 attempt 5 failed, retry in 5s
+[hostC_106] chunk 129 attempt 6 failed, retry in 5s
+[hostC_106] chunk 129 FAILED permanently
+[hostC_106] chunk 130 attempt 1 failed, retry in 5s
+[hostC_106] chunk 130 attempt 2 failed, retry in 5s
+[hostC_106] chunk 130 attempt 3 failed, retry in 5s
+[hostC_106] chunk 130 attempt 4 failed, retry in 5s
+[hostC_106] chunk 130 attempt 5 failed, retry in 5s
+[hostC_106] chunk 130 attempt 6 failed, retry in 5s
+[hostC_106] chunk 130 FAILED permanently
+[hostC_106] chunk 131 attempt 1 failed, retry in 5s
+[hostC_106] chunk 131 attempt 2 failed, retry in 5s
+[hostC_106] chunk 131 attempt 3 failed, retry in 5s
+[hostC_106] chunk 131 attempt 4 failed, retry in 5s
+[hostC_106] chunk 131 attempt 5 failed, retry in 5s
+[hostC_106] chunk 131 attempt 6 failed, retry in 5s
+[hostC_106] chunk 131 FAILED permanently
+[hostC_106] chunk 132 attempt 1 failed, retry in 5s
+[hostC_106] chunk 132 attempt 2 failed, retry in 5s
+[hostC_106] chunk 132 attempt 3 failed, retry in 5s
+[hostC_106] chunk 132 attempt 4 failed, retry in 5s
+[hostC_106] chunk 132 attempt 5 failed, retry in 5s
+[hostC_106] chunk 132 attempt 6 failed, retry in 5s
+[hostC_106] chunk 132 FAILED permanently
+[hostC_106] chunk 133 attempt 1 failed, retry in 5s
+[hostC_106] chunk 133 attempt 2 failed, retry in 5s
+[hostC_106] chunk 133 attempt 3 failed, retry in 5s
+[hostC_106] chunk 133 attempt 4 failed, retry in 5s
+[hostC_106] chunk 133 attempt 5 failed, retry in 5s
+[hostC_106] chunk 133 attempt 6 failed, retry in 5s
+[hostC_106] chunk 133 FAILED permanently
+[hostC_106] chunk 134 attempt 1 failed, retry in 5s
+[hostC_106] chunk 134 attempt 2 failed, retry in 5s
+[hostC_106] chunk 134 attempt 3 failed, retry in 5s
+[hostC_106] chunk 134 attempt 4 failed, retry in 5s
+[hostC_106] chunk 134 attempt 5 failed, retry in 5s
+[hostC_106] chunk 134 attempt 6 failed, retry in 5s
+[hostC_106] chunk 134 FAILED permanently
+[hostC_106] chunk 135 attempt 1 failed, retry in 5s
+[hostC_106] chunk 135 attempt 2 failed, retry in 5s
+[hostC_106] chunk 135 attempt 3 failed, retry in 5s
+[hostC_106] chunk 135 attempt 4 failed, retry in 5s
+[hostC_106] chunk 135 attempt 5 failed, retry in 5s
+[hostC_106] chunk 135 attempt 6 failed, retry in 5s
+[hostC_106] chunk 135 FAILED permanently
+[hostC_106] chunk 136 attempt 1 failed, retry in 5s
+[hostC_106] chunk 136 attempt 2 failed, retry in 5s
+[hostC_106] chunk 136 attempt 3 failed, retry in 5s
+[hostC_106] chunk 136 attempt 4 failed, retry in 5s
+[hostC_106] chunk 136 attempt 5 failed, retry in 5s
+[hostC_106] chunk 136 attempt 6 failed, retry in 5s
+[hostC_106] chunk 136 FAILED permanently
+[hostC_106] chunk 137 attempt 1 failed, retry in 5s
+[hostC_106] chunk 137 attempt 2 failed, retry in 5s
+[hostC_106] chunk 137 attempt 3 failed, retry in 5s
+[hostC_106] chunk 137 attempt 4 failed, retry in 5s
+[hostC_106] chunk 137 attempt 5 failed, retry in 5s
+[hostC_106] chunk 137 attempt 6 failed, retry in 5s
+[hostC_106] chunk 137 FAILED permanently
+[hostC_106] chunk 138 attempt 1 failed, retry in 5s
+[hostC_106] chunk 138 attempt 2 failed, retry in 5s
+[hostC_106] chunk 138 attempt 3 failed, retry in 5s
+[hostC_106] chunk 138 attempt 4 failed, retry in 5s
+[hostC_106] chunk 138 attempt 5 failed, retry in 5s
+[hostC_106] chunk 138 attempt 6 failed, retry in 5s
+[hostC_106] chunk 138 FAILED permanently
+[hostC_106] chunk 139 attempt 1 failed, retry in 5s
+[hostC_106] chunk 139 attempt 2 failed, retry in 5s
+[hostC_106] chunk 139 attempt 3 failed, retry in 5s
+[hostC_106] chunk 139 attempt 4 failed, retry in 5s
+[hostC_106] chunk 139 attempt 5 failed, retry in 5s
+[hostC_106] chunk 139 attempt 6 failed, retry in 5s
+[hostC_106] chunk 139 FAILED permanently
+[hostC_106] chunk 140 attempt 1 failed, retry in 5s
+[hostC_106] chunk 140 attempt 2 failed, retry in 5s
+[hostC_106] chunk 140 attempt 3 failed, retry in 5s
+[hostC_106] chunk 140 attempt 4 failed, retry in 5s
+[hostC_106] chunk 140 attempt 5 failed, retry in 5s
+[hostC_106] chunk 140 attempt 6 failed, retry in 5s
+[hostC_106] chunk 140 FAILED permanently
+[hostC_106] chunk 141 attempt 1 failed, retry in 5s
+[hostC_106] chunk 141 attempt 2 failed, retry in 5s
+[hostC_106] chunk 141 attempt 3 failed, retry in 5s
+[hostC_106] chunk 141 attempt 4 failed, retry in 5s
+[hostC_106] chunk 141 attempt 5 failed, retry in 5s
+[hostC_106] chunk 141 attempt 6 failed, retry in 5s
+[hostC_106] chunk 141 FAILED permanently
+[hostC_106] chunk 142 attempt 1 failed, retry in 5s
+[hostC_106] chunk 142 attempt 2 failed, retry in 5s
+[hostC_106] chunk 142 attempt 3 failed, retry in 5s
+[hostC_106] chunk 142 attempt 4 failed, retry in 5s
+[hostC_106] chunk 142 attempt 5 failed, retry in 5s
+[hostC_106] chunk 142 attempt 6 failed, retry in 5s
+[hostC_106] chunk 142 FAILED permanently
+[hostC_106] chunk 143 attempt 1 failed, retry in 5s
+[hostC_106] chunk 143 attempt 2 failed, retry in 5s
+[hostC_106] chunk 143 attempt 3 failed, retry in 5s
+[hostC_106] chunk 143 attempt 4 failed, retry in 5s
+[hostC_106] chunk 143 attempt 5 failed, retry in 5s
+[hostC_106] chunk 143 attempt 6 failed, retry in 5s
+[hostC_106] chunk 143 FAILED permanently
+[hostC_106] chunk 144 attempt 1 failed, retry in 5s
+[hostC_106] chunk 144 attempt 2 failed, retry in 5s
+[hostC_106] chunk 144 attempt 3 failed, retry in 5s
+[hostC_106] chunk 144 attempt 4 failed, retry in 5s
+[hostC_106] chunk 144 attempt 5 failed, retry in 5s
+[hostC_106] chunk 144 attempt 6 failed, retry in 5s
+[hostC_106] chunk 144 FAILED permanently
+[hostC_106] chunk 145 attempt 1 failed, retry in 5s
+[hostC_106] chunk 145 attempt 2 failed, retry in 5s
+[hostC_106] chunk 145 attempt 3 failed, retry in 5s
+[hostC_106] chunk 145 attempt 4 failed, retry in 5s
+[hostC_106] chunk 145 attempt 5 failed, retry in 5s
+[hostC_106] chunk 145 attempt 6 failed, retry in 5s
+[hostC_106] chunk 145 FAILED permanently
+[hostC_106] chunk 146 attempt 1 failed, retry in 5s
+[hostC_106] chunk 146 attempt 2 failed, retry in 5s
+[hostC_106] chunk 146 attempt 3 failed, retry in 5s
+[hostC_106] chunk 146 attempt 4 failed, retry in 5s
+[hostC_106] chunk 146 attempt 5 failed, retry in 5s
+[hostC_106] chunk 146 attempt 6 failed, retry in 5s
+[hostC_106] chunk 146 FAILED permanently
+[hostC_106] chunk 147 attempt 1 failed, retry in 5s
+[hostC_106] chunk 147 attempt 2 failed, retry in 5s
+[hostC_106] chunk 147 attempt 3 failed, retry in 5s
+[hostC_106] chunk 147 attempt 4 failed, retry in 5s
+[hostC_106] chunk 147 attempt 5 failed, retry in 5s
+[hostC_106] chunk 147 attempt 6 failed, retry in 5s
+[hostC_106] chunk 147 FAILED permanently
+[hostC_106] chunk 148 attempt 1 failed, retry in 5s
+[hostC_106] chunk 148 attempt 2 failed, retry in 5s
+[hostC_106] chunk 148 attempt 3 failed, retry in 5s
+[hostC_106] chunk 148 attempt 4 failed, retry in 5s
+[hostC_106] chunk 148 attempt 5 failed, retry in 5s
+[hostC_106] chunk 148 attempt 6 failed, retry in 5s
+[hostC_106] chunk 148 FAILED permanently
+[hostC_106] chunk 149 attempt 1 failed, retry in 5s
+[hostC_106] chunk 149 attempt 2 failed, retry in 5s
+[hostC_106] chunk 149 attempt 3 failed, retry in 5s
+[hostC_106] chunk 149 attempt 4 failed, retry in 5s
+[hostC_106] chunk 149 attempt 5 failed, retry in 5s
+[hostC_106] chunk 149 attempt 6 failed, retry in 5s
+[hostC_106] chunk 149 FAILED permanently
+[hostC_106] chunk 150 attempt 1 failed, retry in 5s
+[hostC_106] chunk 150 attempt 2 failed, retry in 5s
+[hostC_106] chunk 150 attempt 3 failed, retry in 5s
+[hostC_106] chunk 150 attempt 4 failed, retry in 5s
+[hostC_106] chunk 150 attempt 5 failed, retry in 5s
+[hostC_106] chunk 150 attempt 6 failed, retry in 5s
+[hostC_106] chunk 150 FAILED permanently
+[hostC_106] chunk 151 attempt 1 failed, retry in 5s
+[hostC_106] chunk 151 attempt 2 failed, retry in 5s
+[hostC_106] chunk 151 attempt 3 failed, retry in 5s
+[hostC_106] chunk 151 attempt 4 failed, retry in 5s
+[hostC_106] chunk 151 attempt 5 failed, retry in 5s
+[hostC_106] chunk 151 attempt 6 failed, retry in 5s
+[hostC_106] chunk 151 FAILED permanently
+[hostC_106] chunk 152 attempt 1 failed, retry in 5s
+[hostC_106] chunk 152 attempt 2 failed, retry in 5s
+[hostC_106] chunk 152 attempt 3 failed, retry in 5s
+[hostC_106] chunk 152 attempt 4 failed, retry in 5s
+[hostC_106] chunk 152 attempt 5 failed, retry in 5s
+[hostC_106] chunk 152 attempt 6 failed, retry in 5s
+[hostC_106] chunk 152 FAILED permanently
+[hostC_106] chunk 153 attempt 1 failed, retry in 5s
+[hostC_106] chunk 153 attempt 2 failed, retry in 5s
+[hostC_106] chunk 153 attempt 3 failed, retry in 5s
+[hostC_106] chunk 153 attempt 4 failed, retry in 5s
+[hostC_106] chunk 153 attempt 5 failed, retry in 5s
+[hostC_106] chunk 153 attempt 6 failed, retry in 5s
+[hostC_106] chunk 153 FAILED permanently
+[hostC_106] chunk 154 attempt 1 failed, retry in 5s
+[hostC_106] chunk 154 attempt 2 failed, retry in 5s
+[hostC_106] chunk 154 attempt 3 failed, retry in 5s
+[hostC_106] chunk 154 attempt 4 failed, retry in 5s
+[hostC_106] chunk 154 attempt 5 failed, retry in 5s
+[hostC_106] chunk 154 attempt 6 failed, retry in 5s
+[hostC_106] chunk 154 FAILED permanently
+[hostC_106] chunk 155 attempt 1 failed, retry in 5s
+[hostC_106] chunk 155 attempt 2 failed, retry in 5s
+[hostC_106] chunk 155 attempt 3 failed, retry in 5s
+[hostC_106] chunk 155 attempt 4 failed, retry in 5s
+[hostC_106] chunk 155 attempt 5 failed, retry in 5s
+[hostC_106] chunk 155 attempt 6 failed, retry in 5s
+[hostC_106] chunk 155 FAILED permanently
+[hostC_106] chunk 156 attempt 1 failed, retry in 5s
+[hostC_106] chunk 156 attempt 2 failed, retry in 5s
+[hostC_106] chunk 156 attempt 3 failed, retry in 5s
+[hostC_106] chunk 156 attempt 4 failed, retry in 5s
+[hostC_106] chunk 156 attempt 5 failed, retry in 5s
+[hostC_106] chunk 156 attempt 6 failed, retry in 5s
+[hostC_106] chunk 156 FAILED permanently
+[hostC_106] chunk 157 attempt 1 failed, retry in 5s
+[hostC_106] chunk 157 attempt 2 failed, retry in 5s
+[hostC_106] chunk 157 attempt 3 failed, retry in 5s
+[hostC_106] chunk 157 attempt 4 failed, retry in 5s
+[hostC_106] chunk 157 attempt 5 failed, retry in 5s
+[hostC_106] chunk 157 attempt 6 failed, retry in 5s
+[hostC_106] chunk 157 FAILED permanently
+[hostC_106] chunk 158 attempt 1 failed, retry in 5s
+[hostC_106] chunk 158 attempt 2 failed, retry in 5s
+[hostC_106] chunk 158 attempt 3 failed, retry in 5s
+[hostC_106] chunk 158 attempt 4 failed, retry in 5s
+[hostC_106] chunk 158 attempt 5 failed, retry in 5s
+[hostC_106] chunk 158 attempt 6 failed, retry in 5s
+[hostC_106] chunk 158 FAILED permanently
+[hostC_106] chunk 159 attempt 1 failed, retry in 5s
+[hostC_106] chunk 159 attempt 2 failed, retry in 5s
+[hostC_106] chunk 159 attempt 3 failed, retry in 5s
+[hostC_106] chunk 159 attempt 4 failed, retry in 5s
+[hostC_106] chunk 159 attempt 5 failed, retry in 5s
+[hostC_106] chunk 159 attempt 6 failed, retry in 5s
+[hostC_106] chunk 159 FAILED permanently
+[hostC_106] chunk 160 attempt 1 failed, retry in 5s
+[hostC_106] chunk 160 attempt 2 failed, retry in 5s
+[hostC_106] chunk 160 attempt 3 failed, retry in 5s
+[hostC_106] chunk 160 attempt 4 failed, retry in 5s
+[hostC_106] chunk 160 attempt 5 failed, retry in 5s
+[hostC_106] chunk 160 attempt 6 failed, retry in 5s
+[hostC_106] chunk 160 FAILED permanently
+[hostC_106] chunk 161 attempt 1 failed, retry in 5s
+[hostC_106] chunk 161 attempt 2 failed, retry in 5s
+[hostC_106] chunk 161 attempt 3 failed, retry in 5s
+[hostC_106] chunk 161 attempt 4 failed, retry in 5s
+[hostC_106] chunk 161 attempt 5 failed, retry in 5s
+[hostC_106] chunk 161 attempt 6 failed, retry in 5s
+[hostC_106] chunk 161 FAILED permanently
+[hostC_106] chunk 162 attempt 1 failed, retry in 5s
+[hostC_106] chunk 162 attempt 2 failed, retry in 5s
+[hostC_106] chunk 162 attempt 3 failed, retry in 5s
+[hostC_106] chunk 162 attempt 4 failed, retry in 5s
+[hostC_106] chunk 162 attempt 5 failed, retry in 5s
+[hostC_106] chunk 162 attempt 6 failed, retry in 5s
+[hostC_106] chunk 162 FAILED permanently
+[hostC_106] chunk 163 attempt 1 failed, retry in 5s
+[hostC_106] chunk 163 attempt 2 failed, retry in 5s
+[hostC_106] chunk 163 attempt 3 failed, retry in 5s
+[hostC_106] chunk 163 attempt 4 failed, retry in 5s
+[hostC_106] chunk 163 attempt 5 failed, retry in 5s
+[hostC_106] chunk 163 attempt 6 failed, retry in 5s
+[hostC_106] chunk 163 FAILED permanently
+[hostC_106] chunk 164 attempt 1 failed, retry in 5s
+[hostC_106] chunk 164 attempt 2 failed, retry in 5s
+[hostC_106] chunk 164 attempt 3 failed, retry in 5s
+[hostC_106] chunk 164 attempt 4 failed, retry in 5s
+[hostC_106] chunk 164 attempt 5 failed, retry in 5s
+[hostC_106] chunk 164 attempt 6 failed, retry in 5s
+[hostC_106] chunk 164 FAILED permanently
+[hostC_106] chunk 165 attempt 1 failed, retry in 5s
+[hostC_106] chunk 165 attempt 2 failed, retry in 5s
+[hostC_106] chunk 165 attempt 3 failed, retry in 5s
+[hostC_106] chunk 165 attempt 4 failed, retry in 5s
+[hostC_106] chunk 165 attempt 5 failed, retry in 5s
+[hostC_106] chunk 165 attempt 6 failed, retry in 5s
+[hostC_106] chunk 165 FAILED permanently
+[hostC_106] chunk 166 attempt 1 failed, retry in 5s
+[hostC_106] chunk 166 attempt 2 failed, retry in 5s
+[hostC_106] chunk 166 attempt 3 failed, retry in 5s
+[hostC_106] chunk 166 attempt 4 failed, retry in 5s
+[hostC_106] chunk 166 attempt 5 failed, retry in 5s
+[hostC_106] chunk 166 attempt 6 failed, retry in 5s
+[hostC_106] chunk 166 FAILED permanently
+[hostC_106] chunk 167 attempt 1 failed, retry in 5s
+[hostC_106] chunk 167 attempt 2 failed, retry in 5s
+[hostC_106] chunk 167 attempt 3 failed, retry in 5s
+[hostC_106] chunk 167 attempt 4 failed, retry in 5s
+[hostC_106] chunk 167 attempt 5 failed, retry in 5s
+[hostC_106] chunk 167 attempt 6 failed, retry in 5s
+[hostC_106] chunk 167 FAILED permanently
+[hostC_106] chunk 168 attempt 1 failed, retry in 5s
+[hostC_106] chunk 168 attempt 2 failed, retry in 5s
+[hostC_106] chunk 168 attempt 3 failed, retry in 5s
+[hostC_106] chunk 168 attempt 4 failed, retry in 5s
+[hostC_106] chunk 168 attempt 5 failed, retry in 5s
+[hostC_106] chunk 168 attempt 6 failed, retry in 5s
+[hostC_106] chunk 168 FAILED permanently
+[hostC_106] chunk 169 attempt 1 failed, retry in 5s
+[hostC_106] chunk 169 attempt 2 failed, retry in 5s
+[hostC_106] chunk 169 attempt 3 failed, retry in 5s
+[hostC_106] chunk 169 attempt 4 failed, retry in 5s
+[hostC_106] chunk 169 attempt 5 failed, retry in 5s
+[hostC_106] chunk 169 attempt 6 failed, retry in 5s
+[hostC_106] chunk 169 FAILED permanently
+[hostC_106] chunk 170 attempt 1 failed, retry in 5s
+[hostC_106] chunk 170 attempt 2 failed, retry in 5s
+[hostC_106] chunk 170 attempt 3 failed, retry in 5s
+[hostC_106] chunk 170 attempt 4 failed, retry in 5s
+[hostC_106] chunk 170 attempt 5 failed, retry in 5s
+[hostC_106] chunk 170 attempt 6 failed, retry in 5s
+[hostC_106] chunk 170 FAILED permanently
+[hostC_106] chunk 171 attempt 1 failed, retry in 5s
+[hostC_106] chunk 171 attempt 2 failed, retry in 5s
+[hostC_106] chunk 171 attempt 3 failed, retry in 5s
+[hostC_106] chunk 171 attempt 4 failed, retry in 5s
+[hostC_106] chunk 171 attempt 5 failed, retry in 5s
+[hostC_106] chunk 171 attempt 6 failed, retry in 5s
+[hostC_106] chunk 171 FAILED permanently
+[hostC_106] chunk 172 attempt 1 failed, retry in 5s
+[hostC_106] chunk 172 attempt 2 failed, retry in 5s
+[hostC_106] chunk 172 attempt 3 failed, retry in 5s
+[hostC_106] chunk 172 attempt 4 failed, retry in 5s
+[hostC_106] chunk 172 attempt 5 failed, retry in 5s
+[hostC_106] chunk 172 attempt 6 failed, retry in 5s
+[hostC_106] chunk 172 FAILED permanently
+[hostC_106] chunk 173 attempt 1 failed, retry in 5s
+[hostC_106] chunk 173 attempt 2 failed, retry in 5s
+[hostC_106] chunk 173 attempt 3 failed, retry in 5s
+[hostC_106] chunk 173 attempt 4 failed, retry in 5s
+[hostC_106] chunk 173 attempt 5 failed, retry in 5s
+[hostC_106] chunk 173 attempt 6 failed, retry in 5s
+[hostC_106] chunk 173 FAILED permanently
+[hostC_106] chunk 174 attempt 1 failed, retry in 5s
+[hostC_106] chunk 174 attempt 2 failed, retry in 5s
+[hostC_106] chunk 174 attempt 3 failed, retry in 5s
+[hostC_106] chunk 174 attempt 4 failed, retry in 5s
+[hostC_106] chunk 174 attempt 5 failed, retry in 5s
+[hostC_106] chunk 174 attempt 6 failed, retry in 5s
+[hostC_106] chunk 174 FAILED permanently
+[hostC_106] chunk 175 attempt 1 failed, retry in 5s
+[hostC_106] chunk 175 attempt 2 failed, retry in 5s
+[hostC_106] chunk 175 attempt 3 failed, retry in 5s
+[hostC_106] chunk 175 attempt 4 failed, retry in 5s
+[hostC_106] chunk 175 attempt 5 failed, retry in 5s
+[hostC_106] chunk 175 attempt 6 failed, retry in 5s
+[hostC_106] chunk 175 FAILED permanently
+[hostC_106] chunk 176 attempt 1 failed, retry in 5s
+[hostC_106] chunk 176 attempt 2 failed, retry in 5s
+[hostC_106] chunk 176 attempt 3 failed, retry in 5s
+[hostC_106] chunk 176 attempt 4 failed, retry in 5s
+[hostC_106] chunk 176 attempt 5 failed, retry in 5s
+[hostC_106] chunk 176 attempt 6 failed, retry in 5s
+[hostC_106] chunk 176 FAILED permanently
+[hostC_106] chunk 177 attempt 1 failed, retry in 5s
+[hostC_106] chunk 177 attempt 2 failed, retry in 5s
+[hostC_106] chunk 177 attempt 3 failed, retry in 5s
+[hostC_106] chunk 177 attempt 4 failed, retry in 5s
+[hostC_106] chunk 177 attempt 5 failed, retry in 5s
+[hostC_106] chunk 177 attempt 6 failed, retry in 5s
+[hostC_106] chunk 177 FAILED permanently
+[hostC_106] chunk 178 attempt 1 failed, retry in 5s
+[hostC_106] chunk 178 attempt 2 failed, retry in 5s
+[hostC_106] chunk 178 attempt 3 failed, retry in 5s
+[hostC_106] chunk 178 attempt 4 failed, retry in 5s
+[hostC_106] chunk 178 attempt 5 failed, retry in 5s
+[hostC_106] chunk 178 attempt 6 failed, retry in 5s
+[hostC_106] chunk 178 FAILED permanently
+[hostC_106] chunk 179 attempt 1 failed, retry in 5s
+[hostC_106] chunk 179 attempt 2 failed, retry in 5s
+[hostC_106] chunk 179 attempt 3 failed, retry in 5s
+[hostC_106] chunk 179 attempt 4 failed, retry in 5s
+[hostC_106] chunk 179 attempt 5 failed, retry in 5s
+[hostC_106] chunk 179 attempt 6 failed, retry in 5s
+[hostC_106] chunk 179 FAILED permanently
+[hostC_106] chunk 180 attempt 1 failed, retry in 5s
+[hostC_106] chunk 180 attempt 2 failed, retry in 5s
+[hostC_106] chunk 180 attempt 3 failed, retry in 5s
+[hostC_106] chunk 180 attempt 4 failed, retry in 5s
+[hostC_106] chunk 180 attempt 5 failed, retry in 5s
+[hostC_106] chunk 180 attempt 6 failed, retry in 5s
+[hostC_106] chunk 180 FAILED permanently
+[hostC_106] chunk 181 attempt 1 failed, retry in 5s
+[hostC_106] chunk 181 attempt 2 failed, retry in 5s
+[hostC_106] chunk 181 attempt 3 failed, retry in 5s
+[hostC_106] chunk 181 attempt 4 failed, retry in 5s
+[hostC_106] chunk 181 attempt 5 failed, retry in 5s
+[hostC_106] chunk 181 attempt 6 failed, retry in 5s
+[hostC_106] chunk 181 FAILED permanently
+[hostC_106] chunk 182 attempt 1 failed, retry in 5s
+[hostC_106] chunk 182 attempt 2 failed, retry in 5s
+[hostC_106] chunk 182 attempt 3 failed, retry in 5s
+[hostC_106] chunk 182 attempt 4 failed, retry in 5s
+[hostC_106] chunk 182 attempt 5 failed, retry in 5s
+[hostC_106] chunk 182 attempt 6 failed, retry in 5s
+[hostC_106] chunk 182 FAILED permanently
+[hostC_106] chunk 183 attempt 1 failed, retry in 5s
+[hostC_106] chunk 183 attempt 2 failed, retry in 5s
+[hostC_106] chunk 183 attempt 3 failed, retry in 5s
+[hostC_106] chunk 183 attempt 4 failed, retry in 5s
+[hostC_106] chunk 183 attempt 5 failed, retry in 5s
+[hostC_106] chunk 183 attempt 6 failed, retry in 5s
+[hostC_106] chunk 183 FAILED permanently
+[hostC_106] chunk 184 attempt 1 failed, retry in 5s
+[hostC_106] chunk 184 attempt 2 failed, retry in 5s
+[hostC_106] chunk 184 attempt 3 failed, retry in 5s
+[hostC_106] chunk 184 attempt 4 failed, retry in 5s
+[hostC_106] chunk 184 attempt 5 failed, retry in 5s
+[hostC_106] chunk 184 attempt 6 failed, retry in 5s
+[hostC_106] chunk 184 FAILED permanently
+[hostC_106] chunk 185 attempt 1 failed, retry in 5s
+[hostC_106] chunk 185 attempt 2 failed, retry in 5s
+[hostC_106] chunk 185 attempt 3 failed, retry in 5s
+[hostC_106] chunk 185 attempt 4 failed, retry in 5s
+[hostC_106] chunk 185 attempt 5 failed, retry in 5s
+[hostC_106] chunk 185 attempt 6 failed, retry in 5s
+[hostC_106] chunk 185 FAILED permanently
+[hostC_106] chunk 186 attempt 1 failed, retry in 5s
+[hostC_106] chunk 186 attempt 2 failed, retry in 5s
+[hostC_106] chunk 186 attempt 3 failed, retry in 5s
+[hostC_106] chunk 186 attempt 4 failed, retry in 5s
+[hostC_106] chunk 186 attempt 5 failed, retry in 5s
+[hostC_106] chunk 186 attempt 6 failed, retry in 5s
+[hostC_106] chunk 186 FAILED permanently
+[hostC_106] chunk 187 attempt 1 failed, retry in 5s
+[hostC_106] chunk 187 attempt 2 failed, retry in 5s
+[hostC_106] chunk 187 attempt 3 failed, retry in 5s
+[hostC_106] chunk 187 attempt 4 failed, retry in 5s
+[hostC_106] chunk 187 attempt 5 failed, retry in 5s
+[hostC_106] chunk 187 attempt 6 failed, retry in 5s
+[hostC_106] chunk 187 FAILED permanently
+[hostC_106] chunk 188 attempt 1 failed, retry in 5s
+[hostC_106] chunk 188 attempt 2 failed, retry in 5s
+[hostC_106] chunk 188 attempt 3 failed, retry in 5s
+[hostC_106] chunk 188 attempt 4 failed, retry in 5s
+[hostC_106] chunk 188 attempt 5 failed, retry in 5s
+[hostC_106] chunk 188 attempt 6 failed, retry in 5s
+[hostC_106] chunk 188 FAILED permanently
+[hostC_106] chunk 189 attempt 1 failed, retry in 5s
+[hostC_106] chunk 189 attempt 2 failed, retry in 5s
+[hostC_106] chunk 189 attempt 3 failed, retry in 5s
+[hostC_106] chunk 189 attempt 4 failed, retry in 5s
+[hostC_106] chunk 189 attempt 5 failed, retry in 5s
+[hostC_106] chunk 189 attempt 6 failed, retry in 5s
+[hostC_106] chunk 189 FAILED permanently
+[hostC_106] chunk 190 attempt 1 failed, retry in 5s
+[hostC_106] chunk 190 attempt 2 failed, retry in 5s
+[hostC_106] chunk 190 attempt 3 failed, retry in 5s
+[hostC_106] chunk 190 attempt 4 failed, retry in 5s
+[hostC_106] chunk 190 attempt 5 failed, retry in 5s
+[hostC_106] chunk 190 attempt 6 failed, retry in 5s
+[hostC_106] chunk 190 FAILED permanently
+[hostC_106] chunk 191 attempt 1 failed, retry in 5s
+[hostC_106] chunk 191 attempt 2 failed, retry in 5s
+[hostC_106] chunk 191 attempt 3 failed, retry in 5s
+[hostC_106] chunk 191 attempt 4 failed, retry in 5s
+[hostC_106] chunk 191 attempt 5 failed, retry in 5s
+[hostC_106] chunk 191 attempt 6 failed, retry in 5s
+[hostC_106] chunk 191 FAILED permanently
+[hostC_106] chunk 192 attempt 1 failed, retry in 5s
+[hostC_106] chunk 192 attempt 2 failed, retry in 5s
+[hostC_106] chunk 192 attempt 3 failed, retry in 5s
+[hostC_106] chunk 192 attempt 4 failed, retry in 5s
+[hostC_106] chunk 192 attempt 5 failed, retry in 5s
+[hostC_106] chunk 192 attempt 6 failed, retry in 5s
+[hostC_106] chunk 192 FAILED permanently
+[hostC_106] chunk 193 attempt 1 failed, retry in 5s
+[hostC_106] chunk 193 attempt 2 failed, retry in 5s
+[hostC_106] chunk 193 attempt 3 failed, retry in 5s
+[hostC_106] chunk 193 attempt 4 failed, retry in 5s
+[hostC_106] chunk 193 attempt 5 failed, retry in 5s
+[hostC_106] chunk 193 attempt 6 failed, retry in 5s
+[hostC_106] chunk 193 FAILED permanently
+[hostC_106] chunk 194 attempt 1 failed, retry in 5s
+[hostC_106] chunk 194 attempt 2 failed, retry in 5s
+[hostC_106] chunk 194 attempt 3 failed, retry in 5s
+[hostC_106] chunk 194 attempt 4 failed, retry in 5s
+[hostC_106] chunk 194 attempt 5 failed, retry in 5s
+[hostC_106] chunk 194 attempt 6 failed, retry in 5s
+[hostC_106] chunk 194 FAILED permanently
+[hostC_106] chunk 195 attempt 1 failed, retry in 5s
+[hostC_106] chunk 195 attempt 2 failed, retry in 5s
+[hostC_106] chunk 195 attempt 3 failed, retry in 5s
+[hostC_106] chunk 195 attempt 4 failed, retry in 5s
+[hostC_106] chunk 195 attempt 5 failed, retry in 5s
+[hostC_106] chunk 195 attempt 6 failed, retry in 5s
+[hostC_106] chunk 195 FAILED permanently
+[hostC_106] chunk 196 attempt 1 failed, retry in 5s
+[hostC_106] chunk 196 attempt 2 failed, retry in 5s
+[hostC_106] chunk 196 attempt 3 failed, retry in 5s
+[hostC_106] chunk 196 attempt 4 failed, retry in 5s
+[hostC_106] chunk 196 attempt 5 failed, retry in 5s
+[hostC_106] chunk 196 attempt 6 failed, retry in 5s
+[hostC_106] chunk 196 FAILED permanently
+[hostC_106] chunk 197 attempt 1 failed, retry in 5s
+[hostC_106] chunk 197 attempt 2 failed, retry in 5s
+[hostC_106] chunk 197 attempt 3 failed, retry in 5s
+[hostC_106] chunk 197 attempt 4 failed, retry in 5s
+[hostC_106] chunk 197 attempt 5 failed, retry in 5s
+[hostC_106] chunk 197 attempt 6 failed, retry in 5s
+[hostC_106] chunk 197 FAILED permanently
+[hostC_106] chunk 198 attempt 1 failed, retry in 5s
+[hostC_106] chunk 198 attempt 2 failed, retry in 5s
+[hostC_106] chunk 198 attempt 3 failed, retry in 5s
+[hostC_106] chunk 198 attempt 4 failed, retry in 5s
+[hostC_106] chunk 198 attempt 5 failed, retry in 5s
+[hostC_106] chunk 198 attempt 6 failed, retry in 5s
+[hostC_106] chunk 198 FAILED permanently
+[hostC_106] chunk 199 attempt 1 failed, retry in 5s
+[hostC_106] chunk 199 attempt 2 failed, retry in 5s
+[hostC_106] chunk 199 attempt 3 failed, retry in 5s
+[hostC_106] chunk 199 attempt 4 failed, retry in 5s
+[hostC_106] chunk 199 attempt 5 failed, retry in 5s
+[hostC_106] chunk 199 attempt 6 failed, retry in 5s
+[hostC_106] chunk 199 FAILED permanently
+[hostC_106] chunk 200 attempt 1 failed, retry in 5s
+[hostC_106] chunk 200 attempt 2 failed, retry in 5s
+[hostC_106] chunk 200 attempt 3 failed, retry in 5s
+[hostC_106] chunk 200 attempt 4 failed, retry in 5s
+[hostC_106] chunk 200 attempt 5 failed, retry in 5s
+[hostC_106] chunk 200 attempt 6 failed, retry in 5s
+[hostC_106] chunk 200 FAILED permanently
+[hostC_106] chunk 201 attempt 1 failed, retry in 5s
+[hostC_106] chunk 201 attempt 2 failed, retry in 5s
+[hostC_106] chunk 201 attempt 3 failed, retry in 5s
+[hostC_106] chunk 201 attempt 4 failed, retry in 5s
+[hostC_106] chunk 201 attempt 5 failed, retry in 5s
+[hostC_106] chunk 201 attempt 6 failed, retry in 5s
+[hostC_106] chunk 201 FAILED permanently
+[hostC_106] chunk 202 attempt 1 failed, retry in 5s
+[hostC_106] chunk 202 attempt 2 failed, retry in 5s
+[hostC_106] chunk 202 attempt 3 failed, retry in 5s
+[hostC_106] chunk 202 attempt 4 failed, retry in 5s
+[hostC_106] chunk 202 attempt 5 failed, retry in 5s
+[hostC_106] chunk 202 attempt 6 failed, retry in 5s
+[hostC_106] chunk 202 FAILED permanently
+[hostC_106] chunk 203 attempt 1 failed, retry in 5s
+[hostC_106] chunk 203 attempt 2 failed, retry in 5s
+[hostC_106] chunk 203 attempt 3 failed, retry in 5s
+[hostC_106] chunk 203 attempt 4 failed, retry in 5s
+[hostC_106] chunk 203 attempt 5 failed, retry in 5s
+[hostC_106] chunk 203 attempt 6 failed, retry in 5s
+[hostC_106] chunk 203 FAILED permanently
+[hostC_106] chunk 204 attempt 1 failed, retry in 5s
+[hostC_106] chunk 204 attempt 2 failed, retry in 5s
+[hostC_106] chunk 204 attempt 3 failed, retry in 5s
+[hostC_106] chunk 204 attempt 4 failed, retry in 5s
+[hostC_106] chunk 204 attempt 5 failed, retry in 5s
+[hostC_106] chunk 204 attempt 6 failed, retry in 5s
+[hostC_106] chunk 204 FAILED permanently
+[hostC_106] chunk 205 attempt 1 failed, retry in 5s
+[hostC_106] chunk 205 attempt 2 failed, retry in 5s
+[hostC_106] chunk 205 attempt 3 failed, retry in 5s
+[hostC_106] chunk 205 attempt 4 failed, retry in 5s
+[hostC_106] chunk 205 attempt 5 failed, retry in 5s
+[hostC_106] chunk 205 attempt 6 failed, retry in 5s
+[hostC_106] chunk 205 FAILED permanently
+[hostC_106] chunk 206 attempt 1 failed, retry in 5s
+[hostC_106] chunk 206 attempt 2 failed, retry in 5s
+[hostC_106] chunk 206 attempt 3 failed, retry in 5s
+[hostC_106] chunk 206 attempt 4 failed, retry in 5s
+[hostC_106] chunk 206 attempt 5 failed, retry in 5s
+[hostC_106] chunk 206 attempt 6 failed, retry in 5s
+[hostC_106] chunk 206 FAILED permanently
+[hostC_106] chunk 207 attempt 1 failed, retry in 5s
+[hostC_106] chunk 207 attempt 2 failed, retry in 5s
+[hostC_106] chunk 207 attempt 3 failed, retry in 5s
+[hostC_106] chunk 207 attempt 4 failed, retry in 5s
+[hostC_106] chunk 207 attempt 5 failed, retry in 5s
+[hostC_106] chunk 207 attempt 6 failed, retry in 5s
+[hostC_106] chunk 207 FAILED permanently
+[hostC_106] chunk 208 attempt 1 failed, retry in 5s
+[hostC_106] chunk 208 attempt 2 failed, retry in 5s
+[hostC_106] chunk 208 attempt 3 failed, retry in 5s
+[hostC_106] chunk 208 attempt 4 failed, retry in 5s
+[hostC_106] chunk 208 attempt 5 failed, retry in 5s
+[hostC_106] chunk 208 attempt 6 failed, retry in 5s
+[hostC_106] chunk 208 FAILED permanently
+[hostC_106] chunk 209 attempt 1 failed, retry in 5s
+[hostC_106] chunk 209 attempt 2 failed, retry in 5s
+[hostC_106] chunk 209 attempt 3 failed, retry in 5s
+[hostC_106] chunk 209 attempt 4 failed, retry in 5s
+[hostC_106] chunk 209 attempt 5 failed, retry in 5s
+[hostC_106] chunk 209 attempt 6 failed, retry in 5s
+[hostC_106] chunk 209 FAILED permanently
+[hostC_106] chunk 210 attempt 1 failed, retry in 5s
+[hostC_106] chunk 210 attempt 2 failed, retry in 5s
+[hostC_106] chunk 210 attempt 3 failed, retry in 5s
+[hostC_106] chunk 210 attempt 4 failed, retry in 5s
+[hostC_106] chunk 210 attempt 5 failed, retry in 5s
+[hostC_106] chunk 210 attempt 6 failed, retry in 5s
+[hostC_106] chunk 210 FAILED permanently
+[hostC_106] chunk 211 attempt 1 failed, retry in 5s
+[hostC_106] chunk 211 attempt 2 failed, retry in 5s
+[hostC_106] chunk 211 attempt 3 failed, retry in 5s
+[hostC_106] chunk 211 attempt 4 failed, retry in 5s
+[hostC_106] chunk 211 attempt 5 failed, retry in 5s
+[hostC_106] chunk 211 attempt 6 failed, retry in 5s
+[hostC_106] chunk 211 FAILED permanently
+[hostC_106] chunk 212 attempt 1 failed, retry in 5s
+[hostC_106] chunk 212 attempt 2 failed, retry in 5s
+[hostC_106] chunk 212 attempt 3 failed, retry in 5s
+[hostC_106] chunk 212 attempt 4 failed, retry in 5s
+[hostC_106] chunk 212 attempt 5 failed, retry in 5s
+[hostC_106] chunk 212 attempt 6 failed, retry in 5s
+[hostC_106] chunk 212 FAILED permanently
+[hostC_106] chunk 213 attempt 1 failed, retry in 5s
+[hostC_106] chunk 213 attempt 2 failed, retry in 5s
+[hostC_106] chunk 213 attempt 3 failed, retry in 5s
+[hostC_106] chunk 213 attempt 4 failed, retry in 5s
+[hostC_106] chunk 213 attempt 5 failed, retry in 5s
+[hostC_106] chunk 213 attempt 6 failed, retry in 5s
+[hostC_106] chunk 213 FAILED permanently
+[hostC_106] chunk 214 attempt 1 failed, retry in 5s
+[hostC_106] chunk 214 attempt 2 failed, retry in 5s
+[hostC_106] chunk 214 attempt 3 failed, retry in 5s
+[hostC_106] chunk 214 attempt 4 failed, retry in 5s
+[hostC_106] chunk 214 attempt 5 failed, retry in 5s
+[hostC_106] chunk 214 attempt 6 failed, retry in 5s
+[hostC_106] chunk 214 FAILED permanently
+[hostC_106] chunk 215 attempt 1 failed, retry in 5s
+[hostC_106] chunk 215 attempt 2 failed, retry in 5s
+[hostC_106] chunk 215 attempt 3 failed, retry in 5s
+[hostC_106] chunk 215 attempt 4 failed, retry in 5s
+[hostC_106] chunk 215 attempt 5 failed, retry in 5s
+[hostC_106] chunk 215 attempt 6 failed, retry in 5s
+[hostC_106] chunk 215 FAILED permanently
+[hostC_106] chunk 216 attempt 1 failed, retry in 5s
+[hostC_106] chunk 216 attempt 2 failed, retry in 5s
+[hostC_106] chunk 216 attempt 3 failed, retry in 5s
+[hostC_106] chunk 216 attempt 4 failed, retry in 5s
+[hostC_106] chunk 216 attempt 5 failed, retry in 5s
+[hostC_106] chunk 216 attempt 6 failed, retry in 5s
+[hostC_106] chunk 216 FAILED permanently
+[hostC_106] chunk 217 attempt 1 failed, retry in 5s
+[hostC_106] chunk 217 attempt 2 failed, retry in 5s
+[hostC_106] chunk 217 attempt 3 failed, retry in 5s
+[hostC_106] chunk 217 attempt 4 failed, retry in 5s
+[hostC_106] chunk 217 attempt 5 failed, retry in 5s
+[hostC_106] chunk 217 attempt 6 failed, retry in 5s
+[hostC_106] chunk 217 FAILED permanently
+[hostC_106] chunk 218 attempt 1 failed, retry in 5s
+[hostC_106] chunk 218 attempt 2 failed, retry in 5s
+[hostC_106] chunk 218 attempt 3 failed, retry in 5s
+[hostC_106] chunk 218 attempt 4 failed, retry in 5s
+[hostC_106] chunk 218 attempt 5 failed, retry in 5s
+[hostC_106] chunk 218 attempt 6 failed, retry in 5s
+[hostC_106] chunk 218 FAILED permanently
+[hostC_106] chunk 219 attempt 1 failed, retry in 5s
+[hostC_106] chunk 219 attempt 2 failed, retry in 5s
+[hostC_106] chunk 219 attempt 3 failed, retry in 5s
+[hostC_106] chunk 219 attempt 4 failed, retry in 5s
+[hostC_106] chunk 219 attempt 5 failed, retry in 5s
+[hostC_106] chunk 219 attempt 6 failed, retry in 5s
+[hostC_106] chunk 219 FAILED permanently
+[hostC_106] chunk 220 attempt 1 failed, retry in 5s
+[hostC_106] chunk 220 attempt 2 failed, retry in 5s
+[hostC_106] chunk 220 attempt 3 failed, retry in 5s
+[hostC_106] chunk 220 attempt 4 failed, retry in 5s
+[hostC_106] chunk 220 attempt 5 failed, retry in 5s
+[hostC_106] chunk 220 attempt 6 failed, retry in 5s
+[hostC_106] chunk 220 FAILED permanently
+[hostC_106] chunk 221 attempt 1 failed, retry in 5s
+[hostC_106] chunk 221 attempt 2 failed, retry in 5s
+[hostC_106] chunk 221 attempt 3 failed, retry in 5s
+[hostC_106] chunk 221 attempt 4 failed, retry in 5s
+[hostC_106] chunk 221 attempt 5 failed, retry in 5s
+[hostC_106] chunk 221 attempt 6 failed, retry in 5s
+[hostC_106] chunk 221 FAILED permanently
+[hostC_106] chunk 222 attempt 1 failed, retry in 5s
+[hostC_106] chunk 222 attempt 2 failed, retry in 5s
+[hostC_106] chunk 222 attempt 3 failed, retry in 5s
+[hostC_106] chunk 222 attempt 4 failed, retry in 5s
+[hostC_106] chunk 222 attempt 5 failed, retry in 5s
+[hostC_106] chunk 222 attempt 6 failed, retry in 5s
+[hostC_106] chunk 222 FAILED permanently
+[hostC_106] chunk 223 attempt 1 failed, retry in 5s
+[hostC_106] chunk 223 attempt 2 failed, retry in 5s
+[hostC_106] chunk 223 attempt 3 failed, retry in 5s
+[hostC_106] chunk 223 attempt 4 failed, retry in 5s
+[hostC_106] chunk 223 attempt 5 failed, retry in 5s
+[hostC_106] chunk 223 attempt 6 failed, retry in 5s
+[hostC_106] chunk 223 FAILED permanently
+[hostC_106] chunk 224 attempt 1 failed, retry in 5s
+[hostC_106] chunk 224 attempt 2 failed, retry in 5s
+[hostC_106] chunk 224 attempt 3 failed, retry in 5s
+[hostC_106] chunk 224 attempt 4 failed, retry in 5s
+[hostC_106] chunk 224 attempt 5 failed, retry in 5s
+[hostC_106] chunk 224 attempt 6 failed, retry in 5s
+[hostC_106] chunk 224 FAILED permanently
+[hostC_106] chunk 225 attempt 1 failed, retry in 5s
+[hostC_106] chunk 225 attempt 2 failed, retry in 5s
+[hostC_106] chunk 225 attempt 3 failed, retry in 5s
+[hostC_106] chunk 225 attempt 4 failed, retry in 5s
+[hostC_106] chunk 225 attempt 5 failed, retry in 5s
+[hostC_106] chunk 225 attempt 6 failed, retry in 5s
+[hostC_106] chunk 225 FAILED permanently
+[hostC_106] chunk 226 attempt 1 failed, retry in 5s
+[hostC_106] chunk 226 attempt 2 failed, retry in 5s
+[hostC_106] chunk 226 attempt 3 failed, retry in 5s
+[hostC_106] chunk 226 attempt 4 failed, retry in 5s
+[hostC_106] chunk 226 attempt 5 failed, retry in 5s
+[hostC_106] chunk 226 attempt 6 failed, retry in 5s
+[hostC_106] chunk 226 FAILED permanently
+[hostC_106] chunk 227 attempt 1 failed, retry in 5s
+[hostC_106] chunk 227 attempt 2 failed, retry in 5s
+[hostC_106] chunk 227 attempt 3 failed, retry in 5s
+[hostC_106] chunk 227 attempt 4 failed, retry in 5s
+[hostC_106] chunk 227 attempt 5 failed, retry in 5s
+[hostC_106] chunk 227 attempt 6 failed, retry in 5s
+[hostC_106] chunk 227 FAILED permanently
+[hostC_106] chunk 228 attempt 1 failed, retry in 5s
+[hostC_106] chunk 228 attempt 2 failed, retry in 5s
+[hostC_106] chunk 228 attempt 3 failed, retry in 5s
+[hostC_106] chunk 228 attempt 4 failed, retry in 5s
+[hostC_106] chunk 228 attempt 5 failed, retry in 5s
+[hostC_106] chunk 228 attempt 6 failed, retry in 5s
+[hostC_106] chunk 228 FAILED permanently
+[hostC_106] chunk 229 attempt 1 failed, retry in 5s
+[hostC_106] chunk 229 attempt 2 failed, retry in 5s
+[hostC_106] chunk 229 attempt 3 failed, retry in 5s
+[hostC_106] chunk 229 attempt 4 failed, retry in 5s
+[hostC_106] chunk 229 attempt 5 failed, retry in 5s
+[hostC_106] chunk 229 attempt 6 failed, retry in 5s
+[hostC_106] chunk 229 FAILED permanently
+[hostC_106] chunk 230 attempt 1 failed, retry in 5s
+[hostC_106] chunk 230 attempt 2 failed, retry in 5s
+[hostC_106] chunk 230 attempt 3 failed, retry in 5s
+[hostC_106] chunk 230 attempt 4 failed, retry in 5s
+[hostC_106] chunk 230 attempt 5 failed, retry in 5s
+[hostC_106] chunk 230 attempt 6 failed, retry in 5s
+[hostC_106] chunk 230 FAILED permanently
+[hostC_106] concatenating chunks
+[hostC_106] CONCAT OK size=622M
+[hostC_106] DONE
+ALL_IMAGES_DONE

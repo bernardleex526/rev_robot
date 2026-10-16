@@ -1,0 +1,2 @@
+ACTION=="add", SUBSYSTEM=="net", KERNEL=="wl*", NAME="wlan0"
+ACTION=="add", SUBSYSTEM=="net", KERNEL=="p2p*", NAME="p2p0"

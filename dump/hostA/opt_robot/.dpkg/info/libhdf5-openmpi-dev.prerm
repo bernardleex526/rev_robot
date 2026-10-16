@@ -1,0 +1,16 @@
+#!/bin/sh
+
+set -e
+
+if [ "$1" != "upgrade" ]; then
+  if [ "openmpi" != "serial" ]; then
+    update-alternatives \
+	--remove h5pcc /usr/bin/h5pcc.openmpi
+  fi
+  update-alternatives \
+	--remove hdf5.pc /usr/lib/aarch64-linux-gnu/pkgconfig/hdf5-openmpi.pc
+fi
+
+
+
+exit 0

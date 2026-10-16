@@ -1,0 +1,2013 @@
+/home/lee/rea/tools/ghidra_rl_obs.py:27: DeprecationWarning: open_program() is deprecated, use open_project() and program_context() or program_loader() instead.
+  with pyghidra.open_program(BIN) as api:
+
+========================================================================
+===== RLControlState::UpdateRobotObservation  (expected @ 0x1bc81c)
+  actual: UpdateRobotObservation @ 001bc81c
+========================================================================
+
+/* WARNING: Removing unreachable block (ram,0x001bd0b0) */
+/* WARNING: Removing unreachable block (ram,0x001bd0c8) */
+/* WARNING: Removing unreachable block (ram,0x001bd0d8) */
+/* WARNING: Removing unreachable block (ram,0x001bc984) */
+/* WARNING: Removing unreachable block (ram,0x001bd0b8) */
+/* WARNING: Removing unreachable block (ram,0x001bc91c) */
+/* WARNING: Removing unreachable block (ram,0x001bd0e0) */
+/* WARNING: Restarted to delay deadcode elimination for space: stack */
+/* DWARF original prototype: void UpdateRobotObservation(RLControlState * this) */
+
+void __thiscall qw_m20::RLControlState::UpdateRobotObservation(RLControlState *this)
+
+{
+  MatrixXf *pMVar1;
+  evaluator<Eigen::PlainObjectBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>_> eVar2;
+  uint uVar3;
+  ulong uVar4;
+  variable_if_dynamic<long_int,__1> *pvVar5;
+  long lVar6;
+  void *pvVar7;
+  float *pfVar8;
+  float *start;
+  ConstRealViewReturnType pBVar9;
+  variable_if_dynamic<long_int,__1> *pvVar10;
+  undefined4 extraout_w1;
+  undefined4 extraout_w1_00;
+  float extraout_w1_01;
+  long lVar11;
+  ulong uVar12;
+  long lVar13;
+  variable_if_dynamic<long_int,__1> *pvVar14;
+  ulong uVar15;
+  ulong uVar16;
+  int iVar17;
+  long lVar18;
+  float fVar21;
+  float fVar22;
+  undefined1 auVar19 [12];
+  float fVar23;
+  undefined8 uVar24;
+  undefined8 uVar25;
+  float fVar27;
+  float fVar28;
+  undefined8 uVar26;
+  float fVar29;
+  float fVar30;
+  float fVar32;
+  float fVar33;
+  undefined8 uVar31;
+  float fVar34;
+  ActualDstType actualDst;
+  DstEvaluatorType dstEvaluator_7;
+  DstEvaluatorType dstEvaluator_3;
+  DstEvaluatorType dstEvaluator;
+  DstEvaluatorType dstEvaluator_6;
+  SrcEvaluatorType srcEvaluator;
+  Kernel kernel;
+  Quaternion<float,_0> q;
+  undefined8 local_70;
+  float fStack_68;
+  float fStack_64;
+  AngleAxisf yawAngle;
+  AngleAxisf pitchAngle;
+  AngleAxisf rollAngle;
+  float arr [4];
+  undefined1 auVar20 [16];
+  
+                    /* Unresolved local var: int write_idx@[???]
+                       Unresolved local var: RobotBasicState * buffer@[???]
+                       Unresolved local var: float acc_var@[???] */
+  lVar11 = *(long *)PTR___stack_chk_guard_00386ea8;
+                    /* Unresolved local var: memory_order __b@[???] */
+  uVar3 = (this->rbs_write_index_).super___atomic_base<int>._M_i;
+  uVar15 = (ulong)uVar3;
+  arr[0] = (float)(*((this->super_StateBase).ri_ptr_.
+                     super___shared_ptr<interface::RobotInterface,_(__gnu_cxx::_Lock_policy)2>.
+                    _M_ptr)->_vptr_RobotInterface[0xb])();
+  arr[1] = 0.0;
+  lVar6 = ((-(ulong)(uVar3 >> 0x1f) & 0xfffffffe00000000 | uVar15 << 1) + (long)(int)uVar3) * 0x40;
+  *(undefined8 *)((long)&this->rbs_[0].base_rpy + lVar6) = arr._0_8_;
+  *(undefined4 *)((long)&this->rbs_[0].base_rpy + lVar6 + 8) = extraout_w1;
+                    /* Unresolved local var: ActualDstType actualDst@[???] */
+  yawAngle.m_axis.super_PlainObjectBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>.m_storage.
+  super_DenseStorage_impl<float,_3,_3,_1,_0>.m_data.array[0] = 0.0;
+  yawAngle.m_axis.super_PlainObjectBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>.m_storage.
+  super_DenseStorage_impl<float,_3,_3,_1,_0>.m_data.array[2] = 1.0;
+  yawAngle.m_angle = *(float *)((long)&this->rbs_[0].base_rpy + lVar6 + 8);
+                    /* Unresolved local var: ActualDstType actualDst@[???] */
+  pitchAngle.m_axis.super_PlainObjectBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>.m_storage.
+  super_DenseStorage_impl<float,_3,_3,_1,_0>.m_data.array[0] = 0.0;
+  pitchAngle.m_axis.super_PlainObjectBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>.m_storage.
+  super_DenseStorage_impl<float,_3,_3,_1,_0>.m_data.array[2] = 0.0;
+  pitchAngle.m_angle = *(Scalar *)((long)&this->rbs_[0].base_rpy + lVar6 + 4);
+  dstEvaluator_6.super_block_evaluator<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>.
+  super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_Eigen::Matrix<float,_1,__1,_1,_1,__1>_>
+  .m_innerStride.m_value._0_4_ = 0.0;
+  dstEvaluator_6.super_block_evaluator<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>.
+  super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_Eigen::Matrix<float,_1,__1,_1,_1,__1>_>
+  .m_innerStride.m_value._4_4_ = 0;
+  dstEvaluator_6.super_block_evaluator<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>.
+  super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_Eigen::Matrix<float,_1,__1,_1,_1,__1>_>
+  .m_outerStride = (variable_if_dynamic<long_int,_1>)0x0;
+  dstEvaluator_6.super_block_evaluator<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>.
+  super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_Eigen::Matrix<float,_1,__1,_1,_1,__1>_>
+  ._17_7_ = 0;
+                    /* Unresolved local var: ActualDstType actualDst@[???] */
+  srcEvaluator.
+  super_block_evaluator<const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_identity_op<float>,_Eigen::Matrix<float,_3,_3,_0,_3,_3>_>,_3,_1,_false,_false>
+  .
+  super_unary_evaluator<Eigen::Block<const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_identity_op<float>,_Eigen::Matrix<float,_3,_3,_0,_3,_3>_>,_3,_1,_false>,_Eigen::internal::IndexBased,_float>
+  .m_startRow.m_value = 0;
+  srcEvaluator.
+  super_block_evaluator<const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_identity_op<float>,_Eigen::Matrix<float,_3,_3,_0,_3,_3>_>,_3,_1,_false,_false>
+  .
+  super_unary_evaluator<Eigen::Block<const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_identity_op<float>,_Eigen::Matrix<float,_3,_3,_0,_3,_3>_>,_3,_1,_false>,_Eigen::internal::IndexBased,_float>
+  .m_startCol.m_value = 0;
+  dstEvaluator.super_evaluator<Eigen::PlainObjectBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>_>.m_d.
+  data = (evaluator<Eigen::PlainObjectBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>_>)&rollAngle;
+  kernel.m_dst = &dstEvaluator;
+  kernel.m_src = &srcEvaluator;
+  rollAngle.m_axis.super_PlainObjectBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>.m_storage.
+  super_DenseStorage_impl<float,_3,_3,_1,_0>.m_data.array[0] = 1.0;
+  rollAngle.m_axis.super_PlainObjectBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>.m_storage.
+  super_DenseStorage_impl<float,_3,_3,_1,_0>.m_data.array[2] = 0.0;
+  rollAngle.m_angle = *(Scalar *)((long)&this->rbs_[0].base_rpy + lVar6);
+                    /* Unresolved local var: Scalar ha@[???] */
+  fVar34 = yawAngle.m_angle * 0.5;
+  fStack_64 = cosf(fVar34);
+  dstEvaluator_6.super_block_evaluator<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>.
+  super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_Eigen::Matrix<float,_1,__1,_1,_1,__1>_>
+  .m_innerStride.m_value._0_4_ = sinf(fVar34);
+  dstEvaluator_6.super_block_evaluator<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>.
+  super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_Eigen::Matrix<float,_1,__1,_1,_1,__1>_>
+  .m_data._4_4_ = 0;
+  dstEvaluator_6.super_block_evaluator<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>.
+  super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_Eigen::Matrix<float,_1,__1,_1,_1,__1>_>
+  ._16_8_ = &yawAngle;
+  kernel.m_dstExpr = (DstXprType *)0x0;
+                    /* Unresolved local var: ActualDstType actualDst@[???] */
+  dstEvaluator.super_evaluator<Eigen::PlainObjectBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>_>.m_d.
+  data._4_4_ = (float)dstEvaluator_6.
+                      super_block_evaluator<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>
+                      .
+                      super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_Eigen::Matrix<float,_1,__1,_1,_1,__1>_>
+                      .m_innerStride.m_value;
+  local_70._0_4_ =
+       yawAngle.m_axis.super_PlainObjectBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>.m_storage.
+       super_DenseStorage_impl<float,_3,_3,_1,_0>.m_data.array[0] *
+       (float)dstEvaluator_6.
+              super_block_evaluator<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>.
+              super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_Eigen::Matrix<float,_1,__1,_1,_1,__1>_>
+              .m_innerStride.m_value;
+  local_70._4_4_ =
+       yawAngle.m_axis.super_PlainObjectBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>.m_storage.
+       super_DenseStorage_impl<float,_3,_3,_1,_0>.m_data.array[1] *
+       (float)dstEvaluator_6.
+              super_block_evaluator<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>.
+              super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_Eigen::Matrix<float,_1,__1,_1,_1,__1>_>
+              .m_innerStride.m_value;
+                    /* Unresolved local var: Scalar ha@[???] */
+  fVar34 = pitchAngle.m_angle * 0.5;
+  dstEvaluator_3.super_block_evaluator<Eigen::Matrix<float,_4,_1,_0,_4,_1>,_3,_1,_false,_true>.
+  super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,_4,_1,_0,_4,_1>,_3,_1,_false>,_Eigen::Matrix<float,_3,_1,_0,_3,_1>_>
+  .m_data = (PointerType)&local_70;
+  srcEvaluator.
+  super_block_evaluator<const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_identity_op<float>,_Eigen::Matrix<float,_3,_3,_0,_3,_3>_>,_3,_1,_false,_false>
+  .
+  super_unary_evaluator<Eigen::Block<const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_identity_op<float>,_Eigen::Matrix<float,_3,_3,_0,_3,_3>_>,_3,_1,_false>,_Eigen::internal::IndexBased,_float>
+  ._0_8_ = &dstEvaluator_3;
+  srcEvaluator.
+  super_block_evaluator<const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_identity_op<float>,_Eigen::Matrix<float,_3,_3,_0,_3,_3>_>,_3,_1,_false,_false>
+  .
+  super_unary_evaluator<Eigen::Block<const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_identity_op<float>,_Eigen::Matrix<float,_3,_3,_0,_3,_3>_>,_3,_1,_false>,_Eigen::internal::IndexBased,_float>
+  .m_startRow.m_value = (long)&dstEvaluator;
+  kernel.m_dst = (DstEvaluatorType *)&local_70;
+  kernel.m_functor = (assign_op<float,_float> *)&local_70;
+  q.m_coeffs.super_PlainObjectBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>.m_storage.
+  super_DenseStorage_impl<float,_4,_4,_1,_0>.m_data.array[3] = cosf(fVar34);
+  dstEvaluator_6.super_block_evaluator<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>.
+  super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_Eigen::Matrix<float,_1,__1,_1,_1,__1>_>
+  .m_innerStride.m_value._0_4_ = sinf(fVar34);
+  dstEvaluator_6.super_block_evaluator<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>.
+  super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_Eigen::Matrix<float,_1,__1,_1,_1,__1>_>
+  .m_data._4_4_ = 0;
+  dstEvaluator_6.super_block_evaluator<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>.
+  super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_Eigen::Matrix<float,_1,__1,_1,_1,__1>_>
+  ._16_8_ = &pitchAngle;
+  dstEvaluator_3.super_block_evaluator<Eigen::Matrix<float,_4,_1,_0,_4,_1>,_3,_1,_false,_true>.
+  super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,_4,_1,_0,_4,_1>,_3,_1,_false>,_Eigen::Matrix<float,_3,_1,_0,_3,_1>_>
+  .m_data = (PointerType)&q;
+  kernel.m_dstExpr = (DstXprType *)0x0;
+                    /* Unresolved local var: ActualDstType actualDst@[???] */
+  dstEvaluator.super_evaluator<Eigen::PlainObjectBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>_>.m_d.
+  data._4_4_ = (float)dstEvaluator_6.
+                      super_block_evaluator<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>
+                      .
+                      super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_Eigen::Matrix<float,_1,__1,_1,_1,__1>_>
+                      .m_innerStride.m_value;
+  q.m_coeffs.super_PlainObjectBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>.m_storage.
+  super_DenseStorage_impl<float,_4,_4,_1,_0>.m_data.array[0] =
+       pitchAngle.m_axis.super_PlainObjectBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>.m_storage.
+       super_DenseStorage_impl<float,_3,_3,_1,_0>.m_data.array[0] *
+       (float)dstEvaluator_6.
+              super_block_evaluator<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>.
+              super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_Eigen::Matrix<float,_1,__1,_1,_1,__1>_>
+              .m_innerStride.m_value;
+  q.m_coeffs.super_PlainObjectBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>.m_storage.
+  super_DenseStorage_impl<float,_4,_4,_1,_0>.m_data.array[1] =
+       pitchAngle.m_axis.super_PlainObjectBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>.m_storage.
+       super_DenseStorage_impl<float,_3,_3,_1,_0>.m_data.array[1] *
+       (float)dstEvaluator_6.
+              super_block_evaluator<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>.
+              super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_Eigen::Matrix<float,_1,__1,_1,_1,__1>_>
+              .m_innerStride.m_value;
+                    /* Unresolved local var: evaluator<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>
+                       ae@[???]
+                       Unresolved local var: evaluator<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>
+                       be@[???]
+                       Unresolved local var: Quaternion<float,_0> res@[???]
+                       Unresolved local var: float neg_zero@[???]
+                       Unresolved local var: Packet4f mask@[???]
+                       Unresolved local var: Packet4f a@[???]
+                       Unresolved local var: Packet4f b@[???]
+                       Unresolved local var: Packet4f s1@[???]
+                       Unresolved local var: Packet4f s2@[???] */
+                    /* Unresolved local var: float * a@[???]
+                       Unresolved local var: Packet4f res@[???] */
+                    /* Unresolved local var: float * a@[???]
+                       Unresolved local var: Packet4f res@[???] */
+                    /* Unresolved local var: float * a@[???]
+                       Unresolved local var: Packet4f res@[???] */
+                    /* Unresolved local var: float * a@[???]
+                       Unresolved local var: Packet4f res@[???] */
+                    /* Unresolved local var: float * a@[???]
+                       Unresolved local var: Packet4f res@[???] */
+                    /* Unresolved local var: float * a@[???]
+                       Unresolved local var: Packet4f res@[???] */
+                    /* Unresolved local var: float * a@[???]
+                       Unresolved local var: Packet4f res@[???] */
+  fVar34 = q.m_coeffs.super_PlainObjectBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>.m_storage.
+           super_DenseStorage_impl<float,_4,_4,_1,_0>.m_data.array[2] * local_70._4_4_ +
+           q.m_coeffs.super_PlainObjectBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>.m_storage.
+           super_DenseStorage_impl<float,_4,_4,_1,_0>.m_data.array[0] * fStack_64;
+  fVar21 = q.m_coeffs.super_PlainObjectBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>.m_storage.
+           super_DenseStorage_impl<float,_4,_4,_1,_0>.m_data.array[0] * fStack_68 +
+           q.m_coeffs.super_PlainObjectBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>.m_storage.
+           super_DenseStorage_impl<float,_4,_4,_1,_0>.m_data.array[1] * fStack_64;
+  fVar22 = q.m_coeffs.super_PlainObjectBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>.m_storage.
+           super_DenseStorage_impl<float,_4,_4,_1,_0>.m_data.array[1] * (float)local_70 +
+           q.m_coeffs.super_PlainObjectBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>.m_storage.
+           super_DenseStorage_impl<float,_4,_4,_1,_0>.m_data.array[2] * fStack_64;
+  fVar23 = q.m_coeffs.super_PlainObjectBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>.m_storage.
+           super_DenseStorage_impl<float,_4,_4,_1,_0>.m_data.array[2] * fStack_68 +
+           q.m_coeffs.super_PlainObjectBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>.m_storage.
+           super_DenseStorage_impl<float,_4,_4,_1,_0>.m_data.array[1] * local_70._4_4_;
+  auVar19._0_8_ =
+       CONCAT17((char)((uint)fVar21 >> 0x18),
+                CONCAT16((char)((uint)fVar21 >> 0x10),
+                         CONCAT15((char)((uint)fVar21 >> 8),CONCAT14(SUB41(fVar21,0),fVar34))));
+  auVar19[8] = SUB41(fVar22,0);
+  auVar19[9] = (undefined1)((uint)fVar22 >> 8);
+  auVar19[10] = (undefined1)((uint)fVar22 >> 0x10);
+  auVar19[0xb] = (undefined1)((uint)fVar22 >> 0x18);
+  auVar20[0xc] = SUB41(fVar23,0);
+  auVar20._0_12_ = auVar19;
+  auVar20[0xd] = (undefined1)((uint)fVar23 >> 8);
+  auVar20[0xe] = (undefined1)((uint)fVar23 >> 0x10);
+  auVar20[0xf] = (byte)((uint)fVar23 >> 0x18) ^ 0x80;
+  fVar34 = ((float)local_70 *
+            q.m_coeffs.super_PlainObjectBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>.m_storage.
+            super_DenseStorage_impl<float,_4,_4,_1,_0>.m_data.array[3] -
+           q.m_coeffs.super_PlainObjectBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>.m_storage.
+           super_DenseStorage_impl<float,_4,_4,_1,_0>.m_data.array[1] * fStack_68) + fVar34;
+  fVar27 = (local_70._4_4_ *
+            q.m_coeffs.super_PlainObjectBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>.m_storage.
+            super_DenseStorage_impl<float,_4,_4,_1,_0>.m_data.array[3] -
+           q.m_coeffs.super_PlainObjectBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>.m_storage.
+           super_DenseStorage_impl<float,_4,_4,_1,_0>.m_data.array[2] * (float)local_70) +
+           (float)((ulong)auVar19._0_8_ >> 0x20);
+  fVar29 = (fStack_68 *
+            q.m_coeffs.super_PlainObjectBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>.m_storage.
+            super_DenseStorage_impl<float,_4,_4,_1,_0>.m_data.array[3] -
+           q.m_coeffs.super_PlainObjectBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>.m_storage.
+           super_DenseStorage_impl<float,_4,_4,_1,_0>.m_data.array[0] * local_70._4_4_) +
+           auVar19._8_4_;
+  fVar32 = (fStack_64 *
+            q.m_coeffs.super_PlainObjectBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>.m_storage.
+            super_DenseStorage_impl<float,_4,_4,_1,_0>.m_data.array[3] -
+           q.m_coeffs.super_PlainObjectBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>.m_storage.
+           super_DenseStorage_impl<float,_4,_4,_1,_0>.m_data.array[0] * (float)local_70) +
+           auVar20._12_4_;
+                    /* Unresolved local var: Scalar ha@[???] */
+  fVar21 = rollAngle.m_angle * 0.5;
+  srcEvaluator.
+  super_block_evaluator<const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_identity_op<float>,_Eigen::Matrix<float,_3,_3,_0,_3,_3>_>,_3,_1,_false,_false>
+  .
+  super_unary_evaluator<Eigen::Block<const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_identity_op<float>,_Eigen::Matrix<float,_3,_3,_0,_3,_3>_>,_3,_1,_false>,_Eigen::internal::IndexBased,_float>
+  ._0_8_ = &dstEvaluator_3;
+  srcEvaluator.
+  super_block_evaluator<const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_identity_op<float>,_Eigen::Matrix<float,_3,_3,_0,_3,_3>_>,_3,_1,_false,_false>
+  .
+  super_unary_evaluator<Eigen::Block<const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_identity_op<float>,_Eigen::Matrix<float,_3,_3,_0,_3,_3>_>,_3,_1,_false>,_Eigen::internal::IndexBased,_float>
+  .m_startRow.m_value = (long)&dstEvaluator;
+  kernel.m_dst = (DstEvaluatorType *)
+                 dstEvaluator_3.
+                 super_block_evaluator<Eigen::Matrix<float,_4,_1,_0,_4,_1>,_3,_1,_false,_true>.
+                 super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,_4,_1,_0,_4,_1>,_3,_1,_false>,_Eigen::Matrix<float,_3,_1,_0,_3,_1>_>
+                 .m_data;
+  kernel.m_functor =
+       (assign_op<float,_float> *)
+       dstEvaluator_3.super_block_evaluator<Eigen::Matrix<float,_4,_1,_0,_4,_1>,_3,_1,_false,_true>.
+       super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,_4,_1,_0,_4,_1>,_3,_1,_false>,_Eigen::Matrix<float,_3,_1,_0,_3,_1>_>
+       .m_data;
+  fStack_64 = cosf(fVar21);
+  dstEvaluator_6.super_block_evaluator<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>.
+  super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_Eigen::Matrix<float,_1,__1,_1,_1,__1>_>
+  .m_innerStride.m_value._0_4_ = sinf(fVar21);
+  dstEvaluator_6.super_block_evaluator<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>.
+  super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_Eigen::Matrix<float,_1,__1,_1,_1,__1>_>
+  .m_data._4_4_ = 0;
+  dstEvaluator_6.super_block_evaluator<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>.
+  super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_Eigen::Matrix<float,_1,__1,_1,_1,__1>_>
+  ._16_8_ = &rollAngle;
+  kernel.m_dstExpr = (DstXprType *)0x0;
+                    /* Unresolved local var: ActualDstType actualDst@[???] */
+  dstEvaluator.super_evaluator<Eigen::PlainObjectBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>_>.m_d.
+  data._4_4_ = (float)dstEvaluator_6.
+                      super_block_evaluator<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>
+                      .
+                      super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_Eigen::Matrix<float,_1,__1,_1,_1,__1>_>
+                      .m_innerStride.m_value;
+  fVar21 = rollAngle.m_axis.super_PlainObjectBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>.m_storage.
+           super_DenseStorage_impl<float,_3,_3,_1,_0>.m_data.array[0] *
+           (float)dstEvaluator_6.
+                  super_block_evaluator<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>
+                  .
+                  super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_Eigen::Matrix<float,_1,__1,_1,_1,__1>_>
+                  .m_innerStride.m_value;
+  fVar22 = rollAngle.m_axis.super_PlainObjectBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>.m_storage.
+           super_DenseStorage_impl<float,_3,_3,_1,_0>.m_data.array[1] *
+           (float)dstEvaluator_6.
+                  super_block_evaluator<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>
+                  .
+                  super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_Eigen::Matrix<float,_1,__1,_1,_1,__1>_>
+                  .m_innerStride.m_value;
+  local_70 = CONCAT44(fVar22,fVar21);
+                    /* Unresolved local var: evaluator<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>
+                       ae@[???]
+                       Unresolved local var: evaluator<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>
+                       be@[???]
+                       Unresolved local var: Quaternion<float,_0> res@[???]
+                       Unresolved local var: float neg_zero@[???]
+                       Unresolved local var: Packet4f mask@[???]
+                       Unresolved local var: Packet4f a@[???]
+                       Unresolved local var: Packet4f b@[???]
+                       Unresolved local var: Packet4f s1@[???]
+                       Unresolved local var: Packet4f s2@[???] */
+                    /* Unresolved local var: float * a@[???]
+                       Unresolved local var: Packet4f res@[???] */
+                    /* Unresolved local var: float * a@[???]
+                       Unresolved local var: Packet4f res@[???] */
+                    /* Unresolved local var: float * a@[???]
+                       Unresolved local var: Packet4f res@[???] */
+                    /* Unresolved local var: float * a@[???]
+                       Unresolved local var: Packet4f res@[???] */
+                    /* Unresolved local var: float * a@[???]
+                       Unresolved local var: Packet4f res@[???] */
+                    /* Unresolved local var: float * a@[???]
+                       Unresolved local var: Packet4f res@[???] */
+                    /* Unresolved local var: float * a@[???]
+                       Unresolved local var: Packet4f res@[???] */
+  fVar23 = fStack_68 * fVar27 + fVar21 * fVar32;
+  fVar28 = fVar21 * fVar29 + fVar22 * fVar32;
+  fVar30 = fVar22 * fVar34 + fStack_68 * fVar32;
+  fVar33 = fStack_68 * fVar29 + fVar22 * fVar27;
+  q.m_coeffs.super_PlainObjectBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>.m_storage.
+  super_DenseStorage_impl<float,_4,_4,_1,_0>.m_data.array[0] =
+       (fVar34 * fStack_64 - fVar22 * fVar29) + fVar23;
+  q.m_coeffs.super_PlainObjectBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>.m_storage.
+  super_DenseStorage_impl<float,_4,_4,_1,_0>.m_data.array[1] =
+       (fVar27 * fStack_64 - fStack_68 * fVar34) +
+       (float)(CONCAT17((char)((uint)fVar28 >> 0x18),
+                        CONCAT16((char)((uint)fVar28 >> 0x10),
+                                 CONCAT15((char)((uint)fVar28 >> 8),CONCAT14(SUB41(fVar28,0),fVar23)
+                                         ))) >> 0x20);
+  q.m_coeffs.super_PlainObjectBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>.m_storage.
+  super_DenseStorage_impl<float,_4,_4,_1,_0>.m_data.array[2] =
+       (fVar29 * fStack_64 - fVar21 * fVar27) + fVar30;
+  q.m_coeffs.super_PlainObjectBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>.m_storage.
+  super_DenseStorage_impl<float,_4,_4,_1,_0>.m_data.array[3] =
+       (fVar32 * fStack_64 - fVar21 * fVar34) +
+       -(float)(CONCAT17((char)((uint)fVar33 >> 0x18),
+                         CONCAT16((char)((uint)fVar33 >> 0x10),
+                                  CONCAT15((char)((uint)fVar33 >> 8),
+                                           CONCAT14(SUB41(fVar33,0),fVar30)))) >> 0x20);
+                    /* Unresolved local var: Matrix3 res@[???]
+                       Unresolved local var: Scalar tx@[???]
+                       Unresolved local var: Scalar ty@[???]
+                       Unresolved local var: Scalar tz@[???]
+                       Unresolved local var: Scalar twx@[???]
+                       Unresolved local var: Scalar twy@[???]
+                       Unresolved local var: Scalar twz@[???]
+                       Unresolved local var: Scalar txx@[???]
+                       Unresolved local var: Scalar txy@[???]
+                       Unresolved local var: Scalar txz@[???]
+                       Unresolved local var: Scalar tyy@[???]
+                       Unresolved local var: Scalar tyz@[???]
+                       Unresolved local var: Scalar tzz@[???] */
+  fVar21 = q.m_coeffs.super_PlainObjectBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>.m_storage.
+           super_DenseStorage_impl<float,_4,_4,_1,_0>.m_data.array[1] +
+           q.m_coeffs.super_PlainObjectBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>.m_storage.
+           super_DenseStorage_impl<float,_4,_4,_1,_0>.m_data.array[1];
+  fVar22 = q.m_coeffs.super_PlainObjectBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>.m_storage.
+           super_DenseStorage_impl<float,_4,_4,_1,_0>.m_data.array[2] +
+           q.m_coeffs.super_PlainObjectBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>.m_storage.
+           super_DenseStorage_impl<float,_4,_4,_1,_0>.m_data.array[2];
+  fVar23 = (q.m_coeffs.super_PlainObjectBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>.m_storage.
+            super_DenseStorage_impl<float,_4,_4,_1,_0>.m_data.array[0] +
+           q.m_coeffs.super_PlainObjectBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>.m_storage.
+           super_DenseStorage_impl<float,_4,_4,_1,_0>.m_data.array[0]) *
+           q.m_coeffs.super_PlainObjectBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>.m_storage.
+           super_DenseStorage_impl<float,_4,_4,_1,_0>.m_data.array[3];
+  fVar34 = q.m_coeffs.super_PlainObjectBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>.m_storage.
+           super_DenseStorage_impl<float,_4,_4,_1,_0>.m_data.array[0] *
+           (q.m_coeffs.super_PlainObjectBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>.m_storage.
+            super_DenseStorage_impl<float,_4,_4,_1,_0>.m_data.array[0] +
+           q.m_coeffs.super_PlainObjectBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>.m_storage.
+           super_DenseStorage_impl<float,_4,_4,_1,_0>.m_data.array[0]);
+  fVar27 = q.m_coeffs.super_PlainObjectBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>.m_storage.
+           super_DenseStorage_impl<float,_4,_4,_1,_0>.m_data.array[0] * fVar21 -
+           fVar22 * q.m_coeffs.super_PlainObjectBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>.m_storage
+                    .super_DenseStorage_impl<float,_4,_4,_1,_0>.m_data.array[3];
+  arr[3]._0_1_ = SUB41(fVar27,0);
+  arr[3]._1_1_ = (undefined1)((uint)fVar27 >> 8);
+  arr[3]._2_1_ = (undefined1)((uint)fVar27 >> 0x10);
+  arr[3]._3_1_ = (undefined1)((uint)fVar27 >> 0x18);
+  arr[1] = fVar22 * q.m_coeffs.super_PlainObjectBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>.m_storage
+                    .super_DenseStorage_impl<float,_4,_4,_1,_0>.m_data.array[3] +
+           q.m_coeffs.super_PlainObjectBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>.m_storage.
+           super_DenseStorage_impl<float,_4,_4,_1,_0>.m_data.array[0] * fVar21;
+  arr[0] = 1.0 - (q.m_coeffs.super_PlainObjectBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>.m_storage.
+                  super_DenseStorage_impl<float,_4,_4,_1,_0>.m_data.array[1] * fVar21 +
+                 q.m_coeffs.super_PlainObjectBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>.m_storage.
+                 super_DenseStorage_impl<float,_4,_4,_1,_0>.m_data.array[2] * fVar22);
+  lVar18 = (long)(int)uVar3;
+  uVar16 = -(ulong)(uVar3 >> 0x1f) & 0xfffffffe00000000 | uVar15 << 1;
+  pfVar8 = (float *)((long)&this->rbs_[0].base_rot_mat + (uVar16 + lVar18) * 0x40);
+  *(undefined8 *)pfVar8 = arr._0_8_;
+  *(ulong *)(pfVar8 + 2) =
+       CONCAT17(arr[3]._3_1_,
+                CONCAT16(arr[3]._2_1_,
+                         CONCAT15(arr[3]._1_1_,
+                                  CONCAT14(arr[3]._0_1_,
+                                           q.m_coeffs.
+                                           super_PlainObjectBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>
+                                           .m_storage.super_DenseStorage_impl<float,_4,_4,_1,_0>.
+                                           m_data.array[0] * fVar22 -
+                                           fVar21 * q.m_coeffs.
+                                                                                                        
+                                                  super_PlainObjectBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>
+                                                  .m_storage.
+                                                  super_DenseStorage_impl<float,_4,_4,_1,_0>.m_data.
+                                                  array[3]))));
+  *(ulong *)(pfVar8 + 4) =
+       CONCAT44(fVar23 + q.m_coeffs.super_PlainObjectBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>.
+                         m_storage.super_DenseStorage_impl<float,_4,_4,_1,_0>.m_data.array[1] *
+                         fVar22,
+                1.0 - (fVar34 + q.m_coeffs.
+                                super_PlainObjectBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>.
+                                m_storage.super_DenseStorage_impl<float,_4,_4,_1,_0>.m_data.array[2]
+                                * fVar22));
+  *(ulong *)(pfVar8 + 6) =
+       CONCAT44(q.m_coeffs.super_PlainObjectBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>.m_storage.
+                super_DenseStorage_impl<float,_4,_4,_1,_0>.m_data.array[1] * fVar22 - fVar23,
+                fVar21 * q.m_coeffs.super_PlainObjectBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>.
+                         m_storage.super_DenseStorage_impl<float,_4,_4,_1,_0>.m_data.array[3] +
+                q.m_coeffs.super_PlainObjectBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>.m_storage.
+                super_DenseStorage_impl<float,_4,_4,_1,_0>.m_data.array[0] * fVar22);
+  pfVar8[8] = 1.0 - (fVar34 + q.m_coeffs.super_PlainObjectBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>
+                              .m_storage.super_DenseStorage_impl<float,_4,_4,_1,_0>.m_data.array[1]
+                              * fVar21);
+  dstEvaluator_3.super_block_evaluator<Eigen::Matrix<float,_4,_1,_0,_4,_1>,_3,_1,_false,_true>.
+  super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,_4,_1,_0,_4,_1>,_3,_1,_false>,_Eigen::Matrix<float,_3,_1,_0,_3,_1>_>
+  .m_data = (PointerType)&local_70;
+  srcEvaluator.
+  super_block_evaluator<const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_identity_op<float>,_Eigen::Matrix<float,_3,_3,_0,_3,_3>_>,_3,_1,_false,_false>
+  .
+  super_unary_evaluator<Eigen::Block<const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_identity_op<float>,_Eigen::Matrix<float,_3,_3,_0,_3,_3>_>,_3,_1,_false>,_Eigen::internal::IndexBased,_float>
+  ._0_8_ = &dstEvaluator_3;
+  srcEvaluator.
+  super_block_evaluator<const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_identity_op<float>,_Eigen::Matrix<float,_3,_3,_0,_3,_3>_>,_3,_1,_false,_false>
+  .
+  super_unary_evaluator<Eigen::Block<const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_identity_op<float>,_Eigen::Matrix<float,_3,_3,_0,_3,_3>_>,_3,_1,_false>,_Eigen::internal::IndexBased,_float>
+  .m_startRow.m_value = (long)&dstEvaluator;
+  kernel.m_dst = (DstEvaluatorType *)&local_70;
+  kernel.m_functor = (assign_op<float,_float> *)&local_70;
+  arr[0] = (float)(*((this->super_StateBase).ri_ptr_.
+                     super___shared_ptr<interface::RobotInterface,_(__gnu_cxx::_Lock_policy)2>.
+                    _M_ptr)->_vptr_RobotInterface[0xd])();
+  arr[1] = 0.0;
+  lVar6 = (uVar16 + lVar18) * 0x40;
+  *(undefined8 *)((long)&this->rbs_[0].base_omega + lVar6) = arr._0_8_;
+  *(undefined4 *)((long)&this->rbs_[0].base_omega + lVar6 + 8) = extraout_w1_00;
+  arr[0] = (float)(*((this->super_StateBase).ri_ptr_.
+                     super___shared_ptr<interface::RobotInterface,_(__gnu_cxx::_Lock_policy)2>.
+                    _M_ptr)->_vptr_RobotInterface[0xc])();
+  arr[1] = 0.0;
+  lVar6 = (uVar16 + lVar18) * 0x40;
+  eVar2.m_d.data = (plainobjectbase_evaluator_data<float,_0>)((long)&this->rbs_[0].base_acc + lVar6)
+  ;
+  *(undefined8 *)((long)&this->rbs_[0].base_acc + lVar6) = arr._0_8_;
+  *(float *)((long)eVar2.m_d.data + 8) = extraout_w1_01;
+  (*((this->super_StateBase).ri_ptr_.
+     super___shared_ptr<interface::RobotInterface,_(__gnu_cxx::_Lock_policy)2>._M_ptr)->
+    _vptr_RobotInterface[5])(&kernel);
+  lVar6 = (uVar16 + lVar18) * 0x40;
+                    /* Unresolved local var: float * __tmp@[???] */
+  pvVar7 = *(void **)((long)&this->rbs_[0].flt_base_acc + lVar6 + 0x24);
+  *(DstEvaluatorType **)((long)&this->rbs_[0].flt_base_acc + lVar6 + 0x24) = kernel.m_dst;
+                    /* Unresolved local var: long __tmp@[???] */
+  *(SrcEvaluatorType **)((long)&this->rbs_[0].flt_base_acc + lVar6 + 0x2c) = kernel.m_src;
+  if (pvVar7 != (void *)0x0) {
+    free(pvVar7);
+  }
+  (*((this->super_StateBase).ri_ptr_.
+     super___shared_ptr<interface::RobotInterface,_(__gnu_cxx::_Lock_policy)2>._M_ptr)->
+    _vptr_RobotInterface[9])(&kernel);
+  lVar6 = ((-(ulong)(uVar3 >> 0x1f) & 0xfffffffe00000000 | uVar15 << 1) + (long)(int)uVar3) * 0x40;
+                    /* Unresolved local var: float * __tmp@[???] */
+  pvVar7 = *(void **)((long)&this->rbs_[0].flt_base_acc + lVar6 + 0x34);
+  *(DstEvaluatorType **)((long)&this->rbs_[0].flt_base_acc + lVar6 + 0x34) = kernel.m_dst;
+                    /* Unresolved local var: long __tmp@[???] */
+  *(SrcEvaluatorType **)((long)&this->rbs_[0].flt_base_acc + lVar6 + 0x3c) = kernel.m_src;
+  if (pvVar7 != (void *)0x0) {
+    free(pvVar7);
+  }
+  (*((this->super_StateBase).ri_ptr_.
+     super___shared_ptr<interface::RobotInterface,_(__gnu_cxx::_Lock_policy)2>._M_ptr)->
+    _vptr_RobotInterface[10])(&kernel);
+  lVar6 = ((-(ulong)(uVar3 >> 0x1f) & 0xfffffffe00000000 | uVar15 << 1) + (long)(int)uVar3) * 0x40;
+                    /* Unresolved local var: float * __tmp@[???] */
+  pvVar7 = *(void **)((long)&this->rbs_[0].flt_base_acc + lVar6 + 0x44);
+  *(DstEvaluatorType **)((long)&this->rbs_[0].flt_base_acc + lVar6 + 0x44) = kernel.m_dst;
+                    /* Unresolved local var: long __tmp@[???] */
+  *(SrcEvaluatorType **)((long)&this->rbs_[0].flt_base_acc + lVar6 + 0x4c) = kernel.m_src;
+  if (pvVar7 != (void *)0x0) {
+    free(pvVar7);
+  }
+  pMVar1 = &this->acc_rot;
+  pfVar8 = (this->acc_rot).super_PlainObjectBase<Eigen::Matrix<float,__1,__1,_0,__1,__1>_>.m_storage
+           .super_DenseStorage_impl<float,__1,__1,__1,_0>.m_data;
+  kernel.m_dst = (DstEvaluatorType *)0x0;
+  if (pfVar8 != (float *)0x0) {
+    kernel.m_dst = (DstEvaluatorType *)(pfVar8 + this->acc_rot_count);
+  }
+  kernel.m_functor =
+       (assign_op<float,_float> *)
+       (this->acc_rot).super_PlainObjectBase<Eigen::Matrix<float,__1,__1,_0,__1,__1>_>.m_storage.
+       super_DenseStorage_impl<float,__1,__1,__1,_0>.m_cols;
+                    /* Unresolved local var: ActualDstType actualDst@[???] */
+  dstEvaluator_6.super_block_evaluator<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>.
+  super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_Eigen::Matrix<float,_1,__1,_1,_1,__1>_>
+  .m_data._0_4_ = SUB84(kernel.m_dst,0);
+  dstEvaluator_6.super_block_evaluator<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>.
+  super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_Eigen::Matrix<float,_1,__1,_1,_1,__1>_>
+  .m_data._4_4_ = (undefined4)((ulong)kernel.m_dst >> 0x20);
+  lVar6 = (this->acc_rot).super_PlainObjectBase<Eigen::Matrix<float,__1,__1,_0,__1,__1>_>.m_storage.
+          super_DenseStorage_impl<float,__1,__1,__1,_0>.m_rows;
+  dstEvaluator_6.super_block_evaluator<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>.
+  super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_Eigen::Matrix<float,_1,__1,_1,_1,__1>_>
+  .m_innerStride.m_value._0_4_ = (float)lVar6;
+  dstEvaluator_6.super_block_evaluator<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>.
+  super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_Eigen::Matrix<float,_1,__1,_1,_1,__1>_>
+  .m_innerStride.m_value._4_4_ = (undefined4)((ulong)lVar6 >> 0x20);
+  srcEvaluator.
+  super_block_evaluator<const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_identity_op<float>,_Eigen::Matrix<float,_3,_3,_0,_3,_3>_>,_3,_1,_false,_false>
+  .
+  super_unary_evaluator<Eigen::Block<const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_identity_op<float>,_Eigen::Matrix<float,_3,_3,_0,_3,_3>_>,_3,_1,_false>,_Eigen::internal::IndexBased,_float>
+  ._0_8_ = &dstEvaluator_6;
+  srcEvaluator.
+  super_block_evaluator<const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_identity_op<float>,_Eigen::Matrix<float,_3,_3,_0,_3,_3>_>,_3,_1,_false,_false>
+  .
+  super_unary_evaluator<Eigen::Block<const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_identity_op<float>,_Eigen::Matrix<float,_3,_3,_0,_3,_3>_>,_3,_1,_false>,_Eigen::internal::IndexBased,_float>
+  .m_startRow.m_value = (long)&dstEvaluator;
+  *(float *)&((kernel.m_dst)->
+             super_evaluator<Eigen::PlainObjectBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>_>).m_d.
+             data = *(float *)eVar2.m_d.data;
+  *(float *)((long)&((kernel.m_dst)->
+                    super_evaluator<Eigen::PlainObjectBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>_>).
+                    m_d.data + lVar6 * 4) = *(float *)((long)eVar2.m_d.data + 4);
+  *(float *)&kernel.m_dst[lVar6].
+             super_evaluator<Eigen::PlainObjectBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>_>.m_d.data
+       = *(float *)((long)eVar2.m_d.data + 8);
+  iVar17 = this->acc_rot_count + 1;
+  this->acc_rot_count = iVar17;
+  if (0x13 < iVar17) {
+    this->acc_rot_count = 0;
+  }
+  uVar16 = (this->acc_rot).super_PlainObjectBase<Eigen::Matrix<float,__1,__1,_0,__1,__1>_>.m_storage
+           .super_DenseStorage_impl<float,__1,__1,__1,_0>.m_rows *
+           (this->acc_rot).super_PlainObjectBase<Eigen::Matrix<float,__1,__1,_0,__1,__1>_>.m_storage
+           .super_DenseStorage_impl<float,__1,__1,__1,_0>.m_cols;
+                    /* Unresolved local var: float * result@[???] */
+  dstEvaluator.super_evaluator<Eigen::PlainObjectBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>_>.m_d.
+  data = (evaluator<Eigen::PlainObjectBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>_>)
+         (evaluator<Eigen::PlainObjectBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>_>)eVar2.m_d.data;
+  kernel.m_dstExpr = (DstXprType *)pMVar1;
+  if (uVar16 == 0) {
+    pfVar8 = (float *)0x0;
+    goto LAB_001bd07c;
+  }
+                    /* Unresolved local var: size_t max_elements@[???] */
+  if (uVar16 < 0x2000000000000000) {
+                    /* Unresolved local var: void * result@[???] */
+    if ((uVar16 & 0x3fffffffffffffff) != 0) {
+      pfVar8 = malloc(uVar16 * 4);
+      if (pfVar8 != (float *)0x0) goto LAB_001bd07c;
+      goto LAB_001bd0ec;
+    }
+  }
+  else {
+    Eigen::internal::throw_std_bad_alloc();
+LAB_001bd0ec:
+    Eigen::internal::throw_std_bad_alloc();
+  }
+  pfVar8 = (float *)0x0;
+LAB_001bd07c:
+  dstEvaluator_6.super_block_evaluator<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>.
+  super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_Eigen::Matrix<float,_1,__1,_1,_1,__1>_>
+  .m_data._0_4_ = SUB84(pfVar8,0);
+  dstEvaluator_6.super_block_evaluator<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>.
+  super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_Eigen::Matrix<float,_1,__1,_1,_1,__1>_>
+  .m_data._4_4_ = (undefined4)((ulong)pfVar8 >> 0x20);
+  lVar6 = (this->acc_rot).super_PlainObjectBase<Eigen::Matrix<float,__1,__1,_0,__1,__1>_>.m_storage.
+          super_DenseStorage_impl<float,__1,__1,__1,_0>.m_rows;
+  dstEvaluator_6.super_block_evaluator<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>.
+  super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_Eigen::Matrix<float,_1,__1,_1,_1,__1>_>
+  .m_innerStride.m_value._0_4_ = (float)lVar6;
+  dstEvaluator_6.super_block_evaluator<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>.
+  super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_Eigen::Matrix<float,_1,__1,_1,_1,__1>_>
+  .m_innerStride.m_value._4_4_ = (undefined4)((ulong)lVar6 >> 0x20);
+  dstEvaluator_6.super_block_evaluator<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>.
+  super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_Eigen::Matrix<float,_1,__1,_1,_1,__1>_>
+  ._16_8_ = (this->acc_rot).super_PlainObjectBase<Eigen::Matrix<float,__1,__1,_0,__1,__1>_>.
+            m_storage.super_DenseStorage_impl<float,__1,__1,__1,_0>.m_cols;
+  start = (this->acc_rot).super_PlainObjectBase<Eigen::Matrix<float,__1,__1,_0,__1,__1>_>.m_storage.
+          super_DenseStorage_impl<float,__1,__1,__1,_0>.m_data;
+  Eigen::internal::smart_copy<float>
+            (start,start + dstEvaluator_6.
+                           super_block_evaluator<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>
+                           .
+                           super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_Eigen::Matrix<float,_1,__1,_1,_1,__1>_>
+                           ._16_8_ * lVar6,pfVar8);
+  fVar21 = 0.0;
+  fVar34 = 0.0;
+                    /* Unresolved local var: float sum@[???]
+                       Unresolved local var: float sum_sq@[???]
+                       Unresolved local var: float mean@[???]
+                       Unresolved local var: float variance@[???]
+                       Unresolved local var: int i@[???] */
+  for (iVar17 = 0;
+      (long)iVar17 <
+      CONCAT44(dstEvaluator_6.
+               super_block_evaluator<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>.
+               super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_Eigen::Matrix<float,_1,__1,_1,_1,__1>_>
+               .m_innerStride.m_value._4_4_,
+               (float)dstEvaluator_6.
+                      super_block_evaluator<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>
+                      .
+                      super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_Eigen::Matrix<float,_1,__1,_1,_1,__1>_>
+                      .m_innerStride.m_value); iVar17 = iVar17 + 1) {
+    srcEvaluator.
+    super_block_evaluator<const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_identity_op<float>,_Eigen::Matrix<float,_3,_3,_0,_3,_3>_>,_3,_1,_false,_false>
+    .
+    super_unary_evaluator<Eigen::Block<const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_identity_op<float>,_Eigen::Matrix<float,_3,_3,_0,_3,_3>_>,_3,_1,_false>,_Eigen::internal::IndexBased,_float>
+    ._0_8_ = CONCAT44(dstEvaluator_6.
+                      super_block_evaluator<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>
+                      .
+                      super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_Eigen::Matrix<float,_1,__1,_1,_1,__1>_>
+                      .m_data._4_4_,
+                      dstEvaluator_6.
+                      super_block_evaluator<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>
+                      .
+                      super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_Eigen::Matrix<float,_1,__1,_1,_1,__1>_>
+                      .m_data._0_4_);
+    if (srcEvaluator.
+        super_block_evaluator<const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_identity_op<float>,_Eigen::Matrix<float,_3,_3,_0,_3,_3>_>,_3,_1,_false,_false>
+        .
+        super_unary_evaluator<Eigen::Block<const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_identity_op<float>,_Eigen::Matrix<float,_3,_3,_0,_3,_3>_>,_3,_1,_false>,_Eigen::internal::IndexBased,_float>
+        ._0_8_ != 0) {
+      srcEvaluator.
+      super_block_evaluator<const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_identity_op<float>,_Eigen::Matrix<float,_3,_3,_0,_3,_3>_>,_3,_1,_false,_false>
+      .
+      super_unary_evaluator<Eigen::Block<const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_identity_op<float>,_Eigen::Matrix<float,_3,_3,_0,_3,_3>_>,_3,_1,_false>,_Eigen::internal::IndexBased,_float>
+      ._0_8_ = srcEvaluator.
+               super_block_evaluator<const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_identity_op<float>,_Eigen::Matrix<float,_3,_3,_0,_3,_3>_>,_3,_1,_false,_false>
+               .
+               super_unary_evaluator<Eigen::Block<const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_identity_op<float>,_Eigen::Matrix<float,_3,_3,_0,_3,_3>_>,_3,_1,_false>,_Eigen::internal::IndexBased,_float>
+               ._0_8_ + (long)iVar17 * 4;
+    }
+    srcEvaluator.
+    super_block_evaluator<const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_identity_op<float>,_Eigen::Matrix<float,_3,_3,_0,_3,_3>_>,_3,_1,_false,_false>
+    .
+    super_unary_evaluator<Eigen::Block<const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_identity_op<float>,_Eigen::Matrix<float,_3,_3,_0,_3,_3>_>,_3,_1,_false>,_Eigen::internal::IndexBased,_float>
+    .m_startCol.m_value =
+         dstEvaluator_6.
+         super_block_evaluator<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>.
+         super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_Eigen::Matrix<float,_1,__1,_1,_1,__1>_>
+         ._16_8_;
+    srcEvaluator.
+    super_block_evaluator<const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_identity_op<float>,_Eigen::Matrix<float,_3,_3,_0,_3,_3>_>,_3,_1,_false,_false>
+    .
+    super_unary_evaluator<Eigen::Block<const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_identity_op<float>,_Eigen::Matrix<float,_3,_3,_0,_3,_3>_>,_3,_1,_false>,_Eigen::internal::IndexBased,_float>
+    ._24_8_ = &dstEvaluator_6;
+    pBVar9 = Eigen::DenseBase<Eigen::Block<Eigen::Matrix<float,_-1,_-1,_0,_-1,_-1>,_1,_-1,_false>_>
+             ::realView((DenseBase<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>_>
+                         *)&srcEvaluator);
+    kernel.m_dst = (DstEvaluatorType *)
+                   (pBVar9->
+                   super_BlockImpl<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_Eigen::Dense>
+                   ).
+                   super_BlockImpl_dense<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>
+                   .
+                   super_MapBase<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_1>
+                   .
+                   super_MapBase<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_0>
+                   .m_data;
+    kernel.m_src = *(SrcEvaluatorType **)
+                    &(pBVar9->
+                     super_BlockImpl<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_Eigen::Dense>
+                     ).
+                     super_BlockImpl_dense<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>
+                     .
+                     super_MapBase<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_1>
+                     .
+                     super_MapBase<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_0>
+                     .m_rows;
+    kernel.m_functor =
+         (assign_op<float,_float> *)
+         (pBVar9->
+         super_BlockImpl<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_Eigen::Dense>).
+         super_BlockImpl_dense<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>.
+         super_MapBase<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_1>.
+         super_MapBase<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_0>.
+         m_cols.m_value;
+    kernel.m_dstExpr =
+         (DstXprType *)
+         (pBVar9->
+         super_BlockImpl<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_Eigen::Dense>).
+         super_BlockImpl_dense<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>.m_xpr;
+    if (kernel.m_functor == (assign_op<float,_float> *)0x0) {
+                    /* Unresolved local var: float magnitude@[???] */
+      fVar22 = 0.0;
+    }
+    else {
+                    /* Unresolved local var: ThisEvaluator thisEval@[???] */
+                    /* Unresolved local var: Scalar res@[???] */
+      fVar22 = *(float *)&((kernel.m_dst)->
+                          super_evaluator<Eigen::PlainObjectBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>_>
+                          ).m_d.data;
+      fVar22 = fVar22 * fVar22;
+                    /* Unresolved local var: Index k@[???] */
+      for (lVar6 = 1; lVar6 < (long)kernel.m_functor; lVar6 = lVar6 + 1) {
+        fVar23 = *(PointerType)
+                  ((long)&((kernel.m_dst)->
+                          super_evaluator<Eigen::PlainObjectBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>_>
+                          ).m_d.data +
+                  (((XprTypeNested)kernel.m_dstExpr)->
+                  super_PlainObjectBase<Eigen::Matrix<float,__1,__1,_0,__1,__1>_>).m_storage.
+                  super_DenseStorage_impl<float,__1,__1,__1,_0>.m_rows * lVar6 * 4);
+        fVar22 = fVar22 + fVar23 * fVar23;
+      }
+    }
+    fVar22 = sqrtf(fVar22);
+    fVar34 = fVar34 + fVar22;
+    fVar21 = fVar21 + fVar22 * fVar22;
+  }
+  fVar22 = (float)(CONCAT44(dstEvaluator_6.
+                            super_block_evaluator<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>
+                            .
+                            super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_Eigen::Matrix<float,_1,__1,_1,_1,__1>_>
+                            .m_innerStride.m_value._4_4_,
+                            (float)dstEvaluator_6.
+                                   super_block_evaluator<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>
+                                   .
+                                   super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_Eigen::Matrix<float,_1,__1,_1,_1,__1>_>
+                                   .m_innerStride.m_value) *
+                  dstEvaluator_6.
+                  super_block_evaluator<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>
+                  .
+                  super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_Eigen::Matrix<float,_1,__1,_1,_1,__1>_>
+                  ._16_8_);
+  fVar34 = fVar34 / fVar22;
+  if ((void *)CONCAT44(dstEvaluator_6.
+                       super_block_evaluator<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>
+                       .
+                       super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_Eigen::Matrix<float,_1,__1,_1,_1,__1>_>
+                       .m_data._4_4_,
+                       dstEvaluator_6.
+                       super_block_evaluator<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>
+                       .
+                       super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_Eigen::Matrix<float,_1,__1,_1,_1,__1>_>
+                       .m_data._0_4_) != (void *)0x0) {
+    free((void *)CONCAT44(dstEvaluator_6.
+                          super_block_evaluator<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>
+                          .
+                          super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_Eigen::Matrix<float,_1,__1,_1,_1,__1>_>
+                          .m_data._4_4_,
+                          dstEvaluator_6.
+                          super_block_evaluator<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>
+                          .
+                          super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_Eigen::Matrix<float,_1,__1,_1,_1,__1>_>
+                          .m_data._0_4_));
+  }
+  (this->acc_var_list).super_PlainObjectBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_>.m_storage.
+  super_DenseStorage_impl<float,__1,__1,_1,_0>.m_data[this->acc_var_cnt] =
+       fVar21 / fVar22 - fVar34 * fVar34;
+  iVar17 = this->acc_var_cnt + 1;
+  this->acc_var_cnt = iVar17;
+  if (199 < iVar17) {
+    this->acc_var_cnt = 0;
+  }
+  fVar34 = (float)(this->acc_rot).super_PlainObjectBase<Eigen::Matrix<float,__1,__1,_0,__1,__1>_>.
+                  m_storage.super_DenseStorage_impl<float,__1,__1,__1,_0>.m_rows;
+  kernel.m_src = (SrcEvaluatorType *)
+                 (this->acc_rot).super_PlainObjectBase<Eigen::Matrix<float,__1,__1,_0,__1,__1>_>.
+                 m_storage.super_DenseStorage_impl<float,__1,__1,__1,_0>.m_cols;
+  kernel.m_functor = (assign_op<float,_float> *)CONCAT44(kernel.m_functor._4_4_,fVar34);
+  srcEvaluator.
+  super_block_evaluator<const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_identity_op<float>,_Eigen::Matrix<float,_3,_3,_0,_3,_3>_>,_3,_1,_false,_false>
+  .
+  super_unary_evaluator<Eigen::Block<const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_identity_op<float>,_Eigen::Matrix<float,_3,_3,_0,_3,_3>_>,_3,_1,_false>,_Eigen::internal::IndexBased,_float>
+  .m_startCol.m_value = 0;
+  srcEvaluator.
+  super_block_evaluator<const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_identity_op<float>,_Eigen::Matrix<float,_3,_3,_0,_3,_3>_>,_3,_1,_false,_false>
+  .
+  super_unary_evaluator<Eigen::Block<const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_identity_op<float>,_Eigen::Matrix<float,_3,_3,_0,_3,_3>_>,_3,_1,_false>,_Eigen::internal::IndexBased,_float>
+  ._24_8_ = kernel.m_dst;
+  dstEvaluator_7.
+  super_unary_evaluator<Eigen::Transpose<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>,_Eigen::internal::IndexBased,_float>
+  .m_argImpl.super_evaluator<Eigen::PlainObjectBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>_>.m_d.data
+       = (unary_evaluator<Eigen::Transpose<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>,_Eigen::internal::IndexBased,_float>
+          )((long)&this->rbs_[0].flt_base_acc +
+           ((-(ulong)(uVar3 >> 0x1f) & 0xfffffffe00000000 | uVar15 << 1) + (long)(int)uVar3) * 0x40)
+  ;
+  dstEvaluator_6.super_block_evaluator<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>.
+  super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_Eigen::Matrix<float,_1,__1,_1,_1,__1>_>
+  .m_data = (PointerType)&dstEvaluator_7;
+  dstEvaluator_6.super_block_evaluator<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false,_true>.
+  super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,__1,__1,_0,__1,__1>,_1,__1,_false>,_Eigen::Matrix<float,_1,__1,_1,_1,__1>_>
+  .m_innerStride.m_value = (long)&dstEvaluator;
+                    /* Unresolved local var: Index size@[???]
+                       Unresolved local var: Index i@[???] */
+  for (lVar6 = 0; lVar6 < 3; lVar6 = lVar6 + 1) {
+    pfVar8 = (pMVar1->super_PlainObjectBase<Eigen::Matrix<float,__1,__1,_0,__1,__1>_>).m_storage.
+             super_DenseStorage_impl<float,__1,__1,__1,_0>.m_data;
+    kernel.m_src = (SrcEvaluatorType *)
+                   (this->acc_rot).super_PlainObjectBase<Eigen::Matrix<float,__1,__1,_0,__1,__1>_>.
+                   m_storage.super_DenseStorage_impl<float,__1,__1,__1,_0>.m_rows;
+    kernel.m_dst = (DstEvaluatorType *)0x0;
+    if (pfVar8 != (float *)0x0) {
+      kernel.m_dst = (DstEvaluatorType *)(pfVar8 + lVar6 * (long)kernel.m_src);
+    }
+    if (kernel.m_src == (SrcEvaluatorType *)0x0) {
+      fVar21 = 0.0;
+    }
+    else {
+                    /* Unresolved local var: Index size@[???]
+                       Unresolved local var: Index packetSize@[???]
+                       Unresolved local var: int packetAlignment@[???]
+                       Unresolved local var: int alignment0@[???]
+                       Unresolved local var: int alignment@[???]
+                       Unresolved local var: Index alignedStart@[???]
+                       Unresolved local var: Index alignedSize2@[???]
+                       Unresolved local var: Index alignedSize@[???]
+                       Unresolved local var: Index alignedEnd2@[???]
+                       Unresolved local var: Index alignedEnd@[???]
+                       Unresolved local var: Scalar res@[???] */
+                    /* Unresolved local var: long ScalarSize@[???]
+                       Unresolved local var: long AlignmentSize@[???]
+                       Unresolved local var: long AlignmentMask@[???] */
+      pvVar10 = (variable_if_dynamic<long_int,__1> *)kernel.m_src;
+                    /* Unresolved local var: long first@[???] */
+      if ((((ulong)kernel.m_dst & 3) == 0) &&
+         (pvVar10 = (variable_if_dynamic<long_int,__1> *)(-((ulong)kernel.m_dst >> 2) & 3),
+         (long)kernel.m_src <= (long)pvVar10)) {
+        pvVar10 = (variable_if_dynamic<long_int,__1> *)kernel.m_src;
+      }
+      uVar4 = (long)kernel.m_src - (long)pvVar10;
+      uVar16 = uVar4 + 7;
+      if (-1 < (long)uVar4) {
+        uVar16 = uVar4;
+      }
+      uVar12 = uVar4 + 3;
+      if (-1 < (long)uVar4) {
+        uVar12 = uVar4;
+      }
+      uVar12 = uVar12 & 0xfffffffffffffffc;
+      lVar13 = (long)&pvVar10->m_value + (uVar16 & 0xfffffffffffffff8);
+      lVar18 = (long)&pvVar10->m_value + uVar12;
+      dstEvaluator_3.super_block_evaluator<Eigen::Matrix<float,_4,_1,_0,_4,_1>,_3,_1,_false,_true>.
+      super_mapbase_evaluator<Eigen::Block<Eigen::Matrix<float,_4,_1,_0,_4,_1>,_3,_1,_false>,_Eigen::Matrix<float,_3,_1,_0,_3,_1>_>
+      .m_data = (PointerType)kernel.m_dst;
+      if (uVar12 == 0) {
+        fVar21 = *(float *)&((kernel.m_dst)->
+                            super_evaluator<Eigen::PlainObjectBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>_>
+                            ).m_d.data;
+                    /* Unresolved local var: Index index@[???] */
+        for (lVar18 = 1; lVar18 < (long)kernel.m_src; lVar18 = lVar18 + 1) {
+          fVar21 = fVar21 + *(float *)((long)&((kernel.m_dst)->
+                                              super_evaluator<Eigen::PlainObjectBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>_>
+                                              ).m_d.data + lVar18 * 4);
+        }
+      }
+      else {
+                    /* Unresolved local var: PacketScalar packet_res0@[???] */
+        pfVar8 = (float *)((long)&((kernel.m_dst)->
+                                  super_evaluator<Eigen::PlainObjectBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>_>
+                                  ).m_d.data + (long)pvVar10 * 4);
+        fVar21 = *pfVar8;
+        fVar22 = pfVar8[1];
+        fVar23 = pfVar8[2];
+        fVar27 = pfVar8[3];
+        if (4 < (long)uVar12) {
+                    /* Unresolved local var: PacketScalar packet_res1@[???] */
+          pfVar8 = (float *)((long)&kernel.m_dst[2].
+                                    super_evaluator<Eigen::PlainObjectBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>_>
+                                    .m_d.data + (long)&pvVar10->m_value * 4);
+          uVar25 = *(undefined8 *)(pfVar8 + 2);
+          uVar24 = *(undefined8 *)pfVar8;
+          pvVar5 = pvVar10;
+                    /* Unresolved local var: Index index@[???] */
+          while( true ) {
+            pvVar14 = pvVar5 + 1;
+            fVar28 = (float)((ulong)uVar24 >> 0x20);
+            fVar29 = (float)((ulong)uVar25 >> 0x20);
+            if (lVar13 <= (long)pvVar14) break;
+            pfVar8 = (float *)((long)&((kernel.m_dst)->
+                                      super_evaluator<Eigen::PlainObjectBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>_>
+                                      ).m_d.data + (long)pvVar14 * 4);
+            uVar31 = *(undefined8 *)(pfVar8 + 2);
+            uVar26 = *(undefined8 *)pfVar8;
+            fVar21 = fVar21 + (float)uVar26;
+            fVar22 = fVar22 + (float)((ulong)uVar26 >> 0x20);
+            fVar23 = fVar23 + (float)uVar31;
+            fVar27 = fVar27 + (float)((ulong)uVar31 >> 0x20);
+            pfVar8 = (float *)((long)&kernel.m_dst[2].
+                                      super_evaluator<Eigen::PlainObjectBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>_>
+                                      .m_d.data + (long)&pvVar5[1].m_value * 4);
+            uVar31 = *(undefined8 *)(pfVar8 + 2);
+            uVar26 = *(undefined8 *)pfVar8;
+            uVar24 = CONCAT44(fVar28 + (float)((ulong)uVar26 >> 0x20),(float)uVar24 + (float)uVar26)
+            ;
+            uVar25 = CONCAT44(fVar29 + (float)((ulong)uVar31 >> 0x20),(float)uVar25 + (float)uVar31)
+            ;
+            pvVar5 = pvVar14;
+          }
+          fVar21 = fVar21 + (float)uVar24;
+          fVar22 = fVar22 + fVar28;
+          fVar23 = fVar23 + (float)uVar25;
+          fVar27 = fVar27 + fVar29;
+          if ((long)(uVar16 & 0xfffffffffffffff8) < (long)uVar12) {
+            pfVar8 = (float *)((long)&((kernel.m_dst)->
+                                      super_evaluator<Eigen::PlainObjectBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>_>
+                                      ).m_d.data + lVar13 * 4);
+            uVar25 = *(undefined8 *)(pfVar8 + 2);
+            uVar24 = *(undefined8 *)pfVar8;
+            fVar21 = fVar21 + (float)uVar24;
+            fVar22 = fVar22 + (float)((ulong)uVar24 >> 0x20);
+            fVar23 = fVar23 + (float)uVar25;
+            fVar27 = fVar27 + (float)((ulong)uVar25 >> 0x20);
+          }
+        }
+        fVar21 = fVar21 + fVar22 + fVar23 + fVar27;
+                    /* Unresolved local var: Index index@[???] */
+        for (lVar13 = 0; lVar13 < (long)pvVar10; lVar13 = lVar13 + 1) {
+          fVar21 = fVar21 + *(float *)((long)&((kernel.m_dst)->
+                                              super_evaluator<Eigen::PlainObjectBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>_>
+                                              ).m_d.data + lVar13 * 4);
+        }
+        for (; lVar18 < (long)kernel.m_src; lVar18 = lVar18 + 1) {
+                    /* Unresolved local var: Index index@[???] */
+          fVar21 = fVar21 + *(float *)((long)&((kernel.m_dst)->
+                                              super_evaluator<Eigen::PlainObjectBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>_>
+                                              ).m_d.data + lVar18 * 4);
+        }
+      }
+    }
+    *(float *)((long)dstEvaluator_7.
+                     super_unary_evaluator<Eigen::Transpose<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>,_Eigen::internal::IndexBased,_float>
+                     .m_argImpl.
+                     super_evaluator<Eigen::PlainObjectBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>_>.
+                     m_d.data + lVar6 * 4) = fVar21 / fVar34;
+  }
+  srcEvaluator.
+  super_block_evaluator<const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_identity_op<float>,_Eigen::Matrix<float,_3,_3,_0,_3,_3>_>,_3,_1,_false,_false>
+  .
+  super_unary_evaluator<Eigen::Block<const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_identity_op<float>,_Eigen::Matrix<float,_3,_3,_0,_3,_3>_>,_3,_1,_false>,_Eigen::internal::IndexBased,_float>
+  .m_startRow.m_value = (long)pMVar1;
+  (*((this->super_StateBase).ri_ptr_.
+     super___shared_ptr<interface::RobotInterface,_(__gnu_cxx::_Lock_policy)2>._M_ptr)->
+    _vptr_RobotInterface[8])(&kernel);
+  lVar6 = ((-(ulong)(uVar3 >> 0x1f) & 0xfffffffe00000000 | uVar15 << 1) + (long)(int)uVar3) * 0x40;
+                    /* Unresolved local var: float * __tmp@[???] */
+  pvVar7 = *(void **)((long)&this->rbs_[0].flt_base_acc + lVar6 + 0x54);
+  *(DstEvaluatorType **)((long)&this->rbs_[0].flt_base_acc + lVar6 + 0x54) = kernel.m_dst;
+                    /* Unresolved local var: long __tmp@[???] */
+  *(SrcEvaluatorType **)((long)&this->rbs_[0].flt_base_acc + lVar6 + 0x5c) = kernel.m_src;
+  if (pvVar7 != (void *)0x0) {
+    free(pvVar7);
+  }
+                    /* Unresolved local var: memory_order __b@[???] */
+  (this->rbs_write_index_).super___atomic_base<int>._M_i = 1 - uVar3;
+  if (lVar11 - *(long *)PTR___stack_chk_guard_00386ea8 != 0) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail(PTR___stack_chk_guard_00386ea8,lVar11 - *(long *)PTR___stack_chk_guard_00386ea8
+                     ,0);
+  }
+  return;
+}
+
+
+
+========================================================================
+===== M20NaviStairRunner::GetRobotAction  (expected @ 0x295068)
+  actual: GetRobotAction @ 00295068
+========================================================================
+
+/* DWARF original prototype: RobotAction GetRobotAction(M20NaviStairRunner * this, RobotBasicState *
+   ro, UserCommand.conflict * uc) */
+
+void __thiscall
+M20NaviStairRunner::GetRobotAction
+          (RobotAction *__return_storage_ptr__,M20NaviStairRunner *this,RobotBasicState *ro,
+          UserCommand_conflict *uc)
+
+{
+  int iVar1;
+  CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *pCVar2;
+  Index IVar3;
+  contained_type *info;
+  Scalar *p_data;
+  size_t p_data_element_count;
+  long *shape;
+  size_type shape_len;
+  type *__x;
+  Value *input_values;
+  size_type input_count;
+  ValueImpl<OrtValue> *pVVar4;
+  float *pfVar5;
+  Scalar *pSVar6;
+  Scalar *pSVar7;
+  int __in_chrg;
+  int __in_chrg_00;
+  int __in_chrg_01;
+  int __in_chrg_02;
+  int __in_chrg_03;
+  int __in_chrg_04;
+  int __in_chrg_05;
+  float fVar8;
+  float fVar9;
+  initializer_list<long_int> __l;
+  UserCommand_conflict *uc_local;
+  RobotBasicState *ro_local;
+  M20NaviStairRunner *this_local;
+  int i;
+  int i_1;
+  int i_2;
+  Value state_tensor;
+  vector<long_int,_std::allocator<long_int>_> state_shape;
+  vector<Ort::Value,_std::allocator<Ort::Value>_> output_tensors;
+  Type local_1c8;
+  Type local_190;
+  Type local_158;
+  VecXf obs_history_record;
+  ZeroReturnType local_c8;
+  Vec3f project_gravity;
+  undefined1 local_18 [16];
+  long local_8;
+  
+  local_8 = *(long *)PTR___stack_chk_guard_00386ea8;
+  PolicyRunnerBase::limit_cmd_vel(&this->super_PolicyRunnerBase,uc,true);
+  PolicyRunnerBase::update_joint_data(&this->super_PolicyRunnerBase,ro);
+  obs_history_record.super_PlainObjectBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_>.m_storage.
+  super_DenseStorage_impl<float,__1,__1,_1,_0>.m_data =
+       (float *)Eigen::DenseBase<Eigen::Matrix<float,_3,_3,_0,_3,_3>_>::transpose
+                          ((DenseBase<Eigen::Matrix<float,_3,_3,_0,_3,_3>_> *)&ro->base_rot_mat);
+  local_1c8.super_Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>.
+  super_BlockImpl<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false,_Eigen::Dense>.
+  super_BlockImpl_dense<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false,_true>.
+  super_MapBase<Eigen::Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>,_1>.
+  super_MapBase<Eigen::Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>,_0>.m_data._0_4_ =
+       0;
+  local_190.super_Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>.
+  super_BlockImpl<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false,_Eigen::Dense>.
+  super_BlockImpl_dense<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false,_true>.
+  super_MapBase<Eigen::Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>,_1>.
+  super_MapBase<Eigen::Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>,_0>.m_data._0_1_ =
+       (MatrixBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<float,_float>,_const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<float>,_const_Eigen::Matrix<float,_3,_1,_0,_3,_1>_>,_const_Eigen::Matrix<float,_3,_1,_0,_3,_1>_>_>
+        )0x0;
+  local_190.super_Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>.
+  super_BlockImpl<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false,_Eigen::Dense>.
+  super_BlockImpl_dense<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false,_true>.
+  super_MapBase<Eigen::Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>,_1>.
+  super_MapBase<Eigen::Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>,_0>.m_data._1_3_ =
+       0;
+  local_158.super_Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>.
+  super_BlockImpl<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false,_Eigen::Dense>.
+  super_BlockImpl_dense<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false,_true>.
+  super_MapBase<Eigen::Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>,_1>.
+  super_MapBase<Eigen::Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>,_0>.m_data._0_4_ =
+       0xbf800000;
+  Eigen::Matrix<float,_3,_1,_0,_3,_1>::Matrix
+            ((Matrix<float,_3,_1,_0,_3,_1> *)local_18,(Scalar *)&local_1c8,(Scalar *)&local_190,
+             (Scalar *)&local_158);
+  local_c8 = (ZeroReturnType)
+             Eigen::MatrixBase<Eigen::Transpose<const_Eigen::Matrix<float,_3,_3,_0,_3,_3>_>_>::
+             operator*<Eigen::Matrix<float,_3,_1>_>
+                       ((MatrixBase<Eigen::Transpose<const_Eigen::Matrix<float,_3,_3,_0,_3,_3>_>_> *
+                        )&obs_history_record,
+                        (MatrixBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)local_18);
+  Eigen::Matrix<float,_3,_1,_0,_3,_1>::
+  Matrix<Eigen::Product<Eigen::Transpose<const_Eigen::Matrix<float,_3,_3>_>,_Eigen::Matrix<float,_3,_1>,_0>_>
+            (&project_gravity,
+             (EigenBase<Eigen::Product<Eigen::Transpose<const_Eigen::Matrix<float,_3,_3,_0,_3,_3>_>,_Eigen::Matrix<float,_3,_1,_0,_3,_1>,_0>_>
+              *)&local_c8);
+  Eigen::operator*<float>
+            ((CwiseBinaryOp<Eigen::internal::scalar_product_op<float,_float>,_const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<float>,_const_Eigen::Matrix<float,_3,_1,_0,_3,_1>_>,_const_Eigen::Matrix<float,_3,_1,_0,_3,_1>_>
+              *)&local_190,&(this->super_PolicyRunnerBase).omega_scale_,
+             (StorageBaseType *)&ro->base_omega);
+  Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::
+  operator<<_<Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<float,_float>,_const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<float>,_const_Eigen::Matrix<float,_3,_1>_>,_const_Eigen::Matrix<float,_3,_1>_>_>
+            ((CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)&local_158,
+             (DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+             &(this->super_PolicyRunnerBase).current_observation_,
+             (DenseBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<float,_float>,_const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<float>,_const_Eigen::Matrix<float,_3,_1,_0,_3,_1>_>,_const_Eigen::Matrix<float,_3,_1,_0,_3,_1>_>_>
+              *)&local_190);
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::
+           operator_<Eigen::Matrix<float,_3,_1>_>
+                     ((CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)&local_158,
+                      (DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&project_gravity);
+  Eigen::MatrixBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::cwiseProduct<Eigen::Matrix<float,_3,_1>_>
+            ((CwiseBinaryOp<Eigen::internal::scalar_product_op<float,_float>,_const_Eigen::Matrix<float,_3,_1,_0,_3,_1>,_const_Eigen::Matrix<float,_3,_1,_0,_3,_1>_>
+              *)&output_tensors,
+             (MatrixBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)
+             &(this->super_PolicyRunnerBase).cmd_vel,
+             (MatrixBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)
+             &(this->super_PolicyRunnerBase).cmd_vel_scale_);
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::
+           operator_<Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<float,_float>,_const_Eigen::Matrix<float,_3,_1>,_const_Eigen::Matrix<float,_3,_1>_>_>
+                     (pCVar2,(DenseBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<float,_float>,_const_Eigen::Matrix<float,_3,_1,_0,_3,_1>,_const_Eigen::Matrix<float,_3,_1,_0,_3,_1>_>_>
+                              *)&output_tensors);
+  Eigen::MatrixBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator-<Eigen::Matrix<float,__1,_1>_>
+            ((CwiseBinaryOp<Eigen::internal::scalar_difference_op<float,_float>,_const_Eigen::Matrix<float,__1,_1,_0,__1,_1>,_const_Eigen::Matrix<float,__1,_1,_0,__1,_1>_>
+              *)&local_1c8,
+             (MatrixBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+             &(this->super_PolicyRunnerBase).dof_pos,
+             (MatrixBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+             &(this->super_PolicyRunnerBase).dof_pos_default_trans);
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::
+           operator_<Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<float,_float>,_const_Eigen::Matrix<float,__1,_1>,_const_Eigen::Matrix<float,__1,_1>_>_>
+                     (pCVar2,(DenseBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<float,_float>,_const_Eigen::Matrix<float,__1,_1,_0,__1,_1>,_const_Eigen::Matrix<float,__1,_1,_0,__1,_1>_>_>
+                              *)&local_1c8);
+  Eigen::operator*<float>
+            ((CwiseBinaryOp<Eigen::internal::scalar_product_op<float,_float>,_const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<float>,_const_Eigen::Matrix<float,__1,_1,_0,__1,_1>_>,_const_Eigen::Matrix<float,__1,_1,_0,__1,_1>_>
+              *)&obs_history_record,&(this->super_PolicyRunnerBase).dof_vel_scale_,
+             (StorageBaseType *)&(this->super_PolicyRunnerBase).dof_vel);
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::
+           operator_<Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<float,_float>,_const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<float>,_const_Eigen::Matrix<float,__1,_1>_>,_const_Eigen::Matrix<float,__1,_1>_>_>
+                     (pCVar2,(DenseBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<float,_float>,_const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<float>,_const_Eigen::Matrix<float,__1,_1,_0,__1,_1>_>,_const_Eigen::Matrix<float,__1,_1,_0,__1,_1>_>_>
+                              *)&obs_history_record);
+  Eigen::operator*<float>
+            ((CwiseBinaryOp<Eigen::internal::scalar_product_op<float,_float>,_const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<float>,_const_Eigen::Matrix<float,__1,_1,_0,__1,_1>_>,_const_Eigen::Matrix<float,__1,_1,_0,__1,_1>_>
+              *)&local_c8,&(this->super_PolicyRunnerBase).wheel_vel_scale_,
+             (StorageBaseType *)&(this->super_PolicyRunnerBase).wheel_vel);
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::
+           operator_<Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<float,_float>,_const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<float>,_const_Eigen::Matrix<float,__1,_1>_>,_const_Eigen::Matrix<float,__1,_1>_>_>
+                     (pCVar2,(DenseBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<float,_float>,_const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<float>,_const_Eigen::Matrix<float,__1,_1,_0,__1,_1>_>,_const_Eigen::Matrix<float,__1,_1,_0,__1,_1>_>_>
+                              *)&local_c8);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::
+  operator_<Eigen::Matrix<float,__1,_1>_>
+            (pCVar2,(DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)PTR_last_action__00386df8);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::~CommaInitializer
+            ((CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)&local_158,__in_chrg);
+  IVar3 = Eigen::EigenBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::size
+                    ((EigenBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+                     &(this->super_PolicyRunnerBase).observation_history_);
+  if (IVar3 < (this->super_PolicyRunnerBase).obs_dim_ *
+              (this->super_PolicyRunnerBase).obs_history_num_) {
+    Eigen::PlainObjectBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::resize
+              (&(this->super_PolicyRunnerBase).observation_history_.
+                super_PlainObjectBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_>,
+               (long)((this->super_PolicyRunnerBase).obs_dim_ *
+                     (this->super_PolicyRunnerBase).obs_history_num_));
+  }
+  if (0 < (this->super_PolicyRunnerBase).obs_history_num_) {
+    Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::segment<int>
+              ((Type *)&local_c8,
+               (DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+               &(this->super_PolicyRunnerBase).observation_history_,
+               (long)(this->super_PolicyRunnerBase).obs_dim_,
+               ((this->super_PolicyRunnerBase).obs_history_num_ + -1) *
+               (this->super_PolicyRunnerBase).obs_dim_);
+    Eigen::DenseBase<Eigen::Block<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_-1,_1,_false>_>::eval
+              ((DenseBase<Eigen::Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>_> *)
+               &local_c8);
+    Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::segment<int>
+              ((Type *)&local_c8,
+               (DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+               &(this->super_PolicyRunnerBase).observation_history_,0,
+               ((this->super_PolicyRunnerBase).obs_history_num_ + -1) *
+               (this->super_PolicyRunnerBase).obs_dim_);
+    Eigen::MatrixBase<Eigen::Block<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_-1,_1,_false>_>::
+    operator=<Eigen::Matrix<float,__1,_1>_>
+              ((MatrixBase<Eigen::Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>_> *)
+               &local_c8,(DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)&obs_history_record);
+    Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::segment<int>
+              ((Type *)&local_c8,
+               (DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+               &(this->super_PolicyRunnerBase).observation_history_,
+               (long)(((this->super_PolicyRunnerBase).obs_history_num_ + -1) *
+                     (this->super_PolicyRunnerBase).obs_dim_),
+               (this->super_PolicyRunnerBase).obs_dim_);
+    Eigen::MatrixBase<Eigen::Block<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_-1,_1,_false>_>::
+    operator=<Eigen::Matrix<float,__1,_1>_>
+              ((MatrixBase<Eigen::Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>_> *)
+               &local_c8,
+               (DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+               &(this->super_PolicyRunnerBase).current_observation_);
+    Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::~Matrix(&obs_history_record,__in_chrg_00);
+  }
+  Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::segment<int>
+            ((Type *)&local_c8,
+             (DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+             &(this->super_PolicyRunnerBase).observation_total_,0,
+             (this->super_PolicyRunnerBase).obs_dim_);
+  Eigen::MatrixBase<Eigen::Block<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_-1,_1,_false>_>::
+  operator=<Eigen::Matrix<float,__1,_1>_>
+            ((MatrixBase<Eigen::Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>_> *)
+             &local_c8,
+             (DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+             &(this->super_PolicyRunnerBase).current_observation_);
+  Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::segment<int>
+            ((Type *)&local_c8,
+             (DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+             &(this->super_PolicyRunnerBase).observation_total_,
+             (long)(this->super_PolicyRunnerBase).obs_dim_,
+             (this->super_PolicyRunnerBase).obs_dim_ *
+             (this->super_PolicyRunnerBase).obs_history_num_);
+  Eigen::MatrixBase<Eigen::Block<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_-1,_1,_false>_>::
+  operator=<Eigen::Matrix<float,__1,_1>_>
+            ((MatrixBase<Eigen::Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>_> *)
+             &local_c8,
+             (DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+             &(this->super_PolicyRunnerBase).observation_history_);
+  local_18._0_8_ = 1;
+  local_18._8_8_ = SEXT48((this->super_PolicyRunnerBase).obs_total_dim_);
+  std::allocator<long_int>::allocator((allocator<long_int> *)&local_c8);
+  __l._M_len = 2;
+  __l._M_array = (iterator)local_18;
+  std::vector<long_int,_std::allocator<long_int>_>::vector
+            (&state_shape,__l,(allocator_type *)&local_c8);
+  std::allocator<long_int>::~allocator((allocator<long_int> *)&local_c8,__in_chrg_01);
+  info = Ort::detail::Base<OrtMemoryInfo>::
+         operator_Ort__detail__Base<OrtMemoryInfo>__contained_type_
+                   ((Base<OrtMemoryInfo> *)&(this->super_PolicyRunnerBase).memory_info_);
+  p_data = Eigen::PlainObjectBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::data
+                     (&(this->super_PolicyRunnerBase).observation_total_.
+                       super_PlainObjectBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_>);
+  p_data_element_count =
+       Eigen::EigenBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::size
+                 ((EigenBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+                  &(this->super_PolicyRunnerBase).observation_total_);
+  shape = std::vector<long_int,_std::allocator<long_int>_>::data(&state_shape);
+  shape_len = std::vector<long_int,_std::allocator<long_int>_>::size(&state_shape);
+  Ort::Value::CreateTensor<float>(info,p_data,p_data_element_count,shape,shape_len);
+  std::vector<Ort::Value,_std::allocator<Ort::Value>_>::clear
+            (&(this->super_PolicyRunnerBase).ort_inputs_);
+  __x = std::move<Ort::Value&>(&state_tensor);
+  std::vector<Ort::Value,_std::allocator<Ort::Value>_>::push_back
+            (&(this->super_PolicyRunnerBase).ort_inputs_,__x);
+  Ort::RunOptions::RunOptions((RunOptions *)&local_c8,(nullptr_t)0x0);
+  input_values = std::vector<Ort::Value,_std::allocator<Ort::Value>_>::data
+                           (&(this->super_PolicyRunnerBase).ort_inputs_);
+  input_count = std::vector<Ort::Value,_std::allocator<Ort::Value>_>::size
+                          (&(this->super_PolicyRunnerBase).ort_inputs_);
+  Ort::detail::SessionImpl<OrtSession>::Run
+            (&output_tensors,&(this->super_PolicyRunnerBase).session1_.super_SessionImpl<OrtSession>
+             ,(RunOptions *)&local_c8,(this->super_PolicyRunnerBase).input_names_,input_values,
+             input_count,(this->super_PolicyRunnerBase).output_names_,2);
+  Ort::RunOptions::~RunOptions((RunOptions *)&local_c8,__in_chrg_02);
+  pVVar4 = &std::vector<Ort::Value,_std::allocator<Ort::Value>_>::operator[](&output_tensors,0)->
+            super_ValueImpl<OrtValue>;
+  pfVar5 = Ort::detail::ValueImpl<OrtValue>::GetTensorMutableData<float>(pVVar4);
+  iVar1 = (this->super_PolicyRunnerBase).act_dim_;
+  Eigen::Stride<0,_0>::Stride((Stride<0,_0> *)&obs_history_record);
+  Eigen::Map<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_0,_Eigen::Stride<0,_0>_>::Map
+            ((Map<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_0,_Eigen::Stride<0,_0>_> *)&local_c8,pfVar5
+             ,(long)iVar1,(Stride<0,_0> *)&obs_history_record);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::Map<Eigen::Matrix<float,__1,_1>,_0,_Eigen::Stride<0,_0>_>_>
+            (&(this->super_PolicyRunnerBase).action_,
+             (DenseBase<Eigen::Map<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_0,_Eigen::Stride<0,_0>_>_>
+              *)&local_c8);
+  pVVar4 = &std::vector<Ort::Value,_std::allocator<Ort::Value>_>::operator[](&output_tensors,1)->
+            super_ValueImpl<OrtValue>;
+  pfVar5 = Ort::detail::ValueImpl<OrtValue>::GetTensorMutableData<float>(pVVar4);
+  Eigen::Stride<0,_0>::Stride((Stride<0,_0> *)&obs_history_record);
+  Eigen::Map<Eigen::Matrix<float,_3,_1,_0,_3,_1>,_0,_Eigen::Stride<0,_0>_>::Map
+            ((Map<Eigen::Matrix<float,_3,_1,_0,_3,_1>,_0,_Eigen::Stride<0,_0>_> *)&local_c8,pfVar5,3
+             ,(Stride<0,_0> *)&obs_history_record);
+  Eigen::Matrix<float,_3,_1,_0,_3,_1>::
+  operator=<Eigen::Map<Eigen::Matrix<float,_3,_1>,_0,_Eigen::Stride<0,_0>_>_>
+            (&(this->super_PolicyRunnerBase).vel_,
+             (DenseBase<Eigen::Map<Eigen::Matrix<float,_3,_1,_0,_3,_1>,_0,_Eigen::Stride<0,_0>_>_> *
+             )&local_c8);
+  MotionStateFeedback::UpdateCurrentVel
+            ((MotionStateFeedback *)PTR_msfb__00386288,
+             (PlainObjectBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>)
+             *(PlainObjectBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)
+              (this->super_PolicyRunnerBase).vel_.
+              super_PlainObjectBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>.m_storage.
+              super_DenseStorage_impl<float,_3,_3,_1,_0>.m_data.array);
+  for (i = 0; i < (this->super_PolicyRunnerBase).act_dim_; i = i + 1) {
+    pSVar6 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_1>::operator()
+                       ((DenseCoeffsBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_1> *)
+                        &(this->super_PolicyRunnerBase).action_,(long)i);
+    LimitNumber(pSVar6,-100.0,100.0);
+  }
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::operator=
+            ((Matrix<float,__1,_1,_0,__1,_1> *)PTR_last_action__00386df8,
+             &(this->super_PolicyRunnerBase).action_);
+  for (i_1 = 0; i_1 < 4; i_1 = i_1 + 1) {
+    pSVar6 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_1>::operator()
+                       ((DenseCoeffsBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_1> *)
+                        &(this->super_PolicyRunnerBase).action_,(long)(i_1 << 2));
+    pSVar7 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_1>::operator()
+                       ((DenseCoeffsBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_1> *)
+                        &(this->super_PolicyRunnerBase).action_trans,(long)i_1);
+    *pSVar7 = *pSVar6;
+    pSVar6 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_1>::operator()
+                       ((DenseCoeffsBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_1> *)
+                        &(this->super_PolicyRunnerBase).action_,(long)(i_1 * 4 + 1));
+    pSVar7 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_1>::operator()
+                       ((DenseCoeffsBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_1> *)
+                        &(this->super_PolicyRunnerBase).action_trans,(long)(i_1 + 4));
+    *pSVar7 = *pSVar6;
+    pSVar6 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_1>::operator()
+                       ((DenseCoeffsBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_1> *)
+                        &(this->super_PolicyRunnerBase).action_,(long)(i_1 * 4 + 2));
+    pSVar7 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_1>::operator()
+                       ((DenseCoeffsBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_1> *)
+                        &(this->super_PolicyRunnerBase).action_trans,(long)(i_1 + 8));
+    *pSVar7 = *pSVar6;
+    pSVar6 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_1>::operator()
+                       ((DenseCoeffsBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_1> *)
+                        &(this->super_PolicyRunnerBase).action_,(long)(i_1 * 4 + 3));
+    pSVar7 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_1>::operator()
+                       ((DenseCoeffsBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_1> *)
+                        &(this->super_PolicyRunnerBase).action_trans,(long)(i_1 + 0xc));
+    *pSVar7 = *pSVar6;
+  }
+  local_c8 = Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::Zero
+                       ((long)(this->super_PolicyRunnerBase).act_dim_);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::CwiseNullaryOp<Eigen::internal::scalar_zero_op<float>,_Eigen::Matrix<float,__1,_1>_>_>
+            (&(this->super_PolicyRunnerBase).robot_action.goal_joint_pos,
+             (DenseBase<Eigen::CwiseNullaryOp<Eigen::internal::scalar_zero_op<float>,_Eigen::Matrix<float,__1,_1,_0,__1,_1>_>_>
+              *)&local_c8);
+  local_c8 = Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::Zero
+                       ((long)(this->super_PolicyRunnerBase).act_dim_);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::CwiseNullaryOp<Eigen::internal::scalar_zero_op<float>,_Eigen::Matrix<float,__1,_1>_>_>
+            (&(this->super_PolicyRunnerBase).robot_action.goal_joint_vel,
+             (DenseBase<Eigen::CwiseNullaryOp<Eigen::internal::scalar_zero_op<float>,_Eigen::Matrix<float,__1,_1,_0,__1,_1>_>_>
+              *)&local_c8);
+  local_c8 = Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::Zero
+                       ((long)(this->super_PolicyRunnerBase).act_dim_);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::CwiseNullaryOp<Eigen::internal::scalar_zero_op<float>,_Eigen::Matrix<float,__1,_1>_>_>
+            (&(this->super_PolicyRunnerBase).robot_action.tau_ff,
+             (DenseBase<Eigen::CwiseNullaryOp<Eigen::internal::scalar_zero_op<float>,_Eigen::Matrix<float,__1,_1,_0,__1,_1>_>_>
+              *)&local_c8);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::operator=
+            (&(this->super_PolicyRunnerBase).robot_action.kp,&(this->super_PolicyRunnerBase).kp_);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::operator=
+            (&(this->super_PolicyRunnerBase).robot_action.kd,&(this->super_PolicyRunnerBase).kd_);
+  for (i_2 = 0; i_2 < 4; i_2 = i_2 + 1) {
+    Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::segment<int>
+              (&local_1c8,
+               (DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+               &(this->super_PolicyRunnerBase).robot_action,(long)(i_2 << 2),3);
+    Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::segment<int>
+              (&local_190,
+               (DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+               &(this->super_PolicyRunnerBase).action_trans,(long)(i_2 << 2),3);
+    Eigen::operator*<float>
+              ((CwiseBinaryOp<Eigen::internal::scalar_product_op<float,_float>,_const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<float>,_const_Eigen::Matrix<float,__1,_1,_0,__1,_1>_>,_const_Eigen::Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>_>
+                *)&obs_history_record,&(this->super_PolicyRunnerBase).action_scale_,
+               (StorageBaseType *)&local_190);
+    Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::segment<int>
+              (&local_158,
+               (DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+               &(this->super_PolicyRunnerBase).dof_pos_default_,(long)(i_2 * 3),3);
+    Eigen::
+    MatrixBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<float,_float>,_const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<float>,_const_Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>,_const_Eigen::Block<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_-1,_1,_false>_>_>
+    ::operator+<Eigen::Block<Eigen::Matrix<float,__1,_1>,__1,_1,_false>_>
+              ((CwiseBinaryOp<Eigen::internal::scalar_sum_op<float,_float>,_const_Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<float,_float>,_const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<float>,_const_Eigen::Matrix<float,__1,_1,_0,__1,_1>_>,_const_Eigen::Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>_>,_const_Eigen::Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>_>
+                *)&local_c8,
+               (MatrixBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<float,_float>,_const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<float>,_const_Eigen::Matrix<float,__1,_1,_0,__1,_1>_>,_const_Eigen::Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>_>_>
+                *)&obs_history_record,
+               (MatrixBase<Eigen::Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>_> *)
+               &local_158);
+    Eigen::MatrixBase<Eigen::Block<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_-1,_1,_false>_>::
+    operator=<Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<float,_float>,_const_Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<float,_float>,_const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<float>,_const_Eigen::Matrix<float,__1,_1>_>,_const_Eigen::Block<Eigen::Matrix<float,__1,_1>,__1,_1,_false>_>,_const_Eigen::Block<Eigen::Matrix<float,__1,_1>,__1,_1,_false>_>_>
+              ((MatrixBase<Eigen::Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>_> *)
+               &local_1c8,
+               (DenseBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<float,_float>,_const_Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<float,_float>,_const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<float>,_const_Eigen::Matrix<float,__1,_1,_0,__1,_1>_>,_const_Eigen::Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>_>,_const_Eigen::Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>_>_>
+                *)&local_c8);
+    fVar9 = (this->super_PolicyRunnerBase).wheel_action_scale_;
+    pSVar6 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_1>::operator()
+                       ((DenseCoeffsBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_1> *)
+                        &(this->super_PolicyRunnerBase).action_trans,(long)(i_2 * 4 + 3));
+    fVar8 = *pSVar6;
+    pSVar6 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_1>::operator()
+                       ((DenseCoeffsBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_1> *)
+                        &(this->super_PolicyRunnerBase).robot_action.goal_joint_vel,
+                        (long)(i_2 * 4 + 3));
+    *pSVar6 = fVar9 * fVar8;
+  }
+  PolicyRunnerBase::limit_goal_pos_vel(&this->super_PolicyRunnerBase);
+  types::RobotAction::RobotAction
+            (__return_storage_ptr__,&(this->super_PolicyRunnerBase).robot_action);
+  std::vector<Ort::Value,_std::allocator<Ort::Value>_>::~vector(&output_tensors,__in_chrg_03);
+  Ort::Value::~Value(&state_tensor,__in_chrg_04);
+  std::vector<long_int,_std::allocator<long_int>_>::~vector(&state_shape,__in_chrg_05);
+  if (local_8 - *(long *)PTR___stack_chk_guard_00386ea8 != 0) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail(PTR___stack_chk_guard_00386ea8,
+                     local_8 - *(long *)PTR___stack_chk_guard_00386ea8,0);
+  }
+  return;
+}
+
+
+
+========================================================================
+===== M20BasicFlatRunner::GetRobotAction  (expected @ 0x276f50)
+  actual: GetRobotAction @ 00276f50
+========================================================================
+
+/* DWARF original prototype: RobotAction GetRobotAction(M20BasicFlatRunner * this, RobotBasicState *
+   ro, UserCommand.conflict * uc) */
+
+void __thiscall
+M20BasicFlatRunner::GetRobotAction
+          (RobotAction *__return_storage_ptr__,M20BasicFlatRunner *this,RobotBasicState *ro,
+          UserCommand_conflict *uc)
+
+{
+  int iVar1;
+  Scalar *pSVar2;
+  CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *pCVar3;
+  Index IVar4;
+  contained_type *info;
+  Scalar *p_data;
+  size_t p_data_element_count;
+  long *shape;
+  size_type shape_len;
+  type *__x;
+  Value *input_values;
+  size_type input_count;
+  ValueImpl<OrtValue> *pVVar5;
+  float *pfVar6;
+  Scalar *pSVar7;
+  Scalar *pSVar8;
+  int __in_chrg;
+  int __in_chrg_00;
+  int __in_chrg_01;
+  int __in_chrg_02;
+  int __in_chrg_03;
+  int __in_chrg_04;
+  int __in_chrg_05;
+  float fVar9;
+  float fVar10;
+  initializer_list<long_int> __l;
+  UserCommand_conflict *uc_local;
+  RobotBasicState *ro_local;
+  M20BasicFlatRunner *this_local;
+  int i;
+  int i_1;
+  int i_2;
+  Value state_tensor;
+  vector<long_int,_std::allocator<long_int>_> state_shape;
+  vector<Ort::Value,_std::allocator<Ort::Value>_> output_tensors;
+  Type local_1c8;
+  Type local_190;
+  Type local_158;
+  VecXf obs_history_record;
+  ZeroReturnType local_c8;
+  Vec3f project_gravity;
+  undefined1 local_18 [16];
+  long local_8;
+  
+  local_8 = *(long *)PTR___stack_chk_guard_00386ea8;
+  PolicyRunnerBase::limit_cmd_vel(&this->super_PolicyRunnerBase,uc,true);
+  pSVar2 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>,_1>::operator()
+                     ((DenseCoeffsBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>,_1> *)
+                      &(this->super_PolicyRunnerBase).cmd_vel,0);
+  if (1.0 < *pSVar2) {
+    pSVar2 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>,_1>::operator()
+                       ((DenseCoeffsBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>,_1> *)
+                        &(this->super_PolicyRunnerBase).cmd_vel,2);
+    if (DAT_002d80c0 < (double)*pSVar2) {
+      pSVar2 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>,_1>::operator()
+                         ((DenseCoeffsBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>,_1> *)
+                          &(this->super_PolicyRunnerBase).cmd_vel,2);
+      *pSVar2 = 0.8;
+    }
+    pSVar2 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>,_1>::operator()
+                       ((DenseCoeffsBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>,_1> *)
+                        &(this->super_PolicyRunnerBase).cmd_vel,2);
+    if ((double)*pSVar2 < DAT_002d80c8) {
+      pSVar2 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>,_1>::operator()
+                         ((DenseCoeffsBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>,_1> *)
+                          &(this->super_PolicyRunnerBase).cmd_vel,2);
+      *pSVar2 = -0.8;
+    }
+  }
+  pSVar2 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>,_1>::operator()
+                     ((DenseCoeffsBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>,_1> *)
+                      &(this->super_PolicyRunnerBase).cmd_vel,2);
+  if (1.5 < *pSVar2) {
+    pSVar2 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>,_1>::operator()
+                       ((DenseCoeffsBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>,_1> *)
+                        &(this->super_PolicyRunnerBase).cmd_vel,0);
+    if (1.0 < *pSVar2) {
+      pSVar2 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>,_1>::operator()
+                         ((DenseCoeffsBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>,_1> *)
+                          &(this->super_PolicyRunnerBase).cmd_vel,0);
+      *pSVar2 = 1.0;
+    }
+    pSVar2 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>,_1>::operator()
+                       ((DenseCoeffsBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>,_1> *)
+                        &(this->super_PolicyRunnerBase).cmd_vel,0);
+    if (*pSVar2 < -1.0) {
+      pSVar2 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>,_1>::operator()
+                         ((DenseCoeffsBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>,_1> *)
+                          &(this->super_PolicyRunnerBase).cmd_vel,0);
+      *pSVar2 = -1.0;
+    }
+  }
+  PolicyRunnerBase::update_joint_data(&this->super_PolicyRunnerBase,ro);
+  obs_history_record.super_PlainObjectBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_>.m_storage.
+  super_DenseStorage_impl<float,__1,__1,_1,_0>.m_data =
+       (float *)Eigen::DenseBase<Eigen::Matrix<float,_3,_3,_0,_3,_3>_>::transpose
+                          ((DenseBase<Eigen::Matrix<float,_3,_3,_0,_3,_3>_> *)&ro->base_rot_mat);
+  local_1c8.super_Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>.
+  super_BlockImpl<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false,_Eigen::Dense>.
+  super_BlockImpl_dense<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false,_true>.
+  super_MapBase<Eigen::Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>,_1>.
+  super_MapBase<Eigen::Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>,_0>.m_data._0_4_ =
+       0;
+  local_190.super_Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>.
+  super_BlockImpl<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false,_Eigen::Dense>.
+  super_BlockImpl_dense<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false,_true>.
+  super_MapBase<Eigen::Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>,_1>.
+  super_MapBase<Eigen::Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>,_0>.m_data._0_1_ =
+       (MatrixBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<float,_float>,_const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<float>,_const_Eigen::Matrix<float,_3,_1,_0,_3,_1>_>,_const_Eigen::Matrix<float,_3,_1,_0,_3,_1>_>_>
+        )0x0;
+  local_190.super_Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>.
+  super_BlockImpl<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false,_Eigen::Dense>.
+  super_BlockImpl_dense<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false,_true>.
+  super_MapBase<Eigen::Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>,_1>.
+  super_MapBase<Eigen::Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>,_0>.m_data._1_3_ =
+       0;
+  local_158.super_Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>.
+  super_BlockImpl<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false,_Eigen::Dense>.
+  super_BlockImpl_dense<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false,_true>.
+  super_MapBase<Eigen::Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>,_1>.
+  super_MapBase<Eigen::Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>,_0>.m_data._0_4_ =
+       0xbf800000;
+  Eigen::Matrix<float,_3,_1,_0,_3,_1>::Matrix
+            ((Matrix<float,_3,_1,_0,_3,_1> *)local_18,(Scalar *)&local_1c8,(Scalar *)&local_190,
+             (Scalar *)&local_158);
+  local_c8 = (ZeroReturnType)
+             Eigen::MatrixBase<Eigen::Transpose<const_Eigen::Matrix<float,_3,_3,_0,_3,_3>_>_>::
+             operator*<Eigen::Matrix<float,_3,_1>_>
+                       ((MatrixBase<Eigen::Transpose<const_Eigen::Matrix<float,_3,_3,_0,_3,_3>_>_> *
+                        )&obs_history_record,
+                        (MatrixBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)local_18);
+  Eigen::Matrix<float,_3,_1,_0,_3,_1>::
+  Matrix<Eigen::Product<Eigen::Transpose<const_Eigen::Matrix<float,_3,_3>_>,_Eigen::Matrix<float,_3,_1>,_0>_>
+            (&project_gravity,
+             (EigenBase<Eigen::Product<Eigen::Transpose<const_Eigen::Matrix<float,_3,_3,_0,_3,_3>_>,_Eigen::Matrix<float,_3,_1,_0,_3,_1>,_0>_>
+              *)&local_c8);
+  Eigen::operator*<float>
+            ((CwiseBinaryOp<Eigen::internal::scalar_product_op<float,_float>,_const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<float>,_const_Eigen::Matrix<float,_3,_1,_0,_3,_1>_>,_const_Eigen::Matrix<float,_3,_1,_0,_3,_1>_>
+              *)&local_190,&(this->super_PolicyRunnerBase).omega_scale_,
+             (StorageBaseType *)&ro->base_omega);
+  Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::
+  operator<<_<Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<float,_float>,_const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<float>,_const_Eigen::Matrix<float,_3,_1>_>,_const_Eigen::Matrix<float,_3,_1>_>_>
+            ((CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)&local_158,
+             (DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+             &(this->super_PolicyRunnerBase).current_observation_,
+             (DenseBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<float,_float>,_const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<float>,_const_Eigen::Matrix<float,_3,_1,_0,_3,_1>_>,_const_Eigen::Matrix<float,_3,_1,_0,_3,_1>_>_>
+              *)&local_190);
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::
+           operator_<Eigen::Matrix<float,_3,_1>_>
+                     ((CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)&local_158,
+                      (DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&project_gravity);
+  Eigen::MatrixBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::cwiseProduct<Eigen::Matrix<float,_3,_1>_>
+            ((CwiseBinaryOp<Eigen::internal::scalar_product_op<float,_float>,_const_Eigen::Matrix<float,_3,_1,_0,_3,_1>,_const_Eigen::Matrix<float,_3,_1,_0,_3,_1>_>
+              *)&output_tensors,
+             (MatrixBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)
+             &(this->super_PolicyRunnerBase).cmd_vel,
+             (MatrixBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)
+             &(this->super_PolicyRunnerBase).cmd_vel_scale_);
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::
+           operator_<Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<float,_float>,_const_Eigen::Matrix<float,_3,_1>,_const_Eigen::Matrix<float,_3,_1>_>_>
+                     (pCVar3,(DenseBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<float,_float>,_const_Eigen::Matrix<float,_3,_1,_0,_3,_1>,_const_Eigen::Matrix<float,_3,_1,_0,_3,_1>_>_>
+                              *)&output_tensors);
+  Eigen::MatrixBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator-<Eigen::Matrix<float,__1,_1>_>
+            ((CwiseBinaryOp<Eigen::internal::scalar_difference_op<float,_float>,_const_Eigen::Matrix<float,__1,_1,_0,__1,_1>,_const_Eigen::Matrix<float,__1,_1,_0,__1,_1>_>
+              *)&local_1c8,
+             (MatrixBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+             &(this->super_PolicyRunnerBase).dof_pos,
+             (MatrixBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+             &(this->super_PolicyRunnerBase).dof_pos_default_trans);
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::
+           operator_<Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<float,_float>,_const_Eigen::Matrix<float,__1,_1>,_const_Eigen::Matrix<float,__1,_1>_>_>
+                     (pCVar3,(DenseBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<float,_float>,_const_Eigen::Matrix<float,__1,_1,_0,__1,_1>,_const_Eigen::Matrix<float,__1,_1,_0,__1,_1>_>_>
+                              *)&local_1c8);
+  Eigen::operator*<float>
+            ((CwiseBinaryOp<Eigen::internal::scalar_product_op<float,_float>,_const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<float>,_const_Eigen::Matrix<float,__1,_1,_0,__1,_1>_>,_const_Eigen::Matrix<float,__1,_1,_0,__1,_1>_>
+              *)&obs_history_record,&(this->super_PolicyRunnerBase).dof_vel_scale_,
+             (StorageBaseType *)&(this->super_PolicyRunnerBase).dof_vel);
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::
+           operator_<Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<float,_float>,_const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<float>,_const_Eigen::Matrix<float,__1,_1>_>,_const_Eigen::Matrix<float,__1,_1>_>_>
+                     (pCVar3,(DenseBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<float,_float>,_const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<float>,_const_Eigen::Matrix<float,__1,_1,_0,__1,_1>_>,_const_Eigen::Matrix<float,__1,_1,_0,__1,_1>_>_>
+                              *)&obs_history_record);
+  Eigen::operator*<float>
+            ((CwiseBinaryOp<Eigen::internal::scalar_product_op<float,_float>,_const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<float>,_const_Eigen::Matrix<float,__1,_1,_0,__1,_1>_>,_const_Eigen::Matrix<float,__1,_1,_0,__1,_1>_>
+              *)&local_c8,&(this->super_PolicyRunnerBase).wheel_vel_scale_,
+             (StorageBaseType *)&(this->super_PolicyRunnerBase).wheel_vel);
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::
+           operator_<Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<float,_float>,_const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<float>,_const_Eigen::Matrix<float,__1,_1>_>,_const_Eigen::Matrix<float,__1,_1>_>_>
+                     (pCVar3,(DenseBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<float,_float>,_const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<float>,_const_Eigen::Matrix<float,__1,_1,_0,__1,_1>_>,_const_Eigen::Matrix<float,__1,_1,_0,__1,_1>_>_>
+                              *)&local_c8);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::
+  operator_<Eigen::Matrix<float,__1,_1>_>
+            (pCVar3,(DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)PTR_last_action__00386df8);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::~CommaInitializer
+            ((CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)&local_158,__in_chrg);
+  IVar4 = Eigen::EigenBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::size
+                    ((EigenBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+                     &(this->super_PolicyRunnerBase).observation_history_);
+  if (IVar4 < (this->super_PolicyRunnerBase).obs_dim_ *
+              (this->super_PolicyRunnerBase).obs_history_num_) {
+    Eigen::PlainObjectBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::resize
+              (&(this->super_PolicyRunnerBase).observation_history_.
+                super_PlainObjectBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_>,
+               (long)((this->super_PolicyRunnerBase).obs_dim_ *
+                     (this->super_PolicyRunnerBase).obs_history_num_));
+  }
+  if (0 < (this->super_PolicyRunnerBase).obs_history_num_) {
+    Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::segment<int>
+              ((Type *)&local_c8,
+               (DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+               &(this->super_PolicyRunnerBase).observation_history_,
+               (long)(this->super_PolicyRunnerBase).obs_dim_,
+               ((this->super_PolicyRunnerBase).obs_history_num_ + -1) *
+               (this->super_PolicyRunnerBase).obs_dim_);
+    Eigen::DenseBase<Eigen::Block<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_-1,_1,_false>_>::eval
+              ((DenseBase<Eigen::Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>_> *)
+               &local_c8);
+    Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::segment<int>
+              ((Type *)&local_c8,
+               (DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+               &(this->super_PolicyRunnerBase).observation_history_,0,
+               ((this->super_PolicyRunnerBase).obs_history_num_ + -1) *
+               (this->super_PolicyRunnerBase).obs_dim_);
+    Eigen::MatrixBase<Eigen::Block<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_-1,_1,_false>_>::
+    operator=<Eigen::Matrix<float,__1,_1>_>
+              ((MatrixBase<Eigen::Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>_> *)
+               &local_c8,(DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)&obs_history_record);
+    Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::segment<int>
+              ((Type *)&local_c8,
+               (DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+               &(this->super_PolicyRunnerBase).observation_history_,
+               (long)(((this->super_PolicyRunnerBase).obs_history_num_ + -1) *
+                     (this->super_PolicyRunnerBase).obs_dim_),
+               (this->super_PolicyRunnerBase).obs_dim_);
+    Eigen::MatrixBase<Eigen::Block<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_-1,_1,_false>_>::
+    operator=<Eigen::Matrix<float,__1,_1>_>
+              ((MatrixBase<Eigen::Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>_> *)
+               &local_c8,
+               (DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+               &(this->super_PolicyRunnerBase).current_observation_);
+    Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::~Matrix(&obs_history_record,__in_chrg_00);
+  }
+  Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::segment<int>
+            ((Type *)&local_c8,
+             (DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+             &(this->super_PolicyRunnerBase).observation_total_,0,
+             (this->super_PolicyRunnerBase).obs_dim_);
+  Eigen::MatrixBase<Eigen::Block<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_-1,_1,_false>_>::
+  operator=<Eigen::Matrix<float,__1,_1>_>
+            ((MatrixBase<Eigen::Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>_> *)
+             &local_c8,
+             (DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+             &(this->super_PolicyRunnerBase).current_observation_);
+  Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::segment<int>
+            ((Type *)&local_c8,
+             (DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+             &(this->super_PolicyRunnerBase).observation_total_,
+             (long)(this->super_PolicyRunnerBase).obs_dim_,
+             (this->super_PolicyRunnerBase).obs_dim_ *
+             (this->super_PolicyRunnerBase).obs_history_num_);
+  Eigen::MatrixBase<Eigen::Block<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_-1,_1,_false>_>::
+  operator=<Eigen::Matrix<float,__1,_1>_>
+            ((MatrixBase<Eigen::Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>_> *)
+             &local_c8,
+             (DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+             &(this->super_PolicyRunnerBase).observation_history_);
+  local_18._0_8_ = 1;
+  local_18._8_8_ = SEXT48((this->super_PolicyRunnerBase).obs_total_dim_);
+  std::allocator<long_int>::allocator((allocator<long_int> *)&local_c8);
+  __l._M_len = 2;
+  __l._M_array = (iterator)local_18;
+  std::vector<long_int,_std::allocator<long_int>_>::vector
+            (&state_shape,__l,(allocator_type *)&local_c8);
+  std::allocator<long_int>::~allocator((allocator<long_int> *)&local_c8,__in_chrg_01);
+  info = Ort::detail::Base<OrtMemoryInfo>::
+         operator_Ort__detail__Base<OrtMemoryInfo>__contained_type_
+                   ((Base<OrtMemoryInfo> *)&(this->super_PolicyRunnerBase).memory_info_);
+  p_data = Eigen::PlainObjectBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::data
+                     (&(this->super_PolicyRunnerBase).observation_total_.
+                       super_PlainObjectBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_>);
+  p_data_element_count =
+       Eigen::EigenBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::size
+                 ((EigenBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+                  &(this->super_PolicyRunnerBase).observation_total_);
+  shape = std::vector<long_int,_std::allocator<long_int>_>::data(&state_shape);
+  shape_len = std::vector<long_int,_std::allocator<long_int>_>::size(&state_shape);
+  Ort::Value::CreateTensor<float>(info,p_data,p_data_element_count,shape,shape_len);
+  std::vector<Ort::Value,_std::allocator<Ort::Value>_>::clear
+            (&(this->super_PolicyRunnerBase).ort_inputs_);
+  __x = std::move<Ort::Value&>(&state_tensor);
+  std::vector<Ort::Value,_std::allocator<Ort::Value>_>::push_back
+            (&(this->super_PolicyRunnerBase).ort_inputs_,__x);
+  Ort::RunOptions::RunOptions((RunOptions *)&local_c8,(nullptr_t)0x0);
+  input_values = std::vector<Ort::Value,_std::allocator<Ort::Value>_>::data
+                           (&(this->super_PolicyRunnerBase).ort_inputs_);
+  input_count = std::vector<Ort::Value,_std::allocator<Ort::Value>_>::size
+                          (&(this->super_PolicyRunnerBase).ort_inputs_);
+  Ort::detail::SessionImpl<OrtSession>::Run
+            (&output_tensors,&(this->super_PolicyRunnerBase).session1_.super_SessionImpl<OrtSession>
+             ,(RunOptions *)&local_c8,(this->super_PolicyRunnerBase).input_names_,input_values,
+             input_count,(this->super_PolicyRunnerBase).output_names_,2);
+  Ort::RunOptions::~RunOptions((RunOptions *)&local_c8,__in_chrg_02);
+  pVVar5 = &std::vector<Ort::Value,_std::allocator<Ort::Value>_>::operator[](&output_tensors,0)->
+            super_ValueImpl<OrtValue>;
+  pfVar6 = Ort::detail::ValueImpl<OrtValue>::GetTensorMutableData<float>(pVVar5);
+  iVar1 = (this->super_PolicyRunnerBase).act_dim_;
+  Eigen::Stride<0,_0>::Stride((Stride<0,_0> *)&obs_history_record);
+  Eigen::Map<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_0,_Eigen::Stride<0,_0>_>::Map
+            ((Map<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_0,_Eigen::Stride<0,_0>_> *)&local_c8,pfVar6
+             ,(long)iVar1,(Stride<0,_0> *)&obs_history_record);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::Map<Eigen::Matrix<float,__1,_1>,_0,_Eigen::Stride<0,_0>_>_>
+            (&(this->super_PolicyRunnerBase).action_,
+             (DenseBase<Eigen::Map<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_0,_Eigen::Stride<0,_0>_>_>
+              *)&local_c8);
+  pVVar5 = &std::vector<Ort::Value,_std::allocator<Ort::Value>_>::operator[](&output_tensors,1)->
+            super_ValueImpl<OrtValue>;
+  pfVar6 = Ort::detail::ValueImpl<OrtValue>::GetTensorMutableData<float>(pVVar5);
+  Eigen::Stride<0,_0>::Stride((Stride<0,_0> *)&obs_history_record);
+  Eigen::Map<Eigen::Matrix<float,_3,_1,_0,_3,_1>,_0,_Eigen::Stride<0,_0>_>::Map
+            ((Map<Eigen::Matrix<float,_3,_1,_0,_3,_1>,_0,_Eigen::Stride<0,_0>_> *)&local_c8,pfVar6,3
+             ,(Stride<0,_0> *)&obs_history_record);
+  Eigen::Matrix<float,_3,_1,_0,_3,_1>::
+  operator=<Eigen::Map<Eigen::Matrix<float,_3,_1>,_0,_Eigen::Stride<0,_0>_>_>
+            (&(this->super_PolicyRunnerBase).vel_,
+             (DenseBase<Eigen::Map<Eigen::Matrix<float,_3,_1,_0,_3,_1>,_0,_Eigen::Stride<0,_0>_>_> *
+             )&local_c8);
+  MotionStateFeedback::UpdateCurrentVel
+            ((MotionStateFeedback *)PTR_msfb__00386288,
+             (PlainObjectBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>)
+             *(PlainObjectBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)
+              (this->super_PolicyRunnerBase).vel_.
+              super_PlainObjectBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>.m_storage.
+              super_DenseStorage_impl<float,_3,_3,_1,_0>.m_data.array);
+  for (i = 0; i < (this->super_PolicyRunnerBase).act_dim_; i = i + 1) {
+    pSVar7 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_1>::operator()
+                       ((DenseCoeffsBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_1> *)
+                        &(this->super_PolicyRunnerBase).action_,(long)i);
+    LimitNumber(pSVar7,-100.0,100.0);
+  }
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::operator=
+            ((Matrix<float,__1,_1,_0,__1,_1> *)PTR_last_action__00386df8,
+             &(this->super_PolicyRunnerBase).action_);
+  for (i_1 = 0; i_1 < 4; i_1 = i_1 + 1) {
+    pSVar7 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_1>::operator()
+                       ((DenseCoeffsBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_1> *)
+                        &(this->super_PolicyRunnerBase).action_,(long)(i_1 << 2));
+    pSVar8 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_1>::operator()
+                       ((DenseCoeffsBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_1> *)
+                        &(this->super_PolicyRunnerBase).action_trans,(long)i_1);
+    *pSVar8 = *pSVar7;
+    pSVar7 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_1>::operator()
+                       ((DenseCoeffsBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_1> *)
+                        &(this->super_PolicyRunnerBase).action_,(long)(i_1 * 4 + 1));
+    pSVar8 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_1>::operator()
+                       ((DenseCoeffsBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_1> *)
+                        &(this->super_PolicyRunnerBase).action_trans,(long)(i_1 + 4));
+    *pSVar8 = *pSVar7;
+    pSVar7 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_1>::operator()
+                       ((DenseCoeffsBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_1> *)
+                        &(this->super_PolicyRunnerBase).action_,(long)(i_1 * 4 + 2));
+    pSVar8 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_1>::operator()
+                       ((DenseCoeffsBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_1> *)
+                        &(this->super_PolicyRunnerBase).action_trans,(long)(i_1 + 8));
+    *pSVar8 = *pSVar7;
+    pSVar7 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_1>::operator()
+                       ((DenseCoeffsBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_1> *)
+                        &(this->super_PolicyRunnerBase).action_,(long)(i_1 * 4 + 3));
+    pSVar8 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_1>::operator()
+                       ((DenseCoeffsBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_1> *)
+                        &(this->super_PolicyRunnerBase).action_trans,(long)(i_1 + 0xc));
+    *pSVar8 = *pSVar7;
+  }
+  local_c8 = Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::Zero
+                       ((long)(this->super_PolicyRunnerBase).act_dim_);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::CwiseNullaryOp<Eigen::internal::scalar_zero_op<float>,_Eigen::Matrix<float,__1,_1>_>_>
+            (&(this->super_PolicyRunnerBase).robot_action.goal_joint_pos,
+             (DenseBase<Eigen::CwiseNullaryOp<Eigen::internal::scalar_zero_op<float>,_Eigen::Matrix<float,__1,_1,_0,__1,_1>_>_>
+              *)&local_c8);
+  local_c8 = Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::Zero
+                       ((long)(this->super_PolicyRunnerBase).act_dim_);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::CwiseNullaryOp<Eigen::internal::scalar_zero_op<float>,_Eigen::Matrix<float,__1,_1>_>_>
+            (&(this->super_PolicyRunnerBase).robot_action.goal_joint_vel,
+             (DenseBase<Eigen::CwiseNullaryOp<Eigen::internal::scalar_zero_op<float>,_Eigen::Matrix<float,__1,_1,_0,__1,_1>_>_>
+              *)&local_c8);
+  local_c8 = Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::Zero
+                       ((long)(this->super_PolicyRunnerBase).act_dim_);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::CwiseNullaryOp<Eigen::internal::scalar_zero_op<float>,_Eigen::Matrix<float,__1,_1>_>_>
+            (&(this->super_PolicyRunnerBase).robot_action.tau_ff,
+             (DenseBase<Eigen::CwiseNullaryOp<Eigen::internal::scalar_zero_op<float>,_Eigen::Matrix<float,__1,_1,_0,__1,_1>_>_>
+              *)&local_c8);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::operator=
+            (&(this->super_PolicyRunnerBase).robot_action.kp,&(this->super_PolicyRunnerBase).kp_);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::operator=
+            (&(this->super_PolicyRunnerBase).robot_action.kd,&(this->super_PolicyRunnerBase).kd_);
+  for (i_2 = 0; i_2 < 4; i_2 = i_2 + 1) {
+    Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::segment<int>
+              (&local_1c8,
+               (DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+               &(this->super_PolicyRunnerBase).robot_action,(long)(i_2 << 2),3);
+    Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::segment<int>
+              (&local_190,
+               (DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+               &(this->super_PolicyRunnerBase).action_trans,(long)(i_2 << 2),3);
+    Eigen::operator*<float>
+              ((CwiseBinaryOp<Eigen::internal::scalar_product_op<float,_float>,_const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<float>,_const_Eigen::Matrix<float,__1,_1,_0,__1,_1>_>,_const_Eigen::Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>_>
+                *)&obs_history_record,&(this->super_PolicyRunnerBase).action_scale_,
+               (StorageBaseType *)&local_190);
+    Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::segment<int>
+              (&local_158,
+               (DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+               &(this->super_PolicyRunnerBase).dof_pos_default_,(long)(i_2 * 3),3);
+    Eigen::
+    MatrixBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<float,_float>,_const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<float>,_const_Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>,_const_Eigen::Block<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_-1,_1,_false>_>_>
+    ::operator+<Eigen::Block<Eigen::Matrix<float,__1,_1>,__1,_1,_false>_>
+              ((CwiseBinaryOp<Eigen::internal::scalar_sum_op<float,_float>,_const_Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<float,_float>,_const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<float>,_const_Eigen::Matrix<float,__1,_1,_0,__1,_1>_>,_const_Eigen::Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>_>,_const_Eigen::Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>_>
+                *)&local_c8,
+               (MatrixBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<float,_float>,_const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<float>,_const_Eigen::Matrix<float,__1,_1,_0,__1,_1>_>,_const_Eigen::Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>_>_>
+                *)&obs_history_record,
+               (MatrixBase<Eigen::Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>_> *)
+               &local_158);
+    Eigen::MatrixBase<Eigen::Block<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_-1,_1,_false>_>::
+    operator=<Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<float,_float>,_const_Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<float,_float>,_const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<float>,_const_Eigen::Matrix<float,__1,_1>_>,_const_Eigen::Block<Eigen::Matrix<float,__1,_1>,__1,_1,_false>_>,_const_Eigen::Block<Eigen::Matrix<float,__1,_1>,__1,_1,_false>_>_>
+              ((MatrixBase<Eigen::Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>_> *)
+               &local_1c8,
+               (DenseBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<float,_float>,_const_Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<float,_float>,_const_Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<float>,_const_Eigen::Matrix<float,__1,_1,_0,__1,_1>_>,_const_Eigen::Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>_>,_const_Eigen::Block<Eigen::Matrix<float,__1,_1,_0,__1,_1>,__1,_1,_false>_>_>
+                *)&local_c8);
+    fVar10 = (this->super_PolicyRunnerBase).wheel_action_scale_;
+    pSVar7 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_1>::operator()
+                       ((DenseCoeffsBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_1> *)
+                        &(this->super_PolicyRunnerBase).action_trans,(long)(i_2 * 4 + 3));
+    fVar9 = *pSVar7;
+    pSVar7 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_1>::operator()
+                       ((DenseCoeffsBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_1> *)
+                        &(this->super_PolicyRunnerBase).robot_action.goal_joint_vel,
+                        (long)(i_2 * 4 + 3));
+    *pSVar7 = fVar10 * fVar9;
+  }
+  PolicyRunnerBase::limit_goal_pos_vel(&this->super_PolicyRunnerBase);
+  types::RobotAction::RobotAction
+            (__return_storage_ptr__,&(this->super_PolicyRunnerBase).robot_action);
+  std::vector<Ort::Value,_std::allocator<Ort::Value>_>::~vector(&output_tensors,__in_chrg_03);
+  Ort::Value::~Value(&state_tensor,__in_chrg_04);
+  std::vector<long_int,_std::allocator<long_int>_>::~vector(&state_shape,__in_chrg_05);
+  if (local_8 - *(long *)PTR___stack_chk_guard_00386ea8 != 0) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail(PTR___stack_chk_guard_00386ea8,
+                     local_8 - *(long *)PTR___stack_chk_guard_00386ea8,0);
+  }
+  return;
+}
+
+
+
+========================================================================
+===== PolicyRunnerBase::update_joint_data  (expected @ 0x2a12e0)
+  actual: update_joint_data @ 002a12e0
+========================================================================
+
+/* DWARF original prototype: void update_joint_data(PolicyRunnerBase * this, RobotBasicState * ro)
+    */
+
+void __thiscall PolicyRunnerBase::update_joint_data(PolicyRunnerBase *this,RobotBasicState *ro)
+
+{
+  CoeffReturnType pfVar1;
+  Scalar *pSVar2;
+  RobotBasicState *ro_local;
+  PolicyRunnerBase *this_local;
+  int leg;
+  
+  for (leg = 0; leg < 4; leg = leg + 1) {
+    if (leg < 3) {
+      pfVar1 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_0>::operator()
+                         ((DenseCoeffsBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_0> *)
+                          &ro->joint_pos,(long)leg);
+      pSVar2 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_1>::operator()
+                         ((DenseCoeffsBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_1> *)
+                          &this->dof_pos,(long)(leg << 2));
+      *pSVar2 = *pfVar1;
+      pfVar1 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_0>::operator()
+                         ((DenseCoeffsBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_0> *)
+                          &ro->joint_pos,(long)(leg + 4));
+      pSVar2 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_1>::operator()
+                         ((DenseCoeffsBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_1> *)
+                          &this->dof_pos,(long)(leg * 4 + 1));
+      *pSVar2 = *pfVar1;
+      pfVar1 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_0>::operator()
+                         ((DenseCoeffsBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_0> *)
+                          &ro->joint_pos,(long)(leg + 8));
+      pSVar2 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_1>::operator()
+                         ((DenseCoeffsBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_1> *)
+                          &this->dof_pos,(long)(leg * 4 + 2));
+      *pSVar2 = *pfVar1;
+      pfVar1 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_0>::operator()
+                         ((DenseCoeffsBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_0> *)
+                          &ro->joint_pos,(long)(leg + 0xc));
+      pSVar2 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_1>::operator()
+                         ((DenseCoeffsBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_1> *)
+                          &this->dof_pos,(long)(leg * 4 + 3));
+      *pSVar2 = *pfVar1;
+      pfVar1 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_0>::operator()
+                         ((DenseCoeffsBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_0> *)
+                          &ro->joint_vel,(long)leg);
+      pSVar2 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_1>::operator()
+                         ((DenseCoeffsBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_1> *)
+                          &this->dof_vel,(long)(leg << 2));
+      *pSVar2 = *pfVar1;
+      pfVar1 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_0>::operator()
+                         ((DenseCoeffsBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_0> *)
+                          &ro->joint_vel,(long)(leg + 4));
+      pSVar2 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_1>::operator()
+                         ((DenseCoeffsBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_1> *)
+                          &this->dof_vel,(long)(leg * 4 + 1));
+      *pSVar2 = *pfVar1;
+      pfVar1 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_0>::operator()
+                         ((DenseCoeffsBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_0> *)
+                          &ro->joint_vel,(long)(leg + 8));
+      pSVar2 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_1>::operator()
+                         ((DenseCoeffsBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_1> *)
+                          &this->dof_vel,(long)(leg * 4 + 2));
+      *pSVar2 = *pfVar1;
+      pfVar1 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_0>::operator()
+                         ((DenseCoeffsBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_0> *)
+                          &ro->joint_vel,(long)(leg + 0xc));
+      pSVar2 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_1>::operator()
+                         ((DenseCoeffsBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_1> *)
+                          &this->dof_vel,(long)(leg * 4 + 3));
+      *pSVar2 = *pfVar1;
+    }
+    pfVar1 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_0>::operator()
+                       ((DenseCoeffsBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_0> *)&ro->joint_vel,
+                        (long)(leg * 4 + 3));
+    pSVar2 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_1>::operator()
+                       ((DenseCoeffsBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_1> *)
+                        &this->wheel_vel,(long)leg);
+    *pSVar2 = *pfVar1;
+  }
+  return;
+}
+
+
+WROTE /home/lee/rea/notes/ghidra_rl_obs.txt

@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/bin
+/usr/bin/lnav
+/usr/share
+/usr/share/doc
+/usr/share/doc/lnav
+/usr/share/doc/lnav/changelog.Debian.gz
+/usr/share/doc/lnav/copyright
+/usr/share/doc/lnav/help.txt.gz
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/lnav.1.gz

@@ -1,0 +1,12 @@
+#!/bin/bash
+rm -rf /opt/robot/share/lio_perception/conf/params.yaml.last
+target_path="/opt/robot/share/lio-perception/conf"
+file_list=("params.yaml")
+
+for file_name in ${file_list[@]}
+do
+if [ -e $target_path/$file_name ]; then
+echo "备份参数文件 $file_name "
+cp $target_path/$file_name $target_path/$file_name.last
+fi
+done

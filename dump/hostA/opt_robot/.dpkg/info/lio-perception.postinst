@@ -1,0 +1,34 @@
+#!/bin/bash
+
+
+bash /opt/robot/share/lio-perception/scripts/self/register_conf.sh "/opt/robot/share/lio-perception/conf" "/opt/robot/share/lio-perception/conf"
+
+# 服务配置
+echo "配置服务"
+sudo chmod +x /opt/robot/share/lio-perception/scripts/lio_ddsnode.sh
+SERVICE_FILE="/lib/systemd/system/lio-perception.service"
+
+cat <<EOF > $SERVICE_FILE
+[Unit]
+Description=lio-perception
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/opt/robot/share/lio-perception/scripts/lio_ddsnode.sh
+Restart=on-failure
+RestartPreventExitStatus=SIGTERM
+
+[Install]
+WantedBy=network.target
+EOF
+
+systemctl daemon-reload
+
+# 关闭旧名字的程序
+systemctl disable lio_perception.service
+systemctl stop lio_perception.service
+
+# 启用并重启 lio-perception 服务
+systemctl disable lio-perception.service
+systemctl restart lio-perception.service

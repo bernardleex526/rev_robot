@@ -1,0 +1,26 @@
+#!/bin/bash
+
+echo 3 > /proc/sys/vm/drop_caches 2>/dev/null
+sync >/dev/null 2>&1
+
+if [ -f /etc/update-motd.d/20-ysc-txt ]; then
+    chmod +x /etc/update-motd.d/20-ysc-txt
+fi
+
+if [ -f /usr/local/sbin/ca9b-eth0-irq-affinity.sh ]; then
+    chmod +x /usr/local/sbin/ca9b-eth0-irq-affinity.sh
+fi
+
+if command -v sysctl >/dev/null 2>&1; then
+    sysctl --system >/dev/null 2>&1 || true
+fi
+
+if command -v systemctl >/dev/null 2>&1; then
+    systemctl daemon-reload >/dev/null 2>&1 || true
+    systemctl enable ca9b-eth0-irq-affinity.service >/dev/null 2>&1 || true
+    systemctl restart ca9b-eth0-irq-affinity.service >/dev/null 2>&1 || true
+fi
+
+cp /opt/robot/scripts/system/config.yaml.deb_   /opt/robot/scripts/system/config.yaml
+
+exit 0

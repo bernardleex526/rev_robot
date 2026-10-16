@@ -1,0 +1,29 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from drdds/msg/MemoryStatus.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+
+module drdds {
+  module msg {
+    @verbatim (language="comment", text=
+      " Memory status monitoring")
+    struct MemoryStatus {
+      @verbatim (language="comment", text=
+        " Data acquisition time")
+      builtin_interfaces::msg::Time timestamp;
+
+      @verbatim (language="comment", text=
+        " Resource ID (e.g., \"Memory_0\")")
+      string resource_id;
+
+      @verbatim (language="comment", text=
+        " Total physical memory in KB (from MemTotal)")
+      uint32 mem_total_kb;
+
+      @verbatim (language="comment", text=
+        " Available memory in KB (from MemAvailable)")
+      uint32 mem_available_kb;
+    };
+  };
+};

@@ -1,0 +1,4 @@
+1d95949a56696f85157d6e2604003c26  usr/bin/kmstest
+b170204f927aa356d5557929b4efcc09  usr/lib/aarch64-linux-gnu/libkms.so.1.0.0
+9e3a60e8f59691b5503466fe0f5a0300  usr/share/doc/libkms1/changelog.Debian.gz
+f877b409d7f2dfcf6e3e2a139d19798c  usr/share/doc/libkms1/copyright

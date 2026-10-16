@@ -1,0 +1,10 @@
+38c5df7ba27abab81c91cc05b8c289dd  usr/bin/geos-config
+dedf8af97ba9e55cc4baba5229070884  usr/include/geos/export.h
+7dd1ffc6d04a4a05f4afef65663dfb6a  usr/include/geos_c.h
+07dc6c2b9f23712bfa7da381bdb5ae93  usr/lib/aarch64-linux-gnu/libgeos_c.a
+2a7184a3fdcb115a229584afc077eaaf  usr/share/doc/libgeos-dev/AUTHORS
+1f019d6a29c1c7c223ef374fc3278958  usr/share/doc/libgeos-dev/NEWS.gz
+1e0441b98c519746bf5a9c84f79ee7b2  usr/share/doc/libgeos-dev/README.Debian
+672a6efa9f63caa1a35307226bfae6d2  usr/share/doc/libgeos-dev/README.md.gz
+5b5c32ea99948983c81b480af36fa4cc  usr/share/doc/libgeos-dev/copyright
+da920889e696dc679c6b65ea22f95bf3  usr/share/man/man1/geos-config.1.gz

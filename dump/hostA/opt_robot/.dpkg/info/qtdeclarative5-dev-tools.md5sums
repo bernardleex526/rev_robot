@@ -1,0 +1,10 @@
+4373fa172012d424c92d55d27507175f  usr/lib/qt5/bin/qmlcachegen
+3f2628a0089fc101c3fc0fe3dc661fc3  usr/lib/qt5/bin/qmleasing
+63abce8161fba08c0da763d7d4193b88  usr/lib/qt5/bin/qmlimportscanner
+8be53c075daa68f304ba9fb78650813b  usr/lib/qt5/bin/qmllint
+24ac0227980f8a6ca5ba3667a1f5695b  usr/lib/qt5/bin/qmlmin
+aef91f38a587a9a8635f8b16871e9f51  usr/lib/qt5/bin/qmlplugindump
+64c1bdb088705747b1cabf2622269d6a  usr/lib/qt5/bin/qmlpreview
+758578657e3b0c1da77b79c673286d8c  usr/lib/qt5/bin/qmlprofiler
+ae00584642876cfe44e1a22f69d1b3f0  usr/lib/qt5/bin/qmltestrunner
+9424440b531d2a8aaa986e86ded40b9a  usr/share/doc/qtdeclarative5-dev-tools/copyright

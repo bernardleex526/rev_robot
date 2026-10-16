@@ -1,0 +1,285 @@
+#!/bin/bash
+set -e
+
+# rsdriver 服务配置
+sudo chmod +x /opt/robot/share/node_driver/scripts/rsdriver_run.sh
+SERVICE_FILE="/lib/systemd/system/rsdriver.service"
+
+cat <<EOF > $SERVICE_FILE
+[Unit]
+Description=rsdriver
+After=network.target
+
+[Service]
+# User=ysc
+# Group=ysc
+Type=simple
+ExecStart=/opt/robot/share/node_driver/scripts/rsdriver_run.sh
+Restart=on-failure
+RestartPreventExitStatus=SIGTERM
+
+[Install]
+WantedBy=network.target
+EOF
+
+# gps_node 服务配置
+sudo chmod +x /opt/robot/share/node_driver/scripts/gps_run.sh
+
+GPS_SERVICE_FILE="/lib/systemd/system/gps_node.service"
+
+cat <<EOF > $GPS_SERVICE_FILE
+[Unit]
+Description=gps_node
+After=network.target
+
+[Service]
+# User=ysc
+# Group=ysc
+Type=simple
+ExecStart=/opt/robot/share/node_driver/scripts/gps_run.sh
+Restart=on-failure
+RestartPreventExitStatus=SIGTERM
+
+[Install]
+WantedBy=network.target
+EOF
+
+# yesense 服务配置
+sudo chmod +x /opt/robot/share/node_driver/scripts/yesense_run.sh
+SERVICE_FILE="/lib/systemd/system/yesense.service"
+
+cat <<EOF > $SERVICE_FILE
+[Unit]
+Description=yesense
+After=network.target
+
+[Service]
+# User=ysc
+# Group=ysc
+Type=simple
+ExecStart=/opt/robot/share/node_driver/scripts/yesense_run.sh
+Restart=on-failure
+RestartPreventExitStatus=SIGTERM
+
+[Install]
+WantedBy=network.target
+EOF
+
+# ctrlmcu 服务配置
+sudo chmod +x /opt/robot/share/node_driver/scripts/ctrlmcu_run.sh
+SERVICE_FILE="/lib/systemd/system/ctrlmcu.service"
+
+cat <<EOF > $SERVICE_FILE
+[Unit]
+Description=ctrlmcu
+After=network.target
+
+[Service]
+# User=ysc
+# Group=ysc
+Type=simple
+ExecStart=/opt/robot/share/node_driver/scripts/ctrlmcu_run.sh
+Restart=on-failure
+RestartPreventExitStatus=SIGTERM
+
+[Install]
+WantedBy=network.target
+EOF
+
+# system_status_node 服务配置
+sudo chmod +x /opt/robot/share/node_driver/scripts/system_status_run.sh
+SERVICE_FILE="/lib/systemd/system/system_status.service"
+
+cat <<EOF > $SERVICE_FILE
+[Unit]
+Description=system_status
+After=network.target
+
+[Service]
+# User=ysc
+# Group=ysc
+Type=simple
+ExecStart=/opt/robot/share/node_driver/scripts/system_status_run.sh
+Restart=on-failure
+RestartPreventExitStatus=SIGTERM
+
+[Install]
+WantedBy=network.target
+EOF
+
+# cpu_node 服务配置
+sudo chmod +x /opt/robot/share/node_driver/scripts/cpu_run.sh
+SERVICE_FILE="/lib/systemd/system/cpunode.service"
+
+cat <<EOF > $SERVICE_FILE
+[Unit]
+Description=cpunode
+After=network.target
+
+[Service]
+# User=ysc
+# Group=ysc
+Type=simple
+ExecStart=/opt/robot/share/node_driver/scripts/cpu_run.sh
+Restart=on-failure
+RestartPreventExitStatus=SIGTERM
+
+[Install]
+WantedBy=network.target
+EOF
+
+# encryption_node 服务配置
+sudo chmod +x /opt/robot/share/node_driver/scripts/encryption_run.sh
+SERVICE_FILE="/lib/systemd/system/encryption_node.service"
+
+cat <<EOF > $SERVICE_FILE
+[Unit]
+Description=encryption_node
+After=network.target
+
+[Service]
+# User=ysc
+# Group=ysc
+Type=simple
+ExecStart=/opt/robot/share/node_driver/scripts/encryption_run.sh
+Restart=on-failure
+RestartPreventExitStatus=SIGTERM
+
+[Install]
+WantedBy=network.target
+EOF
+
+# hsLidar 服务配置
+sudo chmod +x /opt/robot/share/node_driver/scripts/hsdriver_run.sh
+SERVICE_FILE="/lib/systemd/system/hsLidar.service"
+
+cat <<EOF > $SERVICE_FILE
+[Unit]
+Description=hsLidar
+After=network.target
+
+[Service]
+# User=ysc
+# Group=ysc
+Type=simple
+ExecStart=/opt/robot/share/node_driver/scripts/hsdriver_run.sh
+Restart=on-failure
+RestartPreventExitStatus=SIGTERM
+
+[Install]
+WantedBy=network.target
+EOF
+
+# uwb_node 服务配置
+sudo chmod +x /opt/robot/share/node_driver/scripts/uwb_run.sh
+SERVICE_FILE="/lib/systemd/system/uwb_node.service"
+
+cat <<EOF > $SERVICE_FILE
+[Unit]
+Description=uwb_node
+After=network.target
+
+[Service]
+# User=ysc
+# Group=ysc
+Type=simple
+ExecStart=/opt/robot/share/node_driver/scripts/uwb_run.sh
+Restart=on-failure
+RestartPreventExitStatus=SIGTERM
+
+[Install]
+WantedBy=network.target
+EOF
+
+systemctl daemon-reload
+
+should_skip_service() {
+    local -a endings=($1)  
+    local -a ips=()
+    local ip last_byte
+
+    echo "  " 
+    echo "=== 开始IP检查 ==="
+    while IFS= read -r line; do
+        ips+=("$line")
+    done < <(ip -o -4 addr show 2>/dev/null | 
+             awk '!/^[0-9]+: (lo|docker|veth)/ && $4 !~ /^127\./{print $4}' | 
+             cut -d'/' -f1)
+    
+    if [ ${#ips[@]} -eq 0 ]; then
+        echo "警告: 未检测到有效IP地址"
+    else
+        echo "检测到IP地址:"
+        for ip in "${ips[@]}"; do
+            echo " - $ip"
+        done
+    fi
+    
+    # 检查IP是否在黑名单
+    for ip in "${ips[@]}"; do
+        last_byte=${ip##*.}  
+        
+        if ! [[ "$last_byte" =~ ^[0-9]+$ ]]; then
+            echo "警告: IP [$ip] 最后一段不是数字，跳过检查"
+            continue
+        fi
+        
+        for ending in "${endings[@]}"; do
+            if [ "$last_byte" == "$ending" ]; then
+                return 1
+            fi
+        done
+    done
+    
+    echo "无授权IP"
+    return 0 
+}
+
+start_server() {
+    if ! should_skip_service "${START_IP[*]}"; then
+        echo "启动 $SERVICE_NAME 服务..."
+        if systemctl disable "$SERVICE_NAME.service" && systemctl restart "$SERVICE_NAME.service"; then
+            echo "$SERVICE_NAME 服务启动成功"
+        else
+            echo "$SERVICE_NAME 服务启动失败！"
+            exit 1
+        fi
+    else
+        echo "跳过 $SERVICE_NAME 服务 (IP受限)"
+    fi
+}
+
+####################start  服务###############
+START_IP=("103" "106")
+SERVICE_NAME="yesense"
+start_server
+
+START_IP=("103")
+SERVICE_NAME="gps_node"
+start_server
+
+SERVICE_NAME="ctrlmcu"
+start_server
+
+START_IP=("104")
+SERVICE_NAME="encryption_node"
+SERVICE_NAME="uwb_node"
+start_server
+
+START_IP=("103" "104" "106")
+SERVICE_NAME="cpunode"
+start_server
+SERVICE_NAME="rsdriver"
+start_server
+SERVICE_NAME="hsLidar"
+start_server
+
+START_IP=("103" "106")
+SERVICE_NAME="system_status"
+start_server
+####################END  服务#################
+
+sudo chmod +x /opt/robot/share/node_driver/scripts/airy/*
+sudo cp /opt/robot/share/node_driver/scripts/airy/* /opt/robot/bin/
+
+exit 0

@@ -1,0 +1,17 @@
+ffda1ddeb6f9011d31ed388b2e1ede7a  usr/bin/cockpit-bridge
+d42b499ca39e2784c68d0ea1bf67630f  usr/lib/cockpit/cockpit-askpass
+3469210382ebf98397df40bc14ba4de0  usr/lib/cockpit/cockpit-ssh
+fd4811856de416e09e25afc1ef66f939  usr/share/cockpit/base1/cockpit.min.css.gz
+723e92cc9e05b45a7bdfeb9256a11018  usr/share/cockpit/base1/cockpit.min.js.gz
+fee66e712a8a08eef5805a46892932ad  usr/share/cockpit/base1/fonts/fontawesome.woff
+fa2772327f55d8198301fdb8bcfc8158  usr/share/cockpit/base1/fonts/glyphicons.woff
+ffbe377ef337bc40ea7ead376d677f5c  usr/share/cockpit/base1/fonts/patternfly.woff
+0a59827301b0bd0da54281c26df8b085  usr/share/cockpit/base1/jquery.min.js.gz
+c364387ccaaf935594a291a83d58f942  usr/share/cockpit/base1/manifest.json
+d6406cf61145be7411689aa43f5b28eb  usr/share/cockpit/base1/mustache.min.js.gz
+19cecc24ebd8317541741a4b5e5e361d  usr/share/cockpit/base1/patternfly.min.css.gz
+dd53f4a75db021a7523a5c6f77657fc0  usr/share/cockpit/ssh/manifest.json
+2726887454f37793c40e717998e54a8a  usr/share/doc/cockpit-bridge/changelog.Debian.gz
+0a31d1e63d48c9bd98c8c81597f774c9  usr/share/doc/cockpit-bridge/copyright
+abfa8596ff96ae8b9dd1d384e9d434a0  usr/share/man/man1/cockpit-bridge.1.gz
+661ea6dd170e5183a38886ddce57bb07  usr/share/polkit-1/actions/org.cockpit-project.cockpit-bridge.policy

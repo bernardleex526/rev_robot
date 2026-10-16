@@ -1,0 +1,17 @@
+e8bb1ff96fc6da924ceb1ed851efbc3d  usr/bin/opencv_annotation
+fa91864cd4fb743df24151a20e70a5b2  usr/bin/opencv_interactive-calibration
+0fcad1c0cd510676f50e6d0db6bcfee7  usr/bin/opencv_version
+5303a758477d1e36d02809647939882e  usr/bin/opencv_visualisation
+b87a681d05f09ba39d6087e830e94dff  usr/bin/opencv_waldboost_detector
+71e3639ed41944a221522a3592430dbd  usr/lib/aarch64-linux-gnu/cmake/opencv4/OpenCVConfig-version.cmake
+177bca55d8efb2017a430b63947121a8  usr/lib/aarch64-linux-gnu/cmake/opencv4/OpenCVConfig.cmake
+0ff40aa6db7985b7d6ed0f7ae1c755a8  usr/lib/aarch64-linux-gnu/cmake/opencv4/OpenCVModules-release.cmake
+f6de671cde42e52e19b31bb392c1e2ce  usr/lib/aarch64-linux-gnu/cmake/opencv4/OpenCVModules.cmake
+d78fef3727b797c4fe70feddd73b297d  usr/lib/aarch64-linux-gnu/pkgconfig/opencv4.pc
+145c4b15d9cf5c5ca48742cc9a3e22f0  usr/share/doc/libopencv-dev/copyright
+e773638013e1a5e814c81bf96d40b6a7  usr/share/licenses/opencv4/SoftFloat-COPYING.txt
+013568c1e23cc6dc72955cbaffd23ba5  usr/share/lintian/overrides/libopencv-dev
+560d2a8f7d81866c0eb24c490874b079  usr/share/man/man1/opencv_createsamples.1.gz
+d8b74b1f28a0c8e52c183a3340a1bbf3  usr/share/man/man1/opencv_haartraining.1.gz
+a6f4600fe0d318d06b254c6d6ed16716  usr/share/man/man1/opencv_performance.1.gz
+791d9b46082d16bc1ca3b41656c07f09  usr/share/man/man1/opencv_traincascade.1.gz

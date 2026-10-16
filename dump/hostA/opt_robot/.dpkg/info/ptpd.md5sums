@@ -1,0 +1,10 @@
+d4020f4f8765c0022b8503343f30b397  usr/sbin/ptpd
+0ff5b5e7f5326580530fe3e1e9bcc736  usr/share/doc/ptpd/README.Debian
+a634eda182bbff33ac477ae483bd702f  usr/share/doc/ptpd/changelog.Debian.gz
+db8839ab6f9edb96cfbe9725c46d7a9b  usr/share/doc/ptpd/copyright
+16923bbf332e13a5d5ae0c8adf6decfa  usr/share/man/man5/ptpd.conf.5.gz
+416d9a1963f983fca5ad3a80bcd39a2e  usr/share/man/man8/ptpd.8.gz
+65a3ac6e649fba847a576db208fa8ead  usr/share/ptpd/PTPBASE-MIB.txt
+10e79a85adda123d475cbfe584026b05  usr/share/ptpd/leap-seconds.list.28dec2015
+b37bf607782ff4b884386119fe0c69d0  usr/share/ptpd/ptpd2.conf.default-full
+37f3f0e2e01d7945f4c665660ad8d271  usr/share/ptpd/ptpd2.conf.minimal

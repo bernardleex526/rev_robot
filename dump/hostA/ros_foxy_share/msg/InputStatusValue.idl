@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from drdds/msg/InputStatusValue.msg
+// generated code does not contain a copyright notice
+
+
+module drdds {
+  module msg {
+    struct InputStatusValue {
+      uint8 lidar;
+
+      uint8 imu;
+
+      uint8 leg_odom;
+
+      uint8 rtk;
+
+      uint8 tag;
+
+      uint8 reflective_strip;
+    };
+  };
+};

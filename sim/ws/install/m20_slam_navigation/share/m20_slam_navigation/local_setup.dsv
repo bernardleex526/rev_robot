@@ -1,0 +1,3 @@
+source;share/m20_slam_navigation/environment/ament_prefix_path.sh
+source;share/m20_slam_navigation/environment/library_path.sh
+source;share/m20_slam_navigation/environment/path.sh

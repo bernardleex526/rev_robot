@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="2" failures="0" disabled="0" errors="0" time="0" timestamp="2026-10-15T09:54:42" name="AllTests">
+  <testsuite name="SensorWire" tests="2" failures="0" disabled="0" errors="0" time="0" timestamp="2026-10-15T09:54:42">
+    <testcase name="RoundTripsVendorImu" status="run" result="completed" time="0" timestamp="2026-10-15T09:54:42" classname="m20_slam_navigation.SensorWire" />
+    <testcase name="RejectsTruncatedVendorImu" status="run" result="completed" time="0" timestamp="2026-10-15T09:54:42" classname="m20_slam_navigation.SensorWire" />
+  </testsuite>
+</testsuites>

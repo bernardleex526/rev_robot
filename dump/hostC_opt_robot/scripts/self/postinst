@@ -1,0 +1,35 @@
+#!/bin/bash
+set -e
+
+# global_planner 服务配置
+sudo chmod +x /opt/robot/share/global_planner/scripts/astar.sh
+SERVICE_FILE="/lib/systemd/system/global_planner.service"
+
+cat <<EOF > $SERVICE_FILE
+[Unit]
+Description=global_planner
+After=network.target
+
+[Service]
+# User=ysc
+# Group=ysc
+Type=simple
+
+# ExecStartPre=/bin/sleep 5
+
+ExecStart=/opt/robot/share/global_planner/scripts/astar.sh
+Restart=on-failure
+RestartPreventExitStatus=SIGTERM
+
+[Install]
+WantedBy=network.target
+EOF
+
+systemctl daemon-reload
+
+# 启用并重启 rsdriver 服务
+# systemctl enable global_planner.service
+systemctl disable global_planner.service
+systemctl restart global_planner.service
+
+exit 0

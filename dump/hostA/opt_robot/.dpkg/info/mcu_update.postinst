@@ -1,0 +1,42 @@
+#!/bin/sh
+set -u
+
+UPDATER="/opt/robot/bin/mcu_update"
+FW_BIN="/opt/robot/share/mcu_update/bin/CA9B_f1_app_v2.1.0.bin"
+SERVICE="ctrlmcu.service"
+
+echo "[INFO] MCU update package installed successfully."
+echo "[INFO] Running post-install upgrade script..."
+
+# 升级失败：这里建议让安装失败（按原逻辑是 upgrade 失败就 exit 1）
+if [ ! -x "${UPDATER}" ]; then
+  echo "[ERROR] updater not found or not executable: ${UPDATER}" >&2
+  exit 1
+fi
+if [ ! -f "${FW_BIN}" ]; then
+  echo "[ERROR] firmware bin not found: ${FW_BIN}" >&2
+  exit 1
+fi
+
+echo "[INFO] postinst: run ${UPDATER} ${FW_BIN}"
+"${UPDATER}" "${FW_BIN}"
+rc_upd=$?
+echo "[INFO] postinst: mcu_update rc=${rc_upd}"
+if [ ${rc_upd} -ne 0 ]; then
+  echo "[ERROR] MCU update failed!" >&2
+  exit 1
+fi
+
+# 无论服务是否存在/是否 loaded，都尝试 start 一次；失败不影响安装成功
+echo "[INFO] postinst: try start ${SERVICE} (best-effort)"
+if command -v systemctl >/dev/null 2>&1; then
+  out="$(systemctl start "${SERVICE}" 2>&1)"
+  rc=$?
+  echo "[INFO] postinst: systemctl start ${SERVICE} rc=${rc}"
+  [ -n "${out}" ] && echo "${out}"
+else
+  echo "[WARN] postinst: systemctl not found, skip start ${SERVICE}"
+fi
+
+echo "[INFO] MCU update completed successfully."
+exit 0

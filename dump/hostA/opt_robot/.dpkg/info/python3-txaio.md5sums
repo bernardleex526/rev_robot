@@ -1,0 +1,16 @@
+4f8d5bce9e7ad4a72199486ea9362e26  usr/lib/python3/dist-packages/txaio-2.10.0.egg-info/PKG-INFO
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/txaio-2.10.0.egg-info/dependency_links.txt
+bbe7f354734749780974238cfdbb3c07  usr/lib/python3/dist-packages/txaio-2.10.0.egg-info/requires.txt
+0d3c1b14858a658345b101932a1cdbc4  usr/lib/python3/dist-packages/txaio-2.10.0.egg-info/top_level.txt
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/txaio-2.10.0.egg-info/zip-safe
+791c1fe8c92e67708487b2e75c1c4fc0  usr/lib/python3/dist-packages/txaio/__init__.py
+b80846bf0eb5b76541ed608429b0a9f6  usr/lib/python3/dist-packages/txaio/_common.py
+c6d62ede6bfac01a3f719f2e14cee67f  usr/lib/python3/dist-packages/txaio/_iotype.py
+3f1c5af44a0bc163ed6e7d70975e19b2  usr/lib/python3/dist-packages/txaio/_unframework.py
+b69a8502e9216b6df50b1bbfb714c283  usr/lib/python3/dist-packages/txaio/_version.py
+2854a7fca66f20c8815fc9a11a2346ff  usr/lib/python3/dist-packages/txaio/aio.py
+0a79fb39f40d62ee4131cd7ee89cde88  usr/lib/python3/dist-packages/txaio/interfaces.py
+992ca7d3eca418164ea32e9154a5360d  usr/lib/python3/dist-packages/txaio/testutil.py
+c7237899f6092da93826f6b61934506a  usr/lib/python3/dist-packages/txaio/tx.py
+9a7956ecaf37895ab5c62ebdae36f0f2  usr/share/doc/python3-txaio/changelog.Debian.gz
+b847a72757eae9eb748abcad1785d6b9  usr/share/doc/python3-txaio/copyright

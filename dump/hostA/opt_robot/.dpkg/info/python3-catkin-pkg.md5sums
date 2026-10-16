@@ -1,0 +1,14 @@
+1cc0a6f94b18b5c07e7e2e34d7b34b1c  usr/bin/catkin_create_pkg
+678584d1e44223321ba784729ffe4ec9  usr/bin/catkin_find_pkg
+537d1aeb62173df0e499f5922aca4a66  usr/bin/catkin_generate_changelog
+e283d1a6ecd3539a06064886f3c672a5  usr/bin/catkin_package_version
+f58454339260895ee67a0dc981e340aa  usr/bin/catkin_prepare_release
+f0611f00dc4d90204c5ee50b553893d9  usr/bin/catkin_tag_changelog
+099beac95b226c3bb107cb122934cb1b  usr/bin/catkin_test_changelog
+925bf1b9ed1092eb5620f78889e217a8  usr/lib/python3/dist-packages/catkin_pkg-1.0.0.egg-info/PKG-INFO
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/catkin_pkg-1.0.0.egg-info/dependency_links.txt
+b749554ab13d6dcf573e8261cd47c4b6  usr/lib/python3/dist-packages/catkin_pkg-1.0.0.egg-info/entry_points.txt
+41ad9642450e5d56b4720ea88ac7039f  usr/lib/python3/dist-packages/catkin_pkg-1.0.0.egg-info/requires.txt
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/catkin_pkg-1.0.0.egg-info/top_level.txt
+f9cdd8fb742e8ffbc2add5677c3527dc  usr/share/doc/python3-catkin-pkg/changelog.Debian.gz
+f223d8c5dc6d4bd04ad8bf355633bfc8  usr/share/doc/python3-catkin-pkg/copyright

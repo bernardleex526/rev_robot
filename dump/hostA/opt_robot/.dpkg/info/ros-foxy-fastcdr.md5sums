@@ -1,0 +1,16 @@
+815fb3e24646144f16f1763166548725  opt/ros/foxy/include/fastcdr/Cdr.h
+7bbd860c9d62fc20d2dd5fd49b9b1e61  opt/ros/foxy/include/fastcdr/FastBuffer.h
+cf48ffc5d8d238e0cb24956dcf2ac76e  opt/ros/foxy/include/fastcdr/FastCdr.h
+8e974ac0354a743326ebbf10428300d3  opt/ros/foxy/include/fastcdr/config.h
+826f717e43d2b36e6c726980eeac0f76  opt/ros/foxy/include/fastcdr/eProsima_auto_link.h
+5a34a3231239e1d9679a10ef1fccd734  opt/ros/foxy/include/fastcdr/exceptions/BadParamException.h
+8fe48221fbe0cde7e25ef16ca6072a35  opt/ros/foxy/include/fastcdr/exceptions/Exception.h
+cc1e7a6fa88137d2c9009756b58ce5d5  opt/ros/foxy/include/fastcdr/exceptions/NotEnoughMemoryException.h
+a64f1b3a669eaf6f84b6118036819b50  opt/ros/foxy/include/fastcdr/fastcdr_dll.h
+1674b5037326c57c62fe5d21b7a95928  opt/ros/foxy/lib/cmake/fastcdr/fastcdr-config-version.cmake
+ebd825f3fef0f2e56734e477ab20e383  opt/ros/foxy/lib/cmake/fastcdr/fastcdr-config.cmake
+72794d034de59eb44b71afb1bc2f1874  opt/ros/foxy/lib/cmake/fastcdr/fastcdr-targets-none.cmake
+94b4185fce2f583c8bc1b9d3380d5e39  opt/ros/foxy/lib/cmake/fastcdr/fastcdr-targets.cmake
+514107f1887b160dc1318e4f72a6a7ee  opt/ros/foxy/lib/libfastcdr.so.1.0.13
+3b83ef96387f14655fc854ddc3c6bd57  opt/ros/foxy/share/fastcdr/LICENSE
+aa815bc6c69253dd908b18e24f7bf16b  usr/share/doc/ros-foxy-fastcdr/changelog.Debian.gz

@@ -1,0 +1,9 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/google-mock
+/usr/share/doc/google-mock/changelog.Debian.gz
+/usr/share/doc/google-mock/copyright
+/usr/src
+/usr/src/gmock

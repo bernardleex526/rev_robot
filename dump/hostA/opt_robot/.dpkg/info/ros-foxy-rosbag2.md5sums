@@ -1,0 +1,17 @@
+72c26ee454c6451b246ba459bc5d248a  opt/ros/foxy/share/ament_index/resource_index/package_run_dependencies/rosbag2
+d41d8cd98f00b204e9800998ecf8427e  opt/ros/foxy/share/ament_index/resource_index/packages/rosbag2
+c5bea21e3b9564d2a435b40f0e03ecf6  opt/ros/foxy/share/ament_index/resource_index/parent_prefix_path/rosbag2
+1d1d220c1f1d138ea1eb95ec493e9e0f  opt/ros/foxy/share/rosbag2/cmake/rosbag2Config-version.cmake
+90ae2491bbf23b7a97dbb72a3fce81e7  opt/ros/foxy/share/rosbag2/cmake/rosbag2Config.cmake
+8dbf4790a764a69b56a5904c00682df0  opt/ros/foxy/share/rosbag2/environment/ament_prefix_path.dsv
+fd0b100f5da0d9f2d38645ac45815395  opt/ros/foxy/share/rosbag2/environment/ament_prefix_path.sh
+11e8ba1deb2827a5e13dd631720bcf6b  opt/ros/foxy/share/rosbag2/environment/path.dsv
+234e39ac8bc1c1d4f887075bf9492366  opt/ros/foxy/share/rosbag2/environment/path.sh
+ed9dcb7a76d3763c6cd97ebbd1f4cc7d  opt/ros/foxy/share/rosbag2/local_setup.bash
+8c1e514b38f203f9622c0be7c429e09d  opt/ros/foxy/share/rosbag2/local_setup.dsv
+f9c2c06618a1f51e55adac2fb0ccc892  opt/ros/foxy/share/rosbag2/local_setup.sh
+24970cb512d5df3600adc59d7fa85f7b  opt/ros/foxy/share/rosbag2/local_setup.zsh
+3b67534d77173b9832ba7e9bcd65e2bf  opt/ros/foxy/share/rosbag2/package.dsv
+6eed9d5559e60aabadb5e430122143f4  opt/ros/foxy/share/rosbag2/package.xml
+76d5db8e45d747f157874e61eae2856b  usr/share/doc/ros-foxy-rosbag2/changelog.Debian.gz
+062ca5e3ec9f1f716de3c713d4127e2e  usr/share/doc/ros-foxy-rosbag2/copyright

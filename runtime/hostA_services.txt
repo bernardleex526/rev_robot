@@ -1,0 +1,129 @@
+=== ENABLED SERVICES ===
+UNIT FILE                                  STATE   VENDOR PRESET
+accounts-daemon.service                    enabled enabled      
+anacron.service                            enabled enabled      
+apparmor.service                           enabled enabled      
+autovt@.service                            enabled enabled      
+avahi-daemon.service                       enabled enabled      
+bluetooth.service                          enabled enabled      
+ca9b-eth0-irq-affinity.service             enabled enabled      
+chrony.service                             enabled enabled      
+chronyd.service                            enabled enabled      
+containerd.service                         enabled enabled      
+cron.service                               enabled enabled      
+cups-browsed.service                       enabled enabled      
+cups.service                               enabled enabled      
+dbus-fi.w1.wpa_supplicant1.service         enabled enabled      
+dbus-org.bluez.service                     enabled enabled      
+dbus-org.freedesktop.Avahi.service         enabled enabled      
+dbus-org.freedesktop.ModemManager1.service enabled enabled      
+dbus-org.freedesktop.nm-dispatcher.service enabled enabled      
+dbus-org.freedesktop.resolve1.service      enabled enabled      
+docker.service                             enabled enabled      
+dpkg_ln.service                            enabled enabled      
+dr_wifi.service                            enabled enabled      
+e2scrub_reap.service                       enabled enabled      
+finalrd.service                            enabled enabled      
+firmware_upgrade.service                   enabled enabled      
+getty@.service                             enabled enabled      
+ip6tables.service                          enabled enabled      
+iptables.service                           enabled enabled      
+isc-dhcp-server.service                    enabled enabled      
+isc-dhcp-server6.service                   enabled enabled      
+kerneloops.service                         enabled enabled      
+lm-sensors.service                         enabled enabled      
+ModemManager.service                       enabled enabled      
+netfilter-persistent.service               enabled enabled      
+netplan_apply.service                      enabled enabled      
+network-manager.service                    enabled enabled      
+networkd-dispatcher.service                enabled enabled      
+NetworkManager-dispatcher.service          enabled enabled      
+NetworkManager-wait-online.service         enabled enabled      
+NetworkManager.service                     enabled enabled      
+ondemand.service                           enabled enabled      
+openvpn.service                            enabled enabled      
+performance.service                        enabled enabled      
+phc2sys.service                            enabled enabled      
+pppd-dns.service                           enabled enabled      
+ptp4l.service                              enabled enabled      
+resize.service                             enabled enabled      
+rsync.service                              enabled enabled      
+rte_checker.service                        enabled enabled      
+snapd.apparmor.service                     enabled enabled      
+snapd.autoimport.service                   enabled enabled      
+snapd.core-fixup.service                   enabled enabled      
+snapd.recovery-chooser-trigger.service     enabled enabled      
+snapd.seeded.service                       enabled enabled      
+snapd.service                              enabled enabled      
+snapd.system-shutdown.service              enabled enabled      
+snmpd.service                              enabled enabled      
+ssh.service                                enabled enabled      
+sshd.service                               enabled enabled      
+start.service                              enabled enabled      
+storage_check.service                      enabled enabled      
+switcheroo-control.service                 enabled enabled      
+systemd-pstore.service                     enabled enabled      
+systemd-resolved.service                   enabled enabled      
+ua-reboot-cmds.service                     enabled enabled      
+ubuntu-advantage.service                   enabled enabled      
+udisks2.service                            enabled enabled      
+vnstat.service                             enabled enabled      
+vnstatd.service                            enabled enabled      
+vsftpd.service                             enabled enabled      
+whoopsie.service                           enabled enabled      
+wpa_supplicant.service                     enabled enabled      
+
+72 unit files listed.
+=== RUNNING ===
+  UNIT                         LOAD   ACTIVE SUB     DESCRIPTION                                                     
+  avahi-daemon.service         loaded active running Avahi mDNS/DNS-SD Stack                                         
+  basic_server.service         loaded active running basic_server                                                    
+  bluetooth.service            loaded active running Bluetooth service                                               
+  chrony.service               loaded active running chrony, an NTP client/server                                    
+  containerd.service           loaded active running containerd container runtime                                    
+  cpunode.service              loaded active running cpunode                                                         
+  cron.service                 loaded active running Regular background program processing daemon                    
+  ctrlmcu.service              loaded active running ctrlmcu                                                         
+  cups-browsed.service         loaded active running Make remote CUPS printers available locally                     
+  cups.service                 loaded active running CUPS Scheduler                                                  
+  dbus.service                 loaded active running D-Bus System Message Bus                                        
+  docker.service               loaded active running Docker Application Container Engine                             
+  getty@tty1.service           loaded active running Getty on tty1                                                   
+  gps_node.service             loaded active running gps_node                                                        
+  height_map_nav.service       loaded active running height_map_nav                                                  
+  hsLidar.service              loaded active running hsLidar                                                         
+  kerneloops.service           loaded active running Tool to automatically collect and submit kernel crash signatures
+  lio-perception.service       loaded active running lio-perception                                                  
+  ModemManager.service         loaded active running Modem Manager                                                   
+  networkd-dispatcher.service  loaded active running Dispatcher daemon for systemd-networkd                          
+  NetworkManager.service       loaded active running Network Manager                                                 
+  phc2sys.service              loaded active running Synchronize PTP hardware clock (PHC) to system clock            
+  polkit.service               loaded active running Authorization Manager                                           
+  ptp4l.service                loaded active running PTP (IEEE 1588) clock synchronization (ptp4l)                   
+  rl_deploy.service            loaded active running rl_deploy                                                       
+  rob_bag.service              loaded active running Rob Bag System - ROS2 Data Recording Service                    
+  rsdriver.service             loaded active running rsdriver                                                        
+  rte_checker.service          loaded active running rte_checker                                                     
+  rtkit-daemon.service         loaded active running RealtimeKit Scheduling Policy Service                           
+  serial-getty@ttyFIQ0.service loaded active running Serial Getty on ttyFIQ0                                         
+  snmpd.service                loaded active running Simple Network Management Protocol (SNMP) Daemon.               
+  ssh.service                  loaded active running OpenBSD Secure Shell server                                     
+  start.service                loaded active running start app                                                       
+  systemd-journald.service     loaded active running Journal Service                                                 
+  systemd-logind.service       loaded active running Login Service                                                   
+  systemd-resolved.service     loaded active running Network Name Resolution                                         
+  systemd-udevd.service        loaded active running udev Kernel Device Manager                                      
+  tftpd-hpa.service            loaded active running LSB: HPA's tftp server                                          
+  upower.service               loaded active running Daemon for power management                                     
+  user@1003.service            loaded active running User Manager for UID 1003                                       
+  vnstat.service               loaded active running vnStat network traffic monitor                                  
+  vsftpd.service               loaded active running vsftpd FTP server                                               
+  whoopsie.service             loaded active running crash report submission daemon                                  
+  wpa_supplicant.service       loaded active running WPA supplicant                                                  
+  yesense.service              loaded active running yesense                                                         
+
+LOAD   = Reflects whether the unit definition was properly loaded.
+ACTIVE = The high-level unit activation state, i.e. generalization of SUB.
+SUB    = The low-level unit activation state, values depend on unit type.
+
+45 loaded units listed.

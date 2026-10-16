@@ -1,0 +1,75 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from drdds/msg/BatteryDataValue.msg
+// generated code does not contain a copyright notice
+
+
+module drdds {
+  module msg {
+    typedef uint8 uint8__32[32];
+    struct BatteryDataValue {
+      @verbatim (language="comment", text=
+        " 总电压, 单位10mV")
+      uint16 voltage;
+
+      @verbatim (language="comment", text=
+        " 总电流, 单位10mA")
+      int16 current;
+
+      @verbatim (language="comment", text=
+        " 剩余容量, 单位10mAH")
+      uint16 remaining_capacity;
+
+      @verbatim (language="comment", text=
+        " 标称容量, 单位10mAH")
+      uint16 nominal_capacity;
+
+      @verbatim (language="comment", text=
+        " 循环次数")
+      uint16 cycles;
+
+      @verbatim (language="comment", text=
+        " 生产日期")
+      uint16 production_date;
+
+      @verbatim (language="comment", text=
+        " 均衡低")
+      uint16 balanced_low;
+
+      @verbatim (language="comment", text=
+        " 均衡高")
+      uint16 balanced_high;
+
+      @verbatim (language="comment", text=
+        " 保护状态")
+      uint16 protected_state;
+
+      @verbatim (language="comment", text=
+        " 软件版本")
+      uint8 software_version;
+
+      @verbatim (language="comment", text=
+        " 剩余容量百分比")
+      uint8 battery_level;
+
+      @verbatim (language="comment", text=
+        " Mos状态")
+      uint8 mos_state;
+
+      @verbatim (language="comment", text=
+        " 电池串数")
+      uint8 battery_quantity;
+
+      @verbatim (language="comment", text=
+        " NTC个数")
+      uint8 battery_ntc;
+
+      @verbatim (language="comment", text=
+        " 电池温度序列")
+      sequence<float> battery_temperature;
+
+      @verbatim (language="comment", text=
+        "电池序列号")
+      uint8__32 battery_serialnum;
+    };
+  };
+};

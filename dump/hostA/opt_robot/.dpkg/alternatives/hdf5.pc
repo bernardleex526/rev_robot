@@ -1,0 +1,8 @@
+auto
+/usr/lib/aarch64-linux-gnu/pkgconfig/hdf5.pc
+
+/usr/lib/aarch64-linux-gnu/pkgconfig/hdf5-openmpi.pc
+50
+/usr/lib/aarch64-linux-gnu/pkgconfig/hdf5-serial.pc
+50
+

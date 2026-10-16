@@ -1,0 +1,60 @@
+systemd,1
+  |-ModemManager,873
+  |   |-{ModemManager},902
+  |   `-{ModemManager},923
+  |-NetworkManager,1156 --no-daemon
+  |   |-{NetworkManager},1165
+  |   `-{NetworkManager},1166
+  |-accounts-daemon,727
+  |   |-{accounts-daemon},742
+  |   `-{accounts-daemon},860
+  |-agetty,912 -o -p -- \\u --keep-baud 115200,38400,9600 ttyFIQ0 vt220
+  |-avahi-daemon,729
+  |   `-avahi-daemon,767
+  |-bash,1434 /opt/robot/scripts/board_resources/storage_space/delete_log_record.sh
+  |   `-sleep,7681 300
+  |-bash,1435 /opt/robot/scripts/board_resources/storage_space/delete_log_robot.sh
+  |   `-sleep,7682 300
+  |-bash,1436 /opt/robot/scripts/board_resources/storage_space/delete_log_sys.sh
+  |   `-sleep,7683 300
+  |-bluetoothd,1072
+  |-chronyd,903 -F -1
+  |   `-chronyd,916 -F -1
+  |-colord,2196
+  |   |-{colord},2199
+  |   `-{colord},2202
+  |-containerd,899
+  |   |-{containerd},929
+  |   |-{containerd},930
+  |   |-{containerd},931
+  |   |-{containerd},932
+  |   |-{containerd},934
+  |   |-{containerd},973
+  |   |-{containerd},986
+  |   |-{containerd},987
+  |   |-{containerd},1030
+  |   `-{containerd},1033
+  |-cpu_run.sh,2579 /opt/robot/share/node_driver/scripts/cpu_run.sh
+  |   `-cpu_node,2580
+  |       |-{cpu_node},2595
+  |       |-{cpu_node},2596
+  |       |-{cpu_node},2597
+  |       |-{cpu_node},2598
+  |       |-{cpu_node},2637
+  |       |-{cpu_node},2638
+  |       |-{cpu_node},2641
+  |       |-{cpu_node},2680
+  |       |-{cpu_node},2684
+  |       |-{cpu_node},2685
+  |       |-{cpu_node},2687
+  |       |-{cpu_node},2693
+  |       |-{cpu_node},2695
+  |       |-{cpu_node},2702
+  |       |-{cpu_node},2706
+  |       |-{cpu_node},2710
+  |       |-{cpu_node},2712
+  |       |-{cpu_node},2714
+  |       |-{cpu_node},2715
+  |       |-{cpu_node},2717
+  |       |-{cpu_node},2719
+  |       |-{cpu_node},2720

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="7" failures="0" disabled="0" errors="0" time="0.006" timestamp="2026-10-15T09:54:42" name="AllTests">
+  <testsuite name="VendorVoxelMap" tests="2" failures="0" disabled="0" errors="0" time="0.003" timestamp="2026-10-15T09:54:42">
+    <testcase name="FindsHierarchicalPlane" status="run" result="completed" time="0.002" timestamp="2026-10-15T09:54:42" classname="m20_slam_navigation.VendorVoxelMap" />
+    <testcase name="UsesCenterAndSixFaceNeighboursOnly" status="run" result="completed" time="0.001" timestamp="2026-10-15T09:54:42" classname="m20_slam_navigation.VendorVoxelMap" />
+  </testsuite>
+  <testsuite name="VendorExtrinsic" tests="1" failures="0" disabled="0" errors="0" time="0" timestamp="2026-10-15T09:54:42">
+    <testcase name="ComposesInverseBodyImuWithBodyLidar" status="run" result="completed" time="0" timestamp="2026-10-15T09:54:42" classname="m20_slam_navigation.VendorExtrinsic" />
+  </testsuite>
+  <testsuite name="VendorLioEskf" tests="4" failures="0" disabled="0" errors="0" time="0.003" timestamp="2026-10-15T09:54:42">
+    <testcase name="IteratedPointPlaneCorrectsHeight" status="run" result="completed" time="0.003" timestamp="2026-10-15T09:54:42" classname="m20_slam_navigation.VendorLioEskf" />
+    <testcase name="InitializationCovarianceMatchesVendorBlocks" status="run" result="completed" time="0" timestamp="2026-10-15T09:54:42" classname="m20_slam_navigation.VendorLioEskf" />
+    <testcase name="UsesS2GravityWithFixedNorm" status="run" result="completed" time="0" timestamp="2026-10-15T09:54:42" classname="m20_slam_navigation.VendorLioEskf" />
+    <testcase name="StationaryCovariancePropagationIsFinite" status="run" result="completed" time="0" timestamp="2026-10-15T09:54:42" classname="m20_slam_navigation.VendorLioEskf" />
+  </testsuite>
+</testsuites>

@@ -1,0 +1,43 @@
+#!/bin/sh
+
+set -eu
+
+case "$1" in
+  remove|upgrade|failed-upgrade|abort-install|abort-upgrade|disappear)
+    ;;
+
+  purge)
+    rm -Rf /var/lib/vnstat
+    userdel vnstat || true
+    ;;
+
+  *)
+    echo "postrm called with unknown argument \`$1'" >&2
+    exit 1
+esac
+
+# Automatically added by dh_installinit/12.7.3ubuntu1
+if [ "$1" = "purge" ] ; then
+	update-rc.d vnstat remove >/dev/null
+fi
+# End automatically added section
+# Automatically added by dh_installsystemd/12.7.3ubuntu1
+if [ -d /run/systemd/system ]; then
+	systemctl --system daemon-reload >/dev/null || true
+fi
+# End automatically added section
+# Automatically added by dh_installsystemd/12.7.3ubuntu1
+if [ "$1" = "remove" ]; then
+	if [ -x "/usr/bin/deb-systemd-helper" ]; then
+		deb-systemd-helper mask 'vnstat.service' >/dev/null || true
+	fi
+fi
+
+if [ "$1" = "purge" ]; then
+	if [ -x "/usr/bin/deb-systemd-helper" ]; then
+		deb-systemd-helper purge 'vnstat.service' >/dev/null || true
+		deb-systemd-helper unmask 'vnstat.service' >/dev/null || true
+	fi
+fi
+# End automatically added section
+

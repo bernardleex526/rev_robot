@@ -1,0 +1,170 @@
+#!/bin/bash
+drmap_scripts_path=$(dirname "$(readlink -f "/usr/local/bin/drmap")")
+
+# 加载其它命令补全函数
+source $drmap_scripts_path/drmap_pack_complete
+source $drmap_scripts_path/drmap_unpack_complete
+source $drmap_scripts_path/drmap_show_complete
+source $drmap_scripts_path/drmap_apply_complete
+source $drmap_scripts_path/drmap_edit_complete
+source $drmap_scripts_path/drmap_mapping_complete
+
+# _drmap_pack_complete()
+# {
+#     # local compreply=( "xx" "yy" "zz" )
+#     # echo "call pack"
+#     # local cur=$1
+#     # echo "cur: $cur"
+#     # local compreply=( $(compgen -W 'xx yy zz' -- $cur) )
+#     # return $compreply 
+    
+#     local cur=${COMP_WORDS[COMP_CWORD]};    # 最后一个？
+#     # COMPREPLY=()
+#     # COMPREPLY=( $(compgen -W 'xx yy zz' -- $cur) )
+#     # echo "cur: $cur"
+
+#     if [ $cur ] && [[ "$cur" =~ ^- ]]; then
+#         # echo "no zero"
+#         COMPREPLY=( $(compgen -W ' -d -h -r ' -- $cur) )
+#     fi
+
+
+#     # case ${COMP_WORDS[$[$COMP_CWORD-1]]} in
+#     #     -d)
+#     #     # echo "com -d"
+#     #     COMPREPLY=($(compgen -d ${COMP_WORDS[${COMP_CWORD}]}))
+
+#     #     # 提示/etc/目录下的所有目录
+#     #     # COMP_FILE=$(find /etc/ -maxdepth 1 -type d -print | xargs -n1 basename)
+#     #     # COMPREPLY=($(compgen -W "${COMP_FILE}" ${COMP_WORDS[${COMP_CWORD}]}))
+#     #     ;;
+#     #     # -f|--file)
+#     #     # # 提示/etc/目录下的所有文件
+#     #     # COMP_FILE=$(find /etc/ -maxdepth 1 -type f -print | xargs -n1 basename)
+#     #     # COMPREPLY=($(compgen -W "${COMP_FILE}" ${COMP_WORDS[${COMP_CWORD}]}))
+#     #     # ;;
+#     #     # -cf|--current-file)
+#     #     # # 提示当前目录下的文件
+#     #     # COMPREPLY=($(compgen -f ${COMP_WORDS[${COMP_CWORD}]}))
+#     #     # ;;
+#     #     # -cd|--current-directory)
+#     #     # # 提示当前目录下的目录
+#     #     # COMPREPLY=($(compgen -d ${COMP_WORDS[${COMP_CWORD}]}))
+#     #     # ;;
+#     #     # --user)
+#     #     # # 提示当前系统的所有用户
+#     #     # COMPREPLY=($(compgen -u ${COMP_WORDS[${COMP_CWORD}]}))
+#     #     # ;;
+#     #     # --group)
+#     #     # # 提示当前系统的所有组
+#     #     # COMPREPLY=($(compgen -g ${COMP_WORDS[${COMP_CWORD}]}))
+#     #     # ;;
+#     #     *)
+#     #     # 提示当前系统的所有组
+#     #     COMPREPLY=($(compgen  -- ${COMP_WORDS[${COMP_CWORD}]}))
+#     #     ;;
+#     #     esac
+
+
+#     return 0
+# }
+
+_drmap_complete()
+ 
+{
+ 
+    COMPREPLY=()
+    # COMPREPLY=( $(compgen -W 'xx yy zz' -- $cur) )
+ 
+    # local cur=${COMP_WORDS[COMP_CWORD]};    # 最后一个？
+ 
+    # local cmd=${COMP_WORDS[COMP_CWORD-1]};  # 倒数第二个？
+
+    # local cur=${COMP_WORDS[COMP_CWORD]};    # 新一个
+ 
+    # local cmd=${COMP_WORDS[COMP_CWORD-1]};  # 最后一个？
+ 
+    # case $cmd in
+    #     'drmap')
+    #         echo "--"
+    #         echo $COMP_CWORD
+    #         echo $cmd
+    #         echo $cur
+    #         COMPREPLY=( $(compgen -W ' apply edit manager pack show unpack ' -- $cur) ) ;;
+    #     'pack')
+    #         echo "--"
+    #         echo $COMP_CWORD
+    #         echo $cmd
+    #         echo $cur
+    #         COMPREPLY=( $(compgen -W 'aa bb cc ab' -- $cur) ) ;;
+    #     'unpack')
+    #         COMPREPLY=( $(compgen -W 'aa bb cc ab' -- $cur) ) ;;
+    #     'check')
+    #         COMPREPLY=( $(compgen -W 'aa bb cc ab' -- $cur) ) ;;
+    #     '*') ;;
+    # esac
+
+    if [[ ${COMP_CWORD} -eq 1 ]]; then  # 对drmap进行补全
+        local cur=${COMP_WORDS[1]};    # 新一个？？
+        # local cmd=${COMP_WORDS[1]};  # 第二个
+        COMPREPLY=( $(compgen -W ' apply edit manager mapping stop_mapping set_grid_label pack show unpack ' -- $cur) )
+    else    # 对drmap后的子指令分别进行补全
+        local cur=${COMP_WORDS[2]};    # 新一个？？
+        local cmd=${COMP_WORDS[1]};  # 第二个
+        case $cmd in
+            'pack')
+                # echo "complete pack"
+                _drmap_pack_complete ;;
+                # COMPREPLY=( $(_drmap_pack_complete) );;
+            'unpack')
+                # echo "complete unpack"
+                # COMPREPLY=( $(compgen -W 'aa bb cc ab' -- $cur) ) ;;
+                _drmap_unpack_complete ;;
+            'apply')
+                # echo "complete apply"
+                # COMPREPLY=( $(compgen -W 'aa bb cc ab' -- $cur) ) ;;
+                _drmap_apply_complete ;;
+            'edit')
+                # echo "complete edit"
+                # COMPREPLY=( $(compgen -W 'aa bb cc ab' -- $cur) ) ;;
+                _drmap_edit_complete ;;
+            'manager')
+                # echo "complete manager"
+                # COMPREPLY=( $(compgen -W 'aa bb cc ab' -- $cur) ) ;;
+                _drmap_manager_complete ;;
+            'mapping')
+                # echo "complete mapping"
+                # COMPREPLY=( $(compgen -W 'aa bb cc ab' -- $cur) ) ;;
+                _drmap_mapping_complete ;;
+            'show')
+                # echo "complete show"
+                # COMPREPLY=( $(compgen -W 'aa bb cc ab' -- $cur) ) ;;
+                _drmap_show_complete ;;
+            '*') ;;
+        esac
+    fi
+
+
+
+    # if [[ "${COMP_WORDS[1]}" == "read" && ${COMP_CWORD} -eq 2 ]]; then
+ 
+    #       local pro=($(pwd))
+ 
+    #       cd /data
+ 
+    #       compopt -o nospace
+ 
+    #       COMPREPLY=($(compgen -d -f -- $cur))
+ 
+    #       cd $pro
+ 
+    # fi
+
+
+ 
+    return 0
+ 
+}
+ 
+complete -o default -F _drmap_complete drmap
+# complete -o default -F _drmap_complete dr_map

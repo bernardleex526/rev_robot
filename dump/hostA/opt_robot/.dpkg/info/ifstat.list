@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/bin
+/usr/bin/ifstat
+/usr/share
+/usr/share/doc
+/usr/share/doc/ifstat
+/usr/share/doc/ifstat/HISTORY
+/usr/share/doc/ifstat/README
+/usr/share/doc/ifstat/TODO
+/usr/share/doc/ifstat/changelog.Debian.gz
+/usr/share/doc/ifstat/copyright
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/ifstat.1.gz

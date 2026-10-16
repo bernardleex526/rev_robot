@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/bin
+/usr/bin/tcptrack
+/usr/share
+/usr/share/doc
+/usr/share/doc/tcptrack
+/usr/share/doc/tcptrack/AUTHORS
+/usr/share/doc/tcptrack/README
+/usr/share/doc/tcptrack/TODO
+/usr/share/doc/tcptrack/changelog.Debian.gz
+/usr/share/doc/tcptrack/copyright
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/tcptrack.1.gz

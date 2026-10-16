@@ -1,0 +1,11 @@
+f81fda87bc8feabbd775a04d25bddc57  opt/robot/bin/mcu_control
+d643b187c767a63dd2c7787b7e6e2028  opt/robot/bin/mcu_test
+b1d8af07d39d53767e1119da9a95f67c  opt/robot/bin/mcu_update
+9d6a88fb37cc8a43139fa5d1ea3bed4d  opt/robot/include/SerialPort.hpp
+757aeadf3bd7ce86c2d98a5b99fc8fcb  opt/robot/include/common_lib.h
+f84cf97d1123d155d2c2143d8d9a830b  opt/robot/include/deep_cmd.h
+555a006425f59bd962d51c29ab13dfec  opt/robot/include/mcu_agent.hpp
+c9e01e748821b8d1cfc216c2ac6774e6  opt/robot/include/mcu_control.h
+30d89872ea86f17cf6b459994f665b6a  opt/robot/include/mcu_protocolstack.h
+6d09b6d2e85fff47656ee2839e7640af  opt/robot/lib/libsensorhub_shared.so
+a0a37644028a38ad2d0acdb60e369b15  opt/robot/share/mcu_update/bin/CA9B_f1_app_v2.1.0.bin

@@ -1,0 +1,125 @@
+
+========================================================================
+===== M20FinetuneStandRunner::updateCommand  (expected @ 0x284f9c)
+  actual: updateCommand @ 00284f9c
+========================================================================
+
+/* DWARF original prototype: void updateCommand(M20FinetuneStandRunner * this, RobotBasicState *
+   robotState, UserCommand.conflict * uc) */
+
+void __thiscall
+M20FinetuneStandRunner::updateCommand
+          (M20FinetuneStandRunner *this,RobotBasicState *robotState,UserCommand_conflict *uc)
+
+{
+  Scalar *pSVar1;
+  float fVar2;
+  float fVar3;
+  float fVar4;
+  UserCommand_conflict *uc_local;
+  RobotBasicState *robotState_local;
+  M20FinetuneStandRunner *this_local;
+  
+  this->current_time = this->time_step * this->agent_timestep;
+  pSVar1 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_1>::operator[]
+                     ((DenseCoeffsBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_1> *)
+                      &this->projected_gravity,2);
+  fVar4 = *pSVar1;
+  pSVar1 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_1>::operator[]
+                     ((DenseCoeffsBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_1> *)
+                      &this->projected_gravity,1);
+  fVar2 = std::abs(*pSVar1);
+  pSVar1 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_1>::operator[]
+                     ((DenseCoeffsBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_1> *)
+                      &this->projected_gravity,0);
+  fVar3 = std::abs(*pSVar1);
+  this->is_fallen = (-0.5 < fVar4 || 0.6 < fVar2) || 0.7 < fVar3;
+  cal_command(this,robotState,uc,&this->last_v_total,&this->v_total,&this->last_v_x,&this->last_v_y,
+              &this->v_x,&this->v_y,&this->target_w,&this->last_target_w,&this->command,&this->v_acc
+              ,&this->w_acc,this->is_fallen,this->current_time,this->gait_w,this->half_gait_T);
+  this->last_v_x = this->v_x;
+  this->last_v_y = this->v_y;
+  this->last_target_w = this->target_w;
+  this->last_v_total = this->v_total;
+  update_gait_freq(this);
+  return;
+}
+
+
+
+========================================================================
+===== M20ExtrePolicyRunner::updateCommand  (expected @ 0x27c888)
+  actual: updateCommand @ 0027c888
+========================================================================
+
+/* DWARF original prototype: void updateCommand(M20ExtrePolicyRunner * this, RobotBasicState *
+   robotState, UserCommand.conflict * uc) */
+
+void __thiscall
+M20ExtrePolicyRunner::updateCommand
+          (M20ExtrePolicyRunner *this,RobotBasicState *robotState,UserCommand_conflict *uc)
+
+{
+  UserCommand_conflict *uc_local;
+  RobotBasicState *robotState_local;
+  M20ExtrePolicyRunner *this_local;
+  
+  cal_command(this,robotState,uc,&this->last_v_total,&this->v_total,&this->last_v_x,&this->last_v_y,
+              &this->v_x,&this->v_y,&this->target_w,&this->last_target_w,&this->command,&this->v_acc
+              ,&this->w_acc);
+  this->last_v_x = this->v_x;
+  this->last_v_y = this->v_y;
+  this->last_target_w = this->target_w;
+  this->last_v_total = this->v_total;
+  return;
+}
+
+
+
+========================================================================
+===== M20SixAxisStandRunner::updateCommand  (expected @ 0x2982a0)
+  actual: updateCommand @ 002982a0
+========================================================================
+
+/* DWARF original prototype: void updateCommand(M20SixAxisStandRunner * this, RobotBasicState *
+   robotState, UserCommand.conflict * uc) */
+
+void __thiscall
+M20SixAxisStandRunner::updateCommand
+          (M20SixAxisStandRunner *this,RobotBasicState *robotState,UserCommand_conflict *uc)
+
+{
+  Scalar *pSVar1;
+  float fVar2;
+  float fVar3;
+  float fVar4;
+  UserCommand_conflict *uc_local;
+  RobotBasicState *robotState_local;
+  M20SixAxisStandRunner *this_local;
+  
+  this->current_time = this->time_step * this->agent_timestep;
+  pSVar1 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_1>::operator[]
+                     ((DenseCoeffsBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_1> *)
+                      &this->projected_gravity,2);
+  fVar4 = *pSVar1;
+  pSVar1 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_1>::operator[]
+                     ((DenseCoeffsBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_1> *)
+                      &this->projected_gravity,1);
+  fVar2 = std::abs(*pSVar1);
+  pSVar1 = Eigen::DenseCoeffsBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>,_1>::operator[]
+                     ((DenseCoeffsBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>,_1> *)
+                      &this->projected_gravity,0);
+  fVar3 = std::abs(*pSVar1);
+  this->is_fallen = (-0.5 < fVar4 || 0.6 < fVar2) || 0.7 < fVar3;
+  cal_command(this,robotState,uc,&this->last_v_total,&this->v_total,&this->last_v_x,&this->last_v_y,
+              &this->v_x,&this->v_y,&this->target_w,&this->last_target_w,&this->command,&this->v_acc
+              ,&this->w_acc,this->is_fallen,this->current_time,this->gait_w,this->half_gait_T);
+  this->last_v_x = this->v_x;
+  this->last_v_y = this->v_y;
+  this->last_target_w = this->target_w;
+  this->last_v_total = this->v_total;
+  update_gait_freq(this);
+  return;
+}
+
+

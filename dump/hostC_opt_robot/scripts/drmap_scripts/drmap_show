@@ -1,0 +1,165 @@
+#!/bin/bash
+SCRIPT_PATH=$(dirname "$(readlink -f "$0")")
+# echo "debug $SCRIPT_PATH"
+source $SCRIPT_PATH/../config.sh
+map_path="$MAPS_PATH/active/"
+
+# 定义颜色代码
+RED=$(tput setaf 1)
+GREEN=$(tput setaf 2)
+YELLOW=$(tput setaf 3)
+BLUE=$(tput setaf 4)
+MAGENTA=$(tput setaf 5)
+CYAN=$(tput setaf 6)
+WHITE=$(tput setaf 7)
+RESET=$(tput sgr0)
+
+usage() {
+    echo "用法：" 
+    echo "  drmap show [-options] [MAP]"
+    echo "  显示地图相关信息，包括内容、完整性等，地图不完整时给出缺失文件信息与处理建议。可根据options显示点云地图或栅格地图等。"
+    echo "参数："
+    echo "  [MAP]        显示地图路径，默认为$map_path"
+    echo "选项："
+    echo "  -c                 显示点云地图（pcl_viewer）"
+    echo "  -h                 显示帮助信息并退出"
+    echo "  -o                 显示默认栅格地图（eog）"
+    echo "  -y                 显示默认栅格地图配置（gedit）"
+}
+
+show_pcd="false"
+show_pgm="false"
+show_yaml="false"
+
+while getopts :choy opt
+do
+    case "$opt" in
+        c) show_pcd="true"
+        ;;
+        h)
+        usage
+        exit 0
+        ;;
+        o) show_pgm="true"
+        ;;
+        y) show_yaml="true"
+        ;;
+        :)
+        echo "${RED}[ERROR] -$OPTARG 选项需指定参数${RESET}" >& 2
+        usage
+        exit 1
+        ;;
+        \?) 
+        echo "${RED}[ERROR] 未知选项 -$OPTARG${RESET}" >& 2
+        usage
+        exit 1
+        ;;
+        # *) echo "Unknown option: -$opt" ;;
+    esac
+done
+
+shift $[ $OPTIND - 1 ]
+
+if [ $# -eq 1 ];      # 已指定地图路径参数，更新路径
+then
+    map_path=$1
+else
+    if [ ! $# -eq 0 ]; then
+        echo "[ERROR] ${RED}不支持$#个地图路径参数${RESET}"
+        exit 1
+    fi
+fi
+
+# 检查路径正确性
+if [ ! -d "$map_path" ]; then
+    echo "${RED}[ERROR] 地图路径 $map_path 不是有效的文件夹地址，请检查并正确给定${RESET}" >& 2
+    exit 1
+fi
+# echo $(dirname $map_path)
+# echo $(basename $map_path)
+cd $(dirname $map_path)
+if [ -L $(basename $map_path) ]; then           # 是软链接
+    #echo $(dirname $map_path)
+    link_path=$(readlink $(basename $map_path))
+    #echo "地图路径是软链接，软链接路径为： $link_path"
+    if [[ ! $link_path =~ ^/ ]]; then
+        link_path=$(pwd)/$link_path
+    fi
+    echo "------"
+    echo "地图路径是软链接，实际路径为： $link_path"
+fi
+cd $(basename $map_path)
+# check_map() {
+#     # 已在地图路径下
+#     return 0 # 正常
+#     # return 1 # 缺失必要文件
+# }
+# cd $map_path
+echo "------"
+echo "地图文件夹下所含的所有内容："
+ls -l -h
+echo "------"
+echo "文件完整性检查："
+echo "  （说明：导航任务正常启动的必要条件是包含 jueying.pcd jueying.pgm jueying.yaml文件）"
+echo "  必要文件："
+if [ -f "./jueying.pcd" ];then
+    echo "    jueying.pcd    ${GREEN}存在${RESET}"
+    exist_pcd="true"
+else
+    echo "    jueying.pcd    ${RED}不存在${RESET}"
+    exist_pcd="false"
+fi
+
+if [ -f "./jueying.pgm" ];then
+    echo "    jueying.pgm    ${GREEN}存在${RESET}"
+    exist_pgm="true"
+else
+    echo "    jueying.pgm    ${RED}不存在${RESET}"
+    exist_pgm="false"
+fi
+
+if [ -f "./jueying.yaml" ];then
+    echo "    jueying.yaml   ${GREEN}存在${RESET}"
+    exist_yaml="true"
+else
+    echo "    jueying.yaml   ${RED}不存在${RESET}"
+    exist_yaml="false"
+fi
+
+echo "  非必要文件：$count_res"
+
+if [ -d ./details/frames ]; then
+    frames_count=$(ls -l details/frames/ |grep "^-"|wc -l)
+else
+    frames_count=0
+fi
+if [ -f ./details/poses_opt.txt ]; then
+    poses_count=$(awk 'END {print NR}' details/poses_opt.txt)
+else
+    poses_count=0
+fi
+if [ $frames_count -eq $poses_count ] && [ ! $frames_count -eq 0 ];
+then
+    echo "    关键帧         ${GREEN}正常${RESET}（满足重新生成必要地图文件的条件）"
+else
+    echo "    关键帧         ${YELLOW}异常${RESET}（不影响正常导航功能），帧数：$frames_count，位姿数：$poses_count"
+fi
+
+if [ $show_pcd = "true" ] && [ $exist_pcd = "true" ];
+then
+    echo "------"
+    echo "显示点云地图"
+    pcl_viewer jueying.pcd > /dev/null 2>&1 &
+fi
+if [ $show_pgm = "true" ] && [ $exist_pgm = "true" ];
+then
+    echo "------"
+    echo "显示栅格地图"
+    eog jueying.pgm > /dev/null 2>&1 &
+fi
+if [ $show_yaml = "true" ] && [ $exist_yaml = "true" ];
+then
+    echo "------"
+    echo "显示栅格地图配置"
+    gedit jueying.yaml > /dev/null 2>&1 &
+fi

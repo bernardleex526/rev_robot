@@ -1,0 +1,8 @@
+test_m20_cloud_adapter 1 0.0740616
+test_sensor_wire 1 0.0593987
+test_vendor_lio 1 0.153131
+test_vendor_output_contract 1 0.0935914
+test_backend_geometry 1 0.131834
+test_localization_eskf 1 0.092685
+test_native_navigation_contract 1 0.298792
+---

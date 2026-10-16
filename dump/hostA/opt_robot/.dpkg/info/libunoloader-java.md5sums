@@ -1,0 +1,6 @@
+ae6ef6f007f8575e5abf599a5d4247fd  usr/share/bug/libunoloader-java/presubj
+b7e43b1389bca26f20ead6cb447ca8c8  usr/share/doc/libunoloader-java/changelog.Debian.gz
+c92f3a9b7fc07358987f755d5060ce80  usr/share/doc/libunoloader-java/copyright
+ae1d8f58a15d504ae76e4db062e986a2  usr/share/java/unoloader-6.4.7.jar
+91538fd4a633b5f408801af0853d66b0  usr/share/maven-repo/org/libreoffice/unoloader/6.4.7/unoloader-6.4.7.pom
+2579467d1648f140b7457f54348f5172  usr/share/maven-repo/org/libreoffice/unoloader/debian/unoloader-debian.pom

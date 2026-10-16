@@ -1,0 +1,11 @@
+/.
+/usr
+/usr/include
+/usr/include/CL
+/usr/include/CL/cl.hpp
+/usr/include/CL/cl2.hpp
+/usr/share
+/usr/share/doc
+/usr/share/doc/opencl-clhpp-headers
+/usr/share/doc/opencl-clhpp-headers/changelog.Debian.gz
+/usr/share/doc/opencl-clhpp-headers/copyright

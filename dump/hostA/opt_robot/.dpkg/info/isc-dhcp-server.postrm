@@ -1,0 +1,94 @@
+#!/bin/sh
+
+set -e
+
+case "$1" in
+    remove)
+	# Remove stale pid files
+	rm -f /var/run/dhcpd.pid /var/run/dhcpd6.pid
+	;;
+
+    purge)
+	# Remove database
+	rm -f /var/lib/dhcp/dhcpd.leases /var/lib/dhcp/dhcpd.leases~
+
+	# Remove database directory
+	if [ -d /var/lib/dhcp ]; then
+	    rmdir --ignore-fail-on-non-empty /var/lib/dhcp/
+	fi
+
+	# Remove init.d configuration file
+	rm -f /etc/default/isc-dhcp-server
+
+	# remove ddns keys directory
+	rm -Rf /etc/dhcp/ddns-keys/
+	;;
+
+    upgrade|failed-upgrade|abort-install|abort-upgrade|disappear)
+	# Nothing to do
+	;;
+esac
+
+init_script_error_handler()
+{
+	return 0
+}
+
+# Automatically added by dh_installinit/12.10ubuntu1
+if [ "$1" = "purge" ] ; then
+	update-rc.d isc-dhcp-server remove >/dev/null
+fi
+# End automatically added section
+# Automatically added by dh_systemd_start/12.10ubuntu1
+if [ -d /run/systemd/system ]; then
+	systemctl --system daemon-reload >/dev/null || true
+fi
+# End automatically added section
+# Automatically added by dh_systemd_enable/12.10ubuntu1
+if [ "$1" = "remove" ]; then
+	if [ -x "/usr/bin/deb-systemd-helper" ]; then
+		deb-systemd-helper mask 'isc-dhcp-server.service' 'isc-dhcp-server6.service' >/dev/null || true
+	fi
+fi
+
+if [ "$1" = "purge" ]; then
+	if [ -x "/usr/bin/deb-systemd-helper" ]; then
+		deb-systemd-helper purge 'isc-dhcp-server.service' 'isc-dhcp-server6.service' >/dev/null || true
+		deb-systemd-helper unmask 'isc-dhcp-server.service' 'isc-dhcp-server6.service' >/dev/null || true
+	fi
+fi
+# End automatically added section
+# Automatically added by dh_systemd_enable/12.10ubuntu1
+if [ "$1" = "remove" ]; then
+	if [ -x "/usr/bin/deb-systemd-helper" ]; then
+		deb-systemd-helper mask 'isc-dhcp-server.service' >/dev/null || true
+	fi
+fi
+
+if [ "$1" = "purge" ]; then
+	if [ -x "/usr/bin/deb-systemd-helper" ]; then
+		deb-systemd-helper purge 'isc-dhcp-server.service' >/dev/null || true
+		deb-systemd-helper unmask 'isc-dhcp-server.service' >/dev/null || true
+	fi
+fi
+# End automatically added section
+# Automatically added by dh_installdebconf/12.10ubuntu1
+if [ "$1" = purge ] && [ -e /usr/share/debconf/confmodule ]; then
+	. /usr/share/debconf/confmodule
+	db_purge
+fi
+# End automatically added section
+# Automatically added by dh_apparmor/2.13.3-7ubuntu5.2
+if [ "$1" = "purge" ] && ! [ -e "/etc/apparmor.d/usr.sbin.dhcpd" ] ; then
+    rm -f "/etc/apparmor.d/disable/usr.sbin.dhcpd" || true
+    rm -f "/etc/apparmor.d/force-complain/usr.sbin.dhcpd" || true
+    rm -f "/etc/apparmor.d/local/usr.sbin.dhcpd" || true
+    rm -f /var/cache/apparmor/*/"usr.sbin.dhcpd" || true
+    rmdir /etc/apparmor.d/disable 2>/dev/null || true
+    rmdir /etc/apparmor.d/local   2>/dev/null || true
+    rmdir /etc/apparmor.d         2>/dev/null || true
+fi
+# End automatically added section
+
+
+exit 0

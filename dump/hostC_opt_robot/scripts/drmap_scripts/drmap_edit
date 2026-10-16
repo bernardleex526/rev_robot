@@ -1,0 +1,195 @@
+#!/bin/bash
+SCRIPT_PATH=$(dirname "$(readlink -f "$0")")
+# echo "debug $SCRIPT_PATH"
+source $SCRIPT_PATH/../config.sh
+map_path="$MAPS_PATH/active/"
+
+# 定义颜色代码
+RED=$(tput setaf 1)
+GREEN=$(tput setaf 2)
+YELLOW=$(tput setaf 3)
+BLUE=$(tput setaf 4)
+MAGENTA=$(tput setaf 5)
+CYAN=$(tput setaf 6)
+WHITE=$(tput setaf 7)
+RESET=$(tput sgr0)
+
+usage() {
+    echo "用法：" 
+    echo "  drmap edit [-options] [MAP]"
+    echo "  编辑地图相关内容，包括栅格地图、yaml文件等。"
+    echo "参数："
+    echo "  [MAP]            地图路径，默认为$map_path"
+    echo "选项："
+    # echo "  -c               编辑点云地图（pcl_viewer）"
+    # echo "  -g               编辑关键帧图"
+    echo "  -h               显示帮助信息并退出"
+    echo "  -o               编辑默认栅格地图（gimp）"
+    echo "  -y               编辑默认栅格地图配置（gedit）"
+    # echo "  -t    TARGET     编辑关键帧图时的target路径"
+}
+
+# edit_pcd="false"
+edit_graph="false"
+edit_pgm="false"
+edit_yaml="false"
+
+target_path_set_flag="false"
+
+while getopts :ghot:y opt
+do
+    case "$opt" in
+        # c) show_pcd="true"
+        # ;;
+        g) edit_graph="true"
+        ;;
+        h)
+        usage
+        exit 0
+        ;;
+        o) edit_pgm="true"
+        ;;
+        t) target_path=$OPTARG
+        if [[ $target_path =~ ^- ]] || [ ! $target_path ]
+        then
+            echo "${RED}[ERROR] -t 选项需指定参数${RESET}" >& 2
+            usage
+            exit 1
+        fi
+        target_path_set_flag="true"
+        ;;
+        y) edit_yaml="true"
+        ;;
+        :)
+        echo "${RED}[ERROR] -$OPTARG 选项需指定参数${RESET}" >& 2
+        usage
+        exit 1
+        ;;
+        \?) 
+        echo "${RED}[ERROR] 未知选项 -$OPTARG${RESET}" >& 2
+        usage
+        exit 1
+        ;;
+        # *) echo "Unknown option: -$opt" ;;
+    esac
+done
+
+if [ $target_path_set_flag = "true" ]; then
+    cur_path=$(pwd)
+    # cd $target_path
+    # target_path=$(pwd)/
+    # cd $cur_path
+    if [ ! -d "$target_path" ]; then
+        echo "${RED}[ERROR] target路径 $target_path 不是有效的文件夹地址，请正确给定${RESET}" >& 2
+        exit 1
+    fi
+    cd $target_path
+    target_path=$(pwd)/
+    cd $cur_path
+fi
+
+shift $[ $OPTIND - 1 ]
+
+if [ $# -eq 1 ];      # 已指定地图路径参数，更新路径
+then
+    map_path=$1
+else
+    if [ ! $# -eq 0 ]; then
+        echo "[ERROR] ${RED}不支持$#个地图路径参数${RESET}"
+        exit 1
+    fi
+fi
+
+# 检查路径正确性
+if [ ! -d "$map_path" ]; then
+    echo "${RED}[ERROR] 地图路径 $map_path 不是有效的文件夹地址，请检查并正确给定${RESET}" >& 2
+    exit 1
+fi
+# echo $(dirname $map_path)
+# echo $(basename $map_path)
+cd $(dirname $map_path)
+if [ -L $(basename $map_path) ]; then           # 是软链接
+    #echo $(dirname $map_path)
+    link_path=$(readlink $(basename $map_path))
+    #echo "地图路径是软链接，软链接路径为： $link_path"
+    if [[ ! $link_path =~ ^/ ]]; then
+        link_path=$(pwd)/$link_path
+    fi
+    echo "------"
+    echo "地图路径是软链接，实际路径为： $link_path"
+fi
+cd $(basename $map_path)
+# check_map() {
+#     # 已在地图路径下
+#     return 0 # 正常
+#     # return 1 # 缺失必要文件
+# }
+# cd $map_path
+# echo "------"
+# echo "地图文件夹下所含的所有内容："
+# ls -l -h
+# echo "------"
+# echo "文件完整性检查："
+# echo "  （说明：导航任务正常启动的必要条件是包含 jueying.pcd jueying.pgm jueying.yaml文件）"
+# echo "  必要文件："
+# if [ $edit_pcd = "true" ];then
+#     echo "------"
+#     if [ -f "./jueying.pcd" ]; then
+#         # 编辑pcd
+#         echo "编辑jueying.pcd"
+        
+#     else
+#         echo "jueying.pcd${RED}不存在${RESET}"
+#     fi
+# fi
+
+if [ $edit_pgm = "true" ];then
+    echo "------"
+    if [ -f "./jueying.pgm" ]; then
+        # 编辑pcd
+        echo "编辑jueying.pgm"
+        gimp ./jueying.pgm > /dev/null 2>&1 &
+    else
+        echo "jueying.pgm${RED}不存在${RESET}"
+    fi
+fi
+
+if [ $edit_yaml = "true" ];then
+    echo "------"
+    if [ -f "./jueying.yaml" ]; then
+        # 编辑pcd
+        echo "编辑jueying.yaml"
+        gedit ./jueying.yaml > /dev/null 2>&1 &
+    else
+        echo "jueying.yaml${RED}不存在${RESET}"
+    fi
+fi
+
+if [ $edit_graph = "true" ];then
+    echo "------"
+    if [ -d ./details/frames ]; then
+        frames_count=$(ls -l details/frames/ |grep "^-"|wc -l)
+    else
+        frames_count=0
+    fi
+    if [ -f ./details/poses_ori.txt ]; then
+        poses_count=$(awk 'END {print NR}' details/poses_ori.txt)
+    else
+        poses_count=0
+    fi
+    if [ $frames_count -eq $poses_count ] && [ ! $frames_count -eq 0 ];
+    then
+        echo "编辑graph"
+        echo "source地图路径：$(pwd)"
+        source /home/ysc/jy_cog/slam/setup.bash
+        source /home/ysc/jy_cog/rviz_plugins/setup.bash --extend
+        if [ $target_path_set_flag = "true" ]; then
+            echo "target地图路径：$target_path"
+            roslaunch jueying_pgo map_edit.launch source_path:=$(pwd) target_path:=$target_path
+        else
+            roslaunch jueying_pgo map_edit.launch source_path:=$(pwd)
+        fi
+    else
+        echo "graph异常，帧数：$frames_count，位姿数：$poses_count"
+    fi
+fi

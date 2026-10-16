@@ -1,0 +1,15 @@
+10c007a4af5cb3322f12dceceaad61ad  usr/lib/python3/dist-packages/_ubjson.cpython-38-aarch64-linux-gnu.so
+bd3cb8560bf4d2796a8bd46228eaf915  usr/lib/python3/dist-packages/py_ubjson-0.14.0.egg-info/PKG-INFO
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/py_ubjson-0.14.0.egg-info/dependency_links.txt
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/py_ubjson-0.14.0.egg-info/not-zip-safe
+07138d9ca030f29733b9a9b04194eea2  usr/lib/python3/dist-packages/py_ubjson-0.14.0.egg-info/requires.txt
+8925f6787a7b9798b319ec75c3df4ef9  usr/lib/python3/dist-packages/py_ubjson-0.14.0.egg-info/top_level.txt
+819391b58391272f6c45fbed0f4867b2  usr/lib/python3/dist-packages/ubjson/__init__.py
+d3a50d7735b3f7119ec533e0fda742cd  usr/lib/python3/dist-packages/ubjson/__main__.py
+c5284b697f2945670d0a2ea0fc586b12  usr/lib/python3/dist-packages/ubjson/compat.py
+5ea275d1b884a8b36834045dc82700a0  usr/lib/python3/dist-packages/ubjson/decoder.py
+bedf9f2197404c20a416a7afd1cc4206  usr/lib/python3/dist-packages/ubjson/encoder.py
+fd80ca3c65e9321b763a1ca7142548d1  usr/lib/python3/dist-packages/ubjson/markers.py
+e4319547d8969b63403b0a4d71ff1c7e  usr/share/doc/python3-ubjson/README.md
+c5607d907b3a0f0e4587f512f0db7787  usr/share/doc/python3-ubjson/changelog.Debian.gz
+3715c4c8be92980349841d5e1b5f641c  usr/share/doc/python3-ubjson/copyright

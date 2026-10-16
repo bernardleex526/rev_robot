@@ -1,0 +1,17 @@
+/opt
+/opt/robot
+/opt/robot/share
+/opt/robot/share/height_map_nav
+/opt/robot/share/height_map_nav/bin
+/opt/robot/share/height_map_nav/bin/height_map_nav
+/opt/robot/share/height_map_nav/change_log.md
+/opt/robot/share/height_map_nav/config
+/opt/robot/share/height_map_nav/config/height_map_dds.yaml
+/opt/robot/share/height_map_nav/config/height_map_ros.yaml
+/opt/robot/share/height_map_nav/rviz
+/opt/robot/share/height_map_nav/rviz/multitest.rviz
+/opt/robot/share/height_map_nav/scripts
+/opt/robot/share/height_map_nav/scripts/hmap.sh
+/opt/robot/share/height_map_nav/scripts/hmap_stop.sh
+/opt/robot/share/height_map_nav/scripts/self
+/opt/robot/share/height_map_nav/scripts/self/postinst

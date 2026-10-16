@@ -1,0 +1,28 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from drdds/msg/ImuDataValue.msg
+// generated code does not contain a copyright notice
+
+
+module drdds {
+  module msg {
+    struct ImuDataValue {
+      float roll;
+
+      float pitch;
+
+      float yaw;
+
+      float omega_x;
+
+      float omega_y;
+
+      float omega_z;
+
+      float acc_x;
+
+      float acc_y;
+
+      float acc_z;
+    };
+  };
+};

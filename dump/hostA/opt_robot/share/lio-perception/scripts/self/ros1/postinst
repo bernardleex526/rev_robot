@@ -1,0 +1,33 @@
+#!/bin/bash
+
+
+bash /home/ysc/jy_cog/lio-perception/scripts/self/register_conf.sh "/home/ysc/jy_cog/lio-perception/conf" "/home/ysc/jy_cog/system/conf/lio-perception"
+
+# 服务配置
+echo "配置服务"
+sudo chmod +x /home/ysc/jy_cog/lio-perception/scripts/lio_rosnode.sh
+SERVICE_FILE="/lib/systemd/system/lio-perception.service"
+
+cat <<EOF > $SERVICE_FILE
+[Unit]
+Description=lio-perception
+After=network.target
+
+[Service]
+Type=simple
+ExecStartPre=/bin/sleep 5
+ExecStart=/home/ysc/jy_cog/lio-perception/scripts/lio_rosnode.sh
+User=ysc
+Group=ysc
+Restart=on-failure
+RestartPreventExitStatus=SIGTERM
+
+[Install]
+WantedBy=network.target
+EOF
+
+systemctl daemon-reload
+
+# 启用并重启 lio-perception 服务
+systemctl enable lio-perception.service
+systemctl restart lio-perception.service

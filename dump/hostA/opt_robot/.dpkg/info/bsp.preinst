@@ -1,0 +1,6 @@
+
+#!/bin/bash
+
+cp /opt/robot/scripts/system/config.yaml   /opt/robot/scripts/system/config.yaml.deb_
+
+exit 0

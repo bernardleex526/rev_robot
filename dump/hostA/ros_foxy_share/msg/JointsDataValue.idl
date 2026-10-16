@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from drdds/msg/JointsDataValue.msg
+// generated code does not contain a copyright notice
+
+#include "drdds/msg/JointData.idl"
+
+module drdds {
+  module msg {
+    typedef drdds::msg::JointData drdds__msg__JointData;
+    typedef drdds__msg__JointData drdds__msg__JointData__16[16];
+    struct JointsDataValue {
+      drdds__msg__JointData__16 joints_data;
+    };
+  };
+};

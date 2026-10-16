@@ -1,0 +1,10 @@
+f71505f0123bab9c48ef0e518583f19f  usr/lib/python3/dist-packages/colcon_pkg_config-0.1.0.egg-info/PKG-INFO
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/colcon_pkg_config-0.1.0.egg-info/dependency_links.txt
+666fea693aeddaa203b4585cddd09555  usr/lib/python3/dist-packages/colcon_pkg_config-0.1.0.egg-info/entry_points.txt
+5e8ab51e257c4f9bfb2331f455fcd065  usr/lib/python3/dist-packages/colcon_pkg_config-0.1.0.egg-info/requires.txt
+875258b715a0636e00d92077ca6e3464  usr/lib/python3/dist-packages/colcon_pkg_config-0.1.0.egg-info/top_level.txt
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/colcon_pkg_config-0.1.0.egg-info/zip-safe
+dc9e67833f13146333985c5f1fa00182  usr/lib/python3/dist-packages/colcon_pkg_config/__init__.py
+d41d8cd98f00b204e9800998ecf8427e  usr/lib/python3/dist-packages/colcon_pkg_config/environment/__init__.py
+6eec9303b5c03c695107846462f187ca  usr/lib/python3/dist-packages/colcon_pkg_config/environment/pkg_config.py
+2a74e784b046c1596ed88bf0ea053c32  usr/share/doc/python3-colcon-pkg-config/changelog.Debian.gz

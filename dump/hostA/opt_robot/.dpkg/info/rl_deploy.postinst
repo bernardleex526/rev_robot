@@ -1,0 +1,13 @@
+#!/bin/bash
+
+sudo chmod 777 /var/opt/robot/record
+sudo chmod +x /opt/robot/share/rl_deploy/scripts/run.sh
+sudo cp /opt/robot/share/rl_deploy/scripts/rl_deploy.service /lib/systemd/system/
+sudo ln -sf /opt/robot/share/rl_deploy/lib/onnxruntime/libonnxruntime.so.1 /usr/local/lib/libonnxruntime.so.1
+
+sudo ldconfig
+
+systemctl daemon-reload
+
+systemctl disable rl_deploy.service
+systemctl restart rl_deploy.service

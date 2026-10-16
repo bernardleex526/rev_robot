@@ -1,0 +1,12 @@
+3942e15c18b03c120d01771db82b9db8  usr/lib/python3/dist-packages/colcon_devtools-0.3.0.egg-info/PKG-INFO
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/colcon_devtools-0.3.0.egg-info/dependency_links.txt
+e79c93d390e65acfdc10fa006ddc8569  usr/lib/python3/dist-packages/colcon_devtools-0.3.0.egg-info/entry_points.txt
+7d5ca8019756d42cb0e1a9671eac9d4f  usr/lib/python3/dist-packages/colcon_devtools-0.3.0.egg-info/requires.txt
+f665cf4a7bebde1e85c74368a7d1bcf4  usr/lib/python3/dist-packages/colcon_devtools-0.3.0.egg-info/top_level.txt
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/colcon_devtools-0.3.0.egg-info/zip-safe
+d550a4165617ad6b09794238a2c1e280  usr/lib/python3/dist-packages/colcon_devtools/__init__.py
+d41d8cd98f00b204e9800998ecf8427e  usr/lib/python3/dist-packages/colcon_devtools/verb/__init__.py
+738e504749b63c420a2eb39abba1d7df  usr/lib/python3/dist-packages/colcon_devtools/verb/extension_points.py
+5ea9bec24a9c9a1ef6b1000dd97fbdf6  usr/lib/python3/dist-packages/colcon_devtools/verb/extensions.py
+0d04fa1ad1c54783008b33b18624824e  usr/lib/python3/dist-packages/colcon_devtools/verb/version_check.py
+0312a1794cd3bc1b854a326bc9b2ded6  usr/share/doc/python3-colcon-devtools/changelog.Debian.gz

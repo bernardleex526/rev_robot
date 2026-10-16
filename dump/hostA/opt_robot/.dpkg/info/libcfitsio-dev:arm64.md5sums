@@ -1,0 +1,7 @@
+52c9189c07cc5c8c469fcc8d7062db4b  usr/include/drvrsmem.h
+4ad354fb1f20c7134118c915356ff658  usr/include/fitsio.h
+0f9b58e260bf8102543c3969b512b8f5  usr/include/fitsio2.h
+2efd2b9abb520dc558717f1e24e5d3c3  usr/include/longnam.h
+1987f0e937b5efd43981ffca0b758fbe  usr/lib/aarch64-linux-gnu/libcfitsio.a
+ef30dead43031625d449f3c1f096eaba  usr/lib/aarch64-linux-gnu/pkgconfig/cfitsio.pc
+a23856b9107344830d82d4d5978a3c9c  usr/share/doc/libcfitsio-dev/copyright

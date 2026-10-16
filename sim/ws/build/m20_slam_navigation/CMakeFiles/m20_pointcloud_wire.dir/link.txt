@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O3 -DNDEBUG -shared -Wl,-soname,libm20_pointcloud_wire.so -o libm20_pointcloud_wire.so CMakeFiles/m20_pointcloud_wire.dir/src/ros/pointcloud_wire.cpp.o 

@@ -1,0 +1,28 @@
+node:
+  input_lidar_topic: "/LIDAR/POINTS"                 # [输入] 雷达话题名，ros1（livox）为"/lidar_points"， drdds（速腾）为"/LIDAR/POINTS"
+  input_imu_topic: "/IMU"                    # [输入] imu话题名，ros1为"/imu/data"， drdds（速腾）为"/IMU_DATA"
+  output_odom_topic: "/SLAM_ODOM"                     # [输出] 里程计话题名
+  output_aligned_cloud_topic: "/SLAM_ALIGNED_POINTS"  # [输出] 里程计坐标系下的累积点云
+  output_accumulated_map_cloud_topic: "/SLAM_ACCUMULATED_POINTS_MAP"
+lio:
+  acc_cov: 0.5
+  gyr_cov: 0.5
+  b_acc_cov: 0.001
+  b_gyr_cov: 0.001
+  leaf_size: 0.15    # 降采样分辨率
+  skip_num: 5       # 跳过点数
+  save_full_pcd: false
+  full_map_save_path: "/var/opt/robot/data/maps/active/full_cloud.pcd"                                    # UDP请求端口号
+voxel_map:
+  ray_casting: false
+  depth_image: 
+    enable: false
+height_map:
+  enable: false  # 是否启用高度图
+pgo:
+  prior_noise_sigmas: [1e6, 1e4, 0.001, 0.01, 0.01, 0.01]
+  odom_noise_sigmas: [0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+  loop_noise_sigmas: [0.0001, 0.0001, 0.0001, 0.0001, 0.0001, 0.0001]
+  matching_error_threshold: 0.16
+  inlier_fraction_threshold: 0.95
+  max_search_distance: 8.0

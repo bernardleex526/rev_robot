@@ -1,0 +1,14 @@
+2e566cc12b7634d2aacd3e6ac1edc11f  usr/lib/python3/dist-packages/colcon_zsh-0.5.0.egg-info/PKG-INFO
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/colcon_zsh-0.5.0.egg-info/dependency_links.txt
+55fadc32a4c50fea71897ee29c18c351  usr/lib/python3/dist-packages/colcon_zsh-0.5.0.egg-info/entry_points.txt
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/colcon_zsh-0.5.0.egg-info/not-zip-safe
+7aece7e0853806ff44bfba76742803e4  usr/lib/python3/dist-packages/colcon_zsh-0.5.0.egg-info/requires.txt
+22691724ba0256277a13414f33484ba0  usr/lib/python3/dist-packages/colcon_zsh-0.5.0.egg-info/top_level.txt
+23511662a4945bef0cdf4c06535049fb  usr/lib/python3/dist-packages/colcon_zsh/__init__.py
+d41d8cd98f00b204e9800998ecf8427e  usr/lib/python3/dist-packages/colcon_zsh/shell/__init__.py
+d41d8cd98f00b204e9800998ecf8427e  usr/lib/python3/dist-packages/colcon_zsh/shell/template/__init__.py
+8a095e2a6f9fd5c0de776ac73cba8de7  usr/lib/python3/dist-packages/colcon_zsh/shell/template/package.zsh.em
+3cebbceb341b6372a794686fb9022cde  usr/lib/python3/dist-packages/colcon_zsh/shell/template/prefix.zsh.em
+93e6ec8dfc3fbb56b92e977efe7b89b4  usr/lib/python3/dist-packages/colcon_zsh/shell/template/prefix_chain.zsh.em
+014b4bae247e1b351ad7da81a261e8b3  usr/lib/python3/dist-packages/colcon_zsh/shell/zsh.py
+72ce1f2bc2644112a60e65e5c786ac64  usr/share/doc/python3-colcon-zsh/changelog.Debian.gz

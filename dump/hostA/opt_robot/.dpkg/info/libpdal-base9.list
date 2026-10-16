@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/lib
+/usr/lib/libpdal_base.so.10
+/usr/share
+/usr/share/doc
+/usr/share/doc/libpdal-base9
+/usr/share/doc/libpdal-base9/copyright
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libpdal-base9
+/usr/lib/libpdal_base.so.9
+/usr/share/doc/libpdal-base9/changelog.Debian.gz

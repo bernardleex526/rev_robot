@@ -1,0 +1,14 @@
+d3d21e8bed3912045c110d76d7d98e2e  usr/bin/cct
+017c0fbd0cd80786108aa845ce0b3f84  usr/bin/cs2cs
+34df0f112b3122b0f5a131c33d61143c  usr/bin/geod
+3cb346062730dfceb8e386d1f778211d  usr/bin/gie
+e0388f37f277b403567da0e481c32695  usr/bin/proj
+6eb070b3f8500e4ca4c6b1c6a36b8dc5  usr/bin/projinfo
+8cc0c1e61c73804e558484cb1b613357  usr/share/doc/proj-bin/copyright
+8357bda9223298780ef801745bc5a20e  usr/share/lintian/overrides/proj-bin
+f1d983b97abfaa4d3d5e031fcba0ae0d  usr/share/man/man1/cct.1.gz
+f95a68c3040cabef66681768dce2c761  usr/share/man/man1/cs2cs.1.gz
+a6b404d6464d8b784dcdc4fd56c3b09c  usr/share/man/man1/geod.1.gz
+3553b998db2d01ed24e9099866fbf9be  usr/share/man/man1/gie.1.gz
+5b6cfdd4f97747116b02e07290c5e3ce  usr/share/man/man1/proj.1.gz
+62262dfb029a94e9a38093418edbf7dd  usr/share/man/man1/projinfo.1.gz

@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/lib
+/usr/lib/libgdal.so.26.0.4
+/usr/share
+/usr/share/doc
+/usr/share/doc/libgdal26
+/usr/share/doc/libgdal26/NOTICE
+/usr/share/doc/libgdal26/TODO.Debian
+/usr/share/doc/libgdal26/changelog.Debian.gz
+/usr/share/doc/libgdal26/copyright
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libgdal26
+/usr/lib/libgdal.so.26

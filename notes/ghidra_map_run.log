@@ -1,0 +1,18 @@
+/home/lee/rea/tools/ghidra_policy_map.py:38: DeprecationWarning: open_program() is deprecated, use open_project() and program_context() or program_loader() instead.
+  with pyghidra.open_program(BIN) as api:
+policy_policy_m20_backknee6              @ 0x287438 -> ['(none)', 'M20BasicBackkneeRunner']
+policy_policy_m20_rough_6                @ 0x379c68 -> ['(none)']
+policy_policy_m20_50                     @ 0x46c498 -> ['(none)', 'M20BasicFlatRunner']
+policy_policy_m20_38                     @ 0x55ecc8 -> ['(none)']
+policy_policy_ca9bplatform               @ 0x6514f8 -> ['(none)', 'M20BasicPlatRunner']
+policy_policy_m20_5                      @ 0x744460 -> ['(none)', 'M20BasicStairRunner', 'M20NaviStairRunner']
+policy_m20_forward_policy_2              @ 0x836c90 -> ['(none)', 'M20ExtrePolicyRunner']
+policy_m20_sixaxis_stand                 @ 0xa32b00 -> ['(none)', 'M20FinetuneStandRunner']
+policy_m20_hmap_motion_v0_2              @ 0xc38a40 -> ['(none)', 'M20HeightGapPolicyRunner']
+policy_m20_navi_charge_v3_29             @ 0xfdbaf0 -> ['(none)', 'M20NaviChargePolicyRunner']
+policy_m20_navi_flat_v4_2                @ 0x10d6428 -> ['(none)', 'M20NaviFlatPolicyRunner']
+policy_m20_navi_stair_v7_0_himloco       @ 0x11ca160 -> ['(none)', 'M20NaviOrienteerRunner']
+policy_m20_finetune_stand_15kg           @ 0x12bcc98 -> ['(none)', 'M20SixAxisStandRunner']
+policy_m20_flat_v1_4                     @ 0x14c2bd8 -> ['(none)', 'M20StandPolicyRunner']
+policy_m20_finetune_forward              @ 0x15beb40 -> ['(none)', 'M20StepMoveRunner']
+WROTE /home/lee/rea/notes/ghidra_policy_map.txt

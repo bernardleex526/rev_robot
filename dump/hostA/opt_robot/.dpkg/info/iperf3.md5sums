@@ -1,0 +1,4 @@
+fd463f937a2079b41e3bd1df3bb6924a  usr/bin/iperf3
+513ffa873852e367e440794620430458  usr/share/doc/iperf3/copyright
+165d44db6e88cca6388357d8a4abc10d  usr/share/lintian/overrides/iperf3
+d468648c3b7192f87acc8c3bfee5d322  usr/share/man/man1/iperf3.1.gz

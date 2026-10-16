@@ -1,0 +1,9 @@
+libCharLS.so.2 libcharls2 #MINVER#
+ JpegLsDecode@Base 2.0.0+dfsg
+ JpegLsDecodeRect@Base 2.0.0+dfsg
+ JpegLsEncode@Base 2.0.0+dfsg
+ JpegLsReadHeader@Base 2.0.0+dfsg
+ JpegLsVerifyEncode@Base 2.0.0+dfsg
+ _Z18JpegLsDecodeStream14ByteStreamInfoS_PK13JlsParametersPc@Base 2.0.0+dfsg
+ _Z18JpegLsEncodeStream14ByteStreamInfoRmS_RK13JlsParametersPc@Base 2.0.0+dfsg
+ _Z22JpegLsReadHeaderStream14ByteStreamInfoP13JlsParametersPc@Base 2.0.0+dfsg

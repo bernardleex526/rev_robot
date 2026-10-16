@@ -1,0 +1,49 @@
+# ========== 导航与 Hybrid A* 算法参数 ==========
+# 代价权重
+weight_a: 1.0              # g 项权重，已走路径代价
+weight_b: 1.3              # h 项权重，到终点启发式距离
+weight_heading: 0.8        # 朝向与目标一致性权重，空旷地减少拐弯；过大易在转弯前后产生局部锯齿
+
+# 单步代价项
+cost_steer: 1.0            # 转弯惩罚。|steer|>0.05 时本步 g 乘此系数；直行不乘
+cost_steerchange: 0.2     # 转向变化惩罚
+cost_gear: 2.0             # 障碍物附近惩罚系数
+cost_backward: 1.5         # 倒车惩罚系数
+cost_reduce: 0.85          # g 衰减系数
+
+# 几何与步长
+step_size: 0.4             # 节点扩展步长(m)
+sample_interval: 0.2       # 相邻节点路径碰撞检测采样间隔(m)
+bodyLength: 0.45
+bodyWidth: 0.45
+max_steer: 0.9
+num_steerind: 3
+goalDis: 0.5
+
+# 运行与动态地图
+dynamic_update: false
+test_mode: false
+xy_tolerance: 0.5
+dynamic_map_size: 3.0
+dynamic_map_grid: 30
+astar_time: 1.0
+debug_point_num: 7
+
+# ========== 局部路径点平滑处理参数 ==========
+enable_smoothing: true    # 是否在全局规划中启用局部平滑处理
+smooth_count: 7            # 平滑处理的局部路径点数(需要设置>=smooth_degree + 1)
+smooth_degree: 3           # 样条曲线的阶数
+num_samples: 7             # 拟合样条曲线上的采样数(需要设置>=2)
+angle_threshold: 60.0      # 角度阈值(度)，局部路径上存在大于等于该阈值的角度就不进行局部平滑处理
+
+# ========================= 局部目标点选择参数 =========================
+
+# 局部目标点选点频率（Hz），用于 10Hz 线程替换其固定 100ms 周期
+local_goal_freq_hz: 10.0
+
+max_trajectory_range_: 2.0
+local_point_dis_: 0.0
+local_point_dis_v_max_: 0.0
+max_speed_x_: 1.0
+sharp_turn_angle_: 45.0
+local_goal_search_window_: 10

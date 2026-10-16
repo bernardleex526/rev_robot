@@ -1,0 +1,56 @@
+NAME           SIZE TYPE MOUNTPOINT            FSTYPE
+mmcblk0      115.3G disk                       
+├─mmcblk0p1      8M part                       
+├─mmcblk0p2      4M part                       
+├─mmcblk0p3    256M part /boot                 ext4
+├─mmcblk0p4    128M part                       
+├─mmcblk0p5     32M part                       
+├─mmcblk0p6    100M part /var/opt/robot/conf   ext4
+├─mmcblk0p7    7.8G part /var/opt/robot/log    ext4
+├─mmcblk0p8      2G part /var/log              ext4
+├─mmcblk0p9    7.8G part /opt/robot            ext4
+├─mmcblk0p10   7.8G part /var/opt/robot/record ext4
+├─mmcblk0p11  62.5G part /var/opt/robot/data   ext4
+├─mmcblk0p12   8.5G part /root-ro              ext4
+└─mmcblk0p13  18.4G part /userdata             ext4
+mmcblk0boot0     4M disk                       
+mmcblk0boot1     4M disk                       
+===DF===
+Filesystem           Size  Used Avail Use% Mounted on
+udev                 7.7G     0  7.7G   0% /dev
+tmpfs                1.6G  2.1M  1.6G   1% /run
+/dev/mmcblk0p12      8.2G  7.5G  299M  97% /root-ro
+/dev/mmcblk0p13       18G  838M   18G   5% /userdata
+overlayroot           18G  838M   18G   5% /
+/root/dev/mmcblk0p3  224M   92M  115M  45% /boot
+tmpfs                7.7G  1.1G  6.7G  14% /dev/shm
+tmpfs                5.0M     0  5.0M   0% /run/lock
+tmpfs                7.7G     0  7.7G   0% /sys/fs/cgroup
+/dev/mmcblk0p8       1.9G  211M  1.7G  12% /var/log
+/dev/mmcblk0p6        90M   44K   83M   1% /var/opt/robot/conf
+/dev/mmcblk0p10      7.6G   24K  7.3G   1% /var/opt/robot/record
+/dev/mmcblk0p9       7.6G  295M  7.1G   4% /opt/robot
+/dev/mmcblk0p11       62G   12G   48G  20% /var/opt/robot/data
+/dev/mmcblk0p7       7.6G  3.9G  3.4G  54% /var/opt/robot/log
+tmpfs                1.6G     0  1.6G   0% /run/user/1003
+===BLKID===
+NAME         UUID                                 FSTYPE LABEL
+mmcblk0                                                  
+├─mmcblk0p1                                              
+├─mmcblk0p2                                              
+├─mmcblk0p3  b69b2d6f-f340-48a7-8f33-99c50c061205 ext4   boot
+├─mmcblk0p4                                              
+├─mmcblk0p5                                              
+├─mmcblk0p6  985cc15d-ef76-492e-9f8f-5f6f2ae28074 ext4   
+├─mmcblk0p7  098b2809-532d-445a-998a-d8173551c1d3 ext4   
+├─mmcblk0p8  26818126-f388-460a-a6d9-699bb1950569 ext4   
+├─mmcblk0p9  e19a7c87-78e7-48d1-b696-b194fc0c735d ext4   
+├─mmcblk0p10 098b2809-532d-445a-998a-d8173551c1d3 ext4   
+├─mmcblk0p11 101720ae-5a01-4c30-9cd1-56b20e541875 ext4   
+├─mmcblk0p12 7b2a2c64-deac-46d7-b837-9726ab1061d9 ext4   
+└─mmcblk0p13 0716eb9c-b445-4e34-8c71-f4c558d818dd ext4   
+mmcblk0boot0                                             
+mmcblk0boot1                                             
+===DMI===
+===UNAME===
+Linux host 5.10.198 #1 SMP Thu Jun 11 16:06:00 CST 2026 aarch64 aarch64 aarch64 GNU/Linux

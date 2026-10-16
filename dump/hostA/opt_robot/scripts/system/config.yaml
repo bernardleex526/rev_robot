@@ -1,0 +1,13 @@
+network:
+  version: 2
+  renderer: NetworkManager
+  ethernets:
+    eth0:
+      addresses:
+        - 10.21.33.103/24
+    eth1:
+      addresses:
+        - 10.21.32.103/24
+    eth2:
+      addresses:
+        - 10.21.31.103/24

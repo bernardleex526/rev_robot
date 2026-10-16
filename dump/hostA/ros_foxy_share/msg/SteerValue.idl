@@ -1,0 +1,34 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from drdds/msg/SteerValue.msg
+// generated code does not contain a copyright notice
+
+
+module drdds {
+  module msg {
+    struct SteerValue {
+      @verbatim (language="comment", text=
+        " 前进后退 [-1.0, 1.0]")
+      float x;
+
+      @verbatim (language="comment", text=
+        " 左右平移 [-1.0, 1.0]")
+      float y;
+
+      @verbatim (language="comment", text=
+        " 上下起伏 [-1.0, 1.0]")
+      float z;
+
+      @verbatim (language="comment", text=
+        " 扭身体   [-1.0, 1.0]")
+      float roll;
+
+      @verbatim (language="comment", text=
+        " 抬头低头 [-1.0, 1.0]")
+      float pitch;
+
+      @verbatim (language="comment", text=
+        " 水平转动 [-1.0, 1.0]")
+      float yaw;
+    };
+  };
+};

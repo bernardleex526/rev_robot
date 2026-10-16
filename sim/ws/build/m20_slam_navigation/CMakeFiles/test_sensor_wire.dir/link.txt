@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/test_sensor_wire.dir/test/test_sensor_wire.cpp.o -o test_sensor_wire  -Wl,-rpath,/home/lee/rea/sim/ws/build/m20_slam_navigation gtest/libgtest_main.a gtest/libgtest.a libm20_pointcloud_wire.so -pthread 

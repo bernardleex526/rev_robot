@@ -1,0 +1,11 @@
+libpthread.so.0
+libstdc++.so.6
+libfastrtps.so.2.14
+libdrdds.so.1
+liblog4cplus.so.2
+libecanmaster.so
+libonnxruntime.so.1
+libm.so.6
+libgcc_s.so.1
+libc.so.6
+ld-linux-aarch64.so.1

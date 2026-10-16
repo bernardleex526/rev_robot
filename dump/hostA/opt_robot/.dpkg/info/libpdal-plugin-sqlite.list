@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/lib
+/usr/lib/libpdal_plugin_reader_sqlite.so.10
+/usr/lib/libpdal_plugin_writer_sqlite.so.10
+/usr/share
+/usr/share/doc
+/usr/share/doc/libpdal-plugin-sqlite
+/usr/share/doc/libpdal-plugin-sqlite/copyright
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libpdal-plugin-sqlite
+/usr/lib/libpdal_plugin_reader_sqlite.so
+/usr/lib/libpdal_plugin_reader_sqlite.so.9
+/usr/lib/libpdal_plugin_writer_sqlite.so
+/usr/lib/libpdal_plugin_writer_sqlite.so.9
+/usr/share/doc/libpdal-plugin-sqlite/changelog.Debian.gz

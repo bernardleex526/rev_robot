@@ -1,0 +1,16 @@
+656ba3b87601b875c75d340f9ec76c04  opt/ros/foxy/share/ament_index/resource_index/package_run_dependencies/uncrustify_vendor
+d41d8cd98f00b204e9800998ecf8427e  opt/ros/foxy/share/ament_index/resource_index/packages/uncrustify_vendor
+c5bea21e3b9564d2a435b40f0e03ecf6  opt/ros/foxy/share/ament_index/resource_index/parent_prefix_path/uncrustify_vendor
+4f45f02a653476c8ca0faf1d2f31881e  opt/ros/foxy/share/uncrustify_vendor/cmake/uncrustify_vendorConfig-version.cmake
+11595e8f3b27149d72e7aa6270ed0838  opt/ros/foxy/share/uncrustify_vendor/cmake/uncrustify_vendorConfig.cmake
+8dbf4790a764a69b56a5904c00682df0  opt/ros/foxy/share/uncrustify_vendor/environment/ament_prefix_path.dsv
+fd0b100f5da0d9f2d38645ac45815395  opt/ros/foxy/share/uncrustify_vendor/environment/ament_prefix_path.sh
+11e8ba1deb2827a5e13dd631720bcf6b  opt/ros/foxy/share/uncrustify_vendor/environment/path.dsv
+234e39ac8bc1c1d4f887075bf9492366  opt/ros/foxy/share/uncrustify_vendor/environment/path.sh
+ed9dcb7a76d3763c6cd97ebbd1f4cc7d  opt/ros/foxy/share/uncrustify_vendor/local_setup.bash
+b0a6c18f934e97c745cf9f36a507edda  opt/ros/foxy/share/uncrustify_vendor/local_setup.dsv
+0b88828dd30f6238379f5cbddd51963d  opt/ros/foxy/share/uncrustify_vendor/local_setup.sh
+24970cb512d5df3600adc59d7fa85f7b  opt/ros/foxy/share/uncrustify_vendor/local_setup.zsh
+5f7c2ffb4ccdc4e2c07696ae1ebdf935  opt/ros/foxy/share/uncrustify_vendor/package.dsv
+64ce270ae979c54dde5afdea66ad4945  opt/ros/foxy/share/uncrustify_vendor/package.xml
+68a7e73be6a90d453da049d31c8ef02d  usr/share/doc/ros-foxy-uncrustify-vendor/changelog.Debian.gz

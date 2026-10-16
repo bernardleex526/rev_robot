@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from drdds/srv/DeviceControl.srv
+// generated code does not contain a copyright notice
+
+
+module drdds {
+  module srv {
+    struct DeviceControl_Request {
+      int32 device_id;
+
+      int32 command;
+    };
+    struct DeviceControl_Response {
+      int32 result;
+    };
+  };
+};

@@ -1,0 +1,133 @@
+#!/bin/bash
+SCRIPT_PATH=$(dirname "$(readlink -f "$0")")
+# echo "debug $SCRIPT_PATH"
+source $SCRIPT_PATH/../config.sh
+map_path="$MAPS_PATH/active/"
+
+date_time=$(date +"%Y%m%d-%H%M%S")
+# 定义颜色代码
+RED=$(tput setaf 1)
+GREEN=$(tput setaf 2)
+YELLOW=$(tput setaf 3)
+BLUE=$(tput setaf 4)
+MAGENTA=$(tput setaf 5)
+CYAN=$(tput setaf 6)
+WHITE=$(tput setaf 7)
+RESET=$(tput sgr0)
+
+usage() {
+    echo "用法：" 
+    echo "  drmap apply MAP"
+    echo "  将地图MAP应用于导航中。"
+    echo "参数："
+    echo "  MAP        地图路径，不可省略"
+    echo "选项："
+    echo "  -h           显示帮助信息并退出"
+}
+
+while getopts :h opt
+do
+    case "$opt" in
+        h)
+        usage
+        exit 0
+        ;;
+        :)
+        echo "${RED}[ERROR] -$OPTARG 选项需指定参数${RESET}" >& 2
+        usage
+        exit 1
+        ;;
+        \?) 
+        echo "${RED}[ERROR] 未知选项 -$OPTARG${RESET}" >& 2
+        usage
+        exit 1
+        ;;
+        # *) echo "Unknown option: -$opt" ;;
+    esac
+done
+
+shift $[ $OPTIND - 1 ]
+
+
+
+if [ $# -eq 1 ];      # 未指定路径参数或指定了多个路径参数
+then
+    map_path=$1
+else
+    if [ ! $# -eq 0 ]; then
+        echo "[ERROR] ${RED}仅支持1个地图路径参数，不支持$#个${RESET}"
+        exit 1
+    else
+        echo "[ERROR] ${RED}需指定地图路径参数${RESET}"
+        exit 1
+    fi
+fi
+
+# 检查路径正确性
+if [ ! -d "$map_path" ]; then
+    echo "${RED}[ERROR] 地图路径 $map_path 不是有效的文件夹地址，请检查并正确给定${RESET}" >& 2
+    exit 1
+fi
+
+if [[ ! $map_path =~ ^/ ]]; then        # 是相对路径
+    cd $map_path
+    map_path=$(pwd)
+fi
+
+# 先备份原本的map
+if [ -d "$MAPS_PATH/active" ]; then        # 存在map路径
+    if [ -L "$MAPS_PATH/active" ]; then    # map是个软链接
+        echo "删除原本的导航地图软链接"
+        rm -rf $MAPS_PATH/active
+    else
+        mv $MAPS_PATH/active $MAPS_PATH/active-${date_time}   # 不是软链接，则备份一下
+        echo "原本的导航地图不是软链接，备份为：$MAPS_PATH/active-${date_time}"
+    fi
+else
+    echo "导航地图路径不存在"
+    rm -rf $MAPS_PATH/active
+fi
+
+# 
+if [ $PROGRAM_VERSION = "noetic" ]; then
+    # 检查是否存在map文件夹
+    if [ -d "$MAPS_PATH/../map" ]; then        # 存在map路径
+        if [ -L "$MAPS_PATH/../map" ]; then    # map是个软链接
+            rm -rf $MAPS_PATH/../map
+        else
+            mv $MAPS_PATH/../map $MAPS_PATH/map-${date_time}   # 不是软链接，则备份一下
+        fi
+    else
+        rm -rf $MAPS_PATH/../map
+    fi
+    ln -s $map_path $MAPS_PATH/../map     # map做为软链接，成为当前建图的工作目录
+    chmod 777 -R $MAPS_PATH/../map
+    echo $map_path
+    echo  $MAPS_PATH/../map
+fi
+
+echo "创建导航地图软链接，指向路径：$map_path"
+
+ln -s $map_path $MAPS_PATH/active
+chmod 777 -R $MAPS_PATH/active
+
+# echo "重启定位程序使得地图生效"
+# sudo systemctl restart localization.service
+SERVICE_NAME="localization"
+if systemctl list-unit-files --type=service | grep -qw "$SERVICE_NAME"; then
+    echo "服务 $SERVICE_NAME 存在于系统中。进行重启"
+    sudo systemctl restart $SERVICE_NAME >/dev/null 2>&1
+fi
+
+# echo "重启htx程序"
+SERVICE_NAME="htx_nav"
+if systemctl list-unit-files --type=service | grep -qw "$SERVICE_NAME"; then
+    echo "服务 $SERVICE_NAME 存在于系统中。进行重启"
+    sudo systemctl restart $SERVICE_NAME >/dev/null 2>&1
+fi
+
+SERVICE_NAME="planner"
+if systemctl list-unit-files --type=service | grep -qw "$SERVICE_NAME"; then
+    echo "服务 $SERVICE_NAME 存在于系统中。进行重启"
+    sudo systemctl restart $SERVICE_NAME >/dev/null 2>&1
+fi

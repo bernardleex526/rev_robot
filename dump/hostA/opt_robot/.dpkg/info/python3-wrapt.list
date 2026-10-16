@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/lib
+/usr/lib/python3
+/usr/lib/python3/dist-packages
+/usr/lib/python3/dist-packages/wrapt
+/usr/lib/python3/dist-packages/wrapt/__init__.py
+/usr/lib/python3/dist-packages/wrapt/_wrappers.cpython-38-aarch64-linux-gnu.so
+/usr/lib/python3/dist-packages/wrapt/decorators.py
+/usr/lib/python3/dist-packages/wrapt/importer.py
+/usr/lib/python3/dist-packages/wrapt/wrappers.py
+/usr/lib/python3/dist-packages/wrapt-1.11.2.egg-info
+/usr/share
+/usr/share/doc
+/usr/share/doc/python3-wrapt
+/usr/share/doc/python3-wrapt/changelog.Debian.gz
+/usr/share/doc/python3-wrapt/copyright

@@ -1,0 +1,6 @@
+e60c695869e14ff1c1901fd138cd8a12  opt/robot/share/basic_server/bin/basic_server
+25719929a0e0b14e086d702b961a3833  opt/robot/share/basic_server/change_log.md
+c14c5cdc48563b66b55a40af884198e6  opt/robot/share/basic_server/conf/basic_server.toml
+3f1c96182b98638bfa666af83acf9e31  opt/robot/share/basic_server/conf/log/log.properties
+3595e42d6993b8c193a9432445903b7f  opt/robot/share/basic_server/scripts/run.sh
+15f94faba42c3b42990dd2076e06a1f2  opt/robot/share/basic_server/scripts/self/postinst

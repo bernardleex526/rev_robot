@@ -1,0 +1,37 @@
+#!/bin/bash
+# HOSTNAME_BACKFILE_FILE=/home/ysc/.host_name.backup
+# if [ -f "$HOSTNAME_BACKFILE_FILE" ]; then
+#     mv "$HOSTNAME_BACKFILE_FILE" "/home/ysc/board_resources/wifi/host_name"
+# fi
+# PASSWORD_BACKFILE_FILE=/home/ysc/.password.backup
+# if [ -f "$PASSWORD_BACKFILE_FILE" ]; then
+#     mv "$PASSWORD_BACKFILE_FILE" "/home/ysc/board_resources/wifi/password"
+# fi
+cd /opt/robot/scripts/board_resources/wifi
+chmod 777 *
+cd /opt/robot/scripts/board_resources/rtsp_service
+chmod 777 *
+cd /opt/robot/scripts/board_resources/start_ctrl
+chmod 777 *
+cp /opt/robot/scripts/board_resources/rtsp_service/lib/* /opt/robot/lib/.
+cd /opt/robot/lib
+ldconfig
+cd /opt/robot/scripts/board_resources/storage_space
+chmod +x *
+
+cd /opt/robot/scripts/board_resources/rtsp_service/
+mv SM_USB_107X_0.json.bak  SM_USB_107X_0.json
+mv SM_USB_107X_1.json.bak  SM_USB_107X_1.json
+mv SM_USB_107X_2.json.bak  SM_USB_107X_2.json
+mv SM_USB_107X_3.json.bak  SM_USB_107X_3.json
+mv mediamtx.yml.bak mediamtx.yml
+#mv push_video.sh.bak push_video.sh
+
+
+#sudo systemctl stop gdm
+#cd /home/ysc/
+#sudo chown -R ysc:ysc board_resources
+#cp /home/ysc/board_resources/wifi/80-net-rename.rules /etc/udev/rules.d
+#cp /home/ysc/board_resources/wifi/dr_wifi.service /lib/systemd/system/
+#sudo systemctl daemon-reload
+#sudo systemctl enable dr_wifi.service

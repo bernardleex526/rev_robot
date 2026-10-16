@@ -1,0 +1,9 @@
+253a25b04728fa061fc69a8847a53743  lib/udev/rules.d/60-libopenni-sensor-pointclouds0.rules
+d5c79b3badb88c8e2ce6a7e6f5b8fc91  usr/lib/libXnCore.so.0
+8f5c268f7f9e372455267fa676c78222  usr/lib/libXnDDK.so.0
+79c73e715a0f203165d13dd8e22dbfcd  usr/lib/libXnDeviceFile.so.0
+5964ac8a526f340e4cdac8e5b3106970  usr/lib/libXnDeviceSensorV2.so.0
+548831e9902257c431c2cac7f1ae3885  usr/lib/libXnFormats.so.0
+d61eb19b0ee5128c858e4e1804cde8f4  usr/lib/libopenni-sensor-primesense0/XnSensorServer
+2e423360eca9b5ba6954217bcf9367f4  usr/share/doc/libopenni-sensor-pointclouds0/changelog.Debian.gz
+e179665e2543b900ec0b49972525d1b9  usr/share/doc/libopenni-sensor-pointclouds0/copyright

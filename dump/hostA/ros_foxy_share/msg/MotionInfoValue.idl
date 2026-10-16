@@ -1,0 +1,28 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from drdds/msg/MotionInfoValue.msg
+// generated code does not contain a copyright notice
+
+#include "drdds/msg/GaitValue.idl"
+#include "drdds/msg/MotionStateValue.idl"
+
+module drdds {
+  module msg {
+    struct MotionInfoValue {
+      float vel_x;
+
+      float vel_y;
+
+      float vel_yaw;
+
+      float height;
+
+      drdds::msg::MotionStateValue motion_state;
+
+      drdds::msg::GaitValue gait_state;
+
+      float payload;
+
+      float remain_mile;
+    };
+  };
+};

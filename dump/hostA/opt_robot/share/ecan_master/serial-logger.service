@@ -1,0 +1,15 @@
+[Unit]
+Description=Serial Logger for /dev/ttySx -> /var/opt/robot/log/YYYY_MMDD/ttySx_YYYY_MMDD.log
+# 等待设备节点出现
+Requires=dev-ttyS0.device
+After=dev-ttyS0.device
+
+[Service]
+Type=simple
+User=root
+ExecStart=/opt/robot/share/ecan_master/serial_logger.sh
+Restart=always
+RestartSec=1s
+
+[Install]
+WantedBy=multi-user.target

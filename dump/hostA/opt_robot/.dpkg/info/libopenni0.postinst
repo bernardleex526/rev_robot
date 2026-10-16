@@ -1,0 +1,23 @@
+#!/bin/sh
+
+set -e
+
+case "$1" in
+  configure)
+    # Only register upon fresh install
+    if [ -z "$2" ]; then
+      # manually generate modules.xml, so we don't have a cyclic dependency to openni-utils
+      cat > /var/lib/ni/modules.xml <<EOF
+<Modules>
+    <Module path="/usr/lib/libnimMockNodes.so.0" configDir="/etc/openni" />
+    <Module path="/usr/lib/libnimCodecs.so.0" configDir="/etc/openni" />
+    <Module path="/usr/lib/libnimRecorder.so.0" configDir="/etc/openni" />
+</Modules>
+EOF
+    fi
+    ;;
+esac
+
+
+
+exit 0

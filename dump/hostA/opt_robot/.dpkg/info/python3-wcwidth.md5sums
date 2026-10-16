@@ -1,0 +1,12 @@
+2482ef3038f7329cbaf85eba71ca86ff  usr/lib/python3/dist-packages/wcwidth-0.1.8.egg-info/PKG-INFO
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/wcwidth-0.1.8.egg-info/dependency_links.txt
+765c664b16cf2a196a7af37c13e0163e  usr/lib/python3/dist-packages/wcwidth-0.1.8.egg-info/top_level.txt
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/wcwidth-0.1.8.egg-info/zip-safe
+bdd41f65dc246c07d96c288ea0de12c6  usr/lib/python3/dist-packages/wcwidth/__init__.py
+40a3fffc8c965f001616a42281ebbde5  usr/lib/python3/dist-packages/wcwidth/table_wide.py
+923cc9e01fa9c06eb359e73923af0ba4  usr/lib/python3/dist-packages/wcwidth/table_zero.py
+34cc0c3add882a6ca06f00329a6b12c5  usr/lib/python3/dist-packages/wcwidth/tests/__init__.py
+6a50367c490c3860bf81916b303a756d  usr/lib/python3/dist-packages/wcwidth/tests/test_core.py
+edfc47476cd9f6c4c24359860faaff32  usr/lib/python3/dist-packages/wcwidth/wcwidth.py
+687c5925babd1ea2fdcc5f1deca601e9  usr/share/doc/python3-wcwidth/changelog.Debian.gz
+b2337ba4a36a3943a538c737e7525e75  usr/share/doc/python3-wcwidth/copyright

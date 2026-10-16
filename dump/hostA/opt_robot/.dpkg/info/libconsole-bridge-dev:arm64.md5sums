@@ -1,0 +1,8 @@
+f8505476faac4145de8bebd0b6163070  usr/include/console_bridge/console.h
+4cd2f8e7325fb010f5a7efc4b8a6c985  usr/include/console_bridge_export.h
+d34394fa93461968aaf9667a0ee15480  usr/lib/aarch64-linux-gnu/console_bridge/cmake/console_bridge-config-version.cmake
+cb7bf0a2d4bd0e3a3382fff27b1f83d4  usr/lib/aarch64-linux-gnu/console_bridge/cmake/console_bridge-config.cmake
+fa043aa09253042ed06909d993fe930e  usr/lib/aarch64-linux-gnu/console_bridge/cmake/console_bridge-targets-none.cmake
+cee7b7003e683ec6a04fabc6f43bd8bf  usr/lib/aarch64-linux-gnu/console_bridge/cmake/console_bridge-targets.cmake
+c41fa6db7355893313e7e2b2f92dd074  usr/lib/aarch64-linux-gnu/pkgconfig/console_bridge.pc
+5a810d6b63cd9ace451455661d69d15a  usr/share/doc/libconsole-bridge-dev/copyright

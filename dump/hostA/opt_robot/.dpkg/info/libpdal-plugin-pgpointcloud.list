@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/lib
+/usr/lib/libpdal_plugin_reader_pgpointcloud.so.10
+/usr/lib/libpdal_plugin_writer_pgpointcloud.so.10
+/usr/share
+/usr/share/doc
+/usr/share/doc/libpdal-plugin-pgpointcloud
+/usr/share/doc/libpdal-plugin-pgpointcloud/copyright
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libpdal-plugin-pgpointcloud
+/usr/lib/libpdal_plugin_reader_pgpointcloud.so
+/usr/lib/libpdal_plugin_reader_pgpointcloud.so.9
+/usr/lib/libpdal_plugin_writer_pgpointcloud.so
+/usr/lib/libpdal_plugin_writer_pgpointcloud.so.9
+/usr/share/doc/libpdal-plugin-pgpointcloud/changelog.Debian.gz

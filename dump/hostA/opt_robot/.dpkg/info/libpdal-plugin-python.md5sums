@@ -1,0 +1,4 @@
+d0b37937b02b430282e28cdba5d449cf  usr/lib/libpdal_plugin_filter_python.so.10
+3e81b947fe284b133306a4c2425b1d39  usr/lib/libpdal_plugin_reader_numpy.so.10
+8a807de70827cdb4d455ff4b978cc7d9  usr/share/doc/libpdal-plugin-python/copyright
+74a2acc550820f6f5895ddf5677af01e  usr/share/lintian/overrides/libpdal-plugin-python

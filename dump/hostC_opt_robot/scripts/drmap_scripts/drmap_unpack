@@ -1,0 +1,153 @@
+#!/bin/bash
+# destination="$MAPS_PATH"
+# 获取脚本路径
+SCRIPT_PATH=$(dirname "$(readlink -f "$0")")
+# echo "debug $SCRIPT_PATH"
+source $SCRIPT_PATH/../config.sh
+destination=$MAPS_PATH
+replace="true"
+
+# 定义颜色代码
+RED=$(tput setaf 1)
+GREEN=$(tput setaf 2)
+YELLOW=$(tput setaf 3)
+BLUE=$(tput setaf 4)
+MAGENTA=$(tput setaf 5)
+CYAN=$(tput setaf 6)
+WHITE=$(tput setaf 7)
+RESET=$(tput sgr0)
+
+usage() {
+    echo "用法：" 
+    echo "  drmap unpack [-options] MAP1.zip [MAP2.zip MAP3.zip]"
+    echo "  解压MAP参数列表中的地图到目的文件夹（默认为“$MAPS_PATH/”，可由-d指定）"
+    echo "  -d  DESTINATION    指定解压目标文件夹为DESTINATION"
+    echo "  -h                 显示帮助信息并退出"
+    echo "  -n                 解压但不将地图用于导航任务"
+}
+
+while getopts :d:hn opt
+do
+    case "$opt" in
+        d) destination=$OPTARG
+        if [[ $destination =~ ^- ]] || [ ! $destination ]
+        then
+            echo "${RED}[ERROR] -d 选项需指定参数${RESET}" >& 2
+            usage
+            exit 1
+        fi
+        ;;
+        h)
+        usage
+        exit 0
+        ;;
+        n) 
+        replace="false";;
+        :)
+        echo "${RED}[ERROR] -$OPTARG 选项需指定参数${RESET}" >& 2
+        usage
+        exit 1
+        ;;
+        \?) 
+        echo "${RED}[ERROR] 未知选项 -$OPTARG${RESET}" >& 2
+        usage
+        exit 1
+        ;;
+        # *) echo "Unknown option: -$opt" ;;
+    esac
+done
+
+# 检查destination是否规范
+destination=$destination/
+
+if [ ! -d "$destination" ]; then
+    echo "${RED}[ERROR] 解压地图目的路径 $destination 不是文件夹地址，请正确给定${RESET}" >& 2
+    exit 1
+fi
+
+
+shift $[ $OPTIND - 1 ]
+
+if [ $# -eq 0 ]
+then
+    echo "[ERROR] ${RED}未指定解压地图文件参数${RESET}" >& 2
+    usage
+    exit 1
+fi
+
+for map_path in "$@"
+do
+    # 判断地图名是否是zip结尾且是文件
+    if [[ ! $map_path =~ \.zip$ ]]; then
+        echo "${RED}[ERROR] 地图 $map_path 不是有效的后缀为.zip的压缩文件.${RESET}" >& 2
+        exit 1
+    fi
+    if [ ! -f $map_path ]; then
+        echo "${RED}[ERROR] 未找到地图压缩文件：$map_path${RESET}" >& 2
+        exit 1
+    fi
+
+    date_time=$(date +"%Y%m%d-%H%M%S")
+    echo "正在解压地图：$map_path，请耐心等待..."
+    map_name=$(basename $map_path .zip) # 地图文件名（不包含前面的路径和后缀）
+    rm -rf $destination/$map_name
+	unzip -q -o $map_path -d $destination     # 解压到指定目录并覆盖
+    if [ $replace = "true" ]
+    then
+        # 先备份原本的active
+        if [ -d "$MAPS_PATH/active" ]; then        # 存在map路径
+            if [ -L "$MAPS_PATH/active" ]; then    # map是个软链接
+                echo "删除原本的active软链接"
+                rm -rf $MAPS_PATH/active
+            else
+                mv $MAPS_PATH/active $MAPS_PATH/active-${date_time}   # 不是软链接，则备份一下
+                echo "原本的active不是软链接，备份为：$MAPS_PATH/active-${date_time}"
+            fi
+        else
+            echo "active路径不存在"
+            rm -rf $MAPS_PATH/active
+        fi
+        if [ $PROGRAM_VERSION = "noetic" ]; then
+            # 检查是否存在map文件夹
+            if [ -d "$MAPS_PATH/../map" ]; then        # 存在map路径
+                if [ -L "$MAPS_PATH/../map" ]; then    # map是个软链接
+                    rm -rf $MAPS_PATH/../map
+                else
+                    mv $MAPS_PATH/../map $MAPS_PATH/map-${date_time}   # 不是软链接，则备份一下
+                fi
+            else
+                rm -rf $MAPS_PATH/../map
+            fi
+            # ln -s $map_path $MAPS_PATH/../map     # map做为软链接，成为当前建图的工作目录
+            cd $destination
+            ln -s $(pwd)/$map_name $MAPS_PATH/../map
+            chmod 777 -R $MAPS_PATH/../map
+        fi
+        cd $destination
+        ln -s $(pwd)/$map_name $MAPS_PATH/active
+        chmod 777 -R $MAPS_PATH/active
+
+        # 重启定位程序
+        SERVICE_NAME="localization"
+        if systemctl list-unit-files --type=service | grep -qw "$SERVICE_NAME"; then
+            echo "服务 $SERVICE_NAME 存在于系统中。进行重启"
+            sudo systemctl restart $SERVICE_NAME >/dev/null 2>&1
+        fi
+
+        # echo "重启htx程序"
+        SERVICE_NAME="htx_nav"
+        if systemctl list-unit-files --type=service | grep -qw "$SERVICE_NAME"; then
+            echo "服务 $SERVICE_NAME 存在于系统中。进行重启"
+            sudo systemctl restart $SERVICE_NAME >/dev/null 2>&1
+        fi
+
+        SERVICE_NAME="planner"
+        if systemctl list-unit-files --type=service | grep -qw "$SERVICE_NAME"; then
+            echo "服务 $SERVICE_NAME 存在于系统中。进行重启"
+            sudo systemctl restart $SERVICE_NAME >/dev/null 2>&1
+        fi
+        echo "地图：$map_name 已解压到 $destination 目录下，已对导航生效"
+    else
+        echo "地图：$map_name 已解压到 $destination 目录下，不对导航生效"
+    fi
+done

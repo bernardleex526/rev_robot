@@ -1,0 +1,16 @@
+b74db7b2dc4a448dfefc44133ff39b10  usr/lib/cups/driver/driverless
+5b97a4c2da4880bd5523eaf7bbce88e6  usr/lib/cups/filter/imagetopdf
+216f1918eeec9be33dc69a5ef7821c01  usr/lib/cups/filter/pdftopdf
+2d0db2cde5f44403816f8fd6f4d3e3f7  usr/lib/cups/filter/pdftops
+204ba3dc8631123832b6737774c8c13f  usr/lib/cups/filter/pdftoraster
+ae98dbd8b13bb3bb568ec0c613f1e67e  usr/lib/cups/filter/rastertopclm
+d6d0b445258b9b33c5786092d81dc9c5  usr/lib/cups/filter/rastertopclx
+62d158281c6edbed5bf916f835a9db15  usr/lib/cups/filter/rastertopdf
+742cec04adeee9ac120f84ad5f455426  usr/lib/cups/filter/rastertops
+049459225fed1ff7ff0eb5121af53f26  usr/lib/cups/filter/sys5ippprinter
+72667074cea9fc94b900413ab1c41117  usr/share/cups/mime/cupsfilters-ghostscript.convs
+9e429599520094f5add1d6f4793d7595  usr/share/cups/mime/cupsfilters-poppler.convs
+29ab61d49de3391428c15967803ee0ba  usr/share/cups/mime/cupsfilters.convs
+e0ff7c404999f23b7645235779f552f3  usr/share/cups/mime/cupsfilters.types
+fab304e80b638cee49eca845750af073  usr/share/doc/cups-filters-core-drivers/copyright
+e75a8990cf45ef1ea00b250bf15521ba  usr/share/man/man1/driverless.1.gz

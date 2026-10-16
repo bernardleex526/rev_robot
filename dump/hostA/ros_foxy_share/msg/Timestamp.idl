@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from drdds/msg/Timestamp.msg
+// generated code does not contain a copyright notice
+
+
+module drdds {
+  module msg {
+    struct Timestamp {
+      int32 sec;
+
+      uint32 nsec;
+    };
+  };
+};

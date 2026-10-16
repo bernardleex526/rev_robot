@@ -1,0 +1,25 @@
+-- run_test.py: invoking following command in '/home/lee/rea/sim/ws/build/m20_slam_navigation':
+ - /home/lee/rea/sim/ws/build/m20_slam_navigation/test_localization_eskf --gtest_output=xml:/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_localization_eskf.gtest.xml
+
+Running main() from /opt/ros/humble/src/gtest_vendor/src/gtest_main.cc
+[==========] Running 4 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 4 tests from LocalizationEskf
+[ RUN      ] LocalizationEskf.GravityCompensatedStationaryStateDoesNotDrift
+[       OK ] LocalizationEskf.GravityCompensatedStationaryStateDoesNotDrift (1 ms)
+[ RUN      ] LocalizationEskf.ConstantAccelerationUsesBeginningOfIntervalVelocity
+[       OK ] LocalizationEskf.ConstantAccelerationUsesBeginningOfIntervalVelocity (0 ms)
+[ RUN      ] LocalizationEskf.PositionObservationDoesNotBecomeRotationError
+[       OK ] LocalizationEskf.PositionObservationDoesNotBecomeRotationError (0 ms)
+[ RUN      ] LocalizationEskf.YawObservationDoesNotTranslatePosition
+[       OK ] LocalizationEskf.YawObservationDoesNotTranslatePosition (0 ms)
+[----------] 4 tests from LocalizationEskf (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test suite ran. (1 ms total)
+[  PASSED  ] 4 tests.
+
+
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_localization_eskf.gtest.xml'
+-- run_test.py: verify result file '/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_localization_eskf.gtest.xml'

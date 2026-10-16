@@ -1,0 +1,17 @@
+c8c2029a5f4aa5e3ac60a01d40c0a02d  usr/lib/python3/dist-packages/colcon_powershell-0.4.0.egg-info/PKG-INFO
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/colcon_powershell-0.4.0.egg-info/dependency_links.txt
+9494d325e6e190a049044629519cebf5  usr/lib/python3/dist-packages/colcon_powershell-0.4.0.egg-info/entry_points.txt
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/colcon_powershell-0.4.0.egg-info/not-zip-safe
+7aece7e0853806ff44bfba76742803e4  usr/lib/python3/dist-packages/colcon_powershell-0.4.0.egg-info/requires.txt
+4871d43987f10b1bf501deee7e55794c  usr/lib/python3/dist-packages/colcon_powershell-0.4.0.egg-info/top_level.txt
+7c0626d65c6350f8eb5b51eca3b15ecd  usr/lib/python3/dist-packages/colcon_powershell/__init__.py
+d41d8cd98f00b204e9800998ecf8427e  usr/lib/python3/dist-packages/colcon_powershell/shell/__init__.py
+67f1007447b5d83258140821ed47558f  usr/lib/python3/dist-packages/colcon_powershell/shell/powershell.py
+d41d8cd98f00b204e9800998ecf8427e  usr/lib/python3/dist-packages/colcon_powershell/shell/template/__init__.py
+d58c9e95a841ef466377985c0c816ed6  usr/lib/python3/dist-packages/colcon_powershell/shell/template/command_prefix.ps1.em
+4b77e46e0f3755cad822f8517791854f  usr/lib/python3/dist-packages/colcon_powershell/shell/template/hook_append_value.ps1.em
+01441f4dbfe92b970331774f46a9befc  usr/lib/python3/dist-packages/colcon_powershell/shell/template/hook_prepend_value.ps1.em
+07ad9c0fa2bfe33d97fd5db3c8b17361  usr/lib/python3/dist-packages/colcon_powershell/shell/template/package.ps1.em
+7b8d94e69cc64206922bc3c894e512fb  usr/lib/python3/dist-packages/colcon_powershell/shell/template/prefix.ps1.em
+c22eb31cc82752de4faf49b71360fed2  usr/lib/python3/dist-packages/colcon_powershell/shell/template/prefix_chain.ps1.em
+b5d8f0b8c9cc724c715e9a3242a7e353  usr/share/doc/python3-colcon-powershell/changelog.Debian.gz

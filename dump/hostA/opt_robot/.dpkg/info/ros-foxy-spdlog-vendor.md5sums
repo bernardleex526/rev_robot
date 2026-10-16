@@ -1,0 +1,16 @@
+a72158e224bed6fd7a5d3cb70a6f2ffa  opt/ros/foxy/share/ament_index/resource_index/package_run_dependencies/spdlog_vendor
+d41d8cd98f00b204e9800998ecf8427e  opt/ros/foxy/share/ament_index/resource_index/packages/spdlog_vendor
+c5bea21e3b9564d2a435b40f0e03ecf6  opt/ros/foxy/share/ament_index/resource_index/parent_prefix_path/spdlog_vendor
+3c103e7037e39082c0caa1b4b3f1232d  opt/ros/foxy/share/spdlog_vendor/cmake/spdlog_vendorConfig-version.cmake
+eb945357abcaad9bcec54a80d3a118c8  opt/ros/foxy/share/spdlog_vendor/cmake/spdlog_vendorConfig.cmake
+8dbf4790a764a69b56a5904c00682df0  opt/ros/foxy/share/spdlog_vendor/environment/ament_prefix_path.dsv
+fd0b100f5da0d9f2d38645ac45815395  opt/ros/foxy/share/spdlog_vendor/environment/ament_prefix_path.sh
+11e8ba1deb2827a5e13dd631720bcf6b  opt/ros/foxy/share/spdlog_vendor/environment/path.dsv
+234e39ac8bc1c1d4f887075bf9492366  opt/ros/foxy/share/spdlog_vendor/environment/path.sh
+ed9dcb7a76d3763c6cd97ebbd1f4cc7d  opt/ros/foxy/share/spdlog_vendor/local_setup.bash
+06642508601f9af185a158a24c7590fd  opt/ros/foxy/share/spdlog_vendor/local_setup.dsv
+004ba76452815a2cbd27314429a0b116  opt/ros/foxy/share/spdlog_vendor/local_setup.sh
+24970cb512d5df3600adc59d7fa85f7b  opt/ros/foxy/share/spdlog_vendor/local_setup.zsh
+f1af342d060bf943841e69fb03ebd57b  opt/ros/foxy/share/spdlog_vendor/package.dsv
+1708102362502bc9845e6affed921c94  opt/ros/foxy/share/spdlog_vendor/package.xml
+0af39cad58e58473e3940405a9e0a14d  usr/share/doc/ros-foxy-spdlog-vendor/changelog.Debian.gz

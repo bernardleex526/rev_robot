@@ -1,0 +1,7 @@
+bd0f29d01d6fa77c62b241820d6c0132  usr/include/libraw1394/csr.h
+cf23a8bd69a483eebdb6c1e6bee6e717  usr/include/libraw1394/ieee1394.h
+825952fdfee1bf571f82f6b299a874f8  usr/include/libraw1394/raw1394.h
+f0ffacfec9267b8b985d1cb619f35573  usr/lib/aarch64-linux-gnu/libraw1394.a
+75d0d2397bc67168be5d818eeae2019b  usr/lib/aarch64-linux-gnu/libraw1394.la
+f4f8f2f9547899745d9f2cadfbce1eaf  usr/lib/aarch64-linux-gnu/pkgconfig/libraw1394.pc
+46b5592273edd7b1f6f60d15a2437688  usr/share/doc/libraw1394-dev/copyright

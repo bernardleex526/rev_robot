@@ -1,0 +1,27 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from drdds/msg/JointDataCmd.msg
+// generated code does not contain a copyright notice
+
+
+module drdds {
+  module msg {
+    typedef uint8 uint8__4[4];
+    struct JointDataCmd {
+      uint8__4 name;
+
+      uint16 data_id;
+
+      uint16 control_word;
+
+      float position;
+
+      float torque;
+
+      float velocity;
+
+      float kp;
+
+      float kd;
+    };
+  };
+};

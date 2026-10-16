@@ -1,0 +1,10 @@
+/.
+/usr
+/usr/lib
+/usr/lib/jni
+/usr/lib/jni/libopencv_java420.so
+/usr/share
+/usr/share/doc
+/usr/share/doc/libopencv4.2-jni
+/usr/share/doc/libopencv4.2-jni/copyright
+/usr/share/doc/libopencv4.2-jni/changelog.Debian.gz

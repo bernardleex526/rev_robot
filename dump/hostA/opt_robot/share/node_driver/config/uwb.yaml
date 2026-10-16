@@ -1,0 +1,15 @@
+config:
+  - common:
+      manufactor: "lianwang"
+      path: "/dev/ttyUSB0"      # 串口设备文件路径
+      baudRate: 115200        # 波特率9600, 19200, 38400, 57600, 115200, 230400, 460800, 921600
+      device_type: "linux_serial"    # "linux_serial","ros_serial"
+      frame_id: "uwb_node"
+      dds_uwb_goal: "/UWB_FOLLOW"           # 发送目标点话题
+      dds_uwb_state_info: "/UWB_ODOM_LOST" # 发送是否丢失状态[1：正常， 2：丢失]
+      dds_uwb_online: "/UWB_ONLINE"           # 定时发送标签是否在线（有数据在线，无数据离线）
+      dds_uwb_set: "/UWB_ENABLE"               # 是否开启跟随模式话题(监听)
+      print_time: 1000        #打印间隔 单位毫秒（默认0不打印）
+      filter_size: 50                 # 计算丢失时滤波及恢复的大小
+      angle_change: 30.0             # 角度变化阈值，单位度
+      recover_rage: 0.75             # 恢复占比

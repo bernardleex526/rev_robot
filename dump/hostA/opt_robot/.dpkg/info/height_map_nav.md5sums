@@ -1,0 +1,8 @@
+b6a155e76d003485d68b9aa16b8476d7  opt/robot/share/height_map_nav/scripts/hmap_stop.sh
+0a6a9b22b919ae924193177c4e862d25  opt/robot/share/height_map_nav/scripts/self/postinst
+dbd64dc64ab30eb9ebad4f60fd4d3870  opt/robot/share/height_map_nav/scripts/hmap.sh
+1851fa4694b1fdf6afc6c7aa9f0648fc  opt/robot/share/height_map_nav/change_log.md
+9aaa37dd3184b9fc478952d36532a79f  opt/robot/share/height_map_nav/config/height_map_dds.yaml
+244fcb8cddd9a45ebe7d8dc3b1f72dfe  opt/robot/share/height_map_nav/config/height_map_ros.yaml
+386bbb78acf3b4bc54384549ca3a7920  opt/robot/share/height_map_nav/bin/height_map_nav
+b5a90eed7253bf08771def2564f71055  opt/robot/share/height_map_nav/rviz/multitest.rviz

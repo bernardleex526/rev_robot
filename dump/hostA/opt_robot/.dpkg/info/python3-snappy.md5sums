@@ -1,0 +1,13 @@
+b14896e3820b6e1d42e4a1ea3eb9e89f  usr/lib/python3/dist-packages/python_snappy-0.5.3.egg-info/PKG-INFO
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/python_snappy-0.5.3.egg-info/dependency_links.txt
+1931380f5807a953810343ed03493dad  usr/lib/python3/dist-packages/python_snappy-0.5.3.egg-info/top_level.txt
+2dd4313e3cdf08f707fa5b482442c5db  usr/lib/python3/dist-packages/snappy/__init__.py
+accc5a32e60392d228b90a3bc953c466  usr/lib/python3/dist-packages/snappy/__main__.py
+5ec30dde7572cda6b692f53c77edca8b  usr/lib/python3/dist-packages/snappy/_snappy.cpython-38-aarch64-linux-gnu.so
+5dcea72eb6658556d965ce847eeb07c3  usr/lib/python3/dist-packages/snappy/hadoop_snappy.py
+3e0bae0f04cffef9f49d829fa1705213  usr/lib/python3/dist-packages/snappy/snappy.py
+d2fe007c4e8a704a68ea55ca36a7ecd3  usr/lib/python3/dist-packages/snappy/snappy_cffi.py
+bfc1d2c436ada00c7a17e3cb8e6fbed0  usr/lib/python3/dist-packages/snappy/snappy_cffi_builder.py
+eb59057a91254460890e1a5e6721edd2  usr/lib/python3/dist-packages/snappy/snappy_formats.py
+822c92e1e1486b32e0105cff22ad5ee3  usr/share/doc/python3-snappy/changelog.Debian.gz
+37af9f47f7e64647f16b63530d5e0398  usr/share/doc/python3-snappy/copyright

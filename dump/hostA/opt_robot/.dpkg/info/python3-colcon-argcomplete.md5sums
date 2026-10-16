@@ -1,0 +1,15 @@
+1572f9923477e7621fb7ce5ca13c211f  usr/lib/python3/dist-packages/colcon_argcomplete-0.3.3.egg-info/PKG-INFO
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/colcon_argcomplete-0.3.3.egg-info/dependency_links.txt
+c47860413c0caf2e8db3abbcf565d4fd  usr/lib/python3/dist-packages/colcon_argcomplete-0.3.3.egg-info/entry_points.txt
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/colcon_argcomplete-0.3.3.egg-info/not-zip-safe
+86deb8568941514f68fdd3f096a6258a  usr/lib/python3/dist-packages/colcon_argcomplete-0.3.3.egg-info/requires.txt
+4fe4c98a6cb9ec2182af51ccaacd01db  usr/lib/python3/dist-packages/colcon_argcomplete-0.3.3.egg-info/top_level.txt
+7fc166a1415e5d188ced9c85f2d23733  usr/lib/python3/dist-packages/colcon_argcomplete/__init__.py
+66a4c9f938efa087befaff972f8ba01d  usr/lib/python3/dist-packages/colcon_argcomplete/argcomplete_completer/__init__.py
+d41d8cd98f00b204e9800998ecf8427e  usr/lib/python3/dist-packages/colcon_argcomplete/argument_parser/__init__.py
+21fb1cec147cdaeae08d96b0efaea75f  usr/lib/python3/dist-packages/colcon_argcomplete/argument_parser/argcomplete/__init__.py
+d41d8cd98f00b204e9800998ecf8427e  usr/lib/python3/dist-packages/colcon_argcomplete/argument_parser/argcomplete/completer/__init__.py
+5b7962ce3eeba0d7c791cff594d7de70  usr/lib/python3/dist-packages/colcon_argcomplete/argument_parser/argcomplete/completer/package_name.py
+84a44e66e77003923b653525fc2bcf62  usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash
+0320156dfaa3a85d389bbda5210f3ce2  usr/share/colcon_argcomplete/hook/colcon-argcomplete.zsh
+9ab6fea303d930f840b97f81d09ff7bb  usr/share/doc/python3-colcon-argcomplete/changelog.Debian.gz

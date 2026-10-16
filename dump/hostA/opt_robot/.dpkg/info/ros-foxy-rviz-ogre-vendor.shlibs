@@ -1,0 +1,17 @@
+Codec_STBI 1.12.1 ros-foxy-rviz-ogre-vendor
+Plugin_BSPSceneManager 1.12.1 ros-foxy-rviz-ogre-vendor
+Plugin_OctreeSceneManager 1.12.1 ros-foxy-rviz-ogre-vendor
+Plugin_OctreeZone 1.12.1 ros-foxy-rviz-ogre-vendor
+Plugin_PCZSceneManager 1.12.1 ros-foxy-rviz-ogre-vendor
+Plugin_ParticleFX 1.12.1 ros-foxy-rviz-ogre-vendor
+RenderSystem_GL 1.12.1 ros-foxy-rviz-ogre-vendor
+RenderSystem_GL3Plus 1.12.1 ros-foxy-rviz-ogre-vendor
+libOgreHLMS 1.12.1 ros-foxy-rviz-ogre-vendor
+libOgreMain 1.12.1 ros-foxy-rviz-ogre-vendor
+libOgreMeshLodGenerator 1.12.1 ros-foxy-rviz-ogre-vendor
+libOgreOverlay 1.12.1 ros-foxy-rviz-ogre-vendor
+libOgrePaging 1.12.1 ros-foxy-rviz-ogre-vendor
+libOgreProperty 1.12.1 ros-foxy-rviz-ogre-vendor
+libOgreRTShaderSystem 1.12.1 ros-foxy-rviz-ogre-vendor
+libOgreTerrain 1.12.1 ros-foxy-rviz-ogre-vendor
+libOgreVolume 1.12.1 ros-foxy-rviz-ogre-vendor

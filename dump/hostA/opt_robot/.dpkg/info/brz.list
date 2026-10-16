@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/bin
+/usr/bin/brz
+/usr/share
+/usr/share/bash-completion
+/usr/share/bash-completion/completions
+/usr/share/bash-completion/completions/brz
+/usr/share/doc
+/usr/share/doc/brz
+/usr/share/doc/brz/TODO.Debian
+/usr/share/doc/brz/copyright
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/brz.1.gz
+/usr/share/doc/brz/changelog.Debian.gz

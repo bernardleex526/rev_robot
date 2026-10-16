@@ -1,0 +1,4 @@
+b5d3dc82a833a3536f0a6515ff4df55c  usr/lib/aarch64-linux-gnu/libopencv_core.so.4.2.0
+02652c3e3194b4882598dea74dfb1715  usr/share/doc/libopencv-core4.2/changelog.Debian.gz
+145c4b15d9cf5c5ca48742cc9a3e22f0  usr/share/doc/libopencv-core4.2/copyright
+513b4e5ea0eadb1fd23d22026ab6192f  usr/share/lintian/overrides/libopencv-core4.2

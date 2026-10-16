@@ -1,0 +1,16 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from drdds/msg/FaultStatus.msg
+// generated code does not contain a copyright notice
+
+#include "drdds/msg/FaultStatusValue.idl"
+#include "drdds/msg/MetaType.idl"
+
+module drdds {
+  module msg {
+    struct FaultStatus {
+      drdds::msg::MetaType header;
+
+      drdds::msg::FaultStatusValue data;
+    };
+  };
+};

@@ -1,0 +1,19 @@
+#!/bin/bash
+
+bash /home/ysc/jy_cog/slam/scripts/self/register_conf.sh "/home/ysc/jy_cog/slam/conf" "/home/ysc/jy_cog/system/conf/slam"
+
+
+# 软链接方式放置补全函数
+rm -rf /etc/bash_completion.d/drmap_complete
+rm -rf /etc/bash_completion.d/dr_map_complete
+ln -s /home/ysc/jy_cog/slam/scripts/drmap_scripts/drmap_complete /etc/bash_completion.d/drmap_complete
+sudo chmod +x /etc/bash_completion.d/drmap_complete
+
+rm -rf /usr/local/bin/drmap
+rm -rf /usr/local/bin/dr_map
+ln -s /home/ysc/jy_cog/slam/scripts/drmap_scripts/drmap /usr/local/bin/drmap
+# 兼容老版dr_map指令
+ln -s /home/ysc/jy_cog/slam/scripts/drmap_scripts/drmap /usr/local/bin/dr_map
+sudo chmod +x /usr/local/bin/drmap
+
+sudo chmod -R +x /home/ysc/jy_cog/slam/scripts

@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/lib
+/usr/lib/aarch64-linux-gnu
+/usr/lib/aarch64-linux-gnu/mod_spatialite.so.7.1.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/libsqlite3-mod-spatialite
+/usr/share/doc/libsqlite3-mod-spatialite/NEWS.Debian.gz
+/usr/share/doc/libsqlite3-mod-spatialite/changelog.Debian.gz
+/usr/share/doc/libsqlite3-mod-spatialite/copyright
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libsqlite3-mod-spatialite
+/usr/lib/aarch64-linux-gnu/mod_spatialite.so
+/usr/lib/aarch64-linux-gnu/mod_spatialite.so.7

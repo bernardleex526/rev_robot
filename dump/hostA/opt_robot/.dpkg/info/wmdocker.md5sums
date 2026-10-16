@@ -1,0 +1,6 @@
+cdca3454e04dff491d06092f569cc1a0  usr/bin/wmdocker
+70051312fd95246486a3ca587446fded  usr/share/doc/wmdocker/README
+aa6110d765da43ee8ff97c6110a7e2e5  usr/share/doc/wmdocker/changelog.Debian.gz
+f80d084afe28648f59c74c5a969161c8  usr/share/doc/wmdocker/copyright
+36df3a9d90e2072835416da192c00446  usr/share/man/man1/wmdocker.1.gz
+8d4ac1b59d90d7ac5b1b184951a9b0b9  usr/share/menu/wmdocker

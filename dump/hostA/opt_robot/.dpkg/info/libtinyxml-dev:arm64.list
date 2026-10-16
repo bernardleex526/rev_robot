@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/include
+/usr/include/tinyxml.h
+/usr/lib
+/usr/lib/aarch64-linux-gnu
+/usr/lib/aarch64-linux-gnu/libtinyxml.a
+/usr/lib/aarch64-linux-gnu/pkgconfig
+/usr/lib/aarch64-linux-gnu/pkgconfig/tinyxml.pc
+/usr/share
+/usr/share/doc
+/usr/share/doc/libtinyxml-dev
+/usr/share/doc/libtinyxml-dev/copyright
+/usr/lib/aarch64-linux-gnu/libtinyxml.so
+/usr/share/doc/libtinyxml-dev/changelog.Debian.gz

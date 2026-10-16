@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from drdds/msg/StdStatus.msg
+// generated code does not contain a copyright notice
+
+
+module drdds {
+  module msg {
+    struct StdStatus {
+      int32 state;
+
+      uint32 error_code;
+    };
+  };
+};

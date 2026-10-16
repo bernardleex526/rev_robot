@@ -1,0 +1,46 @@
+#!/bin/sh
+# postinst script for tracker-extract
+#
+# see: dh_installdeb(1)
+
+set -e
+
+# summary of how this script can be called:
+#        * <postinst> `configure' <most-recently-configured-version>
+#        * <old-postinst> `abort-upgrade' <new version>
+#        * <conflictor's-postinst> `abort-remove' `in-favour' <package>
+#          <new-version>
+#        * <postinst> `abort-remove'
+#        * <deconfigured's-postinst> `abort-deconfigure' `in-favour'
+#          <failed-install-package> <version> `removing'
+#          <conflicting-package> <version>
+# for details, see http://www.debian.org/doc/debian-policy/ or
+# the debian-policy package
+
+
+case "$1" in
+    configure)
+	if dpkg --compare-versions "$2" le-nl "2.3.3-2~"; then
+            rm -f /var/lib/systemd/deb-systemd-user-helper-enabled/graphical-session.target.wants/tracker-extract.service
+            rm -f /var/lib/systemd/deb-systemd-user-helper-enabled/tracker-extract.service.dsh-also
+            rm -f /etc/systemd/user/graphical-session.target.wants/tracker-extract.service
+	fi
+	if dpkg --compare-versions "$2" le-nl "2.3.3-2ubuntu0.20.04.2"; then
+            rm -f /var/lib/systemd/deb-systemd-user-helper-enabled/default.target.wants/tracker-extract.service
+            rm -f /var/lib/systemd/deb-systemd-user-helper-enabled/tracker-extract.service.dsh-also
+            rm -f /etc/systemd/user/default.target.wants/tracker-extract.service
+	fi
+    ;;
+
+    abort-upgrade|abort-remove|abort-deconfigure)
+    ;;
+
+    *)
+        echo "postinst called with unknown argument \`$1'" >&2
+        exit 1
+    ;;
+esac
+
+
+
+exit 0

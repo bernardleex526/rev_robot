@@ -1,0 +1,9 @@
+2b3060743f40a2cd594439e512db97ca  lib/udev/rules.d/60-libopenni2-0.rules
+57099ae6cab418ba49846faac11b8b1c  usr/lib/OpenNI2/Drivers/libDummyDevice.so.0
+f4ecbd08e6e9d2e765cde7887d7bdf25  usr/lib/OpenNI2/Drivers/libOniFile.so.0
+341816618ffebed1da26bded51210b38  usr/lib/OpenNI2/Drivers/libPS1080.so.0
+d3becbca94a49667051107197de89398  usr/lib/OpenNI2/Drivers/libPSLink.so.0
+d10ef686a1cc9577261fd0ee1366383b  usr/lib/libOpenNI2.so.0
+68b329da9893e34099c7d8ad5cb9c940  usr/share/doc/libopenni2-0/TODO.Debian
+ac97fe6a51b11e0e4a258c6cc2ba44df  usr/share/doc/libopenni2-0/changelog.Debian.gz
+dd3fd553ebe3f3109ab8abe42f021568  usr/share/doc/libopenni2-0/copyright

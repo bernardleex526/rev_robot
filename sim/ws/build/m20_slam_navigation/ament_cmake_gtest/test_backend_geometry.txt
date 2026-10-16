@@ -1,0 +1,25 @@
+-- run_test.py: invoking following command in '/home/lee/rea/sim/ws/build/m20_slam_navigation':
+ - /home/lee/rea/sim/ws/build/m20_slam_navigation/test_backend_geometry --gtest_output=xml:/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_backend_geometry.gtest.xml
+
+Running main() from /opt/ros/humble/src/gtest_vendor/src/gtest_main.cc
+[==========] Running 2 tests from 2 test suites.
+[----------] Global test environment set-up.
+[----------] 1 test from BackendGeometry
+[ RUN      ] BackendGeometry.GhtSeedRecoversDriftedPoseForLoopVerification
+[INFO] [1792029282.759735419] [m20_loop]: Loop accept src=3 tgt=1 sc=0.0000 pose_dist=5.000 fitness=0.000000 overlap=1.000
+[       OK ] BackendGeometry.GhtSeedRecoversDriftedPoseForLoopVerification (34 ms)
+[----------] 1 test from BackendGeometry (34 ms total)
+
+[----------] 1 test from FactorGraph
+[ RUN      ] FactorGraph.AcceptsNativeAnisotropicFactorNoise
+[       OK ] FactorGraph.AcceptsNativeAnisotropicFactorNoise (9 ms)
+[----------] 1 test from FactorGraph (9 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 2 test suites ran. (43 ms total)
+[  PASSED  ] 2 tests.
+
+
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_backend_geometry.gtest.xml'
+-- run_test.py: verify result file '/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_backend_geometry.gtest.xml'

@@ -1,0 +1,5 @@
+51d26a1d5cc3fbd841f7981bb55621ea  usr/include/normApi.h
+d10332d136c0636248a5e0ee99713ca2  usr/lib/aarch64-linux-gnu/libnorm.a
+8bb4a229509aa8e0c1974e306ab35a54  usr/lib/aarch64-linux-gnu/libprotolib.a
+b8cc0af932ba19654f72a9c0a266cc5f  usr/lib/aarch64-linux-gnu/pkgconfig/norm.pc
+fdbe61354b234531fe5b7be55515e29d  usr/share/doc/libnorm-dev/copyright

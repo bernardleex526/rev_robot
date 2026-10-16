@@ -1,0 +1,35 @@
+#!/bin/bash
+set -e
+
+# height_map_nav 服务配置
+sudo chmod +x /opt/robot/share/height_map_nav/scripts/hmap.sh
+SERVICE_FILE="/lib/systemd/system/height_map_nav.service"
+
+cat <<EOF > $SERVICE_FILE
+[Unit]
+Description=height_map_nav
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/opt/robot/share/height_map_nav/scripts/hmap.sh
+Restart=on-failure
+RestartPreventExitStatus=SIGTERM
+
+[Install]
+WantedBy=network.target
+EOF
+
+sudo chmod +x /opt/robot/share/height_map_nav/scripts/hmap.sh
+
+systemctl daemon-reload
+
+# 启用并重启 height_map_nav 服务
+systemctl disable height_map_nav.service
+systemctl restart height_map_nav.service
+
+exit 0
+
+
+
+

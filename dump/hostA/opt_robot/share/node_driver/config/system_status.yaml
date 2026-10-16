@@ -1,0 +1,6 @@
+common:
+  cpu_interval: 1000       # 单位ms
+  process_interval: 1000  # 单位ms
+  memory_interval: 10000  # 单位ms
+  network_interval: 20000  # 单位ms
+  filesystem_interval: 100000  # 单位ms

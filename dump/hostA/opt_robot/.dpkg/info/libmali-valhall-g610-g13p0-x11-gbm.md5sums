@@ -1,0 +1,12 @@
+8cacdb33ddb8ccaa2281d318e60c1376  lib/firmware/mali_csffw.bin
+592beb6b70b8778137a837f59578b44f  usr/lib/aarch64-linux-gnu/libmali.so.1.9.0
+fdff7e0957961d3bf30c0824dd97adc2  usr/lib/aarch64-linux-gnu/libmali_hook.so.1.9.0
+23e8d8273aa5a102fae45218019dd216  usr/lib/aarch64-linux-gnu/libmali_hook_injector.a
+0c65624ca9216b4f1a92d7ebf1301983  usr/lib/aarch64-linux-gnu/mali/libEGL.so.1
+01eadad5e6b4661e6a3715352aac81eb  usr/lib/aarch64-linux-gnu/mali/libGLESv1_CM.so.1
+908b9d4e555f89819e8fe76eb5d6b6c8  usr/lib/aarch64-linux-gnu/mali/libGLESv2.so.2
+d5f3d3117fba058da17b731cd5065d86  usr/lib/aarch64-linux-gnu/mali/libMaliOpenCL.so.1
+7716c1419fb06034131352d42a206dff  usr/lib/aarch64-linux-gnu/mali/libgbm.so.1
+27fb2da50a55b8b9243a6f25b7392004  usr/lib/aarch64-linux-gnu/pkgconfig/mali.pc
+8faaf77a35dd8244631879d7dddc1890  usr/share/doc/libmali-valhall-g610-g13p0-x11-gbm/changelog.Debian.gz
+bb25c715c677d867022280273f503b37  usr/share/doc/libmali-valhall-g610-g13p0-x11-gbm/copyright

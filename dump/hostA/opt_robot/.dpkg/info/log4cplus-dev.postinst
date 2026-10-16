@@ -1,0 +1,39 @@
+#!/bin/bash
+current_path=$(dirname $(readlink -f $0))
+
+echo To be done postinst !
+
+home_path=/home/ysc
+project_path=$home_path/jy_cog/system
+
+# 基于ldconfig, 会自然地实现以下设置的目标,所以不用操作
+# libso_path="/usr/local/lib/liblog4cplus.so.2"
+# echo $libso_path >>/etc/ld.so.conf
+# ldconfig -v | grep liblog4cplus
+
+source_path="/usr/local/share/log4cplus/log.properties"
+chmod 777 $source_path
+
+# 给所有脚本斌权限,或者是改变属主(因为deb安装的属主都是root)
+# echo "[info] Change owner of jy_cog/system/ directory to ysc"
+# chown -R $SUDO_USER:$SUDO_USER $project_path/
+
+if [ -d "/home/ysc/jy_exe" ]; then
+  cp "$source_path" "/home/ysc/jy_exe/conf"
+  chmod 777 "/home/ysc/jy_exe/conf/log.properties"
+  echo "File moved to /home/ysc/jy_exe/conf"
+fi
+
+if [ -d "/home/ysc/jy_cog" ]; then
+  cp "$source_path" "/home/ysc/jy_cog/system/conf/"
+  chmod 777 "/home/ysc/jy_cog/system/conf/log.properties"
+  echo "File moved to /home/ysc/jy_cog/system/conf/"
+fi
+
+if [ -d "/home/mxb/jy_cog" ]; then
+  cp "$source_path" "/home/mxb/jy_cog/system/conf/"
+  chmod 777 "/home/mxb/jy_cog/system/conf/log.properties"
+  echo "File moved to /home/mxb/jy_cog/system/conf/"
+fi
+
+sudo ldconfig

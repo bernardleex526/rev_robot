@@ -1,0 +1,16 @@
+e779eea669790fb1d474147c37aefd0e  usr/lib/aarch64-linux-gnu/libodbcinst.so.2.0.0
+401fa9a826591eb72ad3b4cd06d4ecc6  usr/lib/aarch64-linux-gnu/odbc/libesoobS.so
+294d571ea046e38f87b84a44d7eb25fb  usr/lib/aarch64-linux-gnu/odbc/libmimerS.so
+124aaa692f1e4604fc0bb62d8b798e6b  usr/lib/aarch64-linux-gnu/odbc/libodbcdrvcfg1S.so
+e0708713e29e909c205e8919d944a856  usr/lib/aarch64-linux-gnu/odbc/libodbcdrvcfg2S.so
+e6fbc3b39a807e3a933117e351d78fb2  usr/lib/aarch64-linux-gnu/odbc/libodbcminiS.so
+f809c7e31007ea16b4e6aca851694e31  usr/lib/aarch64-linux-gnu/odbc/libodbcmyS.so
+2c3fde621d443c8566130fdbf294519c  usr/lib/aarch64-linux-gnu/odbc/libodbcnnS.so
+2872ff4bb30c428c905b55f41e2badd6  usr/lib/aarch64-linux-gnu/odbc/libodbcpsqlS.so
+fe846dad3a8db0b2a1ad33e16e098498  usr/lib/aarch64-linux-gnu/odbc/libodbctxtS.so
+fc7a877587fa3809414c3f2e8c537536  usr/lib/aarch64-linux-gnu/odbc/liboplodbcS.so
+6cedf54d7287abc13e2446f6024ef2a3  usr/lib/aarch64-linux-gnu/odbc/liboraodbcS.so
+e3371938f6c05c0cc79be175ba420df9  usr/lib/aarch64-linux-gnu/odbc/libsapdbS.so
+def2697af020b2bf47424700eb87b17b  usr/lib/aarch64-linux-gnu/odbc/libtdsS.so
+d728c490223d3e2e48fea88d74b125cf  usr/share/doc/odbcinst1debian2/copyright
+8888182d8ef31d03a7357e8bb0714939  usr/share/lintian/overrides/odbcinst1debian2

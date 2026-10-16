@@ -1,0 +1,3 @@
+m20::nodes::SlamNode;lib/libslam_node_component.so
+m20::nodes::LocalizationNode;lib/liblocalization_node_component.so
+m20::nodes::NavigationNode;lib/libnavigation_node_component.so

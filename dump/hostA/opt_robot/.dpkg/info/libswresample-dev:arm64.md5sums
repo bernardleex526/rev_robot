@@ -1,0 +1,5 @@
+a809c78045b6973eac2dde8b11b6b79b  usr/include/aarch64-linux-gnu/libswresample/swresample.h
+cdc7c16055308ed8a0993e9e22343b7f  usr/include/aarch64-linux-gnu/libswresample/version.h
+6fcb816cda7c7742e7d3a254a752c9c4  usr/lib/aarch64-linux-gnu/libswresample.a
+706bad9689143cb54ea66d4a2011c95f  usr/lib/aarch64-linux-gnu/pkgconfig/libswresample.pc
+001f538bf878ec438a4151e9e98daebd  usr/share/doc/libswresample-dev/copyright

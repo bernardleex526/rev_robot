@@ -1,0 +1,5 @@
+7de5ddf14353837d9f51e531f3a1a93e  usr/include/GL/glew.h
+7b9624424656c48f86b439f0a94a7930  usr/include/GL/glxew.h
+fbfb30da759613e9af98d50bc634c2b8  usr/include/GL/wglew.h
+1767fade00bdeb921896474a1decc4d6  usr/lib/aarch64-linux-gnu/pkgconfig/glew.pc
+2917c78cc3e71b4f590e6421b76ca13e  usr/share/doc/libglew-dev/copyright

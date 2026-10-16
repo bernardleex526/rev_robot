@@ -1,0 +1,9 @@
+693000732340271bcc9911ba5a2e008d  usr/include/dbus-1.0/dbus/dbus-glib-bindings.h
+18e62ff4e4d632af47e512d03bd37c19  usr/include/dbus-1.0/dbus/dbus-glib-lowlevel.h
+93053489ce04f5fe3b83447ea478b7ae  usr/include/dbus-1.0/dbus/dbus-glib.h
+7204f26d27ea48a830bf3a9530014f3e  usr/include/dbus-1.0/dbus/dbus-gtype-specialized.h
+1e96b065c4147b282bcddb4be92243e0  usr/include/dbus-1.0/dbus/dbus-gvalue-parse-variant.h
+5aa114f3c0a6be5164bda41f3c0ba1bc  usr/lib/aarch64-linux-gnu/libdbus-glib-1.a
+443d0e1fdeeee0ee0a029922b4094352  usr/lib/aarch64-linux-gnu/pkgconfig/dbus-glib-1.pc
+22a559e20da1a6a23c94b4c57c3f9dd2  usr/share/doc/libdbus-glib-1-dev/copyright
+f966227783e81a1f3daaa19996023e7e  usr/share/lintian/overrides/libdbus-glib-1-dev

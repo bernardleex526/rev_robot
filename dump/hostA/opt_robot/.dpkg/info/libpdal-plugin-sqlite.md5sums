@@ -1,0 +1,4 @@
+000613452195d21cfa12675a49ff090b  usr/lib/libpdal_plugin_reader_sqlite.so.10
+86aad44f3c5b118241aa96b7314fce31  usr/lib/libpdal_plugin_writer_sqlite.so.10
+8a807de70827cdb4d455ff4b978cc7d9  usr/share/doc/libpdal-plugin-sqlite/copyright
+848fc5598fb87509ef3ec0c0437a8a19  usr/share/lintian/overrides/libpdal-plugin-sqlite

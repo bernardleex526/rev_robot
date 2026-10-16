@@ -1,0 +1,4 @@
+source;share/m20_slam_navigation/local_setup.bash
+source;share/m20_slam_navigation/local_setup.dsv
+source;share/m20_slam_navigation/local_setup.sh
+source;share/m20_slam_navigation/local_setup.zsh

@@ -1,0 +1,16 @@
+e155fc0c7917f73f3feb32ff4a4cf3dd  usr/include/opencv4/opencv2/stitching.hpp
+ace4535b27aeaf51a1e2bd4703bacfa2  usr/include/opencv4/opencv2/stitching/detail/autocalib.hpp
+3cd0cc5210b69576d9b09d6a2678b90b  usr/include/opencv4/opencv2/stitching/detail/blenders.hpp
+d44fa8180dbc0e63d8003f9c414cb297  usr/include/opencv4/opencv2/stitching/detail/camera.hpp
+5e16f46813824ff3bcb85d4bbd1a574a  usr/include/opencv4/opencv2/stitching/detail/exposure_compensate.hpp
+5e7d54a203a6042bae5a5e03c884e5e9  usr/include/opencv4/opencv2/stitching/detail/matchers.hpp
+9ead02c161e94766792113155b14353e  usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp
+8456cd71195eade8e6144505636a854f  usr/include/opencv4/opencv2/stitching/detail/seam_finders.hpp
+10a9bec34d314682f2e9ba1277120772  usr/include/opencv4/opencv2/stitching/detail/timelapsers.hpp
+600be43ffcd7e78bf215e17353b197dc  usr/include/opencv4/opencv2/stitching/detail/util.hpp
+8652594f22295705e949adbffe208569  usr/include/opencv4/opencv2/stitching/detail/util_inl.hpp
+8acd66c2e10e974b2256bc2e3e2d8172  usr/include/opencv4/opencv2/stitching/detail/warpers.hpp
+beaa31a316a50e8071fb044e16ca0222  usr/include/opencv4/opencv2/stitching/detail/warpers_inl.hpp
+78ab64645b54691dff50fb894bebded2  usr/include/opencv4/opencv2/stitching/warpers.hpp
+c70f815eb180720ad98172b0dff0e1af  usr/lib/aarch64-linux-gnu/libopencv_stitching.a
+145c4b15d9cf5c5ca48742cc9a3e22f0  usr/share/doc/libopencv-stitching-dev/copyright

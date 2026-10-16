@@ -1,0 +1,14 @@
+446d197f805b8ff3bcb3b8062aa7eda4  usr/sbin/update-ieee-data
+9057698e75c9170a58a802cddc3f7fd9  usr/share/doc/ieee-data/README.Debian
+1023960b32c53de2350ee684b042b158  usr/share/doc/ieee-data/changelog.gz
+7ed686ad7ccb289e159d77f57ddf913d  usr/share/doc/ieee-data/copyright
+8a449d7568e1da5a5069f77ca469e745  usr/share/ieee-data/.lastupdate
+5462841bc9d627031ab638d4310147a2  usr/share/ieee-data/iab.csv
+094f6ddaaca5b8cdca8cf81dddafcf06  usr/share/ieee-data/iab.txt
+97b802b67a557f150c6caec5626cd8b8  usr/share/ieee-data/mam.csv
+4ed266c6519c537f282309680c9a2096  usr/share/ieee-data/mam.txt
+7569b852c0f4c315621157719ba23dba  usr/share/ieee-data/oui.csv
+008cb8ec7e1d2021d911b0116417fb26  usr/share/ieee-data/oui.txt
+d09f1e8d70656dd87d3fa5893fce626d  usr/share/ieee-data/oui36.csv
+6d8fd534188ab67430abbb18519ffd93  usr/share/ieee-data/oui36.txt
+e80554ea570e76476eed00df2fcd8f31  usr/share/man/man8/update-ieee-data.8.gz

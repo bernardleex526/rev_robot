@@ -1,0 +1,26 @@
+common:
+  path: "/dev/ttyS5"     # 串口设备文件路径
+  baudRate: 115200        # 波特率 北天：38400 SAM-M10Q:9600 GA167:115200
+
+# 系统配置
+system:
+  # 系统掩码配置 (16进制，支持0x前缀)
+  # 默认值 0x11111 表示启用所有系统(GN模式)
+  # 各bit含义:
+  # bit0-GPS L1CA, bit4-BDS B1I, bit8-GLONASS L1, bit12-GALILEO E1, bit16-QZSS
+  sysMask: 0x11111
+  
+  # 可选的预设配置 (也可以写成不带0x的形式)
+  presets:
+    # GPS单独定位模式
+    gps_only: 0x00001    # 只启用GPS L1CA频点
+    # BDS单独定位模式  
+    bds_only: 0x00010    # 只启用BDS B1I频点
+    # GALILEO单独定位模式
+    gal_only: 0x01000    # 只启用GALILEO E1频点
+    # GLONASS单独定位模式
+    glo_only: 0x00100    # 只启用GLONASS L1频点
+    # QZSS单独定位模式
+    qzss_only: 0x10000   # 只启用QZSS L1频点
+    # 全系统模式(默认)
+    all_systems: 0x11111     # 所有系统都启用    # 波特率 北天：38400 SAM-M10Q:9600 GA167:115200

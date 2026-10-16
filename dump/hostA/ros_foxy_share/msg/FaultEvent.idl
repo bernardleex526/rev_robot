@@ -1,0 +1,49 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from drdds/msg/FaultEvent.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+
+module drdds {
+  module msg {
+    @verbatim (language="comment", text=
+      " Fault event message for system faults" "\n"
+      " Fault Code Categories (Revised)" "\n"
+      " 0x80xx: Joints (motors, drivers, encoders, IMU, etc.)" "\n"
+      " 0x81xx: Battery (cells, BMS, voltage, current, temperature, etc.)" "\n"
+      " 0x82xx: Mainboard (CPU, memory, storage, network, system time, etc.)" "\n"
+      " 0x83xx: Peripherals (LiDAR, cameras, buttons, RTK, handheld devices, etc.)" "\n"
+      " 0x84xx: Motion control (manual control & autonomous control)" "\n"
+      " 0x85xx: Charging (autonomous and manual charging scenarios)" "\n"
+      " 0x86xx: System monitoring (heartbeats, process liveness, module responsiveness, etc.)")
+    struct FaultEvent {
+      @verbatim (language="comment", text=
+        " Timestamp of fault occurrence")
+      builtin_interfaces::msg::Time timestamp;
+
+      @verbatim (language="comment", text=
+        " Fault name; unique across types, identical for same-type faults")
+      string name;
+
+      @verbatim (language="comment", text=
+        " Fault code; unique across types, identical for same-type faults")
+      uint32 code;
+
+      @verbatim (language="comment", text=
+        " Event type: State type (start/end/update), pulse type (pulse)")
+      string type;
+
+      @verbatim (language="comment", text=
+        " Severity level: \"warn\", \"error\", or \"fatal\"")
+      string severity;
+
+      @verbatim (language="comment", text=
+        " Resource IDs; array of source IDs for aggregated instances of the same fault code")
+      sequence<string> sources;
+
+      @verbatim (language="comment", text=
+        " Additional data in compact JSON format")
+      string details;
+    };
+  };
+};

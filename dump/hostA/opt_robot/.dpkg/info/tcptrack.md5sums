@@ -1,0 +1,7 @@
+75b352b387eb488e71d309a5bc9d248c  usr/bin/tcptrack
+74ddb754e0f6508424fcd4f7b10661ae  usr/share/doc/tcptrack/AUTHORS
+84d48dd787f176d1c453b4fcf47469c5  usr/share/doc/tcptrack/README
+c2ed4283e966c1355ff86a19a94328a4  usr/share/doc/tcptrack/TODO
+b11d736a7ffbb2d462dc734c70eb8e2c  usr/share/doc/tcptrack/changelog.Debian.gz
+edaade9f2fab9cb6714ed0e58b80b31f  usr/share/doc/tcptrack/copyright
+11972e3af9b57f6a2f9242516fd28036  usr/share/man/man1/tcptrack.1.gz

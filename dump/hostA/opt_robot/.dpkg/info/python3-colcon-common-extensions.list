@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/lib
+/usr/lib/python3
+/usr/lib/python3/dist-packages
+/usr/lib/python3/dist-packages/colcon_common_extensions
+/usr/lib/python3/dist-packages/colcon_common_extensions/__init__.py
+/usr/lib/python3/dist-packages/colcon_common_extensions-0.3.0.egg-info
+/usr/lib/python3/dist-packages/colcon_common_extensions-0.3.0.egg-info/PKG-INFO
+/usr/lib/python3/dist-packages/colcon_common_extensions-0.3.0.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/colcon_common_extensions-0.3.0.egg-info/requires.txt
+/usr/lib/python3/dist-packages/colcon_common_extensions-0.3.0.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/colcon_common_extensions-0.3.0.egg-info/zip-safe
+/usr/share
+/usr/share/doc
+/usr/share/doc/python3-colcon-common-extensions
+/usr/share/doc/python3-colcon-common-extensions/changelog.Debian.gz

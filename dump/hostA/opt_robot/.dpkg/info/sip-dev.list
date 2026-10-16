@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/bin
+/usr/bin/sip
+/usr/share
+/usr/share/doc
+/usr/share/doc/sip-dev
+/usr/share/doc/sip-dev/NEWS.gz
+/usr/share/doc/sip-dev/changelog.Debian.gz
+/usr/share/doc/sip-dev/copyright
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/sip.1.gz

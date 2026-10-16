@@ -1,0 +1,15 @@
+03b06b0d5c4e01707ec8337504199fb4  opt/ros/foxy/bin/check_urdf
+1c40a2e788f7ed7940e4764067b8aff1  opt/ros/foxy/bin/urdf_mem_test
+f37c38a5973fa1ecb6db525b652a85f0  opt/ros/foxy/bin/urdf_to_graphiz
+deb9d20aaaaca6b7da1d035379985f10  opt/ros/foxy/include/urdf_parser/exportdecl.h
+6c6c7142c13aad41724ed670b11fc491  opt/ros/foxy/include/urdf_parser/urdf_parser.h
+7a1f14604b8ef7051618cd9817ac9175  opt/ros/foxy/lib/aarch64-linux-gnu/liburdfdom_model.so.1.0
+fe92917bac2bd14a5491bf79c22d931b  opt/ros/foxy/lib/aarch64-linux-gnu/liburdfdom_model_state.so.1.0
+3e9049999f24f20a690c56e467631d1f  opt/ros/foxy/lib/aarch64-linux-gnu/liburdfdom_sensor.so.1.0
+71e17884c66500d49e29daa1fcda3e71  opt/ros/foxy/lib/aarch64-linux-gnu/liburdfdom_world.so.1.0
+951087a35f8d3e4acd08d3ddaba33c47  opt/ros/foxy/lib/aarch64-linux-gnu/pkgconfig/urdfdom.pc
+d468bc48287a723048ad5ce7d19f271d  opt/ros/foxy/lib/aarch64-linux-gnu/urdfdom/cmake/urdfdom-config.cmake
+4f8e94656e3ed0c1b2a328e0a04894b8  opt/ros/foxy/lib/aarch64-linux-gnu/urdfdom/cmake/urdfdomExport-none.cmake
+14072af1e77e11e7eedd1443f416b644  opt/ros/foxy/lib/aarch64-linux-gnu/urdfdom/cmake/urdfdomExport.cmake
+812b44181e34908422cb8081954b99f2  opt/ros/foxy/share/urdfdom/package.xml
+d12711229190c35f870e183991028263  usr/share/doc/ros-foxy-urdfdom/changelog.Debian.gz

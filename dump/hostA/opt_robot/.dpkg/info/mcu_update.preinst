@@ -1,0 +1,19 @@
+#!/bin/sh
+set -u
+
+SERVICE="ctrlmcu.service"
+
+echo "[INFO] MCU update start."
+echo "[INFO] preinst: try stop ${SERVICE} (best-effort)"
+
+if command -v systemctl >/dev/null 2>&1; then
+  # 不管成功失败，都打印退出码和输出；失败也继续
+  out="$(systemctl stop "${SERVICE}" 2>&1)"
+  rc=$?
+  echo "[INFO] preinst: systemctl stop ${SERVICE} rc=${rc}"
+  [ -n "${out}" ] && echo "${out}"
+else
+  echo "[WARN] preinst: systemctl not found, skip stop ${SERVICE}"
+fi
+
+exit 0

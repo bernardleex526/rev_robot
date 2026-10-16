@@ -1,0 +1,3446 @@
+/home/lee/rea/tools/ghidra_rl_obs.py:36: DeprecationWarning: open_program() is deprecated, use open_project() and program_context() or program_loader() instead.
+  with pyghidra.open_program(BIN) as api:
+
+========================================================================
+===== M20BasicBackkneeRunner  (expected @ 0x2638d8)
+  actual: M20BasicBackkneeRunner @ 002638d8
+========================================================================
+
+/* DWARF original prototype: void M20BasicBackkneeRunner(M20BasicBackkneeRunner * this, string *
+   policy_name) */
+
+void __thiscall
+M20BasicBackkneeRunner::M20BasicBackkneeRunner(M20BasicBackkneeRunner *this,string *policy_name)
+
+{
+  CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *pCVar1;
+  CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *pCVar2;
+  char *logid;
+  int __in_chrg;
+  int __in_chrg_00;
+  int __in_chrg_01;
+  int __in_chrg_02;
+  int __in_chrg_03;
+  int __in_chrg_04;
+  string *policy_name_local;
+  M20BasicBackkneeRunner *this_local;
+  Scalar local_8c;
+  Scalar local_88;
+  Scalar local_84;
+  Scalar local_80;
+  Scalar local_7c;
+  Scalar local_78;
+  Scalar local_74;
+  Scalar local_70;
+  Scalar local_6c;
+  Scalar local_68;
+  Scalar local_64;
+  Env local_60;
+  exception *e;
+  CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> CStack_50;
+  string sStack_30;
+  long local_8;
+  
+  local_8 = *(long *)PTR___stack_chk_guard_00386ea8;
+  std::__cxx11::string::string((string *)&sStack_30,(string *)policy_name);
+  PolicyRunnerBase::PolicyRunnerBase(&this->super_PolicyRunnerBase,&sStack_30);
+  std::__cxx11::string::~string((string *)&sStack_30);
+  (this->super_PolicyRunnerBase)._vptr_PolicyRunnerBase =
+       (_func_int_varargs **)(PTR_vtable_00386438 + 0x10);
+  (this->super_PolicyRunnerBase).wheel_vel_scale_ = 0.05;
+  local_68 = 0.04;
+  Eigen::DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator<<
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,
+             (DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)
+             &(this->super_PolicyRunnerBase).vel_delta_const_,&local_68);
+  local_64 = 0.04;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+                     ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,&local_64
+                     );
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0x3da3d70a;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+            (pCVar1,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::~CommaInitializer
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,__in_chrg);
+  local_6c = 80.0;
+  local_68 = 80.0;
+  local_64 = 80.0;
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0;
+  Eigen::Matrix<float,_4,_1,_0,_4,_1>::Matrix
+            ((Matrix<float,_4,_1,_0,_4,_1> *)&sStack_30,&local_6c,&local_68,&local_64,
+             (Scalar *)&local_60);
+  Eigen::DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>::replicate
+            ((Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1> *)&CStack_50,
+             (DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_> *)&sStack_30,4,1);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::Replicate<Eigen::Matrix<float,_4,_1>,__1,__1>_>
+            (&(this->super_PolicyRunnerBase).kp_,
+             (DenseBase<Eigen::Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1>_> *)&CStack_50
+            );
+  local_6c = 3.0;
+  local_68 = 3.0;
+  local_64 = 3.0;
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0x3f19999a;
+  Eigen::Matrix<float,_4,_1,_0,_4,_1>::Matrix
+            ((Matrix<float,_4,_1,_0,_4,_1> *)&sStack_30,&local_6c,&local_68,&local_64,
+             (Scalar *)&local_60);
+  Eigen::DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>::replicate
+            ((Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1> *)&CStack_50,
+             (DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_> *)&sStack_30,4,1);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::Replicate<Eigen::Matrix<float,_4,_1>,__1,__1>_>
+            (&(this->super_PolicyRunnerBase).kd_,
+             (DenseBase<Eigen::Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1>_> *)&CStack_50
+            );
+  local_68 = 2.0;
+  Eigen::DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator<<
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,
+             (DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)
+             &(this->super_PolicyRunnerBase).max_cmd_vel_,&local_68);
+  local_64 = 0.8;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+                     ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,&local_64
+                     );
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0x3fc00000;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+            (pCVar1,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::~CommaInitializer
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,__in_chrg_00);
+  Eigen::PlainObjectBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::setZero
+            (&(this->super_PolicyRunnerBase).dof_pos_default_.
+              super_PlainObjectBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_>,0xc);
+  Eigen::PlainObjectBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::setZero
+            (&(this->super_PolicyRunnerBase).dof_pos_default_trans.
+              super_PlainObjectBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_>,0xc);
+  local_8c = -0.1;
+  Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator<<
+            (&CStack_50,
+             (DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+             &(this->super_PolicyRunnerBase).dof_pos_default_,&local_8c);
+  local_88 = -0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (&CStack_50,&local_88);
+  local_84 = 1.6;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_84);
+  local_80 = 0.1;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_80);
+  local_7c = -0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_7c);
+  local_78 = 1.6;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_78);
+  local_74 = -0.1;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_74);
+  local_70 = -0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_70);
+  local_6c = 1.6;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_6c);
+  local_68 = 0.1;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_68);
+  local_64 = -0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_64);
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0x3fcccccd;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+            (pCVar2,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::~CommaInitializer
+            (&CStack_50,__in_chrg_01);
+  local_8c = -0.1;
+  Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator<<
+            (&CStack_50,
+             (DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+             &(this->super_PolicyRunnerBase).dof_pos_default_trans,&local_8c);
+  local_88 = 0.1;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (&CStack_50,&local_88);
+  local_84 = -0.1;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_84);
+  local_80 = 0.1;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_80);
+  local_7c = -0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_7c);
+  local_78 = -0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_78);
+  local_74 = -0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_74);
+  local_70 = -0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_70);
+  local_6c = 1.6;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_6c);
+  local_68 = 1.6;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_68);
+  local_64 = 1.6;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_64);
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0x3fcccccd;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+            (pCVar2,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::~CommaInitializer
+            (&CStack_50,__in_chrg_02);
+  logid = (char *)std::__cxx11::string::data();
+  Ort::Env::Env(&local_60,ORT_LOGGING_LEVEL_ERROR,logid);
+  Ort::Env::operator=(&(this->super_PolicyRunnerBase).env_,&local_60);
+  Ort::Env::~Env(&local_60,__in_chrg_03);
+  Ort::Session::Session
+            ((Session *)&CStack_50,&(this->super_PolicyRunnerBase).env_,
+             PTR___policy_policy_m20_backknee6__00386380,
+             (ulong)*(uint *)PTR___policy_policy_m20_backknee6__len_00385a20,
+             &(this->super_PolicyRunnerBase).session_options_);
+  Ort::Session::operator=(&(this->super_PolicyRunnerBase).session1_,(Session *)&CStack_50);
+  Ort::Session::~Session((Session *)&CStack_50,__in_chrg_04);
+  PolicyRunnerBase::test_policy(&this->super_PolicyRunnerBase);
+  if (local_8 - *(long *)PTR___stack_chk_guard_00386ea8 != 0) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail(PTR___stack_chk_guard_00386ea8,
+                     local_8 - *(long *)PTR___stack_chk_guard_00386ea8,0);
+  }
+  return;
+}
+
+
+
+========================================================================
+===== M20BasicFlatRunner  (expected @ 0x276770)
+  actual: M20BasicFlatRunner @ 00276770
+========================================================================
+
+/* DWARF original prototype: void M20BasicFlatRunner(M20BasicFlatRunner * this, string *
+   policy_name) */
+
+void __thiscall M20BasicFlatRunner::M20BasicFlatRunner(M20BasicFlatRunner *this,string *policy_name)
+
+{
+  CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *pCVar1;
+  CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *pCVar2;
+  char *logid;
+  int __in_chrg;
+  int __in_chrg_00;
+  int __in_chrg_01;
+  int __in_chrg_02;
+  int __in_chrg_03;
+  int __in_chrg_04;
+  string *policy_name_local;
+  M20BasicFlatRunner *this_local;
+  Scalar local_8c;
+  Scalar local_88;
+  Scalar local_84;
+  Scalar local_80;
+  Scalar local_7c;
+  Scalar local_78;
+  Scalar local_74;
+  Scalar local_70;
+  Scalar local_6c;
+  Scalar local_68;
+  Scalar local_64;
+  Env local_60;
+  exception *e;
+  CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> CStack_50;
+  string sStack_30;
+  long local_8;
+  
+  local_8 = *(long *)PTR___stack_chk_guard_00386ea8;
+  std::__cxx11::string::string((string *)&sStack_30,(string *)policy_name);
+  PolicyRunnerBase::PolicyRunnerBase(&this->super_PolicyRunnerBase,&sStack_30);
+  std::__cxx11::string::~string((string *)&sStack_30);
+  (this->super_PolicyRunnerBase)._vptr_PolicyRunnerBase =
+       (_func_int_varargs **)(PTR_vtable_00386c28 + 0x10);
+  (this->super_PolicyRunnerBase).wheel_vel_scale_ = 0.05;
+  local_68 = 0.025;
+  Eigen::DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator<<
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,
+             (DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)
+             &(this->super_PolicyRunnerBase).vel_delta_const_,&local_68);
+  local_64 = 0.025;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+                     ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,&local_64
+                     );
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0x3d23d70a;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+            (pCVar1,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::~CommaInitializer
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,__in_chrg);
+  local_6c = 80.0;
+  local_68 = 80.0;
+  local_64 = 80.0;
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0;
+  Eigen::Matrix<float,_4,_1,_0,_4,_1>::Matrix
+            ((Matrix<float,_4,_1,_0,_4,_1> *)&sStack_30,&local_6c,&local_68,&local_64,
+             (Scalar *)&local_60);
+  Eigen::DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>::replicate
+            ((Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1> *)&CStack_50,
+             (DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_> *)&sStack_30,4,1);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::Replicate<Eigen::Matrix<float,_4,_1>,__1,__1>_>
+            (&(this->super_PolicyRunnerBase).kp_,
+             (DenseBase<Eigen::Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1>_> *)&CStack_50
+            );
+  local_6c = 6.0;
+  local_68 = 6.0;
+  local_64 = 6.0;
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0x3f19999a;
+  Eigen::Matrix<float,_4,_1,_0,_4,_1>::Matrix
+            ((Matrix<float,_4,_1,_0,_4,_1> *)&sStack_30,&local_6c,&local_68,&local_64,
+             (Scalar *)&local_60);
+  Eigen::DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>::replicate
+            ((Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1> *)&CStack_50,
+             (DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_> *)&sStack_30,4,1);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::Replicate<Eigen::Matrix<float,_4,_1>,__1,__1>_>
+            (&(this->super_PolicyRunnerBase).kd_,
+             (DenseBase<Eigen::Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1>_> *)&CStack_50
+            );
+  local_68 = 2.0;
+  Eigen::DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator<<
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,
+             (DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)
+             &(this->super_PolicyRunnerBase).max_cmd_vel_,&local_68);
+  local_64 = 1.0;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+                     ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,&local_64
+                     );
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0x40000000;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+            (pCVar1,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::~CommaInitializer
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,__in_chrg_00);
+  Eigen::PlainObjectBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::setZero
+            (&(this->super_PolicyRunnerBase).dof_pos_default_.
+              super_PlainObjectBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_>,0xc);
+  Eigen::PlainObjectBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::setZero
+            (&(this->super_PolicyRunnerBase).dof_pos_default_trans.
+              super_PlainObjectBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_>,0xc);
+  local_8c = -0.1;
+  Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator<<
+            (&CStack_50,
+             (DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+             &(this->super_PolicyRunnerBase).dof_pos_default_,&local_8c);
+  local_88 = -0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (&CStack_50,&local_88);
+  local_84 = 1.6;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_84);
+  local_80 = 0.1;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_80);
+  local_7c = -0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_7c);
+  local_78 = 1.6;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_78);
+  local_74 = -0.1;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_74);
+  local_70 = 0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_70);
+  local_6c = -1.6;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_6c);
+  local_68 = 0.1;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_68);
+  local_64 = 0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_64);
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0xbfcccccd;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+            (pCVar2,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::~CommaInitializer
+            (&CStack_50,__in_chrg_01);
+  local_8c = -0.1;
+  Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator<<
+            (&CStack_50,
+             (DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+             &(this->super_PolicyRunnerBase).dof_pos_default_trans,&local_8c);
+  local_88 = 0.1;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (&CStack_50,&local_88);
+  local_84 = -0.1;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_84);
+  local_80 = 0.1;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_80);
+  local_7c = -0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_7c);
+  local_78 = -0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_78);
+  local_74 = 0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_74);
+  local_70 = 0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_70);
+  local_6c = 1.6;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_6c);
+  local_68 = 1.6;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_68);
+  local_64 = -1.6;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_64);
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0xbfcccccd;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+            (pCVar2,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::~CommaInitializer
+            (&CStack_50,__in_chrg_02);
+  logid = (char *)std::__cxx11::string::data();
+  Ort::Env::Env(&local_60,ORT_LOGGING_LEVEL_ERROR,logid);
+  Ort::Env::operator=(&(this->super_PolicyRunnerBase).env_,&local_60);
+  Ort::Env::~Env(&local_60,__in_chrg_03);
+  Ort::Session::Session
+            ((Session *)&CStack_50,&(this->super_PolicyRunnerBase).env_,
+             PTR___policy_policy_m20_50__00386ae8,
+             (ulong)*(uint *)PTR___policy_policy_m20_50__len_00386948,
+             &(this->super_PolicyRunnerBase).session_options_);
+  Ort::Session::operator=(&(this->super_PolicyRunnerBase).session1_,(Session *)&CStack_50);
+  Ort::Session::~Session((Session *)&CStack_50,__in_chrg_04);
+  PolicyRunnerBase::test_policy(&this->super_PolicyRunnerBase);
+  if (local_8 - *(long *)PTR___stack_chk_guard_00386ea8 != 0) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail(PTR___stack_chk_guard_00386ea8,
+                     local_8 - *(long *)PTR___stack_chk_guard_00386ea8,0);
+  }
+  return;
+}
+
+
+
+========================================================================
+===== M20BasicPlatRunner  (expected @ 0x277ff4)
+  actual: M20BasicPlatRunner @ 00277ff4
+========================================================================
+
+/* DWARF original prototype: void M20BasicPlatRunner(M20BasicPlatRunner * this, string *
+   policy_name) */
+
+void __thiscall M20BasicPlatRunner::M20BasicPlatRunner(M20BasicPlatRunner *this,string *policy_name)
+
+{
+  CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *pCVar1;
+  CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *pCVar2;
+  char *logid;
+  int __in_chrg;
+  int __in_chrg_00;
+  int __in_chrg_01;
+  int __in_chrg_02;
+  int __in_chrg_03;
+  string *policy_name_local;
+  M20BasicPlatRunner *this_local;
+  Scalar local_8c;
+  Scalar local_88;
+  Scalar local_84;
+  Scalar local_80;
+  Scalar local_7c;
+  Scalar local_78;
+  Scalar local_74;
+  Scalar local_70;
+  Scalar local_6c;
+  Scalar local_68;
+  Scalar local_64;
+  Env local_60;
+  exception *e;
+  CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> CStack_50;
+  string sStack_30;
+  long local_8;
+  
+  local_8 = *(long *)PTR___stack_chk_guard_00386ea8;
+  std::__cxx11::string::string((string *)&sStack_30,(string *)policy_name);
+  PolicyRunnerBase::PolicyRunnerBase(&this->super_PolicyRunnerBase,&sStack_30);
+  std::__cxx11::string::~string((string *)&sStack_30);
+  (this->super_PolicyRunnerBase)._vptr_PolicyRunnerBase =
+       (_func_int_varargs **)(PTR_vtable_00386968 + 0x10);
+  local_68 = 0.04;
+  Eigen::DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator<<
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,
+             (DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)
+             &(this->super_PolicyRunnerBase).vel_delta_const_,&local_68);
+  local_64 = 0.04;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+                     ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,&local_64
+                     );
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0x3da3d70a;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+            (pCVar1,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::~CommaInitializer
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,__in_chrg);
+  local_6c = 80.0;
+  local_68 = 100.0;
+  local_64 = 100.0;
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0;
+  Eigen::Matrix<float,_4,_1,_0,_4,_1>::Matrix
+            ((Matrix<float,_4,_1,_0,_4,_1> *)&sStack_30,&local_6c,&local_68,&local_64,
+             (Scalar *)&local_60);
+  Eigen::DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>::replicate
+            ((Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1> *)&CStack_50,
+             (DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_> *)&sStack_30,4,1);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::Replicate<Eigen::Matrix<float,_4,_1>,__1,__1>_>
+            (&(this->super_PolicyRunnerBase).kp_,
+             (DenseBase<Eigen::Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1>_> *)&CStack_50
+            );
+  local_6c = 2.5;
+  local_68 = 2.5;
+  local_64 = 2.5;
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0x40000000;
+  Eigen::Matrix<float,_4,_1,_0,_4,_1>::Matrix
+            ((Matrix<float,_4,_1,_0,_4,_1> *)&sStack_30,&local_6c,&local_68,&local_64,
+             (Scalar *)&local_60);
+  Eigen::DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>::replicate
+            ((Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1> *)&CStack_50,
+             (DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_> *)&sStack_30,4,1);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::Replicate<Eigen::Matrix<float,_4,_1>,__1,__1>_>
+            (&(this->super_PolicyRunnerBase).kd_,
+             (DenseBase<Eigen::Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1>_> *)&CStack_50
+            );
+  local_68 = 1.5;
+  Eigen::DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator<<
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,
+             (DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)
+             &(this->super_PolicyRunnerBase).max_cmd_vel_,&local_68);
+  local_64 = 0.5;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+                     ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,&local_64
+                     );
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0x3fc00000;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+            (pCVar1,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::~CommaInitializer
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,__in_chrg_00);
+  Eigen::PlainObjectBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::setZero
+            (&(this->super_PolicyRunnerBase).dof_pos_default_.
+              super_PlainObjectBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_>,0xc);
+  local_8c = 0.1;
+  Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator<<
+            (&CStack_50,
+             (DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+             &(this->super_PolicyRunnerBase).dof_pos_default_,&local_8c);
+  local_88 = -0.6;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (&CStack_50,&local_88);
+  local_84 = 1.05;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_84);
+  local_80 = -0.1;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_80);
+  local_7c = -0.6;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_7c);
+  local_78 = 1.05;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_78);
+  local_74 = 0.1;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_74);
+  local_70 = 0.6;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_70);
+  local_6c = -1.05;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_6c);
+  local_68 = -0.1;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_68);
+  local_64 = 0.6;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_64);
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0xbf866666;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+            (pCVar2,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::~CommaInitializer
+            (&CStack_50,__in_chrg_01);
+  logid = (char *)std::__cxx11::string::data();
+  Ort::Env::Env(&local_60,ORT_LOGGING_LEVEL_ERROR,logid);
+  Ort::Env::operator=(&(this->super_PolicyRunnerBase).env_,&local_60);
+  Ort::Env::~Env(&local_60,__in_chrg_02);
+  Ort::Session::Session
+            ((Session *)&CStack_50,&(this->super_PolicyRunnerBase).env_,
+             PTR___policy_policy_ca9bplatform__00385c70,
+             (ulong)*(uint *)PTR___policy_policy_ca9bplatform__len_00385b60,
+             &(this->super_PolicyRunnerBase).session_options_);
+  Ort::Session::operator=(&(this->super_PolicyRunnerBase).session1_,(Session *)&CStack_50);
+  Ort::Session::~Session((Session *)&CStack_50,__in_chrg_03);
+  PolicyRunnerBase::test_policy(&this->super_PolicyRunnerBase);
+  if (local_8 - *(long *)PTR___stack_chk_guard_00386ea8 != 0) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail(PTR___stack_chk_guard_00386ea8,
+                     local_8 - *(long *)PTR___stack_chk_guard_00386ea8,0);
+  }
+  return;
+}
+
+
+
+========================================================================
+===== M20BasicStairRunner  (expected @ 0x2792c0)
+  actual: M20BasicStairRunner @ 002792c0
+========================================================================
+
+/* DWARF original prototype: void M20BasicStairRunner(M20BasicStairRunner * this, string *
+   policy_name) */
+
+void __thiscall
+M20BasicStairRunner::M20BasicStairRunner(M20BasicStairRunner *this,string *policy_name)
+
+{
+  CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *pCVar1;
+  CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *pCVar2;
+  char *logid;
+  int __in_chrg;
+  int __in_chrg_00;
+  int __in_chrg_01;
+  int __in_chrg_02;
+  int __in_chrg_03;
+  int __in_chrg_04;
+  string *policy_name_local;
+  M20BasicStairRunner *this_local;
+  Scalar local_8c;
+  Scalar local_88;
+  Scalar local_84;
+  Scalar local_80;
+  Scalar local_7c;
+  Scalar local_78;
+  Scalar local_74;
+  Scalar local_70;
+  Scalar local_6c;
+  Scalar local_68;
+  Scalar local_64;
+  Env local_60;
+  exception *e;
+  CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> CStack_50;
+  string sStack_30;
+  long local_8;
+  
+  local_8 = *(long *)PTR___stack_chk_guard_00386ea8;
+  std::__cxx11::string::string((string *)&sStack_30,(string *)policy_name);
+  PolicyRunnerBase::PolicyRunnerBase(&this->super_PolicyRunnerBase,&sStack_30);
+  std::__cxx11::string::~string((string *)&sStack_30);
+  (this->super_PolicyRunnerBase)._vptr_PolicyRunnerBase =
+       (_func_int_varargs **)(PTR_vtable_003868a0 + 0x10);
+  (this->super_PolicyRunnerBase).wheel_vel_scale_ = 0.05;
+  local_68 = 0.04;
+  Eigen::DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator<<
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,
+             (DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)
+             &(this->super_PolicyRunnerBase).vel_delta_const_,&local_68);
+  local_64 = 0.04;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+                     ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,&local_64
+                     );
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0x3da3d70a;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+            (pCVar1,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::~CommaInitializer
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,__in_chrg);
+  local_6c = 80.0;
+  local_68 = 80.0;
+  local_64 = 80.0;
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0;
+  Eigen::Matrix<float,_4,_1,_0,_4,_1>::Matrix
+            ((Matrix<float,_4,_1,_0,_4,_1> *)&sStack_30,&local_6c,&local_68,&local_64,
+             (Scalar *)&local_60);
+  Eigen::DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>::replicate
+            ((Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1> *)&CStack_50,
+             (DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_> *)&sStack_30,4,1);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::Replicate<Eigen::Matrix<float,_4,_1>,__1,__1>_>
+            (&(this->super_PolicyRunnerBase).kp_,
+             (DenseBase<Eigen::Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1>_> *)&CStack_50
+            );
+  local_6c = 3.0;
+  local_68 = 3.0;
+  local_64 = 3.0;
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0x3f19999a;
+  Eigen::Matrix<float,_4,_1,_0,_4,_1>::Matrix
+            ((Matrix<float,_4,_1,_0,_4,_1> *)&sStack_30,&local_6c,&local_68,&local_64,
+             (Scalar *)&local_60);
+  Eigen::DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>::replicate
+            ((Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1> *)&CStack_50,
+             (DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_> *)&sStack_30,4,1);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::Replicate<Eigen::Matrix<float,_4,_1>,__1,__1>_>
+            (&(this->super_PolicyRunnerBase).kd_,
+             (DenseBase<Eigen::Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1>_> *)&CStack_50
+            );
+  local_68 = 2.0;
+  Eigen::DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator<<
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,
+             (DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)
+             &(this->super_PolicyRunnerBase).max_cmd_vel_,&local_68);
+  local_64 = 1.0;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+                     ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,&local_64
+                     );
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0x40000000;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+            (pCVar1,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::~CommaInitializer
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,__in_chrg_00);
+  Eigen::PlainObjectBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::setZero
+            (&(this->super_PolicyRunnerBase).dof_pos_default_.
+              super_PlainObjectBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_>,0xc);
+  Eigen::PlainObjectBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::setZero
+            (&(this->super_PolicyRunnerBase).dof_pos_default_trans.
+              super_PlainObjectBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_>,0xc);
+  local_8c = -0.1;
+  Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator<<
+            (&CStack_50,
+             (DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+             &(this->super_PolicyRunnerBase).dof_pos_default_,&local_8c);
+  local_88 = -0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (&CStack_50,&local_88);
+  local_84 = 1.6;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_84);
+  local_80 = 0.1;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_80);
+  local_7c = -0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_7c);
+  local_78 = 1.6;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_78);
+  local_74 = -0.1;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_74);
+  local_70 = 0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_70);
+  local_6c = -1.6;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_6c);
+  local_68 = 0.1;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_68);
+  local_64 = 0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_64);
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0xbfcccccd;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+            (pCVar2,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::~CommaInitializer
+            (&CStack_50,__in_chrg_01);
+  local_8c = -0.1;
+  Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator<<
+            (&CStack_50,
+             (DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+             &(this->super_PolicyRunnerBase).dof_pos_default_trans,&local_8c);
+  local_88 = 0.1;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (&CStack_50,&local_88);
+  local_84 = -0.1;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_84);
+  local_80 = 0.1;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_80);
+  local_7c = -0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_7c);
+  local_78 = -0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_78);
+  local_74 = 0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_74);
+  local_70 = 0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_70);
+  local_6c = 1.6;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_6c);
+  local_68 = 1.6;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_68);
+  local_64 = -1.6;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_64);
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0xbfcccccd;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+            (pCVar2,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::~CommaInitializer
+            (&CStack_50,__in_chrg_02);
+  logid = (char *)std::__cxx11::string::data();
+  Ort::Env::Env(&local_60,ORT_LOGGING_LEVEL_ERROR,logid);
+  Ort::Env::operator=(&(this->super_PolicyRunnerBase).env_,&local_60);
+  Ort::Env::~Env(&local_60,__in_chrg_03);
+  Ort::Session::Session
+            ((Session *)&CStack_50,&(this->super_PolicyRunnerBase).env_,
+             PTR___policy_policy_m20_5__00386d48,
+             (ulong)*(uint *)PTR___policy_policy_m20_5__len_00386178,
+             &(this->super_PolicyRunnerBase).session_options_);
+  Ort::Session::operator=(&(this->super_PolicyRunnerBase).session1_,(Session *)&CStack_50);
+  Ort::Session::~Session((Session *)&CStack_50,__in_chrg_04);
+  PolicyRunnerBase::test_policy(&this->super_PolicyRunnerBase);
+  if (local_8 - *(long *)PTR___stack_chk_guard_00386ea8 != 0) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail(PTR___stack_chk_guard_00386ea8,
+                     local_8 - *(long *)PTR___stack_chk_guard_00386ea8,0);
+  }
+  return;
+}
+
+
+
+========================================================================
+===== M20ExtrePolicyRunner  (expected @ 0x27a8c8)
+  actual: M20ExtrePolicyRunner @ 0027a8c8
+========================================================================
+
+/* DWARF original prototype: void M20ExtrePolicyRunner(M20ExtrePolicyRunner * this, string *
+   policy_name) */
+
+void __thiscall
+M20ExtrePolicyRunner::M20ExtrePolicyRunner(M20ExtrePolicyRunner *this,string *policy_name)
+
+{
+  int iVar1;
+  int iVar2;
+  CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *pCVar3;
+  CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *pCVar4;
+  char *logid;
+  contained_type *info;
+  Scalar *p_data;
+  size_t p_data_element_count;
+  pointer shape;
+  size_type shape_len;
+  int __in_chrg;
+  int __in_chrg_00;
+  int __in_chrg_01;
+  int __in_chrg_02;
+  int __in_chrg_03;
+  int __in_chrg_04;
+  int __in_chrg_05;
+  int __in_chrg_06;
+  string *policy_name_local;
+  M20ExtrePolicyRunner *this_local;
+  Scalar local_a0;
+  Scalar local_9c;
+  Scalar local_98;
+  Scalar local_94;
+  Scalar local_90;
+  Scalar local_8c;
+  Scalar local_88;
+  Scalar local_84;
+  Scalar local_80;
+  Scalar local_7c;
+  Scalar local_78;
+  Scalar local_74;
+  Scalar local_70;
+  Scalar local_6c;
+  Env local_68;
+  Session local_60;
+  exception *e;
+  CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> local_50;
+  string sStack_30;
+  long local_8;
+  
+  local_8 = *(long *)PTR___stack_chk_guard_00386ea8;
+  std::__cxx11::string::string((string *)&sStack_30,(string *)policy_name);
+  PolicyRunnerBase::PolicyRunnerBase(&this->super_PolicyRunnerBase,&sStack_30);
+  std::__cxx11::string::~string((string *)&sStack_30);
+  (this->super_PolicyRunnerBase)._vptr_PolicyRunnerBase =
+       (_func_int_varargs **)(PTR_vtable_00386f98 + 0x10);
+  Eigen::Matrix<float,_3,_1,_0,_3,_1>::Matrix(&this->max_cmd_vel_);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::Matrix(&this->dof_pos_default_2);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::Matrix(&this->output_eigen);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::Matrix(&this->command);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::Matrix(&this->uncertain);
+  Ort::Value::Value(&this->outputTensor,(nullptr_t)0x0);
+  Ort::Value::Value(&this->input_observation_ort,(nullptr_t)0x0);
+  Ort::Value::Value(&this->uncertain_ort,(nullptr_t)0x0);
+  Ort::Value::Value(&this->reflect_ort,(nullptr_t)0x0);
+  Ort::Value::Value(&this->command_ort,(nullptr_t)0x0);
+  Eigen::Matrix<float,_3,_1,_0,_3,_1>::Matrix(&this->jump_max_vel);
+  Eigen::Matrix<float,_3,_1,_0,_3,_1>::Matrix(&this->bip_max_vel);
+  Eigen::Matrix<float,_3,_1,_0,_3,_1>::Matrix(&this->move_max_vel);
+  this->v_acc = 0.1;
+  this->w_acc = 0.1;
+  this->policy_flag = 0.0;
+  this->command_dim = 5;
+  this->num_observation_history = 0x24;
+  this->target_w_limit = 2.8;
+  this->v_x = 0.0;
+  this->v_y = 0.0;
+  this->target_w = 0.0;
+  this->target_height = 0.48;
+  this->gait_freq = 2.0;
+  this->target_wheel_p = 0.3;
+  this->agent_timestep = 0.02;
+  this->input_names_[0] = "state";
+  this->input_names_[1] = "command";
+  this->input_names_[2] = "uncertain";
+  this->output_names_[0] = "output";
+  iVar1 = (this->super_PolicyRunnerBase).act_dim_;
+  (this->outputShape)._M_elems[0] = 1;
+  (this->outputShape)._M_elems[1] = (long)iVar1;
+  (this->uncertainShape)._M_elems[0] = 1;
+  (this->uncertainShape)._M_elems[1] = 1;
+  (this->commandShape)._M_elems[0] = 1;
+  (this->commandShape)._M_elems[1] = 2;
+  iVar1 = this->num_observation_history;
+  iVar2 = (this->super_PolicyRunnerBase).obs_dim_;
+  (this->input_observationShape)._M_elems[0] = 1;
+  (this->input_observationShape)._M_elems[1] = (long)iVar1;
+  (this->input_observationShape)._M_elems[2] = (long)iVar2;
+  (this->super_PolicyRunnerBase).dof_vel_scale_ = 0.1;
+  (this->super_PolicyRunnerBase).wheel_vel_scale_ = 0.033333335;
+  (this->super_PolicyRunnerBase).wheel_action_scale_ = 20.0;
+  Eigen::PlainObjectBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::setZero
+            (&(this->super_PolicyRunnerBase).dof_pos_default_.
+              super_PlainObjectBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_>,
+             (long)(this->super_PolicyRunnerBase).act_dim_);
+  local_a0 = 0.0;
+  Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator<<
+            (&local_50,
+             (DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+             &(this->super_PolicyRunnerBase).dof_pos_default_,&local_a0);
+  local_9c = -1.0;
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (&local_50,&local_9c);
+  local_98 = 1.6;
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar3,&local_98);
+  local_94 = 0.0;
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar3,&local_94);
+  local_90 = 0.0;
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar3,&local_90);
+  local_8c = -1.0;
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar3,&local_8c);
+  local_88 = 1.6;
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar3,&local_88);
+  local_84 = 0.0;
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar3,&local_84);
+  local_80 = 0.0;
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar3,&local_80);
+  local_7c = 1.0;
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar3,&local_7c);
+  local_78 = -1.6;
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar3,&local_78);
+  local_74 = 0.0;
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar3,&local_74);
+  local_70 = 0.0;
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar3,&local_70);
+  local_6c = 1.0;
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar3,&local_6c);
+  local_68.super_Base<OrtEnv>.p_._0_4_ = 0xbfcccccd;
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar3,(Scalar *)&local_68);
+  local_60.super_SessionImpl<OrtSession>.super_ConstSessionImpl<OrtSession>.super_Base<OrtSession>.
+  p_._0_4_ = 0;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+            (pCVar3,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::~CommaInitializer
+            (&local_50,__in_chrg);
+  Eigen::PlainObjectBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::setZero
+            (&(this->dof_pos_default_2).
+              super_PlainObjectBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_>,
+             (long)(this->super_PolicyRunnerBase).act_dim_);
+  local_a0 = 0.0;
+  Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator<<
+            (&local_50,(DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)&this->dof_pos_default_2
+             ,&local_a0);
+  local_9c = -1.0;
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (&local_50,&local_9c);
+  local_98 = 1.6;
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar3,&local_98);
+  local_94 = 0.0;
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar3,&local_94);
+  local_90 = 0.0;
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar3,&local_90);
+  local_8c = -1.0;
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar3,&local_8c);
+  local_88 = 1.6;
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar3,&local_88);
+  local_84 = 0.0;
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar3,&local_84);
+  local_80 = 0.0;
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar3,&local_80);
+  local_7c = -1.0;
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar3,&local_7c);
+  local_78 = 1.6;
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar3,&local_78);
+  local_74 = 0.0;
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar3,&local_74);
+  local_70 = 0.0;
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar3,&local_70);
+  local_6c = -1.0;
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar3,&local_6c);
+  local_68.super_Base<OrtEnv>.p_._0_4_ = 0x3fcccccd;
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar3,(Scalar *)&local_68);
+  local_60.super_SessionImpl<OrtSession>.super_ConstSessionImpl<OrtSession>.super_Base<OrtSession>.
+  p_._0_4_ = 0;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+            (pCVar3,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::~CommaInitializer
+            (&local_50,__in_chrg_00);
+  local_70 = 60.0;
+  local_6c = 60.0;
+  local_68.super_Base<OrtEnv>.p_._0_4_ = 0x42700000;
+  local_60.super_SessionImpl<OrtSession>.super_ConstSessionImpl<OrtSession>.super_Base<OrtSession>.
+  p_._0_4_ = 0;
+  Eigen::Matrix<float,_4,_1,_0,_4,_1>::Matrix
+            ((Matrix<float,_4,_1,_0,_4,_1> *)&sStack_30,&local_70,&local_6c,(Scalar *)&local_68,
+             (Scalar *)&local_60);
+  Eigen::DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>::replicate
+            ((Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1> *)&local_50,
+             (DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_> *)&sStack_30,4,1);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::Replicate<Eigen::Matrix<float,_4,_1>,__1,__1>_>
+            (&(this->super_PolicyRunnerBase).kp_,
+             (DenseBase<Eigen::Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1>_> *)&local_50)
+  ;
+  local_70 = 1.5;
+  local_6c = 1.5;
+  local_68.super_Base<OrtEnv>.p_._0_4_ = 0x3fc00000;
+  local_60.super_SessionImpl<OrtSession>.super_ConstSessionImpl<OrtSession>.super_Base<OrtSession>.
+  p_._0_4_ = 0x3f19999a;
+  Eigen::Matrix<float,_4,_1,_0,_4,_1>::Matrix
+            ((Matrix<float,_4,_1,_0,_4,_1> *)&sStack_30,&local_70,&local_6c,(Scalar *)&local_68,
+             (Scalar *)&local_60);
+  Eigen::DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>::replicate
+            ((Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1> *)&local_50,
+             (DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_> *)&sStack_30,4,1);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::Replicate<Eigen::Matrix<float,_4,_1>,__1,__1>_>
+            (&(this->super_PolicyRunnerBase).kd_,
+             (DenseBase<Eigen::Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1>_> *)&local_50)
+  ;
+  local_6c = 2.0;
+  Eigen::DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator<<
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&local_50,
+             (DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&this->jump_max_vel,&local_6c);
+  local_68.super_Base<OrtEnv>.p_._0_4_ = 0x3f800000;
+  pCVar4 = Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+                     ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&local_50,
+                      (Scalar *)&local_68);
+  local_60.super_SessionImpl<OrtSession>.super_ConstSessionImpl<OrtSession>.super_Base<OrtSession>.
+  p_._0_4_ = 0x40000000;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+            (pCVar4,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::~CommaInitializer
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&local_50,__in_chrg_01);
+  local_6c = 2.0;
+  Eigen::DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator<<
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&local_50,
+             (DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&this->bip_max_vel,&local_6c);
+  local_68.super_Base<OrtEnv>.p_._0_4_ = 0;
+  pCVar4 = Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+                     ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&local_50,
+                      (Scalar *)&local_68);
+  local_60.super_SessionImpl<OrtSession>.super_ConstSessionImpl<OrtSession>.super_Base<OrtSession>.
+  p_._0_4_ = 0x40000000;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+            (pCVar4,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::~CommaInitializer
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&local_50,__in_chrg_02);
+  local_6c = 3.0;
+  Eigen::DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator<<
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&local_50,
+             (DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&this->move_max_vel,&local_6c);
+  local_68.super_Base<OrtEnv>.p_._0_4_ = 0x3f800000;
+  pCVar4 = Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+                     ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&local_50,
+                      (Scalar *)&local_68);
+  local_60.super_SessionImpl<OrtSession>.super_ConstSessionImpl<OrtSession>.super_Base<OrtSession>.
+  p_._0_4_ = 0x40000000;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+            (pCVar4,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::~CommaInitializer
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&local_50,__in_chrg_03);
+  logid = (char *)std::__cxx11::string::data();
+  Ort::Env::Env(&local_68,ORT_LOGGING_LEVEL_ERROR,logid);
+  Ort::Env::operator=(&(this->super_PolicyRunnerBase).env_,&local_68);
+  Ort::Env::~Env(&local_68,__in_chrg_04);
+  Ort::Session::Session
+            (&local_60,&(this->super_PolicyRunnerBase).env_,
+             PTR___policy_m20_forward_policy_2__00386e48,
+             (ulong)*(uint *)PTR___policy_m20_forward_policy_2__len_00385a10,
+             &(this->super_PolicyRunnerBase).session_options_);
+  Ort::Session::operator=(&(this->super_PolicyRunnerBase).session1_,&local_60);
+  Ort::Session::~Session(&local_60,__in_chrg_05);
+  test_policy(this);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::operator=
+            (&(this->super_PolicyRunnerBase).robot_action.kp,&(this->super_PolicyRunnerBase).kp_);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::operator=
+            (&(this->super_PolicyRunnerBase).robot_action.kd,&(this->super_PolicyRunnerBase).kd_);
+  local_50._0_16_ =
+       Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::Zero
+                 ((long)(this->super_PolicyRunnerBase).act_dim_);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::CwiseNullaryOp<Eigen::internal::scalar_zero_op<float>,_Eigen::Matrix<float,__1,_1>_>_>
+            (&(this->super_PolicyRunnerBase).robot_action.tau_ff,
+             (DenseBase<Eigen::CwiseNullaryOp<Eigen::internal::scalar_zero_op<float>,_Eigen::Matrix<float,__1,_1,_0,__1,_1>_>_>
+              *)&local_50);
+  local_50._0_16_ =
+       Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::Zero
+                 ((long)(this->super_PolicyRunnerBase).act_dim_);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::CwiseNullaryOp<Eigen::internal::scalar_zero_op<float>,_Eigen::Matrix<float,__1,_1>_>_>
+            (&(this->super_PolicyRunnerBase).robot_action.goal_joint_pos,
+             (DenseBase<Eigen::CwiseNullaryOp<Eigen::internal::scalar_zero_op<float>,_Eigen::Matrix<float,__1,_1,_0,__1,_1>_>_>
+              *)&local_50);
+  local_50._0_16_ =
+       Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::Zero
+                 ((long)(this->super_PolicyRunnerBase).act_dim_);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::CwiseNullaryOp<Eigen::internal::scalar_zero_op<float>,_Eigen::Matrix<float,__1,_1>_>_>
+            (&(this->super_PolicyRunnerBase).robot_action.goal_joint_vel,
+             (DenseBase<Eigen::CwiseNullaryOp<Eigen::internal::scalar_zero_op<float>,_Eigen::Matrix<float,__1,_1,_0,__1,_1>_>_>
+              *)&local_50);
+  Eigen::PlainObjectBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::setZero
+            (&(this->output_eigen).super_PlainObjectBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_>,
+             (long)(this->super_PolicyRunnerBase).act_dim_);
+  info = Ort::detail::Base<OrtMemoryInfo>::
+         operator_Ort__detail__Base<OrtMemoryInfo>__contained_type_
+                   ((Base<OrtMemoryInfo> *)&(this->super_PolicyRunnerBase).memory_info_);
+  p_data = Eigen::PlainObjectBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::data
+                     (&(this->output_eigen).
+                       super_PlainObjectBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_>);
+  p_data_element_count =
+       Eigen::EigenBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::size
+                 ((EigenBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)&this->output_eigen);
+  shape = std::array<long_int,_2>::data(&this->outputShape);
+  shape_len = std::array<long_int,_2>::size(&this->outputShape);
+  Ort::Value::CreateTensor<float>(info,p_data,p_data_element_count,shape,shape_len);
+  Ort::Value::operator=(&this->outputTensor,(Value *)&local_50);
+  Ort::Value::~Value((Value *)&local_50,__in_chrg_06);
+  if (local_8 - *(long *)PTR___stack_chk_guard_00386ea8 != 0) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail(PTR___stack_chk_guard_00386ea8,
+                     local_8 - *(long *)PTR___stack_chk_guard_00386ea8,0);
+  }
+  return;
+}
+
+
+
+========================================================================
+===== M20FinetuneStandRunner  (expected @ 0x282de0)
+  actual: M20FinetuneStandRunner @ 00282de0
+========================================================================
+
+/* DWARF original prototype: void M20FinetuneStandRunner(M20FinetuneStandRunner * this, string *
+   policy_name) */
+
+void __thiscall
+M20FinetuneStandRunner::M20FinetuneStandRunner(M20FinetuneStandRunner *this,string *policy_name)
+
+{
+  int iVar1;
+  int iVar2;
+  CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *pCVar3;
+  CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *pCVar4;
+  CommaInitializer<Eigen::Matrix<float,_4,_3,_0,_4,_3>_> *pCVar5;
+  char *logid;
+  contained_type *info;
+  Scalar *p_data;
+  size_t p_data_element_count;
+  pointer shape;
+  size_type shape_len;
+  int __in_chrg;
+  int __in_chrg_00;
+  int __in_chrg_01;
+  int __in_chrg_02;
+  int __in_chrg_03;
+  int __in_chrg_04;
+  int __in_chrg_05;
+  double dVar6;
+  string *policy_name_local;
+  M20FinetuneStandRunner *this_local;
+  Scalar local_a0;
+  Scalar local_9c;
+  Scalar local_98;
+  Scalar local_94;
+  Scalar local_90;
+  Scalar local_8c;
+  Scalar local_88;
+  Scalar local_84;
+  Scalar local_80;
+  Scalar local_7c;
+  Scalar local_78;
+  Scalar local_74;
+  Scalar local_70;
+  Scalar local_6c;
+  Env local_68;
+  Session local_60;
+  exception *e;
+  CommaInitializer<Eigen::Matrix<float,_4,_3,_0,_4,_3>_> local_50;
+  string sStack_30;
+  long local_8;
+  
+  local_8 = *(long *)PTR___stack_chk_guard_00386ea8;
+  std::__cxx11::string::string((string *)&sStack_30,(string *)policy_name);
+  PolicyRunnerBase::PolicyRunnerBase(&this->super_PolicyRunnerBase,&sStack_30);
+  std::__cxx11::string::~string((string *)&sStack_30);
+  (this->super_PolicyRunnerBase)._vptr_PolicyRunnerBase =
+       (_func_int_varargs **)(PTR_vtable_00386d70 + 0x10);
+  Eigen::Matrix<float,_3,_1,_0,_3,_1>::Matrix(&this->rotate_max_angle);
+  Eigen::Matrix<float,_3,_1,_0,_3,_1>::Matrix(&this->shift_max_dis);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::Matrix(&this->projected_gravity);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::Matrix(&this->output_eigen);
+  Ort::Value::Value(&this->outputTensor,(nullptr_t)0x0);
+  Ort::Value::Value(&this->input_observation_ort,(nullptr_t)0x0);
+  Ort::Value::Value(&this->uncertain_ort,(nullptr_t)0x0);
+  Ort::Value::Value(&this->reflect_ort,(nullptr_t)0x0);
+  Ort::Value::Value(&this->command_ort,(nullptr_t)0x0);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::Matrix(&this->command);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::Matrix(&this->uncertain);
+  Eigen::Matrix<float,_4,_3,_0,_4,_3>::Matrix(&this->default_wheel_p);
+  Eigen::Matrix<float,_4,_3,_0,_4,_3>::Matrix(&this->wheel_p);
+  Eigen::Matrix<float,_3,_3,_0,_3,_3>::Matrix(&this->Rotate_R);
+  this->v_acc = 0.1;
+  this->w_acc = 0.1;
+  this->command_dim = 0x15;
+  this->num_observation_history = 0x24;
+  this->time_step = 0.0;
+  this->gait_freq = 1.0;
+  this->half_gait_T = (1.0 / this->gait_freq) / 2.0;
+  dVar6 = (double)this->gait_freq * DAT_002f15c8;
+  this->gait_w = (float)(dVar6 + dVar6);
+  this->is_fallen = true;
+  this->has_fallen = false;
+  this->running_time = 0;
+  this->policy_flag = -1;
+  this->fallen_time = 0;
+  this->v_x = 0.0;
+  this->v_y = 0.0;
+  this->target_w = 0.0;
+  this->agent_timestep = 0.02;
+  this->input_names_[0] = "state";
+  this->input_names_[1] = "command";
+  this->input_names_[2] = "uncertain";
+  this->output_names_[0] = "output";
+  iVar1 = (this->super_PolicyRunnerBase).act_dim_;
+  (this->outputShape)._M_elems[0] = 1;
+  (this->outputShape)._M_elems[1] = (long)iVar1;
+  (this->uncertainShape)._M_elems[0] = 1;
+  (this->uncertainShape)._M_elems[1] = 1;
+  (this->commandShape)._M_elems[0] = 1;
+  (this->commandShape)._M_elems[1] = 2;
+  iVar1 = this->num_observation_history;
+  iVar2 = (this->super_PolicyRunnerBase).obs_dim_;
+  (this->input_observationShape)._M_elems[0] = 1;
+  (this->input_observationShape)._M_elems[1] = (long)iVar1;
+  (this->input_observationShape)._M_elems[2] = (long)iVar2;
+  (this->super_PolicyRunnerBase).dof_vel_scale_ = 0.1;
+  (this->super_PolicyRunnerBase).wheel_vel_scale_ = 0.033333335;
+  (this->super_PolicyRunnerBase).wheel_action_scale_ = 20.0;
+  local_6c = 14.5;
+  Eigen::DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator<<
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&local_50,
+             (DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&this->rotate_max_angle,&local_6c);
+  local_68.super_Base<OrtEnv>.p_._0_4_ = 0x41c40000;
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+                     ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&local_50,
+                      (Scalar *)&local_68);
+  local_60.super_SessionImpl<OrtSession>.super_ConstSessionImpl<OrtSession>.super_Base<OrtSession>.
+  p_._0_4_ = 0x41c40000;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+            (pCVar3,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::~CommaInitializer
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&local_50,__in_chrg);
+  local_6c = 0.145;
+  Eigen::DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator<<
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&local_50,
+             (DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&this->shift_max_dis,&local_6c);
+  local_68.super_Base<OrtEnv>.p_._0_4_ = 0x3dcccccd;
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+                     ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&local_50,
+                      (Scalar *)&local_68);
+  local_60.super_SessionImpl<OrtSession>.super_ConstSessionImpl<OrtSession>.super_Base<OrtSession>.
+  p_._0_4_ = 0;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+            (pCVar3,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::~CommaInitializer
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&local_50,__in_chrg_00);
+  Eigen::PlainObjectBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::setZero
+            (&(this->super_PolicyRunnerBase).dof_pos_default_.
+              super_PlainObjectBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_>,
+             (long)(this->super_PolicyRunnerBase).act_dim_);
+  local_a0 = 0.0;
+  Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator<<
+            ((CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)&local_50,
+             (DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+             &(this->super_PolicyRunnerBase).dof_pos_default_,&local_a0);
+  local_9c = -0.65;
+  pCVar4 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     ((CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)&local_50,
+                      &local_9c);
+  local_98 = 1.3;
+  pCVar4 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar4,&local_98);
+  local_94 = 0.0;
+  pCVar4 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar4,&local_94);
+  local_90 = 0.0;
+  pCVar4 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar4,&local_90);
+  local_8c = -0.65;
+  pCVar4 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar4,&local_8c);
+  local_88 = 1.3;
+  pCVar4 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar4,&local_88);
+  local_84 = 0.0;
+  pCVar4 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar4,&local_84);
+  local_80 = 0.0;
+  pCVar4 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar4,&local_80);
+  local_7c = 0.65;
+  pCVar4 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar4,&local_7c);
+  local_78 = -1.3;
+  pCVar4 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar4,&local_78);
+  local_74 = 0.0;
+  pCVar4 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar4,&local_74);
+  local_70 = 0.0;
+  pCVar4 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar4,&local_70);
+  local_6c = 0.65;
+  pCVar4 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar4,&local_6c);
+  local_68.super_Base<OrtEnv>.p_._0_4_ = 0xbfa66666;
+  pCVar4 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar4,(Scalar *)&local_68);
+  local_60.super_SessionImpl<OrtSession>.super_ConstSessionImpl<OrtSession>.super_Base<OrtSession>.
+  p_._0_4_ = 0;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+            (pCVar4,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::~CommaInitializer
+            ((CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)&local_50,__in_chrg_01);
+  local_90 = 0.3141;
+  Eigen::DenseBase<Eigen::Matrix<float,_4,_3,_0,_4,_3>_>::operator<<
+            (&local_50,(DenseBase<Eigen::Matrix<float,_4,_3,_0,_4,_3>_> *)&this->default_wheel_p,
+             &local_90);
+  local_8c = 0.2;
+  pCVar5 = Eigen::CommaInitializer<Eigen::Matrix<float,_4,_3,_0,_4,_3>_>::operator_
+                     (&local_50,&local_8c);
+  local_88 = 0.0;
+  pCVar5 = Eigen::CommaInitializer<Eigen::Matrix<float,_4,_3,_0,_4,_3>_>::operator_
+                     (pCVar5,&local_88);
+  local_84 = 0.3141;
+  pCVar5 = Eigen::CommaInitializer<Eigen::Matrix<float,_4,_3,_0,_4,_3>_>::operator_
+                     (pCVar5,&local_84);
+  local_80 = -0.2;
+  pCVar5 = Eigen::CommaInitializer<Eigen::Matrix<float,_4,_3,_0,_4,_3>_>::operator_
+                     (pCVar5,&local_80);
+  local_7c = 0.0;
+  pCVar5 = Eigen::CommaInitializer<Eigen::Matrix<float,_4,_3,_0,_4,_3>_>::operator_
+                     (pCVar5,&local_7c);
+  local_78 = -0.3141;
+  pCVar5 = Eigen::CommaInitializer<Eigen::Matrix<float,_4,_3,_0,_4,_3>_>::operator_
+                     (pCVar5,&local_78);
+  local_74 = 0.2;
+  pCVar5 = Eigen::CommaInitializer<Eigen::Matrix<float,_4,_3,_0,_4,_3>_>::operator_
+                     (pCVar5,&local_74);
+  local_70 = 0.0;
+  pCVar5 = Eigen::CommaInitializer<Eigen::Matrix<float,_4,_3,_0,_4,_3>_>::operator_
+                     (pCVar5,&local_70);
+  local_6c = -0.3141;
+  pCVar5 = Eigen::CommaInitializer<Eigen::Matrix<float,_4,_3,_0,_4,_3>_>::operator_
+                     (pCVar5,&local_6c);
+  local_68.super_Base<OrtEnv>.p_._0_4_ = 0xbe4ccccd;
+  pCVar5 = Eigen::CommaInitializer<Eigen::Matrix<float,_4,_3,_0,_4,_3>_>::operator_
+                     (pCVar5,(Scalar *)&local_68);
+  local_60.super_SessionImpl<OrtSession>.super_ConstSessionImpl<OrtSession>.super_Base<OrtSession>.
+  p_._0_4_ = 0;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_4,_3,_0,_4,_3>_>::operator_
+            (pCVar5,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_4,_3,_0,_4,_3>_>::~CommaInitializer
+            (&local_50,__in_chrg_02);
+  local_70 = 60.0;
+  local_6c = 60.0;
+  local_68.super_Base<OrtEnv>.p_._0_4_ = 0x42700000;
+  local_60.super_SessionImpl<OrtSession>.super_ConstSessionImpl<OrtSession>.super_Base<OrtSession>.
+  p_._0_4_ = 0;
+  Eigen::Matrix<float,_4,_1,_0,_4,_1>::Matrix
+            ((Matrix<float,_4,_1,_0,_4,_1> *)&sStack_30,&local_70,&local_6c,(Scalar *)&local_68,
+             (Scalar *)&local_60);
+  Eigen::DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>::replicate
+            ((Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1> *)&local_50,
+             (DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_> *)&sStack_30,4,1);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::Replicate<Eigen::Matrix<float,_4,_1>,__1,__1>_>
+            (&(this->super_PolicyRunnerBase).kp_,
+             (DenseBase<Eigen::Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1>_> *)&local_50)
+  ;
+  local_70 = 1.5;
+  local_6c = 1.5;
+  local_68.super_Base<OrtEnv>.p_._0_4_ = 0x3fc00000;
+  local_60.super_SessionImpl<OrtSession>.super_ConstSessionImpl<OrtSession>.super_Base<OrtSession>.
+  p_._0_4_ = 0x3f800000;
+  Eigen::Matrix<float,_4,_1,_0,_4,_1>::Matrix
+            ((Matrix<float,_4,_1,_0,_4,_1> *)&sStack_30,&local_70,&local_6c,(Scalar *)&local_68,
+             (Scalar *)&local_60);
+  Eigen::DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>::replicate
+            ((Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1> *)&local_50,
+             (DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_> *)&sStack_30,4,1);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::Replicate<Eigen::Matrix<float,_4,_1>,__1,__1>_>
+            (&(this->super_PolicyRunnerBase).kd_,
+             (DenseBase<Eigen::Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1>_> *)&local_50)
+  ;
+  logid = (char *)std::__cxx11::string::data();
+  Ort::Env::Env(&local_68,ORT_LOGGING_LEVEL_ERROR,logid);
+  Ort::Env::operator=(&(this->super_PolicyRunnerBase).env_,&local_68);
+  Ort::Env::~Env(&local_68,__in_chrg_03);
+  Ort::Session::Session
+            (&local_60,&(this->super_PolicyRunnerBase).env_,PTR___policy_m20_sixaxis_stand__003863c0
+             ,(ulong)*(uint *)PTR___policy_m20_sixaxis_stand__len_00386898,
+             &(this->super_PolicyRunnerBase).session_options_);
+  Ort::Session::operator=(&(this->super_PolicyRunnerBase).session1_,&local_60);
+  Ort::Session::~Session(&local_60,__in_chrg_04);
+  test_policy(this);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::operator=
+            (&(this->super_PolicyRunnerBase).robot_action.kp,&(this->super_PolicyRunnerBase).kp_);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::operator=
+            (&(this->super_PolicyRunnerBase).robot_action.kd,&(this->super_PolicyRunnerBase).kd_);
+  local_50._0_16_ =
+       Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::Zero
+                 ((long)(this->super_PolicyRunnerBase).act_dim_);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::CwiseNullaryOp<Eigen::internal::scalar_zero_op<float>,_Eigen::Matrix<float,__1,_1>_>_>
+            (&(this->super_PolicyRunnerBase).robot_action.tau_ff,
+             (DenseBase<Eigen::CwiseNullaryOp<Eigen::internal::scalar_zero_op<float>,_Eigen::Matrix<float,__1,_1,_0,__1,_1>_>_>
+              *)&local_50);
+  local_50._0_16_ =
+       Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::Zero
+                 ((long)(this->super_PolicyRunnerBase).act_dim_);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::CwiseNullaryOp<Eigen::internal::scalar_zero_op<float>,_Eigen::Matrix<float,__1,_1>_>_>
+            (&(this->super_PolicyRunnerBase).robot_action.goal_joint_pos,
+             (DenseBase<Eigen::CwiseNullaryOp<Eigen::internal::scalar_zero_op<float>,_Eigen::Matrix<float,__1,_1,_0,__1,_1>_>_>
+              *)&local_50);
+  local_50._0_16_ =
+       Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::Zero
+                 ((long)(this->super_PolicyRunnerBase).act_dim_);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::CwiseNullaryOp<Eigen::internal::scalar_zero_op<float>,_Eigen::Matrix<float,__1,_1>_>_>
+            (&(this->super_PolicyRunnerBase).robot_action.goal_joint_vel,
+             (DenseBase<Eigen::CwiseNullaryOp<Eigen::internal::scalar_zero_op<float>,_Eigen::Matrix<float,__1,_1,_0,__1,_1>_>_>
+              *)&local_50);
+  Eigen::PlainObjectBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::setZero
+            (&(this->output_eigen).super_PlainObjectBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_>,
+             (long)(this->super_PolicyRunnerBase).act_dim_);
+  info = Ort::detail::Base<OrtMemoryInfo>::
+         operator_Ort__detail__Base<OrtMemoryInfo>__contained_type_
+                   ((Base<OrtMemoryInfo> *)&(this->super_PolicyRunnerBase).memory_info_);
+  p_data = Eigen::PlainObjectBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::data
+                     (&(this->output_eigen).
+                       super_PlainObjectBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_>);
+  p_data_element_count =
+       Eigen::EigenBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::size
+                 ((EigenBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)&this->output_eigen);
+  shape = std::array<long_int,_2>::data(&this->outputShape);
+  shape_len = std::array<long_int,_2>::size(&this->outputShape);
+  Ort::Value::CreateTensor<float>(info,p_data,p_data_element_count,shape,shape_len);
+  Ort::Value::operator=(&this->outputTensor,(Value *)&local_50);
+  Ort::Value::~Value((Value *)&local_50,__in_chrg_05);
+  if (local_8 - *(long *)PTR___stack_chk_guard_00386ea8 != 0) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail(PTR___stack_chk_guard_00386ea8,
+                     local_8 - *(long *)PTR___stack_chk_guard_00386ea8,0);
+  }
+  return;
+}
+
+
+
+========================================================================
+===== M20HeightGapPolicyRunner  (expected @ 0x28a840)
+  actual: M20HeightGapPolicyRunner @ 0028a840
+========================================================================
+
+/* DWARF original prototype: void M20HeightGapPolicyRunner(M20HeightGapPolicyRunner * this, string *
+   policy_name) */
+
+void __thiscall
+M20HeightGapPolicyRunner::M20HeightGapPolicyRunner
+          (M20HeightGapPolicyRunner *this,string *policy_name)
+
+{
+  CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *pCVar1;
+  CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *pCVar2;
+  char *logid;
+  int __in_chrg;
+  int __in_chrg_00;
+  int __in_chrg_01;
+  int __in_chrg_02;
+  int __in_chrg_03;
+  int __in_chrg_04;
+  string *policy_name_local;
+  M20HeightGapPolicyRunner *this_local;
+  Scalar local_8c;
+  Scalar local_88;
+  Scalar local_84;
+  Scalar local_80;
+  Scalar local_7c;
+  Scalar local_78;
+  Scalar local_74;
+  Scalar local_70;
+  Scalar local_6c;
+  Scalar local_68;
+  Scalar local_64;
+  Env local_60;
+  exception *e;
+  CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> CStack_50;
+  string sStack_30;
+  long local_8;
+  
+  local_8 = *(long *)PTR___stack_chk_guard_00386ea8;
+  std::__cxx11::string::string((string *)&sStack_30,(string *)policy_name);
+  PolicyRunnerBase::PolicyRunnerBase(&this->super_PolicyRunnerBase,&sStack_30);
+  std::__cxx11::string::~string((string *)&sStack_30);
+  (this->super_PolicyRunnerBase)._vptr_PolicyRunnerBase =
+       (_func_int_varargs **)(PTR_vtable_00386c90 + 0x10);
+  Eigen::Matrix<float,_-1,_-1,_0,_-1,_-1>::Matrix(&this->hmap_data);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::Matrix(&this->eigen_data);
+  Ort::Session::Session(&this->hmap_motion_session_,(nullptr_t)0x0);
+  this->x_points_num = 0x29;
+  this->y_points_num = 0xb;
+  this->hmap_data_scale_ = 5.0;
+  this->input_names_[0] = "state";
+  this->output_names_[0] = "output";
+  (this->super_PolicyRunnerBase).obs_dim_ = this->x_points_num * this->y_points_num + 0x35;
+  (this->super_PolicyRunnerBase).obs_total_dim_ =
+       (this->super_PolicyRunnerBase).obs_dim_ * (this->super_PolicyRunnerBase).obs_history_num_ +
+       (this->super_PolicyRunnerBase).obs_dim_;
+  local_6c = 80.0;
+  local_68 = 80.0;
+  local_64 = 120.0;
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0;
+  Eigen::Matrix<float,_4,_1,_0,_4,_1>::Matrix
+            ((Matrix<float,_4,_1,_0,_4,_1> *)&sStack_30,&local_6c,&local_68,&local_64,
+             (Scalar *)&local_60);
+  Eigen::DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>::replicate
+            ((Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1> *)&CStack_50,
+             (DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_> *)&sStack_30,4,1);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::Replicate<Eigen::Matrix<float,_4,_1>,__1,__1>_>
+            (&(this->super_PolicyRunnerBase).kp_,
+             (DenseBase<Eigen::Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1>_> *)&CStack_50
+            );
+  local_6c = 3.0;
+  local_68 = 3.0;
+  local_64 = 4.0;
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0x3f19999a;
+  Eigen::Matrix<float,_4,_1,_0,_4,_1>::Matrix
+            ((Matrix<float,_4,_1,_0,_4,_1> *)&sStack_30,&local_6c,&local_68,&local_64,
+             (Scalar *)&local_60);
+  Eigen::DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>::replicate
+            ((Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1> *)&CStack_50,
+             (DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_> *)&sStack_30,4,1);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::Replicate<Eigen::Matrix<float,_4,_1>,__1,__1>_>
+            (&(this->super_PolicyRunnerBase).kd_,
+             (DenseBase<Eigen::Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1>_> *)&CStack_50
+            );
+  local_68 = 2.0;
+  Eigen::DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator<<
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,
+             (DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)
+             &(this->super_PolicyRunnerBase).max_cmd_vel_,&local_68);
+  local_64 = 0.5;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+                     ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,&local_64
+                     );
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0x3fc00000;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+            (pCVar1,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::~CommaInitializer
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,__in_chrg);
+  Eigen::PlainObjectBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::setZero
+            (&(this->super_PolicyRunnerBase).dof_pos_default_.
+              super_PlainObjectBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_>,0xc);
+  local_8c = 0.0;
+  Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator<<
+            (&CStack_50,
+             (DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+             &(this->super_PolicyRunnerBase).dof_pos_default_,&local_8c);
+  local_88 = -0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (&CStack_50,&local_88);
+  local_84 = 1.6;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_84);
+  local_80 = 0.0;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_80);
+  local_7c = -0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_7c);
+  local_78 = 1.6;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_78);
+  local_74 = 0.0;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_74);
+  local_70 = 0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_70);
+  local_6c = -1.6;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_6c);
+  local_68 = 0.0;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_68);
+  local_64 = 0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_64);
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0xbfcccccd;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+            (pCVar2,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::~CommaInitializer
+            (&CStack_50,__in_chrg_00);
+  Eigen::PlainObjectBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::setZero
+            (&(this->super_PolicyRunnerBase).dof_pos_default_trans.
+              super_PlainObjectBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_>,0xc);
+  local_8c = 0.0;
+  Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator<<
+            (&CStack_50,
+             (DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+             &(this->super_PolicyRunnerBase).dof_pos_default_trans,&local_8c);
+  local_88 = 0.0;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (&CStack_50,&local_88);
+  local_84 = 0.0;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_84);
+  local_80 = 0.0;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_80);
+  local_7c = -0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_7c);
+  local_78 = -0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_78);
+  local_74 = 0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_74);
+  local_70 = 0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_70);
+  local_6c = 1.6;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_6c);
+  local_68 = 1.6;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_68);
+  local_64 = -1.6;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_64);
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0xbfcccccd;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+            (pCVar2,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::~CommaInitializer
+            (&CStack_50,__in_chrg_01);
+  local_68 = 0.04;
+  Eigen::DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator<<
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,
+             (DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)
+             &(this->super_PolicyRunnerBase).vel_delta_const_,&local_68);
+  local_64 = 0.04;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+                     ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,&local_64
+                     );
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0x3da3d70a;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+            (pCVar1,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::~CommaInitializer
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,__in_chrg_02);
+  Eigen::PlainObjectBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::setZero
+            (&(this->eigen_data).super_PlainObjectBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_>,
+             (long)(this->x_points_num * this->y_points_num));
+  logid = (char *)std::__cxx11::string::data();
+  Ort::Env::Env(&local_60,ORT_LOGGING_LEVEL_ERROR,logid);
+  Ort::Env::operator=(&(this->super_PolicyRunnerBase).env_,&local_60);
+  Ort::Env::~Env(&local_60,__in_chrg_03);
+  Ort::Session::Session
+            ((Session *)&CStack_50,&(this->super_PolicyRunnerBase).env_,
+             PTR___policy_m20_hmap_motion_v0_2__00386770,
+             (ulong)*(uint *)PTR___policy_m20_hmap_motion_v0_2__len_003865a8,
+             &(this->super_PolicyRunnerBase).session_options_);
+  Ort::Session::operator=(&(this->super_PolicyRunnerBase).session1_,(Session *)&CStack_50);
+  Ort::Session::~Session((Session *)&CStack_50,__in_chrg_04);
+  test_policy(this);
+  if (local_8 - *(long *)PTR___stack_chk_guard_00386ea8 != 0) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail(PTR___stack_chk_guard_00386ea8,
+                     local_8 - *(long *)PTR___stack_chk_guard_00386ea8,0);
+  }
+  return;
+}
+
+
+
+========================================================================
+===== M20NaviChargePolicyRunner  (expected @ 0x28e4e4)
+  actual: M20NaviChargePolicyRunner @ 0028e4e4
+========================================================================
+
+/* DWARF original prototype: void M20NaviChargePolicyRunner(M20NaviChargePolicyRunner * this, string
+   * policy_name) */
+
+void __thiscall
+M20NaviChargePolicyRunner::M20NaviChargePolicyRunner
+          (M20NaviChargePolicyRunner *this,string *policy_name)
+
+{
+  CommaInitializer<Eigen::Matrix<float,_5,_1,_0,_5,_1>_> *pCVar1;
+  CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *this_00;
+  CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *pCVar2;
+  char *logid;
+  int __in_chrg;
+  int __in_chrg_00;
+  int __in_chrg_01;
+  int __in_chrg_02;
+  int __in_chrg_03;
+  int __in_chrg_04;
+  string *policy_name_local;
+  M20NaviChargePolicyRunner *this_local;
+  Scalar local_8c;
+  Scalar local_88;
+  Scalar local_84;
+  Scalar local_80;
+  Scalar local_7c;
+  Scalar local_78;
+  Scalar local_74;
+  Scalar local_70;
+  Scalar local_6c;
+  Scalar local_68;
+  Scalar local_64;
+  Env local_60;
+  exception *e;
+  CommaInitializer<Eigen::Matrix<float,_5,_1,_0,_5,_1>_> CStack_50;
+  string sStack_30;
+  long local_8;
+  
+  local_8 = *(long *)PTR___stack_chk_guard_00386ea8;
+  std::__cxx11::string::string((string *)&sStack_30,(string *)policy_name);
+  PolicyRunnerBase::PolicyRunnerBase(&this->super_PolicyRunnerBase,&sStack_30);
+  std::__cxx11::string::~string((string *)&sStack_30);
+  (this->super_PolicyRunnerBase)._vptr_PolicyRunnerBase =
+       (_func_int_varargs **)(PTR_vtable_00386b88 + 0x10);
+  Eigen::Matrix<float,_5,_1,_0,_5,_1>::Matrix(&this->gait_commands);
+  (this->super_PolicyRunnerBase).obs_dim_ = 0x3c;
+  (this->super_PolicyRunnerBase).obs_total_dim_ =
+       (this->super_PolicyRunnerBase).obs_dim_ +
+       (this->super_PolicyRunnerBase).obs_dim_ * (this->super_PolicyRunnerBase).obs_history_num_;
+  local_70 = 1.5;
+  Eigen::DenseBase<Eigen::Matrix<float,_5,_1,_0,_5,_1>_>::operator<<
+            (&CStack_50,(DenseBase<Eigen::Matrix<float,_5,_1,_0,_5,_1>_> *)&this->gait_commands,
+             &local_70);
+  local_6c = 0.5;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_5,_1,_0,_5,_1>_>::operator_
+                     (&CStack_50,&local_6c);
+  local_68 = 0.0;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_5,_1,_0,_5,_1>_>::operator_
+                     (pCVar1,&local_68);
+  local_64 = 0.0;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_5,_1,_0,_5,_1>_>::operator_
+                     (pCVar1,&local_64);
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0x3f000000;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_5,_1,_0,_5,_1>_>::operator_
+            (pCVar1,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_5,_1,_0,_5,_1>_>::~CommaInitializer
+            (&CStack_50,__in_chrg);
+  local_6c = 60.0;
+  local_68 = 60.0;
+  local_64 = 60.0;
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0;
+  Eigen::Matrix<float,_4,_1,_0,_4,_1>::Matrix
+            ((Matrix<float,_4,_1,_0,_4,_1> *)&sStack_30,&local_6c,&local_68,&local_64,
+             (Scalar *)&local_60);
+  Eigen::DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>::replicate
+            ((Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1> *)&CStack_50,
+             (DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_> *)&sStack_30,4,1);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::Replicate<Eigen::Matrix<float,_4,_1>,__1,__1>_>
+            (&(this->super_PolicyRunnerBase).kp_,
+             (DenseBase<Eigen::Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1>_> *)&CStack_50
+            );
+  local_6c = 1.5;
+  local_68 = 1.5;
+  local_64 = 1.5;
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0x3f19999a;
+  Eigen::Matrix<float,_4,_1,_0,_4,_1>::Matrix
+            ((Matrix<float,_4,_1,_0,_4,_1> *)&sStack_30,&local_6c,&local_68,&local_64,
+             (Scalar *)&local_60);
+  Eigen::DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>::replicate
+            ((Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1> *)&CStack_50,
+             (DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_> *)&sStack_30,4,1);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::Replicate<Eigen::Matrix<float,_4,_1>,__1,__1>_>
+            (&(this->super_PolicyRunnerBase).kd_,
+             (DenseBase<Eigen::Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1>_> *)&CStack_50
+            );
+  local_68 = 0.5;
+  Eigen::DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator<<
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,
+             (DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)
+             &(this->super_PolicyRunnerBase).max_cmd_vel_,&local_68);
+  local_64 = 0.3;
+  this_00 = Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+                      ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,
+                       &local_64);
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0x3f000000;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+            (this_00,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::~CommaInitializer
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,__in_chrg_00);
+  Eigen::PlainObjectBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::setZero
+            (&(this->super_PolicyRunnerBase).dof_pos_default_.
+              super_PlainObjectBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_>,0xc);
+  local_8c = 0.0;
+  Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator<<
+            ((CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)&CStack_50,
+             (DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+             &(this->super_PolicyRunnerBase).dof_pos_default_,&local_8c);
+  local_88 = -0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     ((CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)&CStack_50,
+                      &local_88);
+  local_84 = 1.6;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_84);
+  local_80 = 0.0;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_80);
+  local_7c = -0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_7c);
+  local_78 = 1.6;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_78);
+  local_74 = 0.0;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_74);
+  local_70 = 0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_70);
+  local_6c = -1.6;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_6c);
+  local_68 = 0.0;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_68);
+  local_64 = 0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_64);
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0xbfcccccd;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+            (pCVar2,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::~CommaInitializer
+            ((CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)&CStack_50,__in_chrg_01);
+  Eigen::PlainObjectBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::setZero
+            (&(this->super_PolicyRunnerBase).dof_pos_default_trans.
+              super_PlainObjectBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_>,0xc);
+  local_8c = 0.0;
+  Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator<<
+            ((CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)&CStack_50,
+             (DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+             &(this->super_PolicyRunnerBase).dof_pos_default_trans,&local_8c);
+  local_88 = 0.0;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     ((CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)&CStack_50,
+                      &local_88);
+  local_84 = 0.0;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_84);
+  local_80 = 0.0;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_80);
+  local_7c = -0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_7c);
+  local_78 = -0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_78);
+  local_74 = 0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_74);
+  local_70 = 0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_70);
+  local_6c = 1.6;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_6c);
+  local_68 = 1.6;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_68);
+  local_64 = -1.6;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_64);
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0xbfcccccd;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+            (pCVar2,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::~CommaInitializer
+            ((CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)&CStack_50,__in_chrg_02);
+  logid = (char *)std::__cxx11::string::data();
+  Ort::Env::Env(&local_60,ORT_LOGGING_LEVEL_ERROR,logid);
+  Ort::Env::operator=(&(this->super_PolicyRunnerBase).env_,&local_60);
+  Ort::Env::~Env(&local_60,__in_chrg_03);
+  Ort::Session::Session
+            ((Session *)&CStack_50,&(this->super_PolicyRunnerBase).env_,
+             PTR___policy_m20_navi_charge_v3_29__00386540,
+             (ulong)*(uint *)PTR___policy_m20_navi_charge_v3_29__len_003863a0,
+             &(this->super_PolicyRunnerBase).session_options_);
+  Ort::Session::operator=(&(this->super_PolicyRunnerBase).session1_,(Session *)&CStack_50);
+  Ort::Session::~Session((Session *)&CStack_50,__in_chrg_04);
+  PolicyRunnerBase::test_policy(&this->super_PolicyRunnerBase);
+  if (local_8 - *(long *)PTR___stack_chk_guard_00386ea8 != 0) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail(PTR___stack_chk_guard_00386ea8,
+                     local_8 - *(long *)PTR___stack_chk_guard_00386ea8,0);
+  }
+  return;
+}
+
+
+
+========================================================================
+===== M20NaviFlatPolicyRunner  (expected @ 0x2919d8)
+  actual: M20NaviFlatPolicyRunner @ 002919d8
+========================================================================
+
+/* DWARF original prototype: void M20NaviFlatPolicyRunner(M20NaviFlatPolicyRunner * this, string *
+   policy_name) */
+
+void __thiscall
+M20NaviFlatPolicyRunner::M20NaviFlatPolicyRunner(M20NaviFlatPolicyRunner *this,string *policy_name)
+
+{
+  CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *this_00;
+  CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *pCVar1;
+  char *logid;
+  int __in_chrg;
+  int __in_chrg_00;
+  int __in_chrg_01;
+  int __in_chrg_02;
+  int __in_chrg_03;
+  string *policy_name_local;
+  M20NaviFlatPolicyRunner *this_local;
+  Scalar local_8c;
+  Scalar local_88;
+  Scalar local_84;
+  Scalar local_80;
+  Scalar local_7c;
+  Scalar local_78;
+  Scalar local_74;
+  Scalar local_70;
+  Scalar local_6c;
+  Scalar local_68;
+  Scalar local_64;
+  Env local_60;
+  exception *e;
+  CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> CStack_50;
+  string sStack_30;
+  long local_8;
+  
+  local_8 = *(long *)PTR___stack_chk_guard_00386ea8;
+  std::__cxx11::string::string((string *)&sStack_30,(string *)policy_name);
+  PolicyRunnerBase::PolicyRunnerBase(&this->super_PolicyRunnerBase,&sStack_30);
+  std::__cxx11::string::~string((string *)&sStack_30);
+  (this->super_PolicyRunnerBase)._vptr_PolicyRunnerBase =
+       (_func_int_varargs **)(PTR_vtable_00385c90 + 0x10);
+  (this->super_PolicyRunnerBase).obs_dim_ = 0x36;
+  (this->super_PolicyRunnerBase).obs_total_dim_ =
+       (this->super_PolicyRunnerBase).obs_dim_ +
+       (this->super_PolicyRunnerBase).obs_dim_ * (this->super_PolicyRunnerBase).obs_history_num_;
+  local_6c = 60.0;
+  local_68 = 60.0;
+  local_64 = 60.0;
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0;
+  Eigen::Matrix<float,_4,_1,_0,_4,_1>::Matrix
+            ((Matrix<float,_4,_1,_0,_4,_1> *)&sStack_30,&local_6c,&local_68,&local_64,
+             (Scalar *)&local_60);
+  Eigen::DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>::replicate
+            ((Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1> *)&CStack_50,
+             (DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_> *)&sStack_30,4,1);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::Replicate<Eigen::Matrix<float,_4,_1>,__1,__1>_>
+            (&(this->super_PolicyRunnerBase).kp_,
+             (DenseBase<Eigen::Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1>_> *)&CStack_50
+            );
+  local_6c = 1.5;
+  local_68 = 1.5;
+  local_64 = 1.5;
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0x3f19999a;
+  Eigen::Matrix<float,_4,_1,_0,_4,_1>::Matrix
+            ((Matrix<float,_4,_1,_0,_4,_1> *)&sStack_30,&local_6c,&local_68,&local_64,
+             (Scalar *)&local_60);
+  Eigen::DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>::replicate
+            ((Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1> *)&CStack_50,
+             (DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_> *)&sStack_30,4,1);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::Replicate<Eigen::Matrix<float,_4,_1>,__1,__1>_>
+            (&(this->super_PolicyRunnerBase).kd_,
+             (DenseBase<Eigen::Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1>_> *)&CStack_50
+            );
+  local_68 = 2.0;
+  Eigen::DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator<<
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,
+             (DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)
+             &(this->super_PolicyRunnerBase).max_cmd_vel_,&local_68);
+  local_64 = 1.0;
+  this_00 = Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+                      ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,
+                       &local_64);
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0x3fc00000;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+            (this_00,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::~CommaInitializer
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,__in_chrg);
+  Eigen::PlainObjectBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::setZero
+            (&(this->super_PolicyRunnerBase).dof_pos_default_.
+              super_PlainObjectBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_>,0xc);
+  local_8c = 0.0;
+  Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator<<
+            (&CStack_50,
+             (DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+             &(this->super_PolicyRunnerBase).dof_pos_default_,&local_8c);
+  local_88 = -0.8;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (&CStack_50,&local_88);
+  local_84 = 1.6;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar1,&local_84);
+  local_80 = 0.0;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar1,&local_80);
+  local_7c = -0.8;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar1,&local_7c);
+  local_78 = 1.6;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar1,&local_78);
+  local_74 = 0.0;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar1,&local_74);
+  local_70 = 0.8;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar1,&local_70);
+  local_6c = -1.6;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar1,&local_6c);
+  local_68 = 0.0;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar1,&local_68);
+  local_64 = 0.8;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar1,&local_64);
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0xbfcccccd;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+            (pCVar1,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::~CommaInitializer
+            (&CStack_50,__in_chrg_00);
+  Eigen::PlainObjectBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::setZero
+            (&(this->super_PolicyRunnerBase).dof_pos_default_trans.
+              super_PlainObjectBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_>,0xc);
+  local_8c = 0.0;
+  Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator<<
+            (&CStack_50,
+             (DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+             &(this->super_PolicyRunnerBase).dof_pos_default_trans,&local_8c);
+  local_88 = 0.0;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (&CStack_50,&local_88);
+  local_84 = 0.0;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar1,&local_84);
+  local_80 = 0.0;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar1,&local_80);
+  local_7c = -0.8;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar1,&local_7c);
+  local_78 = -0.8;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar1,&local_78);
+  local_74 = 0.8;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar1,&local_74);
+  local_70 = 0.8;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar1,&local_70);
+  local_6c = 1.6;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar1,&local_6c);
+  local_68 = 1.6;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar1,&local_68);
+  local_64 = -1.6;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar1,&local_64);
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0xbfcccccd;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+            (pCVar1,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::~CommaInitializer
+            (&CStack_50,__in_chrg_01);
+  logid = (char *)std::__cxx11::string::data();
+  Ort::Env::Env(&local_60,ORT_LOGGING_LEVEL_ERROR,logid);
+  Ort::Env::operator=(&(this->super_PolicyRunnerBase).env_,&local_60);
+  Ort::Env::~Env(&local_60,__in_chrg_02);
+  Ort::Session::Session
+            ((Session *)&CStack_50,&(this->super_PolicyRunnerBase).env_,
+             PTR___policy_m20_navi_flat_v4_2__003862d8,
+             (ulong)*(uint *)PTR___policy_m20_navi_flat_v4_2__len_00386160,
+             &(this->super_PolicyRunnerBase).session_options_);
+  Ort::Session::operator=(&(this->super_PolicyRunnerBase).session1_,(Session *)&CStack_50);
+  Ort::Session::~Session((Session *)&CStack_50,__in_chrg_03);
+  PolicyRunnerBase::test_policy(&this->super_PolicyRunnerBase);
+  if (local_8 - *(long *)PTR___stack_chk_guard_00386ea8 != 0) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail(PTR___stack_chk_guard_00386ea8,
+                     local_8 - *(long *)PTR___stack_chk_guard_00386ea8,0);
+  }
+  return;
+}
+
+
+
+========================================================================
+===== M20NaviOrienteerRunner  (expected @ 0x293010)
+  actual: M20NaviOrienteerRunner @ 00293010
+========================================================================
+
+/* DWARF original prototype: void M20NaviOrienteerRunner(M20NaviOrienteerRunner * this, string *
+   policy_name) */
+
+void __thiscall
+M20NaviOrienteerRunner::M20NaviOrienteerRunner(M20NaviOrienteerRunner *this,string *policy_name)
+
+{
+  CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *this_00;
+  CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *pCVar1;
+  char *logid;
+  int __in_chrg;
+  int __in_chrg_00;
+  int __in_chrg_01;
+  int __in_chrg_02;
+  int __in_chrg_03;
+  string *policy_name_local;
+  M20NaviOrienteerRunner *this_local;
+  Scalar local_8c;
+  Scalar local_88;
+  Scalar local_84;
+  Scalar local_80;
+  Scalar local_7c;
+  Scalar local_78;
+  Scalar local_74;
+  Scalar local_70;
+  Scalar local_6c;
+  Scalar local_68;
+  Scalar local_64;
+  Env local_60;
+  exception *e;
+  CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> CStack_50;
+  string sStack_30;
+  long local_8;
+  
+  local_8 = *(long *)PTR___stack_chk_guard_00386ea8;
+  std::__cxx11::string::string((string *)&sStack_30,(string *)policy_name);
+  PolicyRunnerBase::PolicyRunnerBase(&this->super_PolicyRunnerBase,&sStack_30);
+  std::__cxx11::string::~string((string *)&sStack_30);
+  (this->super_PolicyRunnerBase)._vptr_PolicyRunnerBase =
+       (_func_int_varargs **)(PTR_vtable_00386c40 + 0x10);
+  local_6c = 60.0;
+  local_68 = 60.0;
+  local_64 = 60.0;
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0;
+  Eigen::Matrix<float,_4,_1,_0,_4,_1>::Matrix
+            ((Matrix<float,_4,_1,_0,_4,_1> *)&sStack_30,&local_6c,&local_68,&local_64,
+             (Scalar *)&local_60);
+  Eigen::DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>::replicate
+            ((Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1> *)&CStack_50,
+             (DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_> *)&sStack_30,4,1);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::Replicate<Eigen::Matrix<float,_4,_1>,__1,__1>_>
+            (&(this->super_PolicyRunnerBase).kp_,
+             (DenseBase<Eigen::Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1>_> *)&CStack_50
+            );
+  local_6c = 1.5;
+  local_68 = 1.5;
+  local_64 = 1.5;
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0x3f19999a;
+  Eigen::Matrix<float,_4,_1,_0,_4,_1>::Matrix
+            ((Matrix<float,_4,_1,_0,_4,_1> *)&sStack_30,&local_6c,&local_68,&local_64,
+             (Scalar *)&local_60);
+  Eigen::DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>::replicate
+            ((Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1> *)&CStack_50,
+             (DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_> *)&sStack_30,4,1);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::Replicate<Eigen::Matrix<float,_4,_1>,__1,__1>_>
+            (&(this->super_PolicyRunnerBase).kd_,
+             (DenseBase<Eigen::Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1>_> *)&CStack_50
+            );
+  local_68 = 1.5;
+  Eigen::DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator<<
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,
+             (DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)
+             &(this->super_PolicyRunnerBase).max_cmd_vel_,&local_68);
+  local_64 = 1.0;
+  this_00 = Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+                      ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,
+                       &local_64);
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0x3fc00000;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+            (this_00,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::~CommaInitializer
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,__in_chrg);
+  Eigen::PlainObjectBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::setZero
+            (&(this->super_PolicyRunnerBase).dof_pos_default_.
+              super_PlainObjectBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_>,0xc);
+  local_8c = 0.0;
+  Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator<<
+            (&CStack_50,
+             (DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+             &(this->super_PolicyRunnerBase).dof_pos_default_,&local_8c);
+  local_88 = -0.8;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (&CStack_50,&local_88);
+  local_84 = 1.6;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar1,&local_84);
+  local_80 = 0.0;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar1,&local_80);
+  local_7c = -0.8;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar1,&local_7c);
+  local_78 = 1.6;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar1,&local_78);
+  local_74 = 0.0;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar1,&local_74);
+  local_70 = 0.8;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar1,&local_70);
+  local_6c = -1.6;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar1,&local_6c);
+  local_68 = 0.0;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar1,&local_68);
+  local_64 = 0.8;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar1,&local_64);
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0xbfcccccd;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+            (pCVar1,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::~CommaInitializer
+            (&CStack_50,__in_chrg_00);
+  Eigen::PlainObjectBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::setZero
+            (&(this->super_PolicyRunnerBase).dof_pos_default_trans.
+              super_PlainObjectBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_>,0xc);
+  local_8c = 0.0;
+  Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator<<
+            (&CStack_50,
+             (DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+             &(this->super_PolicyRunnerBase).dof_pos_default_trans,&local_8c);
+  local_88 = 0.0;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (&CStack_50,&local_88);
+  local_84 = 0.0;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar1,&local_84);
+  local_80 = 0.0;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar1,&local_80);
+  local_7c = -0.8;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar1,&local_7c);
+  local_78 = -0.8;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar1,&local_78);
+  local_74 = 0.8;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar1,&local_74);
+  local_70 = 0.8;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar1,&local_70);
+  local_6c = 1.6;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar1,&local_6c);
+  local_68 = 1.6;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar1,&local_68);
+  local_64 = -1.6;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar1,&local_64);
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0xbfcccccd;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+            (pCVar1,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::~CommaInitializer
+            (&CStack_50,__in_chrg_01);
+  logid = (char *)std::__cxx11::string::data();
+  Ort::Env::Env(&local_60,ORT_LOGGING_LEVEL_ERROR,logid);
+  Ort::Env::operator=(&(this->super_PolicyRunnerBase).env_,&local_60);
+  Ort::Env::~Env(&local_60,__in_chrg_02);
+  Ort::Session::Session
+            ((Session *)&CStack_50,&(this->super_PolicyRunnerBase).env_,
+             PTR___policy_m20_navi_stair_v7_0_himloco__00386040,
+             (ulong)*(uint *)PTR___policy_m20_navi_stair_v7_0_himloco__len_00386dc0,
+             &(this->super_PolicyRunnerBase).session_options_);
+  Ort::Session::operator=(&(this->super_PolicyRunnerBase).session1_,(Session *)&CStack_50);
+  Ort::Session::~Session((Session *)&CStack_50,__in_chrg_03);
+  PolicyRunnerBase::test_policy(&this->super_PolicyRunnerBase);
+  if (local_8 - *(long *)PTR___stack_chk_guard_00386ea8 != 0) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail(PTR___stack_chk_guard_00386ea8,
+                     local_8 - *(long *)PTR___stack_chk_guard_00386ea8,0);
+  }
+  return;
+}
+
+
+
+========================================================================
+===== M20NaviStairRunner  (expected @ 0x294888)
+  actual: M20NaviStairRunner @ 00294888
+========================================================================
+
+/* DWARF original prototype: void M20NaviStairRunner(M20NaviStairRunner * this, string *
+   policy_name) */
+
+void __thiscall M20NaviStairRunner::M20NaviStairRunner(M20NaviStairRunner *this,string *policy_name)
+
+{
+  CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *pCVar1;
+  CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *pCVar2;
+  char *logid;
+  int __in_chrg;
+  int __in_chrg_00;
+  int __in_chrg_01;
+  int __in_chrg_02;
+  int __in_chrg_03;
+  int __in_chrg_04;
+  string *policy_name_local;
+  M20NaviStairRunner *this_local;
+  Scalar local_8c;
+  Scalar local_88;
+  Scalar local_84;
+  Scalar local_80;
+  Scalar local_7c;
+  Scalar local_78;
+  Scalar local_74;
+  Scalar local_70;
+  Scalar local_6c;
+  Scalar local_68;
+  Scalar local_64;
+  Env local_60;
+  exception *e;
+  CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> CStack_50;
+  string sStack_30;
+  long local_8;
+  
+  local_8 = *(long *)PTR___stack_chk_guard_00386ea8;
+  std::__cxx11::string::string((string *)&sStack_30,(string *)policy_name);
+  PolicyRunnerBase::PolicyRunnerBase(&this->super_PolicyRunnerBase,&sStack_30);
+  std::__cxx11::string::~string((string *)&sStack_30);
+  (this->super_PolicyRunnerBase)._vptr_PolicyRunnerBase =
+       (_func_int_varargs **)(PTR_vtable_00385b30 + 0x10);
+  (this->super_PolicyRunnerBase).wheel_vel_scale_ = 0.05;
+  local_68 = 0.04;
+  Eigen::DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator<<
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,
+             (DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)
+             &(this->super_PolicyRunnerBase).vel_delta_const_,&local_68);
+  local_64 = 0.04;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+                     ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,&local_64
+                     );
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0x3da3d70a;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+            (pCVar1,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::~CommaInitializer
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,__in_chrg);
+  local_6c = 80.0;
+  local_68 = 80.0;
+  local_64 = 80.0;
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0;
+  Eigen::Matrix<float,_4,_1,_0,_4,_1>::Matrix
+            ((Matrix<float,_4,_1,_0,_4,_1> *)&sStack_30,&local_6c,&local_68,&local_64,
+             (Scalar *)&local_60);
+  Eigen::DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>::replicate
+            ((Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1> *)&CStack_50,
+             (DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_> *)&sStack_30,4,1);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::Replicate<Eigen::Matrix<float,_4,_1>,__1,__1>_>
+            (&(this->super_PolicyRunnerBase).kp_,
+             (DenseBase<Eigen::Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1>_> *)&CStack_50
+            );
+  local_6c = 3.0;
+  local_68 = 3.0;
+  local_64 = 3.0;
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0x3f19999a;
+  Eigen::Matrix<float,_4,_1,_0,_4,_1>::Matrix
+            ((Matrix<float,_4,_1,_0,_4,_1> *)&sStack_30,&local_6c,&local_68,&local_64,
+             (Scalar *)&local_60);
+  Eigen::DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>::replicate
+            ((Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1> *)&CStack_50,
+             (DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_> *)&sStack_30,4,1);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::Replicate<Eigen::Matrix<float,_4,_1>,__1,__1>_>
+            (&(this->super_PolicyRunnerBase).kd_,
+             (DenseBase<Eigen::Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1>_> *)&CStack_50
+            );
+  local_68 = 2.0;
+  Eigen::DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator<<
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,
+             (DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)
+             &(this->super_PolicyRunnerBase).max_cmd_vel_,&local_68);
+  local_64 = 1.0;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+                     ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,&local_64
+                     );
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0x40000000;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+            (pCVar1,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::~CommaInitializer
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,__in_chrg_00);
+  Eigen::PlainObjectBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::setZero
+            (&(this->super_PolicyRunnerBase).dof_pos_default_.
+              super_PlainObjectBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_>,0xc);
+  Eigen::PlainObjectBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::setZero
+            (&(this->super_PolicyRunnerBase).dof_pos_default_trans.
+              super_PlainObjectBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_>,0xc);
+  local_8c = -0.1;
+  Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator<<
+            (&CStack_50,
+             (DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+             &(this->super_PolicyRunnerBase).dof_pos_default_,&local_8c);
+  local_88 = -0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (&CStack_50,&local_88);
+  local_84 = 1.6;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_84);
+  local_80 = 0.1;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_80);
+  local_7c = -0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_7c);
+  local_78 = 1.6;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_78);
+  local_74 = -0.1;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_74);
+  local_70 = 0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_70);
+  local_6c = -1.6;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_6c);
+  local_68 = 0.1;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_68);
+  local_64 = 0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_64);
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0xbfcccccd;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+            (pCVar2,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::~CommaInitializer
+            (&CStack_50,__in_chrg_01);
+  local_8c = -0.1;
+  Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator<<
+            (&CStack_50,
+             (DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+             &(this->super_PolicyRunnerBase).dof_pos_default_trans,&local_8c);
+  local_88 = 0.1;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (&CStack_50,&local_88);
+  local_84 = -0.1;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_84);
+  local_80 = 0.1;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_80);
+  local_7c = -0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_7c);
+  local_78 = -0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_78);
+  local_74 = 0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_74);
+  local_70 = 0.8;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_70);
+  local_6c = 1.6;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_6c);
+  local_68 = 1.6;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_68);
+  local_64 = -1.6;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar2,&local_64);
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0xbfcccccd;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+            (pCVar2,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::~CommaInitializer
+            (&CStack_50,__in_chrg_02);
+  logid = (char *)std::__cxx11::string::data();
+  Ort::Env::Env(&local_60,ORT_LOGGING_LEVEL_ERROR,logid);
+  Ort::Env::operator=(&(this->super_PolicyRunnerBase).env_,&local_60);
+  Ort::Env::~Env(&local_60,__in_chrg_03);
+  Ort::Session::Session
+            ((Session *)&CStack_50,&(this->super_PolicyRunnerBase).env_,
+             PTR___policy_policy_m20_5__00386d48,
+             (ulong)*(uint *)PTR___policy_policy_m20_5__len_00386178,
+             &(this->super_PolicyRunnerBase).session_options_);
+  Ort::Session::operator=(&(this->super_PolicyRunnerBase).session1_,(Session *)&CStack_50);
+  Ort::Session::~Session((Session *)&CStack_50,__in_chrg_04);
+  PolicyRunnerBase::test_policy(&this->super_PolicyRunnerBase);
+  if (local_8 - *(long *)PTR___stack_chk_guard_00386ea8 != 0) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail(PTR___stack_chk_guard_00386ea8,
+                     local_8 - *(long *)PTR___stack_chk_guard_00386ea8,0);
+  }
+  return;
+}
+
+
+
+========================================================================
+===== M20SixAxisStandRunner  (expected @ 0x295e90)
+  actual: M20SixAxisStandRunner @ 00295e90
+========================================================================
+
+/* DWARF original prototype: void M20SixAxisStandRunner(M20SixAxisStandRunner * this, string *
+   policy_name) */
+
+void __thiscall
+M20SixAxisStandRunner::M20SixAxisStandRunner(M20SixAxisStandRunner *this,string *policy_name)
+
+{
+  int iVar1;
+  int iVar2;
+  CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *pCVar3;
+  CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *pCVar4;
+  CommaInitializer<Eigen::Matrix<float,_4,_3,_0,_4,_3>_> *pCVar5;
+  char *logid;
+  contained_type *info;
+  Scalar *p_data;
+  size_t p_data_element_count;
+  pointer shape;
+  size_type shape_len;
+  int __in_chrg;
+  int __in_chrg_00;
+  int __in_chrg_01;
+  int __in_chrg_02;
+  int __in_chrg_03;
+  int __in_chrg_04;
+  int __in_chrg_05;
+  double dVar6;
+  string *policy_name_local;
+  M20SixAxisStandRunner *this_local;
+  Scalar local_a0;
+  Scalar local_9c;
+  Scalar local_98;
+  Scalar local_94;
+  Scalar local_90;
+  Scalar local_8c;
+  Scalar local_88;
+  Scalar local_84;
+  Scalar local_80;
+  Scalar local_7c;
+  Scalar local_78;
+  Scalar local_74;
+  Scalar local_70;
+  Scalar local_6c;
+  Env local_68;
+  Session local_60;
+  exception *e;
+  CommaInitializer<Eigen::Matrix<float,_4,_3,_0,_4,_3>_> local_50;
+  string sStack_30;
+  long local_8;
+  
+  local_8 = *(long *)PTR___stack_chk_guard_00386ea8;
+  std::__cxx11::string::string((string *)&sStack_30,(string *)policy_name);
+  PolicyRunnerBase::PolicyRunnerBase(&this->super_PolicyRunnerBase,&sStack_30);
+  std::__cxx11::string::~string((string *)&sStack_30);
+  (this->super_PolicyRunnerBase)._vptr_PolicyRunnerBase =
+       (_func_int_varargs **)(PTR_vtable_00386250 + 0x10);
+  Eigen::Matrix<float,_3,_1,_0,_3,_1>::Matrix(&this->rotate_max_angle);
+  Eigen::Matrix<float,_3,_1,_0,_3,_1>::Matrix(&this->shift_max_dis);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::Matrix(&this->kd_2);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::Matrix(&this->projected_gravity);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::Matrix(&this->output_eigen);
+  Ort::Value::Value(&this->outputTensor,(nullptr_t)0x0);
+  Ort::Value::Value(&this->input_observation_ort,(nullptr_t)0x0);
+  Ort::Value::Value(&this->uncertain_ort,(nullptr_t)0x0);
+  Ort::Value::Value(&this->reflect_ort,(nullptr_t)0x0);
+  Ort::Value::Value(&this->command_ort,(nullptr_t)0x0);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::Matrix(&this->command);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::Matrix(&this->uncertain);
+  Eigen::Matrix<float,_4,_3,_0,_4,_3>::Matrix(&this->default_wheel_p);
+  Eigen::Matrix<float,_4,_3,_0,_4,_3>::Matrix(&this->wheel_p);
+  Eigen::Matrix<float,_3,_3,_0,_3,_3>::Matrix(&this->Rotate_R);
+  FirstOrderLowPassFilter::FirstOrderLowPassFilter(&this->low_pass_filter_1,50.0,1000.0);
+  FirstOrderLowPassFilter::FirstOrderLowPassFilter(&this->low_pass_filter_2,50.0,1000.0);
+  FirstOrderLowPassFilter::FirstOrderLowPassFilter(&this->low_pass_filter_3,50.0,1000.0);
+  FirstOrderLowPassFilter::FirstOrderLowPassFilter(&this->low_pass_filter_4,50.0,1000.0);
+  FirstOrderLowPassFilter::FirstOrderLowPassFilter(&this->low_pass_filter_k1,50.0,1000.0);
+  FirstOrderLowPassFilter::FirstOrderLowPassFilter(&this->low_pass_filter_k2,50.0,1000.0);
+  FirstOrderLowPassFilter::FirstOrderLowPassFilter(&this->low_pass_filter_k3,50.0,1000.0);
+  FirstOrderLowPassFilter::FirstOrderLowPassFilter(&this->low_pass_filter_k4,50.0,1000.0);
+  this->v_acc = 0.1;
+  this->w_acc = 0.1;
+  this->command_dim = 0x15;
+  this->num_observation_history = 0x24;
+  this->time_step = 0.0;
+  this->gait_freq = 1.0;
+  this->half_gait_T = (1.0 / this->gait_freq) / 2.0;
+  dVar6 = (double)this->gait_freq * DAT_00318650;
+  this->gait_w = (float)(dVar6 + dVar6);
+  this->is_fallen = true;
+  this->v_x = 0.0;
+  this->v_y = 0.0;
+  this->target_w = 0.0;
+  this->agent_timestep = 0.02;
+  this->input_names_[0] = "state";
+  this->input_names_[1] = "command";
+  this->input_names_[2] = "uncertain";
+  this->output_names_[0] = "output";
+  iVar1 = (this->super_PolicyRunnerBase).act_dim_;
+  (this->outputShape)._M_elems[0] = 1;
+  (this->outputShape)._M_elems[1] = (long)iVar1;
+  (this->commandShape)._M_elems[0] = 1;
+  (this->commandShape)._M_elems[1] = 2;
+  (this->uncertainShape)._M_elems[0] = 1;
+  (this->uncertainShape)._M_elems[1] = 1;
+  iVar1 = this->num_observation_history;
+  iVar2 = (this->super_PolicyRunnerBase).obs_dim_;
+  (this->input_observationShape)._M_elems[0] = 1;
+  (this->input_observationShape)._M_elems[1] = (long)iVar1;
+  (this->input_observationShape)._M_elems[2] = (long)iVar2;
+  (this->super_PolicyRunnerBase).dof_vel_scale_ = 0.1;
+  (this->super_PolicyRunnerBase).wheel_vel_scale_ = 0.033333335;
+  (this->super_PolicyRunnerBase).wheel_action_scale_ = 20.0;
+  local_6c = 14.5;
+  Eigen::DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator<<
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&local_50,
+             (DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&this->rotate_max_angle,&local_6c);
+  local_68.super_Base<OrtEnv>.p_._0_4_ = 0x41c40000;
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+                     ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&local_50,
+                      (Scalar *)&local_68);
+  local_60.super_SessionImpl<OrtSession>.super_ConstSessionImpl<OrtSession>.super_Base<OrtSession>.
+  p_._0_4_ = 0x41c40000;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+            (pCVar3,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::~CommaInitializer
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&local_50,__in_chrg);
+  local_6c = 0.145;
+  Eigen::DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator<<
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&local_50,
+             (DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&this->shift_max_dis,&local_6c);
+  local_68.super_Base<OrtEnv>.p_._0_4_ = 0x3dcccccd;
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+                     ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&local_50,
+                      (Scalar *)&local_68);
+  local_60.super_SessionImpl<OrtSession>.super_ConstSessionImpl<OrtSession>.super_Base<OrtSession>.
+  p_._0_4_ = 0;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+            (pCVar3,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::~CommaInitializer
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&local_50,__in_chrg_00);
+  Eigen::PlainObjectBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::setZero
+            (&(this->super_PolicyRunnerBase).dof_pos_default_.
+              super_PlainObjectBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_>,
+             (long)(this->super_PolicyRunnerBase).act_dim_);
+  local_a0 = 0.0;
+  Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator<<
+            ((CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)&local_50,
+             (DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+             &(this->super_PolicyRunnerBase).dof_pos_default_,&local_a0);
+  local_9c = -0.7;
+  pCVar4 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     ((CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)&local_50,
+                      &local_9c);
+  local_98 = 1.4;
+  pCVar4 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar4,&local_98);
+  local_94 = 0.0;
+  pCVar4 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar4,&local_94);
+  local_90 = 0.0;
+  pCVar4 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar4,&local_90);
+  local_8c = -0.7;
+  pCVar4 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar4,&local_8c);
+  local_88 = 1.4;
+  pCVar4 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar4,&local_88);
+  local_84 = 0.0;
+  pCVar4 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar4,&local_84);
+  local_80 = 0.0;
+  pCVar4 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar4,&local_80);
+  local_7c = 0.7;
+  pCVar4 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar4,&local_7c);
+  local_78 = -1.4;
+  pCVar4 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar4,&local_78);
+  local_74 = 0.0;
+  pCVar4 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar4,&local_74);
+  local_70 = 0.0;
+  pCVar4 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar4,&local_70);
+  local_6c = 0.7;
+  pCVar4 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar4,&local_6c);
+  local_68.super_Base<OrtEnv>.p_._0_4_ = 0xbfb33333;
+  pCVar4 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar4,(Scalar *)&local_68);
+  local_60.super_SessionImpl<OrtSession>.super_ConstSessionImpl<OrtSession>.super_Base<OrtSession>.
+  p_._0_4_ = 0;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+            (pCVar4,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::~CommaInitializer
+            ((CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)&local_50,__in_chrg_01);
+  local_90 = 0.3141;
+  Eigen::DenseBase<Eigen::Matrix<float,_4,_3,_0,_4,_3>_>::operator<<
+            (&local_50,(DenseBase<Eigen::Matrix<float,_4,_3,_0,_4,_3>_> *)&this->default_wheel_p,
+             &local_90);
+  local_8c = 0.2;
+  pCVar5 = Eigen::CommaInitializer<Eigen::Matrix<float,_4,_3,_0,_4,_3>_>::operator_
+                     (&local_50,&local_8c);
+  local_88 = 0.0;
+  pCVar5 = Eigen::CommaInitializer<Eigen::Matrix<float,_4,_3,_0,_4,_3>_>::operator_
+                     (pCVar5,&local_88);
+  local_84 = 0.3141;
+  pCVar5 = Eigen::CommaInitializer<Eigen::Matrix<float,_4,_3,_0,_4,_3>_>::operator_
+                     (pCVar5,&local_84);
+  local_80 = -0.2;
+  pCVar5 = Eigen::CommaInitializer<Eigen::Matrix<float,_4,_3,_0,_4,_3>_>::operator_
+                     (pCVar5,&local_80);
+  local_7c = 0.0;
+  pCVar5 = Eigen::CommaInitializer<Eigen::Matrix<float,_4,_3,_0,_4,_3>_>::operator_
+                     (pCVar5,&local_7c);
+  local_78 = -0.3141;
+  pCVar5 = Eigen::CommaInitializer<Eigen::Matrix<float,_4,_3,_0,_4,_3>_>::operator_
+                     (pCVar5,&local_78);
+  local_74 = 0.2;
+  pCVar5 = Eigen::CommaInitializer<Eigen::Matrix<float,_4,_3,_0,_4,_3>_>::operator_
+                     (pCVar5,&local_74);
+  local_70 = 0.0;
+  pCVar5 = Eigen::CommaInitializer<Eigen::Matrix<float,_4,_3,_0,_4,_3>_>::operator_
+                     (pCVar5,&local_70);
+  local_6c = -0.3141;
+  pCVar5 = Eigen::CommaInitializer<Eigen::Matrix<float,_4,_3,_0,_4,_3>_>::operator_
+                     (pCVar5,&local_6c);
+  local_68.super_Base<OrtEnv>.p_._0_4_ = 0xbe4ccccd;
+  pCVar5 = Eigen::CommaInitializer<Eigen::Matrix<float,_4,_3,_0,_4,_3>_>::operator_
+                     (pCVar5,(Scalar *)&local_68);
+  local_60.super_SessionImpl<OrtSession>.super_ConstSessionImpl<OrtSession>.super_Base<OrtSession>.
+  p_._0_4_ = 0;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_4,_3,_0,_4,_3>_>::operator_
+            (pCVar5,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_4,_3,_0,_4,_3>_>::~CommaInitializer
+            (&local_50,__in_chrg_02);
+  local_70 = 60.0;
+  local_6c = 60.0;
+  local_68.super_Base<OrtEnv>.p_._0_4_ = 0x42700000;
+  local_60.super_SessionImpl<OrtSession>.super_ConstSessionImpl<OrtSession>.super_Base<OrtSession>.
+  p_._0_4_ = 0;
+  Eigen::Matrix<float,_4,_1,_0,_4,_1>::Matrix
+            ((Matrix<float,_4,_1,_0,_4,_1> *)&sStack_30,&local_70,&local_6c,(Scalar *)&local_68,
+             (Scalar *)&local_60);
+  Eigen::DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>::replicate
+            ((Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1> *)&local_50,
+             (DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_> *)&sStack_30,4,1);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::Replicate<Eigen::Matrix<float,_4,_1>,__1,__1>_>
+            (&(this->super_PolicyRunnerBase).kp_,
+             (DenseBase<Eigen::Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1>_> *)&local_50)
+  ;
+  local_70 = 1.5;
+  local_6c = 1.5;
+  local_68.super_Base<OrtEnv>.p_._0_4_ = 0x3fc00000;
+  local_60.super_SessionImpl<OrtSession>.super_ConstSessionImpl<OrtSession>.super_Base<OrtSession>.
+  p_._0_4_ = 0x3f800000;
+  Eigen::Matrix<float,_4,_1,_0,_4,_1>::Matrix
+            ((Matrix<float,_4,_1,_0,_4,_1> *)&sStack_30,&local_70,&local_6c,(Scalar *)&local_68,
+             (Scalar *)&local_60);
+  Eigen::DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>::replicate
+            ((Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1> *)&local_50,
+             (DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_> *)&sStack_30,4,1);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::Replicate<Eigen::Matrix<float,_4,_1>,__1,__1>_>
+            (&(this->super_PolicyRunnerBase).kd_,
+             (DenseBase<Eigen::Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1>_> *)&local_50)
+  ;
+  local_70 = 3.0;
+  local_6c = 3.0;
+  local_68.super_Base<OrtEnv>.p_._0_4_ = 0x40400000;
+  local_60.super_SessionImpl<OrtSession>.super_ConstSessionImpl<OrtSession>.super_Base<OrtSession>.
+  p_._0_4_ = 0x3f800000;
+  Eigen::Matrix<float,_4,_1,_0,_4,_1>::Matrix
+            ((Matrix<float,_4,_1,_0,_4,_1> *)&sStack_30,&local_70,&local_6c,(Scalar *)&local_68,
+             (Scalar *)&local_60);
+  Eigen::DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>::replicate
+            ((Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1> *)&local_50,
+             (DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_> *)&sStack_30,4,1);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::Replicate<Eigen::Matrix<float,_4,_1>,__1,__1>_>
+            (&this->kd_2,
+             (DenseBase<Eigen::Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1>_> *)&local_50)
+  ;
+  logid = (char *)std::__cxx11::string::data();
+  Ort::Env::Env(&local_68,ORT_LOGGING_LEVEL_ERROR,logid);
+  Ort::Env::operator=(&(this->super_PolicyRunnerBase).env_,&local_68);
+  Ort::Env::~Env(&local_68,__in_chrg_03);
+  Ort::Session::Session
+            (&local_60,&(this->super_PolicyRunnerBase).env_,
+             PTR___policy_m20_finetune_stand_15kg__00386550,
+             (ulong)*(uint *)PTR___policy_m20_finetune_stand_15kg__len_00386938,
+             &(this->super_PolicyRunnerBase).session_options_);
+  Ort::Session::operator=(&(this->super_PolicyRunnerBase).session1_,&local_60);
+  Ort::Session::~Session(&local_60,__in_chrg_04);
+  test_policy(this);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::operator=
+            (&(this->super_PolicyRunnerBase).robot_action.kp,&(this->super_PolicyRunnerBase).kp_);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::operator=
+            (&(this->super_PolicyRunnerBase).robot_action.kd,&(this->super_PolicyRunnerBase).kd_);
+  local_50._0_16_ =
+       Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::Zero
+                 ((long)(this->super_PolicyRunnerBase).act_dim_);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::CwiseNullaryOp<Eigen::internal::scalar_zero_op<float>,_Eigen::Matrix<float,__1,_1>_>_>
+            (&(this->super_PolicyRunnerBase).robot_action.tau_ff,
+             (DenseBase<Eigen::CwiseNullaryOp<Eigen::internal::scalar_zero_op<float>,_Eigen::Matrix<float,__1,_1,_0,__1,_1>_>_>
+              *)&local_50);
+  local_50._0_16_ =
+       Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::Zero
+                 ((long)(this->super_PolicyRunnerBase).act_dim_);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::CwiseNullaryOp<Eigen::internal::scalar_zero_op<float>,_Eigen::Matrix<float,__1,_1>_>_>
+            (&(this->super_PolicyRunnerBase).robot_action.goal_joint_pos,
+             (DenseBase<Eigen::CwiseNullaryOp<Eigen::internal::scalar_zero_op<float>,_Eigen::Matrix<float,__1,_1,_0,__1,_1>_>_>
+              *)&local_50);
+  local_50._0_16_ =
+       Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::Zero
+                 ((long)(this->super_PolicyRunnerBase).act_dim_);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::CwiseNullaryOp<Eigen::internal::scalar_zero_op<float>,_Eigen::Matrix<float,__1,_1>_>_>
+            (&(this->super_PolicyRunnerBase).robot_action.goal_joint_vel,
+             (DenseBase<Eigen::CwiseNullaryOp<Eigen::internal::scalar_zero_op<float>,_Eigen::Matrix<float,__1,_1,_0,__1,_1>_>_>
+              *)&local_50);
+  Eigen::PlainObjectBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::setZero
+            (&(this->output_eigen).super_PlainObjectBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_>,
+             (long)(this->super_PolicyRunnerBase).act_dim_);
+  info = Ort::detail::Base<OrtMemoryInfo>::
+         operator_Ort__detail__Base<OrtMemoryInfo>__contained_type_
+                   ((Base<OrtMemoryInfo> *)&(this->super_PolicyRunnerBase).memory_info_);
+  p_data = Eigen::PlainObjectBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::data
+                     (&(this->output_eigen).
+                       super_PlainObjectBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_>);
+  p_data_element_count =
+       Eigen::EigenBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::size
+                 ((EigenBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)&this->output_eigen);
+  shape = std::array<long_int,_2>::data(&this->outputShape);
+  shape_len = std::array<long_int,_2>::size(&this->outputShape);
+  Ort::Value::CreateTensor<float>(info,p_data,p_data_element_count,shape,shape_len);
+  Ort::Value::operator=(&this->outputTensor,(Value *)&local_50);
+  Ort::Value::~Value((Value *)&local_50,__in_chrg_05);
+  if (local_8 - *(long *)PTR___stack_chk_guard_00386ea8 != 0) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail(PTR___stack_chk_guard_00386ea8,
+                     local_8 - *(long *)PTR___stack_chk_guard_00386ea8,0);
+  }
+  return;
+}
+
+
+
+========================================================================
+===== M20StandPolicyRunner  (expected @ 0x299ce0)
+  actual: M20StandPolicyRunner @ 00299ce0
+========================================================================
+
+/* DWARF original prototype: void M20StandPolicyRunner(M20StandPolicyRunner * this, string *
+   policy_name) */
+
+void __thiscall
+M20StandPolicyRunner::M20StandPolicyRunner(M20StandPolicyRunner *this,string *policy_name)
+
+{
+  CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *pCVar1;
+  CommaInitializer<Eigen::Matrix<float,_5,_1,_0,_5,_1>_> *pCVar2;
+  CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *pCVar3;
+  char *logid;
+  int __in_chrg;
+  int __in_chrg_00;
+  int __in_chrg_01;
+  int __in_chrg_02;
+  int __in_chrg_03;
+  int __in_chrg_04;
+  string *policy_name_local;
+  M20StandPolicyRunner *this_local;
+  Scalar local_8c;
+  Scalar local_88;
+  Scalar local_84;
+  Scalar local_80;
+  Scalar local_7c;
+  Scalar local_78;
+  Scalar local_74;
+  Scalar local_70;
+  Scalar local_6c;
+  Scalar local_68;
+  Scalar local_64;
+  Env local_60;
+  exception *e;
+  CommaInitializer<Eigen::Matrix<float,_5,_1,_0,_5,_1>_> CStack_50;
+  string sStack_30;
+  long local_8;
+  
+  local_8 = *(long *)PTR___stack_chk_guard_00386ea8;
+  std::__cxx11::string::string((string *)&sStack_30,(string *)policy_name);
+  PolicyRunnerBase::PolicyRunnerBase(&this->super_PolicyRunnerBase,&sStack_30);
+  std::__cxx11::string::~string((string *)&sStack_30);
+  (this->super_PolicyRunnerBase)._vptr_PolicyRunnerBase =
+       (_func_int_varargs **)(PTR_vtable_00385cc8 + 0x10);
+  Eigen::Matrix<float,_5,_1,_0,_5,_1>::Matrix(&this->gait_commands);
+  (this->super_PolicyRunnerBase).obs_dim_ = 0x3d;
+  (this->super_PolicyRunnerBase).obs_total_dim_ =
+       (this->super_PolicyRunnerBase).obs_dim_ +
+       (this->super_PolicyRunnerBase).obs_dim_ * (this->super_PolicyRunnerBase).obs_history_num_;
+  local_68 = 0.04;
+  Eigen::DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator<<
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,
+             (DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)
+             &(this->super_PolicyRunnerBase).vel_delta_const_,&local_68);
+  local_64 = 0.04;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+                     ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,&local_64
+                     );
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0x3da3d70a;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+            (pCVar1,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::~CommaInitializer
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,__in_chrg);
+  local_70 = 2.0;
+  Eigen::DenseBase<Eigen::Matrix<float,_5,_1,_0,_5,_1>_>::operator<<
+            (&CStack_50,(DenseBase<Eigen::Matrix<float,_5,_1,_0,_5,_1>_> *)&this->gait_commands,
+             &local_70);
+  local_6c = 0.5;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_5,_1,_0,_5,_1>_>::operator_
+                     (&CStack_50,&local_6c);
+  local_68 = 0.0;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_5,_1,_0,_5,_1>_>::operator_
+                     (pCVar2,&local_68);
+  local_64 = 0.0;
+  pCVar2 = Eigen::CommaInitializer<Eigen::Matrix<float,_5,_1,_0,_5,_1>_>::operator_
+                     (pCVar2,&local_64);
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0x3f000000;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_5,_1,_0,_5,_1>_>::operator_
+            (pCVar2,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_5,_1,_0,_5,_1>_>::~CommaInitializer
+            (&CStack_50,__in_chrg_00);
+  local_6c = 80.0;
+  local_68 = 100.0;
+  local_64 = 100.0;
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0;
+  Eigen::Matrix<float,_4,_1,_0,_4,_1>::Matrix
+            ((Matrix<float,_4,_1,_0,_4,_1> *)&sStack_30,&local_6c,&local_68,&local_64,
+             (Scalar *)&local_60);
+  Eigen::DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>::replicate
+            ((Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1> *)&CStack_50,
+             (DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_> *)&sStack_30,4,1);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::Replicate<Eigen::Matrix<float,_4,_1>,__1,__1>_>
+            (&(this->super_PolicyRunnerBase).kp_,
+             (DenseBase<Eigen::Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1>_> *)&CStack_50
+            );
+  local_6c = 2.5;
+  local_68 = 2.5;
+  local_64 = 2.5;
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0x40000000;
+  Eigen::Matrix<float,_4,_1,_0,_4,_1>::Matrix
+            ((Matrix<float,_4,_1,_0,_4,_1> *)&sStack_30,&local_6c,&local_68,&local_64,
+             (Scalar *)&local_60);
+  Eigen::DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>::replicate
+            ((Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1> *)&CStack_50,
+             (DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_> *)&sStack_30,4,1);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::Replicate<Eigen::Matrix<float,_4,_1>,__1,__1>_>
+            (&(this->super_PolicyRunnerBase).kd_,
+             (DenseBase<Eigen::Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1>_> *)&CStack_50
+            );
+  local_68 = 0.0;
+  Eigen::DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator<<
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,
+             (DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)
+             &(this->super_PolicyRunnerBase).max_cmd_vel_,&local_68);
+  local_64 = 0.0;
+  pCVar1 = Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+                     ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,&local_64
+                     );
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+            (pCVar1,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::~CommaInitializer
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&CStack_50,__in_chrg_01);
+  Eigen::PlainObjectBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::setZero
+            (&(this->super_PolicyRunnerBase).dof_pos_default_.
+              super_PlainObjectBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_>,0xc);
+  local_8c = 0.1;
+  Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator<<
+            ((CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)&CStack_50,
+             (DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+             &(this->super_PolicyRunnerBase).dof_pos_default_,&local_8c);
+  local_88 = -0.75;
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     ((CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)&CStack_50,
+                      &local_88);
+  local_84 = 1.5;
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar3,&local_84);
+  local_80 = -0.1;
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar3,&local_80);
+  local_7c = -0.75;
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar3,&local_7c);
+  local_78 = 1.5;
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar3,&local_78);
+  local_74 = 0.1;
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar3,&local_74);
+  local_70 = 0.75;
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar3,&local_70);
+  local_6c = -1.5;
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar3,&local_6c);
+  local_68 = -0.1;
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar3,&local_68);
+  local_64 = 0.75;
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar3,&local_64);
+  local_60.super_Base<OrtEnv>.p_._0_4_ = 0xbfc00000;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+            (pCVar3,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::~CommaInitializer
+            ((CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)&CStack_50,__in_chrg_02);
+  logid = (char *)std::__cxx11::string::data();
+  Ort::Env::Env(&local_60,ORT_LOGGING_LEVEL_ERROR,logid);
+  Ort::Env::operator=(&(this->super_PolicyRunnerBase).env_,&local_60);
+  Ort::Env::~Env(&local_60,__in_chrg_03);
+  Ort::Session::Session
+            ((Session *)&CStack_50,&(this->super_PolicyRunnerBase).env_,
+             PTR___policy_m20_flat_v1_4__00385dd0,
+             (ulong)*(uint *)PTR___policy_m20_flat_v1_4__len_003862a0,
+             &(this->super_PolicyRunnerBase).session_options_);
+  Ort::Session::operator=(&(this->super_PolicyRunnerBase).session1_,(Session *)&CStack_50);
+  Ort::Session::~Session((Session *)&CStack_50,__in_chrg_04);
+  PolicyRunnerBase::test_policy(&this->super_PolicyRunnerBase);
+  if (local_8 - *(long *)PTR___stack_chk_guard_00386ea8 != 0) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail(PTR___stack_chk_guard_00386ea8,
+                     local_8 - *(long *)PTR___stack_chk_guard_00386ea8,0);
+  }
+  return;
+}
+
+
+
+========================================================================
+===== M20StepMoveRunner  (expected @ 0x29c140)
+  actual: M20StepMoveRunner @ 0029c140
+========================================================================
+
+/* DWARF original prototype: void M20StepMoveRunner(M20StepMoveRunner * this, string * policy_name)
+    */
+
+void __thiscall M20StepMoveRunner::M20StepMoveRunner(M20StepMoveRunner *this,string *policy_name)
+
+{
+  int iVar1;
+  int iVar2;
+  CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *pCVar3;
+  CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *pCVar4;
+  CommaInitializer<Eigen::Matrix<float,_4,_3,_0,_4,_3>_> *pCVar5;
+  char *logid;
+  contained_type *info;
+  Scalar *p_data;
+  size_t p_data_element_count;
+  pointer shape;
+  size_type shape_len;
+  int __in_chrg;
+  int __in_chrg_00;
+  int __in_chrg_01;
+  int __in_chrg_02;
+  int __in_chrg_03;
+  int __in_chrg_04;
+  int __in_chrg_05;
+  string *policy_name_local;
+  M20StepMoveRunner *this_local;
+  Scalar local_a0;
+  Scalar local_9c;
+  Scalar local_98;
+  Scalar local_94;
+  Scalar local_90;
+  Scalar local_8c;
+  Scalar local_88;
+  Scalar local_84;
+  Scalar local_80;
+  Scalar local_7c;
+  Scalar local_78;
+  Scalar local_74;
+  Scalar local_70;
+  Scalar local_6c;
+  Env local_68;
+  Session local_60;
+  exception *e;
+  CommaInitializer<Eigen::Matrix<float,_4,_3,_0,_4,_3>_> local_50;
+  string sStack_30;
+  long local_8;
+  
+  local_8 = *(long *)PTR___stack_chk_guard_00386ea8;
+  std::__cxx11::string::string((string *)&sStack_30,(string *)policy_name);
+  PolicyRunnerBase::PolicyRunnerBase(&this->super_PolicyRunnerBase,&sStack_30);
+  std::__cxx11::string::~string((string *)&sStack_30);
+  (this->super_PolicyRunnerBase)._vptr_PolicyRunnerBase =
+       (_func_int_varargs **)(PTR_vtable_00386690 + 0x10);
+  Eigen::Matrix<float,_3,_1,_0,_3,_1>::Matrix(&this->rotate_max_angle);
+  Eigen::Matrix<float,_3,_1,_0,_3,_1>::Matrix(&this->move_max_vel);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::Matrix(&this->projected_gravity);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::Matrix(&this->output_eigen);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::Matrix(&this->command);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::Matrix(&this->uncertain);
+  Ort::Value::Value(&this->outputTensor,(nullptr_t)0x0);
+  Ort::Value::Value(&this->input_observation_ort,(nullptr_t)0x0);
+  Ort::Value::Value(&this->uncertain_ort,(nullptr_t)0x0);
+  Ort::Value::Value(&this->reflect_ort,(nullptr_t)0x0);
+  Ort::Value::Value(&this->command_ort,(nullptr_t)0x0);
+  Eigen::Matrix<float,_4,_3,_0,_4,_3>::Matrix(&this->default_wheel_p);
+  Eigen::Matrix<float,_4,_3,_0,_4,_3>::Matrix(&this->wheel_p);
+  Eigen::Matrix<float,_3,_3,_0,_3,_3>::Matrix(&this->Rotate_R);
+  this->v_acc = 0.1;
+  this->w_acc = 0.1;
+  this->command_dim = 0xd;
+  this->num_observation_history = 0x24;
+  this->time_step = 0.0;
+  this->gait_freq = 1.0;
+  this->target_w_limit = 2.8;
+  this->half_gait_T = (1.0 / this->gait_freq) / 2.0;
+  this->gait_w = (float)((double)(this->gait_freq + this->gait_freq) * DAT_00324de8);
+  this->is_fallen = true;
+  this->running_time = 0;
+  this->policy_flag = 0;
+  this->v_x = 0.0;
+  this->v_y = 0.0;
+  this->agent_timestep = 0.02;
+  iVar1 = (this->super_PolicyRunnerBase).act_dim_;
+  (this->outputShape)._M_elems[0] = 1;
+  (this->outputShape)._M_elems[1] = (long)iVar1;
+  iVar1 = this->num_observation_history;
+  iVar2 = (this->super_PolicyRunnerBase).obs_dim_;
+  (this->input_observationShape)._M_elems[0] = 1;
+  (this->input_observationShape)._M_elems[1] = (long)iVar1;
+  (this->input_observationShape)._M_elems[2] = (long)iVar2;
+  (this->uncertainShape)._M_elems[0] = 1;
+  (this->uncertainShape)._M_elems[1] = 1;
+  (this->commandShape)._M_elems[0] = 1;
+  (this->commandShape)._M_elems[1] = 2;
+  this->input_names_[0] = "state";
+  this->input_names_[1] = "command";
+  this->input_names_[2] = "uncertain";
+  this->output_names_[0] = "output";
+  (this->super_PolicyRunnerBase).dof_vel_scale_ = 0.1;
+  (this->super_PolicyRunnerBase).wheel_vel_scale_ = 0.033333335;
+  (this->super_PolicyRunnerBase).wheel_action_scale_ = 20.0;
+  local_6c = 15.0;
+  Eigen::DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator<<
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&local_50,
+             (DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&this->rotate_max_angle,&local_6c);
+  local_68.super_Base<OrtEnv>.p_._0_4_ = 0x41c80000;
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+                     ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&local_50,
+                      (Scalar *)&local_68);
+  local_60.super_SessionImpl<OrtSession>.super_ConstSessionImpl<OrtSession>.super_Base<OrtSession>.
+  p_._0_4_ = 0;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+            (pCVar3,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::~CommaInitializer
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&local_50,__in_chrg);
+  local_6c = 3.9;
+  Eigen::DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator<<
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&local_50,
+             (DenseBase<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&this->move_max_vel,&local_6c);
+  local_68.super_Base<OrtEnv>.p_._0_4_ = 0x3f666666;
+  pCVar3 = Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+                     ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&local_50,
+                      (Scalar *)&local_68);
+  local_60.super_SessionImpl<OrtSession>.super_ConstSessionImpl<OrtSession>.super_Base<OrtSession>.
+  p_._0_4_ = 0;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::operator_
+            (pCVar3,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_>::~CommaInitializer
+            ((CommaInitializer<Eigen::Matrix<float,_3,_1,_0,_3,_1>_> *)&local_50,__in_chrg_00);
+  Eigen::PlainObjectBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::setZero
+            (&(this->super_PolicyRunnerBase).dof_pos_default_.
+              super_PlainObjectBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_>,
+             (long)(this->super_PolicyRunnerBase).act_dim_);
+  local_a0 = 0.0;
+  Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator<<
+            ((CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)&local_50,
+             (DenseBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)
+             &(this->super_PolicyRunnerBase).dof_pos_default_,&local_a0);
+  local_9c = -1.0;
+  pCVar4 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     ((CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)&local_50,
+                      &local_9c);
+  local_98 = 1.6;
+  pCVar4 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar4,&local_98);
+  local_94 = 0.0;
+  pCVar4 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar4,&local_94);
+  local_90 = 0.0;
+  pCVar4 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar4,&local_90);
+  local_8c = -1.0;
+  pCVar4 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar4,&local_8c);
+  local_88 = 1.6;
+  pCVar4 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar4,&local_88);
+  local_84 = 0.0;
+  pCVar4 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar4,&local_84);
+  local_80 = 0.0;
+  pCVar4 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar4,&local_80);
+  local_7c = 1.0;
+  pCVar4 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar4,&local_7c);
+  local_78 = -1.6;
+  pCVar4 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar4,&local_78);
+  local_74 = 0.0;
+  pCVar4 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar4,&local_74);
+  local_70 = 0.0;
+  pCVar4 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar4,&local_70);
+  local_6c = 1.0;
+  pCVar4 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar4,&local_6c);
+  local_68.super_Base<OrtEnv>.p_._0_4_ = 0xbfcccccd;
+  pCVar4 = Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+                     (pCVar4,(Scalar *)&local_68);
+  local_60.super_SessionImpl<OrtSession>.super_ConstSessionImpl<OrtSession>.super_Base<OrtSession>.
+  p_._0_4_ = 0;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::operator_
+            (pCVar4,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::~CommaInitializer
+            ((CommaInitializer<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)&local_50,__in_chrg_01);
+  local_90 = 0.3141;
+  Eigen::DenseBase<Eigen::Matrix<float,_4,_3,_0,_4,_3>_>::operator<<
+            (&local_50,(DenseBase<Eigen::Matrix<float,_4,_3,_0,_4,_3>_> *)&this->default_wheel_p,
+             &local_90);
+  local_8c = 0.2;
+  pCVar5 = Eigen::CommaInitializer<Eigen::Matrix<float,_4,_3,_0,_4,_3>_>::operator_
+                     (&local_50,&local_8c);
+  local_88 = 0.0;
+  pCVar5 = Eigen::CommaInitializer<Eigen::Matrix<float,_4,_3,_0,_4,_3>_>::operator_
+                     (pCVar5,&local_88);
+  local_84 = 0.3141;
+  pCVar5 = Eigen::CommaInitializer<Eigen::Matrix<float,_4,_3,_0,_4,_3>_>::operator_
+                     (pCVar5,&local_84);
+  local_80 = -0.2;
+  pCVar5 = Eigen::CommaInitializer<Eigen::Matrix<float,_4,_3,_0,_4,_3>_>::operator_
+                     (pCVar5,&local_80);
+  local_7c = 0.0;
+  pCVar5 = Eigen::CommaInitializer<Eigen::Matrix<float,_4,_3,_0,_4,_3>_>::operator_
+                     (pCVar5,&local_7c);
+  local_78 = -0.3141;
+  pCVar5 = Eigen::CommaInitializer<Eigen::Matrix<float,_4,_3,_0,_4,_3>_>::operator_
+                     (pCVar5,&local_78);
+  local_74 = 0.2;
+  pCVar5 = Eigen::CommaInitializer<Eigen::Matrix<float,_4,_3,_0,_4,_3>_>::operator_
+                     (pCVar5,&local_74);
+  local_70 = 0.0;
+  pCVar5 = Eigen::CommaInitializer<Eigen::Matrix<float,_4,_3,_0,_4,_3>_>::operator_
+                     (pCVar5,&local_70);
+  local_6c = -0.3141;
+  pCVar5 = Eigen::CommaInitializer<Eigen::Matrix<float,_4,_3,_0,_4,_3>_>::operator_
+                     (pCVar5,&local_6c);
+  local_68.super_Base<OrtEnv>.p_._0_4_ = 0xbe4ccccd;
+  pCVar5 = Eigen::CommaInitializer<Eigen::Matrix<float,_4,_3,_0,_4,_3>_>::operator_
+                     (pCVar5,(Scalar *)&local_68);
+  local_60.super_SessionImpl<OrtSession>.super_ConstSessionImpl<OrtSession>.super_Base<OrtSession>.
+  p_._0_4_ = 0;
+  Eigen::CommaInitializer<Eigen::Matrix<float,_4,_3,_0,_4,_3>_>::operator_
+            (pCVar5,(Scalar *)&local_60);
+  Eigen::CommaInitializer<Eigen::Matrix<float,_4,_3,_0,_4,_3>_>::~CommaInitializer
+            (&local_50,__in_chrg_02);
+  local_70 = 60.0;
+  local_6c = 60.0;
+  local_68.super_Base<OrtEnv>.p_._0_4_ = 0x42700000;
+  local_60.super_SessionImpl<OrtSession>.super_ConstSessionImpl<OrtSession>.super_Base<OrtSession>.
+  p_._0_4_ = 0;
+  Eigen::Matrix<float,_4,_1,_0,_4,_1>::Matrix
+            ((Matrix<float,_4,_1,_0,_4,_1> *)&sStack_30,&local_70,&local_6c,(Scalar *)&local_68,
+             (Scalar *)&local_60);
+  Eigen::DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>::replicate
+            ((Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1> *)&local_50,
+             (DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_> *)&sStack_30,4,1);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::Replicate<Eigen::Matrix<float,_4,_1>,__1,__1>_>
+            (&(this->super_PolicyRunnerBase).kp_,
+             (DenseBase<Eigen::Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1>_> *)&local_50)
+  ;
+  local_70 = 1.5;
+  local_6c = 1.5;
+  local_68.super_Base<OrtEnv>.p_._0_4_ = 0x3fc00000;
+  local_60.super_SessionImpl<OrtSession>.super_ConstSessionImpl<OrtSession>.super_Base<OrtSession>.
+  p_._0_4_ = 0x3f800000;
+  Eigen::Matrix<float,_4,_1,_0,_4,_1>::Matrix
+            ((Matrix<float,_4,_1,_0,_4,_1> *)&sStack_30,&local_70,&local_6c,(Scalar *)&local_68,
+             (Scalar *)&local_60);
+  Eigen::DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_>::replicate
+            ((Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1> *)&local_50,
+             (DenseBase<Eigen::Matrix<float,_4,_1,_0,_4,_1>_> *)&sStack_30,4,1);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::Replicate<Eigen::Matrix<float,_4,_1>,__1,__1>_>
+            (&(this->super_PolicyRunnerBase).kd_,
+             (DenseBase<Eigen::Replicate<Eigen::Matrix<float,_4,_1,_0,_4,_1>,__1,__1>_> *)&local_50)
+  ;
+  logid = (char *)std::__cxx11::string::data();
+  Ort::Env::Env(&local_68,ORT_LOGGING_LEVEL_ERROR,logid);
+  Ort::Env::operator=(&(this->super_PolicyRunnerBase).env_,&local_68);
+  Ort::Env::~Env(&local_68,__in_chrg_03);
+  Ort::Session::Session
+            (&local_60,&(this->super_PolicyRunnerBase).env_,
+             PTR___policy_m20_finetune_forward__00386dc8,
+             (ulong)*(uint *)PTR___policy_m20_finetune_forward__len_003864d0,
+             &(this->super_PolicyRunnerBase).session_options_);
+  Ort::Session::operator=(&(this->super_PolicyRunnerBase).session1_,&local_60);
+  Ort::Session::~Session(&local_60,__in_chrg_04);
+  test_policy(this);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::operator=
+            (&(this->super_PolicyRunnerBase).robot_action.kp,&(this->super_PolicyRunnerBase).kp_);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::operator=
+            (&(this->super_PolicyRunnerBase).robot_action.kd,&(this->super_PolicyRunnerBase).kd_);
+  local_50._0_16_ =
+       Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::Zero
+                 ((long)(this->super_PolicyRunnerBase).act_dim_);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::CwiseNullaryOp<Eigen::internal::scalar_zero_op<float>,_Eigen::Matrix<float,__1,_1>_>_>
+            (&(this->super_PolicyRunnerBase).robot_action.tau_ff,
+             (DenseBase<Eigen::CwiseNullaryOp<Eigen::internal::scalar_zero_op<float>,_Eigen::Matrix<float,__1,_1,_0,__1,_1>_>_>
+              *)&local_50);
+  local_50._0_16_ =
+       Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::Zero
+                 ((long)(this->super_PolicyRunnerBase).act_dim_);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::CwiseNullaryOp<Eigen::internal::scalar_zero_op<float>,_Eigen::Matrix<float,__1,_1>_>_>
+            (&(this->super_PolicyRunnerBase).robot_action.goal_joint_pos,
+             (DenseBase<Eigen::CwiseNullaryOp<Eigen::internal::scalar_zero_op<float>,_Eigen::Matrix<float,__1,_1,_0,__1,_1>_>_>
+              *)&local_50);
+  local_50._0_16_ =
+       Eigen::DenseBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::Zero
+                 ((long)(this->super_PolicyRunnerBase).act_dim_);
+  Eigen::Matrix<float,_-1,_1,_0,_-1,_1>::
+  operator=<Eigen::CwiseNullaryOp<Eigen::internal::scalar_zero_op<float>,_Eigen::Matrix<float,__1,_1>_>_>
+            (&(this->super_PolicyRunnerBase).robot_action.goal_joint_vel,
+             (DenseBase<Eigen::CwiseNullaryOp<Eigen::internal::scalar_zero_op<float>,_Eigen::Matrix<float,__1,_1,_0,__1,_1>_>_>
+              *)&local_50);
+  Eigen::PlainObjectBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::setZero
+            (&(this->output_eigen).super_PlainObjectBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_>,
+             (long)(this->super_PolicyRunnerBase).act_dim_);
+  info = Ort::detail::Base<OrtMemoryInfo>::
+         operator_Ort__detail__Base<OrtMemoryInfo>__contained_type_
+                   ((Base<OrtMemoryInfo> *)&(this->super_PolicyRunnerBase).memory_info_);
+  p_data = Eigen::PlainObjectBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::data
+                     (&(this->output_eigen).
+                       super_PlainObjectBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_>);
+  p_data_element_count =
+       Eigen::EigenBase<Eigen::Matrix<float,_-1,_1,_0,_-1,_1>_>::size
+                 ((EigenBase<Eigen::Matrix<float,__1,_1,_0,__1,_1>_> *)&this->output_eigen);
+  shape = std::array<long_int,_2>::data(&this->outputShape);
+  shape_len = std::array<long_int,_2>::size(&this->outputShape);
+  Ort::Value::CreateTensor<float>(info,p_data,p_data_element_count,shape,shape_len);
+  Ort::Value::operator=(&this->outputTensor,(Value *)&local_50);
+  Ort::Value::~Value((Value *)&local_50,__in_chrg_05);
+  if (local_8 - *(long *)PTR___stack_chk_guard_00386ea8 != 0) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail(PTR___stack_chk_guard_00386ea8,
+                     local_8 - *(long *)PTR___stack_chk_guard_00386ea8,0);
+  }
+  return;
+}
+
+
+WROTE /home/lee/rea/notes/ghidra_rl_allctors.txt

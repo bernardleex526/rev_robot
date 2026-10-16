@@ -1,0 +1,7 @@
+b07292505eb1a4861a72d2cfb4da7cf8  usr/include/xkbcommon/xkbcommon-compat.h
+439f85cfa6bf113a8b539b7bcb38961f  usr/include/xkbcommon/xkbcommon-compose.h
+fc6b42e2bd7dc83bec2ca3f5d34075c6  usr/include/xkbcommon/xkbcommon-keysyms.h
+10fedda2f75a254daf645e9ad4d6fc53  usr/include/xkbcommon/xkbcommon-names.h
+94800a41f5c517d31eb2155d639d9f2a  usr/include/xkbcommon/xkbcommon.h
+8f3f46c525a29a31bba6e88b0dcdc58e  usr/lib/aarch64-linux-gnu/pkgconfig/xkbcommon.pc
+1a56f734d175bd0a9975029e60419b7b  usr/share/doc/libxkbcommon-dev/copyright

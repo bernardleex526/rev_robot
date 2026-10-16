@@ -1,0 +1,5 @@
+libhdf5_openmpi_fortran 100 libhdf5-openmpi-103
+libhdf5_openmpi 103 libhdf5-openmpi-103
+libhdf5_openmpi_hl 100 libhdf5-openmpi-103
+libhdf5_openmpihl_fortran 100 libhdf5-openmpi-103
+

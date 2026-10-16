@@ -1,0 +1,6 @@
+4b9b86d5b5ea1b303d079a3050a6cabd  lib/systemd/system/netfilter-persistent.service
+1210e4e7d4c24bdfce2159d75a08243c  usr/sbin/netfilter-persistent
+7d87cd0da115abb890843fce14f04761  usr/share/doc/netfilter-persistent/README
+9c3fcbb57da2b00e2547f0cf2a686170  usr/share/doc/netfilter-persistent/changelog.gz
+efa38437dfaf00cb7e3dd14dc520ca65  usr/share/doc/netfilter-persistent/copyright
+8273bd526d69a4e458d393a98eeaedfa  usr/share/man/man8/netfilter-persistent.8.gz

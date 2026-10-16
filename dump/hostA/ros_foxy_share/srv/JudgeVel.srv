@@ -1,0 +1,6 @@
+geometry_msgs/Twist vel_input
+float64 dt_input
+float64 length_input
+float64 width_input
+---
+bool result

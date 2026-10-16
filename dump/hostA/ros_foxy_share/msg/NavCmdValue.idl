@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from drdds/msg/NavCmdValue.msg
+// generated code does not contain a copyright notice
+
+
+module drdds {
+  module msg {
+    struct NavCmdValue {
+      @verbatim (language="comment", text=
+        " X轴线速度")
+      float x_vel;
+
+      @verbatim (language="comment", text=
+        " Y轴线速度")
+      float y_vel;
+
+      @verbatim (language="comment", text=
+        " Yaw角速度")
+      float yaw_vel;
+    };
+  };
+};

@@ -1,0 +1,7 @@
+f78bd1f60b8f4a0b8049eea9ea3c1ed9  usr/bin/odbcinst
+3cc39c457015ec1b0a502a19e97d89d1  usr/share/doc/odbcinst/NEWS.Debian.gz
+6cd06a6830d6c6483dab1a0522e5ad9c  usr/share/doc/odbcinst/changelog.Debian.gz
+d728c490223d3e2e48fea88d74b125cf  usr/share/doc/odbcinst/copyright
+186d8585c0ef6f66a59d8a0bbedafdea  usr/share/man/man1/odbcinst.1.gz
+2aecdb03ffe157909f361aed4cad6aa2  usr/share/man/man5/odbc.ini.5.gz
+9a7dd368c4869869200d3ca916a71223  usr/share/man/man5/odbcinst.ini.5.gz

@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/bin
+/usr/bin/slirp4netns
+/usr/share
+/usr/share/doc
+/usr/share/doc/slirp4netns
+/usr/share/doc/slirp4netns/README.Debian
+/usr/share/doc/slirp4netns/README.md.gz
+/usr/share/doc/slirp4netns/changelog.Debian.gz
+/usr/share/doc/slirp4netns/copyright
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/slirp4netns.1.gz

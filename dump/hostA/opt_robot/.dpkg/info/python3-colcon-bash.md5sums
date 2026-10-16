@@ -1,0 +1,15 @@
+f26d9b8d445fe45182e05a67aeab6592  usr/lib/python3/dist-packages/colcon_bash-0.5.0.egg-info/PKG-INFO
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/colcon_bash-0.5.0.egg-info/dependency_links.txt
+ca0e334851621d18c29707650fe0c772  usr/lib/python3/dist-packages/colcon_bash-0.5.0.egg-info/entry_points.txt
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/colcon_bash-0.5.0.egg-info/not-zip-safe
+7aece7e0853806ff44bfba76742803e4  usr/lib/python3/dist-packages/colcon_bash-0.5.0.egg-info/requires.txt
+68d7fdae8909192140ba9c27ad0703b8  usr/lib/python3/dist-packages/colcon_bash-0.5.0.egg-info/top_level.txt
+23511662a4945bef0cdf4c06535049fb  usr/lib/python3/dist-packages/colcon_bash/__init__.py
+d41d8cd98f00b204e9800998ecf8427e  usr/lib/python3/dist-packages/colcon_bash/shell/__init__.py
+6e105766eb347895c5ec649f5dd9725a  usr/lib/python3/dist-packages/colcon_bash/shell/bash.py
+d41d8cd98f00b204e9800998ecf8427e  usr/lib/python3/dist-packages/colcon_bash/shell/template/__init__.py
+8c013b33618a97e2d4602fb30e0daca1  usr/lib/python3/dist-packages/colcon_bash/shell/template/hook_set_value.bash.em
+9700406ee462bc8b336e391bbddc526e  usr/lib/python3/dist-packages/colcon_bash/shell/template/package.bash.em
+13e2be5da243163857fd330cfc1e91f4  usr/lib/python3/dist-packages/colcon_bash/shell/template/prefix.bash.em
+8d5e7985cdfae320fce60ea6ab39f4b4  usr/lib/python3/dist-packages/colcon_bash/shell/template/prefix_chain.bash.em
+c9e1633032281b35830ea5aaed4d98a2  usr/share/doc/python3-colcon-bash/changelog.Debian.gz

@@ -1,0 +1,12 @@
+b45e02892074fb1c2ed7e40c9fe35ca8  usr/lib/python3/dist-packages/colcon_test_result-0.3.8.egg-info/PKG-INFO
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/colcon_test_result-0.3.8.egg-info/dependency_links.txt
+5d9c0ba4d0e82ad2f92a9dcb1c33410a  usr/lib/python3/dist-packages/colcon_test_result-0.3.8.egg-info/entry_points.txt
+5e8ab51e257c4f9bfb2331f455fcd065  usr/lib/python3/dist-packages/colcon_test_result-0.3.8.egg-info/requires.txt
+1d8144768c63f4c8761a2390287dd128  usr/lib/python3/dist-packages/colcon_test_result-0.3.8.egg-info/top_level.txt
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/colcon_test_result-0.3.8.egg-info/zip-safe
+a619b846a17396c4e071384dac6835fb  usr/lib/python3/dist-packages/colcon_test_result/__init__.py
+0f3fa26a4ffca5abaf704b5ef1dbbb4e  usr/lib/python3/dist-packages/colcon_test_result/test_result/__init__.py
+e17275f8fc61d27eeb0539ab109ca14e  usr/lib/python3/dist-packages/colcon_test_result/test_result/xunit.py
+d41d8cd98f00b204e9800998ecf8427e  usr/lib/python3/dist-packages/colcon_test_result/verb/__init__.py
+7ac73a6d513a3704db58c619352ae1a0  usr/lib/python3/dist-packages/colcon_test_result/verb/test_result.py
+f5d169573619f3a5bc6d44cbca3fc3af  usr/share/doc/python3-colcon-test-result/changelog.Debian.gz

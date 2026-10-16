@@ -1,0 +1,15 @@
+b21600f8851470e14d7ae5818cdc593b  usr/bin/hg
+a708a92ab4ad0c77340370afa582c2e7  usr/lib/python2.7/dist-packages/hgext/fsmonitor/pywatchman/bser.aarch64-linux-gnu.so
+424c200f0ba7ab7f1775cbf5f87913e9  usr/lib/python2.7/dist-packages/mercurial/cext/base85.aarch64-linux-gnu.so
+2f82a15f562a7e6f790909d940c8ce08  usr/lib/python2.7/dist-packages/mercurial/cext/bdiff.aarch64-linux-gnu.so
+85b1eb89ca71dcdc06ec2aab69944da7  usr/lib/python2.7/dist-packages/mercurial/cext/mpatch.aarch64-linux-gnu.so
+a6cea98887bc05f11ba81f1cb79213fe  usr/lib/python2.7/dist-packages/mercurial/cext/osutil.aarch64-linux-gnu.so
+4c4ee650be948afb80833703ad36c160  usr/lib/python2.7/dist-packages/mercurial/cext/parsers.aarch64-linux-gnu.so
+d60a1b50f1563888f76ec381e9853f28  usr/lib/python2.7/dist-packages/mercurial/thirdparty/sha1dc.aarch64-linux-gnu.so
+1de01401cdeb452cb6667c23d93ebdff  usr/lib/python2.7/dist-packages/mercurial/thirdparty/zope/interface/_zope_interface_coptimizations.aarch64-linux-gnu.so
+887085e0105660bef373fe2c16d3bcdf  usr/lib/python2.7/dist-packages/mercurial/zstd.aarch64-linux-gnu.so
+005f89daa34296fb399cc41b04024c09  usr/share/doc/mercurial/NEWS.Debian.gz
+3d15c572cdd4f4ef14f22e5566e28535  usr/share/doc/mercurial/changelog.Debian.gz
+65f613a4729c32535519761ff8d3a696  usr/share/doc/mercurial/copyright
+3bf0d5275bacc0ee48eee4ae8088d694  usr/share/mercurial/hgext.rc
+4301dd96556917738b895bf82f9124e3  usr/share/mercurial/hgext.rc.md5sums

@@ -1,0 +1,60 @@
+systemd,1
+  |-ModemManager,884
+  |   |-{ModemManager},940
+  |   `-{ModemManager},951
+  |-NetworkManager,1334 --no-daemon
+  |   |-{NetworkManager},1345
+  |   `-{NetworkManager},1346
+  |-accounts-daemon,738
+  |   |-{accounts-daemon},747
+  |   `-{accounts-daemon},874
+  |-agetty,927 -o -p -- \\u --keep-baud 115200,38400,9600 ttyFIQ0 vt220
+  |-astar.sh,2408 /opt/robot/share/global_planner/scripts/astar.sh
+  |   `-sudo,2424 chrt 45 taskset -c 6,7 /opt/robot/share/global_planner/scripts/../bin/astar_node
+  |       `-astar_node,2427
+  |           |-{astar_node},2442
+  |           |-{astar_node},2443
+  |           |-{astar_node},2444
+  |           |-{astar_node},2445
+  |           |-{astar_node},2510
+  |           |-{astar_node},2511
+  |           |-{astar_node},2512
+  |           |-{astar_node},2513
+  |           |-{astar_node},2514
+  |           |-{astar_node},2515
+  |           |-{astar_node},2516
+  |           |-{astar_node},2517
+  |           |-{astar_node},2518
+  |           |-{astar_node},2519
+  |           |-{astar_node},2520
+  |           |-{astar_node},2521
+  |           |-{astar_node},2522
+  |           |-{astar_node},2523
+  |           |-{astar_node},2524
+  |           |-{astar_node},2525
+  |           |-{astar_node},2526
+  |           |-{astar_node},2527
+  |           |-{astar_node},2528
+  |           |-{astar_node},2529
+  |           |-{astar_node},2530
+  |           |-{astar_node},2531
+  |           |-{astar_node},2532
+  |           |-{astar_node},2533
+  |           |-{astar_node},2534
+  |           |-{astar_node},2535
+  |           |-{astar_node},2536
+  |           |-{astar_node},2537
+  |           |-{astar_node},2538
+  |           |-{astar_node},2539
+  |           |-{astar_node},2540
+  |           |-{astar_node},2541
+  |           |-{astar_node},2542
+  |           `-{astar_node},2543
+  |-avahi-daemon,740
+  |   `-avahi-daemon,774
+  |-bash,1072 /opt/robot/scripts/board_resources/storage_space/delete_log_record.sh
+  |   `-sleep,227385 300
+  |-bash,1073 /opt/robot/scripts/board_resources/storage_space/delete_log_robot.sh
+  |   `-sleep,227384 300
+  |-bash,1075 /opt/robot/scripts/board_resources/storage_space/delete_log_sys.sh
+  |   `-sleep,227392 300

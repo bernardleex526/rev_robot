@@ -1,0 +1,12 @@
+4ba4cf62b0b8f6cb5ee54650b29259e2  usr/include/fyba/fyba.h
+57daaf80e33a95298d4d8994f2200ed1  usr/include/fyba/fygm.h
+a83da9c8e6646df7183cf63ef0c60985  usr/include/fyba/fyut.h
+3aff9c8a0931d3d3b66a266be6f0189e  usr/lib/aarch64-linux-gnu/libfyba.a
+77389be3000319b515f3b6639fa8af86  usr/lib/aarch64-linux-gnu/libfygm.a
+8d28a34ef105524679f03b6faac64841  usr/lib/aarch64-linux-gnu/libfyut.a
+50ee25ea2f414eca65083f3f4d422b91  usr/lib/aarch64-linux-gnu/pkgconfig/fyba.pc
+795cda45cb93045e37c3f44104f293cf  usr/share/doc-base/libfyba-dev
+91c8537095fb96037caff863f09cf5f8  usr/share/doc/libfyba-dev/copyright
+f7617483bd1ed98b013e9645504861a1  usr/share/doc/libfyba-dev/en_EN/fyba.html
+be8637c7d221caacf550847f5654ad8c  usr/share/doc/libfyba-dev/en_EN/fyba1.html
+1d9bec16f29434bfcdedd6290f6b1c74  usr/share/doc/libfyba-dev/en_EN/fyba2.html

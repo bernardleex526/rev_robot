@@ -1,0 +1,12 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from drdds/msg/StdMsgFloat32.msg
+// generated code does not contain a copyright notice
+
+
+module drdds {
+  module msg {
+    struct StdMsgFloat32 {
+      float value;
+    };
+  };
+};

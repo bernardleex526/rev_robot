@@ -1,0 +1,8 @@
+02da9ec4981fbf3d4ce184c903fe174d  usr/bin/ogdi-config
+f58e208e9e7f9805f099bb8670c148a3  usr/include/ogdi/ecs.h
+cdcd481e3acbff4859e127d3dee71cde  usr/include/ogdi/ecs_util.h
+2413d2e48f7471b0793a187bd556827c  usr/share/doc/libogdi-dev/NEWS.gz
+1242837667d19132a0f5df8fd45ab9a2  usr/share/doc/libogdi-dev/README
+dd7a59aa7f300170754277d9ea6bf67e  usr/share/doc/libogdi-dev/README.Debian
+ef037cc11dd8a6b2c0b6193f54879f67  usr/share/doc/libogdi-dev/copyright
+ff68e200a70b7dd4ec14bb154b5621ef  usr/share/pkgconfig/ogdi.pc

@@ -1,0 +1,6 @@
+9f9ae5a357a8f4bb572b86a25da87317  usr/bin/dh_sip3
+7d2ed36205b0adc69981278da7d91c02  usr/include/python3.8/sip.h
+bab2bf2444f14505c8b0e9d8e71bf6d1  usr/lib/python3/dist-packages/sipdistutils.py
+ff785e4546c99ff0fc8208a7851ef2a5  usr/share/doc/python3-sip-dev/copyright
+9442bb2db31e12418c4b89c22b34e7d2  usr/share/man/man1/dh_sip3.1.gz
+49e8e5c2ea6bad6420a025e8d0b13e6e  usr/share/perl5/Debian/Debhelper/Sequence/sip3.pm

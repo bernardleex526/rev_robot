@@ -1,0 +1,7 @@
+libmali 1 libmali-valhall-g610-g13p0-x11-gbm
+libmali_hook 1 libmali-valhall-g610-g13p0-x11-gbm
+libEGL 1 libmali-valhall-g610-g13p0-x11-gbm
+libGLESv1_CM 1 libmali-valhall-g610-g13p0-x11-gbm
+libGLESv2 2 libmali-valhall-g610-g13p0-x11-gbm
+libMaliOpenCL 1 libmali-valhall-g610-g13p0-x11-gbm
+libgbm 1 libmali-valhall-g610-g13p0-x11-gbm

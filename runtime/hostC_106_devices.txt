@@ -1,0 +1,23 @@
+crw-rw---- 1 root i2c     89,  0 Jun 23 07:21 /dev/i2c-0
+crw-rw---- 1 root i2c     89,  1 Jun 23 07:21 /dev/i2c-1
+crw-rw---- 1 root i2c     89,  3 Jun 23 07:21 /dev/i2c-3
+crw-rw---- 1 root i2c     89,  6 Jun 23 07:21 /dev/i2c-6
+crw-rw---- 1 root i2c     89,  9 Jun 23 07:21 /dev/i2c-9
+crw-rw---- 1 root dialout  4, 64 Jun 23 07:21 /dev/ttyS0
+crw-rw---- 1 root dialout  4, 65 Jun 23 07:21 /dev/ttyS1
+crw-rw---- 1 root dialout  4, 68 Jun 23 07:21 /dev/ttyS4
+crw-rw---- 1 root dialout  4, 70 Jun 23 07:21 /dev/ttyS6
+crw-rw---- 1 root dialout  4, 73 Jun 23 07:21 /dev/ttyS9
+lo               UNKNOWN        00:00:00:00:00:00 <LOOPBACK,UP,LOWER_UP> 
+dummy0           DOWN           fa:f8:32:8c:e8:be <BROADCAST,NOARP> 
+eth0             UP             a6:2c:b2:5c:6b:14 <BROADCAST,MULTICAST,UP,LOWER_UP> 
+eth1             UP             aa:2c:b2:5c:6b:14 <BROADCAST,MULTICAST,UP,LOWER_UP> 
+docker0          DOWN           8e:10:be:4b:a3:0f <NO-CARRIER,BROADCAST,MULTICAST,UP> 
+Bus 008 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 007 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 006 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 005 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 004 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 003 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub

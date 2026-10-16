@@ -1,0 +1,7 @@
+197a13a8f033c0849f256b3e8150ca64  opt/robot/share/rl_deploy/conf/log.properties
+238d3fea5e618a9c9359ccb2ec7a10a0  opt/robot/share/rl_deploy/scripts/run.sh
+75e4a588e8c75754b54799016dac89fe  opt/robot/share/rl_deploy/scripts/rl_deploy.service
+04aa69a9bd3d8d4cb401f20c623a820c  opt/robot/share/rl_deploy/lib/onnxruntime/libonnxruntime_providers_shared.so
+4bb5305b01d10c0796b29cd100b75234  opt/robot/share/rl_deploy/lib/onnxruntime/libonnxruntime.so.1.20.0
+8b51c2d7ccfd8eea4e6e9afa3fb13afd  opt/robot/share/rl_deploy/change_log.md
+9f6083c25fcb9afbd99e8ab21ac24ad8  opt/robot/share/rl_deploy/bin/rl_deploy

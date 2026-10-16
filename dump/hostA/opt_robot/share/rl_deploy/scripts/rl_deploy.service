@@ -1,0 +1,14 @@
+[Unit]
+Description=rl_deploy
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/opt/robot/share/rl_deploy/scripts/run.sh
+Restart=on-failure
+RestartPreventExitStatus=SIGTERM
+RestartPreventExitStatus=SIGSEGV
+
+
+[Install]
+WantedBy=network.target

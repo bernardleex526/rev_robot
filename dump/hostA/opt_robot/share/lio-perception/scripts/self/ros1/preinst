@@ -1,0 +1,13 @@
+#!/bin/bash
+
+target_path="/home/ysc/jy_cog/system/conf/lio-perception"
+file_list=("params.yaml")
+
+
+for file_name in ${file_list[@]}
+do
+if [ -e $target_path/$file_name ]; then
+echo "备份参数文件 $file_name"
+cp "$target_path/$file_name" $target_path/$file_name.last
+fi
+done

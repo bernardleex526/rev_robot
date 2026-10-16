@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from drdds/msg/LocationStatusValue.msg
+// generated code does not contain a copyright notice
+
+#include "drdds/msg/ExecStatusValue.idl"
+#include "drdds/msg/InputStatusValue.idl"
+#include "drdds/msg/LossStatusValue.idl"
+
+module drdds {
+  module msg {
+    struct LocationStatusValue {
+      uint8 total_status;
+
+      drdds::msg::ExecStatusValue exec_val;
+
+      drdds::msg::LossStatusValue loss_val;
+
+      drdds::msg::InputStatusValue input_val;
+    };
+  };
+};

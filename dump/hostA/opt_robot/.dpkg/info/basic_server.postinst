@@ -1,0 +1,41 @@
+#!/bin/bash
+set -e
+
+sudo chmod +x /opt/robot/share/basic_server/scripts/run.sh
+
+SERVICE_FILE="/lib/systemd/system/basic_server.service"
+
+# 检测系统版本，设置条件配置
+USER_CONFIG=""
+USER_USER_CONFIG=""
+USER_GROUP_CONFIG=""
+if grep -q "^ID=ubuntu" /etc/os-release && grep -q "^VERSION_ID=\"22.04\"" /etc/os-release; then
+    USER_USER_CONFIG="User=user"
+    USER_GROUP_CONFIG="Group=user"
+    USER_CONFIG="SupplementaryGroups=video audio tty dialout bluetooth"
+fi
+cat <<EOF > $SERVICE_FILE
+[Unit]
+Description=basic_server
+After=network.target
+
+[Service]
+$USER_USER_CONFIG
+$USER_GROUP_CONFIG
+$USER_CONFIG
+Type=simple
+ExecStart=/opt/robot/share/basic_server/scripts/run.sh
+Restart=on-failure
+RestartPreventExitStatus=SIGTERM
+
+[Install]
+WantedBy=network.target
+
+EOF
+
+systemctl daemon-reload
+
+systemctl disable basic_server.service
+systemctl restart basic_server.service
+
+exit 0

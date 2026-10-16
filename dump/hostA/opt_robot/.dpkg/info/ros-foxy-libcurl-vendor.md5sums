@@ -1,0 +1,17 @@
+1e9d8dd5b93269d17299e12a10eda1b8  opt/ros/foxy/share/ament_index/resource_index/package_run_dependencies/libcurl_vendor
+d41d8cd98f00b204e9800998ecf8427e  opt/ros/foxy/share/ament_index/resource_index/packages/libcurl_vendor
+c5bea21e3b9564d2a435b40f0e03ecf6  opt/ros/foxy/share/ament_index/resource_index/parent_prefix_path/libcurl_vendor
+c8fe4810b3eab37e3861cdfdaa7387bd  opt/ros/foxy/share/libcurl_vendor/cmake/libcurl_vendor-extras.cmake
+2b793d79109bbcc40c517dce9c76bcb9  opt/ros/foxy/share/libcurl_vendor/cmake/libcurl_vendorConfig-version.cmake
+c619e906ef8785d639e22b16003ec052  opt/ros/foxy/share/libcurl_vendor/cmake/libcurl_vendorConfig.cmake
+8dbf4790a764a69b56a5904c00682df0  opt/ros/foxy/share/libcurl_vendor/environment/ament_prefix_path.dsv
+fd0b100f5da0d9f2d38645ac45815395  opt/ros/foxy/share/libcurl_vendor/environment/ament_prefix_path.sh
+11e8ba1deb2827a5e13dd631720bcf6b  opt/ros/foxy/share/libcurl_vendor/environment/path.dsv
+234e39ac8bc1c1d4f887075bf9492366  opt/ros/foxy/share/libcurl_vendor/environment/path.sh
+ed9dcb7a76d3763c6cd97ebbd1f4cc7d  opt/ros/foxy/share/libcurl_vendor/local_setup.bash
+3332bedd2b1167295fd9ac78355b14ef  opt/ros/foxy/share/libcurl_vendor/local_setup.dsv
+2ff9ea204bda179fb29db4ae4d671644  opt/ros/foxy/share/libcurl_vendor/local_setup.sh
+24970cb512d5df3600adc59d7fa85f7b  opt/ros/foxy/share/libcurl_vendor/local_setup.zsh
+4b6e153e81eddfe58f802c02b9cb1b0a  opt/ros/foxy/share/libcurl_vendor/package.dsv
+a2ca90a5687ad098ba0d07e4cd3d654f  opt/ros/foxy/share/libcurl_vendor/package.xml
+2b08463a43f09970aef3adb707f0e264  usr/share/doc/ros-foxy-libcurl-vendor/changelog.Debian.gz

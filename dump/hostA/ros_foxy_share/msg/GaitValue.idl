@@ -1,0 +1,12 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from drdds/msg/GaitValue.msg
+// generated code does not contain a copyright notice
+
+
+module drdds {
+  module msg {
+    struct GaitValue {
+      uint32 gait;
+    };
+  };
+};

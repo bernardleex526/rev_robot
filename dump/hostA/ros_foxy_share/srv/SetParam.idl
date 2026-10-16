@@ -1,0 +1,41 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from drdds/srv/SetParam.srv
+// generated code does not contain a copyright notice
+
+
+module drdds {
+  module srv {
+    struct SetParam_Request {
+      boolean directline_mode;
+
+      double max_speed_x;
+
+      double max_speed_y;
+
+      double max_theta;
+
+      double barking_deceleration;
+
+      double xy_tolerance;
+
+      double yaw_tolerance;
+
+      double stop_distance;
+
+      double judge_close;
+
+      double backward_mode;
+
+      double dl_min_yaw;
+
+      double dl_min_x;
+
+      double dl_min_y;
+
+      double dl_line_yaw_min;
+    };
+    struct SetParam_Response {
+      boolean is_success;
+    };
+  };
+};

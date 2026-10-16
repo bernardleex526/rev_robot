@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/lib
+/usr/lib/python3
+/usr/lib/python3/dist-packages
+/usr/lib/python3/dist-packages/PySide2
+/usr/lib/python3/dist-packages/PySide2/QtGui.cpython-38-aarch64-linux-gnu.so
+/usr/share
+/usr/share/doc
+/usr/share/doc/python3-pyside2.qtgui
+/usr/share/doc/python3-pyside2.qtgui/copyright
+/usr/share/doc/python3-pyside2.qtgui/changelog.Debian.gz

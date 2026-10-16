@@ -1,0 +1,28 @@
+[Unit]
+Description=Rob Bag System - ROS2 Data Recording Service
+After=network.target
+Wants=network.target
+Before=multi-user.target
+
+[Service]
+Type=simple
+# 限制线程栈大小为256KB (默认8MB)，39线程可节省约300MB内存
+# 无深度递归调用，256KB栈足够使用
+ExecStart=/bin/bash -c 'source /opt/robot/scripts/setup_ros2.sh && exec ros2 run rob_bag rob_bag'
+Restart=on-failure
+RestartSec=10
+User=root
+# 修正工作目录路径
+WorkingDirectory=/var/opt/robot/data/rob_bag
+# 设置环境变量
+Environment=ROS_LOG_DIR=/var/opt/robot/log
+# 安全设置
+# 建议关闭，ROS2 插件可能需要动态加载
+NoNewPrivileges=false
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=true
+ReadWritePaths=/var/opt/robot/data/rob_bag /var/opt/robot/log /tmp /dev/shm
+
+[Install]
+WantedBy=multi-user.target

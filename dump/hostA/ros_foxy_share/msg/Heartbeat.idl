@@ -1,0 +1,30 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from drdds/msg/Heartbeat.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+
+module drdds {
+  module msg {
+    @verbatim (language="comment", text=
+      " Component heartbeat status message" "\n"
+      " Used for monitoring component liveness and detecting timeout faults")
+    struct Heartbeat {
+      @verbatim (language="comment", text=
+        " HeartBeat timestamp")
+      builtin_interfaces::msg::Time timestamp;
+
+      @verbatim (language="comment", text=
+        " Resource ID (support multiple instances, e.g., \"motion_planner_0\")")
+      string resource_id;
+
+      @verbatim (language="comment", text=
+        " Status code: 0=normal, 1=degraded, 2=fault")
+      uint8 status;
+
+      @verbatim (language="comment", text=
+        " Optional additional info (JSON format)")
+      string details;
+    };
+  };
+};

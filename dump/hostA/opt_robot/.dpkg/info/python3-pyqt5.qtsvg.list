@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/lib
+/usr/lib/python3
+/usr/lib/python3/dist-packages
+/usr/lib/python3/dist-packages/PyQt5
+/usr/lib/python3/dist-packages/PyQt5/QtSvg.cpython-38-aarch64-linux-gnu.so
+/usr/lib/python3/dist-packages/PyQt5/QtSvg.pyi
+/usr/share
+/usr/share/doc
+/usr/share/doc/python3-pyqt5.qtsvg
+/usr/share/doc/python3-pyqt5.qtsvg/copyright
+/usr/share/doc/python3-pyqt5.qtsvg/NEWS.gz
+/usr/share/doc/python3-pyqt5.qtsvg/changelog.Debian.gz

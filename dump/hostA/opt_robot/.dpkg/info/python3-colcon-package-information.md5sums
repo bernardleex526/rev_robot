@@ -1,0 +1,14 @@
+44e1043c23b38c1a0da3f2ac2a024b52  usr/lib/python3/dist-packages/colcon_package_information-0.4.0.egg-info/PKG-INFO
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/colcon_package_information-0.4.0.egg-info/dependency_links.txt
+81ad403a297600295aad4b0b2feae97b  usr/lib/python3/dist-packages/colcon_package_information-0.4.0.egg-info/entry_points.txt
+8b006c0d0a2aa465d26c8b85a8c47057  usr/lib/python3/dist-packages/colcon_package_information-0.4.0.egg-info/requires.txt
+46c51657e01c26802cce03897565e540  usr/lib/python3/dist-packages/colcon_package_information-0.4.0.egg-info/top_level.txt
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/colcon_package_information-0.4.0.egg-info/zip-safe
+7c0626d65c6350f8eb5b51eca3b15ecd  usr/lib/python3/dist-packages/colcon_package_information/__init__.py
+d41d8cd98f00b204e9800998ecf8427e  usr/lib/python3/dist-packages/colcon_package_information/package_augmentation/__init__.py
+342c95d5d1791c89579a2058a7fca39c  usr/lib/python3/dist-packages/colcon_package_information/package_augmentation/check_dependency_constraint.py
+d41d8cd98f00b204e9800998ecf8427e  usr/lib/python3/dist-packages/colcon_package_information/verb/__init__.py
+d6eae81bf08a8e802b5c243b4376920f  usr/lib/python3/dist-packages/colcon_package_information/verb/graph.py
+57bdadc576f81e9d2943df8e80f13b42  usr/lib/python3/dist-packages/colcon_package_information/verb/info.py
+f518cdf76f3ecf7e2e4877bdbdc8d789  usr/lib/python3/dist-packages/colcon_package_information/verb/list.py
+9852ab91060d1e869946b4f3be40d997  usr/share/doc/python3-colcon-package-information/changelog.Debian.gz

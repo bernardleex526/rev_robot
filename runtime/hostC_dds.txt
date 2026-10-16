@@ -1,0 +1,20 @@
+=== NODES ===
+/accumulate_cloud
+/exception_subscriber_node
+/message_subscriber_node
+/passable_area
+=== TOPICS (nav) ===
+/cloud_local_g [sensor_msgs/msg/PointCloud2]
+/cloud_local [sensor_msgs/msg/PointCloud2]
+/cloud_nav [sensor_msgs/msg/PointCloud2]
+/GRID_MAP [nav_msgs/msg/OccupancyGrid]
+/height_map [sensor_msgs/msg/PointCloud2]
+/LIO_ODOM_HIGH_FREQUENCY [nav_msgs/msg/Odometry]
+/LIO_ODOM [nav_msgs/msg/Odometry]
+/local_goal [geometry_msgs/msg/PoseStamped]
+/local_map [nav_msgs/msg/OccupancyGrid]
+/ODOM [nav_msgs/msg/Odometry]
+/passable_status_code [std_msgs/msg/Int32]
+/path_Astar [nav_msgs/msg/Path]
+/planner_mode [drdds/msg/StdMsgInt32]
+/TRACK_PATH [nav_msgs/msg/Path]

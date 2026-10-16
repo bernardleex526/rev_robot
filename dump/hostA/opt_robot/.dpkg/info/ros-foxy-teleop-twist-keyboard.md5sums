@@ -1,0 +1,12 @@
+e5f78a5250f15e81f93d0a84575c4c8e  opt/ros/foxy/lib/python3.8/site-packages/__pycache__/teleop_twist_keyboard.cpython-38.pyc
+c229d1b815ccd98a3d131316cf578eef  opt/ros/foxy/lib/python3.8/site-packages/teleop_twist_keyboard-2.3.2.egg-info/PKG-INFO
+68b329da9893e34099c7d8ad5cb9c940  opt/ros/foxy/lib/python3.8/site-packages/teleop_twist_keyboard-2.3.2.egg-info/dependency_links.txt
+ea6b798b38c3e3f06b188df2731c455b  opt/ros/foxy/lib/python3.8/site-packages/teleop_twist_keyboard-2.3.2.egg-info/entry_points.txt
+cd12f5daaa1f8d7023f5d75a982d773d  opt/ros/foxy/lib/python3.8/site-packages/teleop_twist_keyboard-2.3.2.egg-info/requires.txt
+f797f855eea44a65bfc2b0880467fa9e  opt/ros/foxy/lib/python3.8/site-packages/teleop_twist_keyboard-2.3.2.egg-info/top_level.txt
+68b329da9893e34099c7d8ad5cb9c940  opt/ros/foxy/lib/python3.8/site-packages/teleop_twist_keyboard-2.3.2.egg-info/zip-safe
+063f89fe35a4507bb015b9b4945b8f53  opt/ros/foxy/lib/python3.8/site-packages/teleop_twist_keyboard.py
+a135f68906bfa65a6d312c4b3bb3305a  opt/ros/foxy/lib/teleop_twist_keyboard/teleop_twist_keyboard
+d41d8cd98f00b204e9800998ecf8427e  opt/ros/foxy/share/ament_index/resource_index/packages/teleop_twist_keyboard
+a65ea8bee438888af44138dfb688d8c3  opt/ros/foxy/share/teleop_twist_keyboard/package.xml
+9110462aa9d1a158832ee8b734a33e22  usr/share/doc/ros-foxy-teleop-twist-keyboard/changelog.Debian.gz

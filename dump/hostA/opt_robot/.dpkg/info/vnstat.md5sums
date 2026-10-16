@@ -1,0 +1,14 @@
+adb10da852ee92f3a01ceb28e9280e2b  lib/systemd/system/vnstat.service
+3f9e884b54b86740b659f14976ecae5c  usr/bin/vnstat
+a6a16123524f9c1dd0032d9c9983baf0  usr/sbin/vnstatd
+ebb589bffb6c262732d9d2c63245288b  usr/share/doc/vnstat/FAQ
+08bd2dac6641816b04136ebb6934d119  usr/share/doc/vnstat/README
+f6c6c780dffc76c1529426e7657919cb  usr/share/doc/vnstat/changelog.Debian.gz
+b92d62932ab866fc6b0cadca97e8d30a  usr/share/doc/vnstat/copyright
+534ab99225ee4392a95d2b735356add3  usr/share/doc/vnstat/examples/vnstat_daily.service
+5d3998fea5a8bb4e53b393565495d24c  usr/share/doc/vnstat/examples/vnstat_daily.timer
+7d29ff743b273e26d0a3d631253dc8cf  usr/share/doc/vnstat/examples/vnstat_monthly.service
+75c8c1649629e38eacdbd525cc5f569c  usr/share/doc/vnstat/examples/vnstat_monthly.timer
+9b93161ecc2f0820aca2395e8cb2f85f  usr/share/man/man1/vnstat.1.gz
+fd7e7c489c0cea1530a6ef7e0c9f52a1  usr/share/man/man5/vnstat.conf.5.gz
+17d7d64cae1cc326c8a715feef9f0c34  usr/share/man/man8/vnstatd.8.gz

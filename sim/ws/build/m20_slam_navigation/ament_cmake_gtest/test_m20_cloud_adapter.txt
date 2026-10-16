@@ -1,0 +1,27 @@
+-- run_test.py: invoking following command in '/home/lee/rea/sim/ws/build/m20_slam_navigation':
+ - /home/lee/rea/sim/ws/build/m20_slam_navigation/test_m20_cloud_adapter --gtest_output=xml:/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_m20_cloud_adapter.gtest.xml
+
+Running main() from /opt/ros/humble/src/gtest_vendor/src/gtest_main.cc
+[==========] Running 5 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 5 tests from M20CloudAdapter
+[ RUN      ] M20CloudAdapter.ReadsOfficialRoboSenseContract
+[       OK ] M20CloudAdapter.ReadsOfficialRoboSenseContract (0 ms)
+[ RUN      ] M20CloudAdapter.UsesPointClockWhenHeaderIsInconsistent
+[       OK ] M20CloudAdapter.UsesPointClockWhenHeaderIsInconsistent (0 ms)
+[ RUN      ] M20CloudAdapter.RejectsMissingTimestampField
+[       OK ] M20CloudAdapter.RejectsMissingTimestampField (0 ms)
+[ RUN      ] M20CloudAdapter.ClampsOfficialBagStyleRollback
+[       OK ] M20CloudAdapter.ClampsOfficialBagStyleRollback (0 ms)
+[ RUN      ] M20CloudAdapter.DropsLargeClockReset
+[       OK ] M20CloudAdapter.DropsLargeClockReset (0 ms)
+[----------] 5 tests from M20CloudAdapter (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 5 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 5 tests.
+
+
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_m20_cloud_adapter.gtest.xml'
+-- run_test.py: verify result file '/home/lee/rea/sim/ws/build/m20_slam_navigation/test_results/m20_slam_navigation/test_m20_cloud_adapter.gtest.xml'

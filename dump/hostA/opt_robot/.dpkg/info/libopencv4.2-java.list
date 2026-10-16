@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libopencv4.2-java
+/usr/share/doc/libopencv4.2-java/copyright
+/usr/share/java
+/usr/share/java/opencv4
+/usr/share/java/opencv4/opencv-420.jar
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libopencv4.2-java
+/usr/share/doc/libopencv4.2-java/changelog.Debian.gz
+/usr/share/java/opencv-420.jar
+/usr/share/java/opencv.jar

@@ -1,0 +1,121 @@
+# 额外调整检测电流次数，整数类型
+adjust_posture_times = 2
+# 第一次趴下检测电流等待时间，单位秒，整数类型
+first_detection_current_timeout = 5
+# 接收雷达数据超时时间，单位秒
+tag_receive_timeout = 2
+# 电桩位置允许偏差值，单位mm
+delta_x = 6
+delta_y = 3
+delta_yaw = 3
+# 退桩位置允许偏差值，单位mm
+ext_delta_x = 90
+ext_delta_y = 90
+ext_delta_yaw = 70
+# 退桩最小速度,归一化 /1000
+ext_min_speed_x = 200
+ext_min_speed_y = 300
+ext_min_speed_yaw = 140
+# 进桩最小速度,归一化 /1000
+min_speed_x = 180
+min_speed_y = 260
+min_speed_yaw = 130
+#进桩预备点 x位置 单位m
+pre_point_x = 1.0
+#退桩预备点 x位置 单位m
+pre_exitPile_point_x = 0.6
+# 后退方式: 退至充电起始点 "auto" or 固定距离 "fixed"
+back_way = "auto"
+#后退距离,单位为m
+exit_pile_distance_x = 1.3
+# 进桩后，电桩无电流处理方式: 退回进桩点 "goBack" or 爬下等待电流 "sitDown"
+NoChargePlug_way = "goBack"
+#进桩后，电桩无电流重试方式： true——桩上微调 false：退桩再进桩
+RetryMethod_InPlace = false
+#电流和mos检测方式 必须打开一个 否则无法检测到是否成功充上电
+current_detection = false
+mos_detection = true
+#全部电池充电状态监测 true:所有电池仓电池充上电才视为成功 false:一块电池上电即成功
+all_battery_charge = true
+#偏移补偿距离 单位cm 正值为前向偏移
+DistanceCompensationX = 0.0
+#避障距离，单位m
+FrontObstacleAvoidDis = 0.3
+BackObstacleAvoidDis = 0.5
+#避障使能 true:开启避障 false:关闭避障
+ObstacleAvoid_enable = true
+#在桩充电断开检测过滤时长 单位s
+detection_filter_duration = 5
+#mos断开等待时间 s
+mos_disconnet_time = 3
+#微调阶段最小yaw限制
+fine_yaw_min_limit = -0.1
+#微调阶段最大yaw限制
+fine_yaw_max_limit = 0.1
+
+# ============   mOD相关参数  ===============
+mOD_hz = 10.0
+# ------ 避障点云发布 --------------
+pub_seg_cloud_ = false       # 为true时，将发布用于充电过程中避障的点云，话题名为/SEG_CLOUD
+# ------ 雷达点云裁切范围（M）--------
+lidar_z_min = -0.2    # 机体下方范围 -- 已弃用，使用机身当前高度与充电桩高度差来计算
+lidar_z_max = 0.3     # 机体上方范围
+lidar_x_min = 0.45     # 点云裁切机体，狗长度/2，同时用于计算障碍距离
+lidar_y_min = 0.25     # 点云裁切机体，狗宽度/2，内部矩形Y边界（正数）
+lidar_x_max = 0.9     # 检测范围X边界（正数）
+lidar_y_max = 0.3     # 检测范围Y边界（正数）
+lidar_yaw = 60.0      # 度, 范围为[0, 90], 根据运动方向取前或后的点云进行检测处理，自动对称取扇形范围
+
+charge_pile_h = 0.25    # 充电桩高度
+
+# ------- 方法选择 --------
+obstacle_count_method = "grid"     # "cluster" or "grid"
+# ------- 聚类参数 --------
+cluster_count_distance = 0.3            # 两个点被视为同一簇的最大距离--越小则障碍物分割越精细，噪声敏感；越大则将相邻障碍点进行合并
+cluster_points_count_min = 10      # 簇被识别为有效障碍物的最小点数 -- 越小则对稀疏点云越敏感，越大越能对噪声进行过滤
+# ----- 概率栅格参数 -------
+grid_size = 0.3                       # 栅格分辨率(m)
+grid_occu_num = 20                    # 占用概率阈值
+
+# =========== 反光柱定位相关参数 ===============
+pub_debug_cloud = false
+# 反光柱匹配参数
+column_dis = 0.4                    # 反光柱距离，单位：米，目标反光柱对之间的标准距离
+column_dis_threshold = 0.15          # 反光柱距离阈值，单位：米，允许的距离偏差范围（|实际距离 - column_dis| < threshold）
+column_angle_min = 30.0              # 反光柱角度最小值，单位：度，两反光柱连线与x轴夹角的最小值
+column_angle_max = 150.0             # 反光柱角度最大值，单位：度，两反光柱连线与x轴夹角的最大值
+
+# -------   反光柱点云过滤范围  ReciAndTransformPoints -------
+reflectivity_threshold = 150         # 反射强度阈值，整数类型，提取高反射强度点云的最小强度值
+cloud_x_min = 0.4                    # 点云X轴最小范围，单位：米，过滤点云在X轴方向的最小值
+cloud_x_max = 4.0                    # 点云X轴最大范围，单位：米，过滤点云在X轴方向的最大值
+cloud_y_limit = 2.0                  # 点云Y轴范围限制，单位：米，过滤点云在Y轴方向的绝对值限制（|y| < limit）
+cloud_z_min = -1.1                   # 点云Z轴最小范围，单位：米，过滤点云在Z轴方向的最小值
+cloud_z_max = 0.1                    # 点云Z轴最大范围，单位：米，过滤点云在Z轴方向的最大值
+cloud_yaw = 45.0                     # 点云角度范围，单位：度，筛选水平面上点云的角度范围（|atan2(y,x)| <= cloud_yaw）
+
+# ----  ROI区域滤波 ----
+filter_radius = 0.3                 # ROI区域滤波半径，单位：米，去除离群点的邻域搜索半径
+filter_limit_points = 15             # ROI区域滤波最小邻域点数，整数类型，邻域内最少点数，少于该值则判定为离群点
+
+# ---- 聚类参数 ----
+cluster_distance = 0.05              # 点云聚类距离，单位：米，两个点被视为同一簇的最大距离
+cluster_num = 30                     # 点云聚类数量，整数类型，簇被识别为有效反光柱的最小点数
+cluster_shape_min = 1.8              # 反光柱形状判断最小比例（z/y），簇的z/y比例必须 >= 此值才被认为是反光柱
+cluster_shape_max = 15.0             # 反光柱形状判断最大比例（z/y），簇的z/y比例必须 <= 此值才被认为是反光柱
+
+# ---- 充电桩坐标系下的雷达坐标有效范围 -----
+odom_x_min = -2.7                    # 充电桩坐标系下的雷达X轴最小值，单位：米，位置范围检查的下限
+odom_x_max = -0.0                  # 充电桩坐标系下的雷达X轴最大值，单位：米，位置范围检查的上限
+odom_y_limit = 2.0                   # 充电桩坐标系下的雷达Y轴范围限制，单位：米，Y轴对称范围（-limit < y < limit）
+
+# ---- 反光柱坐标变化量检测参数 ----
+column_change_history_size = 5                # 反光柱坐标变化量历史队列大小
+column_change_threshold_multiplier = 3.0      # 反光柱坐标变化量异常检测阈值倍数
+column_change_min_threshold = 0.3              # 反光柱坐标变化量最小阈值
+
+# ---- 反光柱坐标x偏移 --------
+odom_x_offset = -0.025
+
+
+

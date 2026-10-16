@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O3 -DNDEBUG -shared -Wl,-soname,libm20_drdds_input.so -o libm20_drdds_input.so CMakeFiles/m20_drdds_input.dir/src/ros/drdds_pointcloud_source.cpp.o 

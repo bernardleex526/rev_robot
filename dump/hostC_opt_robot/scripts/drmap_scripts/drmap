@@ -1,0 +1,78 @@
+#!/bin/bash
+
+SCRIPT_PATH=$(dirname "$(readlink -f "$0")")
+# echo "脚本路径：$SCRIPT_PATH"
+
+cmds=()
+cmd_count=0
+for arg in "$@";
+do
+    cmds[cmd_count]="$arg"
+    cmd_count=$[ $cmd_count + 1 ]
+    # echo "$arg"
+done
+cmd_count=$[ $# - 1 ]
+
+usage() {
+    echo "用法：" 
+    echo "  drmap <subcommand> [-options] [args]"
+    echo "  地图相关功能。"
+    echo "有效的subcommands:"
+    echo "  apply           将地图应用于导航中"
+    echo "  edit            编辑栅格地图等"
+    echo "  manager         管理所有地图"
+    echo "  mapping         开始一次建图"
+    echo "  stop_mapping    结束一次建图"
+    echo "  set_grid_label  设置栅格地图编号"
+    echo "  pack            将地图压缩并备份"
+    echo "  show            显示地图信息、点云、栅格等"
+    echo "  unpack          将地图解压缩"
+    echo "  -h              显示drmap指令用法"
+}
+
+
+case $1 in
+'pack')
+    bash ${SCRIPT_PATH}/drmap_pack "${cmds[@]:1:$cmd_count}"
+    # echo "do pack"
+    ;;
+'unpack')
+    bash ${SCRIPT_PATH}/drmap_unpack "${cmds[@]:1:$cmd_count}"
+    # echo "do unpack"
+    ;;
+'apply')
+    bash ${SCRIPT_PATH}/drmap_apply "${cmds[@]:1:$cmd_count}"
+    # echo "do apply"
+    ;;
+'edit')
+    # bash ${SCRIPT_PATH}/drmap_edit "${cmds[@]:1:$cmd_count}"
+    echo "暂不支持edit指令"
+    # echo "do edit"
+    ;;
+'manager')
+    # bash ${SCRIPT_PATH}/drmap_manager "${cmds[@]:1:$cmd_count}"
+    echo "暂不支持manager指令"
+    ;;
+'mapping')
+    bash ${SCRIPT_PATH}/../mapping.sh "${cmds[@]:1:$cmd_count}"
+    #echo "暂不支持manager指令"
+    ;;
+'stop_mapping')
+    bash ${SCRIPT_PATH}/../mapping_stop.sh "${cmds[@]:1:$cmd_count}"
+    ;;
+'set_grid_label')
+    bash ${SCRIPT_PATH}/../set_grid_label.sh "${cmds[@]:1:$cmd_count}"
+    ;;
+'show')
+    # bash ${SCRIPT_PATH}/drmap_show "${cmds[@]:1:$cmd_count}"
+    echo "暂不支持show指令"
+    # echo "do show"
+    ;;
+'-h')
+    usage
+    # echo "Usage: "
+    ;;
+*)
+    echo "不支持的命令：$1"
+    ;;
+esac

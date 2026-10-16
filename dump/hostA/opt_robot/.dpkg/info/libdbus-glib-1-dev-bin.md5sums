@@ -1,0 +1,4 @@
+94ec87b87479a03ed35f52a1fd58325d  usr/bin/dbus-binding-tool
+22a559e20da1a6a23c94b4c57c3f9dd2  usr/share/doc/libdbus-glib-1-dev-bin/copyright
+95494153644f544ba1ed32b7086e913d  usr/share/lintian/overrides/libdbus-glib-1-dev-bin
+da1c8c3dd1aca49dde9a7280240dd24f  usr/share/man/man1/dbus-binding-tool.1.gz

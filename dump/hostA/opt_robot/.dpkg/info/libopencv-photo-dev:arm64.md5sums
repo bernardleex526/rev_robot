@@ -1,0 +1,6 @@
+88124f600be1a4ce750736a931888329  usr/include/opencv4/opencv2/photo.hpp
+9f3c8eb2f5ec6730e581197db18487c7  usr/include/opencv4/opencv2/photo/cuda.hpp
+3dd2545f0a918805b4fde673cea95888  usr/include/opencv4/opencv2/photo/legacy/constants_c.h
+b90d886ee7cf968805cadc4935e22c79  usr/include/opencv4/opencv2/photo/photo.hpp
+bc00fde548462e2932d93e782cb3cf3d  usr/lib/aarch64-linux-gnu/libopencv_photo.a
+145c4b15d9cf5c5ca48742cc9a3e22f0  usr/share/doc/libopencv-photo-dev/copyright

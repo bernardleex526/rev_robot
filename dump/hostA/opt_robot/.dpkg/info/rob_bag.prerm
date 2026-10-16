@@ -1,0 +1,42 @@
+#!/bin/bash
+set -e
+
+echo "rob_bag: prerm called with: $1"
+
+case "$1" in
+    remove|deconfigure)
+        # 卸载或因依赖问题被解除配置
+        echo "rob_bag: Stopping service before removal..."
+        systemctl stop rob_bag.service 2>/dev/null || true
+        systemctl disable rob_bag.service 2>/dev/null || true
+        
+        # 清理旧版本的可执行文件（重命名后废弃的文件）
+        echo "rob_bag: Cleaning up old executables..."
+        rm -f /opt/ros/foxy/lib/rob_bag/multi_publisher 2>/dev/null || true
+        rm -f /opt/ros/foxy/lib/rob_bag/multi_subscriber 2>/dev/null || true
+        ;;
+        
+    upgrade)
+        # 升级前 (停止旧版本服务)
+        echo "rob_bag: Stopping service for upgrade..."
+        systemctl stop rob_bag.service 2>/dev/null || true
+        
+        # 清理旧版本的可执行文件
+        echo "rob_bag: Cleaning up old executables before upgrade..."
+        rm -f /opt/ros/foxy/lib/rob_bag/multi_publisher 2>/dev/null || true
+        rm -f /opt/ros/foxy/lib/rob_bag/multi_subscriber 2>/dev/null || true
+        ;;
+        
+    failed-upgrade)
+        # 升级失败
+        echo "rob_bag: Upgrade failed, attempting to restore service..."
+        systemctl start rob_bag.service 2>/dev/null || true
+        ;;
+        
+    *)
+        echo "rob_bag: prerm called with unknown argument: $1" >&2
+        exit 1
+        ;;
+esac
+
+exit 0

@@ -1,0 +1,17 @@
+8c137706009acf950ec054f97c90e085  opt/ros/foxy/share/ament_index/resource_index/package_run_dependencies/rosidl_default_runtime
+d41d8cd98f00b204e9800998ecf8427e  opt/ros/foxy/share/ament_index/resource_index/packages/rosidl_default_runtime
+c5bea21e3b9564d2a435b40f0e03ecf6  opt/ros/foxy/share/ament_index/resource_index/parent_prefix_path/rosidl_default_runtime
+09d0b59491a080e846fd608e24bb7fc2  opt/ros/foxy/share/rosidl_default_runtime/cmake/rosidl_default_runtime-extras.cmake
+37e21050e402a3c2090a7da7c1bf76a1  opt/ros/foxy/share/rosidl_default_runtime/cmake/rosidl_default_runtimeConfig-version.cmake
+8625aee75307118db1d01b3aba0be377  opt/ros/foxy/share/rosidl_default_runtime/cmake/rosidl_default_runtimeConfig.cmake
+8dbf4790a764a69b56a5904c00682df0  opt/ros/foxy/share/rosidl_default_runtime/environment/ament_prefix_path.dsv
+fd0b100f5da0d9f2d38645ac45815395  opt/ros/foxy/share/rosidl_default_runtime/environment/ament_prefix_path.sh
+11e8ba1deb2827a5e13dd631720bcf6b  opt/ros/foxy/share/rosidl_default_runtime/environment/path.dsv
+234e39ac8bc1c1d4f887075bf9492366  opt/ros/foxy/share/rosidl_default_runtime/environment/path.sh
+ed9dcb7a76d3763c6cd97ebbd1f4cc7d  opt/ros/foxy/share/rosidl_default_runtime/local_setup.bash
+48b4ea40c5dec989f941a3071a391570  opt/ros/foxy/share/rosidl_default_runtime/local_setup.dsv
+03cf56309d809eafe7658b124bfd368f  opt/ros/foxy/share/rosidl_default_runtime/local_setup.sh
+24970cb512d5df3600adc59d7fa85f7b  opt/ros/foxy/share/rosidl_default_runtime/local_setup.zsh
+2ed79328d242dfd203849bbe955eb0ff  opt/ros/foxy/share/rosidl_default_runtime/package.dsv
+e3c3928fddb4ef9c9c8e39234406132e  opt/ros/foxy/share/rosidl_default_runtime/package.xml
+0f713eaf835f5454d872265d9e817301  usr/share/doc/ros-foxy-rosidl-default-runtime/changelog.Debian.gz

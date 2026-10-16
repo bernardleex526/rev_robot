@@ -1,0 +1,5 @@
+469a9cf56fec938928a2f49396ddb828  usr/include/aarch64-linux-gnu/libavresample/avresample.h
+7d19c7fec9d5861034a4e41ae69a24d2  usr/include/aarch64-linux-gnu/libavresample/version.h
+5594ffcc7c9629c65055592ca8cc2e5a  usr/lib/aarch64-linux-gnu/libavresample.a
+012233df94ceea99438c9ec032c3d8f0  usr/lib/aarch64-linux-gnu/pkgconfig/libavresample.pc
+001f538bf878ec438a4151e9e98daebd  usr/share/doc/libavresample-dev/copyright

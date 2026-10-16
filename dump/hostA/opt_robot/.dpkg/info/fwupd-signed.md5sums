@@ -1,0 +1,5 @@
+aa50e3b3a04b48c03186654f2d8c9cc5  usr/libexec/fwupd/efi/fwupdaa64.efi.signed
+d5cfcc43917a8754602c64eafbb42200  usr/libexec/fwupd/efi/version
+1345c3a5a5870bf1ef03bec5a352fd4d  usr/share/doc/fwupd-signed/changelog.Debian.gz
+1345c3a5a5870bf1ef03bec5a352fd4d  usr/share/doc/fwupd-signed/changelog.gz
+ee2a674256bda998379099ee1e640b36  usr/share/doc/fwupd-signed/copyright

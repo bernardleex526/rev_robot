@@ -1,0 +1,10 @@
+f5228ef63f8aa4b5cec3e720737be522  usr/lib/python3/dist-packages/colcon_recursive_crawl-0.2.3.egg-info/PKG-INFO
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/colcon_recursive_crawl-0.2.3.egg-info/dependency_links.txt
+93d6853ce85c178460ffd0092c550b96  usr/lib/python3/dist-packages/colcon_recursive_crawl-0.2.3.egg-info/entry_points.txt
+6e1f687fcae84281284dcf6b40b2e09f  usr/lib/python3/dist-packages/colcon_recursive_crawl-0.2.3.egg-info/requires.txt
+84765600cfa39f61abc0753d31cac5e9  usr/lib/python3/dist-packages/colcon_recursive_crawl-0.2.3.egg-info/top_level.txt
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/colcon_recursive_crawl-0.2.3.egg-info/zip-safe
+b4f097703d20f26e297af2739ec9ad79  usr/lib/python3/dist-packages/colcon_recursive_crawl/__init__.py
+d41d8cd98f00b204e9800998ecf8427e  usr/lib/python3/dist-packages/colcon_recursive_crawl/package_discovery/__init__.py
+df558ff1b11a8cbb52af400a1e4d4266  usr/lib/python3/dist-packages/colcon_recursive_crawl/package_discovery/recursive_crawl.py
+98a511419016f38e973b6c26ca4d6935  usr/share/doc/python3-colcon-recursive-crawl/changelog.Debian.gz

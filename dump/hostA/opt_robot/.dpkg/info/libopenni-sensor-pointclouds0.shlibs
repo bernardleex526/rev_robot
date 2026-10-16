@@ -1,0 +1,5 @@
+libXnCore 0 libopenni-sensor-pointclouds0 (>= 5.1.0.41.9)
+libXnDDK 0 libopenni-sensor-pointclouds0 (>= 5.1.0.41.9)
+libXnDeviceFile 0 libopenni-sensor-pointclouds0 (>= 5.1.0.41.9)
+libXnDeviceSensorV2 0 libopenni-sensor-pointclouds0 (>= 5.1.0.41.9)
+libXnFormats 0 libopenni-sensor-pointclouds0 (>= 5.1.0.41.9)

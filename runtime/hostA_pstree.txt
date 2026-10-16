@@ -1,0 +1,121 @@
+=== PSTREE ===
+systemd,1
+  |-ModemManager,870
+  |   |-{ModemManager},897
+  |   `-{ModemManager},919
+  |-NetworkManager,1067 --no-daemon
+  |   |-dnsmasq,2205 --conf-file=/dev/null --no-hosts --keep-in-foreground --bind-interfaces --except-interface=lo ...
+  |   |-{NetworkManager},1068
+  |   `-{NetworkManager},1069
+  |-agetty,906 -o -p -- \\u --noclear tty1 linux
+  |-agetty,907 -o -p -- \\u --keep-baud 115200,38400,9600 ttyFIQ0 vt220
+  |-avahi-daemon,737
+  |   `-avahi-daemon,775
+  |-bash,1320 /opt/robot/scripts/board_resources/storage_space/delete_log_record.sh
+  |   `-sleep,59533 300
+  |-bash,1321 /opt/robot/scripts/board_resources/storage_space/delete_log_robot.sh
+  |   `-sleep,59542 300
+  |-bash,1322 /opt/robot/scripts/board_resources/storage_space/delete_log_sys.sh
+  |   `-sleep,59539 300
+  |-bluetoothd,1757
+  |-chronyd,903 -F -1
+  |   `-chronyd,909 -F -1
+  |-containerd,892
+  |   |-{containerd},920
+  |   |-{containerd},921
+  |   |-{containerd},922
+  |   |-{containerd},923
+  |   |-{containerd},924
+  |   |-{containerd},948
+  |   |-{containerd},952
+  |   |-{containerd},993
+  |   `-{containerd},1003
+  |-cpu_run.sh,2875 /opt/robot/share/node_driver/scripts/cpu_run.sh
+  |   `-cpu_node,2876
+  |       |-{cpu_node},2888
+  |       |-{cpu_node},2889
+  |       |-{cpu_node},2890
+  |       |-{cpu_node},2891
+  |       |-{cpu_node},2931
+  |       |-{cpu_node},2932
+  |       |-{cpu_node},2946
+  |       |-{cpu_node},3088
+  |       |-{cpu_node},3089
+  |       |-{cpu_node},3091
+  |       |-{cpu_node},3092
+  |       |-{cpu_node},3093
+  |       |-{cpu_node},3094
+  |       |-{cpu_node},3096
+  |       |-{cpu_node},3098
+  |       |-{cpu_node},3099
+  |       |-{cpu_node},3100
+  |       |-{cpu_node},3101
+  |       |-{cpu_node},3102
+  |       |-{cpu_node},3104
+  |       `-{cpu_node},3106
+  |-cron,738 -f
+  |-ctrlmcu_run.sh,2867 /opt/robot/share/node_driver/scripts/ctrlmcu_run.sh
+  |   `-ctrlmcu_node,2869
+  |       |-{ctrlmcu_node},2896
+  |       |-{ctrlmcu_node},2897
+  |       |-{ctrlmcu_node},2899
+  |       |-{ctrlmcu_node},2902
+  |       |-{ctrlmcu_node},2930
+  |       |-{ctrlmcu_node},2941
+  |       |-{ctrlmcu_node},3148
+  |       |-{ctrlmcu_node},3149
+  |       |-{ctrlmcu_node},3150
+  |       |-{ctrlmcu_node},3151
+  |       |-{ctrlmcu_node},3152
+  |       |-{ctrlmcu_node},3153
+  |       |-{ctrlmcu_node},3154
+  |       |-{ctrlmcu_node},3155
+  |       |-{ctrlmcu_node},3156
+  |       |-{ctrlmcu_node},3157
+  |       |-{ctrlmcu_node},3158
+  |       |-{ctrlmcu_node},3159
+  |       |-{ctrlmcu_node},3160
+  |       |-{ctrlmcu_node},3161
+  |       |-{ctrlmcu_node},3162
+  |       |-{ctrlmcu_node},3163
+  |       |-{ctrlmcu_node},3164
+  |       |-{ctrlmcu_node},3165
+  |       |-{ctrlmcu_node},3166
+  |       |-{ctrlmcu_node},3167
+  |       |-{ctrlmcu_node},3168
+  |       |-{ctrlmcu_node},3169
+  |       |-{ctrlmcu_node},3170
+  |       |-{ctrlmcu_node},3171
+  |       |-{ctrlmcu_node},3172
+  |       |-{ctrlmcu_node},3173
+  |       |-{ctrlmcu_node},3174
+  |       |-{ctrlmcu_node},3175
+  |       |-{ctrlmcu_node},3176
+  |       |-{ctrlmcu_node},3177
+  |       |-{ctrlmcu_node},3178
+  |       `-{ctrlmcu_node},3179
+  |-cups-browsed,2039
+  |   |-{cups-browsed},2047
+  |   `-{cups-browsed},2048
+  |-cupsd,2037 -l
+  |   |-dbus,2045 dbus:// 
+  |   `-dbus,2046 dbus:// 
+  |-dbus-daemon,742 --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+  |-dockerd,1004 -H fd:// --containerd=/run/containerd/containerd.sock
+  |   |-{dockerd},1030
+  |   |-{dockerd},1032
+  |   |-{dockerd},1033
+  |   |-{dockerd},1034
+  |   |-{dockerd},1036
+  |   |-{dockerd},1038
+  |   |-{dockerd},1058
+  |   |-{dockerd},1070
+  |   `-{dockerd},1100
+  |-gps_run.sh,2871 /opt/robot/share/node_driver/scripts/gps_run.sh
+  |   `-gps_node,2872
+  |       |-{gps_node},2918
+  |       |-{gps_node},2919
+  |       |-{gps_node},2920
+  |       |-{gps_node},2921
+  |       |-{gps_node},2952
+  |       |-{gps_node},2953

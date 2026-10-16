@@ -1,0 +1,10 @@
+/.
+/usr
+/usr/bin
+/usr/bin/dockerd-rootless-setuptool.sh
+/usr/bin/dockerd-rootless.sh
+/usr/bin/rootlesskit
+/usr/share
+/usr/share/doc
+/usr/share/doc/docker-ce-rootless-extras
+/usr/share/doc/docker-ce-rootless-extras/changelog.Debian.gz

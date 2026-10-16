@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sudo chmod +x /opt/robot/scripts/setup_ros2.sh
+

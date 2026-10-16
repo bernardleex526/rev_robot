@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O3 -DNDEBUG -shared -Wl,-soname,libm20_socket_input.so -o libm20_socket_input.so CMakeFiles/m20_socket_input.dir/src/ros/socket_pointcloud_source.cpp.o  -Wl,-rpath,/home/lee/rea/sim/ws/build/m20_slam_navigation: libm20_pointcloud_wire.so -lpthread 

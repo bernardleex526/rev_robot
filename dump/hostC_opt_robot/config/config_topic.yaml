@@ -1,0 +1,46 @@
+# =================== 订阅话题配置 ===================
+# 原始栅格地图订阅话题
+map_sub_topic: "/GRID_MAP"
+
+# 起点位置订阅话题(test_mode = true时通过该话题设置起点位置)
+start_sub_topic: "/initialpose"
+
+# 目标点订阅话题(实际使用的是/GOAL)
+goal_sub_topic: "/goal_pose"
+# Goal_sub_topic: "/GOAL"
+# 目标点订阅服务
+goal_sub_service: "/GOAL_GLOBAL"
+
+# 点云数据订阅话题
+pc_sub_topic: "/NAV_POINTS"
+
+# 定位信息订阅话题
+odom_sub_topic: "/ODOM"
+
+# 取消标志位话题
+cancel_sub_topic: "/CANCEL_NAV"
+# 取消任务订阅服务
+cancel_sub_service: "/CANCEL_NAV_GLOBAL"
+
+# 目标点规划模式接收话题(0-->直线导航 1-->自主导航)
+mode_sub_topic: "/planner_mode"
+
+# =================== 发布话题配置 ===================
+# 发布Astar规划路径话题
+global_path_topic: "/path_Astar"
+
+# 发布可视化路径点话题
+visible_points_topic: "/vis_global_points"
+
+# 发布删点后路径缓存点可视化话题（10Hz）
+pruned_visible_points_topic: "/vis_global_points_pruned"
+
+# 发布局部目标点话题（10Hz）
+local_goal_topic: "/local_goal"
+
+# 地图发布话题(根据dynamic_update发布不同类型地图)
+global_map_topic: "/local_map"
+
+# 状态码与错误码发布话题
+planner_status_topic: "/GLOBAL_PLANNER_STATUS"
+

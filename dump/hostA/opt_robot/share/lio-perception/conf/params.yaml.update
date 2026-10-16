@@ -1,0 +1,20 @@
+lio:
+  acc_cov: 0.8
+  gyr_cov: 0.8
+  b_acc_cov: 0.01
+  b_gyr_cov: 0.01
+  leaf_size: 0.15    # 降采样分辨率
+  leaf_size_body: 0.05 # 发布给外部的机体坐标系点云降采样分辨率
+  skip_num: 9       # 跳过点数
+  full_map_save_path: "/var/opt/robot/data/maps/active/full_cloud.pcd"
+accumulated_points:
+  level: 2   # 0: 0.64, 1: 0.32, 2: 0.16, 3: 0.08, 4: 0.04
+  udp_output: 
+    resolution: 0.2                                   # 点云发布分辨率
+voxel_map:
+  ray_casting_level: 2
+  ray_dis_th: 0.02
+  depth_image: 
+    enable: false
+height_map:
+  enable: false  # 是否启用高度图

@@ -1,0 +1,11 @@
+a6d4403250d86c6d79e9ae77cb744a02  usr/lib/python3/dist-packages/cbor-1.0.0.egg-info/PKG-INFO
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/cbor-1.0.0.egg-info/dependency_links.txt
+29805d7bfc46a923601212f4e9bc2688  usr/lib/python3/dist-packages/cbor-1.0.0.egg-info/top_level.txt
+fde37dc9559d2a0d632d220a0e1d84dd  usr/lib/python3/dist-packages/cbor/VERSION.py
+0f86418d7dec44f61a2d641f8634388c  usr/lib/python3/dist-packages/cbor/__init__.py
+cb223d624e9d2d3874da6905d6e16d82  usr/lib/python3/dist-packages/cbor/_cbor.cpython-38-aarch64-linux-gnu.so
+901bf1d862821cc21eb1b368be6f0303  usr/lib/python3/dist-packages/cbor/cbor.py
+73e3cd9a2ef6d0088a6c91b14c717b19  usr/lib/python3/dist-packages/cbor/cbor_rpc_client.py
+f5479133fbf7b6915d7eb9132f00e8e7  usr/lib/python3/dist-packages/cbor/tagmap.py
+a63a1dc04746c967021466e67d7dac5a  usr/share/doc/python3-cbor/changelog.Debian.gz
+0ae3811c660685a0091a001ea509dc02  usr/share/doc/python3-cbor/copyright

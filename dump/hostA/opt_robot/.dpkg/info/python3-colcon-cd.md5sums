@@ -1,0 +1,12 @@
+9c3066f5a7a711ddf207a91fbbf09947  usr/lib/python3/dist-packages/colcon_cd-0.2.1.egg-info/PKG-INFO
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/colcon_cd-0.2.1.egg-info/dependency_links.txt
+f39a1b57ac26a5a3ed01f22a7ea7fb46  usr/lib/python3/dist-packages/colcon_cd-0.2.1.egg-info/entry_points.txt
+1f1b78102aa7f83001cb9c0248cc3774  usr/lib/python3/dist-packages/colcon_cd-0.2.1.egg-info/requires.txt
+685034ad91b49ea8101d9ac84820d429  usr/lib/python3/dist-packages/colcon_cd-0.2.1.egg-info/top_level.txt
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/colcon_cd-0.2.1.egg-info/zip-safe
+da55b1fd48bca754564b029c02a6124d  usr/lib/python3/dist-packages/colcon_cd/__init__.py
+a9af184f3a764116b1d53dadcc1e32ad  usr/lib/python3/dist-packages/colcon_cd/completer.py
+d3b89ad088c58e57bc027ce33d31d6b6  usr/share/colcon_cd/function/colcon_cd-argcomplete.bash
+1ec65b6d010c3fb3a881a1ff8d5d3454  usr/share/colcon_cd/function/colcon_cd-argcomplete.zsh
+285c0f301a7292ce18bfd6f76b0566b9  usr/share/colcon_cd/function/colcon_cd.sh
+bef8616996df0b1d199dba354c253dc7  usr/share/doc/python3-colcon-cd/changelog.Debian.gz

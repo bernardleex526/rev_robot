@@ -1,0 +1,4 @@
+c121da6d5772e5d46b4b72133c07e748  usr/lib/libpdal_plugin_reader_pgpointcloud.so.10
+d6fe34fd196139980e3f1075449890e1  usr/lib/libpdal_plugin_writer_pgpointcloud.so.10
+8a807de70827cdb4d455ff4b978cc7d9  usr/share/doc/libpdal-plugin-pgpointcloud/copyright
+848fc5598fb87509ef3ec0c0437a8a19  usr/share/lintian/overrides/libpdal-plugin-pgpointcloud

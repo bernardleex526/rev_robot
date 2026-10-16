@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/lib
+/usr/lib/python3
+/usr/lib/python3/dist-packages
+/usr/lib/python3/dist-packages/png.py
+/usr/lib/python3/dist-packages/pngsuite.py
+/usr/lib/python3/dist-packages/pypng-0.0.20.egg-info
+/usr/lib/python3/dist-packages/test_png.py
+/usr/share
+/usr/share/doc
+/usr/share/doc/python3-png
+/usr/share/doc/python3-png/changelog.Debian.gz
+/usr/share/doc/python3-png/copyright

@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/bin
+/usr/bin/dbus-binding-tool
+/usr/share
+/usr/share/doc
+/usr/share/doc/libdbus-glib-1-dev-bin
+/usr/share/doc/libdbus-glib-1-dev-bin/copyright
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libdbus-glib-1-dev-bin
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/dbus-binding-tool.1.gz
+/usr/share/doc/libdbus-glib-1-dev-bin/changelog.Debian.gz

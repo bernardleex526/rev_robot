@@ -1,0 +1,11 @@
+10c9705073e55470cb6a81778d308cb6  usr/include/cupsfilters/colord.h
+26452a052746c5cf8fa68aa304e3cfaa  usr/include/cupsfilters/colormanager.h
+58f47a9547fbfc3c9f467a827ee7591b  usr/include/cupsfilters/driver.h
+f73e2443d25d86b58d627c31f28a3cee  usr/include/cupsfilters/image.h
+575c6ad69b37b29185d476bb4362ca96  usr/include/cupsfilters/ipp.h
+ea0fcc6fdbbe4fa2717300c2fe970199  usr/include/cupsfilters/pdftoippprinter.h
+cf62ed54141417c8bba652cb616dca00  usr/include/cupsfilters/ppdgenerator.h
+8b8f50647426f61c9b515efb2a650a47  usr/include/cupsfilters/raster.h
+617beff37cb27963d2e6c9f9f666f417  usr/lib/aarch64-linux-gnu/libcupsfilters.a
+4c52be09b119c6ff7df8575cc2ed2f1c  usr/lib/aarch64-linux-gnu/pkgconfig/libcupsfilters.pc
+fab304e80b638cee49eca845750af073  usr/share/doc/libcupsfilters-dev/copyright

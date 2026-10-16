@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/bin
+/usr/bin/pydocstyle
+/usr/share
+/usr/share/doc
+/usr/share/doc/pydocstyle
+/usr/share/doc/pydocstyle/copyright
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/pydocstyle.1.gz
+/usr/share/doc/pydocstyle/changelog.Debian.gz

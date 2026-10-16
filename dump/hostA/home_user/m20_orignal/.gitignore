@@ -1,0 +1,27 @@
+build/
+install/
+log/
+maps/
+__pycache__/
+*.pyc
+
+# ROS 2 / colcon generated files
+.colcon/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*~
+
+# Runtime and dataset artifacts
+*.bag
+*.db3
+*.mcap
+*.pcd
+
+# Native build artifacts
+*.o
+*.so
+*.a
+compile_commands.json

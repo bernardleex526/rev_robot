@@ -1,0 +1,12 @@
+9da984d9b056c58de7c5a1c63220bba8  usr/bin/rosdistro_build_cache
+6467010d13b93645d9cfc6eb90f51622  usr/bin/rosdistro_freeze_source
+2278b352c8d1888f8eae7bc58b691c84  usr/bin/rosdistro_migrate_to_rep_141
+3d7e7d50e2cfdfea77fa5a66fb6902e4  usr/bin/rosdistro_migrate_to_rep_143
+a6b4e0b44e932ac19e775d661d9fc0d9  usr/bin/rosdistro_reformat
+7b931ffcb59f00d68327d84d2cfce79e  usr/lib/python3/dist-packages/rosdistro-1.0.1.egg-info/PKG-INFO
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/rosdistro-1.0.1.egg-info/dependency_links.txt
+274cc94296475d2056273dd22cd4a70d  usr/lib/python3/dist-packages/rosdistro-1.0.1.egg-info/entry_points.txt
+bc6cf46984d9b76c9d27334be4454340  usr/lib/python3/dist-packages/rosdistro-1.0.1.egg-info/requires.txt
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/rosdistro-1.0.1.egg-info/top_level.txt
+c17764526e1e3609f2ee1d8cc3b7bf5f  usr/share/doc/python3-rosdistro/changelog.Debian.gz
+988919d688133096537549f9afebf425  usr/share/doc/python3-rosdistro/copyright

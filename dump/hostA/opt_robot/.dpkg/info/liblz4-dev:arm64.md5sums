@@ -1,0 +1,7 @@
+65d60a32ddfe386334032bb9acb7d479  usr/include/lz4.h
+b0d5b0ec6cd31a8c3e8d7cc352add3a5  usr/include/lz4frame.h
+35c3be072c0229287a2d1624b689b7f1  usr/include/lz4frame_static.h
+a98e661182a7a74feb63090a1c6dc83a  usr/include/lz4hc.h
+1f1d82972246aeafca1463a3827bd118  usr/lib/aarch64-linux-gnu/liblz4.a
+78c2751ca571c3df8a41e43680a5e77f  usr/lib/aarch64-linux-gnu/pkgconfig/liblz4.pc
+fa3639e4a99076bd03ad655a64d9662c  usr/share/doc/liblz4-dev/copyright

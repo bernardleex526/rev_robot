@@ -1,0 +1,16 @@
+f35c8977773b2eb11c0e9426aaeb5b77  opt/ros/foxy/share/ament_index/resource_index/package_run_dependencies/common_interfaces
+d41d8cd98f00b204e9800998ecf8427e  opt/ros/foxy/share/ament_index/resource_index/packages/common_interfaces
+c5bea21e3b9564d2a435b40f0e03ecf6  opt/ros/foxy/share/ament_index/resource_index/parent_prefix_path/common_interfaces
+58ffc2004dd523b3fb50b63715d4ddad  opt/ros/foxy/share/common_interfaces/cmake/common_interfacesConfig-version.cmake
+2b6f31fa00103901c73dad0878981ee9  opt/ros/foxy/share/common_interfaces/cmake/common_interfacesConfig.cmake
+8dbf4790a764a69b56a5904c00682df0  opt/ros/foxy/share/common_interfaces/environment/ament_prefix_path.dsv
+fd0b100f5da0d9f2d38645ac45815395  opt/ros/foxy/share/common_interfaces/environment/ament_prefix_path.sh
+11e8ba1deb2827a5e13dd631720bcf6b  opt/ros/foxy/share/common_interfaces/environment/path.dsv
+234e39ac8bc1c1d4f887075bf9492366  opt/ros/foxy/share/common_interfaces/environment/path.sh
+ed9dcb7a76d3763c6cd97ebbd1f4cc7d  opt/ros/foxy/share/common_interfaces/local_setup.bash
+09aa5a69702b921e15eb69386a42dee8  opt/ros/foxy/share/common_interfaces/local_setup.dsv
+b4c9efc07e8e0043e408aa6add5c5636  opt/ros/foxy/share/common_interfaces/local_setup.sh
+24970cb512d5df3600adc59d7fa85f7b  opt/ros/foxy/share/common_interfaces/local_setup.zsh
+f046bf820f7a0413750f9a591d66a5d4  opt/ros/foxy/share/common_interfaces/package.dsv
+4b0ab4f26b1d1717e0584ad696a93deb  opt/ros/foxy/share/common_interfaces/package.xml
+3e520ab2bea726c72ff06dcb97e77b63  usr/share/doc/ros-foxy-common-interfaces/changelog.Debian.gz

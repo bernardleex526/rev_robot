@@ -1,0 +1,16 @@
+./hostA/home_user/sdk_deploy/src/M20_sdk_deploy/policy/policy.onnx
+../bin/policies/policy_policy_m20_5.onnx
+../bin/policies/policy_m20_finetune_stand_15kg.onnx
+../bin/policies/policy_policy_m20_rough_6.onnx
+../bin/policies/policy_m20_navi_stair_v7_0_himloco.onnx
+../bin/policies/policy_m20_navi_charge_v3_29.onnx
+../bin/policies/policy_policy_m20_38.onnx
+../bin/policies/policy_m20_hmap_motion_v0_2.onnx
+../bin/policies/policy_policy_m20_backknee6.onnx
+../bin/policies/policy_policy_ca9bplatform.onnx
+../bin/policies/policy_m20_sixaxis_stand.onnx
+../bin/policies/policy_m20_flat_v1_4.onnx
+../bin/policies/policy_m20_forward_policy_2.onnx
+../bin/policies/policy_m20_navi_flat_v4_2.onnx
+../bin/policies/policy_policy_m20_50.onnx
+../bin/policies/policy_m20_finetune_forward.onnx

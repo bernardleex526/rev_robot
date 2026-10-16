@@ -1,0 +1,47 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from drdds/msg/FileSystemStatus.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+
+module drdds {
+  module msg {
+    @verbatim (language="comment", text=
+      " FileSystemStatus.msg")
+    struct FileSystemStatus {
+      builtin_interfaces::msg::Time timestamp;
+
+      @verbatim (language="comment", text=
+        " e.g., \"FS_103_root-ro\" (SoC_instance)")
+      string resource_id;
+
+      @verbatim (language="comment", text=
+        " e.g., \"/root-ro\"")
+      string mount_point;
+
+      @verbatim (language="comment", text=
+        " e.g., \"/dev/mmcblk0p12\"")
+      string device_path;
+
+      @verbatim (language="comment", text=
+        " \"ext4\", \"f2fs\", etc.")
+      string fs_type;
+
+      @verbatim (language="comment", text=
+        " Space usage")
+      uint64 total_bytes;
+
+      uint64 used_bytes;
+
+      uint64 available_bytes;
+
+      @verbatim (language="comment", text=
+        " Inode usage (prevents \"No space left on device\" despite free space)")
+      uint64 total_inodes;
+
+      uint64 used_inodes;
+
+      uint64 free_inodes;
+    };
+  };
+};

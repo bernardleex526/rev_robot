@@ -1,0 +1,6 @@
+907ef2e784caad07d1c1bdf2b7024498  usr/bin/spi-config
+6bf0ae853d214e37ba533249a1dfc3f9  usr/bin/spi-pipe
+80de1eacad1b55d8f7a3e9f5ed5b7251  usr/share/doc/spi-tools/changelog.Debian.gz
+450d02d99e92eba6eb9a1287c2ac7901  usr/share/doc/spi-tools/copyright
+1c98d83bf33bba75db9f24cfd4885e5a  usr/share/man/man1/spi-config.1.gz
+04d2c911b9d2768f12324533cb2952ca  usr/share/man/man1/spi-pipe.1.gz

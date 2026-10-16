@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from drdds/msg/FaultEventArray.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+#include "drdds/msg/FaultEvent.idl"
+
+module drdds {
+  module msg {
+    @verbatim (language="comment", text=
+      " Snapshot of currently active fault events")
+    struct FaultEventArray {
+      @verbatim (language="comment", text=
+        " Timestamp of this snapshot")
+      builtin_interfaces::msg::Time timestamp;
+
+      @verbatim (language="comment", text=
+        " List of currently active faults")
+      sequence<drdds::msg::FaultEvent> active_faults;
+    };
+  };
+};

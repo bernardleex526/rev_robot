@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libjs-jquery-metadata
+/usr/share/doc/libjs-jquery-metadata/README.Debian
+/usr/share/doc/libjs-jquery-metadata/changelog.Debian.gz
+/usr/share/doc/libjs-jquery-metadata/copyright
+/usr/share/javascript
+/usr/share/javascript/jquery-metadata
+/usr/share/javascript/jquery-metadata/jquery.metadata.js
+/usr/share/javascript/jquery-metadata/jquery.metadata.min.js

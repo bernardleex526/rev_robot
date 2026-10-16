@@ -1,0 +1,11 @@
+f6435a43636a4879db288c5e574c5c6e  usr/include/superlu/slu_Cnames.h
+8d9a3706760f8f4e005eab4951387ddf  usr/include/superlu/slu_cdefs.h
+707bd15fa441c8430cc5eb08f8e556a6  usr/include/superlu/slu_dcomplex.h
+7cda091001713c5a97167a7048919d96  usr/include/superlu/slu_ddefs.h
+67a7964d10321d6d99f24a7a2d20c155  usr/include/superlu/slu_scomplex.h
+02f094e8109952a5f77009643c42c145  usr/include/superlu/slu_sdefs.h
+74b7b74666fe8b732982a9268d81d687  usr/include/superlu/slu_util.h
+15eec003a7a64fb9f96492574830260a  usr/include/superlu/slu_zdefs.h
+f1d718273d28a9056f5cd9d2a937276c  usr/include/superlu/superlu_enum_consts.h
+10c3530300338b6e4b51d51a79514792  usr/include/superlu/supermatrix.h
+ae92279028cee7da1d56ccefbb0a0801  usr/share/doc/libsuperlu-dev/copyright

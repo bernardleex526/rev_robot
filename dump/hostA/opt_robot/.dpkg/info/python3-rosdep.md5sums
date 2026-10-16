@@ -1,0 +1,9 @@
+8db4549e5ab5dc0ae53d1522122b21ac  usr/bin/rosdep
+d7a7b51bf3cd2c36085d273022c9ec18  usr/bin/rosdep-source
+75188ac5013d1514de47f541f877da95  usr/lib/python3/dist-packages/rosdep-0.25.1.egg-info/PKG-INFO
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/rosdep-0.25.1.egg-info/dependency_links.txt
+ea1327c307f6e0027e8023527659c934  usr/lib/python3/dist-packages/rosdep-0.25.1.egg-info/entry_points.txt
+3b5e983c50f4f5bf73fda4d9dc72a9ac  usr/lib/python3/dist-packages/rosdep-0.25.1.egg-info/requires.txt
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/rosdep-0.25.1.egg-info/top_level.txt
+89117ab377a512418a19a9942673e9e6  usr/share/doc/python3-rosdep/changelog.Debian.gz
+86a73ab7b555900fd6b51429658aca4c  usr/share/doc/python3-rosdep/copyright

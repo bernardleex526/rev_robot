@@ -1,0 +1,6 @@
+_rclpy.cpython 38-aarch64-linux-gnu ros-foxy-rclpy
+_rclpy_action.cpython 38-aarch64-linux-gnu ros-foxy-rclpy
+_rclpy_handle.cpython 38-aarch64-linux-gnu ros-foxy-rclpy
+_rclpy_logging.cpython 38-aarch64-linux-gnu ros-foxy-rclpy
+_rclpy_pycapsule.cpython 38-aarch64-linux-gnu ros-foxy-rclpy
+_rclpy_signal_handler.cpython 38-aarch64-linux-gnu ros-foxy-rclpy

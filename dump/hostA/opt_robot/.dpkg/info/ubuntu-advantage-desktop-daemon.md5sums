@@ -1,0 +1,8 @@
+227012da90f4f45592023b6ca3208fdf  lib/systemd/system/ubuntu-advantage-desktop-daemon.service
+91a87fa56b4980e7de29e611c858a4f8  usr/libexec/ubuntu-advantage-desktop-daemon
+0cbb5b31a5888fd6b69d3b7c1616b56d  usr/share/dbus-1/interfaces/com.canonical.UbuntuAdvantage.xml
+883e6fb830a2857540d46d598f29ce04  usr/share/dbus-1/system-services/com.canonical.UbuntuAdvantage.service
+72e3803d93463800eca9003e9fe99494  usr/share/dbus-1/system.d/com.canonical.UbuntuAdvantage.conf
+98dc65e4d73513fd902596dc1840ef7e  usr/share/doc/ubuntu-advantage-desktop-daemon/changelog.gz
+e6e10bbd49fe5af6a09c43544c608cda  usr/share/doc/ubuntu-advantage-desktop-daemon/copyright
+e0001a8a3a403ff686dcef381e54cc2d  usr/share/polkit-1/actions/com.canonical.UbuntuAdvantage.policy

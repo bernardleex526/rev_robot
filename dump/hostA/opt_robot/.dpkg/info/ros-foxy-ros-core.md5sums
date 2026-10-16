@@ -1,0 +1,16 @@
+2e9c6985e726eda42e1642e96b30ed02  opt/ros/foxy/share/ament_index/resource_index/package_run_dependencies/ros_core
+d41d8cd98f00b204e9800998ecf8427e  opt/ros/foxy/share/ament_index/resource_index/packages/ros_core
+c5bea21e3b9564d2a435b40f0e03ecf6  opt/ros/foxy/share/ament_index/resource_index/parent_prefix_path/ros_core
+f899030b170010653cf781397ff70be7  opt/ros/foxy/share/ros_core/cmake/ros_coreConfig-version.cmake
+79dd2e8afa17c40a72c0986a3467d94a  opt/ros/foxy/share/ros_core/cmake/ros_coreConfig.cmake
+8dbf4790a764a69b56a5904c00682df0  opt/ros/foxy/share/ros_core/environment/ament_prefix_path.dsv
+fd0b100f5da0d9f2d38645ac45815395  opt/ros/foxy/share/ros_core/environment/ament_prefix_path.sh
+11e8ba1deb2827a5e13dd631720bcf6b  opt/ros/foxy/share/ros_core/environment/path.dsv
+234e39ac8bc1c1d4f887075bf9492366  opt/ros/foxy/share/ros_core/environment/path.sh
+ed9dcb7a76d3763c6cd97ebbd1f4cc7d  opt/ros/foxy/share/ros_core/local_setup.bash
+63b3a47bee1cd261c30deef1f0118bb0  opt/ros/foxy/share/ros_core/local_setup.dsv
+9cf753df8f6e332c4012f5f8e81e2080  opt/ros/foxy/share/ros_core/local_setup.sh
+24970cb512d5df3600adc59d7fa85f7b  opt/ros/foxy/share/ros_core/local_setup.zsh
+9362eae34abdfce6d8a165ac49a8b32d  opt/ros/foxy/share/ros_core/package.dsv
+c8827b32120d003a392f41a7aa9b9b9e  opt/ros/foxy/share/ros_core/package.xml
+75467e34d70b65ba91ebde06410b4dc2  usr/share/doc/ros-foxy-ros-core/changelog.Debian.gz

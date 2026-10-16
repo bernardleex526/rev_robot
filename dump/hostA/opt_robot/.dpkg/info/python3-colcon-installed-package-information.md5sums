@@ -1,0 +1,15 @@
+d4066e765bd9ea3c7eb70c3ac42b6e56  usr/lib/python3/dist-packages/colcon_installed_package_information-0.2.1.egg-info/PKG-INFO
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/colcon_installed_package_information-0.2.1.egg-info/dependency_links.txt
+8cca3acfd4a721f826d7384afebf7f0c  usr/lib/python3/dist-packages/colcon_installed_package_information-0.2.1.egg-info/entry_points.txt
+7ab828c755158becc9858a40eb6d9251  usr/lib/python3/dist-packages/colcon_installed_package_information-0.2.1.egg-info/requires.txt
+0dfad3806144529ebc97437cd4ce4b2d  usr/lib/python3/dist-packages/colcon_installed_package_information-0.2.1.egg-info/top_level.txt
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/colcon_installed_package_information-0.2.1.egg-info/zip-safe
+c6632333230a6dfbea998c9d5bde3218  usr/lib/python3/dist-packages/colcon_installed_package_information/__init__.py
+24f090a5abc519284df1d1247c94c3a4  usr/lib/python3/dist-packages/colcon_installed_package_information/__main__.py
+8a270f405d98fbfc9538bb4bf7306bbc  usr/lib/python3/dist-packages/colcon_installed_package_information/package_augmentation/__init__.py
+a487cf263e566bf8b9bf93a9e015ec19  usr/lib/python3/dist-packages/colcon_installed_package_information/package_augmentation/colcon_index.py
+8dae51f5998bd0583e4d63a5b1a9f517  usr/lib/python3/dist-packages/colcon_installed_package_information/package_augmentation/python.py
+15fa6669170acf80f7ae3f2100a959e2  usr/lib/python3/dist-packages/colcon_installed_package_information/package_discovery/__init__.py
+d2422a6968874ab03a554d3f9475061c  usr/lib/python3/dist-packages/colcon_installed_package_information/package_discovery/prefix_path.py
+1a051fb16f51815dcec6df33fbf56f2d  usr/lib/python3/dist-packages/colcon_installed_package_information/package_identification/__init__.py
+c0829c62e84a8e61df9b7044cb190d9d  usr/share/doc/python3-colcon-installed-package-information/changelog.Debian.gz

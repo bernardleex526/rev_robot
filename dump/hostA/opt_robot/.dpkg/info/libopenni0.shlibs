@@ -1,0 +1,6 @@
+libOpenNI.jni 0 libopenni0 (>= 1.5.4.0+dfsg)
+libOpenNI 0 libopenni0 (>= 1.5.4.0+dfsg)
+libSample-NiSampleModule 0 libopenni0 (>= 1.5.4.0+dfsg)
+libnimCodecs 0 libopenni0 (>= 1.5.4.0+dfsg)
+libnimMockNodes 0 libopenni0 (>= 1.5.4.0+dfsg)
+libnimRecorder 0 libopenni0 (>= 1.5.4.0+dfsg)
