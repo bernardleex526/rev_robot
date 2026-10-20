@@ -43,6 +43,8 @@
 - Python 3.10、MuJoCo、ONNX Runtime
 - 无需先安装厂商 `libdrdds.so`：`drdds` 消息包由 `dump/` 中的 `.msg/.srv` 在 Humble 下重建
 
+> **Windows 检出注意**：`dump/hostA/opt_robot/.dpkg/info/*:arm64.*` 的文件名含 `:`，NTFS 无法创建，Windows 上 `git status` 会显示约 4988 个删除。这是检出限制，不是仓库缺文件；不要提交这些删除。建议在 WSL 原生文件系统（如 `~/rev_robot`）克隆，或忽略这些删除。
+
 ### 1. 构建 drdds + 官方 SDK（x86）
 
 ```bash
