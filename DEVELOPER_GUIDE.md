@@ -33,10 +33,13 @@
 ### 1.2 目录地图
 
 ```
-/home/lee/rea/
+rev_robot/（原产出根目录 /home/lee/rea/）
+├── README.md                     # 仓库入口、边界与快速开始
 ├── L1_knowledge_base.md          # L1 总索引（从这里开始）
 ├── DEVELOPER_GUIDE.md            # ★ 本文件：面向二次开发的完整文档
 ├── STATUS.md                     # 当前任务状态
+├── M20_WSL二次开发技术文档.md    # 独立复核结论与已知修正
+├── M20_WSL仿真部署指南.md        # Gazebo / MuJoCo 仿真部署
 │
 ├── analysis/                     # 24 篇技术文档（按主题编号）
 │   ├── 01_topology_hosts.md      #   三主机与网络拓扑
@@ -80,6 +83,9 @@
 │   ├── locomotion_report.md      #   T32 站立行走报告
 │   ├── nav_sim_report.md         #   T31 导航报告
 │   └── mapping_sim_report.md     #   T30 建图报告
+│
+├── m20_sim/                      # WSL Gazebo/MuJoCo 仿真源码（基于官方 SDK/MJCF）
+├── m20_wsl_scripts/              # WSL 环境、drdds 重建与 SDK 构建脚本
 │
 ├── dump/                         # 从实机拉取的原始文件（只读证据）
 │   ├── hostA/opt_robot/          #   AOS /opt/robot（274MB）

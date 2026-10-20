@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <world name="m20_flat">
+    <physics name="ode_1khz" type="ode" default="true">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>100</iters>
+          <sor>1.3</sor>
+        </solver>
+        <constraints>
+          <cfm>0.0</cfm>
+          <erp>0.2</erp>
+          <contact_max_correcting_vel>10.0</contact_max_correcting_vel>
+          <contact_surface_layer>0.001</contact_surface_layer>
+        </constraints>
+      </ode>
+    </physics>
+    <gravity>0 0 -9.81</gravity>
+    <!-- /gazebo/get_entity_state, /gazebo/set_entity_state: ground-truth pose for evaluation -->
+    <plugin name="gazebo_ros_state" filename="libgazebo_ros_state.so">
+      <ros><namespace>/gazebo</namespace></ros>
+      <update_rate>200</update_rate>
+    </plugin>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry><plane><normal>0 0 1</normal><size>200 200</size></plane></geometry>
+          <surface>
+            <friction><ode><mu>1.0</mu><mu2>1.0</mu2></ode></friction>
+            <contact><ode><kp>1e6</kp><kd>100</kd></ode></contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <cast_shadows>false</cast_shadows>
+          <geometry><plane><normal>0 0 1</normal><size>200 200</size></plane></geometry>
+          <material>
+            <script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/Grey</name></script>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <!-- a few steps for terrain tests, well away from the spawn point -->
+    <model name="steps">
+      <static>true</static>
+      <pose>4 0 0 0 0 0</pose>
+      <link name="link">
+        <collision name="s1"><pose>0 0 0.04 0 0 0</pose><geometry><box><size>0.4 2 0.08</size></box></geometry></collision>
+        <visual name="v1"><pose>0 0 0.04 0 0 0</pose><geometry><box><size>0.4 2 0.08</size></box></geometry></visual>
+        <collision name="s2"><pose>0.4 0 0.08 0 0 0</pose><geometry><box><size>0.4 2 0.16</size></box></geometry></collision>
+        <visual name="v2"><pose>0.4 0 0.08 0 0 0</pose><geometry><box><size>0.4 2 0.16</size></box></geometry></visual>
+        <collision name="s3"><pose>0.8 0 0.12 0 0 0</pose><geometry><box><size>0.4 2 0.24</size></box></geometry></collision>
+        <visual name="v3"><pose>0.8 0 0.12 0 0 0</pose><geometry><box><size>0.4 2 0.24</size></box></geometry></visual>
+      </link>
+    </model>
+  </world>
+</sdf>
